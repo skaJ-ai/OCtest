@@ -1,0 +1,17 @@
+[Unit]
+Description=Process Coaching Synthetic Eval Loop
+After=network-online.target process-coaching-api.service
+Wants=network-online.target process-coaching-api.service
+
+[Service]
+Type=simple
+WorkingDirectory=/home/openc/.openclaw/workspace/process-coaching
+Environment=PYTHONUNBUFFERED=1
+ExecStart=/home/openc/.openclaw/workspace/process-coaching/.venv/bin/python tests/synthetic_eval_loop.py --base-url http://127.0.0.1:8000 --duration-hours 0 --interval-sec 2
+Restart=always
+RestartSec=5
+StandardOutput=journal
+StandardError=journal
+
+[Install]
+WantedBy=default.target

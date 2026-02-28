@@ -18,6 +18,11 @@ from typing import Any, Optional
 from fastapi import APIRouter, HTTPException
 from pydantic import BaseModel, Field
 
+try:
+    from backend.llm_service import call_llm  # type: ignore
+except Exception:  # pragma: no cover
+    call_llm = None
+
 
 router = APIRouter(prefix="/api/events", tags=["events"])
 
@@ -221,8 +226,42 @@ raw_text:
 """.strip()
 
 
-async def _call_llm_extract(_prompt: str) -> list[dict[str, Any]]:
-    """LLM 호출 포인트 (PoC). 실제 연동 시 교체."""
+async def _call_llm_extract(prompt: str) -> list[dict[str, Any]]:
+    """LLM 호출 포인트.
+
+    기대 응답 형식(JSON 배열):
+    [
+      {
+        "activity_raw": "...",
+        "timestamp": "ISO-8601",
+        "actor": "...",
+        "confidence_score": 0.0,
+        "evidence_span": "..."
+      }
+    ]
+    """
+    if call_llm is None:
+        return []
+
+    system_prompt = "당신은 HR 이벤트 추출기입니다. JSON 배열만 출력하세요."
+    result = await call_llm(system_prompt, prompt, allow_text_fallback=True, max_tokens=1200, temperature=0.1)
+    if not isinstance(result, dict):
+        return []
+
+    # call_llm이 이미 JSON 파싱된 dict를 줄 수 있으므로 다중 형식 처리
+    for key in ("events", "data", "result"):
+        if isinstance(result.get(key), list):
+            return [x for x in result[key] if isinstance(x, dict)]
+
+    # text fallback 형태면 speech/message에 JSON 배열이 들어있을 수 있음
+    text = str(result.get("speech") or result.get("message") or "").strip()
+    if text.startswith("[") and text.endswith("]"):
+        try:
+            arr = json.loads(text)
+            return [x for x in arr if isinstance(x, dict)]
+        except Exception:
+            return []
+
     return []
 
 
