@@ -20,8 +20,9 @@
 
 ```json
 {
-  "raw_text": "2026-02-28 14:20 면담 진행. A가 B에게 경고 조치 필요 의견 전달...",
+  "raw_text": "어제 오후 2시에 면담 진행. A가 B에게 경고 조치 필요 의견 전달...",
   "source_type": "interview_note",
+  "reference_datetime": "2026-03-01T00:30:00+09:00",
   "context": {
     "case_id": "ER-2026-00012",
     "l3_hint": "노사",
@@ -41,6 +42,7 @@
 - `raw_text` (string, required): 비정형 원문 텍스트
 - `source_type` (string, required): 원천 데이터 유형
   - 예: `interview_note`, `er_log`, `discipline_review`, `email`, `doc`
+- `reference_datetime` (string, required 권장): ISO-8601 기준 시각. 상대 시간(예: 어제/오늘 오전) 절대시간 변환 기준점
 - `context` (object, optional): 케이스/도메인 힌트
   - `case_id` (string, optional)
   - `l3_hint` (string, optional)
@@ -59,6 +61,7 @@
 {
   "case_id": "ER-2026-00012",
   "source_type": "interview_note",
+  "reference_datetime": "2026-03-01T00:30:00+09:00",
   "events": [
     {
       "event_id": "evt_01",
@@ -160,7 +163,14 @@
 
 ---
 
-## 6) Evidence Span 품질 원칙
+## 6) Relative Time Parsing 규칙
+
+- `reference_datetime`를 기준으로 상대 시간 표현을 절대시간으로 변환
+  - 예: "어제 오후 2시" + `2026-03-01T00:30:00+09:00` → `2026-02-28T14:00:00+09:00`
+- 절대시간 추정이 어려우면 `reference_datetime`를 대체값으로 사용하고 `confidence_score`를 낮춤
+- 변환 근거가 되는 구절은 `evidence_span`에 포함되어야 함
+
+## 7) Evidence Span 품질 원칙
 
 - `evidence_span`은 반드시 `raw_text`에서 **직접 발췌한 부분 문자열**이어야 함
 - 요약 문장만 넣고 근거 원문이 없는 경우 invalid

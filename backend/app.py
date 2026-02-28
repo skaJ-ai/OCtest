@@ -47,6 +47,12 @@ except ImportError:
     from flow_services import describe_flow, mock_review, mock_validate
     from l345_reference import get_l345_context
 
+try:
+    from app.api.extract import router as extract_router
+    app.include_router(extract_router)
+except Exception as e:
+    logger.warning(f"extract router not mounted: {e}")
+
 
 def _build_l345_block(context: dict) -> str:
     """req.context에서 L345 참조 블록 생성. 매칭 실패 시 빈 문자열."""
