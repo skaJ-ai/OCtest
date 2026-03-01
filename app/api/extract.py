@@ -22,6 +22,7 @@ except Exception:  # pragma: no cover
     call_llm = None
 
 from app.services.taxonomy_service import get_l5_for_l6_id, map_to_l5, map_to_l6_by_output
+from app.services.trace_service import append_case_events, build_process_map, build_trace, get_case_events
 
 
 router = APIRouter(prefix="/api/events", tags=["events"])
@@ -335,6 +336,10 @@ async def extract_events(req: ExtractRequest):
             )
 
         case_id = req.context.case_id or "CASE-UNKNOWN"
+
+        # in-memory store for trace/viz aggregation
+        append_case_events(case_id, [e.model_dump() for e in out_events])
+
         return ExtractResponse(
             case_id=case_id,
             source_type=req.source_type,
@@ -351,3 +356,17 @@ async def extract_events(req: ExtractRequest):
         raise
     except Exception as e:
         raise HTTPException(status_code=500, detail=f"internal_error: {e}")
+
+
+@router.get("/trace/{case_id}")
+async def get_case_trace(case_id: str):
+    events = get_case_events(case_id)
+    return build_trace(case_id, events)
+
+
+@router.get("/viz/process-map")
+async def get_process_map(case_id: str):
+    events = get_case_events(case_id)
+    if not events:
+        raise HTTPException(status_code=404, detail="case_id not found")
+    return build_process_map(case_id, events)

@@ -61,11 +61,13 @@ async def generate_noisy_text_with_llm(target_l5: str) -> str:
 목표 L5 활동: {target_l5}
 핵심 키워드: {core_kw}
 
-아래 조건으로 한국어 비정형 텍스트를 3~5문장 생성하세요.
+아래 조건으로 한국어 비정형 텍스트를 생성하세요.
+- 반드시 3~5단계의 연속 업무 시나리오(문장 3~5개)
 - 대화체/보고서체 혼합
 - 노이즈 포함(오타, 중복표현, 주어 생략 일부)
 - 상대 시간 표현 포함(어제, 오늘 오전, 방금 등)
-- 핵심 키워드("{core_kw}")를 문장에 정확히 1회 이상 포함
+- 핵심 키워드("{core_kw}")를 2회 이상 포함
+- 각 문장마다 결과물 단서(신청/등록/완료/승인/이력) 중 하나 포함
 - 동사 포함 문장 사용(예: 검토했다, 작성했다, 확인했다, 제안했다)
 
 JSON으로만 응답:
@@ -86,9 +88,9 @@ JSON으로만 응답:
 def fallback_noisy_text(target_l5: str) -> str:
     kw = _core_keyword(target_l5)
     templates = [
-        f"어제 오후 2시경 담당자A가 {kw} 문서를 작성했고, 팀장에게 검토를 요청했습니다. 메모가 일부 깨졌지만 오늘 오전 보완 예정입니다.",
-        f"방금 통화에서 담당자B가 {kw} 건을 확인했다고 보고했습니다. 정확한 시각은 어제 저녁으로 추정되며, 추가 정리본을 작성한다고 했습니다.",
-        f"보고서 일부: {kw} 항목을 먼저 검토하고 결과를 제안했습니다. 담당자C가 오늘 아침에 후속 기록을 남긴 상태입니다.",
+        f"어제 9시에 담당자A가 {kw} 신청서를 등록했습니다. 10시에 팀장 승인 완료했고, 11시에 처리 이력을 기록했습니다. 오늘 오전 최종 결과를 메일로 발송했습니다.",
+        f"어제 오후 2시에 {kw} 요청을 접수하고 신청서를 작성했습니다. 이후 등록번호를 발급했고 승인 상태를 업데이트했습니다. 방금 처리 이력까지 남겼습니다.",
+        f"보고서: {kw} 건을 먼저 신청 접수했습니다. 다음으로 등록 처리 완료 후 승인 기록을 남겼습니다. 마지막으로 결과 이력을 시스템에 저장했습니다.",
     ]
     return random.choice(templates)
 
@@ -186,6 +188,22 @@ def run_loop(base_url: str, duration_hours: float, interval_sec: float, max_iter
         reasons: list[str] = []
         if status_code == 200 and isinstance(body, dict):
             ok, reasons = evaluate_result(target_l5, text, body, threshold)
+
+            # trace reconstruction validation (3+ steps)
+            try:
+                tr = requests.get(f"{base_url}/api/events/trace/{payload['context']['case_id']}", timeout=20)
+                if tr.status_code == 200:
+                    t = tr.json()
+                    if len(t.get("events", [])) < 3:
+                        reasons.append("trace_too_short")
+                    if len(t.get("transition_times", [])) < 2:
+                        reasons.append("trace_transition_missing")
+                else:
+                    reasons.append("trace_api_error")
+            except Exception:
+                reasons.append("trace_api_error")
+
+            ok = len(reasons) == 0
         else:
             reasons = [f"api_error_{status_code}"]
 
