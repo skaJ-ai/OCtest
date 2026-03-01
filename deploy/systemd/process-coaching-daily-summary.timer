@@ -1,0 +1,10 @@
+[Unit]
+Description=Run Process Coaching Daily Hard Case Summary every morning
+
+[Timer]
+OnCalendar=*-*-* 09:00:00
+Persistent=true
+Unit=process-coaching-daily-summary.service
+
+[Install]
+WantedBy=timers.target
