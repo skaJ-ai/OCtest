@@ -1,0 +1,2496 @@
+{
+  "schema_version": "2.0.0",
+  "title": "HR L6 APQC Master Library v2",
+  "principle": "Outcome-based Isolation Golden Standard",
+  "library": [
+    {
+      "l6_id": "V2-L6-0001",
+      "l3": "채용",
+      "l4": "채용계획",
+      "l5": "채용 계획 수립",
+      "l6_name": "채용 수요 산정서 작성",
+      "input": "인력계획, 사업계획",
+      "output": "채용 수요 산정서",
+      "digital_trace": [
+        "채용 수요 산정서 DB 레코드",
+        "메일 제목: [ATS] Hiring Demand Estimation Submitted",
+        "전자결재 로그: 채용 수요 산정서"
+      ],
+      "automation_potential": "High",
+      "legacy_l6_match": [
+        "채용 계획 수립"
+      ],
+      "improvement_note": "행위 중심 단계를 산출물 중심으로 재정의해 리드타임·재작업 측정이 가능한 이벤트 단위로 분해함."
+    },
+    {
+      "l6_id": "V2-L6-0002",
+      "l3": "채용",
+      "l4": "채용계획",
+      "l5": "채용 계획 수립",
+      "l6_name": "채용 예산 배정안 확정",
+      "input": "수요 산정서, 예산 기준",
+      "output": "채용 예산 배정안",
+      "digital_trace": [
+        "채용 예산 배정안 DB 레코드",
+        "메일 제목: [ATS] Hiring Budget Allocation Approved",
+        "전자결재 로그: 채용 예산 배정안"
+      ],
+      "automation_potential": "High",
+      "legacy_l6_match": [
+        "채용 계획 수립"
+      ],
+      "improvement_note": "행위 중심 단계를 산출물 중심으로 재정의해 리드타임·재작업 측정이 가능한 이벤트 단위로 분해함."
+    },
+    {
+      "l6_id": "V2-L6-0003",
+      "l3": "채용",
+      "l4": "채용계획",
+      "l5": "직무기술서 작성",
+      "l6_name": "직무기술서 초안 작성",
+      "input": "직무 요건, 역량모델",
+      "output": "직무기술서 초안",
+      "digital_trace": [
+        "직무기술서 초안 DB 레코드",
+        "메일 제목: [ATS] JD Draft Prepared",
+        "전자결재 로그: 직무기술서 초안"
+      ],
+      "automation_potential": "High",
+      "legacy_l6_match": [
+        "직무기술서 작성"
+      ],
+      "improvement_note": "행위 중심 단계를 산출물 중심으로 재정의해 리드타임·재작업 측정이 가능한 이벤트 단위로 분해함."
+    },
+    {
+      "l6_id": "V2-L6-0004",
+      "l3": "채용",
+      "l4": "채용계획",
+      "l5": "직무기술서 작성",
+      "l6_name": "직무기술서 승인본 확정",
+      "input": "초안, 피드백",
+      "output": "직무기술서 승인본",
+      "digital_trace": [
+        "직무기술서 승인본 DB 레코드",
+        "메일 제목: [ATS] JD Final Approval Completed",
+        "전자결재 로그: 직무기술서 승인본"
+      ],
+      "automation_potential": "High",
+      "legacy_l6_match": [
+        "직무기술서 작성"
+      ],
+      "improvement_note": "행위 중심 단계를 산출물 중심으로 재정의해 리드타임·재작업 측정이 가능한 이벤트 단위로 분해함."
+    },
+    {
+      "l6_id": "V2-L6-0005",
+      "l3": "채용",
+      "l4": "인재발굴",
+      "l5": "인재 소싱 채널 선정 및 역칭",
+      "l6_name": "소싱 채널 성과 비교표 작성",
+      "input": "채널 KPI, 비용",
+      "output": "소싱 채널 성과 비교표",
+      "digital_trace": [
+        "소싱 채널 성과 비교표 DB 레코드",
+        "메일 제목: [ATS] Sourcing Channel Benchmark Ready",
+        "전자결재 로그: 소싱 채널 성과 비교표"
+      ],
+      "automation_potential": "High",
+      "legacy_l6_match": [
+        "인재 소싱 채널 선정 및 역칭"
+      ],
+      "improvement_note": "행위 중심 단계를 산출물 중심으로 재정의해 리드타임·재작업 측정이 가능한 이벤트 단위로 분해함."
+    },
+    {
+      "l6_id": "V2-L6-0006",
+      "l3": "채용",
+      "l4": "인재발굴",
+      "l5": "인재 소싱 채널 선정 및 역칭",
+      "l6_name": "소싱 채널 운영안 확정",
+      "input": "성과 비교표, 목표",
+      "output": "소싱 채널 운영안",
+      "digital_trace": [
+        "소싱 채널 운영안 DB 레코드",
+        "메일 제목: [ATS] Sourcing Channel Plan Confirmed",
+        "전자결재 로그: 소싱 채널 운영안"
+      ],
+      "automation_potential": "High",
+      "legacy_l6_match": [
+        "인재 소싱 채널 선정 및 역칭"
+      ],
+      "improvement_note": "행위 중심 단계를 산출물 중심으로 재정의해 리드타임·재작업 측정이 가능한 이벤트 단위로 분해함."
+    },
+    {
+      "l6_id": "V2-L6-0007",
+      "l3": "채용",
+      "l4": "선발전형",
+      "l5": "서류심사",
+      "l6_name": "서류심사 기준표 확정",
+      "input": "JD, 공고 요건",
+      "output": "서류심사 기준표 v2",
+      "digital_trace": [
+        "서류심사 기준표 v2 DB 레코드",
+        "메일 제목: [ATS] Screening Criteria Finalized",
+        "전자결재 로그: 서류심사 기준표 v2"
+      ],
+      "automation_potential": "High",
+      "legacy_l6_match": [
+        "서류심사"
+      ],
+      "improvement_note": "행위 중심 단계를 산출물 중심으로 재정의해 리드타임·재작업 측정이 가능한 이벤트 단위로 분해함."
+    },
+    {
+      "l6_id": "V2-L6-0008",
+      "l3": "채용",
+      "l4": "선발전형",
+      "l5": "서류심사",
+      "l6_name": "서류심사 평가표 산출",
+      "input": "지원서, 기준표",
+      "output": "서류심사 평가표",
+      "digital_trace": [
+        "서류심사 평가표 DB 레코드",
+        "메일 제목: [ATS] Screening Scorecard Generated",
+        "전자결재 로그: 서류심사 평가표"
+      ],
+      "automation_potential": "High",
+      "legacy_l6_match": [
+        "서류심사"
+      ],
+      "improvement_note": "행위 중심 단계를 산출물 중심으로 재정의해 리드타임·재작업 측정이 가능한 이벤트 단위로 분해함."
+    },
+    {
+      "l6_id": "V2-L6-0009",
+      "l3": "채용",
+      "l4": "선발전형",
+      "l5": "서류심사",
+      "l6_name": "서류 합격자 명단 확정",
+      "input": "평가표, TO",
+      "output": "서류 합격자 명단",
+      "digital_trace": [
+        "서류 합격자 명단 DB 레코드",
+        "메일 제목: [ATS] Resume Screening Pass List Finalized",
+        "전자결재 로그: 서류 합격자 명단"
+      ],
+      "automation_potential": "High",
+      "legacy_l6_match": [
+        "서류심사"
+      ],
+      "improvement_note": "행위 중심 단계를 산출물 중심으로 재정의해 리드타임·재작업 측정이 가능한 이벤트 단위로 분해함."
+    },
+    {
+      "l6_id": "V2-L6-0010",
+      "l3": "채용",
+      "l4": "선발전형",
+      "l5": "자격 검증",
+      "l6_name": "학력·경력 검증 확인서 발급",
+      "input": "증빙, 검증기준",
+      "output": "학력·경력 검증 확인서",
+      "digital_trace": [
+        "학력·경력 검증 확인서 DB 레코드",
+        "메일 제목: [ATS] Education/Employment Verification Issued",
+        "전자결재 로그: 학력·경력 검증 확인서"
+      ],
+      "automation_potential": "High",
+      "legacy_l6_match": [
+        "자격 검증"
+      ],
+      "improvement_note": "행위 중심 단계를 산출물 중심으로 재정의해 리드타임·재작업 측정이 가능한 이벤트 단위로 분해함."
+    },
+    {
+      "l6_id": "V2-L6-0011",
+      "l3": "채용",
+      "l4": "선발전형",
+      "l5": "자격 검증",
+      "l6_name": "자격증 검증 리포트 확정",
+      "input": "자격번호, 발급정보",
+      "output": "자격증 검증 리포트",
+      "digital_trace": [
+        "자격증 검증 리포트 DB 레코드",
+        "메일 제목: [ATS] Certification Verification Report Finalized",
+        "전자결재 로그: 자격증 검증 리포트"
+      ],
+      "automation_potential": "High",
+      "legacy_l6_match": [
+        "자격 검증"
+      ],
+      "improvement_note": "행위 중심 단계를 산출물 중심으로 재정의해 리드타임·재작업 측정이 가능한 이벤트 단위로 분해함."
+    },
+    {
+      "l6_id": "V2-L6-0012",
+      "l3": "채용",
+      "l4": "선발전형",
+      "l5": "자격 검증",
+      "l6_name": "검증 이슈 판정서 확정",
+      "input": "검증리포트, 이슈",
+      "output": "검증 이슈 판정서",
+      "digital_trace": [
+        "검증 이슈 판정서 DB 레코드",
+        "메일 제목: [ATS] Verification Issue Decision Completed",
+        "전자결재 로그: 검증 이슈 판정서"
+      ],
+      "automation_potential": "High",
+      "legacy_l6_match": [
+        "자격 검증"
+      ],
+      "improvement_note": "행위 중심 단계를 산출물 중심으로 재정의해 리드타임·재작업 측정이 가능한 이벤트 단위로 분해함."
+    },
+    {
+      "l6_id": "V2-L6-0013",
+      "l3": "채용",
+      "l4": "선발전형",
+      "l5": "면접",
+      "l6_name": "면접관 배정 및 안내",
+      "input": "면접관풀, 슬롯",
+      "output": "면접관 배정 확정 메일",
+      "digital_trace": [
+        "면접관 배정 확정 메일 DB 레코드",
+        "메일 제목: [ATS] Interviewer Assignment Confirmed",
+        "전자결재 로그: 면접관 배정 확정 메일"
+      ],
+      "automation_potential": "High",
+      "legacy_l6_match": [
+        "면접"
+      ],
+      "improvement_note": "행위 중심 단계를 산출물 중심으로 재정의해 리드타임·재작업 측정이 가능한 이벤트 단위로 분해함."
+    },
+    {
+      "l6_id": "V2-L6-0014",
+      "l3": "채용",
+      "l4": "선발전형",
+      "l5": "면접",
+      "l6_name": "면접 일정표 작성",
+      "input": "합격자 명단, 슬롯",
+      "output": "면접 일정표",
+      "digital_trace": [
+        "면접 일정표 DB 레코드",
+        "메일 제목: [ATS] Interview Scheduled",
+        "전자결재 로그: 면접 일정표"
+      ],
+      "automation_potential": "High",
+      "legacy_l6_match": [
+        "면접"
+      ],
+      "improvement_note": "행위 중심 단계를 산출물 중심으로 재정의해 리드타임·재작업 측정이 가능한 이벤트 단위로 분해함."
+    },
+    {
+      "l6_id": "V2-L6-0015",
+      "l3": "채용",
+      "l4": "선발전형",
+      "l5": "면접",
+      "l6_name": "지원자 면접 안내 메일 발송",
+      "input": "일정표, 장소",
+      "output": "지원자 대상 면접 안내 메일",
+      "digital_trace": [
+        "지원자 대상 면접 안내 메일 DB 레코드",
+        "메일 제목: [ATS] Candidate Interview Notice Sent",
+        "전자결재 로그: 지원자 대상 면접 안내 메일"
+      ],
+      "automation_potential": "High",
+      "legacy_l6_match": [
+        "면접"
+      ],
+      "improvement_note": "행위 중심 단계를 산출물 중심으로 재정의해 리드타임·재작업 측정이 가능한 이벤트 단위로 분해함."
+    },
+    {
+      "l6_id": "V2-L6-0016",
+      "l3": "채용",
+      "l4": "선발전형",
+      "l5": "면접",
+      "l6_name": "면접 평가표 수합본 확정",
+      "input": "면접관 평가표",
+      "output": "개별 면접관 평가표 취합본",
+      "digital_trace": [
+        "개별 면접관 평가표 취합본 DB 레코드",
+        "메일 제목: [ATS] Interview Score Consolidation Completed",
+        "전자결재 로그: 개별 면접관 평가표 취합본"
+      ],
+      "automation_potential": "High",
+      "legacy_l6_match": [
+        "면접"
+      ],
+      "improvement_note": "행위 중심 단계를 산출물 중심으로 재정의해 리드타임·재작업 측정이 가능한 이벤트 단위로 분해함."
+    },
+    {
+      "l6_id": "V2-L6-0017",
+      "l3": "채용",
+      "l4": "선발전형",
+      "l5": "채용 및 처우 승인",
+      "l6_name": "처우안 산정서 작성",
+      "input": "평가결과, 밴드",
+      "output": "처우안 산정서",
+      "digital_trace": [
+        "처우안 산정서 DB 레코드",
+        "메일 제목: [ATS] Compensation Proposal Calculated",
+        "전자결재 로그: 처우안 산정서"
+      ],
+      "automation_potential": "High",
+      "legacy_l6_match": [
+        "채용 및 처우 승인"
+      ],
+      "improvement_note": "행위 중심 단계를 산출물 중심으로 재정의해 리드타임·재작업 측정이 가능한 이벤트 단위로 분해함."
+    },
+    {
+      "l6_id": "V2-L6-0018",
+      "l3": "채용",
+      "l4": "선발전형",
+      "l5": "채용 및 처우 승인",
+      "l6_name": "채용 승인 결재 문서 상신",
+      "input": "처우안, 채용사유",
+      "output": "채용 승인 결재 문서",
+      "digital_trace": [
+        "채용 승인 결재 문서 DB 레코드",
+        "메일 제목: [ATS] Hiring Approval Submitted",
+        "전자결재 로그: 채용 승인 결재 문서"
+      ],
+      "automation_potential": "High",
+      "legacy_l6_match": [
+        "채용 및 처우 승인"
+      ],
+      "improvement_note": "행위 중심 단계를 산출물 중심으로 재정의해 리드타임·재작업 측정이 가능한 이벤트 단위로 분해함."
+    },
+    {
+      "l6_id": "V2-L6-0019",
+      "l3": "채용",
+      "l4": "선발전형",
+      "l5": "채용 및 처우 승인",
+      "l6_name": "오퍼 레터 발송",
+      "input": "승인안, 입사일",
+      "output": "연봉 계약서",
+      "digital_trace": [
+        "연봉 계약서 DB 레코드",
+        "메일 제목: [ATS] Offer Letter Dispatched",
+        "전자결재 로그: 연봉 계약서"
+      ],
+      "automation_potential": "High",
+      "legacy_l6_match": [
+        "채용 및 처우 승인"
+      ],
+      "improvement_note": "행위 중심 단계를 산출물 중심으로 재정의해 리드타임·재작업 측정이 가능한 이벤트 단위로 분해함."
+    },
+    {
+      "l6_id": "V2-L6-0020",
+      "l3": "채용",
+      "l4": "선발전형",
+      "l5": "채용 및 처우 승인",
+      "l6_name": "오퍼 수락 확인서 확정",
+      "input": "전자서명 결과",
+      "output": "오퍼 수락 확인서",
+      "digital_trace": [
+        "오퍼 수락 확인서 DB 레코드",
+        "메일 제목: [ATS] Offer Acceptance Confirmed",
+        "전자결재 로그: 오퍼 수락 확인서"
+      ],
+      "automation_potential": "High",
+      "legacy_l6_match": [
+        "채용 및 처우 승인"
+      ],
+      "improvement_note": "행위 중심 단계를 산출물 중심으로 재정의해 리드타임·재작업 측정이 가능한 이벤트 단위로 분해함."
+    },
+    {
+      "l6_id": "V2-L6-0021",
+      "l3": "채용",
+      "l4": "채용 후속조치",
+      "l5": "선확보 인력 관리",
+      "l6_name": "선확보 인력 풀 현황 갱신",
+      "input": "후보 상태정보",
+      "output": "선확보 인력 풀 현황표",
+      "digital_trace": [
+        "선확보 인력 풀 현황표 DB 레코드",
+        "메일 제목: [ATS] Talent Pool Snapshot Updated",
+        "전자결재 로그: 선확보 인력 풀 현황표"
+      ],
+      "automation_potential": "High",
+      "legacy_l6_match": [
+        "선확보 인력 관리"
+      ],
+      "improvement_note": "행위 중심 단계를 산출물 중심으로 재정의해 리드타임·재작업 측정이 가능한 이벤트 단위로 분해함."
+    },
+    {
+      "l6_id": "V2-L6-0022",
+      "l3": "채용",
+      "l4": "채용 후속조치",
+      "l5": "선확보 인력 관리",
+      "l6_name": "선확보 인력 접촉 이력 업데이트",
+      "input": "컨택 로그",
+      "output": "선확보 인력 접촉 이력",
+      "digital_trace": [
+        "선확보 인력 접촉 이력 DB 레코드",
+        "메일 제목: [ATS] Talent Outreach Log Updated",
+        "전자결재 로그: 선확보 인력 접촉 이력"
+      ],
+      "automation_potential": "High",
+      "legacy_l6_match": [
+        "선확보 인력 관리"
+      ],
+      "improvement_note": "행위 중심 단계를 산출물 중심으로 재정의해 리드타임·재작업 측정이 가능한 이벤트 단위로 분해함."
+    },
+    {
+      "l6_id": "V2-L6-0023",
+      "l3": "채용",
+      "l4": "채용 후속조치",
+      "l5": "입사 및 온보딩",
+      "l6_name": "입사 서류 체크리스트 확정",
+      "input": "입사자 정보",
+      "output": "입사 서류 체크리스트",
+      "digital_trace": [
+        "입사 서류 체크리스트 DB 레코드",
+        "메일 제목: [ATS] Onboarding Document Checklist Finalized",
+        "전자결재 로그: 입사 서류 체크리스트"
+      ],
+      "automation_potential": "High",
+      "legacy_l6_match": [
+        "입사 및 온보딩"
+      ],
+      "improvement_note": "행위 중심 단계를 산출물 중심으로 재정의해 리드타임·재작업 측정이 가능한 이벤트 단위로 분해함."
+    },
+    {
+      "l6_id": "V2-L6-0024",
+      "l3": "채용",
+      "l4": "채용 후속조치",
+      "l5": "입사 및 온보딩",
+      "l6_name": "온보딩 완료 기록 확정",
+      "input": "수행결과",
+      "output": "온보딩 완료 기록",
+      "digital_trace": [
+        "온보딩 완료 기록 DB 레코드",
+        "메일 제목: [ATS] Onboarding Completion Logged",
+        "전자결재 로그: 온보딩 완료 기록"
+      ],
+      "automation_potential": "High",
+      "legacy_l6_match": [
+        "입사 및 온보딩"
+      ],
+      "improvement_note": "행위 중심 단계를 산출물 중심으로 재정의해 리드타임·재작업 측정이 가능한 이벤트 단위로 분해함."
+    },
+    {
+      "l6_id": "V2-L6-0025",
+      "l3": "보상/근태",
+      "l4": "지급업무",
+      "l5": "정기급여",
+      "l6_name": "월 급여 산정표 확정",
+      "input": "근태집계, 급여마스터",
+      "output": "월 급여 산정표",
+      "digital_trace": [
+        "월 급여 산정표 DB 레코드",
+        "메일 제목: [HRIS-PAY] Monthly Payroll Calculation Finalized",
+        "배치/결재 로그: 월 급여 산정표"
+      ],
+      "automation_potential": "High",
+      "legacy_l6_match": [
+        "정기급여"
+      ],
+      "improvement_note": "급여·근태 단계별 산출물을 분리해 지급 오류/지연 원인을 구간 단위로 추적 가능하게 함."
+    },
+    {
+      "l6_id": "V2-L6-0026",
+      "l3": "보상/근태",
+      "l4": "지급업무",
+      "l5": "정기급여",
+      "l6_name": "급여 이체 파일 생성",
+      "input": "급여 산정표, 계좌정보",
+      "output": "급여 이체 파일(Bank Upload)",
+      "digital_trace": [
+        "급여 이체 파일(Bank Upload) DB 레코드",
+        "메일 제목: [HRIS-PAY] Payroll Bank File Generated",
+        "배치/결재 로그: 급여 이체 파일(Bank Upload)"
+      ],
+      "automation_potential": "High",
+      "legacy_l6_match": [
+        "정기급여"
+      ],
+      "improvement_note": "급여·근태 단계별 산출물을 분리해 지급 오류/지연 원인을 구간 단위로 추적 가능하게 함."
+    },
+    {
+      "l6_id": "V2-L6-0027",
+      "l3": "보상/근태",
+      "l4": "지급업무",
+      "l5": "정기급여",
+      "l6_name": "급여 명세서 발행",
+      "input": "확정 급여 데이터",
+      "output": "급여 명세서 PDF",
+      "digital_trace": [
+        "급여 명세서 PDF DB 레코드",
+        "메일 제목: [HRIS-PAY] Payslip Published",
+        "배치/결재 로그: 급여 명세서 PDF"
+      ],
+      "automation_potential": "High",
+      "legacy_l6_match": [
+        "정기급여"
+      ],
+      "improvement_note": "급여·근태 단계별 산출물을 분리해 지급 오류/지연 원인을 구간 단위로 추적 가능하게 함."
+    },
+    {
+      "l6_id": "V2-L6-0028",
+      "l3": "보상/근태",
+      "l4": "지급업무",
+      "l5": "인센티브",
+      "l6_name": "인센티브 대상자 확정",
+      "input": "성과등급, 정책",
+      "output": "인센티브 대상자 명단",
+      "digital_trace": [
+        "인센티브 대상자 명단 DB 레코드",
+        "메일 제목: [HRIS-PAY] Incentive Eligible List Confirmed",
+        "배치/결재 로그: 인센티브 대상자 명단"
+      ],
+      "automation_potential": "High",
+      "legacy_l6_match": [
+        "인센티브"
+      ],
+      "improvement_note": "급여·근태 단계별 산출물을 분리해 지급 오류/지연 원인을 구간 단위로 추적 가능하게 함."
+    },
+    {
+      "l6_id": "V2-L6-0029",
+      "l3": "보상/근태",
+      "l4": "지급업무",
+      "l5": "인센티브",
+      "l6_name": "인센티브 지급내역서 발행",
+      "input": "대상자명단, 금액",
+      "output": "인센티브 지급내역서",
+      "digital_trace": [
+        "인센티브 지급내역서 DB 레코드",
+        "메일 제목: [HRIS-PAY] Incentive Statement Issued",
+        "배치/결재 로그: 인센티브 지급내역서"
+      ],
+      "automation_potential": "High",
+      "legacy_l6_match": [
+        "인센티브"
+      ],
+      "improvement_note": "급여·근태 단계별 산출물을 분리해 지급 오류/지연 원인을 구간 단위로 추적 가능하게 함."
+    },
+    {
+      "l6_id": "V2-L6-0030",
+      "l3": "보상/근태",
+      "l4": "지급업무",
+      "l5": "연차수당",
+      "l6_name": "연차수당 산정표 확정",
+      "input": "잔여연차, 통상임금",
+      "output": "연차수당 산정표",
+      "digital_trace": [
+        "연차수당 산정표 DB 레코드",
+        "메일 제목: [HRIS-PAY] Annual Leave Allowance Calculated",
+        "배치/결재 로그: 연차수당 산정표"
+      ],
+      "automation_potential": "High",
+      "legacy_l6_match": [
+        "연차수당"
+      ],
+      "improvement_note": "급여·근태 단계별 산출물을 분리해 지급 오류/지연 원인을 구간 단위로 추적 가능하게 함."
+    },
+    {
+      "l6_id": "V2-L6-0031",
+      "l3": "보상/근태",
+      "l4": "지급업무",
+      "l5": "연차수당",
+      "l6_name": "연차수당 지급승인서 확정",
+      "input": "산정표, 승인권한",
+      "output": "연차수당 지급승인서",
+      "digital_trace": [
+        "연차수당 지급승인서 DB 레코드",
+        "메일 제목: [HRIS-PAY] Leave Allowance Approval Completed",
+        "배치/결재 로그: 연차수당 지급승인서"
+      ],
+      "automation_potential": "Mid",
+      "legacy_l6_match": [
+        "연차수당"
+      ],
+      "improvement_note": "급여·근태 단계별 산출물을 분리해 지급 오류/지연 원인을 구간 단위로 추적 가능하게 함."
+    },
+    {
+      "l6_id": "V2-L6-0032",
+      "l3": "보상/근태",
+      "l4": "퇴직정산",
+      "l5": "퇴직자 미지급금 지급",
+      "l6_name": "퇴직 미지급금 정산서 확정",
+      "input": "퇴직자 정산 항목",
+      "output": "퇴직 미지급금 정산서",
+      "digital_trace": [
+        "퇴직 미지급금 정산서 DB 레코드",
+        "메일 제목: [HRIS-PAY] Unpaid Retirement Settlement Finalized",
+        "배치/결재 로그: 퇴직 미지급금 정산서"
+      ],
+      "automation_potential": "High",
+      "legacy_l6_match": [
+        "퇴직자 미지급금 지급"
+      ],
+      "improvement_note": "급여·근태 단계별 산출물을 분리해 지급 오류/지연 원인을 구간 단위로 추적 가능하게 함."
+    },
+    {
+      "l6_id": "V2-L6-0033",
+      "l3": "보상/근태",
+      "l4": "퇴직정산",
+      "l5": "퇴직금 지급",
+      "l6_name": "퇴직금 지급 확정서 발행",
+      "input": "근속, 평균임금",
+      "output": "퇴직금 지급 확정서",
+      "digital_trace": [
+        "퇴직금 지급 확정서 DB 레코드",
+        "메일 제목: [HRIS-PAY] Retirement Benefit Confirmed",
+        "배치/결재 로그: 퇴직금 지급 확정서"
+      ],
+      "automation_potential": "High",
+      "legacy_l6_match": [
+        "퇴직금 지급"
+      ],
+      "improvement_note": "급여·근태 단계별 산출물을 분리해 지급 오류/지연 원인을 구간 단위로 추적 가능하게 함."
+    },
+    {
+      "l6_id": "V2-L6-0034",
+      "l3": "보상/근태",
+      "l4": "연말정산",
+      "l5": "연말정산",
+      "l6_name": "연말정산 대상자 검증표 확정",
+      "input": "인사기초, 세무자료",
+      "output": "연말정산 대상자 검증표",
+      "digital_trace": [
+        "연말정산 대상자 검증표 DB 레코드",
+        "메일 제목: [HRIS-TAX] Year-end Tax 대상자 검증 완료",
+        "배치/결재 로그: 연말정산 대상자 검증표"
+      ],
+      "automation_potential": "High",
+      "legacy_l6_match": [
+        "연말정산"
+      ],
+      "improvement_note": "급여·근태 단계별 산출물을 분리해 지급 오류/지연 원인을 구간 단위로 추적 가능하게 함."
+    },
+    {
+      "l6_id": "V2-L6-0035",
+      "l3": "보상/근태",
+      "l4": "연말정산",
+      "l5": "연말정산",
+      "l6_name": "연말정산 신고파일 생성",
+      "input": "검증표, 공제자료",
+      "output": "연말정산 신고파일",
+      "digital_trace": [
+        "연말정산 신고파일 DB 레코드",
+        "메일 제목: [HRIS-TAX] Year-end Tax Filing File Generated",
+        "배치/결재 로그: 연말정산 신고파일"
+      ],
+      "automation_potential": "High",
+      "legacy_l6_match": [
+        "연말정산"
+      ],
+      "improvement_note": "급여·근태 단계별 산출물을 분리해 지급 오류/지연 원인을 구간 단위로 추적 가능하게 함."
+    },
+    {
+      "l6_id": "V2-L6-0036",
+      "l3": "보상/근태",
+      "l4": "보상기획",
+      "l5": "경영계획",
+      "l6_name": "인건비 계획안 확정",
+      "input": "사업계획, 인원계획",
+      "output": "인건비 계획안",
+      "digital_trace": [
+        "인건비 계획안 DB 레코드",
+        "메일 제목: [HRIS-COMP] Workforce Cost Plan Approved",
+        "배치/결재 로그: 인건비 계획안"
+      ],
+      "automation_potential": "Mid",
+      "legacy_l6_match": [
+        "경영계획"
+      ],
+      "improvement_note": "급여·근태 단계별 산출물을 분리해 지급 오류/지연 원인을 구간 단위로 추적 가능하게 함."
+    },
+    {
+      "l6_id": "V2-L6-0037",
+      "l3": "보상/근태",
+      "l4": "보상기획",
+      "l5": "임금조정",
+      "l6_name": "임금조정 시뮬레이션 리포트 확정",
+      "input": "시장임금, 내부데이터",
+      "output": "임금조정 시뮬레이션 리포트",
+      "digital_trace": [
+        "임금조정 시뮬레이션 리포트 DB 레코드",
+        "메일 제목: [HRIS-COMP] Salary Adjustment Simulation Ready",
+        "배치/결재 로그: 임금조정 시뮬레이션 리포트"
+      ],
+      "automation_potential": "Mid",
+      "legacy_l6_match": [
+        "임금조정"
+      ],
+      "improvement_note": "급여·근태 단계별 산출물을 분리해 지급 오류/지연 원인을 구간 단위로 추적 가능하게 함."
+    },
+    {
+      "l6_id": "V2-L6-0038",
+      "l3": "보상/근태",
+      "l4": "법정복리후생",
+      "l5": "국민연금 정기결정",
+      "l6_name": "국민연금 정기결정 문서 확정",
+      "input": "국민연금 정기결정 기초자료",
+      "output": "국민연금 정기결정 신고서",
+      "digital_trace": [
+        "국민연금 정기결정 신고서 DB 레코드",
+        "메일 제목: [HRIS-STAT] NPS Periodic Decision Filed",
+        "배치/결재 로그: 국민연금 정기결정 신고서"
+      ],
+      "automation_potential": "High",
+      "legacy_l6_match": [
+        "국민연금 정기결정"
+      ],
+      "improvement_note": "급여·근태 단계별 산출물을 분리해 지급 오류/지연 원인을 구간 단위로 추적 가능하게 함."
+    },
+    {
+      "l6_id": "V2-L6-0039",
+      "l3": "보상/근태",
+      "l4": "법정복리후생",
+      "l5": "건강보험/노인장기요양보험 정산",
+      "l6_name": "건강보험/노인장기요양보험 정산 문서 확정",
+      "input": "건강보험/노인장기요양보험 정산 기초자료",
+      "output": "건강·장기요양 정산서",
+      "digital_trace": [
+        "건강·장기요양 정산서 DB 레코드",
+        "메일 제목: [HRIS-STAT] Health/LTC Settlement Completed",
+        "배치/결재 로그: 건강·장기요양 정산서"
+      ],
+      "automation_potential": "High",
+      "legacy_l6_match": [
+        "건강보험/노인장기요양보험 정산"
+      ],
+      "improvement_note": "급여·근태 단계별 산출물을 분리해 지급 오류/지연 원인을 구간 단위로 추적 가능하게 함."
+    },
+    {
+      "l6_id": "V2-L6-0040",
+      "l3": "보상/근태",
+      "l4": "법정복리후생",
+      "l5": "고용보험 자격관리",
+      "l6_name": "고용보험 자격관리 문서 확정",
+      "input": "고용보험 자격관리 기초자료",
+      "output": "고용보험 자격변동 신고서",
+      "digital_trace": [
+        "고용보험 자격변동 신고서 DB 레코드",
+        "메일 제목: [HRIS-STAT] Employment Insurance Status Updated",
+        "배치/결재 로그: 고용보험 자격변동 신고서"
+      ],
+      "automation_potential": "High",
+      "legacy_l6_match": [
+        "고용보험 자격관리"
+      ],
+      "improvement_note": "급여·근태 단계별 산출물을 분리해 지급 오류/지연 원인을 구간 단위로 추적 가능하게 함."
+    },
+    {
+      "l6_id": "V2-L6-0041",
+      "l3": "보상/근태",
+      "l4": "법정복리후생",
+      "l5": "산재보험 신고",
+      "l6_name": "산재보험 신고 문서 확정",
+      "input": "산재보험 신고 기초자료",
+      "output": "산재보험 신고서",
+      "digital_trace": [
+        "산재보험 신고서 DB 레코드",
+        "메일 제목: [HRIS-STAT] Workers Compensation Filing Submitted",
+        "배치/결재 로그: 산재보험 신고서"
+      ],
+      "automation_potential": "High",
+      "legacy_l6_match": [
+        "산재보험 신고"
+      ],
+      "improvement_note": "급여·근태 단계별 산출물을 분리해 지급 오류/지연 원인을 구간 단위로 추적 가능하게 함."
+    },
+    {
+      "l6_id": "V2-L6-0042",
+      "l3": "보상/근태",
+      "l4": "근태운영 및 관리",
+      "l5": "근무형태 생성",
+      "l6_name": "근무형태 코드 등록",
+      "input": "근무제도 기준",
+      "output": "근무형태 코드",
+      "digital_trace": [
+        "근무형태 코드 DB 레코드",
+        "메일 제목: [HRIS-TNA] Work Type Code Registered",
+        "배치/결재 로그: 근무형태 코드"
+      ],
+      "automation_potential": "High",
+      "legacy_l6_match": [
+        "근무형태 생성"
+      ],
+      "improvement_note": "급여·근태 단계별 산출물을 분리해 지급 오류/지연 원인을 구간 단위로 추적 가능하게 함."
+    },
+    {
+      "l6_id": "V2-L6-0043",
+      "l3": "보상/근태",
+      "l4": "근태운영 및 관리",
+      "l5": "근무무효확정",
+      "l6_name": "무효근무 판정서 확정",
+      "input": "근태이력, 사유",
+      "output": "무효근무 판정서",
+      "digital_trace": [
+        "무효근무 판정서 DB 레코드",
+        "메일 제목: [HRIS-TNA] Invalid Attendance Decision Finalized",
+        "배치/결재 로그: 무효근무 판정서"
+      ],
+      "automation_potential": "Mid",
+      "legacy_l6_match": [
+        "근무무효확정"
+      ],
+      "improvement_note": "급여·근태 단계별 산출물을 분리해 지급 오류/지연 원인을 구간 단위로 추적 가능하게 함."
+    },
+    {
+      "l6_id": "V2-L6-0044",
+      "l3": "보상/근태",
+      "l4": "근태운영 및 관리",
+      "l5": "초과근무시간관리",
+      "l6_name": "초과근무 승인내역서 발행",
+      "input": "초과근무 신청, 승인기준",
+      "output": "초과근무 승인내역서",
+      "digital_trace": [
+        "초과근무 승인내역서 DB 레코드",
+        "메일 제목: [HRIS-TNA] Overtime Approval Ledger Published",
+        "배치/결재 로그: 초과근무 승인내역서"
+      ],
+      "automation_potential": "High",
+      "legacy_l6_match": [
+        "초과근무시간관리"
+      ],
+      "improvement_note": "급여·근태 단계별 산출물을 분리해 지급 오류/지연 원인을 구간 단위로 추적 가능하게 함."
+    },
+    {
+      "l6_id": "V2-L6-0045",
+      "l3": "보상/근태",
+      "l4": "근태운영 및 관리",
+      "l5": "일반근태",
+      "l6_name": "일일 근태 집계표 확정",
+      "input": "출퇴근 로그",
+      "output": "일일 근태 집계표",
+      "digital_trace": [
+        "일일 근태 집계표 DB 레코드",
+        "메일 제목: [HRIS-TNA] Daily Attendance Ledger Finalized",
+        "배치/결재 로그: 일일 근태 집계표"
+      ],
+      "automation_potential": "High",
+      "legacy_l6_match": [
+        "일반근태"
+      ],
+      "improvement_note": "급여·근태 단계별 산출물을 분리해 지급 오류/지연 원인을 구간 단위로 추적 가능하게 함."
+    },
+    {
+      "l6_id": "V2-L6-0046",
+      "l3": "보상/근태",
+      "l4": "근태운영 및 관리",
+      "l5": "임직원휴가생성",
+      "l6_name": "휴가 생성 결과표 확정",
+      "input": "휴가정책, 인사정보",
+      "output": "휴가 생성 결과표",
+      "digital_trace": [
+        "휴가 생성 결과표 DB 레코드",
+        "메일 제목: [HRIS-TNA] Leave Generation Completed",
+        "배치/결재 로그: 휴가 생성 결과표"
+      ],
+      "automation_potential": "High",
+      "legacy_l6_match": [
+        "임직원휴가생성"
+      ],
+      "improvement_note": "급여·근태 단계별 산출물을 분리해 지급 오류/지연 원인을 구간 단위로 추적 가능하게 함."
+    },
+    {
+      "l6_id": "V2-L6-0047",
+      "l3": "노사",
+      "l4": "조직문화",
+      "l5": "Change Agent",
+      "l6_name": "Change Agent 실행안 확정",
+      "input": "Change Agent 관련 기초정보",
+      "output": "Change Agent 실행안",
+      "digital_trace": [
+        "Change Agent 실행안 DB 레코드",
+        "메일 제목: [HR-OPS] Change Agent Action Confirmed",
+        "결재 로그: Change Agent 실행안"
+      ],
+      "automation_potential": "Mid",
+      "legacy_l6_match": [
+        "Change Agent"
+      ],
+      "improvement_note": "행위 중심 단계를 산출물 중심으로 재정의해 리드타임·재작업 측정이 가능한 이벤트 단위로 분해함."
+    },
+    {
+      "l6_id": "V2-L6-0048",
+      "l3": "노사",
+      "l4": "조직문화",
+      "l5": "SCI 진단",
+      "l6_name": "SCI 진단 실행안 확정",
+      "input": "SCI 진단 관련 기초정보",
+      "output": "SCI 진단 실행안",
+      "digital_trace": [
+        "SCI 진단 실행안 DB 레코드",
+        "메일 제목: [HR-OPS] SCI 진단 Action Confirmed",
+        "결재 로그: SCI 진단 실행안"
+      ],
+      "automation_potential": "Mid",
+      "legacy_l6_match": [
+        "SCI 진단"
+      ],
+      "improvement_note": "행위 중심 단계를 산출물 중심으로 재정의해 리드타임·재작업 측정이 가능한 이벤트 단위로 분해함."
+    },
+    {
+      "l6_id": "V2-L6-0049",
+      "l3": "노사",
+      "l4": "조직문화",
+      "l5": "Culture Week",
+      "l6_name": "Culture Week 실행안 확정",
+      "input": "Culture Week 관련 기초정보",
+      "output": "Culture Week 실행안",
+      "digital_trace": [
+        "Culture Week 실행안 DB 레코드",
+        "메일 제목: [HR-OPS] Culture Week Action Confirmed",
+        "결재 로그: Culture Week 실행안"
+      ],
+      "automation_potential": "Mid",
+      "legacy_l6_match": [
+        "Culture Week"
+      ],
+      "improvement_note": "행위 중심 단계를 산출물 중심으로 재정의해 리드타임·재작업 측정이 가능한 이벤트 단위로 분해함."
+    },
+    {
+      "l6_id": "V2-L6-0050",
+      "l3": "노사",
+      "l4": "조직문화",
+      "l5": "타운홀미팅",
+      "l6_name": "타운홀미팅 실행안 확정",
+      "input": "타운홀미팅 관련 기초정보",
+      "output": "타운홀미팅 실행안",
+      "digital_trace": [
+        "타운홀미팅 실행안 DB 레코드",
+        "메일 제목: [HR-OPS] 타운홀미팅 Action Confirmed",
+        "결재 로그: 타운홀미팅 실행안"
+      ],
+      "automation_potential": "Mid",
+      "legacy_l6_match": [
+        "타운홀미팅"
+      ],
+      "improvement_note": "행위 중심 단계를 산출물 중심으로 재정의해 리드타임·재작업 측정이 가능한 이벤트 단위로 분해함."
+    },
+    {
+      "l6_id": "V2-L6-0051",
+      "l3": "노사",
+      "l4": "조직문화",
+      "l5": "My Pulse 서베이",
+      "l6_name": "My Pulse 서베이 실행안 확정",
+      "input": "My Pulse 서베이 관련 기초정보",
+      "output": "My Pulse 서베이 실행안",
+      "digital_trace": [
+        "My Pulse 서베이 실행안 DB 레코드",
+        "메일 제목: [HR-OPS] My Pulse 서베이 Action Confirmed",
+        "결재 로그: My Pulse 서베이 실행안"
+      ],
+      "automation_potential": "Mid",
+      "legacy_l6_match": [
+        "My Pulse 서베이"
+      ],
+      "improvement_note": "행위 중심 단계를 산출물 중심으로 재정의해 리드타임·재작업 측정이 가능한 이벤트 단위로 분해함."
+    },
+    {
+      "l6_id": "V2-L6-0052",
+      "l3": "노사",
+      "l4": "협의회",
+      "l5": "협의위원",
+      "l6_name": "협의위원 실행안 확정",
+      "input": "협의위원 관련 기초정보",
+      "output": "협의위원 실행안",
+      "digital_trace": [
+        "협의위원 실행안 DB 레코드",
+        "메일 제목: [HR-OPS] 협의위원 Action Confirmed",
+        "결재 로그: 협의위원 실행안"
+      ],
+      "automation_potential": "Mid",
+      "legacy_l6_match": [
+        "협의위원"
+      ],
+      "improvement_note": "행위 중심 단계를 산출물 중심으로 재정의해 리드타임·재작업 측정이 가능한 이벤트 단위로 분해함."
+    },
+    {
+      "l6_id": "V2-L6-0053",
+      "l3": "노사",
+      "l4": "협의회",
+      "l5": "정기협의회",
+      "l6_name": "정기협의회 실행안 확정",
+      "input": "정기협의회 관련 기초정보",
+      "output": "정기협의회 실행안",
+      "digital_trace": [
+        "정기협의회 실행안 DB 레코드",
+        "메일 제목: [HR-OPS] 정기협의회 Action Confirmed",
+        "결재 로그: 정기협의회 실행안"
+      ],
+      "automation_potential": "Mid",
+      "legacy_l6_match": [
+        "정기협의회"
+      ],
+      "improvement_note": "행위 중심 단계를 산출물 중심으로 재정의해 리드타임·재작업 측정이 가능한 이벤트 단위로 분해함."
+    },
+    {
+      "l6_id": "V2-L6-0054",
+      "l3": "노사",
+      "l4": "협의회",
+      "l5": "사업장 행사",
+      "l6_name": "사업장 행사 실행안 확정",
+      "input": "사업장 행사 관련 기초정보",
+      "output": "사업장 행사 실행안",
+      "digital_trace": [
+        "사업장 행사 실행안 DB 레코드",
+        "메일 제목: [HR-OPS] 사업장 행사 Action Confirmed",
+        "결재 로그: 사업장 행사 실행안"
+      ],
+      "automation_potential": "Mid",
+      "legacy_l6_match": [
+        "사업장 행사"
+      ],
+      "improvement_note": "행위 중심 단계를 산출물 중심으로 재정의해 리드타임·재작업 측정이 가능한 이벤트 단위로 분해함."
+    },
+    {
+      "l6_id": "V2-L6-0055",
+      "l3": "노사",
+      "l4": "노동조합",
+      "l5": "조합관리",
+      "l6_name": "조합관리 실행안 확정",
+      "input": "조합관리 관련 기초정보",
+      "output": "조합관리 실행안",
+      "digital_trace": [
+        "조합관리 실행안 DB 레코드",
+        "메일 제목: [HR-OPS] 조합관리 Action Confirmed",
+        "결재 로그: 조합관리 실행안"
+      ],
+      "automation_potential": "Mid",
+      "legacy_l6_match": [
+        "조합관리"
+      ],
+      "improvement_note": "행위 중심 단계를 산출물 중심으로 재정의해 리드타임·재작업 측정이 가능한 이벤트 단위로 분해함."
+    },
+    {
+      "l6_id": "V2-L6-0056",
+      "l3": "노사",
+      "l4": "노동조합",
+      "l5": "교섭창구",
+      "l6_name": "교섭창구 실행안 확정",
+      "input": "교섭창구 관련 기초정보",
+      "output": "교섭창구 실행안",
+      "digital_trace": [
+        "교섭창구 실행안 DB 레코드",
+        "메일 제목: [HR-OPS] 교섭창구 Action Confirmed",
+        "결재 로그: 교섭창구 실행안"
+      ],
+      "automation_potential": "Mid",
+      "legacy_l6_match": [
+        "교섭창구"
+      ],
+      "improvement_note": "행위 중심 단계를 산출물 중심으로 재정의해 리드타임·재작업 측정이 가능한 이벤트 단위로 분해함."
+    },
+    {
+      "l6_id": "V2-L6-0057",
+      "l3": "노사",
+      "l4": "노동조합",
+      "l5": "단체교섭",
+      "l6_name": "단체교섭 실행안 확정",
+      "input": "단체교섭 관련 기초정보",
+      "output": "단체교섭 실행안",
+      "digital_trace": [
+        "단체교섭 실행안 DB 레코드",
+        "메일 제목: [HR-OPS] 단체교섭 Action Confirmed",
+        "결재 로그: 단체교섭 실행안"
+      ],
+      "automation_potential": "Mid",
+      "legacy_l6_match": [
+        "단체교섭"
+      ],
+      "improvement_note": "행위 중심 단계를 산출물 중심으로 재정의해 리드타임·재작업 측정이 가능한 이벤트 단위로 분해함."
+    },
+    {
+      "l6_id": "V2-L6-0058",
+      "l3": "노사",
+      "l4": "노동조합",
+      "l5": "분쟁조정",
+      "l6_name": "분쟁조정 실행안 확정",
+      "input": "분쟁조정 관련 기초정보",
+      "output": "분쟁조정 실행안",
+      "digital_trace": [
+        "분쟁조정 실행안 DB 레코드",
+        "메일 제목: [HR-OPS] 분쟁조정 Action Confirmed",
+        "결재 로그: 분쟁조정 실행안"
+      ],
+      "automation_potential": "Mid",
+      "legacy_l6_match": [
+        "분쟁조정"
+      ],
+      "improvement_note": "행위 중심 단계를 산출물 중심으로 재정의해 리드타임·재작업 측정이 가능한 이벤트 단위로 분해함."
+    },
+    {
+      "l6_id": "V2-L6-0059",
+      "l3": "노사",
+      "l4": "노동조합",
+      "l5": "쟁의행위",
+      "l6_name": "쟁의행위 실행안 확정",
+      "input": "쟁의행위 관련 기초정보",
+      "output": "쟁의행위 실행안",
+      "digital_trace": [
+        "쟁의행위 실행안 DB 레코드",
+        "메일 제목: [HR-OPS] 쟁의행위 Action Confirmed",
+        "결재 로그: 쟁의행위 실행안"
+      ],
+      "automation_potential": "Mid",
+      "legacy_l6_match": [
+        "쟁의행위"
+      ],
+      "improvement_note": "행위 중심 단계를 산출물 중심으로 재정의해 리드타임·재작업 측정이 가능한 이벤트 단위로 분해함."
+    },
+    {
+      "l6_id": "V2-L6-0060",
+      "l3": "노사",
+      "l4": "노동조합",
+      "l5": "단체협약",
+      "l6_name": "단체협약 실행안 확정",
+      "input": "단체협약 관련 기초정보",
+      "output": "단체협약 실행안",
+      "digital_trace": [
+        "단체협약 실행안 DB 레코드",
+        "메일 제목: [HR-OPS] 단체협약 Action Confirmed",
+        "결재 로그: 단체협약 실행안"
+      ],
+      "automation_potential": "Mid",
+      "legacy_l6_match": [
+        "단체협약"
+      ],
+      "improvement_note": "행위 중심 단계를 산출물 중심으로 재정의해 리드타임·재작업 측정이 가능한 이벤트 단위로 분해함."
+    },
+    {
+      "l6_id": "V2-L6-0061",
+      "l3": "노사",
+      "l4": "ER",
+      "l5": "직장내괴롭힘",
+      "l6_name": "직장내괴롭힘 실행안 확정",
+      "input": "직장내괴롭힘 관련 기초정보",
+      "output": "직장내괴롭힘 실행안",
+      "digital_trace": [
+        "직장내괴롭힘 실행안 DB 레코드",
+        "메일 제목: [HR-OPS] 직장내괴롭힘 Action Confirmed",
+        "결재 로그: 직장내괴롭힘 실행안"
+      ],
+      "automation_potential": "Mid",
+      "legacy_l6_match": [
+        "직장내괴롭힘"
+      ],
+      "improvement_note": "행위 중심 단계를 산출물 중심으로 재정의해 리드타임·재작업 측정이 가능한 이벤트 단위로 분해함."
+    },
+    {
+      "l6_id": "V2-L6-0062",
+      "l3": "노사",
+      "l4": "ER",
+      "l5": "희망퇴직",
+      "l6_name": "희망퇴직 실행안 확정",
+      "input": "희망퇴직 관련 기초정보",
+      "output": "희망퇴직 실행안",
+      "digital_trace": [
+        "희망퇴직 실행안 DB 레코드",
+        "메일 제목: [HR-OPS] 희망퇴직 Action Confirmed",
+        "결재 로그: 희망퇴직 실행안"
+      ],
+      "automation_potential": "Mid",
+      "legacy_l6_match": [
+        "희망퇴직"
+      ],
+      "improvement_note": "행위 중심 단계를 산출물 중심으로 재정의해 리드타임·재작업 측정이 가능한 이벤트 단위로 분해함."
+    },
+    {
+      "l6_id": "V2-L6-0063",
+      "l3": "노사",
+      "l4": "ER",
+      "l5": "동행파악",
+      "l6_name": "동행파악 실행안 확정",
+      "input": "동행파악 관련 기초정보",
+      "output": "동행파악 실행안",
+      "digital_trace": [
+        "동행파악 실행안 DB 레코드",
+        "메일 제목: [HR-OPS] 동행파악 Action Confirmed",
+        "결재 로그: 동행파악 실행안"
+      ],
+      "automation_potential": "Mid",
+      "legacy_l6_match": [
+        "동행파악"
+      ],
+      "improvement_note": "행위 중심 단계를 산출물 중심으로 재정의해 리드타임·재작업 측정이 가능한 이벤트 단위로 분해함."
+    },
+    {
+      "l6_id": "V2-L6-0064",
+      "l3": "노사",
+      "l4": "ER",
+      "l5": "마음건강",
+      "l6_name": "마음건강 실행안 확정",
+      "input": "마음건강 관련 기초정보",
+      "output": "마음건강 실행안",
+      "digital_trace": [
+        "마음건강 실행안 DB 레코드",
+        "메일 제목: [HR-OPS] 마음건강 Action Confirmed",
+        "결재 로그: 마음건강 실행안"
+      ],
+      "automation_potential": "Mid",
+      "legacy_l6_match": [
+        "마음건강"
+      ],
+      "improvement_note": "행위 중심 단계를 산출물 중심으로 재정의해 리드타임·재작업 측정이 가능한 이벤트 단위로 분해함."
+    },
+    {
+      "l6_id": "V2-L6-0065",
+      "l3": "노사",
+      "l4": "ER",
+      "l5": "상생공존문화",
+      "l6_name": "상생공존문화 실행안 확정",
+      "input": "상생공존문화 관련 기초정보",
+      "output": "상생공존문화 실행안",
+      "digital_trace": [
+        "상생공존문화 실행안 DB 레코드",
+        "메일 제목: [HR-OPS] 상생공존문화 Action Confirmed",
+        "결재 로그: 상생공존문화 실행안"
+      ],
+      "automation_potential": "Mid",
+      "legacy_l6_match": [
+        "상생공존문화"
+      ],
+      "improvement_note": "행위 중심 단계를 산출물 중심으로 재정의해 리드타임·재작업 측정이 가능한 이벤트 단위로 분해함."
+    },
+    {
+      "l6_id": "V2-L6-0066",
+      "l3": "노사",
+      "l4": "사건사고 관리",
+      "l5": "생활자 기념쿠키 지급",
+      "l6_name": "생활자 기념쿠키 지급 실행안 확정",
+      "input": "생활자 기념쿠키 지급 관련 기초정보",
+      "output": "생활자 기념쿠키 지급 실행안",
+      "digital_trace": [
+        "생활자 기념쿠키 지급 실행안 DB 레코드",
+        "메일 제목: [HR-OPS] 생활자 기념쿠키 지급 Action Confirmed",
+        "결재 로그: 생활자 기념쿠키 지급 실행안"
+      ],
+      "automation_potential": "Mid",
+      "legacy_l6_match": [
+        "생활자 기념쿠키 지급"
+      ],
+      "improvement_note": "행위 중심 단계를 산출물 중심으로 재정의해 리드타임·재작업 측정이 가능한 이벤트 단위로 분해함."
+    },
+    {
+      "l6_id": "V2-L6-0067",
+      "l3": "노사",
+      "l4": "사건사고 관리",
+      "l5": "여가지원 행사",
+      "l6_name": "여가지원 행사 실행안 확정",
+      "input": "여가지원 행사 관련 기초정보",
+      "output": "여가지원 행사 실행안",
+      "digital_trace": [
+        "여가지원 행사 실행안 DB 레코드",
+        "메일 제목: [HR-OPS] 여가지원 행사 Action Confirmed",
+        "결재 로그: 여가지원 행사 실행안"
+      ],
+      "automation_potential": "Mid",
+      "legacy_l6_match": [
+        "여가지원 행사"
+      ],
+      "improvement_note": "행위 중심 단계를 산출물 중심으로 재정의해 리드타임·재작업 측정이 가능한 이벤트 단위로 분해함."
+    },
+    {
+      "l6_id": "V2-L6-0068",
+      "l3": "노사",
+      "l4": "사건사고 관리",
+      "l5": "면담질의지 준비",
+      "l6_name": "면담질의지 준비 실행안 확정",
+      "input": "면담질의지 준비 관련 기초정보",
+      "output": "면담질의지 준비 실행안",
+      "digital_trace": [
+        "면담질의지 준비 실행안 DB 레코드",
+        "메일 제목: [HR-OPS] 면담질의지 준비 Action Confirmed",
+        "결재 로그: 면담질의지 준비 실행안"
+      ],
+      "automation_potential": "Mid",
+      "legacy_l6_match": [
+        "면담질의지 준비"
+      ],
+      "improvement_note": "행위 중심 단계를 산출물 중심으로 재정의해 리드타임·재작업 측정이 가능한 이벤트 단위로 분해함."
+    },
+    {
+      "l6_id": "V2-L6-0069",
+      "l3": "노사",
+      "l4": "사건사고 관리",
+      "l5": "면담기록/요약",
+      "l6_name": "면담기록/요약 실행안 확정",
+      "input": "면담기록/요약 관련 기초정보",
+      "output": "면담기록/요약 실행안",
+      "digital_trace": [
+        "면담기록/요약 실행안 DB 레코드",
+        "메일 제목: [HR-OPS] 면담기록/요약 Action Confirmed",
+        "결재 로그: 면담기록/요약 실행안"
+      ],
+      "automation_potential": "Mid",
+      "legacy_l6_match": [
+        "면담기록/요약"
+      ],
+      "improvement_note": "행위 중심 단계를 산출물 중심으로 재정의해 리드타임·재작업 측정이 가능한 이벤트 단위로 분해함."
+    },
+    {
+      "l6_id": "V2-L6-0070",
+      "l3": "노사",
+      "l4": "사건사고 관리",
+      "l5": "유사사례 및 판례 확인",
+      "l6_name": "유사사례 및 판례 확인 실행안 확정",
+      "input": "유사사례 및 판례 확인 관련 기초정보",
+      "output": "유사사례 및 판례 확인 실행안",
+      "digital_trace": [
+        "유사사례 및 판례 확인 실행안 DB 레코드",
+        "메일 제목: [HR-OPS] 유사사례 및 판례 확인 Action Confirmed",
+        "결재 로그: 유사사례 및 판례 확인 실행안"
+      ],
+      "automation_potential": "Mid",
+      "legacy_l6_match": [
+        "유사사례 및 판례 확인"
+      ],
+      "improvement_note": "행위 중심 단계를 산출물 중심으로 재정의해 리드타임·재작업 측정이 가능한 이벤트 단위로 분해함."
+    },
+    {
+      "l6_id": "V2-L6-0071",
+      "l3": "노사",
+      "l4": "사건사고 관리",
+      "l5": "징계항목 제안",
+      "l6_name": "징계항목 제안 실행안 확정",
+      "input": "징계항목 제안 관련 기초정보",
+      "output": "징계항목 제안 실행안",
+      "digital_trace": [
+        "징계항목 제안 실행안 DB 레코드",
+        "메일 제목: [HR-OPS] 징계항목 제안 Action Confirmed",
+        "결재 로그: 징계항목 제안 실행안"
+      ],
+      "automation_potential": "Mid",
+      "legacy_l6_match": [
+        "징계항목 제안"
+      ],
+      "improvement_note": "행위 중심 단계를 산출물 중심으로 재정의해 리드타임·재작업 측정이 가능한 이벤트 단위로 분해함."
+    },
+    {
+      "l6_id": "V2-L6-0072",
+      "l3": "임원조직",
+      "l4": "인력운영",
+      "l5": "임원 석세션 플랜",
+      "l6_name": "임원 석세션 플랜 실행안 확정",
+      "input": "임원 석세션 플랜 관련 기초정보",
+      "output": "임원 석세션 플랜 실행안",
+      "digital_trace": [
+        "임원 석세션 플랜 실행안 DB 레코드",
+        "메일 제목: [HR-OPS] 임원 석세션 플랜 Action Confirmed",
+        "결재 로그: 임원 석세션 플랜 실행안"
+      ],
+      "automation_potential": "Mid",
+      "legacy_l6_match": [
+        "임원 석세션 플랜"
+      ],
+      "improvement_note": "행위 중심 단계를 산출물 중심으로 재정의해 리드타임·재작업 측정이 가능한 이벤트 단위로 분해함."
+    },
+    {
+      "l6_id": "V2-L6-0073",
+      "l3": "임원조직",
+      "l4": "인력운영",
+      "l5": "임원 피드백 면담",
+      "l6_name": "임원 피드백 면담 실행안 확정",
+      "input": "임원 피드백 면담 관련 기초정보",
+      "output": "임원 피드백 면담 실행안",
+      "digital_trace": [
+        "임원 피드백 면담 실행안 DB 레코드",
+        "메일 제목: [HR-OPS] 임원 피드백 면담 Action Confirmed",
+        "결재 로그: 임원 피드백 면담 실행안"
+      ],
+      "automation_potential": "Mid",
+      "legacy_l6_match": [
+        "임원 피드백 면담"
+      ],
+      "improvement_note": "행위 중심 단계를 산출물 중심으로 재정의해 리드타임·재작업 측정이 가능한 이벤트 단위로 분해함."
+    },
+    {
+      "l6_id": "V2-L6-0074",
+      "l3": "임원조직",
+      "l4": "인력운영",
+      "l5": "핵심리더 선발",
+      "l6_name": "핵심리더 선발 실행안 확정",
+      "input": "핵심리더 선발 관련 기초정보",
+      "output": "핵심리더 선발 실행안",
+      "digital_trace": [
+        "핵심리더 선발 실행안 DB 레코드",
+        "메일 제목: [HR-OPS] 핵심리더 선발 Action Confirmed",
+        "결재 로그: 핵심리더 선발 실행안"
+      ],
+      "automation_potential": "Mid",
+      "legacy_l6_match": [
+        "핵심리더 선발"
+      ],
+      "improvement_note": "행위 중심 단계를 산출물 중심으로 재정의해 리드타임·재작업 측정이 가능한 이벤트 단위로 분해함."
+    },
+    {
+      "l6_id": "V2-L6-0075",
+      "l3": "임원조직",
+      "l4": "인력운영",
+      "l5": "조직도 작성",
+      "l6_name": "조직도 작성 실행안 확정",
+      "input": "조직도 작성 관련 기초정보",
+      "output": "조직도 작성 실행안",
+      "digital_trace": [
+        "조직도 작성 실행안 DB 레코드",
+        "메일 제목: [HR-OPS] 조직도 작성 Action Confirmed",
+        "결재 로그: 조직도 작성 실행안"
+      ],
+      "automation_potential": "Mid",
+      "legacy_l6_match": [
+        "조직도 작성"
+      ],
+      "improvement_note": "행위 중심 단계를 산출물 중심으로 재정의해 리드타임·재작업 측정이 가능한 이벤트 단위로 분해함."
+    },
+    {
+      "l6_id": "V2-L6-0076",
+      "l3": "임원조직",
+      "l4": "인력운영",
+      "l5": "임원 계약 및 퇴임",
+      "l6_name": "임원 계약 및 퇴임 실행안 확정",
+      "input": "임원 계약 및 퇴임 관련 기초정보",
+      "output": "임원 계약 및 퇴임 실행안",
+      "digital_trace": [
+        "임원 계약 및 퇴임 실행안 DB 레코드",
+        "메일 제목: [HR-OPS] 임원 계약 및 퇴임 Action Confirmed",
+        "결재 로그: 임원 계약 및 퇴임 실행안"
+      ],
+      "automation_potential": "Mid",
+      "legacy_l6_match": [
+        "임원 계약 및 퇴임"
+      ],
+      "improvement_note": "행위 중심 단계를 산출물 중심으로 재정의해 리드타임·재작업 측정이 가능한 이벤트 단위로 분해함."
+    },
+    {
+      "l6_id": "V2-L6-0077",
+      "l3": "임원조직",
+      "l4": "인력운영",
+      "l5": "퇴임임원 후속조치",
+      "l6_name": "퇴임임원 후속조치 실행안 확정",
+      "input": "퇴임임원 후속조치 관련 기초정보",
+      "output": "퇴임임원 후속조치 실행안",
+      "digital_trace": [
+        "퇴임임원 후속조치 실행안 DB 레코드",
+        "메일 제목: [HR-OPS] 퇴임임원 후속조치 Action Confirmed",
+        "결재 로그: 퇴임임원 후속조치 실행안"
+      ],
+      "automation_potential": "Mid",
+      "legacy_l6_match": [
+        "퇴임임원 후속조치"
+      ],
+      "improvement_note": "행위 중심 단계를 산출물 중심으로 재정의해 리드타임·재작업 측정이 가능한 이벤트 단위로 분해함."
+    },
+    {
+      "l6_id": "V2-L6-0078",
+      "l3": "임원조직",
+      "l4": "조직개편",
+      "l5": "수시 조직개편",
+      "l6_name": "수시 조직개편 실행안 확정",
+      "input": "수시 조직개편 관련 기초정보",
+      "output": "수시 조직개편 실행안",
+      "digital_trace": [
+        "수시 조직개편 실행안 DB 레코드",
+        "메일 제목: [HR-OPS] 수시 조직개편 Action Confirmed",
+        "결재 로그: 수시 조직개편 실행안"
+      ],
+      "automation_potential": "Mid",
+      "legacy_l6_match": [
+        "수시 조직개편"
+      ],
+      "improvement_note": "행위 중심 단계를 산출물 중심으로 재정의해 리드타임·재작업 측정이 가능한 이벤트 단위로 분해함."
+    },
+    {
+      "l6_id": "V2-L6-0079",
+      "l3": "임원조직",
+      "l4": "조직개편",
+      "l5": "정기 조직개편",
+      "l6_name": "정기 조직개편 실행안 확정",
+      "input": "정기 조직개편 관련 기초정보",
+      "output": "정기 조직개편 실행안",
+      "digital_trace": [
+        "정기 조직개편 실행안 DB 레코드",
+        "메일 제목: [HR-OPS] 정기 조직개편 Action Confirmed",
+        "결재 로그: 정기 조직개편 실행안"
+      ],
+      "automation_potential": "Mid",
+      "legacy_l6_match": [
+        "정기 조직개편"
+      ],
+      "improvement_note": "행위 중심 단계를 산출물 중심으로 재정의해 리드타임·재작업 측정이 가능한 이벤트 단위로 분해함."
+    },
+    {
+      "l6_id": "V2-L6-0080",
+      "l3": "임원조직",
+      "l4": "교육/양성",
+      "l5": "임원 부부 명상과정",
+      "l6_name": "임원 부부 명상과정 실행안 확정",
+      "input": "임원 부부 명상과정 관련 기초정보",
+      "output": "임원 부부 명상과정 실행안",
+      "digital_trace": [
+        "임원 부부 명상과정 실행안 DB 레코드",
+        "메일 제목: [HR-OPS] 임원 부부 명상과정 Action Confirmed",
+        "결재 로그: 임원 부부 명상과정 실행안"
+      ],
+      "automation_potential": "Mid",
+      "legacy_l6_match": [
+        "임원 부부 명상과정"
+      ],
+      "improvement_note": "행위 중심 단계를 산출물 중심으로 재정의해 리드타임·재작업 측정이 가능한 이벤트 단위로 분해함."
+    },
+    {
+      "l6_id": "V2-L6-0081",
+      "l3": "임원조직",
+      "l4": "교육/양성",
+      "l5": "SLP/TLP 과정",
+      "l6_name": "SLP/TLP 과정 실행안 확정",
+      "input": "SLP/TLP 과정 관련 기초정보",
+      "output": "SLP/TLP 과정 실행안",
+      "digital_trace": [
+        "SLP/TLP 과정 실행안 DB 레코드",
+        "메일 제목: [HR-OPS] SLP/TLP 과정 Action Confirmed",
+        "결재 로그: SLP/TLP 과정 실행안"
+      ],
+      "automation_potential": "Mid",
+      "legacy_l6_match": [
+        "SLP/TLP 과정"
+      ],
+      "improvement_note": "행위 중심 단계를 산출물 중심으로 재정의해 리드타임·재작업 측정이 가능한 이벤트 단위로 분해함."
+    },
+    {
+      "l6_id": "V2-L6-0082",
+      "l3": "임원조직",
+      "l4": "교육/양성",
+      "l5": "그룹장 양성과정",
+      "l6_name": "그룹장 양성과정 실행안 확정",
+      "input": "그룹장 양성과정 관련 기초정보",
+      "output": "그룹장 양성과정 실행안",
+      "digital_trace": [
+        "그룹장 양성과정 실행안 DB 레코드",
+        "메일 제목: [HR-OPS] 그룹장 양성과정 Action Confirmed",
+        "결재 로그: 그룹장 양성과정 실행안"
+      ],
+      "automation_potential": "Mid",
+      "legacy_l6_match": [
+        "그룹장 양성과정"
+      ],
+      "improvement_note": "행위 중심 단계를 산출물 중심으로 재정의해 리드타임·재작업 측정이 가능한 이벤트 단위로 분해함."
+    },
+    {
+      "l6_id": "V2-L6-0083",
+      "l3": "총무",
+      "l4": "사내 서비스 운영",
+      "l5": "날인 및 증명서 관리",
+      "l6_name": "날인 및 증명서 관리 실행안 확정",
+      "input": "날인 및 증명서 관리 관련 기초정보",
+      "output": "날인 및 증명서 관리 실행안",
+      "digital_trace": [
+        "날인 및 증명서 관리 실행안 DB 레코드",
+        "메일 제목: [HR-OPS] 날인 및 증명서 관리 Action Confirmed",
+        "결재 로그: 날인 및 증명서 관리 실행안"
+      ],
+      "automation_potential": "Mid",
+      "legacy_l6_match": [
+        "날인 및 증명서 관리"
+      ],
+      "improvement_note": "행위 중심 단계를 산출물 중심으로 재정의해 리드타임·재작업 측정이 가능한 이벤트 단위로 분해함."
+    },
+    {
+      "l6_id": "V2-L6-0084",
+      "l3": "총무",
+      "l4": "사내 서비스 운영",
+      "l5": "사내 화음 운영",
+      "l6_name": "사내 화음 운영 실행안 확정",
+      "input": "사내 화음 운영 관련 기초정보",
+      "output": "사내 화음 운영 실행안",
+      "digital_trace": [
+        "사내 화음 운영 실행안 DB 레코드",
+        "메일 제목: [HR-OPS] 사내 화음 운영 Action Confirmed",
+        "결재 로그: 사내 화음 운영 실행안"
+      ],
+      "automation_potential": "Mid",
+      "legacy_l6_match": [
+        "사내 화음 운영"
+      ],
+      "improvement_note": "행위 중심 단계를 산출물 중심으로 재정의해 리드타임·재작업 측정이 가능한 이벤트 단위로 분해함."
+    },
+    {
+      "l6_id": "V2-L6-0085",
+      "l3": "총무",
+      "l4": "사내 서비스 운영",
+      "l5": "두발로 운영",
+      "l6_name": "두발로 운영 실행안 확정",
+      "input": "두발로 운영 관련 기초정보",
+      "output": "두발로 운영 실행안",
+      "digital_trace": [
+        "두발로 운영 실행안 DB 레코드",
+        "메일 제목: [HR-OPS] 두발로 운영 Action Confirmed",
+        "결재 로그: 두발로 운영 실행안"
+      ],
+      "automation_potential": "Mid",
+      "legacy_l6_match": [
+        "두발로 운영"
+      ],
+      "improvement_note": "행위 중심 단계를 산출물 중심으로 재정의해 리드타임·재작업 측정이 가능한 이벤트 단위로 분해함."
+    },
+    {
+      "l6_id": "V2-L6-0086",
+      "l3": "총무",
+      "l4": "사내 서비스 운영",
+      "l5": "안내센터 운영",
+      "l6_name": "안내센터 운영 실행안 확정",
+      "input": "안내센터 운영 관련 기초정보",
+      "output": "안내센터 운영 실행안",
+      "digital_trace": [
+        "안내센터 운영 실행안 DB 레코드",
+        "메일 제목: [HR-OPS] 안내센터 운영 Action Confirmed",
+        "결재 로그: 안내센터 운영 실행안"
+      ],
+      "automation_potential": "Mid",
+      "legacy_l6_match": [
+        "안내센터 운영"
+      ],
+      "improvement_note": "행위 중심 단계를 산출물 중심으로 재정의해 리드타임·재작업 측정이 가능한 이벤트 단위로 분해함."
+    },
+    {
+      "l6_id": "V2-L6-0087",
+      "l3": "총무",
+      "l4": "사내 서비스 운영",
+      "l5": "사내 전화 운영",
+      "l6_name": "사내 전화 운영 실행안 확정",
+      "input": "사내 전화 운영 관련 기초정보",
+      "output": "사내 전화 운영 실행안",
+      "digital_trace": [
+        "사내 전화 운영 실행안 DB 레코드",
+        "메일 제목: [HR-OPS] 사내 전화 운영 Action Confirmed",
+        "결재 로그: 사내 전화 운영 실행안"
+      ],
+      "automation_potential": "Mid",
+      "legacy_l6_match": [
+        "사내 전화 운영"
+      ],
+      "improvement_note": "행위 중심 단계를 산출물 중심으로 재정의해 리드타임·재작업 측정이 가능한 이벤트 단위로 분해함."
+    },
+    {
+      "l6_id": "V2-L6-0088",
+      "l3": "총무",
+      "l4": "사내 인프라 관리",
+      "l5": "사무실 레이아웃 관리",
+      "l6_name": "사무실 레이아웃 관리 실행안 확정",
+      "input": "사무실 레이아웃 관리 관련 기초정보",
+      "output": "사무실 레이아웃 관리 실행안",
+      "digital_trace": [
+        "사무실 레이아웃 관리 실행안 DB 레코드",
+        "메일 제목: [HR-OPS] 사무실 레이아웃 관리 Action Confirmed",
+        "결재 로그: 사무실 레이아웃 관리 실행안"
+      ],
+      "automation_potential": "Mid",
+      "legacy_l6_match": [
+        "사무실 레이아웃 관리"
+      ],
+      "improvement_note": "행위 중심 단계를 산출물 중심으로 재정의해 리드타임·재작업 측정이 가능한 이벤트 단위로 분해함."
+    },
+    {
+      "l6_id": "V2-L6-0089",
+      "l3": "총무",
+      "l4": "사내 인프라 관리",
+      "l5": "피트니스 관리",
+      "l6_name": "피트니스 관리 실행안 확정",
+      "input": "피트니스 관리 관련 기초정보",
+      "output": "피트니스 관리 실행안",
+      "digital_trace": [
+        "피트니스 관리 실행안 DB 레코드",
+        "메일 제목: [HR-OPS] 피트니스 관리 Action Confirmed",
+        "결재 로그: 피트니스 관리 실행안"
+      ],
+      "automation_potential": "Mid",
+      "legacy_l6_match": [
+        "피트니스 관리"
+      ],
+      "improvement_note": "행위 중심 단계를 산출물 중심으로 재정의해 리드타임·재작업 측정이 가능한 이벤트 단위로 분해함."
+    },
+    {
+      "l6_id": "V2-L6-0090",
+      "l3": "총무",
+      "l4": "사내 인프라 관리",
+      "l5": "주차장 관리",
+      "l6_name": "주차장 관리 실행안 확정",
+      "input": "주차장 관리 관련 기초정보",
+      "output": "주차장 관리 실행안",
+      "digital_trace": [
+        "주차장 관리 실행안 DB 레코드",
+        "메일 제목: [HR-OPS] 주차장 관리 Action Confirmed",
+        "결재 로그: 주차장 관리 실행안"
+      ],
+      "automation_potential": "Mid",
+      "legacy_l6_match": [
+        "주차장 관리"
+      ],
+      "improvement_note": "행위 중심 단계를 산출물 중심으로 재정의해 리드타임·재작업 측정이 가능한 이벤트 단위로 분해함."
+    },
+    {
+      "l6_id": "V2-L6-0091",
+      "l3": "총무",
+      "l4": "사내 인프라 관리",
+      "l5": "숙박시설 운영",
+      "l6_name": "숙박시설 운영 실행안 확정",
+      "input": "숙박시설 운영 관련 기초정보",
+      "output": "숙박시설 운영 실행안",
+      "digital_trace": [
+        "숙박시설 운영 실행안 DB 레코드",
+        "메일 제목: [HR-OPS] 숙박시설 운영 Action Confirmed",
+        "결재 로그: 숙박시설 운영 실행안"
+      ],
+      "automation_potential": "Mid",
+      "legacy_l6_match": [
+        "숙박시설 운영"
+      ],
+      "improvement_note": "행위 중심 단계를 산출물 중심으로 재정의해 리드타임·재작업 측정이 가능한 이벤트 단위로 분해함."
+    },
+    {
+      "l6_id": "V2-L6-0092",
+      "l3": "총무",
+      "l4": "사내 인프라 관리",
+      "l5": "회의실 운영",
+      "l6_name": "회의실 운영 실행안 확정",
+      "input": "회의실 운영 관련 기초정보",
+      "output": "회의실 운영 실행안",
+      "digital_trace": [
+        "회의실 운영 실행안 DB 레코드",
+        "메일 제목: [HR-OPS] 회의실 운영 Action Confirmed",
+        "결재 로그: 회의실 운영 실행안"
+      ],
+      "automation_potential": "Mid",
+      "legacy_l6_match": [
+        "회의실 운영"
+      ],
+      "improvement_note": "행위 중심 단계를 산출물 중심으로 재정의해 리드타임·재작업 측정이 가능한 이벤트 단위로 분해함."
+    },
+    {
+      "l6_id": "V2-L6-0093",
+      "l3": "총무",
+      "l4": "사내 인프라 관리",
+      "l5": "외부 사무실 운영",
+      "l6_name": "외부 사무실 운영 실행안 확정",
+      "input": "외부 사무실 운영 관련 기초정보",
+      "output": "외부 사무실 운영 실행안",
+      "digital_trace": [
+        "외부 사무실 운영 실행안 DB 레코드",
+        "메일 제목: [HR-OPS] 외부 사무실 운영 Action Confirmed",
+        "결재 로그: 외부 사무실 운영 실행안"
+      ],
+      "automation_potential": "Mid",
+      "legacy_l6_match": [
+        "외부 사무실 운영"
+      ],
+      "improvement_note": "행위 중심 단계를 산출물 중심으로 재정의해 리드타임·재작업 측정이 가능한 이벤트 단위로 분해함."
+    },
+    {
+      "l6_id": "V2-L6-0094",
+      "l3": "총무",
+      "l4": "임직원 지원",
+      "l5": "사택 관리",
+      "l6_name": "사택 관리 실행안 확정",
+      "input": "사택 관리 관련 기초정보",
+      "output": "사택 관리 실행안",
+      "digital_trace": [
+        "사택 관리 실행안 DB 레코드",
+        "메일 제목: [HR-OPS] 사택 관리 Action Confirmed",
+        "결재 로그: 사택 관리 실행안"
+      ],
+      "automation_potential": "Mid",
+      "legacy_l6_match": [
+        "사택 관리"
+      ],
+      "improvement_note": "행위 중심 단계를 산출물 중심으로 재정의해 리드타임·재작업 측정이 가능한 이벤트 단위로 분해함."
+    },
+    {
+      "l6_id": "V2-L6-0095",
+      "l3": "총무",
+      "l4": "임직원 지원",
+      "l5": "비품 관리",
+      "l6_name": "비품 관리 실행안 확정",
+      "input": "비품 관리 관련 기초정보",
+      "output": "비품 관리 실행안",
+      "digital_trace": [
+        "비품 관리 실행안 DB 레코드",
+        "메일 제목: [HR-OPS] 비품 관리 Action Confirmed",
+        "결재 로그: 비품 관리 실행안"
+      ],
+      "automation_potential": "Mid",
+      "legacy_l6_match": [
+        "비품 관리"
+      ],
+      "improvement_note": "행위 중심 단계를 산출물 중심으로 재정의해 리드타임·재작업 측정이 가능한 이벤트 단위로 분해함."
+    },
+    {
+      "l6_id": "V2-L6-0096",
+      "l3": "총무",
+      "l4": "임직원 지원",
+      "l5": "임직원 자산관리",
+      "l6_name": "임직원 자산관리 실행안 확정",
+      "input": "임직원 자산관리 관련 기초정보",
+      "output": "임직원 자산관리 실행안",
+      "digital_trace": [
+        "임직원 자산관리 실행안 DB 레코드",
+        "메일 제목: [HR-OPS] 임직원 자산관리 Action Confirmed",
+        "결재 로그: 임직원 자산관리 실행안"
+      ],
+      "automation_potential": "Mid",
+      "legacy_l6_match": [
+        "임직원 자산관리"
+      ],
+      "improvement_note": "행위 중심 단계를 산출물 중심으로 재정의해 리드타임·재작업 측정이 가능한 이벤트 단위로 분해함."
+    },
+    {
+      "l6_id": "V2-L6-0097",
+      "l3": "총무",
+      "l4": "차량 관리",
+      "l5": "건물 관리",
+      "l6_name": "건물 관리 실행안 확정",
+      "input": "건물 관리 관련 기초정보",
+      "output": "건물 관리 실행안",
+      "digital_trace": [
+        "건물 관리 실행안 DB 레코드",
+        "메일 제목: [HR-OPS] 건물 관리 Action Confirmed",
+        "결재 로그: 건물 관리 실행안"
+      ],
+      "automation_potential": "Mid",
+      "legacy_l6_match": [
+        "건물 관리"
+      ],
+      "improvement_note": "행위 중심 단계를 산출물 중심으로 재정의해 리드타임·재작업 측정이 가능한 이벤트 단위로 분해함."
+    },
+    {
+      "l6_id": "V2-L6-0098",
+      "l3": "총무",
+      "l4": "차량 관리",
+      "l5": "임원 지원",
+      "l6_name": "임원 지원 실행안 확정",
+      "input": "임원 지원 관련 기초정보",
+      "output": "임원 지원 실행안",
+      "digital_trace": [
+        "임원 지원 실행안 DB 레코드",
+        "메일 제목: [HR-OPS] 임원 지원 Action Confirmed",
+        "결재 로그: 임원 지원 실행안"
+      ],
+      "automation_potential": "Mid",
+      "legacy_l6_match": [
+        "임원 지원"
+      ],
+      "improvement_note": "행위 중심 단계를 산출물 중심으로 재정의해 리드타임·재작업 측정이 가능한 이벤트 단위로 분해함."
+    },
+    {
+      "l6_id": "V2-L6-0099",
+      "l3": "총무",
+      "l4": "차량 관리",
+      "l5": "임직원 출장지원",
+      "l6_name": "임직원 출장지원 실행안 확정",
+      "input": "임직원 출장지원 관련 기초정보",
+      "output": "임직원 출장지원 실행안",
+      "digital_trace": [
+        "임직원 출장지원 실행안 DB 레코드",
+        "메일 제목: [HR-OPS] 임직원 출장지원 Action Confirmed",
+        "결재 로그: 임직원 출장지원 실행안"
+      ],
+      "automation_potential": "Mid",
+      "legacy_l6_match": [
+        "임직원 출장지원"
+      ],
+      "improvement_note": "행위 중심 단계를 산출물 중심으로 재정의해 리드타임·재작업 측정이 가능한 이벤트 단위로 분해함."
+    },
+    {
+      "l6_id": "V2-L6-0100",
+      "l3": "총무",
+      "l4": "차량 관리",
+      "l5": "법인 차량 관리",
+      "l6_name": "법인 차량 관리 실행안 확정",
+      "input": "법인 차량 관리 관련 기초정보",
+      "output": "법인 차량 관리 실행안",
+      "digital_trace": [
+        "법인 차량 관리 실행안 DB 레코드",
+        "메일 제목: [HR-OPS] 법인 차량 관리 Action Confirmed",
+        "결재 로그: 법인 차량 관리 실행안"
+      ],
+      "automation_potential": "Mid",
+      "legacy_l6_match": [
+        "법인 차량 관리"
+      ],
+      "improvement_note": "행위 중심 단계를 산출물 중심으로 재정의해 리드타임·재작업 측정이 가능한 이벤트 단위로 분해함."
+    },
+    {
+      "l6_id": "V2-L6-0101",
+      "l3": "총무",
+      "l4": "차량 관리",
+      "l5": "수행기사 관리",
+      "l6_name": "수행기사 관리 실행안 확정",
+      "input": "수행기사 관리 관련 기초정보",
+      "output": "수행기사 관리 실행안",
+      "digital_trace": [
+        "수행기사 관리 실행안 DB 레코드",
+        "메일 제목: [HR-OPS] 수행기사 관리 Action Confirmed",
+        "결재 로그: 수행기사 관리 실행안"
+      ],
+      "automation_potential": "Mid",
+      "legacy_l6_match": [
+        "수행기사 관리"
+      ],
+      "improvement_note": "행위 중심 단계를 산출물 중심으로 재정의해 리드타임·재작업 측정이 가능한 이벤트 단위로 분해함."
+    },
+    {
+      "l6_id": "V2-L6-0102",
+      "l3": "총무",
+      "l4": "차량 관리",
+      "l5": "업무버스 관리",
+      "l6_name": "업무버스 관리 실행안 확정",
+      "input": "업무버스 관리 관련 기초정보",
+      "output": "업무버스 관리 실행안",
+      "digital_trace": [
+        "업무버스 관리 실행안 DB 레코드",
+        "메일 제목: [HR-OPS] 업무버스 관리 Action Confirmed",
+        "결재 로그: 업무버스 관리 실행안"
+      ],
+      "automation_potential": "Mid",
+      "legacy_l6_match": [
+        "업무버스 관리"
+      ],
+      "improvement_note": "행위 중심 단계를 산출물 중심으로 재정의해 리드타임·재작업 측정이 가능한 이벤트 단위로 분해함."
+    },
+    {
+      "l6_id": "V2-L6-0103",
+      "l3": "총무",
+      "l4": "협력사 관리",
+      "l5": "상주협력사 관리",
+      "l6_name": "상주협력사 관리 실행안 확정",
+      "input": "상주협력사 관리 관련 기초정보",
+      "output": "상주협력사 관리 실행안",
+      "digital_trace": [
+        "상주협력사 관리 실행안 DB 레코드",
+        "메일 제목: [HR-OPS] 상주협력사 관리 Action Confirmed",
+        "결재 로그: 상주협력사 관리 실행안"
+      ],
+      "automation_potential": "Mid",
+      "legacy_l6_match": [
+        "상주협력사 관리"
+      ],
+      "improvement_note": "행위 중심 단계를 산출물 중심으로 재정의해 리드타임·재작업 측정이 가능한 이벤트 단위로 분해함."
+    },
+    {
+      "l6_id": "V2-L6-0104",
+      "l3": "총무",
+      "l4": "협력사 관리",
+      "l5": "승무협력사 관리",
+      "l6_name": "승무협력사 관리 실행안 확정",
+      "input": "승무협력사 관리 관련 기초정보",
+      "output": "승무협력사 관리 실행안",
+      "digital_trace": [
+        "승무협력사 관리 실행안 DB 레코드",
+        "메일 제목: [HR-OPS] 승무협력사 관리 Action Confirmed",
+        "결재 로그: 승무협력사 관리 실행안"
+      ],
+      "automation_potential": "Mid",
+      "legacy_l6_match": [
+        "승무협력사 관리"
+      ],
+      "improvement_note": "행위 중심 단계를 산출물 중심으로 재정의해 리드타임·재작업 측정이 가능한 이벤트 단위로 분해함."
+    },
+    {
+      "l6_id": "V2-L6-0105",
+      "l3": "해외인사",
+      "l4": "인력운영",
+      "l5": "파견자 문의 대응",
+      "l6_name": "파견자 문의 대응 실행안 확정",
+      "input": "파견자 문의 대응 관련 기초정보",
+      "output": "파견자 문의 대응 실행안",
+      "digital_trace": [
+        "파견자 문의 대응 실행안 DB 레코드",
+        "메일 제목: [HR-OPS] 파견자 문의 대응 Action Confirmed",
+        "결재 로그: 파견자 문의 대응 실행안"
+      ],
+      "automation_potential": "Mid",
+      "legacy_l6_match": [
+        "파견자 문의 대응"
+      ],
+      "improvement_note": "행위 중심 단계를 산출물 중심으로 재정의해 리드타임·재작업 측정이 가능한 이벤트 단위로 분해함."
+    },
+    {
+      "l6_id": "V2-L6-0106",
+      "l3": "해외인사",
+      "l4": "인력운영",
+      "l5": "주재원 인사(선발/부임/관리/귀임)",
+      "l6_name": "주재원 인사(선발/부임/관리/귀임) 실행안 확정",
+      "input": "주재원 인사(선발/부임/관리/귀임) 관련 기초정보",
+      "output": "주재원 인사(선발/부임/관리/귀임) 실행안",
+      "digital_trace": [
+        "주재원 인사(선발/부임/관리/귀임) 실행안 DB 레코드",
+        "메일 제목: [HR-OPS] 주재원 인사(선발/부임/관리/귀임) Action Confirmed",
+        "결재 로그: 주재원 인사(선발/부임/관리/귀임) 실행안"
+      ],
+      "automation_potential": "Mid",
+      "legacy_l6_match": [
+        "주재원 인사(선발/부임/관리/귀임)"
+      ],
+      "improvement_note": "행위 중심 단계를 산출물 중심으로 재정의해 리드타임·재작업 측정이 가능한 이벤트 단위로 분해함."
+    },
+    {
+      "l6_id": "V2-L6-0107",
+      "l3": "해외인사",
+      "l4": "공통",
+      "l5": "STEP 운영",
+      "l6_name": "STEP 운영 실행안 확정",
+      "input": "STEP 운영 관련 기초정보",
+      "output": "STEP 운영 실행안",
+      "digital_trace": [
+        "STEP 운영 실행안 DB 레코드",
+        "메일 제목: [HR-OPS] STEP 운영 Action Confirmed",
+        "결재 로그: STEP 운영 실행안"
+      ],
+      "automation_potential": "Mid",
+      "legacy_l6_match": [
+        "STEP 운영"
+      ],
+      "improvement_note": "행위 중심 단계를 산출물 중심으로 재정의해 리드타임·재작업 측정이 가능한 이벤트 단위로 분해함."
+    },
+    {
+      "l6_id": "V2-L6-0108",
+      "l3": "해외인사",
+      "l4": "공통",
+      "l5": "양성 파견 운영",
+      "l6_name": "양성 파견 운영 실행안 확정",
+      "input": "양성 파견 운영 관련 기초정보",
+      "output": "양성 파견 운영 실행안",
+      "digital_trace": [
+        "양성 파견 운영 실행안 DB 레코드",
+        "메일 제목: [HR-OPS] 양성 파견 운영 Action Confirmed",
+        "결재 로그: 양성 파견 운영 실행안"
+      ],
+      "automation_potential": "Mid",
+      "legacy_l6_match": [
+        "양성 파견 운영"
+      ],
+      "improvement_note": "행위 중심 단계를 산출물 중심으로 재정의해 리드타임·재작업 측정이 가능한 이벤트 단위로 분해함."
+    },
+    {
+      "l6_id": "V2-L6-0109",
+      "l3": "해외인사",
+      "l4": "공통",
+      "l5": "교격 파견 부임/귀임",
+      "l6_name": "교격 파견 부임/귀임 실행안 확정",
+      "input": "교격 파견 부임/귀임 관련 기초정보",
+      "output": "교격 파견 부임/귀임 실행안",
+      "digital_trace": [
+        "교격 파견 부임/귀임 실행안 DB 레코드",
+        "메일 제목: [HR-OPS] 교격 파견 부임/귀임 Action Confirmed",
+        "결재 로그: 교격 파견 부임/귀임 실행안"
+      ],
+      "automation_potential": "Mid",
+      "legacy_l6_match": [
+        "교격 파견 부임/귀임"
+      ],
+      "improvement_note": "행위 중심 단계를 산출물 중심으로 재정의해 리드타임·재작업 측정이 가능한 이벤트 단위로 분해함."
+    },
+    {
+      "l6_id": "V2-L6-0110",
+      "l3": "해외인사",
+      "l4": "임원인사",
+      "l5": "VP 승격",
+      "l6_name": "VP 승격 실행안 확정",
+      "input": "VP 승격 관련 기초정보",
+      "output": "VP 승격 실행안",
+      "digital_trace": [
+        "VP 승격 실행안 DB 레코드",
+        "메일 제목: [HR-OPS] VP 승격 Action Confirmed",
+        "결재 로그: VP 승격 실행안"
+      ],
+      "automation_potential": "Mid",
+      "legacy_l6_match": [
+        "VP 승격"
+      ],
+      "improvement_note": "행위 중심 단계를 산출물 중심으로 재정의해 리드타임·재작업 측정이 가능한 이벤트 단위로 분해함."
+    },
+    {
+      "l6_id": "V2-L6-0111",
+      "l3": "해외인사",
+      "l4": "임원인사",
+      "l5": "현지인 평가",
+      "l6_name": "현지인 평가 실행안 확정",
+      "input": "현지인 평가 관련 기초정보",
+      "output": "현지인 평가 실행안",
+      "digital_trace": [
+        "현지인 평가 실행안 DB 레코드",
+        "메일 제목: [HR-OPS] 현지인 평가 Action Confirmed",
+        "결재 로그: 현지인 평가 실행안"
+      ],
+      "automation_potential": "Mid",
+      "legacy_l6_match": [
+        "현지인 평가"
+      ],
+      "improvement_note": "행위 중심 단계를 산출물 중심으로 재정의해 리드타임·재작업 측정이 가능한 이벤트 단위로 분해함."
+    },
+    {
+      "l6_id": "V2-L6-0112",
+      "l3": "해외인사",
+      "l4": "주재원 제도",
+      "l5": "지료 관리",
+      "l6_name": "지료 관리 실행안 확정",
+      "input": "지료 관리 관련 기초정보",
+      "output": "지료 관리 실행안",
+      "digital_trace": [
+        "지료 관리 실행안 DB 레코드",
+        "메일 제목: [HR-OPS] 지료 관리 Action Confirmed",
+        "결재 로그: 지료 관리 실행안"
+      ],
+      "automation_potential": "Mid",
+      "legacy_l6_match": [
+        "지료 관리"
+      ],
+      "improvement_note": "행위 중심 단계를 산출물 중심으로 재정의해 리드타임·재작업 측정이 가능한 이벤트 단위로 분해함."
+    },
+    {
+      "l6_id": "V2-L6-0113",
+      "l3": "해외인사",
+      "l4": "주재원 제도",
+      "l5": "조직 관리",
+      "l6_name": "조직 관리 실행안 확정",
+      "input": "조직 관리 관련 기초정보",
+      "output": "조직 관리 실행안",
+      "digital_trace": [
+        "조직 관리 실행안 DB 레코드",
+        "메일 제목: [HR-OPS] 조직 관리 Action Confirmed",
+        "결재 로그: 조직 관리 실행안"
+      ],
+      "automation_potential": "Mid",
+      "legacy_l6_match": [
+        "조직 관리"
+      ],
+      "improvement_note": "행위 중심 단계를 산출물 중심으로 재정의해 리드타임·재작업 측정이 가능한 이벤트 단위로 분해함."
+    },
+    {
+      "l6_id": "V2-L6-0114",
+      "l3": "해외인사",
+      "l4": "주재원 제도",
+      "l5": "평가 운영",
+      "l6_name": "평가 운영 실행안 확정",
+      "input": "평가 운영 관련 기초정보",
+      "output": "평가 운영 실행안",
+      "digital_trace": [
+        "평가 운영 실행안 DB 레코드",
+        "메일 제목: [HR-OPS] 평가 운영 Action Confirmed",
+        "결재 로그: 평가 운영 실행안"
+      ],
+      "automation_potential": "Mid",
+      "legacy_l6_match": [
+        "평가 운영"
+      ],
+      "improvement_note": "행위 중심 단계를 산출물 중심으로 재정의해 리드타임·재작업 측정이 가능한 이벤트 단위로 분해함."
+    },
+    {
+      "l6_id": "V2-L6-0115",
+      "l3": "해외인사",
+      "l4": "주재원 제도",
+      "l5": "승격 운영",
+      "l6_name": "승격 운영 실행안 확정",
+      "input": "승격 운영 관련 기초정보",
+      "output": "승격 운영 실행안",
+      "digital_trace": [
+        "승격 운영 실행안 DB 레코드",
+        "메일 제목: [HR-OPS] 승격 운영 Action Confirmed",
+        "결재 로그: 승격 운영 실행안"
+      ],
+      "automation_potential": "Mid",
+      "legacy_l6_match": [
+        "승격 운영"
+      ],
+      "improvement_note": "행위 중심 단계를 산출물 중심으로 재정의해 리드타임·재작업 측정이 가능한 이벤트 단위로 분해함."
+    },
+    {
+      "l6_id": "V2-L6-0116",
+      "l3": "해외인사",
+      "l4": "주재원 제도",
+      "l5": "보상 운영",
+      "l6_name": "보상 운영 실행안 확정",
+      "input": "보상 운영 관련 기초정보",
+      "output": "보상 운영 실행안",
+      "digital_trace": [
+        "보상 운영 실행안 DB 레코드",
+        "메일 제목: [HR-OPS] 보상 운영 Action Confirmed",
+        "결재 로그: 보상 운영 실행안"
+      ],
+      "automation_potential": "Mid",
+      "legacy_l6_match": [
+        "보상 운영"
+      ],
+      "improvement_note": "행위 중심 단계를 산출물 중심으로 재정의해 리드타임·재작업 측정이 가능한 이벤트 단위로 분해함."
+    },
+    {
+      "l6_id": "V2-L6-0117",
+      "l3": "해외인사",
+      "l4": "주재원 제도",
+      "l5": "징계 관리",
+      "l6_name": "징계 관리 실행안 확정",
+      "input": "징계 관리 관련 기초정보",
+      "output": "징계 관리 실행안",
+      "digital_trace": [
+        "징계 관리 실행안 DB 레코드",
+        "메일 제목: [HR-OPS] 징계 관리 Action Confirmed",
+        "결재 로그: 징계 관리 실행안"
+      ],
+      "automation_potential": "Mid",
+      "legacy_l6_match": [
+        "징계 관리"
+      ],
+      "improvement_note": "행위 중심 단계를 산출물 중심으로 재정의해 리드타임·재작업 측정이 가능한 이벤트 단위로 분해함."
+    },
+    {
+      "l6_id": "V2-L6-0118",
+      "l3": "해외인사",
+      "l4": "보상",
+      "l5": "인센티브 지급조정 정비",
+      "l6_name": "인센티브 지급조정 정비 실행안 확정",
+      "input": "인센티브 지급조정 정비 관련 기초정보",
+      "output": "인센티브 지급조정 정비 실행안",
+      "digital_trace": [
+        "인센티브 지급조정 정비 실행안 DB 레코드",
+        "메일 제목: [HR-OPS] 인센티브 지급조정 정비 Action Confirmed",
+        "결재 로그: 인센티브 지급조정 정비 실행안"
+      ],
+      "automation_potential": "Mid",
+      "legacy_l6_match": [
+        "인센티브 지급조정 정비"
+      ],
+      "improvement_note": "행위 중심 단계를 산출물 중심으로 재정의해 리드타임·재작업 측정이 가능한 이벤트 단위로 분해함."
+    },
+    {
+      "l6_id": "V2-L6-0119",
+      "l3": "해외인사",
+      "l4": "채용",
+      "l5": "재입사 기준 관리",
+      "l6_name": "재입사 기준 관리 실행안 확정",
+      "input": "재입사 기준 관리 관련 기초정보",
+      "output": "재입사 기준 관리 실행안",
+      "digital_trace": [
+        "재입사 기준 관리 실행안 DB 레코드",
+        "메일 제목: [HR-OPS] 재입사 기준 관리 Action Confirmed",
+        "결재 로그: 재입사 기준 관리 실행안"
+      ],
+      "automation_potential": "Mid",
+      "legacy_l6_match": [
+        "재입사 기준 관리"
+      ],
+      "improvement_note": "행위 중심 단계를 산출물 중심으로 재정의해 리드타임·재작업 측정이 가능한 이벤트 단위로 분해함."
+    },
+    {
+      "l6_id": "V2-L6-0120",
+      "l3": "해외인사",
+      "l4": "채용",
+      "l5": "현지 한국인 채용 관리",
+      "l6_name": "현지 한국인 채용 관리 실행안 확정",
+      "input": "현지 한국인 채용 관리 관련 기초정보",
+      "output": "현지 한국인 채용 관리 실행안",
+      "digital_trace": [
+        "현지 한국인 채용 관리 실행안 DB 레코드",
+        "메일 제목: [HR-OPS] 현지 한국인 채용 관리 Action Confirmed",
+        "결재 로그: 현지 한국인 채용 관리 실행안"
+      ],
+      "automation_potential": "Mid",
+      "legacy_l6_match": [
+        "현지 한국인 채용 관리"
+      ],
+      "improvement_note": "행위 중심 단계를 산출물 중심으로 재정의해 리드타임·재작업 측정이 가능한 이벤트 단위로 분해함."
+    },
+    {
+      "l6_id": "V2-L6-0121",
+      "l3": "해외인사",
+      "l4": "채용",
+      "l5": "글로벌 리더 양성 교육",
+      "l6_name": "글로벌 리더 양성 교육 실행안 확정",
+      "input": "글로벌 리더 양성 교육 관련 기초정보",
+      "output": "글로벌 리더 양성 교육 실행안",
+      "digital_trace": [
+        "글로벌 리더 양성 교육 실행안 DB 레코드",
+        "메일 제목: [HR-OPS] 글로벌 리더 양성 교육 Action Confirmed",
+        "결재 로그: 글로벌 리더 양성 교육 실행안"
+      ],
+      "automation_potential": "Mid",
+      "legacy_l6_match": [
+        "글로벌 리더 양성 교육"
+      ],
+      "improvement_note": "행위 중심 단계를 산출물 중심으로 재정의해 리드타임·재작업 측정이 가능한 이벤트 단위로 분해함."
+    },
+    {
+      "l6_id": "V2-L6-0122",
+      "l3": "해외인사",
+      "l4": "노사관리",
+      "l5": "거점 교육",
+      "l6_name": "거점 교육 실행안 확정",
+      "input": "거점 교육 관련 기초정보",
+      "output": "거점 교육 실행안",
+      "digital_trace": [
+        "거점 교육 실행안 DB 레코드",
+        "메일 제목: [HR-OPS] 거점 교육 Action Confirmed",
+        "결재 로그: 거점 교육 실행안"
+      ],
+      "automation_potential": "Mid",
+      "legacy_l6_match": [
+        "거점 교육"
+      ],
+      "improvement_note": "행위 중심 단계를 산출물 중심으로 재정의해 리드타임·재작업 측정이 가능한 이벤트 단위로 분해함."
+    },
+    {
+      "l6_id": "V2-L6-0123",
+      "l3": "해외인사",
+      "l4": "노사관리",
+      "l5": "주재원 교육",
+      "l6_name": "주재원 교육 실행안 확정",
+      "input": "주재원 교육 관련 기초정보",
+      "output": "주재원 교육 실행안",
+      "digital_trace": [
+        "주재원 교육 실행안 DB 레코드",
+        "메일 제목: [HR-OPS] 주재원 교육 Action Confirmed",
+        "결재 로그: 주재원 교육 실행안"
+      ],
+      "automation_potential": "Mid",
+      "legacy_l6_match": [
+        "주재원 교육"
+      ],
+      "improvement_note": "행위 중심 단계를 산출물 중심으로 재정의해 리드타임·재작업 측정이 가능한 이벤트 단위로 분해함."
+    },
+    {
+      "l6_id": "V2-L6-0124",
+      "l3": "해외인사",
+      "l4": "M&A",
+      "l5": "(실사)문서 분류",
+      "l6_name": "(실사)문서 분류 실행안 확정",
+      "input": "(실사)문서 분류 관련 기초정보",
+      "output": "(실사)문서 분류 실행안",
+      "digital_trace": [
+        "(실사)문서 분류 실행안 DB 레코드",
+        "메일 제목: [HR-OPS] (실사)문서 분류 Action Confirmed",
+        "결재 로그: (실사)문서 분류 실행안"
+      ],
+      "automation_potential": "Mid",
+      "legacy_l6_match": [
+        "(실사)문서 분류"
+      ],
+      "improvement_note": "행위 중심 단계를 산출물 중심으로 재정의해 리드타임·재작업 측정이 가능한 이벤트 단위로 분해함."
+    },
+    {
+      "l6_id": "V2-L6-0125",
+      "l3": "해외인사",
+      "l4": "M&A",
+      "l5": "(실사)문서 목록",
+      "l6_name": "(실사)문서 목록 실행안 확정",
+      "input": "(실사)문서 목록 관련 기초정보",
+      "output": "(실사)문서 목록 실행안",
+      "digital_trace": [
+        "(실사)문서 목록 실행안 DB 레코드",
+        "메일 제목: [HR-OPS] (실사)문서 목록 Action Confirmed",
+        "결재 로그: (실사)문서 목록 실행안"
+      ],
+      "automation_potential": "Mid",
+      "legacy_l6_match": [
+        "(실사)문서 목록"
+      ],
+      "improvement_note": "행위 중심 단계를 산출물 중심으로 재정의해 리드타임·재작업 측정이 가능한 이벤트 단위로 분해함."
+    },
+    {
+      "l6_id": "V2-L6-0126",
+      "l3": "해외인사",
+      "l4": "M&A",
+      "l5": "(실사)결과 분석",
+      "l6_name": "(실사)결과 분석 실행안 확정",
+      "input": "(실사)결과 분석 관련 기초정보",
+      "output": "(실사)결과 분석 실행안",
+      "digital_trace": [
+        "(실사)결과 분석 실행안 DB 레코드",
+        "메일 제목: [HR-OPS] (실사)결과 분석 Action Confirmed",
+        "결재 로그: (실사)결과 분석 실행안"
+      ],
+      "automation_potential": "Mid",
+      "legacy_l6_match": [
+        "(실사)결과 분석"
+      ],
+      "improvement_note": "행위 중심 단계를 산출물 중심으로 재정의해 리드타임·재작업 측정이 가능한 이벤트 단위로 분해함."
+    },
+    {
+      "l6_id": "V2-L6-0127",
+      "l3": "해외인사",
+      "l4": "M&A",
+      "l5": "(실사)시사점 도출",
+      "l6_name": "(실사)시사점 도출 실행안 확정",
+      "input": "(실사)시사점 도출 관련 기초정보",
+      "output": "(실사)시사점 도출 실행안",
+      "digital_trace": [
+        "(실사)시사점 도출 실행안 DB 레코드",
+        "메일 제목: [HR-OPS] (실사)시사점 도출 Action Confirmed",
+        "결재 로그: (실사)시사점 도출 실행안"
+      ],
+      "automation_potential": "Mid",
+      "legacy_l6_match": [
+        "(실사)시사점 도출"
+      ],
+      "improvement_note": "행위 중심 단계를 산출물 중심으로 재정의해 리드타임·재작업 측정이 가능한 이벤트 단위로 분해함."
+    },
+    {
+      "l6_id": "V2-L6-0128",
+      "l3": "해외인사",
+      "l4": "M&A",
+      "l5": "(PMI)계획 수립",
+      "l6_name": "(PMI)계획 수립 실행안 확정",
+      "input": "(PMI)계획 수립 관련 기초정보",
+      "output": "(PMI)계획 수립 실행안",
+      "digital_trace": [
+        "(PMI)계획 수립 실행안 DB 레코드",
+        "메일 제목: [HR-OPS] (PMI)계획 수립 Action Confirmed",
+        "결재 로그: (PMI)계획 수립 실행안"
+      ],
+      "automation_potential": "Mid",
+      "legacy_l6_match": [
+        "(PMI)계획 수립"
+      ],
+      "improvement_note": "행위 중심 단계를 산출물 중심으로 재정의해 리드타임·재작업 측정이 가능한 이벤트 단위로 분해함."
+    },
+    {
+      "l6_id": "V2-L6-0129",
+      "l3": "해외인사",
+      "l4": "M&A",
+      "l5": "(PMI)실적 점검",
+      "l6_name": "(PMI)실적 점검 실행안 확정",
+      "input": "(PMI)실적 점검 관련 기초정보",
+      "output": "(PMI)실적 점검 실행안",
+      "digital_trace": [
+        "(PMI)실적 점검 실행안 DB 레코드",
+        "메일 제목: [HR-OPS] (PMI)실적 점검 Action Confirmed",
+        "결재 로그: (PMI)실적 점검 실행안"
+      ],
+      "automation_potential": "Mid",
+      "legacy_l6_match": [
+        "(PMI)실적 점검"
+      ],
+      "improvement_note": "행위 중심 단계를 산출물 중심으로 재정의해 리드타임·재작업 측정이 가능한 이벤트 단위로 분해함."
+    },
+    {
+      "l6_id": "V2-L6-0130",
+      "l3": "해외인사",
+      "l4": "M&A",
+      "l5": "(PMI)BP 분석",
+      "l6_name": "(PMI)BP 분석 실행안 확정",
+      "input": "(PMI)BP 분석 관련 기초정보",
+      "output": "(PMI)BP 분석 실행안",
+      "digital_trace": [
+        "(PMI)BP 분석 실행안 DB 레코드",
+        "메일 제목: [HR-OPS] (PMI)BP 분석 Action Confirmed",
+        "결재 로그: (PMI)BP 분석 실행안"
+      ],
+      "automation_potential": "Mid",
+      "legacy_l6_match": [
+        "(PMI)BP 분석"
+      ],
+      "improvement_note": "행위 중심 단계를 산출물 중심으로 재정의해 리드타임·재작업 측정이 가능한 이벤트 단위로 분해함."
+    },
+    {
+      "l6_id": "V2-L6-0131",
+      "l3": "해외인사",
+      "l4": "M&A",
+      "l5": "(자회사)운영 방식 개선",
+      "l6_name": "(자회사)운영 방식 개선 실행안 확정",
+      "input": "(자회사)운영 방식 개선 관련 기초정보",
+      "output": "(자회사)운영 방식 개선 실행안",
+      "digital_trace": [
+        "(자회사)운영 방식 개선 실행안 DB 레코드",
+        "메일 제목: [HR-OPS] (자회사)운영 방식 개선 Action Confirmed",
+        "결재 로그: (자회사)운영 방식 개선 실행안"
+      ],
+      "automation_potential": "Mid",
+      "legacy_l6_match": [
+        "(자회사)운영 방식 개선"
+      ],
+      "improvement_note": "행위 중심 단계를 산출물 중심으로 재정의해 리드타임·재작업 측정이 가능한 이벤트 단위로 분해함."
+    }
+  ]
+}
