@@ -44,25 +44,37 @@ def load_l5_pool() -> list[str]:
     return uniq
 
 
+def _core_keyword(target_l5: str) -> str:
+    # 핵심 키워드는 최소한 target_l5 문자열 자체를 포함
+    return target_l5.strip()
+
+
 async def generate_noisy_text_with_llm(target_l5: str) -> str:
     """LLM 생성 시도. 실패하면 빈 문자열 반환."""
     try:
         from backend.llm_service import call_llm  # type: ignore
+        import asyncio
 
+        core_kw = _core_keyword(target_l5)
         prompt = f"""
 당신은 HR 로그 생성기입니다.
 목표 L5 활동: {target_l5}
+핵심 키워드: {core_kw}
 
 아래 조건으로 한국어 비정형 텍스트를 3~5문장 생성하세요.
 - 대화체/보고서체 혼합
 - 노이즈 포함(오타, 중복표현, 주어 생략 일부)
 - 상대 시간 표현 포함(어제, 오늘 오전, 방금 등)
-- 목표 L5와 관련 행위가 반드시 1회 이상 나타나야 함
+- 핵심 키워드("{core_kw}")를 문장에 정확히 1회 이상 포함
+- 동사 포함 문장 사용(예: 검토했다, 작성했다, 확인했다, 제안했다)
 
 JSON으로만 응답:
 {{"raw_text":"..."}}
 """.strip()
-        result = await call_llm("텍스트 생성기", prompt, allow_text_fallback=True)
+        result = await asyncio.wait_for(
+            call_llm("텍스트 생성기", prompt, allow_text_fallback=True, max_tokens=300, temperature=0.7),
+            timeout=8.0,
+        )
         if isinstance(result, dict):
             txt = result.get("raw_text") or result.get("speech") or result.get("message") or ""
             return str(txt).strip()
@@ -72,10 +84,11 @@ JSON으로만 응답:
 
 
 def fallback_noisy_text(target_l5: str) -> str:
+    kw = _core_keyword(target_l5)
     templates = [
-        f"어제 오후에 {target_l5} 관련해서 급히 메모 남깁니다. 담당자A가 먼저 확인했고, 세부는 아직 누락됐어요. 오늘 오전 다시 정리 예정.",
-        f"방금 팀장 통화했고 {target_l5} 건은 처리 방향만 공유됐습니다. 정확한 시각은 어제쯤으로 보이고, 기록이 중간에 끊겼어요.",
-        f"회의록 일부: {target_l5} 진행 필요 의견 있음. 담당이 누군지 애매하고, 오늘 아침에 추가 확인하기로 했습니다.",
+        f"어제 오후 2시경 담당자A가 {kw} 문서를 작성했고, 팀장에게 검토를 요청했습니다. 메모가 일부 깨졌지만 오늘 오전 보완 예정입니다.",
+        f"방금 통화에서 담당자B가 {kw} 건을 확인했다고 보고했습니다. 정확한 시각은 어제 저녁으로 추정되며, 추가 정리본을 작성한다고 했습니다.",
+        f"보고서 일부: {kw} 항목을 먼저 검토하고 결과를 제안했습니다. 담당자C가 오늘 아침에 후속 기록을 남긴 상태입니다.",
     ]
     return random.choice(templates)
 

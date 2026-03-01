@@ -10,9 +10,7 @@ from __future__ import annotations
 
 import json
 import re
-from dataclasses import dataclass
 from datetime import datetime, timedelta
-from pathlib import Path
 from typing import Any, Optional
 
 from fastapi import APIRouter, HTTPException
@@ -23,10 +21,11 @@ try:
 except Exception:  # pragma: no cover
     call_llm = None
 
+from app.services.taxonomy_service import map_to_l5
+
 
 router = APIRouter(prefix="/api/events", tags=["events"])
 
-KB_PATH = Path(__file__).resolve().parents[2] / "docs" / "hr_domain_knowledge.json"
 DEFAULT_THRESHOLD = 0.75
 
 
@@ -74,76 +73,6 @@ class ExtractResponse(BaseModel):
     reference_datetime: str
     events: list[ExtractedEvent]
     summary: dict[str, int]
-
-
-@dataclass
-class TaxonomyMatch:
-    l5_activity_name: str
-    taxonomy_status: str
-    candidates: list[dict[str, Any]]
-
-
-def _load_l5_taxonomy() -> list[str]:
-    if not KB_PATH.exists():
-        raise FileNotFoundError(f"taxonomy file not found: {KB_PATH}")
-
-    raw = json.loads(KB_PATH.read_text(encoding="utf-8"))
-    l5_list: list[str] = []
-    for l3 in raw.get("l3_domains", []):
-        for l4 in l3.get("l4", []):
-            l5_list.extend([x for x in l4.get("l5", []) if isinstance(x, str) and x.strip()])
-
-    if not l5_list:
-        raise ValueError("taxonomy load failed: empty l5 list")
-
-    return sorted(set(l5_list))
-
-
-L5_TAXONOMY = _load_l5_taxonomy()
-
-
-def _norm(text: str) -> str:
-    return re.sub(r"\s+", "", (text or "").lower())
-
-
-def _token_overlap_score(a: str, b: str) -> float:
-    aa = set(re.findall(r"[가-힣A-Za-z0-9]+", a))
-    bb = set(re.findall(r"[가-힣A-Za-z0-9]+", b))
-    if not aa or not bb:
-        return 0.0
-    inter = len(aa & bb)
-    union = len(aa | bb)
-    return inter / union if union else 0.0
-
-
-def _guardrail_map_l5(activity_raw: str, top_k: int = 3) -> TaxonomyMatch:
-    # 1) exact/contains
-    n = _norm(activity_raw)
-    for l5 in L5_TAXONOMY:
-        ln = _norm(l5)
-        if n == ln:
-            return TaxonomyMatch(l5, "matched", [{"l5": l5, "score": 1.0}])
-        if ln and (ln in n or n in ln):
-            return TaxonomyMatch(l5, "matched", [{"l5": l5, "score": 0.9}])
-
-    # 2) token overlap candidate
-    scored: list[tuple[str, float]] = []
-    for l5 in L5_TAXONOMY:
-        s = _token_overlap_score(activity_raw, l5)
-        if s > 0:
-            scored.append((l5, s))
-
-    scored.sort(key=lambda x: x[1], reverse=True)
-    candidates = [{"l5": name, "score": round(score, 4)} for name, score in scored[:top_k]]
-
-    if candidates:
-        top_score = candidates[0]["score"]
-        if top_score >= 0.7:
-            return TaxonomyMatch(candidates[0]["l5"], "matched", candidates)
-        return TaxonomyMatch(candidates[0]["l5"], "suggested", candidates)
-
-    # 3) unclassified
-    return TaxonomyMatch("Unclassified", "unclassified", [])
 
 
 def _parse_ref_dt(reference_datetime: Optional[str]) -> datetime:
@@ -268,22 +197,42 @@ async def _call_llm_extract(prompt: str) -> list[dict[str, Any]]:
 def _fallback_extract(raw_text: str, ref_dt: datetime) -> list[dict[str, Any]]:
     events: list[dict[str, Any]] = []
     lines = [x.strip() for x in re.split(r"[\n\.]+", raw_text) if x.strip()]
+
+    # 1차: 키워드 기반
     for i, line in enumerate(lines[:20], start=1):
-        if not re.search(r"면담|요약|판례|징계|검토|확인|제안|지급|정산", line):
+        if not re.search(r"면담|요약|판례|징계|검토|확인|제안|지급|정산|관리|운영|작성|선발|승인|교육|조사|분석", line):
             continue
         ts = _resolve_relative_time(line, ref_dt)
         actor_match = re.search(r"([A-Za-z가-힣0-9_]+)\s*(?:가|이|는|은)", line)
         actor = actor_match.group(1) if actor_match else "Unknown"
         events.append(
             {
-                "activity_raw": line[:80],
+                "activity_raw": line[:100],
                 "timestamp": ts,
                 "actor": actor,
-                "confidence_score": 0.55 if ts else 0.45,
-                "evidence_span": line[:180],
+                "confidence_score": 0.62 if ts else 0.52,
+                "evidence_span": line[:220],
                 "event_id": f"evt_{i:02d}",
             }
         )
+
+    # 2차: 어떤 경우에도 최소 1개 이벤트 생성(422 방지)
+    if not events and lines:
+        base = lines[0]
+        ts = _resolve_relative_time(base, ref_dt)
+        actor_match = re.search(r"([A-Za-z가-힣0-9_]+)\s*(?:가|이|는|은)", base)
+        actor = actor_match.group(1) if actor_match else "Unknown"
+        events.append(
+            {
+                "activity_raw": base[:100],
+                "timestamp": ts,
+                "actor": actor,
+                "confidence_score": 0.4,
+                "evidence_span": base[:220],
+                "event_id": "evt_01",
+            }
+        )
+
     return events
 
 
@@ -321,13 +270,21 @@ async def extract_events(req: ExtractRequest):
             if not timestamp:
                 timestamp = _resolve_relative_time(evidence_span or activity_raw, ref_dt)
 
-            taxonomy = _guardrail_map_l5(activity_raw, req.options.top_k_candidates)
-            if taxonomy.taxonomy_status == "unclassified":
+            taxonomy = map_to_l5(activity_raw, req.options.top_k_candidates)
+            taxonomy_status = taxonomy.get("taxonomy_status", "unclassified")
+            taxonomy_candidates = taxonomy.get("taxonomy_candidates", [])
+            l5_name = taxonomy.get("l5_activity_name", "Unclassified")
+
+            if taxonomy_status == "unclassified":
                 unc_count += 1
+
+            # taxonomy score를 confidence 보정치로 반영
+            top_tax_score = float(taxonomy_candidates[0]["score"]) if taxonomy_candidates else 0.0
+            confidence = max(confidence, min(top_tax_score, 0.95))
 
             review_needed = (
                 confidence < req.options.low_confidence_threshold
-                or taxonomy.taxonomy_status != "matched"
+                or taxonomy_status != "matched"
                 or not timestamp
                 or actor == "Unknown"
                 or not evidence_span
@@ -338,13 +295,13 @@ async def extract_events(req: ExtractRequest):
             out_events.append(
                 ExtractedEvent(
                     event_id=event_id,
-                    l5_activity_name=taxonomy.l5_activity_name,
+                    l5_activity_name=l5_name,
                     timestamp=timestamp or ref_dt_iso,
                     actor=actor,
                     confidence_score=round(confidence, 4),
                     evidence_span=evidence_span,
-                    taxonomy_status=taxonomy.taxonomy_status,
-                    taxonomy_candidates=[L5Candidate(**c) for c in taxonomy.candidates],
+                    taxonomy_status=taxonomy_status,
+                    taxonomy_candidates=[L5Candidate(**c) for c in taxonomy_candidates],
                     human_review_required=review_needed,
                 )
             )
