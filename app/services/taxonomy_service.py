@@ -14,7 +14,10 @@ from pathlib import Path
 from typing import Any
 
 KB_PATH = Path(__file__).resolve().parents[2] / "docs" / "hr_domain_knowledge.json"
-L6_LIB_PATH = Path(__file__).resolve().parents[2] / "docs" / "hr_l6_apqc_library.json"
+_DOCS_DIR = Path(__file__).resolve().parents[2] / "docs"
+L6_LIB_PATH = _DOCS_DIR / "hr_l6_apqc_master_library.json"
+if not L6_LIB_PATH.exists():
+    L6_LIB_PATH = _DOCS_DIR / "hr_l6_apqc_library.json"
 
 # 도메인 유의어/표현 정규화 사전 (1차)
 SYNONYM_MAP = {
@@ -119,6 +122,16 @@ def get_l5_for_l6_name(l6_name: str) -> str:
         if str(row.get("l6_name", "")).strip() == key:
             return str(row.get("l5") or "Unclassified")
     return "Unclassified"
+
+
+def get_l6_id_for_name(l6_name: str) -> str:
+    key = (l6_name or "").strip()
+    if not key:
+        return ""
+    for row in load_l6_library():
+        if str(row.get("l6_name", "")).strip() == key:
+            return str(row.get("l6_id") or "")
+    return ""
 
 
 def map_to_l5(activity_raw: str, top_k: int = 3) -> dict[str, Any]:

@@ -21,7 +21,7 @@ try:
 except Exception:  # pragma: no cover
     call_llm = None
 
-from app.services.taxonomy_service import get_l5_for_l6_id, get_l5_for_l6_name, map_to_l5, map_to_l6_by_output
+from app.services.taxonomy_service import get_l5_for_l6_id, get_l5_for_l6_name, get_l6_id_for_name, map_to_l5, map_to_l6_by_output
 from app.services.trace_service import append_case_events, build_process_map, build_trace, get_case_events
 from app.services.viz_service import build_mermaid
 
@@ -156,7 +156,7 @@ def _infer_target_l6_from_context(segment: str, full_text: str, prev_l6: str) ->
     f = (full_text or "")
     if any(k in s for k in ["정산서", "결재", "올리지 마", "결재는"]):
         return "퇴직 패키지 정산서 확정"
-    if any(k in s for k in ["보류", "재협의", "다시 협의", "위로금", "면담", "협의"]):
+    if any(k in s for k in ["위로금", "불만 제기", "면담", "협의", "보류", "재협의", "다시 협의"]):
         if any(k in f for k in ["희망퇴직", "위로금", "퇴직"]):
             return "희망퇴직 위로금 협의"
         if prev_l6 and prev_l6 != "Unclassified":
@@ -353,23 +353,23 @@ async def extract_events(req: ExtractRequest):
             mapping_status = taxonomy.get("mapping_status", "unclassified")
 
             l6_map = map_to_l6_by_output(evidence_span or activity_raw, req.options.top_k_candidates)
-            l6_mapping_status = l6_map.get("mapping_status", "unclassified")
 
-            # 예외 상태 이벤트는 원래 진행하려던 업무 문맥을 상속
-            if event_type in ("suspended", "rework", "canceled", "planned"):
-                inherited_l6 = _infer_target_l6_from_context(evidence_span or activity_raw, req.raw_text, prev_l6_name)
-                if inherited_l6 and inherited_l6 != "Unclassified":
-                    l6_map["l6_name"] = inherited_l6
-                    l6_map["mapping_status"] = "matched_l6"
-                    if not l6_map.get("matched_l6_id"):
-                        # 이름 기반 상속일 수 있으므로 id는 비워두되 상태는 유지
-                        l6_map["matched_l6_id"] = l6_map.get("matched_l6_id", "")
-                    inherited_l5 = get_l5_for_l6_name(inherited_l6)
-                    if inherited_l5 != "Unclassified":
-                        l5_name = inherited_l5
-                    elif prev_l5_name != "Unclassified":
-                        l5_name = prev_l5_name
-                    mapping_status = "matched_l6"
+            # 예외/모호 이벤트 모두 맥락 상속 앵커링 적용 (Unclassified 탈출 강제)
+            inherited_l6 = _infer_target_l6_from_context(evidence_span or activity_raw, req.raw_text, prev_l6_name)
+            need_anchor = (l6_map.get("l6_name", "Unclassified") == "Unclassified") or (event_type in ("suspended", "rework", "canceled", "planned"))
+            if need_anchor and inherited_l6 and inherited_l6 != "Unclassified":
+                l6_map["l6_name"] = inherited_l6
+                l6_map["mapping_status"] = "matched_l6"
+                if not l6_map.get("matched_l6_id"):
+                    l6_map["matched_l6_id"] = get_l6_id_for_name(inherited_l6)
+
+            # L6 이름 기반 L5 상속
+            anchored_l5 = get_l5_for_l6_name(l6_map.get("l6_name", ""))
+            if anchored_l5 != "Unclassified":
+                l5_name = anchored_l5
+                mapping_status = "matched_l6"
+            else:
+                mapping_status = l6_map.get("mapping_status", mapping_status)
 
             # L6 매핑 성공 시 부모 L5 상속 강제
             matched_l6_id = l6_map.get("matched_l6_id", "")
