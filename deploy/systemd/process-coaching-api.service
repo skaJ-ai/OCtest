@@ -1,0 +1,17 @@
+[Unit]
+Description=Process Coaching FastAPI Server
+After=network-online.target
+Wants=network-online.target
+
+[Service]
+Type=simple
+WorkingDirectory=/home/openc/.openclaw/workspace/process-coaching
+Environment=PYTHONUNBUFFERED=1
+ExecStart=/home/openc/.openclaw/workspace/process-coaching/.venv/bin/python -m uvicorn backend.app:app --host 127.0.0.1 --port 8000
+Restart=always
+RestartSec=5
+StandardOutput=journal
+StandardError=journal
+
+[Install]
+WantedBy=default.target

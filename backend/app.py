@@ -47,6 +47,14 @@ except ImportError:
     from flow_services import describe_flow, mock_review, mock_validate
     from l345_reference import get_l345_context
 
+try:
+    from app.api.extract import router as extract_router
+    from app.services.trace_service import build_process_map as _build_process_map_viz, build_trace as _build_trace_viz, get_case_events as _get_case_events_viz
+    from app.services.viz_service import build_mermaid as _build_mermaid_viz
+    app.include_router(extract_router)
+except Exception as e:
+    logger.warning(f"extract router not mounted: {e}")
+
 
 def _build_l345_block(context: dict) -> str:
     """req.context에서 L345 참조 블록 생성. 매칭 실패 시 빈 문자열."""
@@ -275,6 +283,27 @@ L5 단위업무: {req.context.get('l5', 'Unknown')}
 
     # LLM이 이미 올바른 형식으로 반환한 경우
     return result
+
+
+@app.get("/api/viz/process-map")
+async def viz_process_map(case_id: str):
+    try:
+        events = _get_case_events_viz(case_id)
+    except Exception:
+        events = []
+    if not events:
+        return {"detail": "case_id not found"}
+    trace = _build_trace_viz(case_id, events)
+    pmap = _build_process_map_viz(case_id, events)
+    return {
+        **pmap,
+        "trace_summary": {
+            "lead_time_sec": trace.get("lead_time_sec", 0),
+            "transition_times": trace.get("transition_times", []),
+            "variant_analysis": trace.get("variant_analysis", []),
+        },
+        "mermaid": _build_mermaid_viz(pmap, trace),
+    }
 
 
 @app.get("/api/health")
