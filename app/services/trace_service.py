@@ -143,6 +143,7 @@ def build_process_map(case_id: str, events: list[dict[str, Any]]) -> dict[str, A
                 "evidence_span": ev.get("evidence_span", ""),
                 "timestamp": ev.get("timestamp", ""),
                 "mapping_status": ev.get("mapping_status", ""),
+                "event_type": ev.get("event_type", "normal"),
             },
         })
         if i > 0:

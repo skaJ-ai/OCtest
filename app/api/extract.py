@@ -66,6 +66,7 @@ class L6Context(BaseModel):
 
 class ExtractedEvent(BaseModel):
     event_id: str
+    event_type: str = "normal"  # normal|rework|suspended|canceled|planned
     l5_activity_name: str
     l6_activity_name: str = "Unclassified"
     mapping_status: str = "unclassified"
@@ -137,6 +138,39 @@ def _resolve_relative_time(text: str, ref_dt: datetime) -> str:
     return ""
 
 
+def _infer_event_type(text: str) -> str:
+    t = (text or "").strip()
+    if any(k in t for k in ["보류", "중단", "올리지 마", "하지 마", "hold"]):
+        return "suspended"
+    if any(k in t for k in ["반려", "재작업", "다시", "재처리"]):
+        return "rework"
+    if any(k in t for k in ["취소", "철회", "중지"]):
+        return "canceled"
+    if any(k in t for k in ["예정", "내일", "추후", "협의하기로"]):
+        return "planned"
+    return "normal"
+
+
+def _split_context_events(raw_text: str) -> list[str]:
+    """복합 문장을 시간/행위/의사결정 전환 지점으로 분할."""
+    text = (raw_text or "").strip()
+    if not text:
+        return []
+
+    # 1차 분할
+    parts = [p.strip() for p in re.split(r"[\.\n]+", text) if p.strip()]
+
+    # 2차 분할(결정/상태 전환 접속어)
+    out: list[str] = []
+    for p in parts:
+        subs = re.split(r"(?:,\s*|\s+그리고\s+|\s+다만\s+|\s+근데\s+)", p)
+        for s in subs:
+            s = s.strip()
+            if s:
+                out.append(s)
+    return out or [text]
+
+
 def _build_prompt(req: ExtractRequest, ref_dt_iso: str) -> str:
     return f"""
 당신은 HR 비정형 로그를 이벤트로 파싱하는 엔진입니다.
@@ -145,10 +179,16 @@ def _build_prompt(req: ExtractRequest, ref_dt_iso: str) -> str:
 [목표]
 원문에서 이벤트를 추출하고 각 이벤트에 아래 필드를 채우세요:
 - activity_raw
+- event_type (normal|rework|suspended|canceled|planned)
 - timestamp (ISO-8601 절대시간)
 - actor
 - confidence_score (0~1)
 - evidence_span (원문에서 직접 발췌)
+
+[복합 문장 분할 규칙]
+- 시간/행위자/의사결정이 바뀌면 이벤트를 분리하세요.
+- "보류", "반려", "하지 마" 같은 부정 개입은 독립 이벤트로 반드시 추출하세요.
+- 예: "정산서 결재는 올리지 마" -> event_type=suspended
 
 [중요: 시간 해석 규칙]
 - reference_datetime={ref_dt_iso}
@@ -207,27 +247,29 @@ async def _call_llm_extract(prompt: str) -> list[dict[str, Any]]:
 
 def _fallback_extract(raw_text: str, ref_dt: datetime) -> list[dict[str, Any]]:
     events: list[dict[str, Any]] = []
-    lines = [x.strip() for x in re.split(r"[\n\.]+", raw_text) if x.strip()]
+    lines = _split_context_events(raw_text)
 
-    # 1차: 키워드 기반
-    for i, line in enumerate(lines[:20], start=1):
-        if not re.search(r"면담|요약|판례|징계|검토|확인|제안|지급|정산|관리|운영|작성|선발|승인|교육|조사|분석", line):
+    for i, line in enumerate(lines[:30], start=1):
+        # 노이즈 문장이라도 예외상태/계획 문장은 살려서 추출
+        if not re.search(r"면담|요약|판례|징계|검토|확인|제안|지급|정산|관리|운영|작성|선발|승인|교육|조사|분석|보류|반려|취소|협의|예정", line):
             continue
         ts = _resolve_relative_time(line, ref_dt)
         actor_match = re.search(r"([A-Za-z가-힣0-9_]+)\s*(?:가|이|는|은)", line)
         actor = actor_match.group(1) if actor_match else "Unknown"
+        e_type = _infer_event_type(line)
         events.append(
             {
-                "activity_raw": line[:100],
+                "activity_raw": line[:120],
+                "event_type": e_type,
                 "timestamp": ts,
                 "actor": actor,
-                "confidence_score": 0.62 if ts else 0.52,
-                "evidence_span": line[:220],
+                "confidence_score": 0.64 if ts else 0.54,
+                "evidence_span": line[:260],
                 "event_id": f"evt_{i:02d}",
             }
         )
 
-    # 2차: 어떤 경우에도 최소 1개 이벤트 생성(422 방지)
+    # 어떤 경우에도 최소 1개 이벤트 생성(422 방지)
     if not events and lines:
         base = lines[0]
         ts = _resolve_relative_time(base, ref_dt)
@@ -235,11 +277,12 @@ def _fallback_extract(raw_text: str, ref_dt: datetime) -> list[dict[str, Any]]:
         actor = actor_match.group(1) if actor_match else "Unknown"
         events.append(
             {
-                "activity_raw": base[:100],
+                "activity_raw": base[:120],
+                "event_type": _infer_event_type(base),
                 "timestamp": ts,
                 "actor": actor,
-                "confidence_score": 0.4,
-                "evidence_span": base[:220],
+                "confidence_score": 0.45,
+                "evidence_span": base[:260],
                 "event_id": "evt_01",
             }
         )
@@ -269,6 +312,9 @@ async def extract_events(req: ExtractRequest):
         low_count = 0
         unc_count = 0
 
+        prev_l6_name = "Unclassified"
+        prev_l5_name = "Unclassified"
+
         for idx, ev in enumerate(events_raw, start=1):
             activity_raw = str(ev.get("activity_raw", "")).strip()
             timestamp = str(ev.get("timestamp", "")).strip() or ""
@@ -276,6 +322,7 @@ async def extract_events(req: ExtractRequest):
             confidence = float(ev.get("confidence_score", 0.0))
             evidence_span = str(ev.get("evidence_span", "")).strip()
             event_id = str(ev.get("event_id", f"evt_{idx:02d}"))
+            event_type = str(ev.get("event_type") or _infer_event_type(evidence_span or activity_raw))
 
             # fallback: relative resolution if timestamp still missing
             if not timestamp:
@@ -289,9 +336,16 @@ async def extract_events(req: ExtractRequest):
             l6_map = map_to_l6_by_output(evidence_span or activity_raw, req.options.top_k_candidates)
             l6_mapping_status = l6_map.get("mapping_status", "unclassified")
 
+            # 예외 상태 이벤트는 원래 진행하려던 업무 문맥을 유지
+            if event_type in ("suspended", "rework") and prev_l6_name != "Unclassified":
+                l6_map["l6_name"] = prev_l6_name
+                l6_map["mapping_status"] = "matched_l6"
+                l5_name = prev_l5_name
+                mapping_status = "matched_l6"
+
             # L6 매핑 성공 시 부모 L5 상속 강제
             matched_l6_id = l6_map.get("matched_l6_id", "")
-            if l6_mapping_status == "matched_l6" and matched_l6_id:
+            if l6_map.get("mapping_status") == "matched_l6" and matched_l6_id:
                 parent_l5 = get_l5_for_l6_id(matched_l6_id)
                 if parent_l5 and parent_l5 != "Unclassified":
                     l5_name = parent_l5
@@ -318,6 +372,7 @@ async def extract_events(req: ExtractRequest):
             out_events.append(
                 ExtractedEvent(
                     event_id=event_id,
+                    event_type=event_type,
                     l5_activity_name=l5_name,
                     l6_activity_name=l6_map.get("l6_name", "Unclassified"),
                     mapping_status=mapping_status,
@@ -335,6 +390,9 @@ async def extract_events(req: ExtractRequest):
                     human_review_required=review_needed,
                 )
             )
+
+            prev_l6_name = l6_map.get("l6_name", prev_l6_name)
+            prev_l5_name = l5_name
 
         case_id = req.context.case_id or "CASE-UNKNOWN"
 

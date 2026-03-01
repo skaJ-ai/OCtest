@@ -45,13 +45,19 @@ def build_mermaid(process_map: dict[str, Any], trace: dict[str, Any]) -> str:
     lines: list[str] = ["flowchart LR"]
 
     # declare nodes in subgraphs
+    exception_nodes: set[str] = set()
     for i, (l5, members) in enumerate(clusters.items(), start=1):
         lines.append(f"  subgraph CL{i}[{l5}]")
         for n in members:
             node_id = n.get("id")
             label = n.get("label", "Unknown")
             safe_label = str(label).replace('"', "'")
-            lines.append(f"    {node_id}[\"{safe_label}\"]")
+            e_type = str((n.get("meta") or {}).get("event_type", "normal"))
+            if e_type in ("rework", "suspended"):
+                lines.append(f"    {node_id}{{\"{safe_label}\"}}")
+                exception_nodes.add(str(node_id))
+            else:
+                lines.append(f"    {node_id}[\"{safe_label}\"]")
         lines.append("  end")
 
     # edges + critical detection
@@ -95,6 +101,8 @@ def build_mermaid(process_map: dict[str, Any], trace: dict[str, Any]) -> str:
     # style declarations
     for nid in sorted(critical_nodes):
         lines.append(f"  style {nid} fill:#ffdddd,stroke:#ff0000,stroke-width:2px")
+    for nid in sorted(exception_nodes):
+        lines.append(f"  style {nid} fill:#fff5f5,stroke:#ff0000,stroke-width:2px,stroke-dasharray: 5 5")
 
     for idx, style in edge_style_index.items():
         if style == "critical":
