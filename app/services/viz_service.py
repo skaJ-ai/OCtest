@@ -117,9 +117,13 @@ def build_mermaid(process_map: dict[str, Any], trace: dict[str, Any]) -> str:
     lines.append("    lg1[빨간색 실선: 평균 대비 지연(Bottleneck) 구간]")
     lines.append("    lg2[주황색 점선: Step Skipping 발생 구간]")
     lines.append("    lg3[보라색 화살표: 역순(Order Inversion) 발생 구간]")
+    lines.append("    lg4[정상 이벤트: 실선 사각 노드]")
+    lines.append("    lg5[예외 이벤트(rework/suspended): 빨간 점선 마름모 노드]")
     lines.append("  end")
     lines.append("  style lg1 fill:#ffe5e5,stroke:#ff0000,stroke-width:2px")
     lines.append("  style lg2 fill:#fff1e0,stroke:#ff9900,stroke-width:2px,stroke-dasharray: 5 5")
     lines.append("  style lg3 fill:#f1e5ff,stroke:#8000ff,stroke-width:2px")
+    lines.append("  style lg4 fill:#e8f5ff,stroke:#2d6cdf,stroke-width:2px")
+    lines.append("  style lg5 fill:#fff5f5,stroke:#ff0000,stroke-width:2px,stroke-dasharray: 5 5")
 
     return "\n".join(lines)

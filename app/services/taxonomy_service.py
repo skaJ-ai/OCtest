@@ -34,6 +34,18 @@ SYNONYM_MAP = {
     "job description": "직무기술서 작성",
 }
 
+# 노사 ER/징계 전용 앵커 사전
+LABOR_ER_ANCHORS = {
+    "위로금 조정": "희망퇴직 위로금 협의",
+    "위로금 협의": "희망퇴직 위로금 협의",
+    "소명 기회 부여": "징계 소명서 접수 및 검토",
+    "소명": "징계 소명서 접수 및 검토",
+    "징계위 재개최": "징계위원회 재개최 의결",
+    "징계위원회 재개": "징계위원회 재개최 의결",
+    "재협의": "희망퇴직 위로금 협의",
+    "반려": "희망퇴직 위로금 협의",
+}
+
 
 def _norm(text: str) -> str:
     t = (text or "").strip().lower()
@@ -200,6 +212,21 @@ def map_to_l6_by_output(text: str, top_k: int = 3) -> dict[str, Any]:
         }
 
     output_tokens = ["신청", "신청서", "등록", "등록번호", "완료", "발송", "처리 이력", "이력", "승인"]
+
+    # 노사 전용 앵커 우선 적용
+    for phrase, target_l6 in LABOR_ER_ANCHORS.items():
+        if phrase in src:
+            l6_id = get_l6_id_for_name(target_l6)
+            l5 = get_l5_for_l6_name(target_l6)
+            if l6_id:
+                return {
+                    "l6_name": target_l6,
+                    "mapping_status": "matched_l6",
+                    "candidates": [{"l6_id": l6_id, "l6_name": target_l6, "l5": l5, "output": "", "score": 0.95, "similarity_score": 0.7, "keyword_score": 0.25, "bonus_score": 0.0}],
+                    "matched_l6_id": l6_id,
+                    "isolation_pass_reason": f"노사 전용 앵커('{phrase}')가 감지되어 '{target_l6}'로 맥락 상속 매핑했습니다.",
+                    "confidence_breakdown": {"keyword_score": 0.25, "similarity_score": 0.7, "bonus_score": 0.0, "final_score": 0.95},
+                }
 
     def keyword_score(src_text: str, output_text: str) -> float:
         score = 0.0
