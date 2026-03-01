@@ -21,7 +21,7 @@ try:
 except Exception:  # pragma: no cover
     call_llm = None
 
-from app.services.taxonomy_service import map_to_l5
+from app.services.taxonomy_service import map_to_l5, map_to_l6_by_output
 
 
 router = APIRouter(prefix="/api/events", tags=["events"])
@@ -58,6 +58,8 @@ class L5Candidate(BaseModel):
 class ExtractedEvent(BaseModel):
     event_id: str
     l5_activity_name: str
+    l6_activity_name: str = "Unclassified"
+    l6_status: str = "unclassified"
     timestamp: str
     actor: str
     confidence_score: float
@@ -292,10 +294,14 @@ async def extract_events(req: ExtractRequest):
             if review_needed:
                 low_count += 1
 
+            l6_map = map_to_l6_by_output(evidence_span or activity_raw, req.options.top_k_candidates)
+
             out_events.append(
                 ExtractedEvent(
                     event_id=event_id,
                     l5_activity_name=l5_name,
+                    l6_activity_name=l6_map.get("l6_name", "Unclassified"),
+                    l6_status=l6_map.get("status", "unclassified"),
                     timestamp=timestamp or ref_dt_iso,
                     actor=actor,
                     confidence_score=round(confidence, 4),
