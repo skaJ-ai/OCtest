@@ -21,7 +21,7 @@ try:
 except Exception:  # pragma: no cover
     call_llm = None
 
-from app.services.taxonomy_service import get_l5_for_l6_id, map_to_l5, map_to_l6_by_output
+from app.services.taxonomy_service import get_l5_for_l6_id, get_l5_for_l6_name, map_to_l5, map_to_l6_by_output
 from app.services.trace_service import append_case_events, build_process_map, build_trace, get_case_events
 from app.services.viz_service import build_mermaid
 
@@ -151,6 +151,19 @@ def _infer_event_type(text: str) -> str:
     return "normal"
 
 
+def _infer_target_l6_from_context(segment: str, full_text: str, prev_l6: str) -> str:
+    s = (segment or "")
+    f = (full_text or "")
+    if any(k in s for k in ["정산서", "결재", "올리지 마", "결재는"]):
+        return "퇴직 패키지 정산서 확정"
+    if any(k in s for k in ["보류", "재협의", "다시 협의", "위로금", "면담", "협의"]):
+        if any(k in f for k in ["희망퇴직", "위로금", "퇴직"]):
+            return "희망퇴직 위로금 협의"
+        if prev_l6 and prev_l6 != "Unclassified":
+            return prev_l6
+    return prev_l6 if prev_l6 else "Unclassified"
+
+
 def _split_context_events(raw_text: str) -> list[str]:
     """복합 문장을 시간/행위/의사결정 전환 지점으로 분할."""
     text = (raw_text or "").strip()
@@ -189,6 +202,12 @@ def _build_prompt(req: ExtractRequest, ref_dt_iso: str) -> str:
 - 시간/행위자/의사결정이 바뀌면 이벤트를 분리하세요.
 - "보류", "반려", "하지 마" 같은 부정 개입은 독립 이벤트로 반드시 추출하세요.
 - 예: "정산서 결재는 올리지 마" -> event_type=suspended
+
+[맥락 상속(Coreference) 규칙]
+- suspended/rework/canceled 이벤트는 반드시 타겟 L6를 지정하세요.
+- 문장에 목적어가 생략되면 앞뒤 문맥에서 상속해 l6_activity_name을 채우세요.
+- 예: "일단 보류" -> 직전 "위로금 협의" 문맥이면 "희망퇴직 위로금 협의"에 매핑.
+- 예: "정산서 결재는 올리지 마" -> "퇴직 패키지 정산서 확정"의 suspended 이벤트로 매핑.
 
 [중요: 시간 해석 규칙]
 - reference_datetime={ref_dt_iso}
@@ -336,12 +355,21 @@ async def extract_events(req: ExtractRequest):
             l6_map = map_to_l6_by_output(evidence_span or activity_raw, req.options.top_k_candidates)
             l6_mapping_status = l6_map.get("mapping_status", "unclassified")
 
-            # 예외 상태 이벤트는 원래 진행하려던 업무 문맥을 유지
-            if event_type in ("suspended", "rework") and prev_l6_name != "Unclassified":
-                l6_map["l6_name"] = prev_l6_name
-                l6_map["mapping_status"] = "matched_l6"
-                l5_name = prev_l5_name
-                mapping_status = "matched_l6"
+            # 예외 상태 이벤트는 원래 진행하려던 업무 문맥을 상속
+            if event_type in ("suspended", "rework", "canceled", "planned"):
+                inherited_l6 = _infer_target_l6_from_context(evidence_span or activity_raw, req.raw_text, prev_l6_name)
+                if inherited_l6 and inherited_l6 != "Unclassified":
+                    l6_map["l6_name"] = inherited_l6
+                    l6_map["mapping_status"] = "matched_l6"
+                    if not l6_map.get("matched_l6_id"):
+                        # 이름 기반 상속일 수 있으므로 id는 비워두되 상태는 유지
+                        l6_map["matched_l6_id"] = l6_map.get("matched_l6_id", "")
+                    inherited_l5 = get_l5_for_l6_name(inherited_l6)
+                    if inherited_l5 != "Unclassified":
+                        l5_name = inherited_l5
+                    elif prev_l5_name != "Unclassified":
+                        l5_name = prev_l5_name
+                    mapping_status = "matched_l6"
 
             # L6 매핑 성공 시 부모 L5 상속 강제
             matched_l6_id = l6_map.get("matched_l6_id", "")

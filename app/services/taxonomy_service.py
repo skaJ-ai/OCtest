@@ -111,6 +111,16 @@ def get_l5_for_l6_id(l6_id: str) -> str:
     return "Unclassified"
 
 
+def get_l5_for_l6_name(l6_name: str) -> str:
+    key = (l6_name or "").strip()
+    if not key:
+        return "Unclassified"
+    for row in load_l6_library():
+        if str(row.get("l6_name", "")).strip() == key:
+            return str(row.get("l5") or "Unclassified")
+    return "Unclassified"
+
+
 def map_to_l5(activity_raw: str, top_k: int = 3) -> dict[str, Any]:
     taxonomy = load_l5_taxonomy()
     activity = normalize_activity(activity_raw)

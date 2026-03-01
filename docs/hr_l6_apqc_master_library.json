@@ -2516,6 +2516,21 @@
         "결재/승인 로그: 퇴직 패키지 정산서"
       ],
       "automation_potential": "High"
+    },
+    {
+      "l6_id": "L6-LR-0011",
+      "l3": "노사",
+      "l4": "ER",
+      "l5": "희망퇴직",
+      "l6_name": "희망퇴직 위로금 협의",
+      "input": "면담 기록, 위로금 기준표, 개인별 근속정보",
+      "output": "희망퇴직 위로금 협의서",
+      "digital_trace": [
+        "ER_NEGOTIATION_MINUTES 보안테이블 업데이트",
+        "암호화 PDF(위로금 협의서) 발송 로그",
+        "HRIS 희망퇴직 협의 상태값 변경"
+      ],
+      "automation_potential": "Mid"
     }
   ]
 }
