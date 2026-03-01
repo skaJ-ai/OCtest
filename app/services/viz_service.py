@@ -71,7 +71,12 @@ def build_mermaid(process_map: dict[str, Any], trace: dict[str, Any]) -> str:
         s = str(e.get("source"))
         t = str(e.get("target"))
         eid = str(e.get("id"))
-        lines.append(f"  {s} --> {t}")
+        # label with transition time (red text)
+        tt = trans_by_edge.get((s, t), 0.0)
+        if tt > 0:
+            lines.append(f"  {s} -- \"{int(tt)}s\" --> {t}")
+        else:
+            lines.append(f"  {s} --> {t}")
 
         edge_t = trans_by_edge.get((s, t), 0.0)
         if edge_t >= critical_threshold and critical_threshold > 0:
@@ -92,6 +97,24 @@ def build_mermaid(process_map: dict[str, Any], trace: dict[str, Any]) -> str:
         elif at == "order_inversion":
             edge_style_index[idx] = "inversion"
 
+    # feedback loop: rework/suspended -> later resolved on same L6
+    node_meta = {str(n.get('id')): (n.get('meta') or {}) for n in nodes}
+    feedback_edges: list[tuple[str, str]] = []
+    for i in range(len(nodes)):
+        ni = str(nodes[i].get('id'))
+        mi = node_meta.get(ni, {})
+        if str(mi.get('event_type')) not in ('rework', 'suspended'):
+            continue
+        for j in range(i + 1, len(nodes)):
+            nj = str(nodes[j].get('id'))
+            mj = node_meta.get(nj, {})
+            if str(mj.get('event_type')) == 'resolved' and str(mj.get('l6')) == str(mi.get('l6')):
+                feedback_edges.append((ni, nj))
+                break
+
+    for k, (a, b) in enumerate(feedback_edges, start=1):
+        lines.append(f"  {a} -. feedback .-> {b}")
+
     # anomaly nodes as critical
     for n in nodes:
         ev_id = str((n.get("meta") or {}).get("event_id", ""))
@@ -106,7 +129,8 @@ def build_mermaid(process_map: dict[str, Any], trace: dict[str, Any]) -> str:
 
     for idx, style in edge_style_index.items():
         if style == "critical":
-            lines.append(f"  linkStyle {idx} stroke:#ff0000,stroke-width:2px,color:#ff0000")
+            width = 4 if avg_time > 0 and any(trans_by_edge.get((str(e.get('source')), str(e.get('target'))),0) >= avg_time*2 for i,e in enumerate(edges) if i==idx) else 2
+            lines.append(f"  linkStyle {idx} stroke:#ff0000,stroke-width:{width}px,color:#ff0000")
         elif style == "skip":
             lines.append(f"  linkStyle {idx} stroke:#ff9900,stroke-width:2px,stroke-dasharray:5 5,color:#ff9900")
         elif style == "inversion":

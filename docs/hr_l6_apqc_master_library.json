@@ -1867,7 +1867,7 @@
       "output": "채용 수요 산정서",
       "digital_trace": [
         "채용 수요 산정서 DB 레코드",
-        "메일 제목: [ATS] Hiring Plan Approval Notification",
+        "메일 제목: [ATS] Hiring Demand Estimation Submitted",
         "결재/승인 로그: 채용 수요 산정서"
       ],
       "automation_potential": "Mid"
@@ -1882,7 +1882,7 @@
       "output": "채용 예산 배정안",
       "digital_trace": [
         "채용 예산 배정안 DB 레코드",
-        "메일 제목: [ATS] Hiring Plan Approval Notification",
+        "메일 제목: [ATS] Hiring Budget Allocation Approved",
         "결재/승인 로그: 채용 예산 배정안"
       ],
       "automation_potential": "Mid"
@@ -1897,7 +1897,7 @@
       "output": "직무기술서 초안",
       "digital_trace": [
         "직무기술서 초안 DB 레코드",
-        "메일 제목: [ATS] Hiring Plan Approval Notification",
+        "메일 제목: [ATS] JD Draft Prepared",
         "결재/승인 로그: 직무기술서 초안"
       ],
       "automation_potential": "Mid"
@@ -1912,7 +1912,7 @@
       "output": "직무기술서 승인본",
       "digital_trace": [
         "직무기술서 승인본 DB 레코드",
-        "메일 제목: [ATS] Hiring Plan Approval Notification",
+        "메일 제목: [ATS] JD Final Approval Completed",
         "결재/승인 로그: 직무기술서 승인본"
       ],
       "automation_potential": "Mid"
@@ -1927,7 +1927,7 @@
       "output": "소싱 채널 성과 비교표",
       "digital_trace": [
         "소싱 채널 성과 비교표 DB 레코드",
-        "메일 제목: [ATS] Sourcing Channel Operation Notice",
+        "메일 제목: [ATS] Sourcing Channel Benchmark Ready",
         "결재/승인 로그: 소싱 채널 성과 비교표"
       ],
       "automation_potential": "High"
@@ -1942,7 +1942,7 @@
       "output": "소싱 채널 운영안",
       "digital_trace": [
         "소싱 채널 운영안 DB 레코드",
-        "메일 제목: [ATS] Sourcing Channel Operation Notice",
+        "메일 제목: [ATS] Sourcing Channel Plan Confirmed",
         "결재/승인 로그: 소싱 채널 운영안"
       ],
       "automation_potential": "Mid"
@@ -1957,7 +1957,7 @@
       "output": "서류심사 기준표",
       "digital_trace": [
         "서류심사 기준표 DB 레코드",
-        "메일 제목: [ATS] Resume Screening Result Notice",
+        "메일 제목: [ATS] Screening Criteria Finalized",
         "결재/승인 로그: 서류심사 기준표"
       ],
       "automation_potential": "High"
@@ -1972,7 +1972,7 @@
       "output": "서류심사 평가표",
       "digital_trace": [
         "서류심사 평가표 DB 레코드",
-        "메일 제목: [ATS] Resume Screening Result Notice",
+        "메일 제목: [ATS] Screening Scorecard Generated",
         "결재/승인 로그: 서류심사 평가표"
       ],
       "automation_potential": "High"
@@ -1987,7 +1987,7 @@
       "output": "서류 합격자 명단",
       "digital_trace": [
         "서류 합격자 명단 DB 레코드",
-        "메일 제목: [ATS] Resume Screening Result Notice",
+        "메일 제목: [ATS] Resume Screening Pass List Finalized",
         "결재/승인 로그: 서류 합격자 명단"
       ],
       "automation_potential": "High"
@@ -2002,7 +2002,7 @@
       "output": "학력·경력 검증 확인서",
       "digital_trace": [
         "학력·경력 검증 확인서 DB 레코드",
-        "메일 제목: [ATS] Background Verification Update",
+        "메일 제목: [ATS] Education/Employment Verification Issued",
         "결재/승인 로그: 학력·경력 검증 확인서"
       ],
       "automation_potential": "Mid"
@@ -2017,7 +2017,7 @@
       "output": "자격증 검증 리포트",
       "digital_trace": [
         "자격증 검증 리포트 DB 레코드",
-        "메일 제목: [ATS] Background Verification Update",
+        "메일 제목: [ATS] Certification Verification Report Finalized",
         "결재/승인 로그: 자격증 검증 리포트"
       ],
       "automation_potential": "High"
@@ -2032,7 +2032,7 @@
       "output": "검증 이슈 판정서",
       "digital_trace": [
         "검증 이슈 판정서 DB 레코드",
-        "메일 제목: [ATS] Background Verification Update",
+        "메일 제목: [ATS] Verification Issue Decision Completed",
         "결재/승인 로그: 검증 이슈 판정서"
       ],
       "automation_potential": "Mid"
@@ -2047,7 +2047,7 @@
       "output": "면접관 배정 확정 메일",
       "digital_trace": [
         "면접관 배정 확정 메일 DB 레코드",
-        "메일 제목: [ATS] Interview Process Update",
+        "메일 제목: [ATS] Interviewer Assignment Confirmed",
         "결재/승인 로그: 면접관 배정 확정 메일"
       ],
       "automation_potential": "High"
@@ -2062,7 +2062,7 @@
       "output": "면접 일정표",
       "digital_trace": [
         "면접 일정표 DB 레코드",
-        "메일 제목: [ATS] Interview Schedule Confirmation",
+        "메일 제목: [ATS] Interview Slot Scheduled",
         "결재/승인 로그: 면접 일정표"
       ],
       "automation_potential": "High"
@@ -2077,7 +2077,7 @@
       "output": "면접 안내 메일",
       "digital_trace": [
         "면접 안내 메일 DB 레코드",
-        "메일 제목: [ATS] Interview Schedule Confirmation",
+        "메일 제목: [ATS] Candidate Interview Notice Sent",
         "결재/승인 로그: 면접 안내 메일"
       ],
       "automation_potential": "High"
@@ -2107,7 +2107,7 @@
       "output": "처우안 산정서",
       "digital_trace": [
         "처우안 산정서 DB 레코드",
-        "메일 제목: [ATS] Offer & Approval Workflow Update",
+        "메일 제목: [ATS] Compensation Proposal Calculated",
         "결재/승인 로그: 처우안 산정서"
       ],
       "automation_potential": "Mid"
@@ -2122,7 +2122,7 @@
       "output": "채용 승인 결재 문서",
       "digital_trace": [
         "채용 승인 결재 문서 DB 레코드",
-        "메일 제목: [ATS] Offer & Approval Workflow Update",
+        "메일 제목: [ATS] Hiring Approval Submitted",
         "결재/승인 로그: 채용 승인 결재 문서"
       ],
       "automation_potential": "Mid"
@@ -2137,7 +2137,7 @@
       "output": "연봉 계약서",
       "digital_trace": [
         "연봉 계약서 DB 레코드",
-        "메일 제목: [ATS] Offer & Approval Workflow Update",
+        "메일 제목: [ATS] Offer Letter Dispatched",
         "결재/승인 로그: 연봉 계약서"
       ],
       "automation_potential": "Mid"
@@ -2152,7 +2152,7 @@
       "output": "오퍼 수락 확인서",
       "digital_trace": [
         "오퍼 수락 확인서 DB 레코드",
-        "메일 제목: [ATS] Offer & Approval Workflow Update",
+        "메일 제목: [ATS] Offer Acceptance Confirmed",
         "결재/승인 로그: 오퍼 수락 확인서"
       ],
       "automation_potential": "Mid"
@@ -2167,7 +2167,7 @@
       "output": "선확보 인력 풀 현황표",
       "digital_trace": [
         "선확보 인력 풀 현황표 DB 레코드",
-        "메일 제목: [ATS] Onboarding & Talent Pool Update",
+        "메일 제목: [ATS] Talent Pool Snapshot Updated",
         "결재/승인 로그: 선확보 인력 풀 현황표"
       ],
       "automation_potential": "High"
@@ -2182,7 +2182,7 @@
       "output": "선확보 인력 접촉 이력",
       "digital_trace": [
         "선확보 인력 접촉 이력 DB 레코드",
-        "메일 제목: [ATS] Onboarding & Talent Pool Update",
+        "메일 제목: [ATS] Talent Outreach Log Updated",
         "결재/승인 로그: 선확보 인력 접촉 이력"
       ],
       "automation_potential": "Mid"
@@ -2197,7 +2197,7 @@
       "output": "입사 서류 체크리스트",
       "digital_trace": [
         "입사 서류 체크리스트 DB 레코드",
-        "메일 제목: [ATS] Onboarding & Talent Pool Update",
+        "메일 제목: [ATS] Onboarding Document Checklist Finalized",
         "결재/승인 로그: 입사 서류 체크리스트"
       ],
       "automation_potential": "Mid"
@@ -2212,7 +2212,7 @@
       "output": "온보딩 완료 기록",
       "digital_trace": [
         "온보딩 완료 기록 DB 레코드",
-        "메일 제목: [ATS] Onboarding & Talent Pool Update",
+        "메일 제목: [ATS] Onboarding Completion Logged",
         "결재/승인 로그: 온보딩 완료 기록"
       ],
       "automation_potential": "High"
