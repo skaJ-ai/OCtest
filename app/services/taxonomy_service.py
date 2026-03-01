@@ -154,34 +154,41 @@ def map_to_l5(activity_raw: str, top_k: int = 3) -> dict[str, Any]:
 
 
 def map_to_l6_by_output(text: str, top_k: int = 3) -> dict[str, Any]:
-    """텍스트 내 결과물(output) 키워드를 기반으로 L6 매핑.
-
-    예: "~를 신청했습니다", "등록 완료", "처리 이력" 등 결과물 언급 시 L6 우선 매핑.
-    """
+    """텍스트 내 결과물(output) 키워드를 기반으로 L6 매핑 + reasoning 반환."""
     src = (text or "").strip()
     lib = load_l6_library()
     if not src or not lib:
-        return {"l6_name": "Unclassified", "status": "unclassified", "candidates": []}
+        return {
+            "l6_name": "Unclassified",
+            "status": "unclassified",
+            "candidates": [],
+            "matched_l6_id": "",
+            "isolation_pass_reason": "입력 텍스트 또는 L6 라이브러리가 없어 고립 테스트를 수행할 수 없습니다.",
+            "confidence_breakdown": {"keyword_score": 0.0, "similarity_score": 0.0, "bonus_score": 0.0, "final_score": 0.0},
+        }
 
     output_tokens = ["신청", "신청서", "등록", "등록번호", "완료", "발송", "처리 이력", "이력", "승인"]
 
-    def keyword_bonus(src_text: str, output_text: str) -> float:
+    def keyword_score(src_text: str, output_text: str) -> float:
         score = 0.0
         for t in output_tokens:
             if t in src_text and t in output_text:
                 score += 0.2
         return min(score, 0.8)
 
-    scored: list[tuple[dict[str, Any], float]] = []
+    scored: list[tuple[dict[str, Any], float, float, float, float]] = []
     for row in lib:
         output = str(row.get("output", ""))
         l6_name = str(row.get("l6_name", ""))
-        base = max(_similarity(src, output), _similarity(src, l6_name))
-        bonus = keyword_bonus(src, output)
-        # few-shot 강사관리 계열은 결과물 키워드 명시 시 가산점
+        sim_out = _similarity(src, output)
+        sim_l6 = _similarity(src, l6_name)
+        sim = max(sim_out, sim_l6)
+        kscore = keyword_score(src, output)
+        bonus = 0.0
         if ("강사" in src) and ("강사" in output or "강사" in l6_name):
             bonus += 0.25
-        scored.append((row, min(base + bonus, 1.0)))
+        final = min(sim + kscore + bonus, 1.0)
+        scored.append((row, final, sim, kscore, bonus))
 
     scored.sort(key=lambda x: x[1], reverse=True)
     cand = [
@@ -190,13 +197,23 @@ def map_to_l6_by_output(text: str, top_k: int = 3) -> dict[str, Any]:
             "l6_name": r.get("l6_name"),
             "l5": r.get("l5"),
             "output": r.get("output"),
-            "score": round(s, 4),
+            "score": round(final, 4),
+            "similarity_score": round(sim, 4),
+            "keyword_score": round(ks, 4),
+            "bonus_score": round(bonus, 4),
         }
-        for r, s in scored[:max(1, top_k)]
+        for r, final, sim, ks, bonus in scored[:max(1, top_k)]
     ]
 
     if not cand:
-        return {"l6_name": "Unclassified", "status": "unclassified", "candidates": []}
+        return {
+            "l6_name": "Unclassified",
+            "status": "unclassified",
+            "candidates": [],
+            "matched_l6_id": "",
+            "isolation_pass_reason": "매핑 후보가 없어 고립 테스트 통과 근거를 생성할 수 없습니다.",
+            "confidence_breakdown": {"keyword_score": 0.0, "similarity_score": 0.0, "bonus_score": 0.0, "final_score": 0.0},
+        }
 
     top = cand[0]
     if top["score"] >= 0.72:
@@ -209,4 +226,26 @@ def map_to_l6_by_output(text: str, top_k: int = 3) -> dict[str, Any]:
         status = "unclassified"
         name = "Unclassified"
 
-    return {"l6_name": name, "status": status, "candidates": cand}
+    matched_output = top.get("output", "")
+    token_hit = next((t for t in output_tokens if t in src and t in matched_output), None)
+    if status in ("matched", "suggested"):
+        if token_hit:
+            reason = f"텍스트 내 '{token_hit}' 표현이 L6 산출물 '{matched_output}'과 직접 연결되어 독립 산출물이 확인됩니다."
+        else:
+            reason = f"텍스트가 L6 산출물 '{matched_output}'과 유사하게 일치하여 독립 결과물 생성 가능성이 확인됩니다."
+    else:
+        reason = "텍스트에서 독립 산출물을 특정할 수 있는 근거가 부족하여 고립 테스트를 통과하지 못했습니다."
+
+    return {
+        "l6_name": name,
+        "status": status,
+        "candidates": cand,
+        "matched_l6_id": top.get("l6_id", "") if status != "unclassified" else "",
+        "isolation_pass_reason": reason,
+        "confidence_breakdown": {
+            "keyword_score": top.get("keyword_score", 0.0),
+            "similarity_score": top.get("similarity_score", 0.0),
+            "bonus_score": top.get("bonus_score", 0.0),
+            "final_score": top.get("score", 0.0),
+        },
+    }

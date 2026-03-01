@@ -107,10 +107,14 @@ def evaluate_result(target_l5: str, raw_text: str, response: dict[str, Any], con
 
     # pass condition: at least one matched event for target + evidence_span valid + confidence threshold
     matched = False
+    output_tokens = ["신청", "신청서", "등록", "등록번호", "완료", "발송", "처리 이력", "이력", "승인"]
+
     for ev in events:
         l5 = ev.get("l5_activity_name", "")
         conf = float(ev.get("confidence_score", 0.0))
         span = str(ev.get("evidence_span", ""))
+        l6_ctx = ev.get("l6_context", {}) if isinstance(ev.get("l6_context", {}), dict) else {}
+        reason = str(l6_ctx.get("isolation_pass_reason", ""))
 
         if target_l5 == l5:
             matched = True
@@ -118,6 +122,12 @@ def evaluate_result(target_l5: str, raw_text: str, response: dict[str, Any], con
             reasons.append("low_confidence")
         if not span or span not in raw_text:
             reasons.append("invalid_evidence_span")
+
+        # isolation reasoning 논리성 점검
+        claims_pass = any(k in reason for k in ["독립 산출물", "통과", "확인"])
+        has_output_signal = any(tok in span for tok in output_tokens) or any(tok in raw_text for tok in output_tokens)
+        if claims_pass and not has_output_signal:
+            reasons.append("invalid_isolation_reason")
 
     if not matched:
         reasons.append("wrong_l5_mapping")

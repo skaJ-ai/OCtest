@@ -55,11 +55,19 @@ class L5Candidate(BaseModel):
     score: float
 
 
+class L6Context(BaseModel):
+    matched_l6_id: str = ""
+    isolation_pass_reason: str = ""
+    l6_candidates: list[dict[str, Any]] = Field(default_factory=list)
+    confidence_breakdown: dict[str, float] = Field(default_factory=dict)
+
+
 class ExtractedEvent(BaseModel):
     event_id: str
     l5_activity_name: str
     l6_activity_name: str = "Unclassified"
     l6_status: str = "unclassified"
+    l6_context: L6Context = Field(default_factory=L6Context)
     timestamp: str
     actor: str
     confidence_score: float
@@ -302,6 +310,12 @@ async def extract_events(req: ExtractRequest):
                     l5_activity_name=l5_name,
                     l6_activity_name=l6_map.get("l6_name", "Unclassified"),
                     l6_status=l6_map.get("status", "unclassified"),
+                    l6_context=L6Context(
+                        matched_l6_id=l6_map.get("matched_l6_id", ""),
+                        isolation_pass_reason=l6_map.get("isolation_pass_reason", ""),
+                        l6_candidates=l6_map.get("candidates", [])[:3],
+                        confidence_breakdown=l6_map.get("confidence_breakdown", {}),
+                    ),
                     timestamp=timestamp or ref_dt_iso,
                     actor=actor,
                     confidence_score=round(confidence, 4),
