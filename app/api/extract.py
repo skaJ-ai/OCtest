@@ -23,6 +23,7 @@ except Exception:  # pragma: no cover
 
 from app.services.taxonomy_service import get_l5_for_l6_id, map_to_l5, map_to_l6_by_output
 from app.services.trace_service import append_case_events, build_process_map, build_trace, get_case_events
+from app.services.viz_service import build_mermaid
 
 
 router = APIRouter(prefix="/api/events", tags=["events"])
@@ -369,4 +370,15 @@ async def get_process_map(case_id: str):
     events = get_case_events(case_id)
     if not events:
         raise HTTPException(status_code=404, detail="case_id not found")
-    return build_process_map(case_id, events)
+    trace = build_trace(case_id, events)
+    pmap = build_process_map(case_id, events)
+    mermaid = build_mermaid(pmap, trace)
+    return {
+        **pmap,
+        "trace_summary": {
+            "lead_time_sec": trace.get("lead_time_sec", 0),
+            "transition_times": trace.get("transition_times", []),
+            "variant_analysis": trace.get("variant_analysis", []),
+        },
+        "mermaid": mermaid,
+    }

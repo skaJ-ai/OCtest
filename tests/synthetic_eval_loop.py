@@ -271,6 +271,69 @@ def run_loop(base_url: str, duration_hours: float, interval_sec: float, max_iter
     return summary
 
 
+def run_recruitment_scenarios(base_url: str, sets: int = 100) -> dict[str, Any]:
+    """채용 3단계 유기 시나리오(공고->서류심사->면접예약) 복구율 측정."""
+    recovered = 0
+    errors = Counter()
+
+    for i in range(1, sets + 1):
+        case_id = f"REC-SCEN-{i:04d}"
+        ref = datetime.now().astimezone().isoformat()
+        steps = [
+            "어제 09:00 채용 공고를 등록하고 공고 게시를 완료했습니다.",
+            "어제 10:00 지원서 서류심사 결과표를 확정했습니다.",
+            "어제 11:00 면접 일정표를 작성하고 예약 완료 메일을 발송했습니다.",
+        ]
+
+        ok_all = True
+        for txt in steps:
+            payload = {
+                "raw_text": txt,
+                "source_type": "doc",
+                "reference_datetime": ref,
+                "context": {"case_id": case_id},
+            }
+            try:
+                r = requests.post(f"{base_url}/api/events/extract", json=payload, timeout=30)
+                if r.status_code != 200:
+                    ok_all = False
+                    errors[f"extract_{r.status_code}"] += 1
+            except Exception:
+                ok_all = False
+                errors["extract_exception"] += 1
+
+        try:
+            tr = requests.get(f"{base_url}/api/events/trace/{case_id}", timeout=30)
+            if tr.status_code != 200:
+                ok_all = False
+                errors[f"trace_{tr.status_code}"] += 1
+            else:
+                data = tr.json()
+                if len(data.get("events", [])) < 3:
+                    ok_all = False
+                    errors["trace_short"] += 1
+                if len(data.get("transition_times", [])) < 2:
+                    ok_all = False
+                    errors["transition_short"] += 1
+        except Exception:
+            ok_all = False
+            errors["trace_exception"] += 1
+
+        if ok_all:
+            recovered += 1
+
+    rate = recovered / sets if sets else 0.0
+    result = {
+        "scenario": "recruitment_3step",
+        "sets": sets,
+        "recovered": recovered,
+        "trace_recovery_rate": rate,
+        "errors": errors.most_common(10),
+    }
+    print(json.dumps(result, ensure_ascii=False, indent=2))
+    return result
+
+
 def main():
     parser = argparse.ArgumentParser()
     parser.add_argument("--base-url", default="http://127.0.0.1:8000")
@@ -278,7 +341,13 @@ def main():
     parser.add_argument("--interval-sec", type=float, default=1.0)
     parser.add_argument("--max-iterations", type=int, default=0, help="0이면 제한 없음")
     parser.add_argument("--threshold", type=float, default=0.75)
+    parser.add_argument("--run-recruitment-scenarios", action="store_true")
+    parser.add_argument("--scenario-sets", type=int, default=100)
     args = parser.parse_args()
+
+    if args.run_recruitment_scenarios:
+        run_recruitment_scenarios(args.base_url, args.scenario_sets)
+        return
 
     run_loop(
         base_url=args.base_url,
