@@ -21,7 +21,7 @@ try:
 except Exception:  # pragma: no cover
     call_llm = None
 
-from app.services.taxonomy_service import map_to_l5, map_to_l6_by_output
+from app.services.taxonomy_service import get_l5_for_l6_id, map_to_l5, map_to_l6_by_output
 
 
 router = APIRouter(prefix="/api/events", tags=["events"])
@@ -66,13 +66,12 @@ class ExtractedEvent(BaseModel):
     event_id: str
     l5_activity_name: str
     l6_activity_name: str = "Unclassified"
-    l6_status: str = "unclassified"
+    mapping_status: str = "unclassified"
     l6_context: L6Context = Field(default_factory=L6Context)
     timestamp: str
     actor: str
     confidence_score: float
     evidence_span: str
-    taxonomy_status: str
     taxonomy_candidates: list[L5Candidate] = Field(default_factory=list)
     human_review_required: bool
 
@@ -281,20 +280,32 @@ async def extract_events(req: ExtractRequest):
                 timestamp = _resolve_relative_time(evidence_span or activity_raw, ref_dt)
 
             taxonomy = map_to_l5(activity_raw, req.options.top_k_candidates)
-            taxonomy_status = taxonomy.get("taxonomy_status", "unclassified")
             taxonomy_candidates = taxonomy.get("taxonomy_candidates", [])
             l5_name = taxonomy.get("l5_activity_name", "Unclassified")
+            mapping_status = taxonomy.get("mapping_status", "unclassified")
 
-            if taxonomy_status == "unclassified":
+            l6_map = map_to_l6_by_output(evidence_span or activity_raw, req.options.top_k_candidates)
+            l6_mapping_status = l6_map.get("mapping_status", "unclassified")
+
+            # L6 매핑 성공 시 부모 L5 상속 강제
+            matched_l6_id = l6_map.get("matched_l6_id", "")
+            if l6_mapping_status == "matched_l6" and matched_l6_id:
+                parent_l5 = get_l5_for_l6_id(matched_l6_id)
+                if parent_l5 and parent_l5 != "Unclassified":
+                    l5_name = parent_l5
+                    mapping_status = "matched_l6"
+
+            if mapping_status == "unclassified":
                 unc_count += 1
 
-            # taxonomy score를 confidence 보정치로 반영
+            # confidence_score는 가장 정밀한 하위 계층(L6 final_score)과 동기화
             top_tax_score = float(taxonomy_candidates[0]["score"]) if taxonomy_candidates else 0.0
-            confidence = max(confidence, min(top_tax_score, 0.95))
+            l6_final_score = float((l6_map.get("confidence_breakdown") or {}).get("final_score", 0.0))
+            confidence = max(confidence, min(top_tax_score, 0.95), l6_final_score)
 
             review_needed = (
                 confidence < req.options.low_confidence_threshold
-                or taxonomy_status != "matched"
+                or mapping_status == "unclassified"
                 or not timestamp
                 or actor == "Unknown"
                 or not evidence_span
@@ -302,14 +313,12 @@ async def extract_events(req: ExtractRequest):
             if review_needed:
                 low_count += 1
 
-            l6_map = map_to_l6_by_output(evidence_span or activity_raw, req.options.top_k_candidates)
-
             out_events.append(
                 ExtractedEvent(
                     event_id=event_id,
                     l5_activity_name=l5_name,
                     l6_activity_name=l6_map.get("l6_name", "Unclassified"),
-                    l6_status=l6_map.get("status", "unclassified"),
+                    mapping_status=mapping_status,
                     l6_context=L6Context(
                         matched_l6_id=l6_map.get("matched_l6_id", ""),
                         isolation_pass_reason=l6_map.get("isolation_pass_reason", ""),
@@ -320,7 +329,6 @@ async def extract_events(req: ExtractRequest):
                     actor=actor,
                     confidence_score=round(confidence, 4),
                     evidence_span=evidence_span,
-                    taxonomy_status=taxonomy_status,
                     taxonomy_candidates=[L5Candidate(**c) for c in taxonomy_candidates],
                     human_review_required=review_needed,
                 )

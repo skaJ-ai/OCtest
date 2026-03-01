@@ -102,6 +102,15 @@ def load_l6_library() -> list[dict[str, Any]]:
     return [x for x in lib if isinstance(x, dict)]
 
 
+def get_l5_for_l6_id(l6_id: str) -> str:
+    if not l6_id:
+        return "Unclassified"
+    for row in load_l6_library():
+        if row.get("l6_id") == l6_id:
+            return str(row.get("l5") or "Unclassified")
+    return "Unclassified"
+
+
 def map_to_l5(activity_raw: str, top_k: int = 3) -> dict[str, Any]:
     taxonomy = load_l5_taxonomy()
     activity = normalize_activity(activity_raw)
@@ -113,13 +122,13 @@ def map_to_l5(activity_raw: str, top_k: int = 3) -> dict[str, Any]:
         if n == ln:
             return {
                 "l5_activity_name": l5,
-                "taxonomy_status": "matched",
+                "mapping_status": "matched_l5",
                 "taxonomy_candidates": [{"l5": l5, "score": 1.0}],
             }
         if ln and (ln in n or n in ln):
             return {
                 "l5_activity_name": l5,
-                "taxonomy_status": "matched",
+                "mapping_status": "matched_l5",
                 "taxonomy_candidates": [{"l5": l5, "score": 0.92}],
             }
 
@@ -131,7 +140,7 @@ def map_to_l5(activity_raw: str, top_k: int = 3) -> dict[str, Any]:
     if not candidates:
         return {
             "l5_activity_name": "Unclassified",
-            "taxonomy_status": "unclassified",
+            "mapping_status": "unclassified",
             "taxonomy_candidates": [],
         }
 
@@ -148,7 +157,7 @@ def map_to_l5(activity_raw: str, top_k: int = 3) -> dict[str, Any]:
 
     return {
         "l5_activity_name": l5_name,
-        "taxonomy_status": status,
+        "mapping_status": "matched_l5" if status == "matched" else ("suggested_l5" if status == "suggested" else "unclassified"),
         "taxonomy_candidates": candidates,
     }
 
@@ -160,7 +169,7 @@ def map_to_l6_by_output(text: str, top_k: int = 3) -> dict[str, Any]:
     if not src or not lib:
         return {
             "l6_name": "Unclassified",
-            "status": "unclassified",
+            "mapping_status": "unclassified",
             "candidates": [],
             "matched_l6_id": "",
             "isolation_pass_reason": "입력 텍스트 또는 L6 라이브러리가 없어 고립 테스트를 수행할 수 없습니다.",
@@ -208,7 +217,7 @@ def map_to_l6_by_output(text: str, top_k: int = 3) -> dict[str, Any]:
     if not cand:
         return {
             "l6_name": "Unclassified",
-            "status": "unclassified",
+            "mapping_status": "unclassified",
             "candidates": [],
             "matched_l6_id": "",
             "isolation_pass_reason": "매핑 후보가 없어 고립 테스트 통과 근거를 생성할 수 없습니다.",
@@ -238,7 +247,7 @@ def map_to_l6_by_output(text: str, top_k: int = 3) -> dict[str, Any]:
 
     return {
         "l6_name": name,
-        "status": status,
+        "mapping_status": "matched_l6" if status == "matched" else ("suggested_l6" if status == "suggested" else "unclassified"),
         "candidates": cand,
         "matched_l6_id": top.get("l6_id", "") if status != "unclassified" else "",
         "isolation_pass_reason": reason,

@@ -115,6 +115,14 @@ def evaluate_result(target_l5: str, raw_text: str, response: dict[str, Any], con
         span = str(ev.get("evidence_span", ""))
         l6_ctx = ev.get("l6_context", {}) if isinstance(ev.get("l6_context", {}), dict) else {}
         reason = str(l6_ctx.get("isolation_pass_reason", ""))
+        mapping_status = str(ev.get("mapping_status", ""))
+
+        # L6가 매핑되었는데 L5가 부모와 일치하지 않는 경우
+        if mapping_status == "matched_l6":
+            cands = l6_ctx.get("l6_candidates", []) if isinstance(l6_ctx.get("l6_candidates", []), list) else []
+            parent_l5 = cands[0].get("l5") if cands else None
+            if parent_l5 and l5 and parent_l5 != l5:
+                reasons.append("hierarchy_mismatch")
 
         if target_l5 == l5:
             matched = True
