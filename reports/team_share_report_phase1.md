@@ -1,0 +1,29 @@
+# AX 기반 HR 프로세스 자산화 및 마스터 라이브러리 구축 (Phase 1)
+
+## 1. Background: 왜 지금 L6인가?
+- **현행화의 한계**: 기존 HR 업무 매뉴얼은 행위(Action) 기술 위주라 실제 시스템 로그와 정합성이 낮고, 프로세스 마이닝 시 스파게티 맵이 발생.
+- **AX의 전제 조건**: AI 자동화를 위해 업무를 입력/출력이 명확한 디지털 데이터 단위(Digital Twin)로 정의해야 함.
+
+## 2. Core Methodology: GAUSS를 통한 프로세스 역공학 (Reverse Engineering)
+- **데이터 그라운딩**: 사내 LLM **GAUSS**를 활용해 현업 업무 뼈대(`realdata`)를 전수 분석.
+- **Logic — From Action to Outcome**
+  - 모호한 동사(검토/운영 등) 중심 기술 배제
+  - ATS/ERP/Workday 등 시스템에 남는 **독립적 산출물(Digital Trace)** 기반으로 L6 재설계
+- **결과물**: 전사 10개 도메인, 총 **408개 고해상도 L6 데이터셋** 확보
+
+## 3. Key Strategic Value (Benefits)
+| 구분 | 전략적 가치 및 기대 효과 |
+|---|---|
+| Governance | 도메인별 파편화 용어를 산출물 기준으로 통일하여 HR 프로세스 거버넌스 확립 |
+| Data-Driven | 모든 업무를 시스템 로그(Trace)와 매핑하여 프로세스 마이닝/실시간 대시보드 즉시 구현 가능 |
+| Scalability | 408개 정밀 L6를 기반으로 L7(BPMN) 자동 설계 및 AI 에이전트 이식 가능 |
+
+## 4. Roadmap: Next Step
+- **Track A | 현업 검증**: 408개 L6를 현업 담당자가 직접 확인/확정하는 인터페이스 배포
+- **Track B | L7 시퀀스 전개**: 확정 L6 기반 자동화 시나리오 및 BPMN 2.0 상세 흐름도 생성 착수
+
+---
+
+## 첨부 자산
+- 마스터 라이브러리 CSV: `exports/hr_l6_master_library_v2.3.csv`
+- 인코딩: **utf-8-sig** (엑셀 한글 호환)
