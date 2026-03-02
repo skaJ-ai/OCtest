@@ -66,7 +66,7 @@ class L6Context(BaseModel):
 
 class ExtractedEvent(BaseModel):
     event_id: str
-    event_type: str = "normal"  # normal|rework|suspended|canceled|planned
+    event_type: str = "normal"  # normal|rework|suspended|canceled|planned|resolved
     l5_activity_name: str
     l6_activity_name: str = "Unclassified"
     mapping_status: str = "unclassified"
@@ -140,6 +140,8 @@ def _resolve_relative_time(text: str, ref_dt: datetime) -> str:
 
 def _infer_event_type(text: str) -> str:
     t = (text or "").strip()
+    if any(k in t for k in ["승인됨", "확정", "발송 완료", "완료됨", "해결", "종결"]):
+        return "resolved"
     if any(k in t for k in ["보류", "중단", "올리지 마", "하지 마", "hold"]):
         return "suspended"
     if any(k in t for k in ["반려", "재작업", "다시", "재처리"]):

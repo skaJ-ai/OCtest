@@ -1,0 +1,12 @@
+[Unit]
+Description=Process Coaching Daily Hard Case Summary
+After=network-online.target
+Wants=network-online.target
+
+[Service]
+Type=oneshot
+WorkingDirectory=/home/openc/.openclaw/workspace/process-coaching
+Environment=PYTHONUNBUFFERED=1
+ExecStart=/home/openc/.openclaw/workspace/process-coaching/.venv/bin/python scripts/daily_report.py
+StandardOutput=journal
+StandardError=journal

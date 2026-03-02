@@ -1,0 +1,3647 @@
+{
+  "schema_version": "2.1.1-custom",
+  "title": "HR L6 APQC Master Library v2.1 Custom",
+  "scope": "Full L3-L5 Coverage",
+  "library": [
+    {
+      "l6_id": "V2-L6-0401",
+      "l3": "총무",
+      "l4": "사내 서비스 운영",
+      "l5": "날인 및 증명서 관리",
+      "l6_name": "증명서 발급요청 티켓 생성",
+      "input": "운영 기준/요청 데이터",
+      "output": "증명서 발급요청 티켓 생성",
+      "digital_trace": [
+        "그룹웨어 티켓번호 생성",
+        "메일 제목: 증명서 발급 요청 접수 안내",
+        "처리상태 변경 로그: 접수완료"
+      ],
+      "automation_potential": "High",
+      "legacy_l6_match": [
+        "날인 및 증명서 관리"
+      ],
+      "improvement_note": "realdata.ts 고정 뼈대 기준으로 산출물 중심 L6로 재분해함.",
+      "output_type": "ticket_log"
+    },
+    {
+      "l6_id": "V2-L6-0402",
+      "l3": "총무",
+      "l4": "사내 서비스 운영",
+      "l5": "날인 및 증명서 관리",
+      "l6_name": "전자날인 처리 완료문서 발행",
+      "input": "운영 기준/요청 데이터",
+      "output": "전자날인 처리 완료문서 발행",
+      "digital_trace": [
+        "전자결재 날인 로그",
+        "문서관리시스템 원본 저장",
+        "메일 제목: 증명서 발급 완료 안내"
+      ],
+      "automation_potential": "Mid",
+      "legacy_l6_match": [
+        "날인 및 증명서 관리"
+      ],
+      "improvement_note": "realdata.ts 고정 뼈대 기준으로 산출물 중심 L6로 재분해함.",
+      "output_type": "document_pdf"
+    },
+    {
+      "l6_id": "V2-L6-0403",
+      "l3": "총무",
+      "l4": "사내 서비스 운영",
+      "l5": "날인 및 증명서 관리",
+      "l6_name": "날인 처리 이력대장 업데이트",
+      "input": "운영 기준/요청 데이터",
+      "output": "날인 처리 이력대장 업데이트",
+      "digital_trace": [
+        "날인 이력 DB 업데이트",
+        "문서번호-사번 매핑 로그",
+        "월간 발급 집계 배치 로그"
+      ],
+      "automation_potential": "Mid",
+      "legacy_l6_match": [
+        "날인 및 증명서 관리"
+      ],
+      "improvement_note": "realdata.ts 고정 뼈대 기준으로 산출물 중심 L6로 재분해함.",
+      "output_type": "ledger_record"
+    },
+    {
+      "l6_id": "V2-L6-0404",
+      "l3": "총무",
+      "l4": "사내 서비스 운영",
+      "l5": "사내 화물 운영",
+      "l6_name": "사내 화물 접수대장 생성",
+      "input": "운영 기준/요청 데이터",
+      "output": "사내 화물 접수대장 생성",
+      "digital_trace": [
+        "사내물류 접수번호 생성",
+        "수취인/도착지 매핑 로그",
+        "메일 제목: 사내 화물 접수 완료 안내"
+      ],
+      "automation_potential": "Mid",
+      "legacy_l6_match": [
+        "사내 화물 운영"
+      ],
+      "improvement_note": "realdata.ts 고정 뼈대 기준으로 산출물 중심 L6로 재분해함.",
+      "output_type": "ledger_record"
+    },
+    {
+      "l6_id": "V2-L6-0405",
+      "l3": "총무",
+      "l4": "사내 서비스 운영",
+      "l5": "사내 화물 운영",
+      "l6_name": "사내 화물 배송완료 확인서 등록",
+      "input": "운영 기준/요청 데이터",
+      "output": "사내 화물 배송완료 확인서 등록",
+      "digital_trace": [
+        "배송상태 변경 로그: 배송완료",
+        "수령 서명 이미지 저장",
+        "메일 제목: 사내 화물 배송 완료 안내"
+      ],
+      "automation_potential": "Mid",
+      "legacy_l6_match": [
+        "사내 화물 운영"
+      ],
+      "improvement_note": "realdata.ts 고정 뼈대 기준으로 산출물 중심 L6로 재분해함.",
+      "output_type": "confirmation_doc"
+    },
+    {
+      "l6_id": "V2-L6-0406",
+      "l3": "총무",
+      "l4": "사내 서비스 운영",
+      "l5": "사내 화물 운영",
+      "l6_name": "화물 지연이슈 조치보고서 발행",
+      "input": "운영 기준/요청 데이터",
+      "output": "화물 지연이슈 조치보고서 발행",
+      "digital_trace": [
+        "이슈관리 티켓 생성",
+        "SLA 초과 경고 로그",
+        "메일 제목: 화물 지연 조치 결과 안내"
+      ],
+      "automation_potential": "Mid",
+      "legacy_l6_match": [
+        "사내 화물 운영"
+      ],
+      "improvement_note": "realdata.ts 고정 뼈대 기준으로 산출물 중심 L6로 재분해함.",
+      "output_type": "issue_report"
+    },
+    {
+      "l6_id": "V2-L6-0407",
+      "l3": "총무",
+      "l4": "사내 서비스 운영",
+      "l5": "안내센터 운영",
+      "l6_name": "방문객 출입예약 승인목록 확정",
+      "input": "운영 기준/요청 데이터",
+      "output": "방문객 출입예약 승인목록 확정",
+      "digital_trace": [
+        "출입관리시스템 승인 로그",
+        "방문증 발급번호 생성",
+        "메일 제목: 방문객 출입 승인 안내"
+      ],
+      "automation_potential": "Mid",
+      "legacy_l6_match": [
+        "안내센터 운영"
+      ],
+      "improvement_note": "realdata.ts 고정 뼈대 기준으로 산출물 중심 L6로 재분해함.",
+      "output_type": "approval_list"
+    },
+    {
+      "l6_id": "V2-L6-0408",
+      "l3": "총무",
+      "l4": "사내 서비스 운영",
+      "l5": "안내센터 운영",
+      "l6_name": "안내센터 응대일지 등록",
+      "input": "운영 기준/요청 데이터",
+      "output": "안내센터 응대일지 등록",
+      "digital_trace": [
+        "안내데이터 접수 로그",
+        "문의유형 분류 로그",
+        "일일 마감 로그"
+      ],
+      "automation_potential": "Mid",
+      "legacy_l6_match": [
+        "안내센터 운영"
+      ],
+      "improvement_note": "realdata.ts 고정 뼈대 기준으로 산출물 중심 L6로 재분해함.",
+      "output_type": "operation_log"
+    },
+    {
+      "l6_id": "V2-L6-0409",
+      "l3": "총무",
+      "l4": "사내 서비스 운영",
+      "l5": "안내센터 운영",
+      "l6_name": "VIP 방문지원 결과보고서 발행",
+      "input": "운영 기준/요청 데이터",
+      "output": "VIP 방문지원 결과보고서 발행",
+      "digital_trace": [
+        "VIP 동선 체크포인트 로그",
+        "보안팀 연계 이벤트 로그",
+        "메일 제목: VIP 방문지원 결과 공유"
+      ],
+      "automation_potential": "Mid",
+      "legacy_l6_match": [
+        "안내센터 운영"
+      ],
+      "improvement_note": "realdata.ts 고정 뼈대 기준으로 산출물 중심 L6로 재분해함.",
+      "output_type": "support_report"
+    },
+    {
+      "l6_id": "V2-L6-0410",
+      "l3": "총무",
+      "l4": "사내 서비스 운영",
+      "l5": "대외유관 기관/업체 운영",
+      "l6_name": "대외기관 협조요청 공문 발송",
+      "input": "운영 기준/요청 데이터",
+      "output": "대외기관 협조요청 공문 발송",
+      "digital_trace": [
+        "대외공문 번호 생성",
+        "대외기관 수신확인 로그",
+        "메일 제목: 대외 협조요청 발송 안내"
+      ],
+      "automation_potential": "Mid",
+      "legacy_l6_match": [
+        "대외유관 기관/업체 운영"
+      ],
+      "improvement_note": "realdata.ts 고정 뼈대 기준으로 산출물 중심 L6로 재분해함.",
+      "output_type": "official_doc"
+    },
+    {
+      "l6_id": "V2-L6-0411",
+      "l3": "총무",
+      "l4": "사내 서비스 운영",
+      "l5": "대외유관 기관/업체 운영",
+      "l6_name": "기관별 협업결과 회신서 등록",
+      "input": "운영 기준/요청 데이터",
+      "output": "기관별 협업결과 회신서 등록",
+      "digital_trace": [
+        "회신 문서 수신 로그",
+        "협업 항목 상태값 변경",
+        "대외협업 이력대장 업데이트"
+      ],
+      "automation_potential": "Mid",
+      "legacy_l6_match": [
+        "대외유관 기관/업체 운영"
+      ],
+      "improvement_note": "realdata.ts 고정 뼈대 기준으로 산출물 중심 L6로 재분해함.",
+      "output_type": "reply_doc"
+    },
+    {
+      "l6_id": "V2-L6-0412",
+      "l3": "총무",
+      "l4": "사내 서비스 운영",
+      "l5": "대외유관 기관/업체 운영",
+      "l6_name": "정기 협력현황 보고서 발행",
+      "input": "운영 기준/요청 데이터",
+      "output": "정기 협력현황 보고서 발행",
+      "digital_trace": [
+        "기관별 협력 KPI 집계 배치",
+        "보고서 버전 저장 로그",
+        "메일 제목: 대외 협력현황 공유"
+      ],
+      "automation_potential": "Mid",
+      "legacy_l6_match": [
+        "대외유관 기관/업체 운영"
+      ],
+      "improvement_note": "realdata.ts 고정 뼈대 기준으로 산출물 중심 L6로 재분해함.",
+      "output_type": "status_report"
+    },
+    {
+      "l6_id": "V2-L6-0413",
+      "l3": "총무",
+      "l4": "사내 서비스 운영",
+      "l5": "사내 전화(S-Calling) 운영",
+      "l6_name": "S-Calling 회선연동 매핑표 생성",
+      "input": "운영 기준/요청 데이터",
+      "output": "S-Calling 회선연동 매핑표 생성",
+      "digital_trace": [
+        "S-Calling 계정-031회선 매핑 로그",
+        "교환기 연동 설정 로그",
+        "메일 제목: S-Calling 회선 연동 완료 안내"
+      ],
+      "automation_potential": "High",
+      "legacy_l6_match": [
+        "사내 전화(S-Calling) 운영"
+      ],
+      "improvement_note": "realdata.ts 고정 뼈대 기준으로 산출물 중심 L6로 재분해함.",
+      "output_type": "mapping_table"
+    },
+    {
+      "l6_id": "V2-L6-0414",
+      "l3": "총무",
+      "l4": "사내 서비스 운영",
+      "l5": "사내 전화(S-Calling) 운영",
+      "l6_name": "통화장애 조치결과서 등록",
+      "input": "운영 기준/요청 데이터",
+      "output": "통화장애 조치결과서 등록",
+      "digital_trace": [
+        "통화품질 이상탐지 로그",
+        "장애 티켓 종료 로그",
+        "메일 제목: S-Calling 장애 조치 완료 안내"
+      ],
+      "automation_potential": "Mid",
+      "legacy_l6_match": [
+        "사내 전화(S-Calling) 운영"
+      ],
+      "improvement_note": "realdata.ts 고정 뼈대 기준으로 산출물 중심 L6로 재분해함.",
+      "output_type": "incident_report"
+    },
+    {
+      "l6_id": "V2-L6-0415",
+      "l3": "총무",
+      "l4": "사내 서비스 운영",
+      "l5": "사내 전화(S-Calling) 운영",
+      "l6_name": "월간 통화품질 리포트 발행",
+      "input": "운영 기준/요청 데이터",
+      "output": "월간 통화품질 리포트 발행",
+      "digital_trace": [
+        "월간 품질 집계 배치",
+        "회선별 장애율 계산 로그",
+        "메일 제목: S-Calling 월간 품질 리포트 공유"
+      ],
+      "automation_potential": "Mid",
+      "legacy_l6_match": [
+        "사내 전화(S-Calling) 운영"
+      ],
+      "improvement_note": "realdata.ts 고정 뼈대 기준으로 산출물 중심 L6로 재분해함.",
+      "output_type": "quality_report"
+    },
+    {
+      "l6_id": "V2-L6-0416",
+      "l3": "총무",
+      "l4": "사내 서비스 운영",
+      "l5": "두발로 운영",
+      "l6_name": "두발로 배치계획서 확정",
+      "input": "운영 기준/요청 데이터",
+      "output": "두발로 배치계획서 확정",
+      "digital_trace": [
+        "자산관리시스템 거치대 배치 로그",
+        "운영 대시보드 상태값 변경: 배치완료",
+        "메일 제목: 두발로 배치 계획 확정 안내"
+      ],
+      "automation_potential": "Mid",
+      "legacy_l6_match": [
+        "두발로 운영"
+      ],
+      "improvement_note": "realdata.ts 고정 뼈대 기준으로 산출물 중심 L6로 재분해함.",
+      "output_type": "plan_doc"
+    },
+    {
+      "l6_id": "V2-L6-0417",
+      "l3": "총무",
+      "l4": "사내 서비스 운영",
+      "l5": "두발로 운영",
+      "l6_name": "두발로 정비완료 보고서 등록",
+      "input": "운영 기준/요청 데이터",
+      "output": "두발로 정비완료 보고서 등록",
+      "digital_trace": [
+        "정비 작업지시 번호 종료 로그",
+        "자산관리시스템 정비이력 저장",
+        "메일 제목: 두발로 정비 완료 안내"
+      ],
+      "automation_potential": "Mid",
+      "legacy_l6_match": [
+        "두발로 운영"
+      ],
+      "improvement_note": "realdata.ts 고정 뼈대 기준으로 산출물 중심 L6로 재분해함.",
+      "output_type": "maintenance_report"
+    },
+    {
+      "l6_id": "V2-L6-0418",
+      "l3": "총무",
+      "l4": "사내 서비스 운영",
+      "l5": "두발로 운영",
+      "l6_name": "두발로 이용통계 리포트 발행",
+      "input": "운영 기준/요청 데이터",
+      "output": "두발로 이용통계 리포트 발행",
+      "digital_trace": [
+        "대여/반납 로그 집계 배치",
+        "월간 운영리포트 저장",
+        "메일 제목: 두발로 이용 통계 공유"
+      ],
+      "automation_potential": "High",
+      "legacy_l6_match": [
+        "두발로 운영"
+      ],
+      "improvement_note": "realdata.ts 고정 뼈대 기준으로 산출물 중심 L6로 재분해함.",
+      "output_type": "analytics_report"
+    },
+    {
+      "l6_id": "V2-L6-0419",
+      "l3": "총무",
+      "l4": "사내 서비스 운영",
+      "l5": "다회용기 업체 운영",
+      "l6_name": "다회용기 운영계약서 확정",
+      "input": "운영 기준/요청 데이터",
+      "output": "다회용기 운영계약서 확정",
+      "digital_trace": [
+        "구매시스템 계약번호 생성",
+        "전자결재 승인 로그",
+        "메일 제목: 다회용기 업체 계약 확정 안내"
+      ],
+      "automation_potential": "Mid",
+      "legacy_l6_match": [
+        "다회용기 업체 운영"
+      ],
+      "improvement_note": "realdata.ts 고정 뼈대 기준으로 산출물 중심 L6로 재분해함.",
+      "output_type": "contract_doc"
+    },
+    {
+      "l6_id": "V2-L6-0420",
+      "l3": "총무",
+      "l4": "사내 서비스 운영",
+      "l5": "다회용기 업체 운영",
+      "l6_name": "다회용기 수거실적 대장 업데이트",
+      "input": "운영 기준/요청 데이터",
+      "output": "다회용기 수거실적 대장 업데이트",
+      "digital_trace": [
+        "회수량 입력 로그",
+        "업체별 SLA 준수율 계산 로그",
+        "메일 제목: 다회용기 수거 실적 등록 안내"
+      ],
+      "automation_potential": "Mid",
+      "legacy_l6_match": [
+        "다회용기 업체 운영"
+      ],
+      "improvement_note": "realdata.ts 고정 뼈대 기준으로 산출물 중심 L6로 재분해함.",
+      "output_type": "ledger_record"
+    },
+    {
+      "l6_id": "V2-L6-0421",
+      "l3": "총무",
+      "l4": "사내 서비스 운영",
+      "l5": "다회용기 업체 운영",
+      "l6_name": "다회용기 정산내역서 발행",
+      "input": "운영 기준/요청 데이터",
+      "output": "다회용기 정산내역서 발행",
+      "digital_trace": [
+        "정산 배치 실행 로그",
+        "청구내역 매칭 로그",
+        "메일 제목: 다회용기 업체 정산 완료 안내"
+      ],
+      "automation_potential": "Mid",
+      "legacy_l6_match": [
+        "다회용기 업체 운영"
+      ],
+      "improvement_note": "realdata.ts 고정 뼈대 기준으로 산출물 중심 L6로 재분해함.",
+      "output_type": "settlement_doc"
+    },
+    {
+      "l6_id": "V2-L6-0422",
+      "l3": "총무",
+      "l4": "사내 인프라 관리",
+      "l5": "사무실 레이아웃 관리",
+      "l6_name": "좌석배치 변경계획서 확정",
+      "input": "운영 기준/요청 데이터",
+      "output": "좌석배치 변경계획서 확정",
+      "digital_trace": [
+        "레이아웃 도면 버전 저장",
+        "이전 작업지시 생성",
+        "메일 제목: 사무실 레이아웃 변경 안내"
+      ],
+      "automation_potential": "Mid",
+      "legacy_l6_match": [
+        "사무실 레이아웃 관리"
+      ],
+      "improvement_note": "realdata.ts 고정 뼈대 기준으로 산출물 중심 L6로 재분해함.",
+      "output_type": "plan_doc"
+    },
+    {
+      "l6_id": "V2-L6-0423",
+      "l3": "총무",
+      "l4": "사내 인프라 관리",
+      "l5": "피트니스 관리",
+      "l6_name": "피트니스 시설점검 결과서 등록",
+      "input": "운영 기준/요청 데이터",
+      "output": "피트니스 시설점검 결과서 등록",
+      "digital_trace": [
+        "시설점검 체크리스트 저장",
+        "고장항목 조치 티켓 생성",
+        "메일 제목: 피트니스 점검 결과 안내"
+      ],
+      "automation_potential": "Mid",
+      "legacy_l6_match": [
+        "피트니스 관리"
+      ],
+      "improvement_note": "realdata.ts 고정 뼈대 기준으로 산출물 중심 L6로 재분해함.",
+      "output_type": "inspection_report"
+    },
+    {
+      "l6_id": "V2-L6-0424",
+      "l3": "총무",
+      "l4": "사내 인프라 관리",
+      "l5": "사내식당 관리",
+      "l6_name": "사내식당 위생점검 결과서 등록",
+      "input": "운영 기준/요청 데이터",
+      "output": "사내식당 위생점검 결과서 등록",
+      "digital_trace": [
+        "위생점검 로그 저장",
+        "점검등급 업데이트 로그",
+        "메일 제목: 사내식당 위생점검 결과 안내"
+      ],
+      "automation_potential": "Mid",
+      "legacy_l6_match": [
+        "사내식당 관리"
+      ],
+      "improvement_note": "realdata.ts 고정 뼈대 기준으로 산출물 중심 L6로 재분해함.",
+      "output_type": "inspection_report"
+    },
+    {
+      "l6_id": "V2-L6-0425",
+      "l3": "총무",
+      "l4": "사내 인프라 관리",
+      "l5": "사내식당 관리",
+      "l6_name": "주간 식단편성 확정표 발행",
+      "input": "운영 기준/요청 데이터",
+      "output": "주간 식단편성 확정표 발행",
+      "digital_trace": [
+        "식단 편성 승인 로그",
+        "식자재 발주 연동 로그",
+        "메일 제목: 주간 식단표 공지"
+      ],
+      "automation_potential": "Mid",
+      "legacy_l6_match": [
+        "사내식당 관리"
+      ],
+      "improvement_note": "realdata.ts 고정 뼈대 기준으로 산출물 중심 L6로 재분해함.",
+      "output_type": "menu_plan"
+    },
+    {
+      "l6_id": "V2-L6-0426",
+      "l3": "총무",
+      "l4": "사내 인프라 관리",
+      "l5": "주차장 관리",
+      "l6_name": "주차권한 배정목록 확정",
+      "input": "운영 기준/요청 데이터",
+      "output": "주차권한 배정목록 확정",
+      "digital_trace": [
+        "출입차량 등록 로그",
+        "권한 배정 승인 로그",
+        "메일 제목: 주차권한 배정 안내"
+      ],
+      "automation_potential": "High",
+      "legacy_l6_match": [
+        "주차장 관리"
+      ],
+      "improvement_note": "realdata.ts 고정 뼈대 기준으로 산출물 중심 L6로 재분해함.",
+      "output_type": "allocation_list"
+    },
+    {
+      "l6_id": "V2-L6-0427",
+      "l3": "총무",
+      "l4": "사내 인프라 관리",
+      "l5": "숙박시설 운영 (기숙사, 포레스트)",
+      "l6_name": "기숙사/포레스트 배정승인서 발행",
+      "input": "운영 기준/요청 데이터",
+      "output": "기숙사/포레스트 배정승인서 발행",
+      "digital_trace": [
+        "숙박 배정 승인 로그",
+        "입실 일정 등록 로그",
+        "메일 제목: 숙박시설 배정 결과 안내"
+      ],
+      "automation_potential": "Mid",
+      "legacy_l6_match": [
+        "숙박시설 운영 (기숙사, 포레스트)"
+      ],
+      "improvement_note": "realdata.ts 고정 뼈대 기준으로 산출물 중심 L6로 재분해함.",
+      "output_type": "approval_doc"
+    },
+    {
+      "l6_id": "V2-L6-0428",
+      "l3": "총무",
+      "l4": "사내 인프라 관리",
+      "l5": "회의실 운영",
+      "l6_name": "회의실 예약승인 목록 확정",
+      "input": "운영 기준/요청 데이터",
+      "output": "회의실 예약승인 목록 확정",
+      "digital_trace": [
+        "회의실 예약 승인 로그",
+        "장비 체크리스트 생성",
+        "메일 제목: 회의실 예약 승인 안내"
+      ],
+      "automation_potential": "Mid",
+      "legacy_l6_match": [
+        "회의실 운영"
+      ],
+      "improvement_note": "realdata.ts 고정 뼈대 기준으로 산출물 중심 L6로 재분해함.",
+      "output_type": "approval_list"
+    },
+    {
+      "l6_id": "V2-L6-0429",
+      "l3": "총무",
+      "l4": "사내 인프라 관리",
+      "l5": "외부 사무실 운영",
+      "l6_name": "외부 사무실 운영비 정산서 발행",
+      "input": "운영 기준/요청 데이터",
+      "output": "외부 사무실 운영비 정산서 발행",
+      "digital_trace": [
+        "운영비 지출 집계 로그",
+        "정산 승인 문서번호 생성",
+        "메일 제목: 외부 사무실 정산 완료 안내"
+      ],
+      "automation_potential": "Mid",
+      "legacy_l6_match": [
+        "외부 사무실 운영"
+      ],
+      "improvement_note": "realdata.ts 고정 뼈대 기준으로 산출물 중심 L6로 재분해함.",
+      "output_type": "settlement_doc"
+    },
+    {
+      "l6_id": "V2-L6-0430",
+      "l3": "총무",
+      "l4": "사내 인프라 관리",
+      "l5": "사택 관리",
+      "l6_name": "사택 배정승인서 확정",
+      "input": "운영 기준/요청 데이터",
+      "output": "사택 배정승인서 확정",
+      "digital_trace": [
+        "사택 배정 승인 로그",
+        "입주 점검표 저장",
+        "메일 제목: 사택 배정 결과 안내"
+      ],
+      "automation_potential": "Mid",
+      "legacy_l6_match": [
+        "사택 관리"
+      ],
+      "improvement_note": "realdata.ts 고정 뼈대 기준으로 산출물 중심 L6로 재분해함.",
+      "output_type": "approval_doc"
+    },
+    {
+      "l6_id": "V2-L6-0431",
+      "l3": "총무",
+      "l4": "사내 인프라 관리",
+      "l5": "비품 관리",
+      "l6_name": "비품 입고검수 보고서 등록",
+      "input": "운영 기준/요청 데이터",
+      "output": "비품 입고검수 보고서 등록",
+      "digital_trace": [
+        "입고 검수 로그",
+        "자산 태깅 로그",
+        "메일 제목: 비품 입고 완료 안내"
+      ],
+      "automation_potential": "Mid",
+      "legacy_l6_match": [
+        "비품 관리"
+      ],
+      "improvement_note": "realdata.ts 고정 뼈대 기준으로 산출물 중심 L6로 재분해함.",
+      "output_type": "inspection_report"
+    },
+    {
+      "l6_id": "V2-L6-0432",
+      "l3": "총무",
+      "l4": "사내 인프라 관리",
+      "l5": "임직원 사진관리",
+      "l6_name": "프로필 사진 원본 업로드 완료",
+      "input": "운영 기준/요청 데이터",
+      "output": "프로필 사진 원본 업로드 완료",
+      "digital_trace": [
+        "미디어 저장소 업로드 로그",
+        "품질검수 상태 변경 로그",
+        "메일 제목: 임직원 사진 등록 완료 안내"
+      ],
+      "automation_potential": "Mid",
+      "legacy_l6_match": [
+        "임직원 사진관리"
+      ],
+      "improvement_note": "realdata.ts 고정 뼈대 기준으로 산출물 중심 L6로 재분해함.",
+      "output_type": "media_asset"
+    },
+    {
+      "l6_id": "V2-L6-0433",
+      "l3": "총무",
+      "l4": "사내 인프라 관리",
+      "l5": "임직원 사진관리",
+      "l6_name": "인사시스템 프로필 반영완료 로그 생성",
+      "input": "운영 기준/요청 데이터",
+      "output": "인사시스템 프로필 반영완료 로그 생성",
+      "digital_trace": [
+        "사번별 동기화 성공/실패 로그",
+        "일괄 반영 배치 완료 로그",
+        "메일 제목: 임직원 프로필 반영 완료 안내"
+      ],
+      "automation_potential": "High",
+      "legacy_l6_match": [
+        "임직원 사진관리"
+      ],
+      "improvement_note": "realdata.ts 고정 뼈대 기준으로 산출물 중심 L6로 재분해함.",
+      "output_type": "sync_log"
+    },
+    {
+      "l6_id": "V2-L6-0434",
+      "l3": "총무",
+      "l4": "사내 인프라 관리",
+      "l5": "건물 관리 (공조 등)",
+      "l6_name": "건물 공조설비 점검결과서 등록",
+      "input": "운영 기준/요청 데이터",
+      "output": "건물 공조설비 점검결과서 등록",
+      "digital_trace": [
+        "BMS 점검 로그 저장",
+        "고장설비 조치 티켓 생성",
+        "메일 제목: 건물 공조 점검 결과 안내"
+      ],
+      "automation_potential": "Mid",
+      "legacy_l6_match": [
+        "건물 관리 (공조 등)"
+      ],
+      "improvement_note": "realdata.ts 고정 뼈대 기준으로 산출물 중심 L6로 재분해함.",
+      "output_type": "inspection_report"
+    },
+    {
+      "l6_id": "V2-L6-0435",
+      "l3": "총무",
+      "l4": "임직원 지원",
+      "l5": "임원 지원",
+      "l6_name": "임원 지원요청 배정표 확정",
+      "input": "운영 기준/요청 데이터",
+      "output": "임원 지원요청 배정표 확정",
+      "digital_trace": [
+        "지원요청 티켓 생성",
+        "담당자 배정 로그",
+        "메일 제목: 임원 지원 배정 안내"
+      ],
+      "automation_potential": "Mid",
+      "legacy_l6_match": [
+        "임원 지원"
+      ],
+      "improvement_note": "realdata.ts 고정 뼈대 기준으로 산출물 중심 L6로 재분해함.",
+      "output_type": "allocation_table"
+    },
+    {
+      "l6_id": "V2-L6-0436",
+      "l3": "총무",
+      "l4": "임직원 지원",
+      "l5": "임직원 출장지원",
+      "l6_name": "출장 이동지원 완료확인서 발행",
+      "input": "운영 기준/요청 데이터",
+      "output": "출장 이동지원 완료확인서 발행",
+      "digital_trace": [
+        "출장지원 요청번호 생성",
+        "지원 완료 체크 로그",
+        "메일 제목: 출장 지원 완료 안내"
+      ],
+      "automation_potential": "Mid",
+      "legacy_l6_match": [
+        "임직원 출장지원"
+      ],
+      "improvement_note": "realdata.ts 고정 뼈대 기준으로 산출물 중심 L6로 재분해함.",
+      "output_type": "confirmation_doc"
+    },
+    {
+      "l6_id": "V2-L6-0437",
+      "l3": "총무",
+      "l4": "차량 관리",
+      "l5": "법인 차량 관리",
+      "l6_name": "법인차량 배차확정서 발행",
+      "input": "운영 기준/요청 데이터",
+      "output": "법인차량 배차확정서 발행",
+      "digital_trace": [
+        "배차 승인 로그",
+        "차량 운행기록 생성",
+        "메일 제목: 법인차량 배차 확정 안내"
+      ],
+      "automation_potential": "Mid",
+      "legacy_l6_match": [
+        "법인 차량 관리"
+      ],
+      "improvement_note": "realdata.ts 고정 뼈대 기준으로 산출물 중심 L6로 재분해함.",
+      "output_type": "dispatch_doc"
+    },
+    {
+      "l6_id": "V2-L6-0438",
+      "l3": "총무",
+      "l4": "차량 관리",
+      "l5": "운전기사 관리",
+      "l6_name": "운전기사 근무스케줄 확정본 등록",
+      "input": "운영 기준/요청 데이터",
+      "output": "운전기사 근무스케줄 확정본 등록",
+      "digital_trace": [
+        "근무표 확정 로그",
+        "근태 연동 로그",
+        "메일 제목: 운전기사 근무일정 확정 안내"
+      ],
+      "automation_potential": "Mid",
+      "legacy_l6_match": [
+        "운전기사 관리"
+      ],
+      "improvement_note": "realdata.ts 고정 뼈대 기준으로 산출물 중심 L6로 재분해함.",
+      "output_type": "schedule_doc"
+    },
+    {
+      "l6_id": "V2-L6-0439",
+      "l3": "총무",
+      "l4": "차량 관리",
+      "l5": "업무버스 관리",
+      "l6_name": "업무버스 노선운영 계획서 확정",
+      "input": "운영 기준/요청 데이터",
+      "output": "업무버스 노선운영 계획서 확정",
+      "digital_trace": [
+        "노선 계획 버전 저장",
+        "탑승현황 집계 로그",
+        "메일 제목: 업무버스 노선 운영 안내"
+      ],
+      "automation_potential": "Mid",
+      "legacy_l6_match": [
+        "업무버스 관리"
+      ],
+      "improvement_note": "realdata.ts 고정 뼈대 기준으로 산출물 중심 L6로 재분해함.",
+      "output_type": "route_plan"
+    },
+    {
+      "l6_id": "V2-L6-0440",
+      "l3": "총무",
+      "l4": "협력사 관리",
+      "l5": "입점업체 운영",
+      "l6_name": "입점업체 계약승인서 확정",
+      "input": "운영 기준/요청 데이터",
+      "output": "입점업체 계약승인서 확정",
+      "digital_trace": [
+        "전자결재 승인 로그",
+        "계약번호 생성",
+        "메일 제목: 입점업체 계약 승인 완료 안내"
+      ],
+      "automation_potential": "Mid",
+      "legacy_l6_match": [
+        "입점업체 운영"
+      ],
+      "improvement_note": "realdata.ts 고정 뼈대 기준으로 산출물 중심 L6로 재분해함.",
+      "output_type": "contract_doc"
+    },
+    {
+      "l6_id": "V2-L6-0441",
+      "l3": "총무",
+      "l4": "협력사 관리",
+      "l5": "입점업체 운영",
+      "l6_name": "입점업체 월간 정산서 발행",
+      "input": "운영 기준/요청 데이터",
+      "output": "입점업체 월간 정산서 발행",
+      "digital_trace": [
+        "수수료 정산 배치 로그",
+        "청구내역 검증 로그",
+        "메일 제목: 입점업체 월간 정산 완료 안내"
+      ],
+      "automation_potential": "Mid",
+      "legacy_l6_match": [
+        "입점업체 운영"
+      ],
+      "improvement_note": "realdata.ts 고정 뼈대 기준으로 산출물 중심 L6로 재분해함.",
+      "output_type": "settlement_doc"
+    },
+    {
+      "l6_id": "V2-L6-0442",
+      "l3": "총무",
+      "l4": "협력사 관리",
+      "l5": "상주협력사 관리",
+      "l6_name": "상주협력사 출입권한 부여로그 생성",
+      "input": "운영 기준/요청 데이터",
+      "output": "상주협력사 출입권한 부여로그 생성",
+      "digital_trace": [
+        "출입권한 승인 로그",
+        "출입카드 발급 로그",
+        "메일 제목: 상주협력사 출입권한 부여 안내"
+      ],
+      "automation_potential": "Mid",
+      "legacy_l6_match": [
+        "상주협력사 관리"
+      ],
+      "improvement_note": "realdata.ts 고정 뼈대 기준으로 산출물 중심 L6로 재분해함.",
+      "output_type": "access_log"
+    },
+    {
+      "l6_id": "V2-L6-0443",
+      "l3": "총무",
+      "l4": "협력사 관리",
+      "l5": "상주협력사 관리",
+      "l6_name": "상주협력사 안전교육 이수현황표 등록",
+      "input": "운영 기준/요청 데이터",
+      "output": "상주협력사 안전교육 이수현황표 등록",
+      "digital_trace": [
+        "안전교육 이수 데이터 저장",
+        "미이수 경고 로그",
+        "메일 제목: 상주협력사 안전교육 이수 현황 안내"
+      ],
+      "automation_potential": "Mid",
+      "legacy_l6_match": [
+        "상주협력사 관리"
+      ],
+      "improvement_note": "realdata.ts 고정 뼈대 기준으로 산출물 중심 L6로 재분해함.",
+      "output_type": "training_status"
+    },
+    {
+      "l6_id": "V2-L6-0444",
+      "l3": "총무",
+      "l4": "공통",
+      "l5": "파견자 문의 대응",
+      "l6_name": "파견자 문의접수 티켓 생성",
+      "input": "운영 기준/요청 데이터",
+      "output": "파견자 문의접수 티켓 생성",
+      "digital_trace": [
+        "문의 티켓번호 생성",
+        "문의유형 자동분류 로그",
+        "메일 제목: 파견자 문의 접수 안내"
+      ],
+      "automation_potential": "High",
+      "legacy_l6_match": [
+        "파견자 문의 대응"
+      ],
+      "improvement_note": "realdata.ts 고정 뼈대 기준으로 산출물 중심 L6로 재분해함.",
+      "output_type": "ticket_log"
+    },
+    {
+      "l6_id": "V2-L6-0445",
+      "l3": "총무",
+      "l4": "공통",
+      "l5": "파견자 문의 대응",
+      "l6_name": "파견자 문의처리 결과통보 발송",
+      "input": "운영 기준/요청 데이터",
+      "output": "파견자 문의처리 결과통보 발송",
+      "digital_trace": [
+        "답변문 템플릿 저장",
+        "발송 이력 로그",
+        "처리상태 변경 로그: 완료"
+      ],
+      "automation_potential": "Mid",
+      "legacy_l6_match": [
+        "파견자 문의 대응"
+      ],
+      "improvement_note": "realdata.ts 고정 뼈대 기준으로 산출물 중심 L6로 재분해함.",
+      "output_type": "notification_mail"
+    },
+    {
+      "l6_id": "V2-L6-0446",
+      "l3": "노사",
+      "l4": "조직문화",
+      "l5": "Change Agent",
+      "l6_name": "CA 운영계획서 확정",
+      "input": "운영 기준/사건 데이터",
+      "output": "CA 운영계획서 확정",
+      "digital_trace": [
+        "조직문화 포털 과제 등록 로그",
+        "운영계획 결재문서 번호 생성",
+        "메일 제목: CA 운영계획 확정 안내"
+      ],
+      "automation_potential": "Mid",
+      "legacy_l6_match": [
+        "Change Agent"
+      ],
+      "improvement_note": "realdata.ts 고정 뼈대 기준 산출물 중심 분해",
+      "output_type": "plan_doc"
+    },
+    {
+      "l6_id": "V2-L6-0447",
+      "l3": "노사",
+      "l4": "조직문화",
+      "l5": "Change Agent",
+      "l6_name": "CA 활동결과 보고서 등록",
+      "input": "운영 기준/사건 데이터",
+      "output": "CA 활동결과 보고서 등록",
+      "digital_trace": [
+        "활동일지 업로드 로그",
+        "개선과제 상태값 변경 로그",
+        "메일 제목: CA 활동결과 공유"
+      ],
+      "automation_potential": "Mid",
+      "legacy_l6_match": [
+        "Change Agent"
+      ],
+      "improvement_note": "realdata.ts 고정 뼈대 기준 산출물 중심 분해",
+      "output_type": "result_report"
+    },
+    {
+      "l6_id": "V2-L6-0448",
+      "l3": "노사",
+      "l4": "조직문화",
+      "l5": "Change Agent",
+      "l6_name": "CA 우수사례집 발행",
+      "input": "운영 기준/사건 데이터",
+      "output": "CA 우수사례집 발행",
+      "digital_trace": [
+        "사례집 버전 저장 로그",
+        "지식관리시스템 게시 로그",
+        "메일 제목: CA 우수사례 배포"
+      ],
+      "automation_potential": "Mid",
+      "legacy_l6_match": [
+        "Change Agent"
+      ],
+      "improvement_note": "realdata.ts 고정 뼈대 기준 산출물 중심 분해",
+      "output_type": "casebook"
+    },
+    {
+      "l6_id": "V2-L6-0449",
+      "l3": "노사",
+      "l4": "조직문화",
+      "l5": "SCI 진단",
+      "l6_name": "SCI 진단 설문지 확정",
+      "input": "운영 기준/사건 데이터",
+      "output": "SCI 진단 설문지 확정",
+      "digital_trace": [
+        "설문 문항 버전 확정 로그",
+        "대상자 배포 그룹 생성 로그",
+        "메일 제목: SCI 진단 설문 오픈 안내"
+      ],
+      "automation_potential": "Mid",
+      "legacy_l6_match": [
+        "SCI 진단"
+      ],
+      "improvement_note": "realdata.ts 고정 뼈대 기준 산출물 중심 분해",
+      "output_type": "survey_form"
+    },
+    {
+      "l6_id": "V2-L6-0450",
+      "l3": "노사",
+      "l4": "조직문화",
+      "l5": "SCI 진단",
+      "l6_name": "SCI 서베이 응답데이터 수집 완료",
+      "input": "운영 기준/사건 데이터",
+      "output": "SCI 서베이 응답데이터 수집 완료",
+      "digital_trace": [
+        "응답 데이터 적재 로그",
+        "미응답자 리마인드 발송 로그",
+        "수집률 대시보드 갱신 로그"
+      ],
+      "automation_potential": "High",
+      "legacy_l6_match": [
+        "SCI 진단"
+      ],
+      "improvement_note": "realdata.ts 고정 뼈대 기준 산출물 중심 분해",
+      "output_type": "survey_dataset"
+    },
+    {
+      "l6_id": "V2-L6-0451",
+      "l3": "노사",
+      "l4": "조직문화",
+      "l5": "SCI 진단",
+      "l6_name": "SCI 진단 결과리포트 발행",
+      "input": "운영 기준/사건 데이터",
+      "output": "SCI 진단 결과리포트 발행",
+      "digital_trace": [
+        "결과 집계 배치 실행 로그",
+        "조직별 점수 산출 로그",
+        "메일 제목: SCI 진단 결과 공유"
+      ],
+      "automation_potential": "High",
+      "legacy_l6_match": [
+        "SCI 진단"
+      ],
+      "improvement_note": "realdata.ts 고정 뼈대 기준 산출물 중심 분해",
+      "output_type": "analysis_report"
+    },
+    {
+      "l6_id": "V2-L6-0452",
+      "l3": "노사",
+      "l4": "조직문화",
+      "l5": "My Pulse 서베이",
+      "l6_name": "My Pulse 설문지 확정",
+      "input": "운영 기준/사건 데이터",
+      "output": "My Pulse 설문지 확정",
+      "digital_trace": [
+        "마이펄스 문항 버전 배포 로그",
+        "조직별 배포대상 확정 로그",
+        "메일 제목: My Pulse 설문 시작 안내"
+      ],
+      "automation_potential": "Mid",
+      "legacy_l6_match": [
+        "My Pulse 서베이"
+      ],
+      "improvement_note": "realdata.ts 고정 뼈대 기준 산출물 중심 분해",
+      "output_type": "survey_form"
+    },
+    {
+      "l6_id": "V2-L6-0453",
+      "l3": "노사",
+      "l4": "조직문화",
+      "l5": "My Pulse 서베이",
+      "l6_name": "My Pulse 응답데이터 수집 완료",
+      "input": "운영 기준/사건 데이터",
+      "output": "My Pulse 응답데이터 수집 완료",
+      "digital_trace": [
+        "마이펄스 응답 데이터 적재",
+        "미응답자 알림 발송 로그",
+        "응답률 대시보드 갱신 로그"
+      ],
+      "automation_potential": "High",
+      "legacy_l6_match": [
+        "My Pulse 서베이"
+      ],
+      "improvement_note": "realdata.ts 고정 뼈대 기준 산출물 중심 분해",
+      "output_type": "survey_dataset"
+    },
+    {
+      "l6_id": "V2-L6-0454",
+      "l3": "노사",
+      "l4": "조직문화",
+      "l5": "My Pulse 서베이",
+      "l6_name": "My Pulse 결과리포트 발행",
+      "input": "운영 기준/사건 데이터",
+      "output": "My Pulse 결과리포트 발행",
+      "digital_trace": [
+        "조직별 점수 집계 배치",
+        "저점수 경보 항목 생성 로그",
+        "메일 제목: My Pulse 결과 공유"
+      ],
+      "automation_potential": "High",
+      "legacy_l6_match": [
+        "My Pulse 서베이"
+      ],
+      "improvement_note": "realdata.ts 고정 뼈대 기준 산출물 중심 분해",
+      "output_type": "analysis_report"
+    },
+    {
+      "l6_id": "V2-L6-0455",
+      "l3": "노사",
+      "l4": "협의회",
+      "l5": "정기협의회",
+      "l6_name": "정기협의회 안건목록 확정",
+      "input": "운영 기준/사건 데이터",
+      "output": "정기협의회 안건목록 확정",
+      "digital_trace": [
+        "안건 접수-선정 로그",
+        "안건 우선순위 확정 로그",
+        "메일 제목: 정기협의회 안건 확정 안내"
+      ],
+      "automation_potential": "Mid",
+      "legacy_l6_match": [
+        "정기협의회"
+      ],
+      "improvement_note": "realdata.ts 고정 뼈대 기준 산출물 중심 분해",
+      "output_type": "agenda_doc"
+    },
+    {
+      "l6_id": "V2-L6-0456",
+      "l3": "노사",
+      "l4": "협의회",
+      "l5": "정기협의회",
+      "l6_name": "정기협의회 회의록 발행",
+      "input": "운영 기준/사건 데이터",
+      "output": "정기협의회 회의록 발행",
+      "digital_trace": [
+        "회의록 원본 저장",
+        "의결사항 태깅 로그",
+        "메일 제목: 정기협의회 회의록 공유"
+      ],
+      "automation_potential": "Mid",
+      "legacy_l6_match": [
+        "정기협의회"
+      ],
+      "improvement_note": "realdata.ts 고정 뼈대 기준 산출물 중심 분해",
+      "output_type": "minutes_doc"
+    },
+    {
+      "l6_id": "V2-L6-0457",
+      "l3": "노사",
+      "l4": "노동조합",
+      "l5": "단체교섭",
+      "l6_name": "단체교섭 요구안 접수목록 확정",
+      "input": "운영 기준/사건 데이터",
+      "output": "단체교섭 요구안 접수목록 확정",
+      "digital_trace": [
+        "요구안 접수번호 생성",
+        "안건 분류 로그",
+        "메일 제목: 단체교섭 요구안 접수 안내"
+      ],
+      "automation_potential": "High",
+      "legacy_l6_match": [
+        "단체교섭"
+      ],
+      "improvement_note": "realdata.ts 고정 뼈대 기준 산출물 중심 분해",
+      "output_type": "intake_list"
+    },
+    {
+      "l6_id": "V2-L6-0458",
+      "l3": "노사",
+      "l4": "노동조합",
+      "l5": "단체교섭",
+      "l6_name": "단체교섭 회차별 회의록 발행",
+      "input": "운영 기준/사건 데이터",
+      "output": "단체교섭 회차별 회의록 발행",
+      "digital_trace": [
+        "회차별 회의록 저장",
+        "쟁점 태그 생성 로그",
+        "메일 제목: 단체교섭 회의록 공유"
+      ],
+      "automation_potential": "Mid",
+      "legacy_l6_match": [
+        "단체교섭"
+      ],
+      "improvement_note": "realdata.ts 고정 뼈대 기준 산출물 중심 분해",
+      "output_type": "minutes_doc"
+    },
+    {
+      "l6_id": "V2-L6-0459",
+      "l3": "노사",
+      "l4": "노동조합",
+      "l5": "단체협약",
+      "l6_name": "단체협약 체결본 발행",
+      "input": "운영 기준/사건 데이터",
+      "output": "단체협약 체결본 발행",
+      "digital_trace": [
+        "협약 체결 서명 로그",
+        "체결본 원본 저장",
+        "메일 제목: 단체협약 체결 완료 안내"
+      ],
+      "automation_potential": "Mid",
+      "legacy_l6_match": [
+        "단체협약"
+      ],
+      "improvement_note": "realdata.ts 고정 뼈대 기준 산출물 중심 분해",
+      "output_type": "agreement_doc"
+    },
+    {
+      "l6_id": "V2-L6-0460",
+      "l3": "노사",
+      "l4": "ER",
+      "l5": "직장내괴롭힘",
+      "l6_name": "직장내괴롭힘 신고케이스 생성",
+      "input": "운영 기준/사건 데이터",
+      "output": "직장내괴롭힘 신고케이스 생성",
+      "digital_trace": [
+        "신고 케이스번호 생성",
+        "익명보호 설정 로그",
+        "메일 제목: 직장내괴롭힘 신고 접수 안내"
+      ],
+      "automation_potential": "Mid",
+      "legacy_l6_match": [
+        "직장내괴롭힘"
+      ],
+      "improvement_note": "realdata.ts 고정 뼈대 기준 산출물 중심 분해",
+      "output_type": "case_intake"
+    },
+    {
+      "l6_id": "V2-L6-0461",
+      "l3": "노사",
+      "l4": "ER",
+      "l5": "직장내괴롭힘",
+      "l6_name": "조사면담 기록서 등록",
+      "input": "운영 기준/사건 데이터",
+      "output": "조사면담 기록서 등록",
+      "digital_trace": [
+        "면담기록 저장",
+        "증빙자료 첨부 로그",
+        "조사 진행상태 변경 로그"
+      ],
+      "automation_potential": "Mid",
+      "legacy_l6_match": [
+        "직장내괴롭힘"
+      ],
+      "improvement_note": "realdata.ts 고정 뼈대 기준 산출물 중심 분해",
+      "output_type": "interview_record"
+    },
+    {
+      "l6_id": "V2-L6-0462",
+      "l3": "노사",
+      "l4": "ER",
+      "l5": "희망퇴직",
+      "l6_name": "희망퇴직 대상자 기준표 확정",
+      "input": "운영 기준/사건 데이터",
+      "output": "희망퇴직 대상자 기준표 확정",
+      "digital_trace": [
+        "대상자 기준 결재 로그",
+        "대상자 추출 배치 로그",
+        "메일 제목: 희망퇴직 대상 기준 확정 안내"
+      ],
+      "automation_potential": "Mid",
+      "legacy_l6_match": [
+        "희망퇴직"
+      ],
+      "improvement_note": "realdata.ts 고정 뼈대 기준 산출물 중심 분해",
+      "output_type": "criteria_doc"
+    },
+    {
+      "l6_id": "V2-L6-0463",
+      "l3": "노사",
+      "l4": "ER",
+      "l5": "희망퇴직",
+      "l6_name": "희망퇴직 위로금 협의안 확정",
+      "input": "운영 기준/사건 데이터",
+      "output": "희망퇴직 위로금 협의안 확정",
+      "digital_trace": [
+        "협의안 버전 저장",
+        "재협의 이력 로그",
+        "메일 제목: 희망퇴직 위로금 협의 결과 안내"
+      ],
+      "automation_potential": "Mid",
+      "legacy_l6_match": [
+        "희망퇴직"
+      ],
+      "improvement_note": "realdata.ts 고정 뼈대 기준 산출물 중심 분해",
+      "output_type": "proposal_doc"
+    },
+    {
+      "l6_id": "V2-L6-0464",
+      "l3": "노사",
+      "l4": "ER",
+      "l5": "희망퇴직",
+      "l6_name": "퇴직패키지 정산서 발행",
+      "input": "운영 기준/사건 데이터",
+      "output": "퇴직패키지 정산서 발행",
+      "digital_trace": [
+        "정산 배치 실행 로그",
+        "지급승인 로그",
+        "메일 제목: 희망퇴직 정산 완료 안내"
+      ],
+      "automation_potential": "Mid",
+      "legacy_l6_match": [
+        "희망퇴직"
+      ],
+      "improvement_note": "realdata.ts 고정 뼈대 기준 산출물 중심 분해",
+      "output_type": "settlement_doc"
+    },
+    {
+      "l6_id": "V2-L6-0465",
+      "l3": "노사",
+      "l4": "ER",
+      "l5": "생일자 기념쿠키 지급",
+      "l6_name": "생일자 지급대상 명단 확정",
+      "input": "운영 기준/사건 데이터",
+      "output": "생일자 지급대상 명단 확정",
+      "digital_trace": [
+        "생일자 대상 추출 배치",
+        "대상자 검증 로그",
+        "메일 제목: 생일자 기념쿠키 지급대상 확정 안내"
+      ],
+      "automation_potential": "Mid",
+      "legacy_l6_match": [
+        "생일자 기념쿠키 지급"
+      ],
+      "improvement_note": "realdata.ts 고정 뼈대 기준 산출물 중심 분해",
+      "output_type": "approval_list"
+    },
+    {
+      "l6_id": "V2-L6-0466",
+      "l3": "노사",
+      "l4": "ER",
+      "l5": "생일자 기념쿠키 지급",
+      "l6_name": "기념쿠키 발주서 발행",
+      "input": "운영 기준/사건 데이터",
+      "output": "기념쿠키 발주서 발행",
+      "digital_trace": [
+        "업체 발주번호 생성",
+        "발주 승인 로그",
+        "메일 제목: 생일자 기념쿠키 발주 완료 안내"
+      ],
+      "automation_potential": "Mid",
+      "legacy_l6_match": [
+        "생일자 기념쿠키 지급"
+      ],
+      "improvement_note": "realdata.ts 고정 뼈대 기준 산출물 중심 분해",
+      "output_type": "order_doc"
+    },
+    {
+      "l6_id": "V2-L6-0467",
+      "l3": "노사",
+      "l4": "사건사고 관리",
+      "l5": "면담질문지 준비",
+      "l6_name": "면담질문지 확정본 등록",
+      "input": "운영 기준/사건 데이터",
+      "output": "면담질문지 확정본 등록",
+      "digital_trace": [
+        "질문지 버전 승인 로그",
+        "사건유형별 템플릿 매핑 로그",
+        "메일 제목: 면담질문지 확정 안내"
+      ],
+      "automation_potential": "Mid",
+      "legacy_l6_match": [
+        "면담질문지 준비"
+      ],
+      "improvement_note": "realdata.ts 고정 뼈대 기준 산출물 중심 분해",
+      "output_type": "questionnaire_doc"
+    },
+    {
+      "l6_id": "V2-L6-0468",
+      "l3": "노사",
+      "l4": "사건사고 관리",
+      "l5": "면담기록/요약",
+      "l6_name": "면담요약 보고서 발행",
+      "input": "운영 기준/사건 데이터",
+      "output": "면담요약 보고서 발행",
+      "digital_trace": [
+        "요약본 생성 로그",
+        "검토 승인 로그",
+        "메일 제목: 면담요약 보고 안내"
+      ],
+      "automation_potential": "Mid",
+      "legacy_l6_match": [
+        "면담기록/요약"
+      ],
+      "improvement_note": "realdata.ts 고정 뼈대 기준 산출물 중심 분해",
+      "output_type": "summary_report"
+    },
+    {
+      "l6_id": "V2-L6-0469",
+      "l3": "노사",
+      "l4": "사건사고 관리",
+      "l5": "유사사례 및 판례 확인",
+      "l6_name": "판례검토 의견서 등록",
+      "input": "운영 기준/사건 데이터",
+      "output": "판례검토 의견서 등록",
+      "digital_trace": [
+        "판례 인용근거 링크 저장",
+        "법무 검토 코멘트 로그",
+        "메일 제목: 판례검토 의견 공유"
+      ],
+      "automation_potential": "Mid",
+      "legacy_l6_match": [
+        "유사사례 및 판례 확인"
+      ],
+      "improvement_note": "realdata.ts 고정 뼈대 기준 산출물 중심 분해",
+      "output_type": "legal_opinion"
+    },
+    {
+      "l6_id": "V2-L6-0470",
+      "l3": "노사",
+      "l4": "사건사고 관리",
+      "l5": "징계양정 제안",
+      "l6_name": "징계양정 확정안 결재완료",
+      "input": "운영 기준/사건 데이터",
+      "output": "징계양정 확정안 결재완료",
+      "digital_trace": [
+        "결재 승인 로그",
+        "확정안 원본 저장",
+        "메일 제목: 징계양정 확정안 공유"
+      ],
+      "automation_potential": "Mid",
+      "legacy_l6_match": [
+        "징계양정 제안"
+      ],
+      "improvement_note": "realdata.ts 고정 뼈대 기준 산출물 중심 분해",
+      "output_type": "approval_doc"
+    },
+    {
+      "l6_id": "V2-L6-0471",
+      "l3": "해외인사",
+      "l4": "공통",
+      "l5": "주재원 인사(양성)",
+      "l6_name": "주재원 양성대상 선발명단 확정",
+      "input": "운영 기준/원천 데이터",
+      "output": "주재원 양성대상 선발명단 확정",
+      "digital_trace": [
+        "선발평가 점수 집계 로그",
+        "선발 승인 문서번호 생성",
+        "메일 제목: 주재원 양성대상 선발 결과 안내"
+      ],
+      "automation_potential": "Mid",
+      "legacy_l6_match": [
+        "주재원 인사(양성)"
+      ],
+      "improvement_note": "realdata.ts 고정 뼈대 기반 산출물 중심 분해",
+      "output_type": "approval_list"
+    },
+    {
+      "l6_id": "V2-L6-0472",
+      "l3": "해외인사",
+      "l4": "공통",
+      "l5": "주재원 인사(양성)",
+      "l6_name": "주재원 양성과정 수료현황표 발행",
+      "input": "운영 기준/원천 데이터",
+      "output": "주재원 양성과정 수료현황표 발행",
+      "digital_trace": [
+        "LMS 수료 데이터 적재",
+        "미수료 리마인드 로그",
+        "메일 제목: 주재원 양성과정 수료 현황 공유"
+      ],
+      "automation_potential": "High",
+      "legacy_l6_match": [
+        "주재원 인사(양성)"
+      ],
+      "improvement_note": "realdata.ts 고정 뼈대 기반 산출물 중심 분해",
+      "output_type": "training_status"
+    },
+    {
+      "l6_id": "V2-L6-0473",
+      "l3": "해외인사",
+      "l4": "인력운영",
+      "l5": "주재원 인사(선발/부임)",
+      "l6_name": "주재원 선발평가 결과표 확정",
+      "input": "운영 기준/원천 데이터",
+      "output": "주재원 선발평가 결과표 확정",
+      "digital_trace": [
+        "평가결과 집계 배치 로그",
+        "선발 확정 상태값 변경",
+        "메일 제목: 주재원 선발 결과 안내"
+      ],
+      "automation_potential": "Mid",
+      "legacy_l6_match": [
+        "주재원 인사(선발/부임)"
+      ],
+      "improvement_note": "realdata.ts 고정 뼈대 기반 산출물 중심 분해",
+      "output_type": "evaluation_sheet"
+    },
+    {
+      "l6_id": "V2-L6-0474",
+      "l3": "해외인사",
+      "l4": "인력운영",
+      "l5": "주재원 인사(선발/부임)",
+      "l6_name": "부임 일정확정서 발행",
+      "input": "운영 기준/원천 데이터",
+      "output": "부임 일정확정서 발행",
+      "digital_trace": [
+        "부임 일정 등록 로그",
+        "항공/비자 준비 체크리스트 생성",
+        "메일 제목: 주재원 부임 일정 확정 안내"
+      ],
+      "automation_potential": "Mid",
+      "legacy_l6_match": [
+        "주재원 인사(선발/부임)"
+      ],
+      "improvement_note": "realdata.ts 고정 뼈대 기반 산출물 중심 분해",
+      "output_type": "schedule_doc"
+    },
+    {
+      "l6_id": "V2-L6-0475",
+      "l3": "해외인사",
+      "l4": "인력운영",
+      "l5": "주재원 인사(관리)",
+      "l6_name": "주재원 월간 운영현황표 업데이트",
+      "input": "운영 기준/원천 데이터",
+      "output": "주재원 월간 운영현황표 업데이트",
+      "digital_trace": [
+        "월간 운영데이터 적재",
+        "이슈 분류 로그",
+        "메일 제목: 주재원 월간 운영현황 공유"
+      ],
+      "automation_potential": "Mid",
+      "legacy_l6_match": [
+        "주재원 인사(관리)"
+      ],
+      "improvement_note": "realdata.ts 고정 뼈대 기반 산출물 중심 분해",
+      "output_type": "operation_ledger"
+    },
+    {
+      "l6_id": "V2-L6-0476",
+      "l3": "해외인사",
+      "l4": "인력운영",
+      "l5": "주재원 인사(관리)",
+      "l6_name": "주재원 이슈조치 결과서 등록",
+      "input": "운영 기준/원천 데이터",
+      "output": "주재원 이슈조치 결과서 등록",
+      "digital_trace": [
+        "이슈 티켓 생성/종결 로그",
+        "조치 SLA 체크 로그",
+        "메일 제목: 주재원 이슈 조치 결과 안내"
+      ],
+      "automation_potential": "Mid",
+      "legacy_l6_match": [
+        "주재원 인사(관리)"
+      ],
+      "improvement_note": "realdata.ts 고정 뼈대 기반 산출물 중심 분해",
+      "output_type": "issue_report"
+    },
+    {
+      "l6_id": "V2-L6-0477",
+      "l3": "해외인사",
+      "l4": "인력운영",
+      "l5": "주재원 인사(귀임)",
+      "l6_name": "주재원 귀임계획서 확정",
+      "input": "운영 기준/원천 데이터",
+      "output": "주재원 귀임계획서 확정",
+      "digital_trace": [
+        "귀임 계획 승인 로그",
+        "귀임 대상 확정 로그",
+        "메일 제목: 주재원 귀임 계획 안내"
+      ],
+      "automation_potential": "Mid",
+      "legacy_l6_match": [
+        "주재원 인사(귀임)"
+      ],
+      "improvement_note": "realdata.ts 고정 뼈대 기반 산출물 중심 분해",
+      "output_type": "plan_doc"
+    },
+    {
+      "l6_id": "V2-L6-0478",
+      "l3": "해외인사",
+      "l4": "인력운영",
+      "l5": "주재원 인사(귀임)",
+      "l6_name": "귀임 완료 확인서 등록",
+      "input": "운영 기준/원천 데이터",
+      "output": "귀임 완료 확인서 등록",
+      "digital_trace": [
+        "글로벌 인사시스템 상태 변경: 귀임완료",
+        "복귀부서 배치 로그",
+        "메일 제목: 주재원 귀임 완료 안내"
+      ],
+      "automation_potential": "Mid",
+      "legacy_l6_match": [
+        "주재원 인사(귀임)"
+      ],
+      "improvement_note": "realdata.ts 고정 뼈대 기반 산출물 중심 분해",
+      "output_type": "confirmation_doc"
+    },
+    {
+      "l6_id": "V2-L6-0479",
+      "l3": "해외인사",
+      "l4": "인력운영",
+      "l5": "STEP 운영",
+      "l6_name": "STEP 교환인력 선발명단 확정",
+      "input": "운영 기준/원천 데이터",
+      "output": "STEP 교환인력 선발명단 확정",
+      "digital_trace": [
+        "STEP 후보평가 점수 집계",
+        "선발 승인 문서번호 생성",
+        "메일 제목: STEP 교환인력 선발 결과 안내"
+      ],
+      "automation_potential": "Mid",
+      "legacy_l6_match": [
+        "STEP 운영"
+      ],
+      "improvement_note": "realdata.ts 고정 뼈대 기반 산출물 중심 분해",
+      "output_type": "approval_list"
+    },
+    {
+      "l6_id": "V2-L6-0480",
+      "l3": "해외인사",
+      "l4": "인력운영",
+      "l5": "STEP 운영",
+      "l6_name": "STEP 파견배치 확정서 발행",
+      "input": "운영 기준/원천 데이터",
+      "output": "STEP 파견배치 확정서 발행",
+      "digital_trace": [
+        "파견 배치정보 등록 로그",
+        "법인 간 수용확인 로그",
+        "메일 제목: STEP 파견 배치 확정 안내"
+      ],
+      "automation_potential": "Mid",
+      "legacy_l6_match": [
+        "STEP 운영"
+      ],
+      "improvement_note": "realdata.ts 고정 뼈대 기반 산출물 중심 분해",
+      "output_type": "assignment_doc"
+    },
+    {
+      "l6_id": "V2-L6-0481",
+      "l3": "해외인사",
+      "l4": "인력운영",
+      "l5": "STEP 운영",
+      "l6_name": "STEP 복귀결과 평가서 등록",
+      "input": "운영 기준/원천 데이터",
+      "output": "STEP 복귀결과 평가서 등록",
+      "digital_trace": [
+        "복귀 후 성과평가 입력 로그",
+        "역량향상 지표 계산 로그",
+        "메일 제목: STEP 복귀 평가 결과 안내"
+      ],
+      "automation_potential": "Mid",
+      "legacy_l6_match": [
+        "STEP 운영"
+      ],
+      "improvement_note": "realdata.ts 고정 뼈대 기반 산출물 중심 분해",
+      "output_type": "evaluation_report"
+    },
+    {
+      "l6_id": "V2-L6-0482",
+      "l3": "해외인사",
+      "l4": "인력운영",
+      "l5": "양성 파견 운영(현지/STEP)",
+      "l6_name": "양성 파견운영 계획서 확정",
+      "input": "운영 기준/원천 데이터",
+      "output": "양성 파견운영 계획서 확정",
+      "digital_trace": [
+        "파견계획 승인 로그",
+        "현지/STEP 트랙 분기 로그",
+        "메일 제목: 양성 파견 운영계획 안내"
+      ],
+      "automation_potential": "Mid",
+      "legacy_l6_match": [
+        "양성 파견 운영(현지/STEP)"
+      ],
+      "improvement_note": "realdata.ts 고정 뼈대 기반 산출물 중심 분해",
+      "output_type": "plan_doc"
+    },
+    {
+      "l6_id": "V2-L6-0483",
+      "l3": "해외인사",
+      "l4": "인력운영",
+      "l5": "양성 파견 운영(현지/STEP)",
+      "l6_name": "양성 파견 종료평가 보고서 등록",
+      "input": "운영 기준/원천 데이터",
+      "output": "양성 파견 종료평가 보고서 등록",
+      "digital_trace": [
+        "종료평가 입력 로그",
+        "후속배치 추천 로그",
+        "메일 제목: 양성 파견 종료평가 안내"
+      ],
+      "automation_potential": "Mid",
+      "legacy_l6_match": [
+        "양성 파견 운영(현지/STEP)"
+      ],
+      "improvement_note": "realdata.ts 고정 뼈대 기반 산출물 중심 분해",
+      "output_type": "evaluation_report"
+    },
+    {
+      "l6_id": "V2-L6-0484",
+      "l3": "해외인사",
+      "l4": "인력운영",
+      "l5": "파견 인력 부임/귀임",
+      "l6_name": "파견 인력 부임·귀임 통합일정표 확정",
+      "input": "운영 기준/원천 데이터",
+      "output": "파견 인력 부임·귀임 통합일정표 확정",
+      "digital_trace": [
+        "부임/귀임 일정 통합 캘린더 생성",
+        "대상자 상태 동기화 로그",
+        "메일 제목: 파견 인력 부임·귀임 일정 안내"
+      ],
+      "automation_potential": "Mid",
+      "legacy_l6_match": [
+        "파견 인력 부임/귀임"
+      ],
+      "improvement_note": "realdata.ts 고정 뼈대 기반 산출물 중심 분해",
+      "output_type": "schedule_doc"
+    },
+    {
+      "l6_id": "V2-L6-0485",
+      "l3": "해외인사",
+      "l4": "인력운영",
+      "l5": "지표 관리",
+      "l6_name": "글로벌 인사지표 기준서 확정",
+      "input": "운영 기준/원천 데이터",
+      "output": "글로벌 인사지표 기준서 확정",
+      "digital_trace": [
+        "지표 정의 버전 저장 로그",
+        "산식 승인 로그",
+        "메일 제목: 글로벌 인사지표 기준 확정 안내"
+      ],
+      "automation_potential": "Mid",
+      "legacy_l6_match": [
+        "지표 관리"
+      ],
+      "improvement_note": "realdata.ts 고정 뼈대 기반 산출물 중심 분해",
+      "output_type": "criteria_doc"
+    },
+    {
+      "l6_id": "V2-L6-0486",
+      "l3": "해외인사",
+      "l4": "인력운영",
+      "l5": "지표 관리",
+      "l6_name": "월간 지표 모니터링 리포트 발행",
+      "input": "운영 기준/원천 데이터",
+      "output": "월간 지표 모니터링 리포트 발행",
+      "digital_trace": [
+        "월간 지표 집계 배치",
+        "이상치 탐지 로그",
+        "메일 제목: 글로벌 인사지표 월간 리포트 공유"
+      ],
+      "automation_potential": "High",
+      "legacy_l6_match": [
+        "지표 관리"
+      ],
+      "improvement_note": "realdata.ts 고정 뼈대 기반 산출물 중심 분해",
+      "output_type": "monitoring_report"
+    },
+    {
+      "l6_id": "V2-L6-0487",
+      "l3": "해외인사",
+      "l4": "인력운영",
+      "l5": "조직 관리",
+      "l6_name": "글로벌 조직변경안 확정본 등록",
+      "input": "운영 기준/원천 데이터",
+      "output": "글로벌 조직변경안 확정본 등록",
+      "digital_trace": [
+        "조직변경안 승인 로그",
+        "조직도 버전 업데이트 로그",
+        "메일 제목: 글로벌 조직 변경 안내"
+      ],
+      "automation_potential": "Mid",
+      "legacy_l6_match": [
+        "조직 관리"
+      ],
+      "improvement_note": "realdata.ts 고정 뼈대 기반 산출물 중심 분해",
+      "output_type": "org_revision_doc"
+    },
+    {
+      "l6_id": "V2-L6-0488",
+      "l3": "해외인사",
+      "l4": "임원인사",
+      "l5": "VP 승격",
+      "l6_name": "상무(VP) 승격 대상자 검토표 확정",
+      "input": "운영 기준/원천 데이터",
+      "output": "상무(VP) 승격 대상자 검토표 확정",
+      "digital_trace": [
+        "승격심사 점수 집계 로그",
+        "임원인사위원회 검토 로그",
+        "메일 제목: 상무 승격 검토 결과 안내"
+      ],
+      "automation_potential": "Mid",
+      "legacy_l6_match": [
+        "VP 승격"
+      ],
+      "improvement_note": "realdata.ts 고정 뼈대 기반 산출물 중심 분해",
+      "output_type": "review_sheet"
+    },
+    {
+      "l6_id": "V2-L6-0489",
+      "l3": "해외인사",
+      "l4": "임원인사",
+      "l5": "VP 승격",
+      "l6_name": "상무(VP) 승격 인사명령서 발행",
+      "input": "운영 기준/원천 데이터",
+      "output": "상무(VP) 승격 인사명령서 발행",
+      "digital_trace": [
+        "인사명령 문서번호 생성",
+        "인사시스템 직급 변경 로그",
+        "메일 제목: 상무 승격 인사발령 안내"
+      ],
+      "automation_potential": "Mid",
+      "legacy_l6_match": [
+        "VP 승격"
+      ],
+      "improvement_note": "realdata.ts 고정 뼈대 기반 산출물 중심 분해",
+      "output_type": "hr_order"
+    },
+    {
+      "l6_id": "V2-L6-0490",
+      "l3": "해외인사",
+      "l4": "임원인사",
+      "l5": "현채인 평가",
+      "l6_name": "현채인 평가대상 명단 확정",
+      "input": "운영 기준/원천 데이터",
+      "output": "현채인 평가대상 명단 확정",
+      "digital_trace": [
+        "평가대상 추출 로그",
+        "평가주기 매핑 로그",
+        "메일 제목: 현채인 평가대상 확정 안내"
+      ],
+      "automation_potential": "Mid",
+      "legacy_l6_match": [
+        "현채인 평가"
+      ],
+      "improvement_note": "realdata.ts 고정 뼈대 기반 산출물 중심 분해",
+      "output_type": "approval_list"
+    },
+    {
+      "l6_id": "V2-L6-0491",
+      "l3": "해외인사",
+      "l4": "임원인사",
+      "l5": "현채인 평가",
+      "l6_name": "현채인 평가결과 리포트 발행",
+      "input": "운영 기준/원천 데이터",
+      "output": "현채인 평가결과 리포트 발행",
+      "digital_trace": [
+        "평가결과 집계 배치",
+        "등급 산출 로그",
+        "메일 제목: 현채인 평가결과 공유"
+      ],
+      "automation_potential": "High",
+      "legacy_l6_match": [
+        "현채인 평가"
+      ],
+      "improvement_note": "realdata.ts 고정 뼈대 기반 산출물 중심 분해",
+      "output_type": "analysis_report"
+    },
+    {
+      "l6_id": "V2-L6-0492",
+      "l3": "해외인사",
+      "l4": "주재원 제도",
+      "l5": "평가 운영",
+      "l6_name": "주재원 평가 운영 기준서 확정",
+      "input": "운영 기준/원천 데이터",
+      "output": "주재원 평가 운영 기준서 확정",
+      "digital_trace": [
+        "평가 운영 기준 버전 저장 로그",
+        "평가 운영 승인 문서번호 생성",
+        "메일 제목: 주재원 평가 운영 기준 확정 안내"
+      ],
+      "automation_potential": "Mid",
+      "legacy_l6_match": [
+        "평가 운영"
+      ],
+      "improvement_note": "realdata.ts 고정 뼈대 기반 산출물 중심 분해",
+      "output_type": "criteria_doc"
+    },
+    {
+      "l6_id": "V2-L6-0493",
+      "l3": "해외인사",
+      "l4": "주재원 제도",
+      "l5": "평가 운영",
+      "l6_name": "주재원 평가 운영 결과통보서 발행",
+      "input": "운영 기준/원천 데이터",
+      "output": "주재원 평가 운영 결과통보서 발행",
+      "digital_trace": [
+        "평가 운영 결과 집계 로그",
+        "평가 운영 통보 발송 로그",
+        "메일 제목: 주재원 평가 운영 결과 안내"
+      ],
+      "automation_potential": "Mid",
+      "legacy_l6_match": [
+        "평가 운영"
+      ],
+      "improvement_note": "realdata.ts 고정 뼈대 기반 산출물 중심 분해",
+      "output_type": "notification_doc"
+    },
+    {
+      "l6_id": "V2-L6-0494",
+      "l3": "해외인사",
+      "l4": "주재원 제도",
+      "l5": "승격 운영",
+      "l6_name": "주재원 승격 운영 기준서 확정",
+      "input": "운영 기준/원천 데이터",
+      "output": "주재원 승격 운영 기준서 확정",
+      "digital_trace": [
+        "승격 운영 기준 버전 저장 로그",
+        "승격 운영 승인 문서번호 생성",
+        "메일 제목: 주재원 승격 운영 기준 확정 안내"
+      ],
+      "automation_potential": "Mid",
+      "legacy_l6_match": [
+        "승격 운영"
+      ],
+      "improvement_note": "realdata.ts 고정 뼈대 기반 산출물 중심 분해",
+      "output_type": "criteria_doc"
+    },
+    {
+      "l6_id": "V2-L6-0495",
+      "l3": "해외인사",
+      "l4": "주재원 제도",
+      "l5": "승격 운영",
+      "l6_name": "주재원 승격 운영 결과통보서 발행",
+      "input": "운영 기준/원천 데이터",
+      "output": "주재원 승격 운영 결과통보서 발행",
+      "digital_trace": [
+        "승격 운영 결과 집계 로그",
+        "승격 운영 통보 발송 로그",
+        "메일 제목: 주재원 승격 운영 결과 안내"
+      ],
+      "automation_potential": "Mid",
+      "legacy_l6_match": [
+        "승격 운영"
+      ],
+      "improvement_note": "realdata.ts 고정 뼈대 기반 산출물 중심 분해",
+      "output_type": "notification_doc"
+    },
+    {
+      "l6_id": "V2-L6-0496",
+      "l3": "해외인사",
+      "l4": "주재원 제도",
+      "l5": "시상 운영",
+      "l6_name": "주재원 시상 운영 기준서 확정",
+      "input": "운영 기준/원천 데이터",
+      "output": "주재원 시상 운영 기준서 확정",
+      "digital_trace": [
+        "시상 운영 기준 버전 저장 로그",
+        "시상 운영 승인 문서번호 생성",
+        "메일 제목: 주재원 시상 운영 기준 확정 안내"
+      ],
+      "automation_potential": "Mid",
+      "legacy_l6_match": [
+        "시상 운영"
+      ],
+      "improvement_note": "realdata.ts 고정 뼈대 기반 산출물 중심 분해",
+      "output_type": "criteria_doc"
+    },
+    {
+      "l6_id": "V2-L6-0497",
+      "l3": "해외인사",
+      "l4": "주재원 제도",
+      "l5": "시상 운영",
+      "l6_name": "주재원 시상 운영 결과통보서 발행",
+      "input": "운영 기준/원천 데이터",
+      "output": "주재원 시상 운영 결과통보서 발행",
+      "digital_trace": [
+        "시상 운영 결과 집계 로그",
+        "시상 운영 통보 발송 로그",
+        "메일 제목: 주재원 시상 운영 결과 안내"
+      ],
+      "automation_potential": "Mid",
+      "legacy_l6_match": [
+        "시상 운영"
+      ],
+      "improvement_note": "realdata.ts 고정 뼈대 기반 산출물 중심 분해",
+      "output_type": "notification_doc"
+    },
+    {
+      "l6_id": "V2-L6-0498",
+      "l3": "해외인사",
+      "l4": "주재원 제도",
+      "l5": "징계 관리",
+      "l6_name": "주재원 징계 관리 기준서 확정",
+      "input": "운영 기준/원천 데이터",
+      "output": "주재원 징계 관리 기준서 확정",
+      "digital_trace": [
+        "징계 관리 기준 버전 저장 로그",
+        "징계 관리 승인 문서번호 생성",
+        "메일 제목: 주재원 징계 관리 기준 확정 안내"
+      ],
+      "automation_potential": "Mid",
+      "legacy_l6_match": [
+        "징계 관리"
+      ],
+      "improvement_note": "realdata.ts 고정 뼈대 기반 산출물 중심 분해",
+      "output_type": "criteria_doc"
+    },
+    {
+      "l6_id": "V2-L6-0499",
+      "l3": "해외인사",
+      "l4": "주재원 제도",
+      "l5": "징계 관리",
+      "l6_name": "주재원 징계 관리 결과통보서 발행",
+      "input": "운영 기준/원천 데이터",
+      "output": "주재원 징계 관리 결과통보서 발행",
+      "digital_trace": [
+        "징계 관리 결과 집계 로그",
+        "징계 관리 통보 발송 로그",
+        "메일 제목: 주재원 징계 관리 결과 안내"
+      ],
+      "automation_potential": "Mid",
+      "legacy_l6_match": [
+        "징계 관리"
+      ],
+      "improvement_note": "realdata.ts 고정 뼈대 기반 산출물 중심 분해",
+      "output_type": "notification_doc"
+    },
+    {
+      "l6_id": "V2-L6-0500",
+      "l3": "해외인사",
+      "l4": "보상",
+      "l5": "인센티브 지급조직 정비",
+      "l6_name": "글로벌 인센티브 지급조직 설계안 확정",
+      "input": "운영 기준/원천 데이터",
+      "output": "글로벌 인센티브 지급조직 설계안 확정",
+      "digital_trace": [
+        "조직설계안 버전 저장",
+        "검토 승인 로그",
+        "메일 제목: 인센티브 지급조직 설계안 확정 안내"
+      ],
+      "automation_potential": "Mid",
+      "legacy_l6_match": [
+        "인센티브 지급조직 정비"
+      ],
+      "improvement_note": "realdata.ts 고정 뼈대 기반 산출물 중심 분해",
+      "output_type": "design_doc"
+    },
+    {
+      "l6_id": "V2-L6-0501",
+      "l3": "해외인사",
+      "l4": "보상",
+      "l5": "인센티브 지급조직 정비",
+      "l6_name": "인센티브 지급조직 반영 완료로그 생성",
+      "input": "운영 기준/원천 데이터",
+      "output": "인센티브 지급조직 반영 완료로그 생성",
+      "digital_trace": [
+        "인사시스템 조직반영 로그",
+        "권한 매핑 검증 로그",
+        "메일 제목: 인센티브 지급조직 반영 완료 안내"
+      ],
+      "automation_potential": "High",
+      "legacy_l6_match": [
+        "인센티브 지급조직 정비"
+      ],
+      "improvement_note": "realdata.ts 고정 뼈대 기반 산출물 중심 분해",
+      "output_type": "sync_log"
+    },
+    {
+      "l6_id": "V2-L6-0502",
+      "l3": "해외인사",
+      "l4": "채용",
+      "l5": "재입사 기준 관리",
+      "l6_name": "재입사 심사기준서 확정",
+      "input": "운영 기준/원천 데이터",
+      "output": "재입사 심사기준서 확정",
+      "digital_trace": [
+        "기준서 버전관리 로그",
+        "법인별 예외규정 매핑 로그",
+        "메일 제목: 재입사 기준 확정 안내"
+      ],
+      "automation_potential": "Mid",
+      "legacy_l6_match": [
+        "재입사 기준 관리"
+      ],
+      "improvement_note": "realdata.ts 고정 뼈대 기반 산출물 중심 분해",
+      "output_type": "criteria_doc"
+    },
+    {
+      "l6_id": "V2-L6-0503",
+      "l3": "해외인사",
+      "l4": "채용",
+      "l5": "재입사 기준 관리",
+      "l6_name": "재입사 심사결과 통보서 발행",
+      "input": "운영 기준/원천 데이터",
+      "output": "재입사 심사결과 통보서 발행",
+      "digital_trace": [
+        "심사결과 승인 로그",
+        "후보자 통보 발송 로그",
+        "메일 제목: 재입사 심사결과 안내"
+      ],
+      "automation_potential": "Mid",
+      "legacy_l6_match": [
+        "재입사 기준 관리"
+      ],
+      "improvement_note": "realdata.ts 고정 뼈대 기반 산출물 중심 분해",
+      "output_type": "notification_doc"
+    },
+    {
+      "l6_id": "V2-L6-0504",
+      "l3": "해외인사",
+      "l4": "채용",
+      "l5": "현지 한국인 채용 관리",
+      "l6_name": "현지 한국인 채용요청서 등록",
+      "input": "운영 기준/원천 데이터",
+      "output": "현지 한국인 채용요청서 등록",
+      "digital_trace": [
+        "채용요청 티켓 생성",
+        "법인 요청 승인 로그",
+        "메일 제목: 현지 한국인 채용요청 접수 안내"
+      ],
+      "automation_potential": "Mid",
+      "legacy_l6_match": [
+        "현지 한국인 채용 관리"
+      ],
+      "improvement_note": "realdata.ts 고정 뼈대 기반 산출물 중심 분해",
+      "output_type": "request_doc"
+    },
+    {
+      "l6_id": "V2-L6-0505",
+      "l3": "해외인사",
+      "l4": "채용",
+      "l5": "현지 한국인 채용 관리",
+      "l6_name": "현지 한국인 채용결과 보고서 발행",
+      "input": "운영 기준/원천 데이터",
+      "output": "현지 한국인 채용결과 보고서 발행",
+      "digital_trace": [
+        "채용결과 집계 배치",
+        "입사예정자 동기화 로그",
+        "메일 제목: 현지 한국인 채용결과 공유"
+      ],
+      "automation_potential": "Mid",
+      "legacy_l6_match": [
+        "현지 한국인 채용 관리"
+      ],
+      "improvement_note": "realdata.ts 고정 뼈대 기반 산출물 중심 분해",
+      "output_type": "result_report"
+    },
+    {
+      "l6_id": "V2-L6-0506",
+      "l3": "해외인사",
+      "l4": "교육/양성",
+      "l5": "글로벌 리더 양성 교육",
+      "l6_name": "글로벌 리더 양성과정 기획서 확정",
+      "input": "운영 기준/원천 데이터",
+      "output": "글로벌 리더 양성과정 기획서 확정",
+      "digital_trace": [
+        "과정기획 승인 로그",
+        "대상자 배정 로그",
+        "메일 제목: 글로벌 리더 양성 교육 안내"
+      ],
+      "automation_potential": "Mid",
+      "legacy_l6_match": [
+        "글로벌 리더 양성 교육"
+      ],
+      "improvement_note": "realdata.ts 고정 뼈대 기반 산출물 중심 분해",
+      "output_type": "plan_doc"
+    },
+    {
+      "l6_id": "V2-L6-0507",
+      "l3": "해외인사",
+      "l4": "교육/양성",
+      "l5": "글로벌 리더 양성 교육",
+      "l6_name": "글로벌 리더 양성 수료현황표 발행",
+      "input": "운영 기준/원천 데이터",
+      "output": "글로벌 리더 양성 수료현황표 발행",
+      "digital_trace": [
+        "LMS 수료데이터 적재",
+        "과정별 성취도 집계 로그",
+        "메일 제목: 글로벌 리더 양성 수료 현황 공유"
+      ],
+      "automation_potential": "High",
+      "legacy_l6_match": [
+        "글로벌 리더 양성 교육"
+      ],
+      "improvement_note": "realdata.ts 고정 뼈대 기반 산출물 중심 분해",
+      "output_type": "training_status"
+    },
+    {
+      "l6_id": "V2-L6-0508",
+      "l3": "해외인사",
+      "l4": "교육/양성",
+      "l5": "거점장(법인장) 교육",
+      "l6_name": "법인장 교육 커리큘럼 확정본 등록",
+      "input": "운영 기준/원천 데이터",
+      "output": "법인장 교육 커리큘럼 확정본 등록",
+      "digital_trace": [
+        "법인장 교육과정 승인 로그",
+        "강사/세션 배정 로그",
+        "메일 제목: 법인장 교육 커리큘럼 확정 안내"
+      ],
+      "automation_potential": "Mid",
+      "legacy_l6_match": [
+        "거점장(법인장) 교육"
+      ],
+      "improvement_note": "realdata.ts 고정 뼈대 기반 산출물 중심 분해",
+      "output_type": "curriculum_doc"
+    },
+    {
+      "l6_id": "V2-L6-0509",
+      "l3": "해외인사",
+      "l4": "교육/양성",
+      "l5": "거점장(법인장) 교육",
+      "l6_name": "법인장 교육 효과분석 리포트 발행",
+      "input": "운영 기준/원천 데이터",
+      "output": "법인장 교육 효과분석 리포트 발행",
+      "digital_trace": [
+        "교육 전후 지표 비교 배치",
+        "현업 적용사례 수집 로그",
+        "메일 제목: 법인장 교육 효과분석 공유"
+      ],
+      "automation_potential": "High",
+      "legacy_l6_match": [
+        "거점장(법인장) 교육"
+      ],
+      "improvement_note": "realdata.ts 고정 뼈대 기반 산출물 중심 분해",
+      "output_type": "analysis_report"
+    },
+    {
+      "l6_id": "V2-L6-0510",
+      "l3": "해외인사",
+      "l4": "교육/양성",
+      "l5": "주재원 교육",
+      "l6_name": "주재원 교육과정 운영계획서 확정",
+      "input": "운영 기준/원천 데이터",
+      "output": "주재원 교육과정 운영계획서 확정",
+      "digital_trace": [
+        "교육일정 승인 로그",
+        "교재 배포 로그",
+        "메일 제목: 주재원 교육 운영계획 안내"
+      ],
+      "automation_potential": "Mid",
+      "legacy_l6_match": [
+        "주재원 교육"
+      ],
+      "improvement_note": "realdata.ts 고정 뼈대 기반 산출물 중심 분해",
+      "output_type": "plan_doc"
+    },
+    {
+      "l6_id": "V2-L6-0511",
+      "l3": "해외인사",
+      "l4": "교육/양성",
+      "l5": "주재원 교육",
+      "l6_name": "주재원 교육 수료평가 결과서 발행",
+      "input": "운영 기준/원천 데이터",
+      "output": "주재원 교육 수료평가 결과서 발행",
+      "digital_trace": [
+        "평가점수 집계 로그",
+        "수료판정 로그",
+        "메일 제목: 주재원 교육 수료평가 결과 안내"
+      ],
+      "automation_potential": "Mid",
+      "legacy_l6_match": [
+        "주재원 교육"
+      ],
+      "improvement_note": "realdata.ts 고정 뼈대 기반 산출물 중심 분해",
+      "output_type": "evaluation_report"
+    },
+    {
+      "l6_id": "V2-L6-0512",
+      "l3": "해외인사",
+      "l4": "노사관리",
+      "l5": "컨설팅, 진단",
+      "l6_name": "해외법인 노사진단 계획서 확정",
+      "input": "운영 기준/원천 데이터",
+      "output": "해외법인 노사진단 계획서 확정",
+      "digital_trace": [
+        "진단대상 선정 로그",
+        "진단계획 승인 로그",
+        "메일 제목: 해외법인 노사진단 계획 안내"
+      ],
+      "automation_potential": "Mid",
+      "legacy_l6_match": [
+        "컨설팅, 진단"
+      ],
+      "improvement_note": "realdata.ts 고정 뼈대 기반 산출물 중심 분해",
+      "output_type": "plan_doc"
+    },
+    {
+      "l6_id": "V2-L6-0513",
+      "l3": "해외인사",
+      "l4": "노사관리",
+      "l5": "컨설팅, 진단",
+      "l6_name": "해외법인 노사진단 결과보고서 발행",
+      "input": "운영 기준/원천 데이터",
+      "output": "해외법인 노사진단 결과보고서 발행",
+      "digital_trace": [
+        "진단결과 집계 로그",
+        "리스크 등급 산출 로그",
+        "메일 제목: 해외법인 노사진단 결과 공유"
+      ],
+      "automation_potential": "High",
+      "legacy_l6_match": [
+        "컨설팅, 진단"
+      ],
+      "improvement_note": "realdata.ts 고정 뼈대 기반 산출물 중심 분해",
+      "output_type": "analysis_report"
+    },
+    {
+      "l6_id": "V2-L6-0514",
+      "l3": "해외인사",
+      "l4": "노사관리",
+      "l5": "사건사고 관리",
+      "l6_name": "해외법인 사건사고 케이스 등록",
+      "input": "운영 기준/원천 데이터",
+      "output": "해외법인 사건사고 케이스 등록",
+      "digital_trace": [
+        "사건사고 케이스번호 생성",
+        "초기조치 상태값 기록",
+        "메일 제목: 해외법인 사건사고 접수 안내"
+      ],
+      "automation_potential": "Mid",
+      "legacy_l6_match": [
+        "사건사고 관리"
+      ],
+      "improvement_note": "realdata.ts 고정 뼈대 기반 산출물 중심 분해",
+      "output_type": "case_intake"
+    },
+    {
+      "l6_id": "V2-L6-0515",
+      "l3": "해외인사",
+      "l4": "노사관리",
+      "l5": "사건사고 관리",
+      "l6_name": "해외법인 사건사고 조치결과서 발행",
+      "input": "운영 기준/원천 데이터",
+      "output": "해외법인 사건사고 조치결과서 발행",
+      "digital_trace": [
+        "조치결과 승인 로그",
+        "재발방지 과제 등록 로그",
+        "메일 제목: 해외법인 사건사고 조치결과 안내"
+      ],
+      "automation_potential": "Mid",
+      "legacy_l6_match": [
+        "사건사고 관리"
+      ],
+      "improvement_note": "realdata.ts 고정 뼈대 기반 산출물 중심 분해",
+      "output_type": "result_report"
+    },
+    {
+      "l6_id": "V2-L6-0516",
+      "l3": "해외인사",
+      "l4": "M&A",
+      "l5": "(실사) 실사문서 분류",
+      "l6_name": "실사문서 분류대장 확정",
+      "input": "운영 기준/원천 데이터",
+      "output": "실사문서 분류대장 확정",
+      "digital_trace": [
+        "실사문서 분류규칙 저장",
+        "문서별 카테고리 태깅 로그",
+        "메일 제목: 실사문서 분류 완료 안내"
+      ],
+      "automation_potential": "Mid",
+      "legacy_l6_match": [
+        "(실사) 실사문서 분류"
+      ],
+      "improvement_note": "realdata.ts 고정 뼈대 기반 산출물 중심 분해",
+      "output_type": "classification_ledger"
+    },
+    {
+      "l6_id": "V2-L6-0517",
+      "l3": "해외인사",
+      "l4": "M&A",
+      "l5": "(실사) 실사문서 독해",
+      "l6_name": "실사문서 독해노트 등록",
+      "input": "운영 기준/원천 데이터",
+      "output": "실사문서 독해노트 등록",
+      "digital_trace": [
+        "핵심조항 추출 로그",
+        "리스크 문장 하이라이트 저장",
+        "메일 제목: 실사문서 독해노트 공유"
+      ],
+      "automation_potential": "Mid",
+      "legacy_l6_match": [
+        "(실사) 실사문서 독해"
+      ],
+      "improvement_note": "realdata.ts 고정 뼈대 기반 산출물 중심 분해",
+      "output_type": "review_note"
+    },
+    {
+      "l6_id": "V2-L6-0518",
+      "l3": "해외인사",
+      "l4": "M&A",
+      "l5": "(실사) 실사결과 분석",
+      "l6_name": "실사결과 분석리포트 발행",
+      "input": "운영 기준/원천 데이터",
+      "output": "실사결과 분석리포트 발행",
+      "digital_trace": [
+        "리스크 점수 산출 배치",
+        "재무/노무 이슈 매핑 로그",
+        "메일 제목: 실사결과 분석 공유"
+      ],
+      "automation_potential": "High",
+      "legacy_l6_match": [
+        "(실사) 실사결과 분석"
+      ],
+      "improvement_note": "realdata.ts 고정 뼈대 기반 산출물 중심 분해",
+      "output_type": "analysis_report"
+    },
+    {
+      "l6_id": "V2-L6-0519",
+      "l3": "해외인사",
+      "l4": "M&A",
+      "l5": "(실사) 시사점 도출 및 보고",
+      "l6_name": "실사 시사점 보고서 확정",
+      "input": "운영 기준/원천 데이터",
+      "output": "실사 시사점 보고서 확정",
+      "digital_trace": [
+        "시사점 우선순위 확정 로그",
+        "보고서 승인 로그",
+        "메일 제목: 실사 시사점 보고 안내"
+      ],
+      "automation_potential": "Mid",
+      "legacy_l6_match": [
+        "(실사) 시사점 도출 및 보고"
+      ],
+      "improvement_note": "realdata.ts 고정 뼈대 기반 산출물 중심 분해",
+      "output_type": "insight_report"
+    },
+    {
+      "l6_id": "V2-L6-0520",
+      "l3": "해외인사",
+      "l4": "M&A",
+      "l5": "(PMI) 계획 수립",
+      "l6_name": "PMI 통합실행계획서 확정",
+      "input": "운영 기준/원천 데이터",
+      "output": "PMI 통합실행계획서 확정",
+      "digital_trace": [
+        "통합과제 로드맵 저장",
+        "과제 오너 할당 로그",
+        "메일 제목: PMI 통합실행계획 확정 안내"
+      ],
+      "automation_potential": "Mid",
+      "legacy_l6_match": [
+        "(PMI) 계획 수립"
+      ],
+      "improvement_note": "realdata.ts 고정 뼈대 기반 산출물 중심 분해",
+      "output_type": "integration_plan"
+    },
+    {
+      "l6_id": "V2-L6-0521",
+      "l3": "해외인사",
+      "l4": "M&A",
+      "l5": "(PMI) Best Practice 분석",
+      "l6_name": "PMI 베스트프랙티스 분석서 발행",
+      "input": "운영 기준/원천 데이터",
+      "output": "PMI 베스트프랙티스 분석서 발행",
+      "digital_trace": [
+        "레퍼런스 비교분석 로그",
+        "적용 후보안 태깅 로그",
+        "메일 제목: PMI 베스트프랙티스 분석 공유"
+      ],
+      "automation_potential": "Mid",
+      "legacy_l6_match": [
+        "(PMI) Best Practice 분석"
+      ],
+      "improvement_note": "realdata.ts 고정 뼈대 기반 산출물 중심 분해",
+      "output_type": "benchmark_report"
+    },
+    {
+      "l6_id": "V2-L6-0522",
+      "l3": "해외인사",
+      "l4": "M&A",
+      "l5": "(자회사 운영) 운영 유형 결정",
+      "l6_name": "자회사 운영유형 결정서 확정",
+      "input": "운영 기준/원천 데이터",
+      "output": "자회사 운영유형 결정서 확정",
+      "digital_trace": [
+        "운영유형 시나리오 평가 로그",
+        "의사결정 승인 로그",
+        "메일 제목: 자회사 운영유형 결정 안내"
+      ],
+      "automation_potential": "Mid",
+      "legacy_l6_match": [
+        "(자회사 운영) 운영 유형 결정"
+      ],
+      "improvement_note": "realdata.ts 고정 뼈대 기반 산출물 중심 분해",
+      "output_type": "decision_doc"
+    },
+    {
+      "l6_id": "V2-L6-0523",
+      "l3": "해외인사",
+      "l4": "M&A",
+      "l5": "(자회사 운영) 운영 방식 개선",
+      "l6_name": "자회사 운영방식 개선안 발행",
+      "input": "운영 기준/원천 데이터",
+      "output": "자회사 운영방식 개선안 발행",
+      "digital_trace": [
+        "개선과제 등록 로그",
+        "이행 KPI 매핑 로그",
+        "메일 제목: 자회사 운영방식 개선안 공유"
+      ],
+      "automation_potential": "Mid",
+      "legacy_l6_match": [
+        "(자회사 운영) 운영 방식 개선"
+      ],
+      "improvement_note": "realdata.ts 고정 뼈대 기반 산출물 중심 분해",
+      "output_type": "improvement_plan"
+    },
+    {
+      "l6_id": "V2-L6-0524",
+      "l3": "채용",
+      "l4": "채용계획",
+      "l5": "채용 계획 수립(경영계획)",
+      "l6_name": "연간 채용수요 산정표 확정",
+      "input": "채용 운영 기준/지원자 데이터",
+      "output": "연간 채용수요 산정표 확정",
+      "digital_trace": [
+        "ATS 채용요청 집계 로그",
+        "사업부 수요 입력 마감 로그",
+        "메일 제목: 연간 채용수요 산정표 확정 안내"
+      ],
+      "automation_potential": "High",
+      "legacy_l6_match": [
+        "채용 계획 수립(경영계획)"
+      ],
+      "improvement_note": "realdata.ts 뼈대 유지 + ATS 앵커 기반 산출물 분해",
+      "output_type": "planning_sheet"
+    },
+    {
+      "l6_id": "V2-L6-0525",
+      "l3": "채용",
+      "l4": "채용계획",
+      "l5": "채용 계획 수립(경영계획)",
+      "l6_name": "채용TO 배정안 승인완료",
+      "input": "채용 운영 기준/지원자 데이터",
+      "output": "채용TO 배정안 승인완료",
+      "digital_trace": [
+        "전자결재 승인 로그",
+        "ATS requisition 생성 로그",
+        "메일 제목: 채용 TO 배정안 승인 완료 안내"
+      ],
+      "automation_potential": "High",
+      "legacy_l6_match": [
+        "채용 계획 수립(경영계획)"
+      ],
+      "improvement_note": "realdata.ts 뼈대 유지 + ATS 앵커 기반 산출물 분해",
+      "output_type": "approval_doc"
+    },
+    {
+      "l6_id": "V2-L6-0526",
+      "l3": "채용",
+      "l4": "채용계획",
+      "l5": "직무기술서 작성",
+      "l6_name": "직무기술서 승인본 확정",
+      "input": "채용 운영 기준/지원자 데이터",
+      "output": "직무기술서 승인본 확정",
+      "digital_trace": [
+        "JD 승인 워크플로우 로그",
+        "문서 버전 잠금 로그",
+        "메일 제목: 직무기술서 승인본 확정 안내"
+      ],
+      "automation_potential": "High",
+      "legacy_l6_match": [
+        "직무기술서 작성"
+      ],
+      "improvement_note": "realdata.ts 뼈대 유지 + ATS 앵커 기반 산출물 분해",
+      "output_type": "jd_final"
+    },
+    {
+      "l6_id": "V2-L6-0527",
+      "l3": "채용",
+      "l4": "인재발굴",
+      "l5": "인재 소싱 채널 선정 및 액팅",
+      "l6_name": "소싱채널 운영전략서 확정",
+      "input": "채용 운영 기준/지원자 데이터",
+      "output": "소싱채널 운영전략서 확정",
+      "digital_trace": [
+        "채널 성과지표 집계 로그",
+        "운영전략 승인 로그",
+        "메일 제목: 소싱채널 운영전략 확정 안내"
+      ],
+      "automation_potential": "High",
+      "legacy_l6_match": [
+        "인재 소싱 채널 선정 및 액팅"
+      ],
+      "improvement_note": "realdata.ts 뼈대 유지 + ATS 앵커 기반 산출물 분해",
+      "output_type": "strategy_doc"
+    },
+    {
+      "l6_id": "V2-L6-0528",
+      "l3": "채용",
+      "l4": "인재발굴",
+      "l5": "인재 소싱 채널 선정 및 액팅",
+      "l6_name": "후보자 발굴리스트 등록",
+      "input": "채용 운영 기준/지원자 데이터",
+      "output": "후보자 발굴리스트 등록",
+      "digital_trace": [
+        "ATS 소싱 후보 등록 로그",
+        "후보자 중복검사 로그",
+        "메일 제목: 소싱 후보자 리스트 등록 안내"
+      ],
+      "automation_potential": "High",
+      "legacy_l6_match": [
+        "인재 소싱 채널 선정 및 액팅"
+      ],
+      "improvement_note": "realdata.ts 뼈대 유지 + ATS 앵커 기반 산출물 분해",
+      "output_type": "candidate_list"
+    },
+    {
+      "l6_id": "V2-L6-0529",
+      "l3": "채용",
+      "l4": "선발전형",
+      "l5": "서류심사",
+      "l6_name": "서류심사 기준표 확정",
+      "input": "채용 운영 기준/지원자 데이터",
+      "output": "서류심사 기준표 확정",
+      "digital_trace": [
+        "심사기준 버전 저장 로그",
+        "현업 승인 로그",
+        "메일 제목: 서류심사 기준 확정 안내"
+      ],
+      "automation_potential": "High",
+      "legacy_l6_match": [
+        "서류심사"
+      ],
+      "improvement_note": "realdata.ts 뼈대 유지 + ATS 앵커 기반 산출물 분해",
+      "output_type": "criteria_doc"
+    },
+    {
+      "l6_id": "V2-L6-0530",
+      "l3": "채용",
+      "l4": "선발전형",
+      "l5": "서류심사",
+      "l6_name": "서류평가 결과표 발행",
+      "input": "채용 운영 기준/지원자 데이터",
+      "output": "서류평가 결과표 발행",
+      "digital_trace": [
+        "ATS 서류평가 입력 로그",
+        "평가점수 집계 배치 로그",
+        "메일 제목: 서류평가 결과 안내"
+      ],
+      "automation_potential": "High",
+      "legacy_l6_match": [
+        "서류심사"
+      ],
+      "improvement_note": "realdata.ts 뼈대 유지 + ATS 앵커 기반 산출물 분해",
+      "output_type": "evaluation_sheet"
+    },
+    {
+      "l6_id": "V2-L6-0531",
+      "l3": "채용",
+      "l4": "선발전형",
+      "l5": "자격 검증(GSAT, 코딩 테스트 등)",
+      "l6_name": "검정결과 성적표 발행",
+      "input": "채용 운영 기준/지원자 데이터",
+      "output": "검정결과 성적표 발행",
+      "digital_trace": [
+        "시험결과 업로드 로그",
+        "커트라인 적용 로그",
+        "ATS 상태 변경 로그: 검정합격/불합격"
+      ],
+      "automation_potential": "High",
+      "legacy_l6_match": [
+        "자격 검증(GSAT, 코딩 테스트 등)"
+      ],
+      "improvement_note": "realdata.ts 뼈대 유지 + ATS 앵커 기반 산출물 분해",
+      "output_type": "score_report"
+    },
+    {
+      "l6_id": "V2-L6-0532",
+      "l3": "채용",
+      "l4": "선발전형",
+      "l5": "면접",
+      "l6_name": "면접일정표 확정본 발행",
+      "input": "채용 운영 기준/지원자 데이터",
+      "output": "면접일정표 확정본 발행",
+      "digital_trace": [
+        "ATS 인터뷰 슬롯 확정 로그",
+        "지원자 일정 확정 로그",
+        "메일 제목: 면접일정 확정 안내"
+      ],
+      "automation_potential": "High",
+      "legacy_l6_match": [
+        "면접"
+      ],
+      "improvement_note": "realdata.ts 뼈대 유지 + ATS 앵커 기반 산출물 분해",
+      "output_type": "schedule_doc"
+    },
+    {
+      "l6_id": "V2-L6-0533",
+      "l3": "채용",
+      "l4": "선발전형",
+      "l5": "면접",
+      "l6_name": "면접평가표 취합본 등록",
+      "input": "채용 운영 기준/지원자 데이터",
+      "output": "면접평가표 취합본 등록",
+      "digital_trace": [
+        "면접평가 입력 로그",
+        "평가표 취합 배치 로그",
+        "ATS 상태 변경 로그: 면접완료"
+      ],
+      "automation_potential": "High",
+      "legacy_l6_match": [
+        "면접"
+      ],
+      "improvement_note": "realdata.ts 뼈대 유지 + ATS 앵커 기반 산출물 분해",
+      "output_type": "evaluation_bundle"
+    },
+    {
+      "l6_id": "V2-L6-0534",
+      "l3": "채용",
+      "l4": "선발전형",
+      "l5": "채용 및 처우 승인",
+      "l6_name": "채용승인 결재문서 완료",
+      "input": "채용 운영 기준/지원자 데이터",
+      "output": "채용승인 결재문서 완료",
+      "digital_trace": [
+        "채용승인 결재 로그",
+        "ATS 상태 변경 로그: 채용승인완료",
+        "메일 제목: 채용 승인 완료 안내"
+      ],
+      "automation_potential": "High",
+      "legacy_l6_match": [
+        "채용 및 처우 승인"
+      ],
+      "improvement_note": "realdata.ts 뼈대 유지 + ATS 앵커 기반 산출물 분해",
+      "output_type": "approval_doc"
+    },
+    {
+      "l6_id": "V2-L6-0535",
+      "l3": "채용",
+      "l4": "선발전형",
+      "l5": "채용 및 처우 승인",
+      "l6_name": "오퍼레터 발송완료 로그 생성",
+      "input": "채용 운영 기준/지원자 데이터",
+      "output": "오퍼레터 발송완료 로그 생성",
+      "digital_trace": [
+        "오퍼레터 생성 로그",
+        "전자서명 발송 로그",
+        "ATS 상태 변경 로그: 오퍼발송"
+      ],
+      "automation_potential": "High",
+      "legacy_l6_match": [
+        "채용 및 처우 승인"
+      ],
+      "improvement_note": "realdata.ts 뼈대 유지 + ATS 앵커 기반 산출물 분해",
+      "output_type": "offer_log"
+    },
+    {
+      "l6_id": "V2-L6-0536",
+      "l3": "채용",
+      "l4": "채용 후속조치",
+      "l5": "선확보 인력 관리",
+      "l6_name": "선확보 인력 등록대장 생성",
+      "input": "채용 운영 기준/지원자 데이터",
+      "output": "선확보 인력 등록대장 생성",
+      "digital_trace": [
+        "ATS 선확보 후보 등록 로그",
+        "보유기간 태깅 로그",
+        "메일 제목: 선확보 인력 등록 완료 안내"
+      ],
+      "automation_potential": "High",
+      "legacy_l6_match": [
+        "선확보 인력 관리"
+      ],
+      "improvement_note": "realdata.ts 뼈대 유지 + ATS 앵커 기반 산출물 분해",
+      "output_type": "ledger_record"
+    },
+    {
+      "l6_id": "V2-L6-0537",
+      "l3": "채용",
+      "l4": "채용 후속조치",
+      "l5": "입사 및 온보딩",
+      "l6_name": "입사 전 O/T 이수결과표 등록",
+      "input": "채용 운영 기준/지원자 데이터",
+      "output": "입사 전 O/T 이수결과표 등록",
+      "digital_trace": [
+        "O/T 참석체크 로그",
+        "이수여부 판정 로그",
+        "메일 제목: 입사 전 O/T 이수 결과 안내"
+      ],
+      "automation_potential": "High",
+      "legacy_l6_match": [
+        "입사 및 온보딩"
+      ],
+      "improvement_note": "realdata.ts 뼈대 유지 + ATS 앵커 기반 산출물 분해",
+      "output_type": "training_status"
+    },
+    {
+      "l6_id": "V2-L6-0538",
+      "l3": "채용",
+      "l4": "채용 후속조치",
+      "l5": "입사 및 온보딩",
+      "l6_name": "입사발령(Workday) 반영완료 로그 생성",
+      "input": "채용 운영 기준/지원자 데이터",
+      "output": "입사발령(Workday) 반영완료 로그 생성",
+      "digital_trace": [
+        "Workday hire event 생성 로그",
+        "인사시스템 사번 발급 로그",
+        "ATS 상태 변경 로그: 입사확정"
+      ],
+      "automation_potential": "High",
+      "legacy_l6_match": [
+        "입사 및 온보딩"
+      ],
+      "improvement_note": "realdata.ts 뼈대 유지 + ATS 앵커 기반 산출물 분해",
+      "output_type": "sync_log"
+    },
+    {
+      "l6_id": "V2-L6-0539",
+      "l3": "채용",
+      "l4": "채용 후속조치",
+      "l5": "입사 및 온보딩",
+      "l6_name": "입문교육 수료결과표 발행",
+      "input": "채용 운영 기준/지원자 데이터",
+      "output": "입문교육 수료결과표 발행",
+      "digital_trace": [
+        "LMS 수료데이터 적재",
+        "평가결과 저장 로그",
+        "메일 제목: 입문교육 수료 결과 안내"
+      ],
+      "automation_potential": "High",
+      "legacy_l6_match": [
+        "입사 및 온보딩"
+      ],
+      "improvement_note": "realdata.ts 뼈대 유지 + ATS 앵커 기반 산출물 분해",
+      "output_type": "training_status"
+    },
+    {
+      "l6_id": "V2-L6-0540",
+      "l3": "보상/근태",
+      "l4": "지급업무",
+      "l5": "정기급여",
+      "l6_name": "월 급여전표 승인완료",
+      "input": "보상/근태 원천 데이터",
+      "output": "월 급여전표 승인완료",
+      "digital_trace": [
+        "ERP 급여전표 승인 로그",
+        "급여 마감 배치 완료 로그",
+        "메일 제목: 정기급여 전표 승인 완료 안내"
+      ],
+      "automation_potential": "High",
+      "legacy_l6_match": [
+        "정기급여"
+      ],
+      "improvement_note": "realdata.ts 고정 뼈대 기반 신규 산출물 분해",
+      "output_type": "payroll_voucher"
+    },
+    {
+      "l6_id": "V2-L6-0541",
+      "l3": "보상/근태",
+      "l4": "지급업무",
+      "l5": "정기급여",
+      "l6_name": "급여이체 파일 생성완료",
+      "input": "보상/근태 원천 데이터",
+      "output": "급여이체 파일 생성완료",
+      "digital_trace": [
+        "은행이체 파일 생성 로그",
+        "계좌검증 오류체크 로그",
+        "메일 제목: 정기급여 이체파일 생성 안내"
+      ],
+      "automation_potential": "High",
+      "legacy_l6_match": [
+        "정기급여"
+      ],
+      "improvement_note": "realdata.ts 고정 뼈대 기반 신규 산출물 분해",
+      "output_type": "bank_file"
+    },
+    {
+      "l6_id": "V2-L6-0542",
+      "l3": "보상/근태",
+      "l4": "지급업무",
+      "l5": "정기급여",
+      "l6_name": "급여명세서 발행완료",
+      "input": "보상/근태 원천 데이터",
+      "output": "급여명세서 발행완료",
+      "digital_trace": [
+        "명세서 PDF 발행 로그",
+        "사번별 배포 로그",
+        "메일 제목: 급여명세서 발행 안내"
+      ],
+      "automation_potential": "High",
+      "legacy_l6_match": [
+        "정기급여"
+      ],
+      "improvement_note": "realdata.ts 고정 뼈대 기반 신규 산출물 분해",
+      "output_type": "payslip"
+    },
+    {
+      "l6_id": "V2-L6-0543",
+      "l3": "보상/근태",
+      "l4": "지급업무",
+      "l5": "인센티브",
+      "l6_name": "인센티브 지급대상 명단 확정",
+      "input": "보상/근태 원천 데이터",
+      "output": "인센티브 지급대상 명단 확정",
+      "digital_trace": [
+        "성과등급 연동 로그",
+        "지급대상 승인 로그",
+        "메일 제목: 인센티브 지급대상 확정 안내"
+      ],
+      "automation_potential": "High",
+      "legacy_l6_match": [
+        "인센티브"
+      ],
+      "improvement_note": "realdata.ts 고정 뼈대 기반 신규 산출물 분해",
+      "output_type": "approval_list"
+    },
+    {
+      "l6_id": "V2-L6-0544",
+      "l3": "보상/근태",
+      "l4": "지급업무",
+      "l5": "인센티브",
+      "l6_name": "인센티브 지급전표 승인완료",
+      "input": "보상/근태 원천 데이터",
+      "output": "인센티브 지급전표 승인완료",
+      "digital_trace": [
+        "ERP 인센티브 전표 승인 로그",
+        "세액 계산 배치 로그",
+        "메일 제목: 인센티브 전표 승인 완료 안내"
+      ],
+      "automation_potential": "High",
+      "legacy_l6_match": [
+        "인센티브"
+      ],
+      "improvement_note": "realdata.ts 고정 뼈대 기반 신규 산출물 분해",
+      "output_type": "payroll_voucher"
+    },
+    {
+      "l6_id": "V2-L6-0545",
+      "l3": "보상/근태",
+      "l4": "지급업무",
+      "l5": "연차수당",
+      "l6_name": "연차수당 산정내역서 확정",
+      "input": "보상/근태 원천 데이터",
+      "output": "연차수당 산정내역서 확정",
+      "digital_trace": [
+        "잔여연차 산정 로그",
+        "통상임금 반영 로그",
+        "메일 제목: 연차수당 산정내역 확정 안내"
+      ],
+      "automation_potential": "High",
+      "legacy_l6_match": [
+        "연차수당"
+      ],
+      "improvement_note": "realdata.ts 고정 뼈대 기반 신규 산출물 분해",
+      "output_type": "calculation_sheet"
+    },
+    {
+      "l6_id": "V2-L6-0546",
+      "l3": "보상/근태",
+      "l4": "퇴직정산",
+      "l5": "퇴직자 미지급액 지급",
+      "l6_name": "퇴직 미지급액 정산서 발행",
+      "input": "보상/근태 원천 데이터",
+      "output": "퇴직 미지급액 정산서 발행",
+      "digital_trace": [
+        "미지급 항목 집계 로그",
+        "정산서 생성 로그",
+        "메일 제목: 퇴직 미지급액 정산 안내"
+      ],
+      "automation_potential": "High",
+      "legacy_l6_match": [
+        "퇴직자 미지급액 지급"
+      ],
+      "improvement_note": "realdata.ts 고정 뼈대 기반 신규 산출물 분해",
+      "output_type": "settlement_doc"
+    },
+    {
+      "l6_id": "V2-L6-0547",
+      "l3": "보상/근태",
+      "l4": "퇴직정산",
+      "l5": "퇴직금 지급",
+      "l6_name": "퇴직금 산정확인서 확정",
+      "input": "보상/근태 원천 데이터",
+      "output": "퇴직금 산정확인서 확정",
+      "digital_trace": [
+        "평균임금 산정 로그",
+        "근속연수 계산 로그",
+        "메일 제목: 퇴직금 산정확인서 확정 안내"
+      ],
+      "automation_potential": "High",
+      "legacy_l6_match": [
+        "퇴직금 지급"
+      ],
+      "improvement_note": "realdata.ts 고정 뼈대 기반 신규 산출물 분해",
+      "output_type": "calculation_sheet"
+    },
+    {
+      "l6_id": "V2-L6-0548",
+      "l3": "보상/근태",
+      "l4": "퇴직정산",
+      "l5": "퇴직연금",
+      "l6_name": "퇴직연금 적립금 이관파일 생성",
+      "input": "보상/근태 원천 데이터",
+      "output": "퇴직연금 적립금 이관파일 생성",
+      "digital_trace": [
+        "퇴직연금 이관파일 생성 로그",
+        "사업자 전송 로그",
+        "메일 제목: 퇴직연금 이관파일 전송 안내"
+      ],
+      "automation_potential": "High",
+      "legacy_l6_match": [
+        "퇴직연금"
+      ],
+      "improvement_note": "realdata.ts 고정 뼈대 기반 신규 산출물 분해",
+      "output_type": "transfer_file"
+    },
+    {
+      "l6_id": "V2-L6-0549",
+      "l3": "보상/근태",
+      "l4": "연말정산",
+      "l5": "연말정산",
+      "l6_name": "연말정산 신고파일 생성완료",
+      "input": "보상/근태 원천 데이터",
+      "output": "연말정산 신고파일 생성완료",
+      "digital_trace": [
+        "연말정산 데이터 집계 배치",
+        "신고파일 생성 로그",
+        "메일 제목: 연말정산 신고파일 생성 안내"
+      ],
+      "automation_potential": "High",
+      "legacy_l6_match": [
+        "연말정산"
+      ],
+      "improvement_note": "realdata.ts 고정 뼈대 기반 신규 산출물 분해",
+      "output_type": "tax_file"
+    },
+    {
+      "l6_id": "V2-L6-0550",
+      "l3": "보상/근태",
+      "l4": "보상기획",
+      "l5": "경영계획",
+      "l6_name": "인건비 경영계획안 확정",
+      "input": "보상/근태 원천 데이터",
+      "output": "인건비 경영계획안 확정",
+      "digital_trace": [
+        "인건비 시뮬레이션 로그",
+        "계획안 승인 로그",
+        "메일 제목: 인건비 경영계획 확정 안내"
+      ],
+      "automation_potential": "High",
+      "legacy_l6_match": [
+        "경영계획"
+      ],
+      "improvement_note": "realdata.ts 고정 뼈대 기반 신규 산출물 분해",
+      "output_type": "plan_doc"
+    },
+    {
+      "l6_id": "V2-L6-0551",
+      "l3": "보상/근태",
+      "l4": "보상기획",
+      "l5": "임금조정",
+      "l6_name": "임금조정 시뮬레이션 결과서 확정",
+      "input": "보상/근태 원천 데이터",
+      "output": "임금조정 시뮬레이션 결과서 확정",
+      "digital_trace": [
+        "임금조정 시뮬레이션 로그",
+        "시나리오 비교 저장 로그",
+        "메일 제목: 임금조정 시뮬레이션 결과 안내"
+      ],
+      "automation_potential": "High",
+      "legacy_l6_match": [
+        "임금조정"
+      ],
+      "improvement_note": "realdata.ts 고정 뼈대 기반 신규 산출물 분해",
+      "output_type": "simulation_report"
+    },
+    {
+      "l6_id": "V2-L6-0552",
+      "l3": "보상/근태",
+      "l4": "법정복리후생",
+      "l5": "국민연금 정기결정",
+      "l6_name": "국민연금 정기결정 신고서 발행",
+      "input": "보상/근태 원천 데이터",
+      "output": "국민연금 정기결정 신고서 발행",
+      "digital_trace": [
+        "국민연금 EDI 신고파일 생성",
+        "공단 전송 로그",
+        "메일 제목: 국민연금 정기결정 신고 완료 안내"
+      ],
+      "automation_potential": "High",
+      "legacy_l6_match": [
+        "국민연금 정기결정"
+      ],
+      "improvement_note": "realdata.ts 고정 뼈대 기반 신규 산출물 분해",
+      "output_type": "edi_report"
+    },
+    {
+      "l6_id": "V2-L6-0553",
+      "l3": "보상/근태",
+      "l4": "법정복리후생",
+      "l5": "건강보험/노인장기요양보험 정산",
+      "l6_name": "건강/장기요양 정산서 발행",
+      "input": "보상/근태 원천 데이터",
+      "output": "건강/장기요양 정산서 발행",
+      "digital_trace": [
+        "정산 계산 로그",
+        "공단 EDI 전송 로그",
+        "메일 제목: 건강/장기요양 정산 완료 안내"
+      ],
+      "automation_potential": "High",
+      "legacy_l6_match": [
+        "건강보험/노인장기요양보험 정산"
+      ],
+      "improvement_note": "realdata.ts 고정 뼈대 기반 신규 산출물 분해",
+      "output_type": "settlement_doc"
+    },
+    {
+      "l6_id": "V2-L6-0554",
+      "l3": "보상/근태",
+      "l4": "법정복리후생",
+      "l5": "고용보험 자격관리",
+      "l6_name": "고용보험 자격변동 신고완료 로그 생성",
+      "input": "보상/근태 원천 데이터",
+      "output": "고용보험 자격변동 신고완료 로그 생성",
+      "digital_trace": [
+        "자격변동 신고파일 생성",
+        "고용보험 EDI 전송 로그",
+        "메일 제목: 고용보험 자격변동 신고 완료 안내"
+      ],
+      "automation_potential": "High",
+      "legacy_l6_match": [
+        "고용보험 자격관리"
+      ],
+      "improvement_note": "realdata.ts 고정 뼈대 기반 신규 산출물 분해",
+      "output_type": "edi_log"
+    },
+    {
+      "l6_id": "V2-L6-0555",
+      "l3": "보상/근태",
+      "l4": "법정복리후생",
+      "l5": "산재보험 신고",
+      "l6_name": "산재보험 신고서 발행",
+      "input": "보상/근태 원천 데이터",
+      "output": "산재보험 신고서 발행",
+      "digital_trace": [
+        "산재신고 데이터 입력 로그",
+        "공단 EDI 전송 로그",
+        "메일 제목: 산재보험 신고 완료 안내"
+      ],
+      "automation_potential": "High",
+      "legacy_l6_match": [
+        "산재보험 신고"
+      ],
+      "improvement_note": "realdata.ts 고정 뼈대 기반 신규 산출물 분해",
+      "output_type": "edi_report"
+    },
+    {
+      "l6_id": "V2-L6-0556",
+      "l3": "보상/근태",
+      "l4": "기업복리후생",
+      "l5": "의료비",
+      "l6_name": "의료비 지원금 정산서 발행",
+      "input": "보상/근태 원천 데이터",
+      "output": "의료비 지원금 정산서 발행",
+      "digital_trace": [
+        "의료비 청구서 검증 로그",
+        "지원금 지급전표 승인 로그",
+        "메일 제목: 의료비 지원금 지급 안내"
+      ],
+      "automation_potential": "High",
+      "legacy_l6_match": [
+        "의료비"
+      ],
+      "improvement_note": "realdata.ts 고정 뼈대 기반 신규 산출물 분해",
+      "output_type": "settlement_doc"
+    },
+    {
+      "l6_id": "V2-L6-0557",
+      "l3": "보상/근태",
+      "l4": "기업복리후생",
+      "l5": "학자금",
+      "l6_name": "학자금 지급완료 로그 생성",
+      "input": "보상/근태 원천 데이터",
+      "output": "학자금 지급완료 로그 생성",
+      "digital_trace": [
+        "학자금 대상자 검증 로그",
+        "학자금 지급 배치 로그",
+        "메일 제목: 학자금 지급 완료 안내"
+      ],
+      "automation_potential": "High",
+      "legacy_l6_match": [
+        "학자금"
+      ],
+      "improvement_note": "realdata.ts 고정 뼈대 기반 신규 산출물 분해",
+      "output_type": "payment_log"
+    },
+    {
+      "l6_id": "V2-L6-0558",
+      "l3": "보상/근태",
+      "l4": "기업복리후생",
+      "l5": "대부금",
+      "l6_name": "대부금 심사승인서 확정",
+      "input": "보상/근태 원천 데이터",
+      "output": "대부금 심사승인서 확정",
+      "digital_trace": [
+        "대부심사 점수 산정 로그",
+        "승인 결재 로그",
+        "메일 제목: 대부금 심사승인 안내"
+      ],
+      "automation_potential": "High",
+      "legacy_l6_match": [
+        "대부금"
+      ],
+      "improvement_note": "realdata.ts 고정 뼈대 기반 신규 산출물 분해",
+      "output_type": "approval_doc"
+    },
+    {
+      "l6_id": "V2-L6-0559",
+      "l3": "보상/근태",
+      "l4": "기업복리후생",
+      "l5": "임직원검진",
+      "l6_name": "검진결과 수검현황 리포트 발행",
+      "input": "보상/근태 원천 데이터",
+      "output": "검진결과 수검현황 리포트 발행",
+      "digital_trace": [
+        "수검데이터 수신 로그",
+        "미수검자 리마인드 로그",
+        "메일 제목: 임직원검진 수검현황 공유"
+      ],
+      "automation_potential": "High",
+      "legacy_l6_match": [
+        "임직원검진"
+      ],
+      "improvement_note": "realdata.ts 고정 뼈대 기반 신규 산출물 분해",
+      "output_type": "health_report"
+    },
+    {
+      "l6_id": "V2-L6-0560",
+      "l3": "보상/근태",
+      "l4": "근태운영 및 관리",
+      "l5": "근무형태 생성",
+      "l6_name": "근무형태 코드 등록완료",
+      "input": "보상/근태 원천 데이터",
+      "output": "근무형태 코드 등록완료",
+      "digital_trace": [
+        "근무형태 코드 생성 로그",
+        "적용조직 매핑 로그",
+        "메일 제목: 근무형태 코드 등록 안내"
+      ],
+      "automation_potential": "High",
+      "legacy_l6_match": [
+        "근무형태 생성"
+      ],
+      "improvement_note": "realdata.ts 고정 뼈대 기반 신규 산출물 분해",
+      "output_type": "master_data"
+    },
+    {
+      "l6_id": "V2-L6-0561",
+      "l3": "보상/근태",
+      "l4": "근태운영 및 관리",
+      "l5": "Office근무시간오류관리",
+      "l6_name": "근무시간 오류조정 내역서 발행",
+      "input": "보상/근태 원천 데이터",
+      "output": "근무시간 오류조정 내역서 발행",
+      "digital_trace": [
+        "오류탐지 로그",
+        "조정승인 결재 로그",
+        "메일 제목: 근무시간 오류조정 결과 안내"
+      ],
+      "automation_potential": "High",
+      "legacy_l6_match": [
+        "Office근무시간오류관리"
+      ],
+      "improvement_note": "realdata.ts 고정 뼈대 기반 신규 산출물 분해",
+      "output_type": "adjustment_sheet"
+    },
+    {
+      "l6_id": "V2-L6-0562",
+      "l3": "보상/근태",
+      "l4": "근태운영 및 관리",
+      "l5": "초과근무시간반영",
+      "l6_name": "초과근무 결재로그 생성",
+      "input": "보상/근태 원천 데이터",
+      "output": "초과근무 결재로그 생성",
+      "digital_trace": [
+        "초과근무 신청 승인 로그",
+        "결재 완료 로그",
+        "메일 제목: 초과근무 승인 완료 안내"
+      ],
+      "automation_potential": "High",
+      "legacy_l6_match": [
+        "초과근무시간반영"
+      ],
+      "improvement_note": "realdata.ts 고정 뼈대 기반 신규 산출물 분해",
+      "output_type": "approval_log"
+    },
+    {
+      "l6_id": "V2-L6-0563",
+      "l3": "보상/근태",
+      "l4": "근태운영 및 관리",
+      "l5": "일반근태",
+      "l6_name": "일반근태 월마감 확정표 발행",
+      "input": "보상/근태 원천 데이터",
+      "output": "일반근태 월마감 확정표 발행",
+      "digital_trace": [
+        "근태 월마감 배치 로그",
+        "결근/지각 집계 로그",
+        "메일 제목: 일반근태 월마감 확정 안내"
+      ],
+      "automation_potential": "High",
+      "legacy_l6_match": [
+        "일반근태"
+      ],
+      "improvement_note": "realdata.ts 고정 뼈대 기반 신규 산출물 분해",
+      "output_type": "closing_sheet"
+    },
+    {
+      "l6_id": "V2-L6-0564",
+      "l3": "보상/근태",
+      "l4": "근태운영 및 관리",
+      "l5": "임직원휴가생성",
+      "l6_name": "임직원 휴가잔여 생성완료 로그",
+      "input": "보상/근태 원천 데이터",
+      "output": "임직원 휴가잔여 생성완료 로그",
+      "digital_trace": [
+        "휴가잔여 생성 배치 로그",
+        "이월규칙 적용 로그",
+        "메일 제목: 임직원 휴가잔여 생성 완료 안내"
+      ],
+      "automation_potential": "High",
+      "legacy_l6_match": [
+        "임직원휴가생성"
+      ],
+      "improvement_note": "realdata.ts 고정 뼈대 기반 신규 산출물 분해",
+      "output_type": "balance_log"
+    },
+    {
+      "l6_id": "V2-L6-0565",
+      "l3": "임원조직",
+      "l4": "인력운영",
+      "l5": "임원 석세션 플랜",
+      "l6_name": "임원 석세션 후보군 명단 확정",
+      "input": "임원 인사 원천 데이터",
+      "output": "임원 석세션 후보군 명단 확정",
+      "output_type": "approval_list",
+      "digital_trace": [
+        "보안문서 열람 로그",
+        "인사위원회 심사 의결 로그",
+        "메일 제목: 임원 석세션 후보군 확정 안내"
+      ],
+      "automation_potential": "Mid",
+      "legacy_l6_match": [
+        "임원 석세션 플랜"
+      ],
+      "improvement_note": "realdata.ts 고정 뼈대 기반 산출물 중심 분해"
+    },
+    {
+      "l6_id": "V2-L6-0566",
+      "l3": "임원조직",
+      "l4": "인력운영",
+      "l5": "임원 석세션 플랜",
+      "l6_name": "임원 석세션 로드맵 확정본 등록",
+      "input": "임원 인사 원천 데이터",
+      "output": "임원 석세션 로드맵 확정본 등록",
+      "output_type": "roadmap_doc",
+      "digital_trace": [
+        "보안문서 버전 잠금 로그",
+        "후보군-포지션 매핑 로그",
+        "이사회 상정 안건 로그"
+      ],
+      "automation_potential": "Mid",
+      "legacy_l6_match": [
+        "임원 석세션 플랜"
+      ],
+      "improvement_note": "realdata.ts 고정 뼈대 기반 산출물 중심 분해"
+    },
+    {
+      "l6_id": "V2-L6-0567",
+      "l3": "임원조직",
+      "l4": "인력운영",
+      "l5": "임원 피드백 면담",
+      "l6_name": "임원 피드백 면담기록서 등록",
+      "input": "임원 인사 원천 데이터",
+      "output": "임원 피드백 면담기록서 등록",
+      "output_type": "interview_record",
+      "digital_trace": [
+        "면담기록 보안저장 로그",
+        "열람권한 부여 로그",
+        "면담 완료 상태 변경 로그"
+      ],
+      "automation_potential": "Mid",
+      "legacy_l6_match": [
+        "임원 피드백 면담"
+      ],
+      "improvement_note": "realdata.ts 고정 뼈대 기반 산출물 중심 분해"
+    },
+    {
+      "l6_id": "V2-L6-0568",
+      "l3": "임원조직",
+      "l4": "인력운영",
+      "l5": "핵심리더 선발",
+      "l6_name": "핵심리더 심사 의결서 등록",
+      "input": "임원 인사 원천 데이터",
+      "output": "핵심리더 심사 의결서 등록",
+      "output_type": "decision_doc",
+      "digital_trace": [
+        "인사위원회 심사 의결 로그",
+        "평가점수 집계 로그",
+        "이사회 상정 안건 로그"
+      ],
+      "automation_potential": "Mid",
+      "legacy_l6_match": [
+        "핵심리더 선발"
+      ],
+      "improvement_note": "realdata.ts 고정 뼈대 기반 산출물 중심 분해"
+    },
+    {
+      "l6_id": "V2-L6-0569",
+      "l3": "임원조직",
+      "l4": "인력운영",
+      "l5": "임원 근원 및 인물평",
+      "l6_name": "임원 인물평가 데이터 취합본 등록",
+      "input": "임원 인사 원천 데이터",
+      "output": "임원 인물평가 데이터 취합본 등록",
+      "output_type": "evaluation_bundle",
+      "digital_trace": [
+        "인물평 원천데이터 업로드 로그",
+        "보안문서 열람 로그",
+        "데이터 정합성 검증 로그"
+      ],
+      "automation_potential": "Mid",
+      "legacy_l6_match": [
+        "임원 근원 및 인물평"
+      ],
+      "improvement_note": "realdata.ts 고정 뼈대 기반 산출물 중심 분해"
+    },
+    {
+      "l6_id": "V2-L6-0570",
+      "l3": "임원조직",
+      "l4": "인력운영",
+      "l5": "임원 근원 및 인물평",
+      "l6_name": "임원 인물평가 결과보고서 발행",
+      "input": "임원 인사 원천 데이터",
+      "output": "임원 인물평가 결과보고서 발행",
+      "output_type": "analysis_report",
+      "digital_trace": [
+        "평가결과 집계 배치 로그",
+        "심사 의결 반영 로그",
+        "메일 제목: 임원 인물평가 결과 공유"
+      ],
+      "automation_potential": "Mid",
+      "legacy_l6_match": [
+        "임원 근원 및 인물평"
+      ],
+      "improvement_note": "realdata.ts 고정 뼈대 기반 산출물 중심 분해"
+    },
+    {
+      "l6_id": "V2-L6-0571",
+      "l3": "임원조직",
+      "l4": "인력운영",
+      "l5": "조직도 작성",
+      "l6_name": "임원 조직도 개정본 확정",
+      "input": "임원 인사 원천 데이터",
+      "output": "임원 조직도 개정본 확정",
+      "output_type": "org_chart",
+      "digital_trace": [
+        "조직도 버전 업데이트 로그",
+        "승인 결재 로그",
+        "메일 제목: 임원 조직도 개정 안내"
+      ],
+      "automation_potential": "Mid",
+      "legacy_l6_match": [
+        "조직도 작성"
+      ],
+      "improvement_note": "realdata.ts 고정 뼈대 기반 산출물 중심 분해"
+    },
+    {
+      "l6_id": "V2-L6-0572",
+      "l3": "임원조직",
+      "l4": "인력운영",
+      "l5": "임원 계약 및 퇴임",
+      "l6_name": "임원 계약서 확정본 등록",
+      "input": "임원 인사 원천 데이터",
+      "output": "임원 계약서 확정본 등록",
+      "output_type": "contract_doc",
+      "digital_trace": [
+        "계약서 보안저장 로그",
+        "계약 승인 의결 로그",
+        "메일 제목: 임원 계약 확정 안내"
+      ],
+      "automation_potential": "Mid",
+      "legacy_l6_match": [
+        "임원 계약 및 퇴임"
+      ],
+      "improvement_note": "realdata.ts 고정 뼈대 기반 산출물 중심 분해"
+    },
+    {
+      "l6_id": "V2-L6-0573",
+      "l3": "임원조직",
+      "l4": "인력운영",
+      "l5": "임원 계약 및 퇴임",
+      "l6_name": "임원 퇴임 인사명령서 발행",
+      "input": "임원 인사 원천 데이터",
+      "output": "임원 퇴임 인사명령서 발행",
+      "output_type": "hr_order",
+      "digital_trace": [
+        "퇴임 인사명령 문서번호 생성",
+        "인사시스템 직책 변경 로그",
+        "메일 제목: 임원 퇴임 발령 안내"
+      ],
+      "automation_potential": "Mid",
+      "legacy_l6_match": [
+        "임원 계약 및 퇴임"
+      ],
+      "improvement_note": "realdata.ts 고정 뼈대 기반 산출물 중심 분해"
+    },
+    {
+      "l6_id": "V2-L6-0574",
+      "l3": "임원조직",
+      "l4": "인력운영",
+      "l5": "퇴임임원 후속조치",
+      "l6_name": "퇴임임원 권한회수 완료로그 생성",
+      "input": "임원 인사 원천 데이터",
+      "output": "퇴임임원 권한회수 완료로그 생성",
+      "output_type": "security_log",
+      "digital_trace": [
+        "시스템 권한회수 로그",
+        "보안계정 비활성화 로그",
+        "메일 제목: 퇴임임원 권한회수 완료 안내"
+      ],
+      "automation_potential": "Mid",
+      "legacy_l6_match": [
+        "퇴임임원 후속조치"
+      ],
+      "improvement_note": "realdata.ts 고정 뼈대 기반 산출물 중심 분해"
+    },
+    {
+      "l6_id": "V2-L6-0575",
+      "l3": "임원조직",
+      "l4": "조직개편",
+      "l5": "정기 조직개편",
+      "l6_name": "정기 조직개편안 확정본 등록",
+      "input": "임원 인사 원천 데이터",
+      "output": "정기 조직개편안 확정본 등록",
+      "output_type": "reorg_doc",
+      "digital_trace": [
+        "조직개편안 승인 로그",
+        "보안문서 열람 로그",
+        "이사회 상정 안건 로그"
+      ],
+      "automation_potential": "Mid",
+      "legacy_l6_match": [
+        "정기 조직개편"
+      ],
+      "improvement_note": "realdata.ts 고정 뼈대 기반 산출물 중심 분해"
+    },
+    {
+      "l6_id": "V2-L6-0576",
+      "l3": "임원조직",
+      "l4": "조직개편",
+      "l5": "정기 조직개편",
+      "l6_name": "정기 조직개편 발령문 발행",
+      "input": "임원 인사 원천 데이터",
+      "output": "정기 조직개편 발령문 발행",
+      "output_type": "hr_order",
+      "digital_trace": [
+        "발령문 문서번호 생성",
+        "인사시스템 조직반영 로그",
+        "메일 제목: 정기 조직개편 발령 안내"
+      ],
+      "automation_potential": "Mid",
+      "legacy_l6_match": [
+        "정기 조직개편"
+      ],
+      "improvement_note": "realdata.ts 고정 뼈대 기반 산출물 중심 분해"
+    },
+    {
+      "l6_id": "V2-L6-0577",
+      "l3": "임원조직",
+      "l4": "조직개편",
+      "l5": "수시 조직개편",
+      "l6_name": "수시 조직개편 반영완료 로그 생성",
+      "input": "임원 인사 원천 데이터",
+      "output": "수시 조직개편 반영완료 로그 생성",
+      "output_type": "sync_log",
+      "digital_trace": [
+        "조직반영 배치 로그",
+        "직책 변경 매핑 로그",
+        "메일 제목: 수시 조직개편 반영 완료 안내"
+      ],
+      "automation_potential": "Mid",
+      "legacy_l6_match": [
+        "수시 조직개편"
+      ],
+      "improvement_note": "realdata.ts 고정 뼈대 기반 산출물 중심 분해"
+    },
+    {
+      "l6_id": "V2-L6-0578",
+      "l3": "임원조직",
+      "l4": "교육/양성",
+      "l5": "SLP/TLP 과정",
+      "l6_name": "SLP/TLP 과정 운영계획서 확정",
+      "input": "임원 인사 원천 데이터",
+      "output": "SLP/TLP 과정 운영계획서 확정",
+      "output_type": "plan_doc",
+      "digital_trace": [
+        "과정 승인 로그",
+        "참여자 확정 로그",
+        "메일 제목: SLP/TLP 과정 운영계획 안내"
+      ],
+      "automation_potential": "Mid",
+      "legacy_l6_match": [
+        "SLP/TLP 과정"
+      ],
+      "improvement_note": "realdata.ts 고정 뼈대 기반 산출물 중심 분해"
+    },
+    {
+      "l6_id": "V2-L6-0579",
+      "l3": "임원조직",
+      "l4": "교육/양성",
+      "l5": "SLP/TLP 과정",
+      "l6_name": "SLP/TLP 수료결과표 발행",
+      "input": "임원 인사 원천 데이터",
+      "output": "SLP/TLP 수료결과표 발행",
+      "output_type": "training_status",
+      "digital_trace": [
+        "LMS 수료데이터 적재",
+        "평가결과 집계 로그",
+        "메일 제목: SLP/TLP 수료결과 안내"
+      ],
+      "automation_potential": "Mid",
+      "legacy_l6_match": [
+        "SLP/TLP 과정"
+      ],
+      "improvement_note": "realdata.ts 고정 뼈대 기반 산출물 중심 분해"
+    },
+    {
+      "l6_id": "V2-L6-0580",
+      "l3": "임원조직",
+      "l4": "교육/양성",
+      "l5": "임원 부부 명상과정",
+      "l6_name": "임원 부부 명상과정 일정확정서 발행",
+      "input": "임원 인사 원천 데이터",
+      "output": "임원 부부 명상과정 일정확정서 발행",
+      "output_type": "schedule_doc",
+      "digital_trace": [
+        "일정 확정 로그",
+        "참여자 초청 발송 로그",
+        "메일 제목: 임원 부부 명상과정 일정 안내"
+      ],
+      "automation_potential": "Mid",
+      "legacy_l6_match": [
+        "임원 부부 명상과정"
+      ],
+      "improvement_note": "realdata.ts 고정 뼈대 기반 산출물 중심 분해"
+    },
+    {
+      "l6_id": "V2-L6-0581",
+      "l3": "임원조직",
+      "l4": "교육/양성",
+      "l5": "그룹장 양성과정",
+      "l6_name": "그룹장 양성과정 대상자 선발명단 확정",
+      "input": "임원 인사 원천 데이터",
+      "output": "그룹장 양성과정 대상자 선발명단 확정",
+      "output_type": "approval_list",
+      "digital_trace": [
+        "대상자 선발평가 로그",
+        "선발 승인 로그",
+        "메일 제목: 그룹장 양성과정 대상자 확정 안내"
+      ],
+      "automation_potential": "Mid",
+      "legacy_l6_match": [
+        "그룹장 양성과정"
+      ],
+      "improvement_note": "realdata.ts 고정 뼈대 기반 산출물 중심 분해"
+    },
+    {
+      "l6_id": "V2-L6-0582",
+      "l3": "임원조직",
+      "l4": "교육/양성",
+      "l5": "그룹장 양성과정",
+      "l6_name": "그룹장 양성과정 평가결과 보고서 발행",
+      "input": "임원 인사 원천 데이터",
+      "output": "그룹장 양성과정 평가결과 보고서 발행",
+      "output_type": "evaluation_report",
+      "digital_trace": [
+        "과정 평가점수 집계 로그",
+        "성과분석 리포트 생성 로그",
+        "메일 제목: 그룹장 양성과정 평가결과 공유"
+      ],
+      "automation_potential": "Mid",
+      "legacy_l6_match": [
+        "그룹장 양성과정"
+      ],
+      "improvement_note": "realdata.ts 고정 뼈대 기반 산출물 중심 분해"
+    }
+  ]
+}
