@@ -14,7 +14,7 @@
       "digital_trace": [
         "HRIS 로그: 채용 계획 수립 실행안",
         "전자결재 문서번호: 채용 계획 수립 실행안",
-        "메일 제목: [HR-OPS] 채용 계획 수립 실행안 안내"
+        "메일 제목: [알림] 채용 계획 수립 실행안 처리 안내"
       ],
       "automation_potential": "Mid",
       "legacy_l6_match": [
@@ -33,7 +33,7 @@
       "digital_trace": [
         "HRIS 로그: 채용 계획 수립 확정본",
         "전자결재 문서번호: 채용 계획 수립 확정본",
-        "메일 제목: [HR-OPS] 채용 계획 수립 확정본 안내"
+        "메일 제목: [알림] 채용 계획 수립 확정본 처리 안내"
       ],
       "automation_potential": "Mid",
       "legacy_l6_match": [
@@ -52,7 +52,7 @@
       "digital_trace": [
         "HRIS 로그: 채용 계획 수립 운영 이력대장",
         "전자결재 문서번호: 채용 계획 수립 운영 이력대장",
-        "메일 제목: [HR-OPS] 채용 계획 수립 운영 이력대장 안내"
+        "메일 제목: [알림] 채용 계획 수립 운영 이력대장 처리 안내"
       ],
       "automation_potential": "High",
       "legacy_l6_match": [
@@ -71,7 +71,7 @@
       "digital_trace": [
         "HRIS 로그: 직무기술서 작성 실행안",
         "전자결재 문서번호: 직무기술서 작성 실행안",
-        "메일 제목: [HR-OPS] 직무기술서 작성 실행안 안내"
+        "메일 제목: [알림] 직무기술서 작성 실행안 처리 안내"
       ],
       "automation_potential": "Mid",
       "legacy_l6_match": [
@@ -90,7 +90,7 @@
       "digital_trace": [
         "HRIS 로그: 직무기술서 작성 확정본",
         "전자결재 문서번호: 직무기술서 작성 확정본",
-        "메일 제목: [HR-OPS] 직무기술서 작성 확정본 안내"
+        "메일 제목: [알림] 직무기술서 작성 확정본 처리 안내"
       ],
       "automation_potential": "Mid",
       "legacy_l6_match": [
@@ -109,7 +109,7 @@
       "digital_trace": [
         "HRIS 로그: 직무기술서 작성 운영 이력대장",
         "전자결재 문서번호: 직무기술서 작성 운영 이력대장",
-        "메일 제목: [HR-OPS] 직무기술서 작성 운영 이력대장 안내"
+        "메일 제목: [알림] 직무기술서 작성 운영 이력대장 처리 안내"
       ],
       "automation_potential": "High",
       "legacy_l6_match": [
@@ -128,7 +128,7 @@
       "digital_trace": [
         "HRIS 로그: 인재 소싱 채널 선정 및 역칭 실행안",
         "전자결재 문서번호: 인재 소싱 채널 선정 및 역칭 실행안",
-        "메일 제목: [HR-OPS] 인재 소싱 채널 선정 및 역칭 실행안 안내"
+        "메일 제목: [알림] 인재 소싱 채널 선정 및 역칭 실행안 처리 안내"
       ],
       "automation_potential": "Mid",
       "legacy_l6_match": [
@@ -147,7 +147,7 @@
       "digital_trace": [
         "HRIS 로그: 인재 소싱 채널 선정 및 역칭 확정본",
         "전자결재 문서번호: 인재 소싱 채널 선정 및 역칭 확정본",
-        "메일 제목: [HR-OPS] 인재 소싱 채널 선정 및 역칭 확정본 안내"
+        "메일 제목: [알림] 인재 소싱 채널 선정 및 역칭 확정본 처리 안내"
       ],
       "automation_potential": "Mid",
       "legacy_l6_match": [
@@ -166,7 +166,7 @@
       "digital_trace": [
         "HRIS 로그: 인재 소싱 채널 선정 및 역칭 운영 이력대장",
         "전자결재 문서번호: 인재 소싱 채널 선정 및 역칭 운영 이력대장",
-        "메일 제목: [HR-OPS] 인재 소싱 채널 선정 및 역칭 운영 이력대장 안내"
+        "메일 제목: [알림] 인재 소싱 채널 선정 및 역칭 운영 이력대장 처리 안내"
       ],
       "automation_potential": "High",
       "legacy_l6_match": [
@@ -185,7 +185,7 @@
       "digital_trace": [
         "HRIS 로그: 서류심사 실행안",
         "전자결재 문서번호: 서류심사 실행안",
-        "메일 제목: [HR-OPS] 서류심사 실행안 안내"
+        "메일 제목: [알림] 서류심사 실행안 처리 안내"
       ],
       "automation_potential": "Mid",
       "legacy_l6_match": [
@@ -204,7 +204,7 @@
       "digital_trace": [
         "HRIS 로그: 서류심사 확정본",
         "전자결재 문서번호: 서류심사 확정본",
-        "메일 제목: [HR-OPS] 서류심사 확정본 안내"
+        "메일 제목: [알림] 서류심사 확정본 처리 안내"
       ],
       "automation_potential": "Mid",
       "legacy_l6_match": [
@@ -223,7 +223,7 @@
       "digital_trace": [
         "HRIS 로그: 서류심사 운영 이력대장",
         "전자결재 문서번호: 서류심사 운영 이력대장",
-        "메일 제목: [HR-OPS] 서류심사 운영 이력대장 안내"
+        "메일 제목: [알림] 서류심사 운영 이력대장 처리 안내"
       ],
       "automation_potential": "High",
       "legacy_l6_match": [
@@ -242,7 +242,7 @@
       "digital_trace": [
         "HRIS 로그: 자격 검증 실행안",
         "전자결재 문서번호: 자격 검증 실행안",
-        "메일 제목: [HR-OPS] 자격 검증 실행안 안내"
+        "메일 제목: [알림] 자격 검증 실행안 처리 안내"
       ],
       "automation_potential": "Mid",
       "legacy_l6_match": [
@@ -261,7 +261,7 @@
       "digital_trace": [
         "HRIS 로그: 자격 검증 확정본",
         "전자결재 문서번호: 자격 검증 확정본",
-        "메일 제목: [HR-OPS] 자격 검증 확정본 안내"
+        "메일 제목: [알림] 자격 검증 확정본 처리 안내"
       ],
       "automation_potential": "Mid",
       "legacy_l6_match": [
@@ -280,7 +280,7 @@
       "digital_trace": [
         "HRIS 로그: 자격 검증 운영 이력대장",
         "전자결재 문서번호: 자격 검증 운영 이력대장",
-        "메일 제목: [HR-OPS] 자격 검증 운영 이력대장 안내"
+        "메일 제목: [알림] 자격 검증 운영 이력대장 처리 안내"
       ],
       "automation_potential": "High",
       "legacy_l6_match": [
@@ -299,7 +299,7 @@
       "digital_trace": [
         "HRIS 로그: 면접관 배정 확정표",
         "전자결재 문서번호: 면접관 배정 확정표",
-        "메일 제목: [HR-OPS] 면접관 배정 확정표 안내"
+        "메일 제목: [알림] 면접관 배정 확정표 처리 안내"
       ],
       "automation_potential": "High",
       "legacy_l6_match": [
@@ -318,7 +318,7 @@
       "digital_trace": [
         "HRIS 로그: 면접 일정표",
         "전자결재 문서번호: 면접 일정표",
-        "메일 제목: [HR-OPS] 면접 일정표 안내"
+        "메일 제목: [알림] 면접 일정표 처리 안내"
       ],
       "automation_potential": "High",
       "legacy_l6_match": [
@@ -337,7 +337,7 @@
       "digital_trace": [
         "HRIS 로그: 지원자 면접 안내 메일",
         "전자결재 문서번호: 지원자 면접 안내 메일",
-        "메일 제목: [HR-OPS] 지원자 면접 안내 메일 안내"
+        "메일 제목: [알림] 지원자 면접 안내 메일 처리 안내"
       ],
       "automation_potential": "High",
       "legacy_l6_match": [
@@ -356,7 +356,7 @@
       "digital_trace": [
         "HRIS 로그: 면접 평가표 취합본",
         "전자결재 문서번호: 면접 평가표 취합본",
-        "메일 제목: [HR-OPS] 면접 평가표 취합본 안내"
+        "메일 제목: [알림] 면접 평가표 취합본 처리 안내"
       ],
       "automation_potential": "High",
       "legacy_l6_match": [
@@ -375,7 +375,7 @@
       "digital_trace": [
         "HRIS 로그: 채용 및 처우 승인 실행안",
         "전자결재 문서번호: 채용 및 처우 승인 실행안",
-        "메일 제목: [HR-OPS] 채용 및 처우 승인 실행안 안내"
+        "메일 제목: [알림] 채용 및 처우 승인 실행안 처리 안내"
       ],
       "automation_potential": "Mid",
       "legacy_l6_match": [
@@ -394,7 +394,7 @@
       "digital_trace": [
         "HRIS 로그: 채용 및 처우 승인 확정본",
         "전자결재 문서번호: 채용 및 처우 승인 확정본",
-        "메일 제목: [HR-OPS] 채용 및 처우 승인 확정본 안내"
+        "메일 제목: [알림] 채용 및 처우 승인 확정본 처리 안내"
       ],
       "automation_potential": "Mid",
       "legacy_l6_match": [
@@ -413,7 +413,7 @@
       "digital_trace": [
         "HRIS 로그: 채용 및 처우 승인 운영 이력대장",
         "전자결재 문서번호: 채용 및 처우 승인 운영 이력대장",
-        "메일 제목: [HR-OPS] 채용 및 처우 승인 운영 이력대장 안내"
+        "메일 제목: [알림] 채용 및 처우 승인 운영 이력대장 처리 안내"
       ],
       "automation_potential": "High",
       "legacy_l6_match": [
@@ -432,7 +432,7 @@
       "digital_trace": [
         "HRIS 로그: 선확보 인력 관리 실행안",
         "전자결재 문서번호: 선확보 인력 관리 실행안",
-        "메일 제목: [HR-OPS] 선확보 인력 관리 실행안 안내"
+        "메일 제목: [알림] 선확보 인력 관리 실행안 처리 안내"
       ],
       "automation_potential": "Mid",
       "legacy_l6_match": [
@@ -451,7 +451,7 @@
       "digital_trace": [
         "HRIS 로그: 선확보 인력 관리 확정본",
         "전자결재 문서번호: 선확보 인력 관리 확정본",
-        "메일 제목: [HR-OPS] 선확보 인력 관리 확정본 안내"
+        "메일 제목: [알림] 선확보 인력 관리 확정본 처리 안내"
       ],
       "automation_potential": "Mid",
       "legacy_l6_match": [
@@ -470,7 +470,7 @@
       "digital_trace": [
         "HRIS 로그: 선확보 인력 관리 운영 이력대장",
         "전자결재 문서번호: 선확보 인력 관리 운영 이력대장",
-        "메일 제목: [HR-OPS] 선확보 인력 관리 운영 이력대장 안내"
+        "메일 제목: [알림] 선확보 인력 관리 운영 이력대장 처리 안내"
       ],
       "automation_potential": "High",
       "legacy_l6_match": [
@@ -489,7 +489,7 @@
       "digital_trace": [
         "HRIS 로그: 입사 및 온보딩 실행안",
         "전자결재 문서번호: 입사 및 온보딩 실행안",
-        "메일 제목: [HR-OPS] 입사 및 온보딩 실행안 안내"
+        "메일 제목: [알림] 입사 및 온보딩 실행안 처리 안내"
       ],
       "automation_potential": "Mid",
       "legacy_l6_match": [
@@ -508,7 +508,7 @@
       "digital_trace": [
         "HRIS 로그: 입사 및 온보딩 확정본",
         "전자결재 문서번호: 입사 및 온보딩 확정본",
-        "메일 제목: [HR-OPS] 입사 및 온보딩 확정본 안내"
+        "메일 제목: [알림] 입사 및 온보딩 확정본 처리 안내"
       ],
       "automation_potential": "Mid",
       "legacy_l6_match": [
@@ -527,7 +527,7 @@
       "digital_trace": [
         "HRIS 로그: 입사 및 온보딩 운영 이력대장",
         "전자결재 문서번호: 입사 및 온보딩 운영 이력대장",
-        "메일 제목: [HR-OPS] 입사 및 온보딩 운영 이력대장 안내"
+        "메일 제목: [알림] 입사 및 온보딩 운영 이력대장 처리 안내"
       ],
       "automation_potential": "High",
       "legacy_l6_match": [
@@ -546,7 +546,7 @@
       "digital_trace": [
         "HRIS-PAY/TNA 로그: 월 급여 산정표",
         "배치/결재 로그: 월 급여 산정표",
-        "메일 제목: [HRIS] 월 급여 산정표 완료"
+        "메일 제목: [알림] 월 급여 산정표 처리 안내"
       ],
       "automation_potential": "High",
       "legacy_l6_match": [
@@ -565,7 +565,7 @@
       "digital_trace": [
         "HRIS-PAY/TNA 로그: 급여 이체 파일",
         "배치/결재 로그: 급여 이체 파일",
-        "메일 제목: [HRIS] 급여 이체 파일 완료"
+        "메일 제목: [알림] 급여 이체 파일 처리 안내"
       ],
       "automation_potential": "High",
       "legacy_l6_match": [
@@ -584,7 +584,7 @@
       "digital_trace": [
         "HRIS-PAY/TNA 로그: 급여 명세서 PDF",
         "배치/결재 로그: 급여 명세서 PDF",
-        "메일 제목: [HRIS] 급여 명세서 PDF 완료"
+        "메일 제목: [알림] 급여 명세서 PDF 처리 안내"
       ],
       "automation_potential": "Mid",
       "legacy_l6_match": [
@@ -603,7 +603,7 @@
       "digital_trace": [
         "HRIS-PAY/TNA 로그: 인센티브 실행안",
         "배치/결재 로그: 인센티브 실행안",
-        "메일 제목: [HRIS] 인센티브 실행안 완료"
+        "메일 제목: [알림] 인센티브 실행안 처리 안내"
       ],
       "automation_potential": "Mid",
       "legacy_l6_match": [
@@ -622,7 +622,7 @@
       "digital_trace": [
         "HRIS-PAY/TNA 로그: 인센티브 확정본",
         "배치/결재 로그: 인센티브 확정본",
-        "메일 제목: [HRIS] 인센티브 확정본 완료"
+        "메일 제목: [알림] 인센티브 확정본 처리 안내"
       ],
       "automation_potential": "Mid",
       "legacy_l6_match": [
@@ -641,7 +641,7 @@
       "digital_trace": [
         "HRIS-PAY/TNA 로그: 인센티브 운영 이력대장",
         "배치/결재 로그: 인센티브 운영 이력대장",
-        "메일 제목: [HRIS] 인센티브 운영 이력대장 완료"
+        "메일 제목: [알림] 인센티브 운영 이력대장 처리 안내"
       ],
       "automation_potential": "High",
       "legacy_l6_match": [
@@ -660,7 +660,7 @@
       "digital_trace": [
         "HRIS-PAY/TNA 로그: 연차수당 실행안",
         "배치/결재 로그: 연차수당 실행안",
-        "메일 제목: [HRIS] 연차수당 실행안 완료"
+        "메일 제목: [알림] 연차수당 실행안 처리 안내"
       ],
       "automation_potential": "Mid",
       "legacy_l6_match": [
@@ -679,7 +679,7 @@
       "digital_trace": [
         "HRIS-PAY/TNA 로그: 연차수당 확정본",
         "배치/결재 로그: 연차수당 확정본",
-        "메일 제목: [HRIS] 연차수당 확정본 완료"
+        "메일 제목: [알림] 연차수당 확정본 처리 안내"
       ],
       "automation_potential": "Mid",
       "legacy_l6_match": [
@@ -698,7 +698,7 @@
       "digital_trace": [
         "HRIS-PAY/TNA 로그: 연차수당 운영 이력대장",
         "배치/결재 로그: 연차수당 운영 이력대장",
-        "메일 제목: [HRIS] 연차수당 운영 이력대장 완료"
+        "메일 제목: [알림] 연차수당 운영 이력대장 처리 안내"
       ],
       "automation_potential": "High",
       "legacy_l6_match": [
@@ -717,7 +717,7 @@
       "digital_trace": [
         "HRIS-PAY/TNA 로그: 퇴직자 미지급금 지급 실행안",
         "배치/결재 로그: 퇴직자 미지급금 지급 실행안",
-        "메일 제목: [HRIS] 퇴직자 미지급금 지급 실행안 완료"
+        "메일 제목: [알림] 퇴직자 미지급금 지급 실행안 처리 안내"
       ],
       "automation_potential": "Mid",
       "legacy_l6_match": [
@@ -736,7 +736,7 @@
       "digital_trace": [
         "HRIS-PAY/TNA 로그: 퇴직자 미지급금 지급 확정본",
         "배치/결재 로그: 퇴직자 미지급금 지급 확정본",
-        "메일 제목: [HRIS] 퇴직자 미지급금 지급 확정본 완료"
+        "메일 제목: [알림] 퇴직자 미지급금 지급 확정본 처리 안내"
       ],
       "automation_potential": "Mid",
       "legacy_l6_match": [
@@ -755,7 +755,7 @@
       "digital_trace": [
         "HRIS-PAY/TNA 로그: 퇴직자 미지급금 지급 운영 이력대장",
         "배치/결재 로그: 퇴직자 미지급금 지급 운영 이력대장",
-        "메일 제목: [HRIS] 퇴직자 미지급금 지급 운영 이력대장 완료"
+        "메일 제목: [알림] 퇴직자 미지급금 지급 운영 이력대장 처리 안내"
       ],
       "automation_potential": "High",
       "legacy_l6_match": [
@@ -774,7 +774,7 @@
       "digital_trace": [
         "HRIS-PAY/TNA 로그: 퇴직금 지급 실행안",
         "배치/결재 로그: 퇴직금 지급 실행안",
-        "메일 제목: [HRIS] 퇴직금 지급 실행안 완료"
+        "메일 제목: [알림] 퇴직금 지급 실행안 처리 안내"
       ],
       "automation_potential": "Mid",
       "legacy_l6_match": [
@@ -793,7 +793,7 @@
       "digital_trace": [
         "HRIS-PAY/TNA 로그: 퇴직금 지급 확정본",
         "배치/결재 로그: 퇴직금 지급 확정본",
-        "메일 제목: [HRIS] 퇴직금 지급 확정본 완료"
+        "메일 제목: [알림] 퇴직금 지급 확정본 처리 안내"
       ],
       "automation_potential": "Mid",
       "legacy_l6_match": [
@@ -812,7 +812,7 @@
       "digital_trace": [
         "HRIS-PAY/TNA 로그: 퇴직금 지급 운영 이력대장",
         "배치/결재 로그: 퇴직금 지급 운영 이력대장",
-        "메일 제목: [HRIS] 퇴직금 지급 운영 이력대장 완료"
+        "메일 제목: [알림] 퇴직금 지급 운영 이력대장 처리 안내"
       ],
       "automation_potential": "High",
       "legacy_l6_match": [
@@ -831,7 +831,7 @@
       "digital_trace": [
         "HRIS-PAY/TNA 로그: 연말정산 실행안",
         "배치/결재 로그: 연말정산 실행안",
-        "메일 제목: [HRIS] 연말정산 실행안 완료"
+        "메일 제목: [알림] 연말정산 실행안 처리 안내"
       ],
       "automation_potential": "Mid",
       "legacy_l6_match": [
@@ -850,7 +850,7 @@
       "digital_trace": [
         "HRIS-PAY/TNA 로그: 연말정산 확정본",
         "배치/결재 로그: 연말정산 확정본",
-        "메일 제목: [HRIS] 연말정산 확정본 완료"
+        "메일 제목: [알림] 연말정산 확정본 처리 안내"
       ],
       "automation_potential": "Mid",
       "legacy_l6_match": [
@@ -869,7 +869,7 @@
       "digital_trace": [
         "HRIS-PAY/TNA 로그: 연말정산 운영 이력대장",
         "배치/결재 로그: 연말정산 운영 이력대장",
-        "메일 제목: [HRIS] 연말정산 운영 이력대장 완료"
+        "메일 제목: [알림] 연말정산 운영 이력대장 처리 안내"
       ],
       "automation_potential": "High",
       "legacy_l6_match": [
@@ -888,7 +888,7 @@
       "digital_trace": [
         "HRIS-PAY/TNA 로그: 경영계획 실행안",
         "배치/결재 로그: 경영계획 실행안",
-        "메일 제목: [HRIS] 경영계획 실행안 완료"
+        "메일 제목: [알림] 경영계획 실행안 처리 안내"
       ],
       "automation_potential": "Mid",
       "legacy_l6_match": [
@@ -907,7 +907,7 @@
       "digital_trace": [
         "HRIS-PAY/TNA 로그: 경영계획 확정본",
         "배치/결재 로그: 경영계획 확정본",
-        "메일 제목: [HRIS] 경영계획 확정본 완료"
+        "메일 제목: [알림] 경영계획 확정본 처리 안내"
       ],
       "automation_potential": "Mid",
       "legacy_l6_match": [
@@ -926,7 +926,7 @@
       "digital_trace": [
         "HRIS-PAY/TNA 로그: 경영계획 운영 이력대장",
         "배치/결재 로그: 경영계획 운영 이력대장",
-        "메일 제목: [HRIS] 경영계획 운영 이력대장 완료"
+        "메일 제목: [알림] 경영계획 운영 이력대장 처리 안내"
       ],
       "automation_potential": "High",
       "legacy_l6_match": [
@@ -945,7 +945,7 @@
       "digital_trace": [
         "HRIS-PAY/TNA 로그: 임금조정 실행안",
         "배치/결재 로그: 임금조정 실행안",
-        "메일 제목: [HRIS] 임금조정 실행안 완료"
+        "메일 제목: [알림] 임금조정 실행안 처리 안내"
       ],
       "automation_potential": "Mid",
       "legacy_l6_match": [
@@ -964,7 +964,7 @@
       "digital_trace": [
         "HRIS-PAY/TNA 로그: 임금조정 확정본",
         "배치/결재 로그: 임금조정 확정본",
-        "메일 제목: [HRIS] 임금조정 확정본 완료"
+        "메일 제목: [알림] 임금조정 확정본 처리 안내"
       ],
       "automation_potential": "Mid",
       "legacy_l6_match": [
@@ -983,7 +983,7 @@
       "digital_trace": [
         "HRIS-PAY/TNA 로그: 임금조정 운영 이력대장",
         "배치/결재 로그: 임금조정 운영 이력대장",
-        "메일 제목: [HRIS] 임금조정 운영 이력대장 완료"
+        "메일 제목: [알림] 임금조정 운영 이력대장 처리 안내"
       ],
       "automation_potential": "High",
       "legacy_l6_match": [
@@ -1002,7 +1002,7 @@
       "digital_trace": [
         "HRIS-PAY/TNA 로그: 국민연금 정기결정 실행안",
         "배치/결재 로그: 국민연금 정기결정 실행안",
-        "메일 제목: [HRIS] 국민연금 정기결정 실행안 완료"
+        "메일 제목: [알림] 국민연금 정기결정 실행안 처리 안내"
       ],
       "automation_potential": "Mid",
       "legacy_l6_match": [
@@ -1021,7 +1021,7 @@
       "digital_trace": [
         "HRIS-PAY/TNA 로그: 국민연금 정기결정 확정본",
         "배치/결재 로그: 국민연금 정기결정 확정본",
-        "메일 제목: [HRIS] 국민연금 정기결정 확정본 완료"
+        "메일 제목: [알림] 국민연금 정기결정 확정본 처리 안내"
       ],
       "automation_potential": "Mid",
       "legacy_l6_match": [
@@ -1040,7 +1040,7 @@
       "digital_trace": [
         "HRIS-PAY/TNA 로그: 국민연금 정기결정 운영 이력대장",
         "배치/결재 로그: 국민연금 정기결정 운영 이력대장",
-        "메일 제목: [HRIS] 국민연금 정기결정 운영 이력대장 완료"
+        "메일 제목: [알림] 국민연금 정기결정 운영 이력대장 처리 안내"
       ],
       "automation_potential": "High",
       "legacy_l6_match": [
@@ -1059,7 +1059,7 @@
       "digital_trace": [
         "HRIS-PAY/TNA 로그: 국민연금 실행안",
         "배치/결재 로그: 국민연금 실행안",
-        "메일 제목: [HRIS] 국민연금 실행안 완료"
+        "메일 제목: [알림] 국민연금 실행안 처리 안내"
       ],
       "automation_potential": "Mid",
       "legacy_l6_match": [
@@ -1078,7 +1078,7 @@
       "digital_trace": [
         "HRIS-PAY/TNA 로그: 국민연금 확정본",
         "배치/결재 로그: 국민연금 확정본",
-        "메일 제목: [HRIS] 국민연금 확정본 완료"
+        "메일 제목: [알림] 국민연금 확정본 처리 안내"
       ],
       "automation_potential": "Mid",
       "legacy_l6_match": [
@@ -1097,7 +1097,7 @@
       "digital_trace": [
         "HRIS-PAY/TNA 로그: 국민연금 운영 이력대장",
         "배치/결재 로그: 국민연금 운영 이력대장",
-        "메일 제목: [HRIS] 국민연금 운영 이력대장 완료"
+        "메일 제목: [알림] 국민연금 운영 이력대장 처리 안내"
       ],
       "automation_potential": "High",
       "legacy_l6_match": [
@@ -1116,7 +1116,7 @@
       "digital_trace": [
         "HRIS-PAY/TNA 로그: 건강보험·노인장기요양보험 정산 실행안",
         "배치/결재 로그: 건강보험·노인장기요양보험 정산 실행안",
-        "메일 제목: [HRIS] 건강보험·노인장기요양보험 정산 실행안 완료"
+        "메일 제목: [알림] 건강보험·노인장기요양보험 정산 실행안 처리 안내"
       ],
       "automation_potential": "Mid",
       "legacy_l6_match": [
@@ -1135,7 +1135,7 @@
       "digital_trace": [
         "HRIS-PAY/TNA 로그: 건강보험·노인장기요양보험 정산 확정본",
         "배치/결재 로그: 건강보험·노인장기요양보험 정산 확정본",
-        "메일 제목: [HRIS] 건강보험·노인장기요양보험 정산 확정본 완료"
+        "메일 제목: [알림] 건강보험·노인장기요양보험 정산 확정본 처리 안내"
       ],
       "automation_potential": "Mid",
       "legacy_l6_match": [
@@ -1154,7 +1154,7 @@
       "digital_trace": [
         "HRIS-PAY/TNA 로그: 건강보험·노인장기요양보험 정산 운영 이력대장",
         "배치/결재 로그: 건강보험·노인장기요양보험 정산 운영 이력대장",
-        "메일 제목: [HRIS] 건강보험·노인장기요양보험 정산 운영 이력대장 완료"
+        "메일 제목: [알림] 건강보험·노인장기요양보험 정산 운영 이력대장 처리 안내"
       ],
       "automation_potential": "High",
       "legacy_l6_match": [
@@ -1173,7 +1173,7 @@
       "digital_trace": [
         "HRIS-PAY/TNA 로그: 고용보험 실행안",
         "배치/결재 로그: 고용보험 실행안",
-        "메일 제목: [HRIS] 고용보험 실행안 완료"
+        "메일 제목: [알림] 고용보험 실행안 처리 안내"
       ],
       "automation_potential": "Mid",
       "legacy_l6_match": [
@@ -1192,7 +1192,7 @@
       "digital_trace": [
         "HRIS-PAY/TNA 로그: 고용보험 확정본",
         "배치/결재 로그: 고용보험 확정본",
-        "메일 제목: [HRIS] 고용보험 확정본 완료"
+        "메일 제목: [알림] 고용보험 확정본 처리 안내"
       ],
       "automation_potential": "Mid",
       "legacy_l6_match": [
@@ -1211,7 +1211,7 @@
       "digital_trace": [
         "HRIS-PAY/TNA 로그: 고용보험 운영 이력대장",
         "배치/결재 로그: 고용보험 운영 이력대장",
-        "메일 제목: [HRIS] 고용보험 운영 이력대장 완료"
+        "메일 제목: [알림] 고용보험 운영 이력대장 처리 안내"
       ],
       "automation_potential": "High",
       "legacy_l6_match": [
@@ -1230,7 +1230,7 @@
       "digital_trace": [
         "HRIS-PAY/TNA 로그: 고용보험 자격관리 실행안",
         "배치/결재 로그: 고용보험 자격관리 실행안",
-        "메일 제목: [HRIS] 고용보험 자격관리 실행안 완료"
+        "메일 제목: [알림] 고용보험 자격관리 실행안 처리 안내"
       ],
       "automation_potential": "Mid",
       "legacy_l6_match": [
@@ -1249,7 +1249,7 @@
       "digital_trace": [
         "HRIS-PAY/TNA 로그: 고용보험 자격관리 확정본",
         "배치/결재 로그: 고용보험 자격관리 확정본",
-        "메일 제목: [HRIS] 고용보험 자격관리 확정본 완료"
+        "메일 제목: [알림] 고용보험 자격관리 확정본 처리 안내"
       ],
       "automation_potential": "Mid",
       "legacy_l6_match": [
@@ -1268,7 +1268,7 @@
       "digital_trace": [
         "HRIS-PAY/TNA 로그: 고용보험 자격관리 운영 이력대장",
         "배치/결재 로그: 고용보험 자격관리 운영 이력대장",
-        "메일 제목: [HRIS] 고용보험 자격관리 운영 이력대장 완료"
+        "메일 제목: [알림] 고용보험 자격관리 운영 이력대장 처리 안내"
       ],
       "automation_potential": "High",
       "legacy_l6_match": [
@@ -1287,7 +1287,7 @@
       "digital_trace": [
         "HRIS-PAY/TNA 로그: 산재보험 신고 실행안",
         "배치/결재 로그: 산재보험 신고 실행안",
-        "메일 제목: [HRIS] 산재보험 신고 실행안 완료"
+        "메일 제목: [알림] 산재보험 신고 실행안 처리 안내"
       ],
       "automation_potential": "Mid",
       "legacy_l6_match": [
@@ -1306,7 +1306,7 @@
       "digital_trace": [
         "HRIS-PAY/TNA 로그: 산재보험 신고 확정본",
         "배치/결재 로그: 산재보험 신고 확정본",
-        "메일 제목: [HRIS] 산재보험 신고 확정본 완료"
+        "메일 제목: [알림] 산재보험 신고 확정본 처리 안내"
       ],
       "automation_potential": "Mid",
       "legacy_l6_match": [
@@ -1325,7 +1325,7 @@
       "digital_trace": [
         "HRIS-PAY/TNA 로그: 산재보험 신고 운영 이력대장",
         "배치/결재 로그: 산재보험 신고 운영 이력대장",
-        "메일 제목: [HRIS] 산재보험 신고 운영 이력대장 완료"
+        "메일 제목: [알림] 산재보험 신고 운영 이력대장 처리 안내"
       ],
       "automation_potential": "High",
       "legacy_l6_match": [
@@ -1344,7 +1344,7 @@
       "digital_trace": [
         "HRIS-PAY/TNA 로그: 산재보험 실행안",
         "배치/결재 로그: 산재보험 실행안",
-        "메일 제목: [HRIS] 산재보험 실행안 완료"
+        "메일 제목: [알림] 산재보험 실행안 처리 안내"
       ],
       "automation_potential": "Mid",
       "legacy_l6_match": [
@@ -1363,7 +1363,7 @@
       "digital_trace": [
         "HRIS-PAY/TNA 로그: 산재보험 확정본",
         "배치/결재 로그: 산재보험 확정본",
-        "메일 제목: [HRIS] 산재보험 확정본 완료"
+        "메일 제목: [알림] 산재보험 확정본 처리 안내"
       ],
       "automation_potential": "Mid",
       "legacy_l6_match": [
@@ -1382,7 +1382,7 @@
       "digital_trace": [
         "HRIS-PAY/TNA 로그: 산재보험 운영 이력대장",
         "배치/결재 로그: 산재보험 운영 이력대장",
-        "메일 제목: [HRIS] 산재보험 운영 이력대장 완료"
+        "메일 제목: [알림] 산재보험 운영 이력대장 처리 안내"
       ],
       "automation_potential": "High",
       "legacy_l6_match": [
@@ -1401,7 +1401,7 @@
       "digital_trace": [
         "HRIS-PAY/TNA 로그: 개인연금 실행안",
         "배치/결재 로그: 개인연금 실행안",
-        "메일 제목: [HRIS] 개인연금 실행안 완료"
+        "메일 제목: [알림] 개인연금 실행안 처리 안내"
       ],
       "automation_potential": "Mid",
       "legacy_l6_match": [
@@ -1420,7 +1420,7 @@
       "digital_trace": [
         "HRIS-PAY/TNA 로그: 개인연금 확정본",
         "배치/결재 로그: 개인연금 확정본",
-        "메일 제목: [HRIS] 개인연금 확정본 완료"
+        "메일 제목: [알림] 개인연금 확정본 처리 안내"
       ],
       "automation_potential": "Mid",
       "legacy_l6_match": [
@@ -1439,7 +1439,7 @@
       "digital_trace": [
         "HRIS-PAY/TNA 로그: 개인연금 운영 이력대장",
         "배치/결재 로그: 개인연금 운영 이력대장",
-        "메일 제목: [HRIS] 개인연금 운영 이력대장 완료"
+        "메일 제목: [알림] 개인연금 운영 이력대장 처리 안내"
       ],
       "automation_potential": "High",
       "legacy_l6_match": [
@@ -1458,7 +1458,7 @@
       "digital_trace": [
         "HRIS-PAY/TNA 로그: 개인연금운영 실행안",
         "배치/결재 로그: 개인연금운영 실행안",
-        "메일 제목: [HRIS] 개인연금운영 실행안 완료"
+        "메일 제목: [알림] 개인연금운영 실행안 처리 안내"
       ],
       "automation_potential": "Mid",
       "legacy_l6_match": [
@@ -1477,7 +1477,7 @@
       "digital_trace": [
         "HRIS-PAY/TNA 로그: 개인연금운영 확정본",
         "배치/결재 로그: 개인연금운영 확정본",
-        "메일 제목: [HRIS] 개인연금운영 확정본 완료"
+        "메일 제목: [알림] 개인연금운영 확정본 처리 안내"
       ],
       "automation_potential": "Mid",
       "legacy_l6_match": [
@@ -1496,7 +1496,7 @@
       "digital_trace": [
         "HRIS-PAY/TNA 로그: 개인연금운영 운영 이력대장",
         "배치/결재 로그: 개인연금운영 운영 이력대장",
-        "메일 제목: [HRIS] 개인연금운영 운영 이력대장 완료"
+        "메일 제목: [알림] 개인연금운영 운영 이력대장 처리 안내"
       ],
       "automation_potential": "High",
       "legacy_l6_match": [
@@ -1515,7 +1515,7 @@
       "digital_trace": [
         "HRIS-PAY/TNA 로그: 의료비 실행안",
         "배치/결재 로그: 의료비 실행안",
-        "메일 제목: [HRIS] 의료비 실행안 완료"
+        "메일 제목: [알림] 의료비 실행안 처리 안내"
       ],
       "automation_potential": "Mid",
       "legacy_l6_match": [
@@ -1534,7 +1534,7 @@
       "digital_trace": [
         "HRIS-PAY/TNA 로그: 의료비 확정본",
         "배치/결재 로그: 의료비 확정본",
-        "메일 제목: [HRIS] 의료비 확정본 완료"
+        "메일 제목: [알림] 의료비 확정본 처리 안내"
       ],
       "automation_potential": "Mid",
       "legacy_l6_match": [
@@ -1553,7 +1553,7 @@
       "digital_trace": [
         "HRIS-PAY/TNA 로그: 의료비 운영 이력대장",
         "배치/결재 로그: 의료비 운영 이력대장",
-        "메일 제목: [HRIS] 의료비 운영 이력대장 완료"
+        "메일 제목: [알림] 의료비 운영 이력대장 처리 안내"
       ],
       "automation_potential": "High",
       "legacy_l6_match": [
@@ -1572,7 +1572,7 @@
       "digital_trace": [
         "HRIS-PAY/TNA 로그: 학자금 실행안",
         "배치/결재 로그: 학자금 실행안",
-        "메일 제목: [HRIS] 학자금 실행안 완료"
+        "메일 제목: [알림] 학자금 실행안 처리 안내"
       ],
       "automation_potential": "Mid",
       "legacy_l6_match": [
@@ -1591,7 +1591,7 @@
       "digital_trace": [
         "HRIS-PAY/TNA 로그: 학자금 확정본",
         "배치/결재 로그: 학자금 확정본",
-        "메일 제목: [HRIS] 학자금 확정본 완료"
+        "메일 제목: [알림] 학자금 확정본 처리 안내"
       ],
       "automation_potential": "Mid",
       "legacy_l6_match": [
@@ -1610,7 +1610,7 @@
       "digital_trace": [
         "HRIS-PAY/TNA 로그: 학자금 운영 이력대장",
         "배치/결재 로그: 학자금 운영 이력대장",
-        "메일 제목: [HRIS] 학자금 운영 이력대장 완료"
+        "메일 제목: [알림] 학자금 운영 이력대장 처리 안내"
       ],
       "automation_potential": "High",
       "legacy_l6_match": [
@@ -1629,7 +1629,7 @@
       "digital_trace": [
         "HRIS-PAY/TNA 로그: 워터파크 실행안",
         "배치/결재 로그: 워터파크 실행안",
-        "메일 제목: [HRIS] 워터파크 실행안 완료"
+        "메일 제목: [알림] 워터파크 실행안 처리 안내"
       ],
       "automation_potential": "Mid",
       "legacy_l6_match": [
@@ -1648,7 +1648,7 @@
       "digital_trace": [
         "HRIS-PAY/TNA 로그: 워터파크 확정본",
         "배치/결재 로그: 워터파크 확정본",
-        "메일 제목: [HRIS] 워터파크 확정본 완료"
+        "메일 제목: [알림] 워터파크 확정본 처리 안내"
       ],
       "automation_potential": "Mid",
       "legacy_l6_match": [
@@ -1667,7 +1667,7 @@
       "digital_trace": [
         "HRIS-PAY/TNA 로그: 워터파크 운영 이력대장",
         "배치/결재 로그: 워터파크 운영 이력대장",
-        "메일 제목: [HRIS] 워터파크 운영 이력대장 완료"
+        "메일 제목: [알림] 워터파크 운영 이력대장 처리 안내"
       ],
       "automation_potential": "High",
       "legacy_l6_match": [
@@ -1686,7 +1686,7 @@
       "digital_trace": [
         "HRIS-PAY/TNA 로그: 휴양소 실행안",
         "배치/결재 로그: 휴양소 실행안",
-        "메일 제목: [HRIS] 휴양소 실행안 완료"
+        "메일 제목: [알림] 휴양소 실행안 처리 안내"
       ],
       "automation_potential": "Mid",
       "legacy_l6_match": [
@@ -1705,7 +1705,7 @@
       "digital_trace": [
         "HRIS-PAY/TNA 로그: 휴양소 확정본",
         "배치/결재 로그: 휴양소 확정본",
-        "메일 제목: [HRIS] 휴양소 확정본 완료"
+        "메일 제목: [알림] 휴양소 확정본 처리 안내"
       ],
       "automation_potential": "Mid",
       "legacy_l6_match": [
@@ -1724,7 +1724,7 @@
       "digital_trace": [
         "HRIS-PAY/TNA 로그: 휴양소 운영 이력대장",
         "배치/결재 로그: 휴양소 운영 이력대장",
-        "메일 제목: [HRIS] 휴양소 운영 이력대장 완료"
+        "메일 제목: [알림] 휴양소 운영 이력대장 처리 안내"
       ],
       "automation_potential": "High",
       "legacy_l6_match": [
@@ -1743,7 +1743,7 @@
       "digital_trace": [
         "HRIS-PAY/TNA 로그: 대부금 실행안",
         "배치/결재 로그: 대부금 실행안",
-        "메일 제목: [HRIS] 대부금 실행안 완료"
+        "메일 제목: [알림] 대부금 실행안 처리 안내"
       ],
       "automation_potential": "Mid",
       "legacy_l6_match": [
@@ -1762,7 +1762,7 @@
       "digital_trace": [
         "HRIS-PAY/TNA 로그: 대부금 확정본",
         "배치/결재 로그: 대부금 확정본",
-        "메일 제목: [HRIS] 대부금 확정본 완료"
+        "메일 제목: [알림] 대부금 확정본 처리 안내"
       ],
       "automation_potential": "Mid",
       "legacy_l6_match": [
@@ -1781,7 +1781,7 @@
       "digital_trace": [
         "HRIS-PAY/TNA 로그: 대부금 운영 이력대장",
         "배치/결재 로그: 대부금 운영 이력대장",
-        "메일 제목: [HRIS] 대부금 운영 이력대장 완료"
+        "메일 제목: [알림] 대부금 운영 이력대장 처리 안내"
       ],
       "automation_potential": "High",
       "legacy_l6_match": [
@@ -1800,7 +1800,7 @@
       "digital_trace": [
         "HRIS-PAY/TNA 로그: 임원검진 실행안",
         "배치/결재 로그: 임원검진 실행안",
-        "메일 제목: [HRIS] 임원검진 실행안 완료"
+        "메일 제목: [알림] 임원검진 실행안 처리 안내"
       ],
       "automation_potential": "Mid",
       "legacy_l6_match": [
@@ -1819,7 +1819,7 @@
       "digital_trace": [
         "HRIS-PAY/TNA 로그: 임원검진 확정본",
         "배치/결재 로그: 임원검진 확정본",
-        "메일 제목: [HRIS] 임원검진 확정본 완료"
+        "메일 제목: [알림] 임원검진 확정본 처리 안내"
       ],
       "automation_potential": "Mid",
       "legacy_l6_match": [
@@ -1838,7 +1838,7 @@
       "digital_trace": [
         "HRIS-PAY/TNA 로그: 임원검진 운영 이력대장",
         "배치/결재 로그: 임원검진 운영 이력대장",
-        "메일 제목: [HRIS] 임원검진 운영 이력대장 완료"
+        "메일 제목: [알림] 임원검진 운영 이력대장 처리 안내"
       ],
       "automation_potential": "High",
       "legacy_l6_match": [
@@ -1857,7 +1857,7 @@
       "digital_trace": [
         "HRIS-PAY/TNA 로그: 근무형태 생성 실행안",
         "배치/결재 로그: 근무형태 생성 실행안",
-        "메일 제목: [HRIS] 근무형태 생성 실행안 완료"
+        "메일 제목: [알림] 근무형태 생성 실행안 처리 안내"
       ],
       "automation_potential": "Mid",
       "legacy_l6_match": [
@@ -1876,7 +1876,7 @@
       "digital_trace": [
         "HRIS-PAY/TNA 로그: 근무형태 생성 확정본",
         "배치/결재 로그: 근무형태 생성 확정본",
-        "메일 제목: [HRIS] 근무형태 생성 확정본 완료"
+        "메일 제목: [알림] 근무형태 생성 확정본 처리 안내"
       ],
       "automation_potential": "Mid",
       "legacy_l6_match": [
@@ -1895,7 +1895,7 @@
       "digital_trace": [
         "HRIS-PAY/TNA 로그: 근무형태 생성 운영 이력대장",
         "배치/결재 로그: 근무형태 생성 운영 이력대장",
-        "메일 제목: [HRIS] 근무형태 생성 운영 이력대장 완료"
+        "메일 제목: [알림] 근무형태 생성 운영 이력대장 처리 안내"
       ],
       "automation_potential": "High",
       "legacy_l6_match": [
@@ -1914,7 +1914,7 @@
       "digital_trace": [
         "HRIS-PAY/TNA 로그: 근무무효확정 실행안",
         "배치/결재 로그: 근무무효확정 실행안",
-        "메일 제목: [HRIS] 근무무효확정 실행안 완료"
+        "메일 제목: [알림] 근무무효확정 실행안 처리 안내"
       ],
       "automation_potential": "Mid",
       "legacy_l6_match": [
@@ -1933,7 +1933,7 @@
       "digital_trace": [
         "HRIS-PAY/TNA 로그: 근무무효확정 확정본",
         "배치/결재 로그: 근무무효확정 확정본",
-        "메일 제목: [HRIS] 근무무효확정 확정본 완료"
+        "메일 제목: [알림] 근무무효확정 확정본 처리 안내"
       ],
       "automation_potential": "Mid",
       "legacy_l6_match": [
@@ -1952,7 +1952,7 @@
       "digital_trace": [
         "HRIS-PAY/TNA 로그: 근무무효확정 운영 이력대장",
         "배치/결재 로그: 근무무효확정 운영 이력대장",
-        "메일 제목: [HRIS] 근무무효확정 운영 이력대장 완료"
+        "메일 제목: [알림] 근무무효확정 운영 이력대장 처리 안내"
       ],
       "automation_potential": "High",
       "legacy_l6_match": [
@@ -1971,7 +1971,7 @@
       "digital_trace": [
         "HRIS-PAY/TNA 로그: Office근무시간사후관리 실행안",
         "배치/결재 로그: Office근무시간사후관리 실행안",
-        "메일 제목: [HRIS] Office근무시간사후관리 실행안 완료"
+        "메일 제목: [알림] Office근무시간사후관리 실행안 처리 안내"
       ],
       "automation_potential": "Mid",
       "legacy_l6_match": [
@@ -1990,7 +1990,7 @@
       "digital_trace": [
         "HRIS-PAY/TNA 로그: Office근무시간사후관리 확정본",
         "배치/결재 로그: Office근무시간사후관리 확정본",
-        "메일 제목: [HRIS] Office근무시간사후관리 확정본 완료"
+        "메일 제목: [알림] Office근무시간사후관리 확정본 처리 안내"
       ],
       "automation_potential": "Mid",
       "legacy_l6_match": [
@@ -2009,7 +2009,7 @@
       "digital_trace": [
         "HRIS-PAY/TNA 로그: Office근무시간사후관리 운영 이력대장",
         "배치/결재 로그: Office근무시간사후관리 운영 이력대장",
-        "메일 제목: [HRIS] Office근무시간사후관리 운영 이력대장 완료"
+        "메일 제목: [알림] Office근무시간사후관리 운영 이력대장 처리 안내"
       ],
       "automation_potential": "High",
       "legacy_l6_match": [
@@ -2028,7 +2028,7 @@
       "digital_trace": [
         "HRIS-PAY/TNA 로그: 초과근무시간관리 실행안",
         "배치/결재 로그: 초과근무시간관리 실행안",
-        "메일 제목: [HRIS] 초과근무시간관리 실행안 완료"
+        "메일 제목: [알림] 초과근무시간관리 실행안 처리 안내"
       ],
       "automation_potential": "Mid",
       "legacy_l6_match": [
@@ -2047,7 +2047,7 @@
       "digital_trace": [
         "HRIS-PAY/TNA 로그: 초과근무시간관리 확정본",
         "배치/결재 로그: 초과근무시간관리 확정본",
-        "메일 제목: [HRIS] 초과근무시간관리 확정본 완료"
+        "메일 제목: [알림] 초과근무시간관리 확정본 처리 안내"
       ],
       "automation_potential": "Mid",
       "legacy_l6_match": [
@@ -2066,7 +2066,7 @@
       "digital_trace": [
         "HRIS-PAY/TNA 로그: 초과근무시간관리 운영 이력대장",
         "배치/결재 로그: 초과근무시간관리 운영 이력대장",
-        "메일 제목: [HRIS] 초과근무시간관리 운영 이력대장 완료"
+        "메일 제목: [알림] 초과근무시간관리 운영 이력대장 처리 안내"
       ],
       "automation_potential": "High",
       "legacy_l6_match": [
@@ -2085,7 +2085,7 @@
       "digital_trace": [
         "HRIS-PAY/TNA 로그: 일반근태 실행안",
         "배치/결재 로그: 일반근태 실행안",
-        "메일 제목: [HRIS] 일반근태 실행안 완료"
+        "메일 제목: [알림] 일반근태 실행안 처리 안내"
       ],
       "automation_potential": "Mid",
       "legacy_l6_match": [
@@ -2104,7 +2104,7 @@
       "digital_trace": [
         "HRIS-PAY/TNA 로그: 일반근태 확정본",
         "배치/결재 로그: 일반근태 확정본",
-        "메일 제목: [HRIS] 일반근태 확정본 완료"
+        "메일 제목: [알림] 일반근태 확정본 처리 안내"
       ],
       "automation_potential": "Mid",
       "legacy_l6_match": [
@@ -2123,7 +2123,7 @@
       "digital_trace": [
         "HRIS-PAY/TNA 로그: 일반근태 운영 이력대장",
         "배치/결재 로그: 일반근태 운영 이력대장",
-        "메일 제목: [HRIS] 일반근태 운영 이력대장 완료"
+        "메일 제목: [알림] 일반근태 운영 이력대장 처리 안내"
       ],
       "automation_potential": "High",
       "legacy_l6_match": [
@@ -2142,7 +2142,7 @@
       "digital_trace": [
         "HRIS-PAY/TNA 로그: 임직원휴가생성 실행안",
         "배치/결재 로그: 임직원휴가생성 실행안",
-        "메일 제목: [HRIS] 임직원휴가생성 실행안 완료"
+        "메일 제목: [알림] 임직원휴가생성 실행안 처리 안내"
       ],
       "automation_potential": "Mid",
       "legacy_l6_match": [
@@ -2161,7 +2161,7 @@
       "digital_trace": [
         "HRIS-PAY/TNA 로그: 임직원휴가생성 확정본",
         "배치/결재 로그: 임직원휴가생성 확정본",
-        "메일 제목: [HRIS] 임직원휴가생성 확정본 완료"
+        "메일 제목: [알림] 임직원휴가생성 확정본 처리 안내"
       ],
       "automation_potential": "Mid",
       "legacy_l6_match": [
@@ -2180,7 +2180,7 @@
       "digital_trace": [
         "HRIS-PAY/TNA 로그: 임직원휴가생성 운영 이력대장",
         "배치/결재 로그: 임직원휴가생성 운영 이력대장",
-        "메일 제목: [HRIS] 임직원휴가생성 운영 이력대장 완료"
+        "메일 제목: [알림] 임직원휴가생성 운영 이력대장 처리 안내"
       ],
       "automation_potential": "High",
       "legacy_l6_match": [
@@ -2199,7 +2199,7 @@
       "digital_trace": [
         "ER/노사 케이스 로그: Change Agent 실행안",
         "보안 문서함 이력: Change Agent 실행안",
-        "메일 제목: [ER-LR] Change Agent 실행안 안내"
+        "메일 제목: [알림] Change Agent 실행안 처리 안내"
       ],
       "automation_potential": "Mid",
       "legacy_l6_match": [
@@ -2218,7 +2218,7 @@
       "digital_trace": [
         "ER/노사 케이스 로그: Change Agent 확정본",
         "보안 문서함 이력: Change Agent 확정본",
-        "메일 제목: [ER-LR] Change Agent 확정본 안내"
+        "메일 제목: [알림] Change Agent 확정본 처리 안내"
       ],
       "automation_potential": "Mid",
       "legacy_l6_match": [
@@ -2237,7 +2237,7 @@
       "digital_trace": [
         "ER/노사 케이스 로그: Change Agent 운영 이력대장",
         "보안 문서함 이력: Change Agent 운영 이력대장",
-        "메일 제목: [ER-LR] Change Agent 운영 이력대장 안내"
+        "메일 제목: [알림] Change Agent 운영 이력대장 처리 안내"
       ],
       "automation_potential": "High",
       "legacy_l6_match": [
@@ -2256,7 +2256,7 @@
       "digital_trace": [
         "ER/노사 케이스 로그: SCI 진단 실행안",
         "보안 문서함 이력: SCI 진단 실행안",
-        "메일 제목: [ER-LR] SCI 진단 실행안 안내"
+        "메일 제목: [알림] SCI 진단 실행안 처리 안내"
       ],
       "automation_potential": "Mid",
       "legacy_l6_match": [
@@ -2275,7 +2275,7 @@
       "digital_trace": [
         "ER/노사 케이스 로그: SCI 진단 확정본",
         "보안 문서함 이력: SCI 진단 확정본",
-        "메일 제목: [ER-LR] SCI 진단 확정본 안내"
+        "메일 제목: [알림] SCI 진단 확정본 처리 안내"
       ],
       "automation_potential": "Mid",
       "legacy_l6_match": [
@@ -2294,7 +2294,7 @@
       "digital_trace": [
         "ER/노사 케이스 로그: SCI 진단 운영 이력대장",
         "보안 문서함 이력: SCI 진단 운영 이력대장",
-        "메일 제목: [ER-LR] SCI 진단 운영 이력대장 안내"
+        "메일 제목: [알림] SCI 진단 운영 이력대장 처리 안내"
       ],
       "automation_potential": "High",
       "legacy_l6_match": [
@@ -2313,7 +2313,7 @@
       "digital_trace": [
         "ER/노사 케이스 로그: Culture Week 실행안",
         "보안 문서함 이력: Culture Week 실행안",
-        "메일 제목: [ER-LR] Culture Week 실행안 안내"
+        "메일 제목: [알림] Culture Week 실행안 처리 안내"
       ],
       "automation_potential": "Mid",
       "legacy_l6_match": [
@@ -2332,7 +2332,7 @@
       "digital_trace": [
         "ER/노사 케이스 로그: Culture Week 확정본",
         "보안 문서함 이력: Culture Week 확정본",
-        "메일 제목: [ER-LR] Culture Week 확정본 안내"
+        "메일 제목: [알림] Culture Week 확정본 처리 안내"
       ],
       "automation_potential": "Mid",
       "legacy_l6_match": [
@@ -2351,7 +2351,7 @@
       "digital_trace": [
         "ER/노사 케이스 로그: Culture Week 운영 이력대장",
         "보안 문서함 이력: Culture Week 운영 이력대장",
-        "메일 제목: [ER-LR] Culture Week 운영 이력대장 안내"
+        "메일 제목: [알림] Culture Week 운영 이력대장 처리 안내"
       ],
       "automation_potential": "High",
       "legacy_l6_match": [
@@ -2370,7 +2370,7 @@
       "digital_trace": [
         "ER/노사 케이스 로그: 타운홀미팅 실행안",
         "보안 문서함 이력: 타운홀미팅 실행안",
-        "메일 제목: [ER-LR] 타운홀미팅 실행안 안내"
+        "메일 제목: [알림] 타운홀미팅 실행안 처리 안내"
       ],
       "automation_potential": "Mid",
       "legacy_l6_match": [
@@ -2389,7 +2389,7 @@
       "digital_trace": [
         "ER/노사 케이스 로그: 타운홀미팅 확정본",
         "보안 문서함 이력: 타운홀미팅 확정본",
-        "메일 제목: [ER-LR] 타운홀미팅 확정본 안내"
+        "메일 제목: [알림] 타운홀미팅 확정본 처리 안내"
       ],
       "automation_potential": "Mid",
       "legacy_l6_match": [
@@ -2408,7 +2408,7 @@
       "digital_trace": [
         "ER/노사 케이스 로그: 타운홀미팅 운영 이력대장",
         "보안 문서함 이력: 타운홀미팅 운영 이력대장",
-        "메일 제목: [ER-LR] 타운홀미팅 운영 이력대장 안내"
+        "메일 제목: [알림] 타운홀미팅 운영 이력대장 처리 안내"
       ],
       "automation_potential": "High",
       "legacy_l6_match": [
@@ -2427,7 +2427,7 @@
       "digital_trace": [
         "ER/노사 케이스 로그: My Pulse 서베이 실행안",
         "보안 문서함 이력: My Pulse 서베이 실행안",
-        "메일 제목: [ER-LR] My Pulse 서베이 실행안 안내"
+        "메일 제목: [알림] My Pulse 서베이 실행안 처리 안내"
       ],
       "automation_potential": "Mid",
       "legacy_l6_match": [
@@ -2446,7 +2446,7 @@
       "digital_trace": [
         "ER/노사 케이스 로그: My Pulse 서베이 확정본",
         "보안 문서함 이력: My Pulse 서베이 확정본",
-        "메일 제목: [ER-LR] My Pulse 서베이 확정본 안내"
+        "메일 제목: [알림] My Pulse 서베이 확정본 처리 안내"
       ],
       "automation_potential": "Mid",
       "legacy_l6_match": [
@@ -2465,7 +2465,7 @@
       "digital_trace": [
         "ER/노사 케이스 로그: My Pulse 서베이 운영 이력대장",
         "보안 문서함 이력: My Pulse 서베이 운영 이력대장",
-        "메일 제목: [ER-LR] My Pulse 서베이 운영 이력대장 안내"
+        "메일 제목: [알림] My Pulse 서베이 운영 이력대장 처리 안내"
       ],
       "automation_potential": "High",
       "legacy_l6_match": [
@@ -2484,7 +2484,7 @@
       "digital_trace": [
         "ER/노사 케이스 로그: 협의위원 실행안",
         "보안 문서함 이력: 협의위원 실행안",
-        "메일 제목: [ER-LR] 협의위원 실행안 안내"
+        "메일 제목: [알림] 협의위원 실행안 처리 안내"
       ],
       "automation_potential": "Mid",
       "legacy_l6_match": [
@@ -2503,7 +2503,7 @@
       "digital_trace": [
         "ER/노사 케이스 로그: 협의위원 확정본",
         "보안 문서함 이력: 협의위원 확정본",
-        "메일 제목: [ER-LR] 협의위원 확정본 안내"
+        "메일 제목: [알림] 협의위원 확정본 처리 안내"
       ],
       "automation_potential": "Mid",
       "legacy_l6_match": [
@@ -2522,7 +2522,7 @@
       "digital_trace": [
         "ER/노사 케이스 로그: 협의위원 운영 이력대장",
         "보안 문서함 이력: 협의위원 운영 이력대장",
-        "메일 제목: [ER-LR] 협의위원 운영 이력대장 안내"
+        "메일 제목: [알림] 협의위원 운영 이력대장 처리 안내"
       ],
       "automation_potential": "High",
       "legacy_l6_match": [
@@ -2541,7 +2541,7 @@
       "digital_trace": [
         "ER/노사 케이스 로그: 정기협의회 실행안",
         "보안 문서함 이력: 정기협의회 실행안",
-        "메일 제목: [ER-LR] 정기협의회 실행안 안내"
+        "메일 제목: [알림] 정기협의회 실행안 처리 안내"
       ],
       "automation_potential": "Mid",
       "legacy_l6_match": [
@@ -2560,7 +2560,7 @@
       "digital_trace": [
         "ER/노사 케이스 로그: 정기협의회 확정본",
         "보안 문서함 이력: 정기협의회 확정본",
-        "메일 제목: [ER-LR] 정기협의회 확정본 안내"
+        "메일 제목: [알림] 정기협의회 확정본 처리 안내"
       ],
       "automation_potential": "Mid",
       "legacy_l6_match": [
@@ -2579,7 +2579,7 @@
       "digital_trace": [
         "ER/노사 케이스 로그: 정기협의회 운영 이력대장",
         "보안 문서함 이력: 정기협의회 운영 이력대장",
-        "메일 제목: [ER-LR] 정기협의회 운영 이력대장 안내"
+        "메일 제목: [알림] 정기협의회 운영 이력대장 처리 안내"
       ],
       "automation_potential": "High",
       "legacy_l6_match": [
@@ -2598,7 +2598,7 @@
       "digital_trace": [
         "ER/노사 케이스 로그: 사업장 행사 실행안",
         "보안 문서함 이력: 사업장 행사 실행안",
-        "메일 제목: [ER-LR] 사업장 행사 실행안 안내"
+        "메일 제목: [알림] 사업장 행사 실행안 처리 안내"
       ],
       "automation_potential": "Mid",
       "legacy_l6_match": [
@@ -2617,7 +2617,7 @@
       "digital_trace": [
         "ER/노사 케이스 로그: 사업장 행사 확정본",
         "보안 문서함 이력: 사업장 행사 확정본",
-        "메일 제목: [ER-LR] 사업장 행사 확정본 안내"
+        "메일 제목: [알림] 사업장 행사 확정본 처리 안내"
       ],
       "automation_potential": "Mid",
       "legacy_l6_match": [
@@ -2636,7 +2636,7 @@
       "digital_trace": [
         "ER/노사 케이스 로그: 사업장 행사 운영 이력대장",
         "보안 문서함 이력: 사업장 행사 운영 이력대장",
-        "메일 제목: [ER-LR] 사업장 행사 운영 이력대장 안내"
+        "메일 제목: [알림] 사업장 행사 운영 이력대장 처리 안내"
       ],
       "automation_potential": "High",
       "legacy_l6_match": [
@@ -2655,7 +2655,7 @@
       "digital_trace": [
         "ER/노사 케이스 로그: 조합관리 실행안",
         "보안 문서함 이력: 조합관리 실행안",
-        "메일 제목: [ER-LR] 조합관리 실행안 안내"
+        "메일 제목: [알림] 조합관리 실행안 처리 안내"
       ],
       "automation_potential": "Mid",
       "legacy_l6_match": [
@@ -2674,7 +2674,7 @@
       "digital_trace": [
         "ER/노사 케이스 로그: 조합관리 확정본",
         "보안 문서함 이력: 조합관리 확정본",
-        "메일 제목: [ER-LR] 조합관리 확정본 안내"
+        "메일 제목: [알림] 조합관리 확정본 처리 안내"
       ],
       "automation_potential": "Mid",
       "legacy_l6_match": [
@@ -2693,7 +2693,7 @@
       "digital_trace": [
         "ER/노사 케이스 로그: 조합관리 운영 이력대장",
         "보안 문서함 이력: 조합관리 운영 이력대장",
-        "메일 제목: [ER-LR] 조합관리 운영 이력대장 안내"
+        "메일 제목: [알림] 조합관리 운영 이력대장 처리 안내"
       ],
       "automation_potential": "High",
       "legacy_l6_match": [
@@ -2712,7 +2712,7 @@
       "digital_trace": [
         "ER/노사 케이스 로그: 교섭창구 실행안",
         "보안 문서함 이력: 교섭창구 실행안",
-        "메일 제목: [ER-LR] 교섭창구 실행안 안내"
+        "메일 제목: [알림] 교섭창구 실행안 처리 안내"
       ],
       "automation_potential": "Mid",
       "legacy_l6_match": [
@@ -2731,7 +2731,7 @@
       "digital_trace": [
         "ER/노사 케이스 로그: 교섭창구 확정본",
         "보안 문서함 이력: 교섭창구 확정본",
-        "메일 제목: [ER-LR] 교섭창구 확정본 안내"
+        "메일 제목: [알림] 교섭창구 확정본 처리 안내"
       ],
       "automation_potential": "Mid",
       "legacy_l6_match": [
@@ -2750,7 +2750,7 @@
       "digital_trace": [
         "ER/노사 케이스 로그: 교섭창구 운영 이력대장",
         "보안 문서함 이력: 교섭창구 운영 이력대장",
-        "메일 제목: [ER-LR] 교섭창구 운영 이력대장 안내"
+        "메일 제목: [알림] 교섭창구 운영 이력대장 처리 안내"
       ],
       "automation_potential": "High",
       "legacy_l6_match": [
@@ -2769,7 +2769,7 @@
       "digital_trace": [
         "ER/노사 케이스 로그: 단체교섭 실행안",
         "보안 문서함 이력: 단체교섭 실행안",
-        "메일 제목: [ER-LR] 단체교섭 실행안 안내"
+        "메일 제목: [알림] 단체교섭 실행안 처리 안내"
       ],
       "automation_potential": "Mid",
       "legacy_l6_match": [
@@ -2788,7 +2788,7 @@
       "digital_trace": [
         "ER/노사 케이스 로그: 단체교섭 확정본",
         "보안 문서함 이력: 단체교섭 확정본",
-        "메일 제목: [ER-LR] 단체교섭 확정본 안내"
+        "메일 제목: [알림] 단체교섭 확정본 처리 안내"
       ],
       "automation_potential": "Mid",
       "legacy_l6_match": [
@@ -2807,7 +2807,7 @@
       "digital_trace": [
         "ER/노사 케이스 로그: 단체교섭 운영 이력대장",
         "보안 문서함 이력: 단체교섭 운영 이력대장",
-        "메일 제목: [ER-LR] 단체교섭 운영 이력대장 안내"
+        "메일 제목: [알림] 단체교섭 운영 이력대장 처리 안내"
       ],
       "automation_potential": "High",
       "legacy_l6_match": [
@@ -2826,7 +2826,7 @@
       "digital_trace": [
         "ER/노사 케이스 로그: 분쟁조정 실행안",
         "보안 문서함 이력: 분쟁조정 실행안",
-        "메일 제목: [ER-LR] 분쟁조정 실행안 안내"
+        "메일 제목: [알림] 분쟁조정 실행안 처리 안내"
       ],
       "automation_potential": "Mid",
       "legacy_l6_match": [
@@ -2845,7 +2845,7 @@
       "digital_trace": [
         "ER/노사 케이스 로그: 분쟁조정 확정본",
         "보안 문서함 이력: 분쟁조정 확정본",
-        "메일 제목: [ER-LR] 분쟁조정 확정본 안내"
+        "메일 제목: [알림] 분쟁조정 확정본 처리 안내"
       ],
       "automation_potential": "Mid",
       "legacy_l6_match": [
@@ -2864,7 +2864,7 @@
       "digital_trace": [
         "ER/노사 케이스 로그: 분쟁조정 운영 이력대장",
         "보안 문서함 이력: 분쟁조정 운영 이력대장",
-        "메일 제목: [ER-LR] 분쟁조정 운영 이력대장 안내"
+        "메일 제목: [알림] 분쟁조정 운영 이력대장 처리 안내"
       ],
       "automation_potential": "High",
       "legacy_l6_match": [
@@ -2883,7 +2883,7 @@
       "digital_trace": [
         "ER/노사 케이스 로그: 쟁의행위 실행안",
         "보안 문서함 이력: 쟁의행위 실행안",
-        "메일 제목: [ER-LR] 쟁의행위 실행안 안내"
+        "메일 제목: [알림] 쟁의행위 실행안 처리 안내"
       ],
       "automation_potential": "Mid",
       "legacy_l6_match": [
@@ -2902,7 +2902,7 @@
       "digital_trace": [
         "ER/노사 케이스 로그: 쟁의행위 확정본",
         "보안 문서함 이력: 쟁의행위 확정본",
-        "메일 제목: [ER-LR] 쟁의행위 확정본 안내"
+        "메일 제목: [알림] 쟁의행위 확정본 처리 안내"
       ],
       "automation_potential": "Mid",
       "legacy_l6_match": [
@@ -2921,7 +2921,7 @@
       "digital_trace": [
         "ER/노사 케이스 로그: 쟁의행위 운영 이력대장",
         "보안 문서함 이력: 쟁의행위 운영 이력대장",
-        "메일 제목: [ER-LR] 쟁의행위 운영 이력대장 안내"
+        "메일 제목: [알림] 쟁의행위 운영 이력대장 처리 안내"
       ],
       "automation_potential": "High",
       "legacy_l6_match": [
@@ -2940,7 +2940,7 @@
       "digital_trace": [
         "ER/노사 케이스 로그: 단체협약 실행안",
         "보안 문서함 이력: 단체협약 실행안",
-        "메일 제목: [ER-LR] 단체협약 실행안 안내"
+        "메일 제목: [알림] 단체협약 실행안 처리 안내"
       ],
       "automation_potential": "Mid",
       "legacy_l6_match": [
@@ -2959,7 +2959,7 @@
       "digital_trace": [
         "ER/노사 케이스 로그: 단체협약 확정본",
         "보안 문서함 이력: 단체협약 확정본",
-        "메일 제목: [ER-LR] 단체협약 확정본 안내"
+        "메일 제목: [알림] 단체협약 확정본 처리 안내"
       ],
       "automation_potential": "Mid",
       "legacy_l6_match": [
@@ -2978,7 +2978,7 @@
       "digital_trace": [
         "ER/노사 케이스 로그: 단체협약 운영 이력대장",
         "보안 문서함 이력: 단체협약 운영 이력대장",
-        "메일 제목: [ER-LR] 단체협약 운영 이력대장 안내"
+        "메일 제목: [알림] 단체협약 운영 이력대장 처리 안내"
       ],
       "automation_potential": "High",
       "legacy_l6_match": [
@@ -2997,7 +2997,7 @@
       "digital_trace": [
         "ER/노사 케이스 로그: 직장내괴롭힘 실행안",
         "보안 문서함 이력: 직장내괴롭힘 실행안",
-        "메일 제목: [ER-LR] 직장내괴롭힘 실행안 안내"
+        "메일 제목: [알림] 직장내괴롭힘 실행안 처리 안내"
       ],
       "automation_potential": "Mid",
       "legacy_l6_match": [
@@ -3016,7 +3016,7 @@
       "digital_trace": [
         "ER/노사 케이스 로그: 직장내괴롭힘 확정본",
         "보안 문서함 이력: 직장내괴롭힘 확정본",
-        "메일 제목: [ER-LR] 직장내괴롭힘 확정본 안내"
+        "메일 제목: [알림] 직장내괴롭힘 확정본 처리 안내"
       ],
       "automation_potential": "Mid",
       "legacy_l6_match": [
@@ -3035,7 +3035,7 @@
       "digital_trace": [
         "ER/노사 케이스 로그: 직장내괴롭힘 운영 이력대장",
         "보안 문서함 이력: 직장내괴롭힘 운영 이력대장",
-        "메일 제목: [ER-LR] 직장내괴롭힘 운영 이력대장 안내"
+        "메일 제목: [알림] 직장내괴롭힘 운영 이력대장 처리 안내"
       ],
       "automation_potential": "High",
       "legacy_l6_match": [
@@ -3054,7 +3054,7 @@
       "digital_trace": [
         "ER/노사 케이스 로그: 희망퇴직 실행안",
         "보안 문서함 이력: 희망퇴직 실행안",
-        "메일 제목: [ER-LR] 희망퇴직 실행안 안내"
+        "메일 제목: [알림] 희망퇴직 실행안 처리 안내"
       ],
       "automation_potential": "Mid",
       "legacy_l6_match": [
@@ -3073,7 +3073,7 @@
       "digital_trace": [
         "ER/노사 케이스 로그: 희망퇴직 확정본",
         "보안 문서함 이력: 희망퇴직 확정본",
-        "메일 제목: [ER-LR] 희망퇴직 확정본 안내"
+        "메일 제목: [알림] 희망퇴직 확정본 처리 안내"
       ],
       "automation_potential": "Mid",
       "legacy_l6_match": [
@@ -3092,7 +3092,7 @@
       "digital_trace": [
         "ER/노사 케이스 로그: 희망퇴직 운영 이력대장",
         "보안 문서함 이력: 희망퇴직 운영 이력대장",
-        "메일 제목: [ER-LR] 희망퇴직 운영 이력대장 안내"
+        "메일 제목: [알림] 희망퇴직 운영 이력대장 처리 안내"
       ],
       "automation_potential": "High",
       "legacy_l6_match": [
@@ -3111,7 +3111,7 @@
       "digital_trace": [
         "ER/노사 케이스 로그: 동행파악 실행안",
         "보안 문서함 이력: 동행파악 실행안",
-        "메일 제목: [ER-LR] 동행파악 실행안 안내"
+        "메일 제목: [알림] 동행파악 실행안 처리 안내"
       ],
       "automation_potential": "Mid",
       "legacy_l6_match": [
@@ -3130,7 +3130,7 @@
       "digital_trace": [
         "ER/노사 케이스 로그: 동행파악 확정본",
         "보안 문서함 이력: 동행파악 확정본",
-        "메일 제목: [ER-LR] 동행파악 확정본 안내"
+        "메일 제목: [알림] 동행파악 확정본 처리 안내"
       ],
       "automation_potential": "Mid",
       "legacy_l6_match": [
@@ -3149,7 +3149,7 @@
       "digital_trace": [
         "ER/노사 케이스 로그: 동행파악 운영 이력대장",
         "보안 문서함 이력: 동행파악 운영 이력대장",
-        "메일 제목: [ER-LR] 동행파악 운영 이력대장 안내"
+        "메일 제목: [알림] 동행파악 운영 이력대장 처리 안내"
       ],
       "automation_potential": "High",
       "legacy_l6_match": [
@@ -3168,7 +3168,7 @@
       "digital_trace": [
         "ER/노사 케이스 로그: 마음건강 실행안",
         "보안 문서함 이력: 마음건강 실행안",
-        "메일 제목: [ER-LR] 마음건강 실행안 안내"
+        "메일 제목: [알림] 마음건강 실행안 처리 안내"
       ],
       "automation_potential": "Mid",
       "legacy_l6_match": [
@@ -3187,7 +3187,7 @@
       "digital_trace": [
         "ER/노사 케이스 로그: 마음건강 확정본",
         "보안 문서함 이력: 마음건강 확정본",
-        "메일 제목: [ER-LR] 마음건강 확정본 안내"
+        "메일 제목: [알림] 마음건강 확정본 처리 안내"
       ],
       "automation_potential": "Mid",
       "legacy_l6_match": [
@@ -3206,7 +3206,7 @@
       "digital_trace": [
         "ER/노사 케이스 로그: 마음건강 운영 이력대장",
         "보안 문서함 이력: 마음건강 운영 이력대장",
-        "메일 제목: [ER-LR] 마음건강 운영 이력대장 안내"
+        "메일 제목: [알림] 마음건강 운영 이력대장 처리 안내"
       ],
       "automation_potential": "High",
       "legacy_l6_match": [
@@ -3225,7 +3225,7 @@
       "digital_trace": [
         "ER/노사 케이스 로그: 상생공존문화 실행안",
         "보안 문서함 이력: 상생공존문화 실행안",
-        "메일 제목: [ER-LR] 상생공존문화 실행안 안내"
+        "메일 제목: [알림] 상생공존문화 실행안 처리 안내"
       ],
       "automation_potential": "Mid",
       "legacy_l6_match": [
@@ -3244,7 +3244,7 @@
       "digital_trace": [
         "ER/노사 케이스 로그: 상생공존문화 확정본",
         "보안 문서함 이력: 상생공존문화 확정본",
-        "메일 제목: [ER-LR] 상생공존문화 확정본 안내"
+        "메일 제목: [알림] 상생공존문화 확정본 처리 안내"
       ],
       "automation_potential": "Mid",
       "legacy_l6_match": [
@@ -3263,7 +3263,7 @@
       "digital_trace": [
         "ER/노사 케이스 로그: 상생공존문화 운영 이력대장",
         "보안 문서함 이력: 상생공존문화 운영 이력대장",
-        "메일 제목: [ER-LR] 상생공존문화 운영 이력대장 안내"
+        "메일 제목: [알림] 상생공존문화 운영 이력대장 처리 안내"
       ],
       "automation_potential": "High",
       "legacy_l6_match": [
@@ -3282,7 +3282,7 @@
       "digital_trace": [
         "ER/노사 케이스 로그: 생활자 기념쿠키 지급 실행안",
         "보안 문서함 이력: 생활자 기념쿠키 지급 실행안",
-        "메일 제목: [ER-LR] 생활자 기념쿠키 지급 실행안 안내"
+        "메일 제목: [알림] 생활자 기념쿠키 지급 실행안 처리 안내"
       ],
       "automation_potential": "Mid",
       "legacy_l6_match": [
@@ -3301,7 +3301,7 @@
       "digital_trace": [
         "ER/노사 케이스 로그: 생활자 기념쿠키 지급 확정본",
         "보안 문서함 이력: 생활자 기념쿠키 지급 확정본",
-        "메일 제목: [ER-LR] 생활자 기념쿠키 지급 확정본 안내"
+        "메일 제목: [알림] 생활자 기념쿠키 지급 확정본 처리 안내"
       ],
       "automation_potential": "Mid",
       "legacy_l6_match": [
@@ -3320,7 +3320,7 @@
       "digital_trace": [
         "ER/노사 케이스 로그: 생활자 기념쿠키 지급 운영 이력대장",
         "보안 문서함 이력: 생활자 기념쿠키 지급 운영 이력대장",
-        "메일 제목: [ER-LR] 생활자 기념쿠키 지급 운영 이력대장 안내"
+        "메일 제목: [알림] 생활자 기념쿠키 지급 운영 이력대장 처리 안내"
       ],
       "automation_potential": "High",
       "legacy_l6_match": [
@@ -3339,7 +3339,7 @@
       "digital_trace": [
         "ER/노사 케이스 로그: 여가지원 행사 실행안",
         "보안 문서함 이력: 여가지원 행사 실행안",
-        "메일 제목: [ER-LR] 여가지원 행사 실행안 안내"
+        "메일 제목: [알림] 여가지원 행사 실행안 처리 안내"
       ],
       "automation_potential": "Mid",
       "legacy_l6_match": [
@@ -3358,7 +3358,7 @@
       "digital_trace": [
         "ER/노사 케이스 로그: 여가지원 행사 확정본",
         "보안 문서함 이력: 여가지원 행사 확정본",
-        "메일 제목: [ER-LR] 여가지원 행사 확정본 안내"
+        "메일 제목: [알림] 여가지원 행사 확정본 처리 안내"
       ],
       "automation_potential": "Mid",
       "legacy_l6_match": [
@@ -3377,7 +3377,7 @@
       "digital_trace": [
         "ER/노사 케이스 로그: 여가지원 행사 운영 이력대장",
         "보안 문서함 이력: 여가지원 행사 운영 이력대장",
-        "메일 제목: [ER-LR] 여가지원 행사 운영 이력대장 안내"
+        "메일 제목: [알림] 여가지원 행사 운영 이력대장 처리 안내"
       ],
       "automation_potential": "High",
       "legacy_l6_match": [
@@ -3396,7 +3396,7 @@
       "digital_trace": [
         "ER/노사 케이스 로그: 면담질의지 준비 실행안",
         "보안 문서함 이력: 면담질의지 준비 실행안",
-        "메일 제목: [ER-LR] 면담질의지 준비 실행안 안내"
+        "메일 제목: [알림] 면담질의지 준비 실행안 처리 안내"
       ],
       "automation_potential": "Mid",
       "legacy_l6_match": [
@@ -3415,7 +3415,7 @@
       "digital_trace": [
         "ER/노사 케이스 로그: 면담질의지 준비 확정본",
         "보안 문서함 이력: 면담질의지 준비 확정본",
-        "메일 제목: [ER-LR] 면담질의지 준비 확정본 안내"
+        "메일 제목: [알림] 면담질의지 준비 확정본 처리 안내"
       ],
       "automation_potential": "Mid",
       "legacy_l6_match": [
@@ -3434,7 +3434,7 @@
       "digital_trace": [
         "ER/노사 케이스 로그: 면담질의지 준비 운영 이력대장",
         "보안 문서함 이력: 면담질의지 준비 운영 이력대장",
-        "메일 제목: [ER-LR] 면담질의지 준비 운영 이력대장 안내"
+        "메일 제목: [알림] 면담질의지 준비 운영 이력대장 처리 안내"
       ],
       "automation_potential": "High",
       "legacy_l6_match": [
@@ -3453,7 +3453,7 @@
       "digital_trace": [
         "ER/노사 케이스 로그: 면담기록·요약 실행안",
         "보안 문서함 이력: 면담기록·요약 실행안",
-        "메일 제목: [ER-LR] 면담기록·요약 실행안 안내"
+        "메일 제목: [알림] 면담기록·요약 실행안 처리 안내"
       ],
       "automation_potential": "Mid",
       "legacy_l6_match": [
@@ -3472,7 +3472,7 @@
       "digital_trace": [
         "ER/노사 케이스 로그: 면담기록·요약 확정본",
         "보안 문서함 이력: 면담기록·요약 확정본",
-        "메일 제목: [ER-LR] 면담기록·요약 확정본 안내"
+        "메일 제목: [알림] 면담기록·요약 확정본 처리 안내"
       ],
       "automation_potential": "Mid",
       "legacy_l6_match": [
@@ -3491,7 +3491,7 @@
       "digital_trace": [
         "ER/노사 케이스 로그: 면담기록·요약 운영 이력대장",
         "보안 문서함 이력: 면담기록·요약 운영 이력대장",
-        "메일 제목: [ER-LR] 면담기록·요약 운영 이력대장 안내"
+        "메일 제목: [알림] 면담기록·요약 운영 이력대장 처리 안내"
       ],
       "automation_potential": "High",
       "legacy_l6_match": [
@@ -3510,7 +3510,7 @@
       "digital_trace": [
         "ER/노사 케이스 로그: 유사사례 및 판례 확인 실행안",
         "보안 문서함 이력: 유사사례 및 판례 확인 실행안",
-        "메일 제목: [ER-LR] 유사사례 및 판례 확인 실행안 안내"
+        "메일 제목: [알림] 유사사례 및 판례 확인 실행안 처리 안내"
       ],
       "automation_potential": "Mid",
       "legacy_l6_match": [
@@ -3529,7 +3529,7 @@
       "digital_trace": [
         "ER/노사 케이스 로그: 유사사례 및 판례 확인 확정본",
         "보안 문서함 이력: 유사사례 및 판례 확인 확정본",
-        "메일 제목: [ER-LR] 유사사례 및 판례 확인 확정본 안내"
+        "메일 제목: [알림] 유사사례 및 판례 확인 확정본 처리 안내"
       ],
       "automation_potential": "Mid",
       "legacy_l6_match": [
@@ -3548,7 +3548,7 @@
       "digital_trace": [
         "ER/노사 케이스 로그: 유사사례 및 판례 확인 운영 이력대장",
         "보안 문서함 이력: 유사사례 및 판례 확인 운영 이력대장",
-        "메일 제목: [ER-LR] 유사사례 및 판례 확인 운영 이력대장 안내"
+        "메일 제목: [알림] 유사사례 및 판례 확인 운영 이력대장 처리 안내"
       ],
       "automation_potential": "High",
       "legacy_l6_match": [
@@ -3567,7 +3567,7 @@
       "digital_trace": [
         "ER/노사 케이스 로그: 징계항목 제안 실행안",
         "보안 문서함 이력: 징계항목 제안 실행안",
-        "메일 제목: [ER-LR] 징계항목 제안 실행안 안내"
+        "메일 제목: [알림] 징계항목 제안 실행안 처리 안내"
       ],
       "automation_potential": "Mid",
       "legacy_l6_match": [
@@ -3586,7 +3586,7 @@
       "digital_trace": [
         "ER/노사 케이스 로그: 징계항목 제안 확정본",
         "보안 문서함 이력: 징계항목 제안 확정본",
-        "메일 제목: [ER-LR] 징계항목 제안 확정본 안내"
+        "메일 제목: [알림] 징계항목 제안 확정본 처리 안내"
       ],
       "automation_potential": "Mid",
       "legacy_l6_match": [
@@ -3605,7 +3605,7 @@
       "digital_trace": [
         "ER/노사 케이스 로그: 징계항목 제안 운영 이력대장",
         "보안 문서함 이력: 징계항목 제안 운영 이력대장",
-        "메일 제목: [ER-LR] 징계항목 제안 운영 이력대장 안내"
+        "메일 제목: [알림] 징계항목 제안 운영 이력대장 처리 안내"
       ],
       "automation_potential": "High",
       "legacy_l6_match": [
@@ -3624,7 +3624,7 @@
       "digital_trace": [
         "LMS 완료 레코드: 임원 석세션 플랜 실행안",
         "설문/평가 데이터 적재: 임원 석세션 플랜 실행안",
-        "메일 제목: [L&D] 임원 석세션 플랜 실행안 공지"
+        "메일 제목: [알림] 임원 석세션 플랜 실행안 처리 안내"
       ],
       "automation_potential": "Mid",
       "legacy_l6_match": [
@@ -3643,7 +3643,7 @@
       "digital_trace": [
         "LMS 완료 레코드: 임원 석세션 플랜 확정본",
         "설문/평가 데이터 적재: 임원 석세션 플랜 확정본",
-        "메일 제목: [L&D] 임원 석세션 플랜 확정본 공지"
+        "메일 제목: [알림] 임원 석세션 플랜 확정본 처리 안내"
       ],
       "automation_potential": "Mid",
       "legacy_l6_match": [
@@ -3662,7 +3662,7 @@
       "digital_trace": [
         "LMS 완료 레코드: 임원 석세션 플랜 운영 이력대장",
         "설문/평가 데이터 적재: 임원 석세션 플랜 운영 이력대장",
-        "메일 제목: [L&D] 임원 석세션 플랜 운영 이력대장 공지"
+        "메일 제목: [알림] 임원 석세션 플랜 운영 이력대장 처리 안내"
       ],
       "automation_potential": "High",
       "legacy_l6_match": [
@@ -3681,7 +3681,7 @@
       "digital_trace": [
         "LMS 완료 레코드: 임원 피드백 면담 실행안",
         "설문/평가 데이터 적재: 임원 피드백 면담 실행안",
-        "메일 제목: [L&D] 임원 피드백 면담 실행안 공지"
+        "메일 제목: [알림] 임원 피드백 면담 실행안 처리 안내"
       ],
       "automation_potential": "Mid",
       "legacy_l6_match": [
@@ -3700,7 +3700,7 @@
       "digital_trace": [
         "LMS 완료 레코드: 임원 피드백 면담 확정본",
         "설문/평가 데이터 적재: 임원 피드백 면담 확정본",
-        "메일 제목: [L&D] 임원 피드백 면담 확정본 공지"
+        "메일 제목: [알림] 임원 피드백 면담 확정본 처리 안내"
       ],
       "automation_potential": "Mid",
       "legacy_l6_match": [
@@ -3719,7 +3719,7 @@
       "digital_trace": [
         "LMS 완료 레코드: 임원 피드백 면담 운영 이력대장",
         "설문/평가 데이터 적재: 임원 피드백 면담 운영 이력대장",
-        "메일 제목: [L&D] 임원 피드백 면담 운영 이력대장 공지"
+        "메일 제목: [알림] 임원 피드백 면담 운영 이력대장 처리 안내"
       ],
       "automation_potential": "High",
       "legacy_l6_match": [
@@ -3738,7 +3738,7 @@
       "digital_trace": [
         "LMS 완료 레코드: 핵심리더 선발 실행안",
         "설문/평가 데이터 적재: 핵심리더 선발 실행안",
-        "메일 제목: [L&D] 핵심리더 선발 실행안 공지"
+        "메일 제목: [알림] 핵심리더 선발 실행안 처리 안내"
       ],
       "automation_potential": "Mid",
       "legacy_l6_match": [
@@ -3757,7 +3757,7 @@
       "digital_trace": [
         "LMS 완료 레코드: 핵심리더 선발 확정본",
         "설문/평가 데이터 적재: 핵심리더 선발 확정본",
-        "메일 제목: [L&D] 핵심리더 선발 확정본 공지"
+        "메일 제목: [알림] 핵심리더 선발 확정본 처리 안내"
       ],
       "automation_potential": "Mid",
       "legacy_l6_match": [
@@ -3776,7 +3776,7 @@
       "digital_trace": [
         "LMS 완료 레코드: 핵심리더 선발 운영 이력대장",
         "설문/평가 데이터 적재: 핵심리더 선발 운영 이력대장",
-        "메일 제목: [L&D] 핵심리더 선발 운영 이력대장 공지"
+        "메일 제목: [알림] 핵심리더 선발 운영 이력대장 처리 안내"
       ],
       "automation_potential": "High",
       "legacy_l6_match": [
@@ -3795,7 +3795,7 @@
       "digital_trace": [
         "LMS 완료 레코드: 조직도 작성 실행안",
         "설문/평가 데이터 적재: 조직도 작성 실행안",
-        "메일 제목: [L&D] 조직도 작성 실행안 공지"
+        "메일 제목: [알림] 조직도 작성 실행안 처리 안내"
       ],
       "automation_potential": "Mid",
       "legacy_l6_match": [
@@ -3814,7 +3814,7 @@
       "digital_trace": [
         "LMS 완료 레코드: 조직도 작성 확정본",
         "설문/평가 데이터 적재: 조직도 작성 확정본",
-        "메일 제목: [L&D] 조직도 작성 확정본 공지"
+        "메일 제목: [알림] 조직도 작성 확정본 처리 안내"
       ],
       "automation_potential": "Mid",
       "legacy_l6_match": [
@@ -3833,7 +3833,7 @@
       "digital_trace": [
         "LMS 완료 레코드: 조직도 작성 운영 이력대장",
         "설문/평가 데이터 적재: 조직도 작성 운영 이력대장",
-        "메일 제목: [L&D] 조직도 작성 운영 이력대장 공지"
+        "메일 제목: [알림] 조직도 작성 운영 이력대장 처리 안내"
       ],
       "automation_potential": "High",
       "legacy_l6_match": [
@@ -3852,7 +3852,7 @@
       "digital_trace": [
         "LMS 완료 레코드: 임원 계약 및 퇴임 실행안",
         "설문/평가 데이터 적재: 임원 계약 및 퇴임 실행안",
-        "메일 제목: [L&D] 임원 계약 및 퇴임 실행안 공지"
+        "메일 제목: [알림] 임원 계약 및 퇴임 실행안 처리 안내"
       ],
       "automation_potential": "Mid",
       "legacy_l6_match": [
@@ -3871,7 +3871,7 @@
       "digital_trace": [
         "LMS 완료 레코드: 임원 계약 및 퇴임 확정본",
         "설문/평가 데이터 적재: 임원 계약 및 퇴임 확정본",
-        "메일 제목: [L&D] 임원 계약 및 퇴임 확정본 공지"
+        "메일 제목: [알림] 임원 계약 및 퇴임 확정본 처리 안내"
       ],
       "automation_potential": "Mid",
       "legacy_l6_match": [
@@ -3890,7 +3890,7 @@
       "digital_trace": [
         "LMS 완료 레코드: 임원 계약 및 퇴임 운영 이력대장",
         "설문/평가 데이터 적재: 임원 계약 및 퇴임 운영 이력대장",
-        "메일 제목: [L&D] 임원 계약 및 퇴임 운영 이력대장 공지"
+        "메일 제목: [알림] 임원 계약 및 퇴임 운영 이력대장 처리 안내"
       ],
       "automation_potential": "High",
       "legacy_l6_match": [
@@ -3909,7 +3909,7 @@
       "digital_trace": [
         "LMS 완료 레코드: 퇴임임원 후속조치 실행안",
         "설문/평가 데이터 적재: 퇴임임원 후속조치 실행안",
-        "메일 제목: [L&D] 퇴임임원 후속조치 실행안 공지"
+        "메일 제목: [알림] 퇴임임원 후속조치 실행안 처리 안내"
       ],
       "automation_potential": "Mid",
       "legacy_l6_match": [
@@ -3928,7 +3928,7 @@
       "digital_trace": [
         "LMS 완료 레코드: 퇴임임원 후속조치 확정본",
         "설문/평가 데이터 적재: 퇴임임원 후속조치 확정본",
-        "메일 제목: [L&D] 퇴임임원 후속조치 확정본 공지"
+        "메일 제목: [알림] 퇴임임원 후속조치 확정본 처리 안내"
       ],
       "automation_potential": "Mid",
       "legacy_l6_match": [
@@ -3947,7 +3947,7 @@
       "digital_trace": [
         "LMS 완료 레코드: 퇴임임원 후속조치 운영 이력대장",
         "설문/평가 데이터 적재: 퇴임임원 후속조치 운영 이력대장",
-        "메일 제목: [L&D] 퇴임임원 후속조치 운영 이력대장 공지"
+        "메일 제목: [알림] 퇴임임원 후속조치 운영 이력대장 처리 안내"
       ],
       "automation_potential": "High",
       "legacy_l6_match": [
@@ -3966,7 +3966,7 @@
       "digital_trace": [
         "LMS 완료 레코드: 수시 조직개편 실행안",
         "설문/평가 데이터 적재: 수시 조직개편 실행안",
-        "메일 제목: [L&D] 수시 조직개편 실행안 공지"
+        "메일 제목: [알림] 수시 조직개편 실행안 처리 안내"
       ],
       "automation_potential": "Mid",
       "legacy_l6_match": [
@@ -3985,7 +3985,7 @@
       "digital_trace": [
         "LMS 완료 레코드: 수시 조직개편 확정본",
         "설문/평가 데이터 적재: 수시 조직개편 확정본",
-        "메일 제목: [L&D] 수시 조직개편 확정본 공지"
+        "메일 제목: [알림] 수시 조직개편 확정본 처리 안내"
       ],
       "automation_potential": "Mid",
       "legacy_l6_match": [
@@ -4004,7 +4004,7 @@
       "digital_trace": [
         "LMS 완료 레코드: 수시 조직개편 운영 이력대장",
         "설문/평가 데이터 적재: 수시 조직개편 운영 이력대장",
-        "메일 제목: [L&D] 수시 조직개편 운영 이력대장 공지"
+        "메일 제목: [알림] 수시 조직개편 운영 이력대장 처리 안내"
       ],
       "automation_potential": "High",
       "legacy_l6_match": [
@@ -4023,7 +4023,7 @@
       "digital_trace": [
         "LMS 완료 레코드: 정기 조직개편 실행안",
         "설문/평가 데이터 적재: 정기 조직개편 실행안",
-        "메일 제목: [L&D] 정기 조직개편 실행안 공지"
+        "메일 제목: [알림] 정기 조직개편 실행안 처리 안내"
       ],
       "automation_potential": "Mid",
       "legacy_l6_match": [
@@ -4042,7 +4042,7 @@
       "digital_trace": [
         "LMS 완료 레코드: 정기 조직개편 확정본",
         "설문/평가 데이터 적재: 정기 조직개편 확정본",
-        "메일 제목: [L&D] 정기 조직개편 확정본 공지"
+        "메일 제목: [알림] 정기 조직개편 확정본 처리 안내"
       ],
       "automation_potential": "Mid",
       "legacy_l6_match": [
@@ -4061,7 +4061,7 @@
       "digital_trace": [
         "LMS 완료 레코드: 정기 조직개편 운영 이력대장",
         "설문/평가 데이터 적재: 정기 조직개편 운영 이력대장",
-        "메일 제목: [L&D] 정기 조직개편 운영 이력대장 공지"
+        "메일 제목: [알림] 정기 조직개편 운영 이력대장 처리 안내"
       ],
       "automation_potential": "High",
       "legacy_l6_match": [
@@ -4080,7 +4080,7 @@
       "digital_trace": [
         "LMS 완료 레코드: 임원 부부 명상과정 실행안",
         "설문/평가 데이터 적재: 임원 부부 명상과정 실행안",
-        "메일 제목: [L&D] 임원 부부 명상과정 실행안 공지"
+        "메일 제목: [알림] 임원 부부 명상과정 실행안 처리 안내"
       ],
       "automation_potential": "Mid",
       "legacy_l6_match": [
@@ -4099,7 +4099,7 @@
       "digital_trace": [
         "LMS 완료 레코드: 임원 부부 명상과정 확정본",
         "설문/평가 데이터 적재: 임원 부부 명상과정 확정본",
-        "메일 제목: [L&D] 임원 부부 명상과정 확정본 공지"
+        "메일 제목: [알림] 임원 부부 명상과정 확정본 처리 안내"
       ],
       "automation_potential": "Mid",
       "legacy_l6_match": [
@@ -4118,7 +4118,7 @@
       "digital_trace": [
         "LMS 완료 레코드: 임원 부부 명상과정 운영 이력대장",
         "설문/평가 데이터 적재: 임원 부부 명상과정 운영 이력대장",
-        "메일 제목: [L&D] 임원 부부 명상과정 운영 이력대장 공지"
+        "메일 제목: [알림] 임원 부부 명상과정 운영 이력대장 처리 안내"
       ],
       "automation_potential": "High",
       "legacy_l6_match": [
@@ -4137,7 +4137,7 @@
       "digital_trace": [
         "LMS 완료 레코드: SLP·TLP 과정 실행안",
         "설문/평가 데이터 적재: SLP·TLP 과정 실행안",
-        "메일 제목: [L&D] SLP·TLP 과정 실행안 공지"
+        "메일 제목: [알림] SLP·TLP 과정 실행안 처리 안내"
       ],
       "automation_potential": "Mid",
       "legacy_l6_match": [
@@ -4156,7 +4156,7 @@
       "digital_trace": [
         "LMS 완료 레코드: SLP·TLP 과정 확정본",
         "설문/평가 데이터 적재: SLP·TLP 과정 확정본",
-        "메일 제목: [L&D] SLP·TLP 과정 확정본 공지"
+        "메일 제목: [알림] SLP·TLP 과정 확정본 처리 안내"
       ],
       "automation_potential": "Mid",
       "legacy_l6_match": [
@@ -4175,7 +4175,7 @@
       "digital_trace": [
         "LMS 완료 레코드: SLP·TLP 과정 운영 이력대장",
         "설문/평가 데이터 적재: SLP·TLP 과정 운영 이력대장",
-        "메일 제목: [L&D] SLP·TLP 과정 운영 이력대장 공지"
+        "메일 제목: [알림] SLP·TLP 과정 운영 이력대장 처리 안내"
       ],
       "automation_potential": "High",
       "legacy_l6_match": [
@@ -4194,7 +4194,7 @@
       "digital_trace": [
         "LMS 완료 레코드: 그룹장 양성과정 실행안",
         "설문/평가 데이터 적재: 그룹장 양성과정 실행안",
-        "메일 제목: [L&D] 그룹장 양성과정 실행안 공지"
+        "메일 제목: [알림] 그룹장 양성과정 실행안 처리 안내"
       ],
       "automation_potential": "Mid",
       "legacy_l6_match": [
@@ -4213,7 +4213,7 @@
       "digital_trace": [
         "LMS 완료 레코드: 그룹장 양성과정 확정본",
         "설문/평가 데이터 적재: 그룹장 양성과정 확정본",
-        "메일 제목: [L&D] 그룹장 양성과정 확정본 공지"
+        "메일 제목: [알림] 그룹장 양성과정 확정본 처리 안내"
       ],
       "automation_potential": "Mid",
       "legacy_l6_match": [
@@ -4232,7 +4232,7 @@
       "digital_trace": [
         "LMS 완료 레코드: 그룹장 양성과정 운영 이력대장",
         "설문/평가 데이터 적재: 그룹장 양성과정 운영 이력대장",
-        "메일 제목: [L&D] 그룹장 양성과정 운영 이력대장 공지"
+        "메일 제목: [알림] 그룹장 양성과정 운영 이력대장 처리 안내"
       ],
       "automation_potential": "High",
       "legacy_l6_match": [
@@ -4251,7 +4251,7 @@
       "digital_trace": [
         "EAM 자산/시설 로그: 날인 및 증명서 관리 실행안",
         "구매시스템 결재번호 연결: 날인 및 증명서 관리 실행안",
-        "메일 제목: [GA-OPS] 날인 및 증명서 관리 실행안 완료"
+        "메일 제목: [알림] 날인 및 증명서 관리 실행안 처리 안내"
       ],
       "automation_potential": "Mid",
       "legacy_l6_match": [
@@ -4270,7 +4270,7 @@
       "digital_trace": [
         "EAM 자산/시설 로그: 날인 및 증명서 관리 확정본",
         "구매시스템 결재번호 연결: 날인 및 증명서 관리 확정본",
-        "메일 제목: [GA-OPS] 날인 및 증명서 관리 확정본 완료"
+        "메일 제목: [알림] 날인 및 증명서 관리 확정본 처리 안내"
       ],
       "automation_potential": "Mid",
       "legacy_l6_match": [
@@ -4289,7 +4289,7 @@
       "digital_trace": [
         "EAM 자산/시설 로그: 날인 및 증명서 관리 운영 이력대장",
         "구매시스템 결재번호 연결: 날인 및 증명서 관리 운영 이력대장",
-        "메일 제목: [GA-OPS] 날인 및 증명서 관리 운영 이력대장 완료"
+        "메일 제목: [알림] 날인 및 증명서 관리 운영 이력대장 처리 안내"
       ],
       "automation_potential": "High",
       "legacy_l6_match": [
@@ -4308,7 +4308,7 @@
       "digital_trace": [
         "EAM 자산/시설 로그: 사내 화음 운영 실행안",
         "구매시스템 결재번호 연결: 사내 화음 운영 실행안",
-        "메일 제목: [GA-OPS] 사내 화음 운영 실행안 완료"
+        "메일 제목: [알림] 사내 화음 운영 실행안 처리 안내"
       ],
       "automation_potential": "Mid",
       "legacy_l6_match": [
@@ -4327,7 +4327,7 @@
       "digital_trace": [
         "EAM 자산/시설 로그: 사내 화음 운영 확정본",
         "구매시스템 결재번호 연결: 사내 화음 운영 확정본",
-        "메일 제목: [GA-OPS] 사내 화음 운영 확정본 완료"
+        "메일 제목: [알림] 사내 화음 운영 확정본 처리 안내"
       ],
       "automation_potential": "Mid",
       "legacy_l6_match": [
@@ -4346,7 +4346,7 @@
       "digital_trace": [
         "EAM 자산/시설 로그: 사내 화음 운영 운영 이력대장",
         "구매시스템 결재번호 연결: 사내 화음 운영 운영 이력대장",
-        "메일 제목: [GA-OPS] 사내 화음 운영 운영 이력대장 완료"
+        "메일 제목: [알림] 사내 화음 운영 운영 이력대장 처리 안내"
       ],
       "automation_potential": "High",
       "legacy_l6_match": [
@@ -4365,7 +4365,7 @@
       "digital_trace": [
         "EAM 자산/시설 로그: 두발로 운영 실행안",
         "구매시스템 결재번호 연결: 두발로 운영 실행안",
-        "메일 제목: [GA-OPS] 두발로 운영 실행안 완료"
+        "메일 제목: [알림] 두발로 운영 실행안 처리 안내"
       ],
       "automation_potential": "Mid",
       "legacy_l6_match": [
@@ -4384,7 +4384,7 @@
       "digital_trace": [
         "EAM 자산/시설 로그: 두발로 운영 확정본",
         "구매시스템 결재번호 연결: 두발로 운영 확정본",
-        "메일 제목: [GA-OPS] 두발로 운영 확정본 완료"
+        "메일 제목: [알림] 두발로 운영 확정본 처리 안내"
       ],
       "automation_potential": "Mid",
       "legacy_l6_match": [
@@ -4403,7 +4403,7 @@
       "digital_trace": [
         "EAM 자산/시설 로그: 두발로 운영 운영 이력대장",
         "구매시스템 결재번호 연결: 두발로 운영 운영 이력대장",
-        "메일 제목: [GA-OPS] 두발로 운영 운영 이력대장 완료"
+        "메일 제목: [알림] 두발로 운영 운영 이력대장 처리 안내"
       ],
       "automation_potential": "High",
       "legacy_l6_match": [
@@ -4422,7 +4422,7 @@
       "digital_trace": [
         "EAM 자산/시설 로그: 안내센터 운영 실행안",
         "구매시스템 결재번호 연결: 안내센터 운영 실행안",
-        "메일 제목: [GA-OPS] 안내센터 운영 실행안 완료"
+        "메일 제목: [알림] 안내센터 운영 실행안 처리 안내"
       ],
       "automation_potential": "Mid",
       "legacy_l6_match": [
@@ -4441,7 +4441,7 @@
       "digital_trace": [
         "EAM 자산/시설 로그: 안내센터 운영 확정본",
         "구매시스템 결재번호 연결: 안내센터 운영 확정본",
-        "메일 제목: [GA-OPS] 안내센터 운영 확정본 완료"
+        "메일 제목: [알림] 안내센터 운영 확정본 처리 안내"
       ],
       "automation_potential": "Mid",
       "legacy_l6_match": [
@@ -4460,68 +4460,11 @@
       "digital_trace": [
         "EAM 자산/시설 로그: 안내센터 운영 운영 이력대장",
         "구매시스템 결재번호 연결: 안내센터 운영 운영 이력대장",
-        "메일 제목: [GA-OPS] 안내센터 운영 운영 이력대장 완료"
+        "메일 제목: [알림] 안내센터 운영 운영 이력대장 처리 안내"
       ],
       "automation_potential": "High",
       "legacy_l6_match": [
         "안내센터 운영"
-      ],
-      "improvement_note": "행위 중심 서술을 산출물 중심 노드로 전환하여 병목·재작업·리드타임 분석이 가능한 이벤트 단위로 구조화함."
-    },
-    {
-      "l6_id": "V2-L6-0236",
-      "l3": "총무",
-      "l4": "사내 서비스 운영",
-      "l5": "사내 전화 운영",
-      "l6_name": "사내 전화 운영 실행안",
-      "input": "관련 정책/기준, 입력데이터",
-      "output": "사내 전화 운영 실행안",
-      "digital_trace": [
-        "EAM 자산/시설 로그: 사내 전화 운영 실행안",
-        "구매시스템 결재번호 연결: 사내 전화 운영 실행안",
-        "메일 제목: [GA-OPS] 사내 전화 운영 실행안 완료"
-      ],
-      "automation_potential": "Mid",
-      "legacy_l6_match": [
-        "사내 전화 운영"
-      ],
-      "improvement_note": "행위 중심 서술을 산출물 중심 노드로 전환하여 병목·재작업·리드타임 분석이 가능한 이벤트 단위로 구조화함."
-    },
-    {
-      "l6_id": "V2-L6-0237",
-      "l3": "총무",
-      "l4": "사내 서비스 운영",
-      "l5": "사내 전화 운영",
-      "l6_name": "사내 전화 운영 확정본",
-      "input": "사내 전화 운영 실행안, 검토 코멘트",
-      "output": "사내 전화 운영 확정본",
-      "digital_trace": [
-        "EAM 자산/시설 로그: 사내 전화 운영 확정본",
-        "구매시스템 결재번호 연결: 사내 전화 운영 확정본",
-        "메일 제목: [GA-OPS] 사내 전화 운영 확정본 완료"
-      ],
-      "automation_potential": "Mid",
-      "legacy_l6_match": [
-        "사내 전화 운영"
-      ],
-      "improvement_note": "행위 중심 서술을 산출물 중심 노드로 전환하여 병목·재작업·리드타임 분석이 가능한 이벤트 단위로 구조화함."
-    },
-    {
-      "l6_id": "V2-L6-0238",
-      "l3": "총무",
-      "l4": "사내 서비스 운영",
-      "l5": "사내 전화 운영",
-      "l6_name": "사내 전화 운영 운영 이력대장",
-      "input": "사내 전화 운영 확정본, 처리결과",
-      "output": "사내 전화 운영 운영 이력대장",
-      "digital_trace": [
-        "EAM 자산/시설 로그: 사내 전화 운영 운영 이력대장",
-        "구매시스템 결재번호 연결: 사내 전화 운영 운영 이력대장",
-        "메일 제목: [GA-OPS] 사내 전화 운영 운영 이력대장 완료"
-      ],
-      "automation_potential": "High",
-      "legacy_l6_match": [
-        "사내 전화 운영"
       ],
       "improvement_note": "행위 중심 서술을 산출물 중심 노드로 전환하여 병목·재작업·리드타임 분석이 가능한 이벤트 단위로 구조화함."
     },
@@ -4536,7 +4479,7 @@
       "digital_trace": [
         "EAM 자산/시설 로그: 사무실 레이아웃 관리 실행안",
         "구매시스템 결재번호 연결: 사무실 레이아웃 관리 실행안",
-        "메일 제목: [GA-OPS] 사무실 레이아웃 관리 실행안 완료"
+        "메일 제목: [알림] 사무실 레이아웃 관리 실행안 처리 안내"
       ],
       "automation_potential": "Mid",
       "legacy_l6_match": [
@@ -4555,7 +4498,7 @@
       "digital_trace": [
         "EAM 자산/시설 로그: 사무실 레이아웃 관리 확정본",
         "구매시스템 결재번호 연결: 사무실 레이아웃 관리 확정본",
-        "메일 제목: [GA-OPS] 사무실 레이아웃 관리 확정본 완료"
+        "메일 제목: [알림] 사무실 레이아웃 관리 확정본 처리 안내"
       ],
       "automation_potential": "Mid",
       "legacy_l6_match": [
@@ -4574,7 +4517,7 @@
       "digital_trace": [
         "EAM 자산/시설 로그: 사무실 레이아웃 관리 운영 이력대장",
         "구매시스템 결재번호 연결: 사무실 레이아웃 관리 운영 이력대장",
-        "메일 제목: [GA-OPS] 사무실 레이아웃 관리 운영 이력대장 완료"
+        "메일 제목: [알림] 사무실 레이아웃 관리 운영 이력대장 처리 안내"
       ],
       "automation_potential": "High",
       "legacy_l6_match": [
@@ -4593,7 +4536,7 @@
       "digital_trace": [
         "EAM 자산/시설 로그: 피트니스 관리 실행안",
         "구매시스템 결재번호 연결: 피트니스 관리 실행안",
-        "메일 제목: [GA-OPS] 피트니스 관리 실행안 완료"
+        "메일 제목: [알림] 피트니스 관리 실행안 처리 안내"
       ],
       "automation_potential": "Mid",
       "legacy_l6_match": [
@@ -4612,7 +4555,7 @@
       "digital_trace": [
         "EAM 자산/시설 로그: 피트니스 관리 확정본",
         "구매시스템 결재번호 연결: 피트니스 관리 확정본",
-        "메일 제목: [GA-OPS] 피트니스 관리 확정본 완료"
+        "메일 제목: [알림] 피트니스 관리 확정본 처리 안내"
       ],
       "automation_potential": "Mid",
       "legacy_l6_match": [
@@ -4631,7 +4574,7 @@
       "digital_trace": [
         "EAM 자산/시설 로그: 피트니스 관리 운영 이력대장",
         "구매시스템 결재번호 연결: 피트니스 관리 운영 이력대장",
-        "메일 제목: [GA-OPS] 피트니스 관리 운영 이력대장 완료"
+        "메일 제목: [알림] 피트니스 관리 운영 이력대장 처리 안내"
       ],
       "automation_potential": "High",
       "legacy_l6_match": [
@@ -4650,7 +4593,7 @@
       "digital_trace": [
         "EAM 자산/시설 로그: 주차장 관리 실행안",
         "구매시스템 결재번호 연결: 주차장 관리 실행안",
-        "메일 제목: [GA-OPS] 주차장 관리 실행안 완료"
+        "메일 제목: [알림] 주차장 관리 실행안 처리 안내"
       ],
       "automation_potential": "Mid",
       "legacy_l6_match": [
@@ -4669,7 +4612,7 @@
       "digital_trace": [
         "EAM 자산/시설 로그: 주차장 관리 확정본",
         "구매시스템 결재번호 연결: 주차장 관리 확정본",
-        "메일 제목: [GA-OPS] 주차장 관리 확정본 완료"
+        "메일 제목: [알림] 주차장 관리 확정본 처리 안내"
       ],
       "automation_potential": "Mid",
       "legacy_l6_match": [
@@ -4688,7 +4631,7 @@
       "digital_trace": [
         "EAM 자산/시설 로그: 주차장 관리 운영 이력대장",
         "구매시스템 결재번호 연결: 주차장 관리 운영 이력대장",
-        "메일 제목: [GA-OPS] 주차장 관리 운영 이력대장 완료"
+        "메일 제목: [알림] 주차장 관리 운영 이력대장 처리 안내"
       ],
       "automation_potential": "High",
       "legacy_l6_match": [
@@ -4707,7 +4650,7 @@
       "digital_trace": [
         "EAM 자산/시설 로그: 숙박시설 운영 실행안",
         "구매시스템 결재번호 연결: 숙박시설 운영 실행안",
-        "메일 제목: [GA-OPS] 숙박시설 운영 실행안 완료"
+        "메일 제목: [알림] 숙박시설 운영 실행안 처리 안내"
       ],
       "automation_potential": "Mid",
       "legacy_l6_match": [
@@ -4726,7 +4669,7 @@
       "digital_trace": [
         "EAM 자산/시설 로그: 숙박시설 운영 확정본",
         "구매시스템 결재번호 연결: 숙박시설 운영 확정본",
-        "메일 제목: [GA-OPS] 숙박시설 운영 확정본 완료"
+        "메일 제목: [알림] 숙박시설 운영 확정본 처리 안내"
       ],
       "automation_potential": "Mid",
       "legacy_l6_match": [
@@ -4745,7 +4688,7 @@
       "digital_trace": [
         "EAM 자산/시설 로그: 숙박시설 운영 운영 이력대장",
         "구매시스템 결재번호 연결: 숙박시설 운영 운영 이력대장",
-        "메일 제목: [GA-OPS] 숙박시설 운영 운영 이력대장 완료"
+        "메일 제목: [알림] 숙박시설 운영 운영 이력대장 처리 안내"
       ],
       "automation_potential": "High",
       "legacy_l6_match": [
@@ -4764,7 +4707,7 @@
       "digital_trace": [
         "EAM 자산/시설 로그: 회의실 운영 실행안",
         "구매시스템 결재번호 연결: 회의실 운영 실행안",
-        "메일 제목: [GA-OPS] 회의실 운영 실행안 완료"
+        "메일 제목: [알림] 회의실 운영 실행안 처리 안내"
       ],
       "automation_potential": "Mid",
       "legacy_l6_match": [
@@ -4783,7 +4726,7 @@
       "digital_trace": [
         "EAM 자산/시설 로그: 회의실 운영 확정본",
         "구매시스템 결재번호 연결: 회의실 운영 확정본",
-        "메일 제목: [GA-OPS] 회의실 운영 확정본 완료"
+        "메일 제목: [알림] 회의실 운영 확정본 처리 안내"
       ],
       "automation_potential": "Mid",
       "legacy_l6_match": [
@@ -4802,7 +4745,7 @@
       "digital_trace": [
         "EAM 자산/시설 로그: 회의실 운영 운영 이력대장",
         "구매시스템 결재번호 연결: 회의실 운영 운영 이력대장",
-        "메일 제목: [GA-OPS] 회의실 운영 운영 이력대장 완료"
+        "메일 제목: [알림] 회의실 운영 운영 이력대장 처리 안내"
       ],
       "automation_potential": "High",
       "legacy_l6_match": [
@@ -4821,7 +4764,7 @@
       "digital_trace": [
         "EAM 자산/시설 로그: 외부 사무실 운영 실행안",
         "구매시스템 결재번호 연결: 외부 사무실 운영 실행안",
-        "메일 제목: [GA-OPS] 외부 사무실 운영 실행안 완료"
+        "메일 제목: [알림] 외부 사무실 운영 실행안 처리 안내"
       ],
       "automation_potential": "Mid",
       "legacy_l6_match": [
@@ -4840,7 +4783,7 @@
       "digital_trace": [
         "EAM 자산/시설 로그: 외부 사무실 운영 확정본",
         "구매시스템 결재번호 연결: 외부 사무실 운영 확정본",
-        "메일 제목: [GA-OPS] 외부 사무실 운영 확정본 완료"
+        "메일 제목: [알림] 외부 사무실 운영 확정본 처리 안내"
       ],
       "automation_potential": "Mid",
       "legacy_l6_match": [
@@ -4859,7 +4802,7 @@
       "digital_trace": [
         "EAM 자산/시설 로그: 외부 사무실 운영 운영 이력대장",
         "구매시스템 결재번호 연결: 외부 사무실 운영 운영 이력대장",
-        "메일 제목: [GA-OPS] 외부 사무실 운영 운영 이력대장 완료"
+        "메일 제목: [알림] 외부 사무실 운영 운영 이력대장 처리 안내"
       ],
       "automation_potential": "High",
       "legacy_l6_match": [
@@ -4878,7 +4821,7 @@
       "digital_trace": [
         "EAM 자산/시설 로그: 사택 관리 실행안",
         "구매시스템 결재번호 연결: 사택 관리 실행안",
-        "메일 제목: [GA-OPS] 사택 관리 실행안 완료"
+        "메일 제목: [알림] 사택 관리 실행안 처리 안내"
       ],
       "automation_potential": "Mid",
       "legacy_l6_match": [
@@ -4897,7 +4840,7 @@
       "digital_trace": [
         "EAM 자산/시설 로그: 사택 관리 확정본",
         "구매시스템 결재번호 연결: 사택 관리 확정본",
-        "메일 제목: [GA-OPS] 사택 관리 확정본 완료"
+        "메일 제목: [알림] 사택 관리 확정본 처리 안내"
       ],
       "automation_potential": "Mid",
       "legacy_l6_match": [
@@ -4916,7 +4859,7 @@
       "digital_trace": [
         "EAM 자산/시설 로그: 사택 관리 운영 이력대장",
         "구매시스템 결재번호 연결: 사택 관리 운영 이력대장",
-        "메일 제목: [GA-OPS] 사택 관리 운영 이력대장 완료"
+        "메일 제목: [알림] 사택 관리 운영 이력대장 처리 안내"
       ],
       "automation_potential": "High",
       "legacy_l6_match": [
@@ -4935,7 +4878,7 @@
       "digital_trace": [
         "EAM 자산/시설 로그: 비품 구매 승인 신청서",
         "구매시스템 결재번호 연결: 비품 구매 승인 신청서",
-        "메일 제목: [GA-OPS] 비품 구매 승인 신청서 완료"
+        "메일 제목: [알림] 비품 구매 승인 신청서 처리 안내"
       ],
       "automation_potential": "Mid",
       "legacy_l6_match": [
@@ -4954,7 +4897,7 @@
       "digital_trace": [
         "EAM 자산/시설 로그: 비품 입고 검수 보고서",
         "구매시스템 결재번호 연결: 비품 입고 검수 보고서",
-        "메일 제목: [GA-OPS] 비품 입고 검수 보고서 완료"
+        "메일 제목: [알림] 비품 입고 검수 보고서 처리 안내"
       ],
       "automation_potential": "High",
       "legacy_l6_match": [
@@ -4973,7 +4916,7 @@
       "digital_trace": [
         "EAM 자산/시설 로그: 비품 자산 등록대장",
         "구매시스템 결재번호 연결: 비품 자산 등록대장",
-        "메일 제목: [GA-OPS] 비품 자산 등록대장 완료"
+        "메일 제목: [알림] 비품 자산 등록대장 처리 안내"
       ],
       "automation_potential": "High",
       "legacy_l6_match": [
@@ -4992,7 +4935,7 @@
       "digital_trace": [
         "EAM 자산/시설 로그: 임직원 자산관리 실행안",
         "구매시스템 결재번호 연결: 임직원 자산관리 실행안",
-        "메일 제목: [GA-OPS] 임직원 자산관리 실행안 완료"
+        "메일 제목: [알림] 임직원 자산관리 실행안 처리 안내"
       ],
       "automation_potential": "Mid",
       "legacy_l6_match": [
@@ -5011,7 +4954,7 @@
       "digital_trace": [
         "EAM 자산/시설 로그: 임직원 자산관리 확정본",
         "구매시스템 결재번호 연결: 임직원 자산관리 확정본",
-        "메일 제목: [GA-OPS] 임직원 자산관리 확정본 완료"
+        "메일 제목: [알림] 임직원 자산관리 확정본 처리 안내"
       ],
       "automation_potential": "Mid",
       "legacy_l6_match": [
@@ -5030,7 +4973,7 @@
       "digital_trace": [
         "EAM 자산/시설 로그: 임직원 자산관리 운영 이력대장",
         "구매시스템 결재번호 연결: 임직원 자산관리 운영 이력대장",
-        "메일 제목: [GA-OPS] 임직원 자산관리 운영 이력대장 완료"
+        "메일 제목: [알림] 임직원 자산관리 운영 이력대장 처리 안내"
       ],
       "automation_potential": "High",
       "legacy_l6_match": [
@@ -5049,7 +4992,7 @@
       "digital_trace": [
         "EAM 자산/시설 로그: 건물 관리 실행안",
         "구매시스템 결재번호 연결: 건물 관리 실행안",
-        "메일 제목: [GA-OPS] 건물 관리 실행안 완료"
+        "메일 제목: [알림] 건물 관리 실행안 처리 안내"
       ],
       "automation_potential": "Mid",
       "legacy_l6_match": [
@@ -5068,7 +5011,7 @@
       "digital_trace": [
         "EAM 자산/시설 로그: 건물 관리 확정본",
         "구매시스템 결재번호 연결: 건물 관리 확정본",
-        "메일 제목: [GA-OPS] 건물 관리 확정본 완료"
+        "메일 제목: [알림] 건물 관리 확정본 처리 안내"
       ],
       "automation_potential": "Mid",
       "legacy_l6_match": [
@@ -5087,7 +5030,7 @@
       "digital_trace": [
         "EAM 자산/시설 로그: 건물 관리 운영 이력대장",
         "구매시스템 결재번호 연결: 건물 관리 운영 이력대장",
-        "메일 제목: [GA-OPS] 건물 관리 운영 이력대장 완료"
+        "메일 제목: [알림] 건물 관리 운영 이력대장 처리 안내"
       ],
       "automation_potential": "High",
       "legacy_l6_match": [
@@ -5106,7 +5049,7 @@
       "digital_trace": [
         "EAM 자산/시설 로그: 임원 지원 실행안",
         "구매시스템 결재번호 연결: 임원 지원 실행안",
-        "메일 제목: [GA-OPS] 임원 지원 실행안 완료"
+        "메일 제목: [알림] 임원 지원 실행안 처리 안내"
       ],
       "automation_potential": "Mid",
       "legacy_l6_match": [
@@ -5125,7 +5068,7 @@
       "digital_trace": [
         "EAM 자산/시설 로그: 임원 지원 확정본",
         "구매시스템 결재번호 연결: 임원 지원 확정본",
-        "메일 제목: [GA-OPS] 임원 지원 확정본 완료"
+        "메일 제목: [알림] 임원 지원 확정본 처리 안내"
       ],
       "automation_potential": "Mid",
       "legacy_l6_match": [
@@ -5144,7 +5087,7 @@
       "digital_trace": [
         "EAM 자산/시설 로그: 임원 지원 운영 이력대장",
         "구매시스템 결재번호 연결: 임원 지원 운영 이력대장",
-        "메일 제목: [GA-OPS] 임원 지원 운영 이력대장 완료"
+        "메일 제목: [알림] 임원 지원 운영 이력대장 처리 안내"
       ],
       "automation_potential": "High",
       "legacy_l6_match": [
@@ -5163,7 +5106,7 @@
       "digital_trace": [
         "EAM 자산/시설 로그: 임직원 출장지원 실행안",
         "구매시스템 결재번호 연결: 임직원 출장지원 실행안",
-        "메일 제목: [GA-OPS] 임직원 출장지원 실행안 완료"
+        "메일 제목: [알림] 임직원 출장지원 실행안 처리 안내"
       ],
       "automation_potential": "Mid",
       "legacy_l6_match": [
@@ -5182,7 +5125,7 @@
       "digital_trace": [
         "EAM 자산/시설 로그: 임직원 출장지원 확정본",
         "구매시스템 결재번호 연결: 임직원 출장지원 확정본",
-        "메일 제목: [GA-OPS] 임직원 출장지원 확정본 완료"
+        "메일 제목: [알림] 임직원 출장지원 확정본 처리 안내"
       ],
       "automation_potential": "Mid",
       "legacy_l6_match": [
@@ -5201,7 +5144,7 @@
       "digital_trace": [
         "EAM 자산/시설 로그: 임직원 출장지원 운영 이력대장",
         "구매시스템 결재번호 연결: 임직원 출장지원 운영 이력대장",
-        "메일 제목: [GA-OPS] 임직원 출장지원 운영 이력대장 완료"
+        "메일 제목: [알림] 임직원 출장지원 운영 이력대장 처리 안내"
       ],
       "automation_potential": "High",
       "legacy_l6_match": [
@@ -5220,7 +5163,7 @@
       "digital_trace": [
         "EAM 자산/시설 로그: 법인 차량 관리 실행안",
         "구매시스템 결재번호 연결: 법인 차량 관리 실행안",
-        "메일 제목: [GA-OPS] 법인 차량 관리 실행안 완료"
+        "메일 제목: [알림] 법인 차량 관리 실행안 처리 안내"
       ],
       "automation_potential": "Mid",
       "legacy_l6_match": [
@@ -5239,7 +5182,7 @@
       "digital_trace": [
         "EAM 자산/시설 로그: 법인 차량 관리 확정본",
         "구매시스템 결재번호 연결: 법인 차량 관리 확정본",
-        "메일 제목: [GA-OPS] 법인 차량 관리 확정본 완료"
+        "메일 제목: [알림] 법인 차량 관리 확정본 처리 안내"
       ],
       "automation_potential": "Mid",
       "legacy_l6_match": [
@@ -5258,7 +5201,7 @@
       "digital_trace": [
         "EAM 자산/시설 로그: 법인 차량 관리 운영 이력대장",
         "구매시스템 결재번호 연결: 법인 차량 관리 운영 이력대장",
-        "메일 제목: [GA-OPS] 법인 차량 관리 운영 이력대장 완료"
+        "메일 제목: [알림] 법인 차량 관리 운영 이력대장 처리 안내"
       ],
       "automation_potential": "High",
       "legacy_l6_match": [
@@ -5277,7 +5220,7 @@
       "digital_trace": [
         "EAM 자산/시설 로그: 수행기사 관리 실행안",
         "구매시스템 결재번호 연결: 수행기사 관리 실행안",
-        "메일 제목: [GA-OPS] 수행기사 관리 실행안 완료"
+        "메일 제목: [알림] 수행기사 관리 실행안 처리 안내"
       ],
       "automation_potential": "Mid",
       "legacy_l6_match": [
@@ -5296,7 +5239,7 @@
       "digital_trace": [
         "EAM 자산/시설 로그: 수행기사 관리 확정본",
         "구매시스템 결재번호 연결: 수행기사 관리 확정본",
-        "메일 제목: [GA-OPS] 수행기사 관리 확정본 완료"
+        "메일 제목: [알림] 수행기사 관리 확정본 처리 안내"
       ],
       "automation_potential": "Mid",
       "legacy_l6_match": [
@@ -5315,7 +5258,7 @@
       "digital_trace": [
         "EAM 자산/시설 로그: 수행기사 관리 운영 이력대장",
         "구매시스템 결재번호 연결: 수행기사 관리 운영 이력대장",
-        "메일 제목: [GA-OPS] 수행기사 관리 운영 이력대장 완료"
+        "메일 제목: [알림] 수행기사 관리 운영 이력대장 처리 안내"
       ],
       "automation_potential": "High",
       "legacy_l6_match": [
@@ -5334,7 +5277,7 @@
       "digital_trace": [
         "EAM 자산/시설 로그: 업무버스 관리 실행안",
         "구매시스템 결재번호 연결: 업무버스 관리 실행안",
-        "메일 제목: [GA-OPS] 업무버스 관리 실행안 완료"
+        "메일 제목: [알림] 업무버스 관리 실행안 처리 안내"
       ],
       "automation_potential": "Mid",
       "legacy_l6_match": [
@@ -5353,7 +5296,7 @@
       "digital_trace": [
         "EAM 자산/시설 로그: 업무버스 관리 확정본",
         "구매시스템 결재번호 연결: 업무버스 관리 확정본",
-        "메일 제목: [GA-OPS] 업무버스 관리 확정본 완료"
+        "메일 제목: [알림] 업무버스 관리 확정본 처리 안내"
       ],
       "automation_potential": "Mid",
       "legacy_l6_match": [
@@ -5372,7 +5315,7 @@
       "digital_trace": [
         "EAM 자산/시설 로그: 업무버스 관리 운영 이력대장",
         "구매시스템 결재번호 연결: 업무버스 관리 운영 이력대장",
-        "메일 제목: [GA-OPS] 업무버스 관리 운영 이력대장 완료"
+        "메일 제목: [알림] 업무버스 관리 운영 이력대장 처리 안내"
       ],
       "automation_potential": "High",
       "legacy_l6_match": [
@@ -5391,7 +5334,7 @@
       "digital_trace": [
         "EAM 자산/시설 로그: 상주협력사 관리 실행안",
         "구매시스템 결재번호 연결: 상주협력사 관리 실행안",
-        "메일 제목: [GA-OPS] 상주협력사 관리 실행안 완료"
+        "메일 제목: [알림] 상주협력사 관리 실행안 처리 안내"
       ],
       "automation_potential": "Mid",
       "legacy_l6_match": [
@@ -5410,7 +5353,7 @@
       "digital_trace": [
         "EAM 자산/시설 로그: 상주협력사 관리 확정본",
         "구매시스템 결재번호 연결: 상주협력사 관리 확정본",
-        "메일 제목: [GA-OPS] 상주협력사 관리 확정본 완료"
+        "메일 제목: [알림] 상주협력사 관리 확정본 처리 안내"
       ],
       "automation_potential": "Mid",
       "legacy_l6_match": [
@@ -5429,7 +5372,7 @@
       "digital_trace": [
         "EAM 자산/시설 로그: 상주협력사 관리 운영 이력대장",
         "구매시스템 결재번호 연결: 상주협력사 관리 운영 이력대장",
-        "메일 제목: [GA-OPS] 상주협력사 관리 운영 이력대장 완료"
+        "메일 제목: [알림] 상주협력사 관리 운영 이력대장 처리 안내"
       ],
       "automation_potential": "High",
       "legacy_l6_match": [
@@ -5448,7 +5391,7 @@
       "digital_trace": [
         "EAM 자산/시설 로그: 승무협력사 관리 실행안",
         "구매시스템 결재번호 연결: 승무협력사 관리 실행안",
-        "메일 제목: [GA-OPS] 승무협력사 관리 실행안 완료"
+        "메일 제목: [알림] 승무협력사 관리 실행안 처리 안내"
       ],
       "automation_potential": "Mid",
       "legacy_l6_match": [
@@ -5467,7 +5410,7 @@
       "digital_trace": [
         "EAM 자산/시설 로그: 승무협력사 관리 확정본",
         "구매시스템 결재번호 연결: 승무협력사 관리 확정본",
-        "메일 제목: [GA-OPS] 승무협력사 관리 확정본 완료"
+        "메일 제목: [알림] 승무협력사 관리 확정본 처리 안내"
       ],
       "automation_potential": "Mid",
       "legacy_l6_match": [
@@ -5486,7 +5429,7 @@
       "digital_trace": [
         "EAM 자산/시설 로그: 승무협력사 관리 운영 이력대장",
         "구매시스템 결재번호 연결: 승무협력사 관리 운영 이력대장",
-        "메일 제목: [GA-OPS] 승무협력사 관리 운영 이력대장 완료"
+        "메일 제목: [알림] 승무협력사 관리 운영 이력대장 처리 안내"
       ],
       "automation_potential": "High",
       "legacy_l6_match": [
@@ -5505,7 +5448,7 @@
       "digital_trace": [
         "Global HRIS 상태값 변경: 파견자 문의 대응 실행안",
         "비자/파견 관리시스템 로그: 파견자 문의 대응 실행안",
-        "메일 제목: [Global HR] 파견자 문의 대응 실행안 업데이트"
+        "메일 제목: [알림] 파견자 문의 대응 실행안 처리 안내"
       ],
       "automation_potential": "Mid",
       "legacy_l6_match": [
@@ -5524,7 +5467,7 @@
       "digital_trace": [
         "Global HRIS 상태값 변경: 파견자 문의 대응 확정본",
         "비자/파견 관리시스템 로그: 파견자 문의 대응 확정본",
-        "메일 제목: [Global HR] 파견자 문의 대응 확정본 업데이트"
+        "메일 제목: [알림] 파견자 문의 대응 확정본 처리 안내"
       ],
       "automation_potential": "Mid",
       "legacy_l6_match": [
@@ -5543,7 +5486,7 @@
       "digital_trace": [
         "Global HRIS 상태값 변경: 파견자 문의 대응 운영 이력대장",
         "비자/파견 관리시스템 로그: 파견자 문의 대응 운영 이력대장",
-        "메일 제목: [Global HR] 파견자 문의 대응 운영 이력대장 업데이트"
+        "메일 제목: [알림] 파견자 문의 대응 운영 이력대장 처리 안내"
       ],
       "automation_potential": "High",
       "legacy_l6_match": [
@@ -5562,7 +5505,7 @@
       "digital_trace": [
         "Global HRIS 상태값 변경: 주재원 파견 승인서",
         "비자/파견 관리시스템 로그: 주재원 파견 승인서",
-        "메일 제목: [Global HR] 주재원 파견 승인서 업데이트"
+        "메일 제목: [알림] 주재원 파견 승인서 처리 안내"
       ],
       "automation_potential": "High",
       "legacy_l6_match": [
@@ -5581,7 +5524,7 @@
       "digital_trace": [
         "Global HRIS 상태값 변경: 비자 발급 상태표",
         "비자/파견 관리시스템 로그: 비자 발급 상태표",
-        "메일 제목: [Global HR] 비자 발급 상태표 업데이트"
+        "메일 제목: [알림] 비자 발급 상태표 처리 안내"
       ],
       "automation_potential": "High",
       "legacy_l6_match": [
@@ -5600,7 +5543,7 @@
       "digital_trace": [
         "Global HRIS 상태값 변경: 귀임 완료 확인서",
         "비자/파견 관리시스템 로그: 귀임 완료 확인서",
-        "메일 제목: [Global HR] 귀임 완료 확인서 업데이트"
+        "메일 제목: [알림] 귀임 완료 확인서 처리 안내"
       ],
       "automation_potential": "High",
       "legacy_l6_match": [
@@ -5619,7 +5562,7 @@
       "digital_trace": [
         "Global HRIS 상태값 변경: STEP 운영 실행안",
         "비자/파견 관리시스템 로그: STEP 운영 실행안",
-        "메일 제목: [Global HR] STEP 운영 실행안 업데이트"
+        "메일 제목: [알림] STEP 운영 실행안 처리 안내"
       ],
       "automation_potential": "Mid",
       "legacy_l6_match": [
@@ -5638,7 +5581,7 @@
       "digital_trace": [
         "Global HRIS 상태값 변경: STEP 운영 확정본",
         "비자/파견 관리시스템 로그: STEP 운영 확정본",
-        "메일 제목: [Global HR] STEP 운영 확정본 업데이트"
+        "메일 제목: [알림] STEP 운영 확정본 처리 안내"
       ],
       "automation_potential": "Mid",
       "legacy_l6_match": [
@@ -5657,7 +5600,7 @@
       "digital_trace": [
         "Global HRIS 상태값 변경: STEP 운영 운영 이력대장",
         "비자/파견 관리시스템 로그: STEP 운영 운영 이력대장",
-        "메일 제목: [Global HR] STEP 운영 운영 이력대장 업데이트"
+        "메일 제목: [알림] STEP 운영 운영 이력대장 처리 안내"
       ],
       "automation_potential": "High",
       "legacy_l6_match": [
@@ -5676,7 +5619,7 @@
       "digital_trace": [
         "Global HRIS 상태값 변경: 양성 파견 운영 실행안",
         "비자/파견 관리시스템 로그: 양성 파견 운영 실행안",
-        "메일 제목: [Global HR] 양성 파견 운영 실행안 업데이트"
+        "메일 제목: [알림] 양성 파견 운영 실행안 처리 안내"
       ],
       "automation_potential": "Mid",
       "legacy_l6_match": [
@@ -5695,7 +5638,7 @@
       "digital_trace": [
         "Global HRIS 상태값 변경: 양성 파견 운영 확정본",
         "비자/파견 관리시스템 로그: 양성 파견 운영 확정본",
-        "메일 제목: [Global HR] 양성 파견 운영 확정본 업데이트"
+        "메일 제목: [알림] 양성 파견 운영 확정본 처리 안내"
       ],
       "automation_potential": "Mid",
       "legacy_l6_match": [
@@ -5714,7 +5657,7 @@
       "digital_trace": [
         "Global HRIS 상태값 변경: 양성 파견 운영 운영 이력대장",
         "비자/파견 관리시스템 로그: 양성 파견 운영 운영 이력대장",
-        "메일 제목: [Global HR] 양성 파견 운영 운영 이력대장 업데이트"
+        "메일 제목: [알림] 양성 파견 운영 운영 이력대장 처리 안내"
       ],
       "automation_potential": "High",
       "legacy_l6_match": [
@@ -5733,7 +5676,7 @@
       "digital_trace": [
         "Global HRIS 상태값 변경: 교격 파견 부임·귀임 실행안",
         "비자/파견 관리시스템 로그: 교격 파견 부임·귀임 실행안",
-        "메일 제목: [Global HR] 교격 파견 부임·귀임 실행안 업데이트"
+        "메일 제목: [알림] 교격 파견 부임·귀임 실행안 처리 안내"
       ],
       "automation_potential": "Mid",
       "legacy_l6_match": [
@@ -5752,7 +5695,7 @@
       "digital_trace": [
         "Global HRIS 상태값 변경: 교격 파견 부임·귀임 확정본",
         "비자/파견 관리시스템 로그: 교격 파견 부임·귀임 확정본",
-        "메일 제목: [Global HR] 교격 파견 부임·귀임 확정본 업데이트"
+        "메일 제목: [알림] 교격 파견 부임·귀임 확정본 처리 안내"
       ],
       "automation_potential": "Mid",
       "legacy_l6_match": [
@@ -5771,7 +5714,7 @@
       "digital_trace": [
         "Global HRIS 상태값 변경: 교격 파견 부임·귀임 운영 이력대장",
         "비자/파견 관리시스템 로그: 교격 파견 부임·귀임 운영 이력대장",
-        "메일 제목: [Global HR] 교격 파견 부임·귀임 운영 이력대장 업데이트"
+        "메일 제목: [알림] 교격 파견 부임·귀임 운영 이력대장 처리 안내"
       ],
       "automation_potential": "High",
       "legacy_l6_match": [
@@ -5790,7 +5733,7 @@
       "digital_trace": [
         "Global HRIS 상태값 변경: VP 승격 실행안",
         "비자/파견 관리시스템 로그: VP 승격 실행안",
-        "메일 제목: [Global HR] VP 승격 실행안 업데이트"
+        "메일 제목: [알림] VP 승격 실행안 처리 안내"
       ],
       "automation_potential": "Mid",
       "legacy_l6_match": [
@@ -5809,7 +5752,7 @@
       "digital_trace": [
         "Global HRIS 상태값 변경: VP 승격 확정본",
         "비자/파견 관리시스템 로그: VP 승격 확정본",
-        "메일 제목: [Global HR] VP 승격 확정본 업데이트"
+        "메일 제목: [알림] VP 승격 확정본 처리 안내"
       ],
       "automation_potential": "Mid",
       "legacy_l6_match": [
@@ -5828,7 +5771,7 @@
       "digital_trace": [
         "Global HRIS 상태값 변경: VP 승격 운영 이력대장",
         "비자/파견 관리시스템 로그: VP 승격 운영 이력대장",
-        "메일 제목: [Global HR] VP 승격 운영 이력대장 업데이트"
+        "메일 제목: [알림] VP 승격 운영 이력대장 처리 안내"
       ],
       "automation_potential": "High",
       "legacy_l6_match": [
@@ -5847,7 +5790,7 @@
       "digital_trace": [
         "Global HRIS 상태값 변경: 현지인 평가 실행안",
         "비자/파견 관리시스템 로그: 현지인 평가 실행안",
-        "메일 제목: [Global HR] 현지인 평가 실행안 업데이트"
+        "메일 제목: [알림] 현지인 평가 실행안 처리 안내"
       ],
       "automation_potential": "Mid",
       "legacy_l6_match": [
@@ -5866,7 +5809,7 @@
       "digital_trace": [
         "Global HRIS 상태값 변경: 현지인 평가 확정본",
         "비자/파견 관리시스템 로그: 현지인 평가 확정본",
-        "메일 제목: [Global HR] 현지인 평가 확정본 업데이트"
+        "메일 제목: [알림] 현지인 평가 확정본 처리 안내"
       ],
       "automation_potential": "Mid",
       "legacy_l6_match": [
@@ -5885,7 +5828,7 @@
       "digital_trace": [
         "Global HRIS 상태값 변경: 현지인 평가 운영 이력대장",
         "비자/파견 관리시스템 로그: 현지인 평가 운영 이력대장",
-        "메일 제목: [Global HR] 현지인 평가 운영 이력대장 업데이트"
+        "메일 제목: [알림] 현지인 평가 운영 이력대장 처리 안내"
       ],
       "automation_potential": "High",
       "legacy_l6_match": [
@@ -5904,7 +5847,7 @@
       "digital_trace": [
         "Global HRIS 상태값 변경: 지료 관리 실행안",
         "비자/파견 관리시스템 로그: 지료 관리 실행안",
-        "메일 제목: [Global HR] 지료 관리 실행안 업데이트"
+        "메일 제목: [알림] 지료 관리 실행안 처리 안내"
       ],
       "automation_potential": "Mid",
       "legacy_l6_match": [
@@ -5923,7 +5866,7 @@
       "digital_trace": [
         "Global HRIS 상태값 변경: 지료 관리 확정본",
         "비자/파견 관리시스템 로그: 지료 관리 확정본",
-        "메일 제목: [Global HR] 지료 관리 확정본 업데이트"
+        "메일 제목: [알림] 지료 관리 확정본 처리 안내"
       ],
       "automation_potential": "Mid",
       "legacy_l6_match": [
@@ -5942,7 +5885,7 @@
       "digital_trace": [
         "Global HRIS 상태값 변경: 지료 관리 운영 이력대장",
         "비자/파견 관리시스템 로그: 지료 관리 운영 이력대장",
-        "메일 제목: [Global HR] 지료 관리 운영 이력대장 업데이트"
+        "메일 제목: [알림] 지료 관리 운영 이력대장 처리 안내"
       ],
       "automation_potential": "High",
       "legacy_l6_match": [
@@ -5961,7 +5904,7 @@
       "digital_trace": [
         "Global HRIS 상태값 변경: 조직 관리 실행안",
         "비자/파견 관리시스템 로그: 조직 관리 실행안",
-        "메일 제목: [Global HR] 조직 관리 실행안 업데이트"
+        "메일 제목: [알림] 조직 관리 실행안 처리 안내"
       ],
       "automation_potential": "Mid",
       "legacy_l6_match": [
@@ -5980,7 +5923,7 @@
       "digital_trace": [
         "Global HRIS 상태값 변경: 조직 관리 확정본",
         "비자/파견 관리시스템 로그: 조직 관리 확정본",
-        "메일 제목: [Global HR] 조직 관리 확정본 업데이트"
+        "메일 제목: [알림] 조직 관리 확정본 처리 안내"
       ],
       "automation_potential": "Mid",
       "legacy_l6_match": [
@@ -5999,7 +5942,7 @@
       "digital_trace": [
         "Global HRIS 상태값 변경: 조직 관리 운영 이력대장",
         "비자/파견 관리시스템 로그: 조직 관리 운영 이력대장",
-        "메일 제목: [Global HR] 조직 관리 운영 이력대장 업데이트"
+        "메일 제목: [알림] 조직 관리 운영 이력대장 처리 안내"
       ],
       "automation_potential": "High",
       "legacy_l6_match": [
@@ -6018,7 +5961,7 @@
       "digital_trace": [
         "Global HRIS 상태값 변경: 평가 운영 실행안",
         "비자/파견 관리시스템 로그: 평가 운영 실행안",
-        "메일 제목: [Global HR] 평가 운영 실행안 업데이트"
+        "메일 제목: [알림] 평가 운영 실행안 처리 안내"
       ],
       "automation_potential": "Mid",
       "legacy_l6_match": [
@@ -6037,7 +5980,7 @@
       "digital_trace": [
         "Global HRIS 상태값 변경: 평가 운영 확정본",
         "비자/파견 관리시스템 로그: 평가 운영 확정본",
-        "메일 제목: [Global HR] 평가 운영 확정본 업데이트"
+        "메일 제목: [알림] 평가 운영 확정본 처리 안내"
       ],
       "automation_potential": "Mid",
       "legacy_l6_match": [
@@ -6056,7 +5999,7 @@
       "digital_trace": [
         "Global HRIS 상태값 변경: 평가 운영 운영 이력대장",
         "비자/파견 관리시스템 로그: 평가 운영 운영 이력대장",
-        "메일 제목: [Global HR] 평가 운영 운영 이력대장 업데이트"
+        "메일 제목: [알림] 평가 운영 운영 이력대장 처리 안내"
       ],
       "automation_potential": "High",
       "legacy_l6_match": [
@@ -6075,7 +6018,7 @@
       "digital_trace": [
         "Global HRIS 상태값 변경: 승격 운영 실행안",
         "비자/파견 관리시스템 로그: 승격 운영 실행안",
-        "메일 제목: [Global HR] 승격 운영 실행안 업데이트"
+        "메일 제목: [알림] 승격 운영 실행안 처리 안내"
       ],
       "automation_potential": "Mid",
       "legacy_l6_match": [
@@ -6094,7 +6037,7 @@
       "digital_trace": [
         "Global HRIS 상태값 변경: 승격 운영 확정본",
         "비자/파견 관리시스템 로그: 승격 운영 확정본",
-        "메일 제목: [Global HR] 승격 운영 확정본 업데이트"
+        "메일 제목: [알림] 승격 운영 확정본 처리 안내"
       ],
       "automation_potential": "Mid",
       "legacy_l6_match": [
@@ -6113,7 +6056,7 @@
       "digital_trace": [
         "Global HRIS 상태값 변경: 승격 운영 운영 이력대장",
         "비자/파견 관리시스템 로그: 승격 운영 운영 이력대장",
-        "메일 제목: [Global HR] 승격 운영 운영 이력대장 업데이트"
+        "메일 제목: [알림] 승격 운영 운영 이력대장 처리 안내"
       ],
       "automation_potential": "High",
       "legacy_l6_match": [
@@ -6132,7 +6075,7 @@
       "digital_trace": [
         "Global HRIS 상태값 변경: 보상 운영 실행안",
         "비자/파견 관리시스템 로그: 보상 운영 실행안",
-        "메일 제목: [Global HR] 보상 운영 실행안 업데이트"
+        "메일 제목: [알림] 보상 운영 실행안 처리 안내"
       ],
       "automation_potential": "Mid",
       "legacy_l6_match": [
@@ -6151,7 +6094,7 @@
       "digital_trace": [
         "Global HRIS 상태값 변경: 보상 운영 확정본",
         "비자/파견 관리시스템 로그: 보상 운영 확정본",
-        "메일 제목: [Global HR] 보상 운영 확정본 업데이트"
+        "메일 제목: [알림] 보상 운영 확정본 처리 안내"
       ],
       "automation_potential": "Mid",
       "legacy_l6_match": [
@@ -6170,7 +6113,7 @@
       "digital_trace": [
         "Global HRIS 상태값 변경: 보상 운영 운영 이력대장",
         "비자/파견 관리시스템 로그: 보상 운영 운영 이력대장",
-        "메일 제목: [Global HR] 보상 운영 운영 이력대장 업데이트"
+        "메일 제목: [알림] 보상 운영 운영 이력대장 처리 안내"
       ],
       "automation_potential": "High",
       "legacy_l6_match": [
@@ -6189,7 +6132,7 @@
       "digital_trace": [
         "Global HRIS 상태값 변경: 징계 관리 실행안",
         "비자/파견 관리시스템 로그: 징계 관리 실행안",
-        "메일 제목: [Global HR] 징계 관리 실행안 업데이트"
+        "메일 제목: [알림] 징계 관리 실행안 처리 안내"
       ],
       "automation_potential": "Mid",
       "legacy_l6_match": [
@@ -6208,7 +6151,7 @@
       "digital_trace": [
         "Global HRIS 상태값 변경: 징계 관리 확정본",
         "비자/파견 관리시스템 로그: 징계 관리 확정본",
-        "메일 제목: [Global HR] 징계 관리 확정본 업데이트"
+        "메일 제목: [알림] 징계 관리 확정본 처리 안내"
       ],
       "automation_potential": "Mid",
       "legacy_l6_match": [
@@ -6227,7 +6170,7 @@
       "digital_trace": [
         "Global HRIS 상태값 변경: 징계 관리 운영 이력대장",
         "비자/파견 관리시스템 로그: 징계 관리 운영 이력대장",
-        "메일 제목: [Global HR] 징계 관리 운영 이력대장 업데이트"
+        "메일 제목: [알림] 징계 관리 운영 이력대장 처리 안내"
       ],
       "automation_potential": "High",
       "legacy_l6_match": [
@@ -6246,7 +6189,7 @@
       "digital_trace": [
         "Global HRIS 상태값 변경: 인센티브 지급조정 정비 실행안",
         "비자/파견 관리시스템 로그: 인센티브 지급조정 정비 실행안",
-        "메일 제목: [Global HR] 인센티브 지급조정 정비 실행안 업데이트"
+        "메일 제목: [알림] 인센티브 지급조정 정비 실행안 처리 안내"
       ],
       "automation_potential": "Mid",
       "legacy_l6_match": [
@@ -6265,7 +6208,7 @@
       "digital_trace": [
         "Global HRIS 상태값 변경: 인센티브 지급조정 정비 확정본",
         "비자/파견 관리시스템 로그: 인센티브 지급조정 정비 확정본",
-        "메일 제목: [Global HR] 인센티브 지급조정 정비 확정본 업데이트"
+        "메일 제목: [알림] 인센티브 지급조정 정비 확정본 처리 안내"
       ],
       "automation_potential": "Mid",
       "legacy_l6_match": [
@@ -6284,7 +6227,7 @@
       "digital_trace": [
         "Global HRIS 상태값 변경: 인센티브 지급조정 정비 운영 이력대장",
         "비자/파견 관리시스템 로그: 인센티브 지급조정 정비 운영 이력대장",
-        "메일 제목: [Global HR] 인센티브 지급조정 정비 운영 이력대장 업데이트"
+        "메일 제목: [알림] 인센티브 지급조정 정비 운영 이력대장 처리 안내"
       ],
       "automation_potential": "High",
       "legacy_l6_match": [
@@ -6303,7 +6246,7 @@
       "digital_trace": [
         "Global HRIS 상태값 변경: 재입사 기준 관리 실행안",
         "비자/파견 관리시스템 로그: 재입사 기준 관리 실행안",
-        "메일 제목: [Global HR] 재입사 기준 관리 실행안 업데이트"
+        "메일 제목: [알림] 재입사 기준 관리 실행안 처리 안내"
       ],
       "automation_potential": "Mid",
       "legacy_l6_match": [
@@ -6322,7 +6265,7 @@
       "digital_trace": [
         "Global HRIS 상태값 변경: 재입사 기준 관리 확정본",
         "비자/파견 관리시스템 로그: 재입사 기준 관리 확정본",
-        "메일 제목: [Global HR] 재입사 기준 관리 확정본 업데이트"
+        "메일 제목: [알림] 재입사 기준 관리 확정본 처리 안내"
       ],
       "automation_potential": "Mid",
       "legacy_l6_match": [
@@ -6341,7 +6284,7 @@
       "digital_trace": [
         "Global HRIS 상태값 변경: 재입사 기준 관리 운영 이력대장",
         "비자/파견 관리시스템 로그: 재입사 기준 관리 운영 이력대장",
-        "메일 제목: [Global HR] 재입사 기준 관리 운영 이력대장 업데이트"
+        "메일 제목: [알림] 재입사 기준 관리 운영 이력대장 처리 안내"
       ],
       "automation_potential": "High",
       "legacy_l6_match": [
@@ -6360,7 +6303,7 @@
       "digital_trace": [
         "Global HRIS 상태값 변경: 현지 한국인 채용 관리 실행안",
         "비자/파견 관리시스템 로그: 현지 한국인 채용 관리 실행안",
-        "메일 제목: [Global HR] 현지 한국인 채용 관리 실행안 업데이트"
+        "메일 제목: [알림] 현지 한국인 채용 관리 실행안 처리 안내"
       ],
       "automation_potential": "Mid",
       "legacy_l6_match": [
@@ -6379,7 +6322,7 @@
       "digital_trace": [
         "Global HRIS 상태값 변경: 현지 한국인 채용 관리 확정본",
         "비자/파견 관리시스템 로그: 현지 한국인 채용 관리 확정본",
-        "메일 제목: [Global HR] 현지 한국인 채용 관리 확정본 업데이트"
+        "메일 제목: [알림] 현지 한국인 채용 관리 확정본 처리 안내"
       ],
       "automation_potential": "Mid",
       "legacy_l6_match": [
@@ -6398,7 +6341,7 @@
       "digital_trace": [
         "Global HRIS 상태값 변경: 현지 한국인 채용 관리 운영 이력대장",
         "비자/파견 관리시스템 로그: 현지 한국인 채용 관리 운영 이력대장",
-        "메일 제목: [Global HR] 현지 한국인 채용 관리 운영 이력대장 업데이트"
+        "메일 제목: [알림] 현지 한국인 채용 관리 운영 이력대장 처리 안내"
       ],
       "automation_potential": "High",
       "legacy_l6_match": [
@@ -6417,7 +6360,7 @@
       "digital_trace": [
         "Global HRIS 상태값 변경: 글로벌 리더 양성 교육 실행안",
         "비자/파견 관리시스템 로그: 글로벌 리더 양성 교육 실행안",
-        "메일 제목: [Global HR] 글로벌 리더 양성 교육 실행안 업데이트"
+        "메일 제목: [알림] 글로벌 리더 양성 교육 실행안 처리 안내"
       ],
       "automation_potential": "Mid",
       "legacy_l6_match": [
@@ -6436,7 +6379,7 @@
       "digital_trace": [
         "Global HRIS 상태값 변경: 글로벌 리더 양성 교육 확정본",
         "비자/파견 관리시스템 로그: 글로벌 리더 양성 교육 확정본",
-        "메일 제목: [Global HR] 글로벌 리더 양성 교육 확정본 업데이트"
+        "메일 제목: [알림] 글로벌 리더 양성 교육 확정본 처리 안내"
       ],
       "automation_potential": "Mid",
       "legacy_l6_match": [
@@ -6455,7 +6398,7 @@
       "digital_trace": [
         "Global HRIS 상태값 변경: 글로벌 리더 양성 교육 운영 이력대장",
         "비자/파견 관리시스템 로그: 글로벌 리더 양성 교육 운영 이력대장",
-        "메일 제목: [Global HR] 글로벌 리더 양성 교육 운영 이력대장 업데이트"
+        "메일 제목: [알림] 글로벌 리더 양성 교육 운영 이력대장 처리 안내"
       ],
       "automation_potential": "High",
       "legacy_l6_match": [
@@ -6474,7 +6417,7 @@
       "digital_trace": [
         "Global HRIS 상태값 변경: 거점 교육 실행안",
         "비자/파견 관리시스템 로그: 거점 교육 실행안",
-        "메일 제목: [Global HR] 거점 교육 실행안 업데이트"
+        "메일 제목: [알림] 거점 교육 실행안 처리 안내"
       ],
       "automation_potential": "Mid",
       "legacy_l6_match": [
@@ -6493,7 +6436,7 @@
       "digital_trace": [
         "Global HRIS 상태값 변경: 거점 교육 확정본",
         "비자/파견 관리시스템 로그: 거점 교육 확정본",
-        "메일 제목: [Global HR] 거점 교육 확정본 업데이트"
+        "메일 제목: [알림] 거점 교육 확정본 처리 안내"
       ],
       "automation_potential": "Mid",
       "legacy_l6_match": [
@@ -6512,7 +6455,7 @@
       "digital_trace": [
         "Global HRIS 상태값 변경: 거점 교육 운영 이력대장",
         "비자/파견 관리시스템 로그: 거점 교육 운영 이력대장",
-        "메일 제목: [Global HR] 거점 교육 운영 이력대장 업데이트"
+        "메일 제목: [알림] 거점 교육 운영 이력대장 처리 안내"
       ],
       "automation_potential": "High",
       "legacy_l6_match": [
@@ -6531,7 +6474,7 @@
       "digital_trace": [
         "Global HRIS 상태값 변경: 주재원 교육 실행안",
         "비자/파견 관리시스템 로그: 주재원 교육 실행안",
-        "메일 제목: [Global HR] 주재원 교육 실행안 업데이트"
+        "메일 제목: [알림] 주재원 교육 실행안 처리 안내"
       ],
       "automation_potential": "Mid",
       "legacy_l6_match": [
@@ -6550,7 +6493,7 @@
       "digital_trace": [
         "Global HRIS 상태값 변경: 주재원 교육 확정본",
         "비자/파견 관리시스템 로그: 주재원 교육 확정본",
-        "메일 제목: [Global HR] 주재원 교육 확정본 업데이트"
+        "메일 제목: [알림] 주재원 교육 확정본 처리 안내"
       ],
       "automation_potential": "Mid",
       "legacy_l6_match": [
@@ -6569,7 +6512,7 @@
       "digital_trace": [
         "Global HRIS 상태값 변경: 주재원 교육 운영 이력대장",
         "비자/파견 관리시스템 로그: 주재원 교육 운영 이력대장",
-        "메일 제목: [Global HR] 주재원 교육 운영 이력대장 업데이트"
+        "메일 제목: [알림] 주재원 교육 운영 이력대장 처리 안내"
       ],
       "automation_potential": "High",
       "legacy_l6_match": [
@@ -6588,7 +6531,7 @@
       "digital_trace": [
         "Global HRIS 상태값 변경: (실사)문서 분류 실행안",
         "비자/파견 관리시스템 로그: (실사)문서 분류 실행안",
-        "메일 제목: [Global HR] (실사)문서 분류 실행안 업데이트"
+        "메일 제목: [알림] (실사)문서 분류 실행안 처리 안내"
       ],
       "automation_potential": "Mid",
       "legacy_l6_match": [
@@ -6607,7 +6550,7 @@
       "digital_trace": [
         "Global HRIS 상태값 변경: (실사)문서 분류 확정본",
         "비자/파견 관리시스템 로그: (실사)문서 분류 확정본",
-        "메일 제목: [Global HR] (실사)문서 분류 확정본 업데이트"
+        "메일 제목: [알림] (실사)문서 분류 확정본 처리 안내"
       ],
       "automation_potential": "Mid",
       "legacy_l6_match": [
@@ -6626,7 +6569,7 @@
       "digital_trace": [
         "Global HRIS 상태값 변경: (실사)문서 분류 운영 이력대장",
         "비자/파견 관리시스템 로그: (실사)문서 분류 운영 이력대장",
-        "메일 제목: [Global HR] (실사)문서 분류 운영 이력대장 업데이트"
+        "메일 제목: [알림] (실사)문서 분류 운영 이력대장 처리 안내"
       ],
       "automation_potential": "High",
       "legacy_l6_match": [
@@ -6645,7 +6588,7 @@
       "digital_trace": [
         "Global HRIS 상태값 변경: (실사)문서 목록 실행안",
         "비자/파견 관리시스템 로그: (실사)문서 목록 실행안",
-        "메일 제목: [Global HR] (실사)문서 목록 실행안 업데이트"
+        "메일 제목: [알림] (실사)문서 목록 실행안 처리 안내"
       ],
       "automation_potential": "Mid",
       "legacy_l6_match": [
@@ -6664,7 +6607,7 @@
       "digital_trace": [
         "Global HRIS 상태값 변경: (실사)문서 목록 확정본",
         "비자/파견 관리시스템 로그: (실사)문서 목록 확정본",
-        "메일 제목: [Global HR] (실사)문서 목록 확정본 업데이트"
+        "메일 제목: [알림] (실사)문서 목록 확정본 처리 안내"
       ],
       "automation_potential": "Mid",
       "legacy_l6_match": [
@@ -6683,7 +6626,7 @@
       "digital_trace": [
         "Global HRIS 상태값 변경: (실사)문서 목록 운영 이력대장",
         "비자/파견 관리시스템 로그: (실사)문서 목록 운영 이력대장",
-        "메일 제목: [Global HR] (실사)문서 목록 운영 이력대장 업데이트"
+        "메일 제목: [알림] (실사)문서 목록 운영 이력대장 처리 안내"
       ],
       "automation_potential": "High",
       "legacy_l6_match": [
@@ -6702,7 +6645,7 @@
       "digital_trace": [
         "Global HRIS 상태값 변경: (실사)결과 분석 실행안",
         "비자/파견 관리시스템 로그: (실사)결과 분석 실행안",
-        "메일 제목: [Global HR] (실사)결과 분석 실행안 업데이트"
+        "메일 제목: [알림] (실사)결과 분석 실행안 처리 안내"
       ],
       "automation_potential": "Mid",
       "legacy_l6_match": [
@@ -6721,7 +6664,7 @@
       "digital_trace": [
         "Global HRIS 상태값 변경: (실사)결과 분석 확정본",
         "비자/파견 관리시스템 로그: (실사)결과 분석 확정본",
-        "메일 제목: [Global HR] (실사)결과 분석 확정본 업데이트"
+        "메일 제목: [알림] (실사)결과 분석 확정본 처리 안내"
       ],
       "automation_potential": "Mid",
       "legacy_l6_match": [
@@ -6740,7 +6683,7 @@
       "digital_trace": [
         "Global HRIS 상태값 변경: (실사)결과 분석 운영 이력대장",
         "비자/파견 관리시스템 로그: (실사)결과 분석 운영 이력대장",
-        "메일 제목: [Global HR] (실사)결과 분석 운영 이력대장 업데이트"
+        "메일 제목: [알림] (실사)결과 분석 운영 이력대장 처리 안내"
       ],
       "automation_potential": "High",
       "legacy_l6_match": [
@@ -6759,7 +6702,7 @@
       "digital_trace": [
         "Global HRIS 상태값 변경: (실사)시사점 도출 실행안",
         "비자/파견 관리시스템 로그: (실사)시사점 도출 실행안",
-        "메일 제목: [Global HR] (실사)시사점 도출 실행안 업데이트"
+        "메일 제목: [알림] (실사)시사점 도출 실행안 처리 안내"
       ],
       "automation_potential": "Mid",
       "legacy_l6_match": [
@@ -6778,7 +6721,7 @@
       "digital_trace": [
         "Global HRIS 상태값 변경: (실사)시사점 도출 확정본",
         "비자/파견 관리시스템 로그: (실사)시사점 도출 확정본",
-        "메일 제목: [Global HR] (실사)시사점 도출 확정본 업데이트"
+        "메일 제목: [알림] (실사)시사점 도출 확정본 처리 안내"
       ],
       "automation_potential": "Mid",
       "legacy_l6_match": [
@@ -6797,7 +6740,7 @@
       "digital_trace": [
         "Global HRIS 상태값 변경: (실사)시사점 도출 운영 이력대장",
         "비자/파견 관리시스템 로그: (실사)시사점 도출 운영 이력대장",
-        "메일 제목: [Global HR] (실사)시사점 도출 운영 이력대장 업데이트"
+        "메일 제목: [알림] (실사)시사점 도출 운영 이력대장 처리 안내"
       ],
       "automation_potential": "High",
       "legacy_l6_match": [
@@ -6816,7 +6759,7 @@
       "digital_trace": [
         "Global HRIS 상태값 변경: (PMI)계획 수립 실행안",
         "비자/파견 관리시스템 로그: (PMI)계획 수립 실행안",
-        "메일 제목: [Global HR] (PMI)계획 수립 실행안 업데이트"
+        "메일 제목: [알림] (PMI)계획 수립 실행안 처리 안내"
       ],
       "automation_potential": "Mid",
       "legacy_l6_match": [
@@ -6835,7 +6778,7 @@
       "digital_trace": [
         "Global HRIS 상태값 변경: (PMI)계획 수립 확정본",
         "비자/파견 관리시스템 로그: (PMI)계획 수립 확정본",
-        "메일 제목: [Global HR] (PMI)계획 수립 확정본 업데이트"
+        "메일 제목: [알림] (PMI)계획 수립 확정본 처리 안내"
       ],
       "automation_potential": "Mid",
       "legacy_l6_match": [
@@ -6854,7 +6797,7 @@
       "digital_trace": [
         "Global HRIS 상태값 변경: (PMI)계획 수립 운영 이력대장",
         "비자/파견 관리시스템 로그: (PMI)계획 수립 운영 이력대장",
-        "메일 제목: [Global HR] (PMI)계획 수립 운영 이력대장 업데이트"
+        "메일 제목: [알림] (PMI)계획 수립 운영 이력대장 처리 안내"
       ],
       "automation_potential": "High",
       "legacy_l6_match": [
@@ -6873,7 +6816,7 @@
       "digital_trace": [
         "Global HRIS 상태값 변경: (PMI)실적 점검 실행안",
         "비자/파견 관리시스템 로그: (PMI)실적 점검 실행안",
-        "메일 제목: [Global HR] (PMI)실적 점검 실행안 업데이트"
+        "메일 제목: [알림] (PMI)실적 점검 실행안 처리 안내"
       ],
       "automation_potential": "Mid",
       "legacy_l6_match": [
@@ -6892,7 +6835,7 @@
       "digital_trace": [
         "Global HRIS 상태값 변경: (PMI)실적 점검 확정본",
         "비자/파견 관리시스템 로그: (PMI)실적 점검 확정본",
-        "메일 제목: [Global HR] (PMI)실적 점검 확정본 업데이트"
+        "메일 제목: [알림] (PMI)실적 점검 확정본 처리 안내"
       ],
       "automation_potential": "Mid",
       "legacy_l6_match": [
@@ -6911,7 +6854,7 @@
       "digital_trace": [
         "Global HRIS 상태값 변경: (PMI)실적 점검 운영 이력대장",
         "비자/파견 관리시스템 로그: (PMI)실적 점검 운영 이력대장",
-        "메일 제목: [Global HR] (PMI)실적 점검 운영 이력대장 업데이트"
+        "메일 제목: [알림] (PMI)실적 점검 운영 이력대장 처리 안내"
       ],
       "automation_potential": "High",
       "legacy_l6_match": [
@@ -6930,7 +6873,7 @@
       "digital_trace": [
         "Global HRIS 상태값 변경: (PMI)BP 분석 실행안",
         "비자/파견 관리시스템 로그: (PMI)BP 분석 실행안",
-        "메일 제목: [Global HR] (PMI)BP 분석 실행안 업데이트"
+        "메일 제목: [알림] (PMI)BP 분석 실행안 처리 안내"
       ],
       "automation_potential": "Mid",
       "legacy_l6_match": [
@@ -6949,7 +6892,7 @@
       "digital_trace": [
         "Global HRIS 상태값 변경: (PMI)BP 분석 확정본",
         "비자/파견 관리시스템 로그: (PMI)BP 분석 확정본",
-        "메일 제목: [Global HR] (PMI)BP 분석 확정본 업데이트"
+        "메일 제목: [알림] (PMI)BP 분석 확정본 처리 안내"
       ],
       "automation_potential": "Mid",
       "legacy_l6_match": [
@@ -6968,7 +6911,7 @@
       "digital_trace": [
         "Global HRIS 상태값 변경: (PMI)BP 분석 운영 이력대장",
         "비자/파견 관리시스템 로그: (PMI)BP 분석 운영 이력대장",
-        "메일 제목: [Global HR] (PMI)BP 분석 운영 이력대장 업데이트"
+        "메일 제목: [알림] (PMI)BP 분석 운영 이력대장 처리 안내"
       ],
       "automation_potential": "High",
       "legacy_l6_match": [
@@ -6987,7 +6930,7 @@
       "digital_trace": [
         "Global HRIS 상태값 변경: (자회사)운영 방식 개선 실행안",
         "비자/파견 관리시스템 로그: (자회사)운영 방식 개선 실행안",
-        "메일 제목: [Global HR] (자회사)운영 방식 개선 실행안 업데이트"
+        "메일 제목: [알림] (자회사)운영 방식 개선 실행안 처리 안내"
       ],
       "automation_potential": "Mid",
       "legacy_l6_match": [
@@ -7006,7 +6949,7 @@
       "digital_trace": [
         "Global HRIS 상태값 변경: (자회사)운영 방식 개선 확정본",
         "비자/파견 관리시스템 로그: (자회사)운영 방식 개선 확정본",
-        "메일 제목: [Global HR] (자회사)운영 방식 개선 확정본 업데이트"
+        "메일 제목: [알림] (자회사)운영 방식 개선 확정본 처리 안내"
       ],
       "automation_potential": "Mid",
       "legacy_l6_match": [
@@ -7025,13 +6968,355 @@
       "digital_trace": [
         "Global HRIS 상태값 변경: (자회사)운영 방식 개선 운영 이력대장",
         "비자/파견 관리시스템 로그: (자회사)운영 방식 개선 운영 이력대장",
-        "메일 제목: [Global HR] (자회사)운영 방식 개선 운영 이력대장 업데이트"
+        "메일 제목: [알림] (자회사)운영 방식 개선 운영 이력대장 처리 안내"
       ],
       "automation_potential": "High",
       "legacy_l6_match": [
         "(자회사)운영 방식 개선"
       ],
       "improvement_note": "행위 중심 서술을 산출물 중심 노드로 전환하여 병목·재작업·리드타임 분석이 가능한 이벤트 단위로 구조화함."
+    },
+    {
+      "l6_id": "V2-L6-0371",
+      "l3": "총무",
+      "l4": "사내 서비스 운영",
+      "l5": "공용자전거 운영",
+      "l6_name": "공용자전거 배치 계획서 확정",
+      "input": "사업장 지도, 수요 데이터",
+      "output": "공용자전거 배치 계획서",
+      "digital_trace": [
+        "EAM 이동지원 자산 배치 로그",
+        "메일 제목: [알림] 공용자전거 배치 계획 확정",
+        "운영대시보드 상태값 변경: 배치 완료"
+      ],
+      "automation_potential": "High",
+      "legacy_l6_match": [
+        "공용자전거 운영"
+      ],
+      "improvement_note": "현업 맥락(사내 제도/시스템) 기반으로 산출물과 로그 앵커를 구체화함."
+    },
+    {
+      "l6_id": "V2-L6-0372",
+      "l3": "총무",
+      "l4": "사내 서비스 운영",
+      "l5": "공용자전거 운영",
+      "l6_name": "공용자전거 점검 보고서 등록",
+      "input": "점검 체크리스트, 점검결과",
+      "output": "공용자전거 점검 보고서",
+      "digital_trace": [
+        "EAM 정비이력 테이블 업데이트",
+        "메일 제목: [알림] 공용자전거 정기점검 결과",
+        "정비 티켓 번호 발행"
+      ],
+      "automation_potential": "High",
+      "legacy_l6_match": [
+        "공용자전거 운영"
+      ],
+      "improvement_note": "현업 맥락(사내 제도/시스템) 기반으로 산출물과 로그 앵커를 구체화함."
+    },
+    {
+      "l6_id": "V2-L6-0373",
+      "l3": "총무",
+      "l4": "사내 서비스 운영",
+      "l5": "공용자전거 운영",
+      "l6_name": "공용자전거 이용 통계 리포트 발행",
+      "input": "이용로그, 반납로그",
+      "output": "공용자전거 이용 통계 리포트",
+      "digital_trace": [
+        "모빌리티 로그 집계 배치 실행",
+        "메일 제목: [알림] 공용자전거 이용 통계 공유",
+        "월간 리포트 저장소 업로드"
+      ],
+      "automation_potential": "Mid",
+      "legacy_l6_match": [
+        "공용자전거 운영"
+      ],
+      "improvement_note": "현업 맥락(사내 제도/시스템) 기반으로 산출물과 로그 앵커를 구체화함."
+    },
+    {
+      "l6_id": "V2-L6-0374",
+      "l3": "총무",
+      "l4": "사내 서비스 운영",
+      "l5": "사내 화물 운영",
+      "l6_name": "사내 화물 접수대장 확정",
+      "input": "화물 요청정보, 수취인 정보",
+      "output": "사내 화물 접수대장",
+      "digital_trace": [
+        "사내물류 접수 DB 입력",
+        "메일 제목: [알림] 사내 화물 접수 완료",
+        "운송번호 생성 로그"
+      ],
+      "automation_potential": "High",
+      "legacy_l6_match": [
+        "사내 화물 운영"
+      ],
+      "improvement_note": "현업 맥락(사내 제도/시스템) 기반으로 산출물과 로그 앵커를 구체화함."
+    },
+    {
+      "l6_id": "V2-L6-0375",
+      "l3": "총무",
+      "l4": "사내 서비스 운영",
+      "l5": "사내 화물 운영",
+      "l6_name": "사내 화물 배송완료 확인서",
+      "input": "배송요청, 인수증",
+      "output": "사내 화물 배송완료 확인서",
+      "digital_trace": [
+        "배송상태값 변경: Delivered",
+        "메일 제목: [알림] 사내 화물 배송 완료",
+        "수취 서명 이미지 저장"
+      ],
+      "automation_potential": "High",
+      "legacy_l6_match": [
+        "사내 화물 운영"
+      ],
+      "improvement_note": "현업 맥락(사내 제도/시스템) 기반으로 산출물과 로그 앵커를 구체화함."
+    },
+    {
+      "l6_id": "V2-L6-0376",
+      "l3": "총무",
+      "l4": "사내 서비스 운영",
+      "l5": "사내 화물 운영",
+      "l6_name": "화물 분실/지연 이슈 보고서",
+      "input": "이슈 티켓, 추적로그",
+      "output": "화물 분실/지연 이슈 보고서",
+      "digital_trace": [
+        "이슈관리 시스템 티켓 생성",
+        "메일 제목: [알림] 화물 이슈 보고",
+        "SLA 지연 경고 로그"
+      ],
+      "automation_potential": "Mid",
+      "legacy_l6_match": [
+        "사내 화물 운영"
+      ],
+      "improvement_note": "현업 맥락(사내 제도/시스템) 기반으로 산출물과 로그 앵커를 구체화함."
+    },
+    {
+      "l6_id": "V2-L6-0377",
+      "l3": "총무",
+      "l4": "사내 서비스 운영",
+      "l5": "사내 전화 운영",
+      "l6_name": "S-Calling 회선 매핑표 등록",
+      "input": "사용자 계정, 031 회선 정보",
+      "output": "S-Calling 회선 매핑표",
+      "digital_trace": [
+        "S-Calling 계정 연동 로그",
+        "메일 제목: [알림] S-Calling 회선 연동 완료",
+        "내선-모바일 매핑 DB 저장"
+      ],
+      "automation_potential": "High",
+      "legacy_l6_match": [
+        "사내 전화 운영"
+      ],
+      "improvement_note": "현업 맥락(사내 제도/시스템) 기반으로 산출물과 로그 앵커를 구체화함."
+    },
+    {
+      "l6_id": "V2-L6-0378",
+      "l3": "총무",
+      "l4": "사내 서비스 운영",
+      "l5": "사내 전화 운영",
+      "l6_name": "통화 품질 점검 리포트",
+      "input": "통화품질 로그, 장애내역",
+      "output": "통화 품질 점검 리포트",
+      "digital_trace": [
+        "VoIP 품질 모니터링 로그",
+        "메일 제목: [알림] 사내 전화 품질 점검 결과",
+        "장애 티켓 자동 생성"
+      ],
+      "automation_potential": "Mid",
+      "legacy_l6_match": [
+        "사내 전화 운영"
+      ],
+      "improvement_note": "현업 맥락(사내 제도/시스템) 기반으로 산출물과 로그 앵커를 구체화함."
+    },
+    {
+      "l6_id": "V2-L6-0379",
+      "l3": "총무",
+      "l4": "사내 서비스 운영",
+      "l5": "사내 전화 운영",
+      "l6_name": "번호 정책 변경 승인서",
+      "input": "번호정책 변경요청, 영향도",
+      "output": "번호 정책 변경 승인서",
+      "digital_trace": [
+        "교환기 설정 변경 이력",
+        "메일 제목: [알림] 번호 정책 변경 승인",
+        "결재 문서번호 연결"
+      ],
+      "automation_potential": "Mid",
+      "legacy_l6_match": [
+        "사내 전화 운영"
+      ],
+      "improvement_note": "현업 맥락(사내 제도/시스템) 기반으로 산출물과 로그 앵커를 구체화함."
+    },
+    {
+      "l6_id": "V2-L6-0380",
+      "l3": "해외인사",
+      "l4": "공통",
+      "l5": "파견 인력 부임/귀임",
+      "l6_name": "부임 일정 확정서",
+      "input": "파견명단, 부임국가 정보",
+      "output": "부임 일정 확정서",
+      "digital_trace": [
+        "Global HRIS 파견상태 변경: 부임예정",
+        "메일 제목: [알림] 파견 인력 부임 일정 확정",
+        "출장/항공 예약 연동 로그"
+      ],
+      "automation_potential": "High",
+      "legacy_l6_match": [
+        "파견 인력 부임/귀임"
+      ],
+      "improvement_note": "현업 맥락(사내 제도/시스템) 기반으로 산출물과 로그 앵커를 구체화함."
+    },
+    {
+      "l6_id": "V2-L6-0381",
+      "l3": "해외인사",
+      "l4": "공통",
+      "l5": "파견 인력 부임/귀임",
+      "l6_name": "귀임 완료 확인서",
+      "input": "귀임보고, 인수인계 문서",
+      "output": "귀임 완료 확인서",
+      "digital_trace": [
+        "Global HRIS 파견상태 변경: 귀임완료",
+        "메일 제목: [알림] 파견 인력 귀임 완료",
+        "정착지원 종료 처리 로그"
+      ],
+      "automation_potential": "High",
+      "legacy_l6_match": [
+        "파견 인력 부임/귀임"
+      ],
+      "improvement_note": "현업 맥락(사내 제도/시스템) 기반으로 산출물과 로그 앵커를 구체화함."
+    },
+    {
+      "l6_id": "V2-L6-0382",
+      "l3": "해외인사",
+      "l4": "공통",
+      "l5": "파견 인력 부임/귀임",
+      "l6_name": "파견 이력 카드 업데이트",
+      "input": "부임/귀임 기록",
+      "output": "파견 이력 카드",
+      "digital_trace": [
+        "Global Talent Profile 업데이트",
+        "메일 제목: [알림] 파견 이력 업데이트",
+        "인사마스터 변경 이력"
+      ],
+      "automation_potential": "Mid",
+      "legacy_l6_match": [
+        "파견 인력 부임/귀임"
+      ],
+      "improvement_note": "현업 맥락(사내 제도/시스템) 기반으로 산출물과 로그 앵커를 구체화함."
+    },
+    {
+      "l6_id": "V2-L6-0383",
+      "l3": "해외인사",
+      "l4": "주재원 제도",
+      "l5": "지표 관리",
+      "l6_name": "주재원 KPI 지표판 확정",
+      "input": "평가항목, 실적데이터",
+      "output": "주재원 KPI 지표판",
+      "digital_trace": [
+        "Global HR KPI 테이블 업데이트",
+        "메일 제목: [알림] 주재원 KPI 지표 확정",
+        "대시보드 버전 태깅"
+      ],
+      "automation_potential": "High",
+      "legacy_l6_match": [
+        "지표 관리"
+      ],
+      "improvement_note": "현업 맥락(사내 제도/시스템) 기반으로 산출물과 로그 앵커를 구체화함."
+    },
+    {
+      "l6_id": "V2-L6-0384",
+      "l3": "해외인사",
+      "l4": "주재원 제도",
+      "l5": "지표 관리",
+      "l6_name": "월간 지표 모니터링 리포트",
+      "input": "월간 실적, 기준 지표",
+      "output": "월간 지표 모니터링 리포트",
+      "digital_trace": [
+        "월간 집계 배치 로그",
+        "메일 제목: [알림] 주재원 월간 지표 리포트",
+        "이상치 경보 로그"
+      ],
+      "automation_potential": "High",
+      "legacy_l6_match": [
+        "지표 관리"
+      ],
+      "improvement_note": "현업 맥락(사내 제도/시스템) 기반으로 산출물과 로그 앵커를 구체화함."
+    },
+    {
+      "l6_id": "V2-L6-0385",
+      "l3": "해외인사",
+      "l4": "주재원 제도",
+      "l5": "지표 관리",
+      "l6_name": "지표 이슈 조치대장",
+      "input": "이상치 항목, 조치계획",
+      "output": "지표 이슈 조치대장",
+      "digital_trace": [
+        "이슈 트래커 티켓 생성",
+        "메일 제목: [알림] 주재원 지표 이슈 조치",
+        "조치완료 상태값 변경"
+      ],
+      "automation_potential": "Mid",
+      "legacy_l6_match": [
+        "지표 관리"
+      ],
+      "improvement_note": "현업 맥락(사내 제도/시스템) 기반으로 산출물과 로그 앵커를 구체화함."
+    },
+    {
+      "l6_id": "V2-L6-0386",
+      "l3": "해외인사",
+      "l4": "노사관리",
+      "l5": "거점장 교육",
+      "l6_name": "거점장 교육 커리큘럼 확정본",
+      "input": "교육목표, 거점 리스크",
+      "output": "거점장 교육 커리큘럼 확정본",
+      "digital_trace": [
+        "LMS 과정 등록 로그",
+        "메일 제목: [알림] 거점장 교육 커리큘럼 확정",
+        "교육 버전 이력"
+      ],
+      "automation_potential": "Mid",
+      "legacy_l6_match": [
+        "거점장 교육"
+      ],
+      "improvement_note": "현업 맥락(사내 제도/시스템) 기반으로 산출물과 로그 앵커를 구체화함."
+    },
+    {
+      "l6_id": "V2-L6-0387",
+      "l3": "해외인사",
+      "l4": "노사관리",
+      "l5": "거점장 교육",
+      "l6_name": "거점장 교육 수료 현황표",
+      "input": "수강이력, 평가결과",
+      "output": "거점장 교육 수료 현황표",
+      "digital_trace": [
+        "LMS 수료 레코드 적재",
+        "메일 제목: [알림] 거점장 교육 수료 현황",
+        "수료율 대시보드 갱신"
+      ],
+      "automation_potential": "High",
+      "legacy_l6_match": [
+        "거점장 교육"
+      ],
+      "improvement_note": "현업 맥락(사내 제도/시스템) 기반으로 산출물과 로그 앵커를 구체화함."
+    },
+    {
+      "l6_id": "V2-L6-0388",
+      "l3": "해외인사",
+      "l4": "노사관리",
+      "l5": "거점장 교육",
+      "l6_name": "교육 효과 피드백 리포트",
+      "input": "설문결과, 현장피드백",
+      "output": "교육 효과 피드백 리포트",
+      "digital_trace": [
+        "설문 데이터 웨어하우스 적재",
+        "메일 제목: [알림] 거점장 교육 효과 리포트",
+        "개선안 태스크 생성"
+      ],
+      "automation_potential": "Mid",
+      "legacy_l6_match": [
+        "거점장 교육"
+      ],
+      "improvement_note": "현업 맥락(사내 제도/시스템) 기반으로 산출물과 로그 앵커를 구체화함."
     }
   ]
 }
