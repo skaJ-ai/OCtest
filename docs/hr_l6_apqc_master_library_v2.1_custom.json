@@ -21,7 +21,12 @@
         "날인 및 증명서 관리"
       ],
       "improvement_note": "realdata.ts 고정 뼈대 기준으로 산출물 중심 L6로 재분해함.",
-      "output_type": "ticket_log"
+      "output_type": "ticket_log",
+      "predecessors": [],
+      "successors": [
+        "V2-L6-0402"
+      ],
+      "entry_condition": ""
     },
     {
       "l6_id": "V2-L6-0402",
@@ -41,7 +46,14 @@
         "날인 및 증명서 관리"
       ],
       "improvement_note": "realdata.ts 고정 뼈대 기준으로 산출물 중심 L6로 재분해함.",
-      "output_type": "document_pdf"
+      "output_type": "document_pdf",
+      "predecessors": [
+        "V2-L6-0401"
+      ],
+      "successors": [
+        "V2-L6-0403"
+      ],
+      "entry_condition": "선행 L6 완료"
     },
     {
       "l6_id": "V2-L6-0403",
@@ -61,7 +73,12 @@
         "날인 및 증명서 관리"
       ],
       "improvement_note": "realdata.ts 고정 뼈대 기준으로 산출물 중심 L6로 재분해함.",
-      "output_type": "ledger_record"
+      "output_type": "ledger_record",
+      "predecessors": [
+        "V2-L6-0402"
+      ],
+      "successors": [],
+      "entry_condition": "선행 L6 완료"
     },
     {
       "l6_id": "V2-L6-0404",
@@ -81,7 +98,12 @@
         "사내 화물 운영"
       ],
       "improvement_note": "realdata.ts 고정 뼈대 기준으로 산출물 중심 L6로 재분해함.",
-      "output_type": "ledger_record"
+      "output_type": "ledger_record",
+      "predecessors": [],
+      "successors": [
+        "V2-L6-0405"
+      ],
+      "entry_condition": ""
     },
     {
       "l6_id": "V2-L6-0405",
@@ -101,7 +123,14 @@
         "사내 화물 운영"
       ],
       "improvement_note": "realdata.ts 고정 뼈대 기준으로 산출물 중심 L6로 재분해함.",
-      "output_type": "confirmation_doc"
+      "output_type": "confirmation_doc",
+      "predecessors": [
+        "V2-L6-0404"
+      ],
+      "successors": [
+        "V2-L6-0406"
+      ],
+      "entry_condition": "선행 L6 완료"
     },
     {
       "l6_id": "V2-L6-0406",
@@ -121,7 +150,12 @@
         "사내 화물 운영"
       ],
       "improvement_note": "realdata.ts 고정 뼈대 기준으로 산출물 중심 L6로 재분해함.",
-      "output_type": "issue_report"
+      "output_type": "issue_report",
+      "predecessors": [
+        "V2-L6-0405"
+      ],
+      "successors": [],
+      "entry_condition": "선행 L6 완료"
     },
     {
       "l6_id": "V2-L6-0407",
@@ -141,7 +175,12 @@
         "안내센터 운영"
       ],
       "improvement_note": "realdata.ts 고정 뼈대 기준으로 산출물 중심 L6로 재분해함.",
-      "output_type": "approval_list"
+      "output_type": "approval_list",
+      "predecessors": [],
+      "successors": [
+        "V2-L6-0408"
+      ],
+      "entry_condition": ""
     },
     {
       "l6_id": "V2-L6-0408",
@@ -161,7 +200,14 @@
         "안내센터 운영"
       ],
       "improvement_note": "realdata.ts 고정 뼈대 기준으로 산출물 중심 L6로 재분해함.",
-      "output_type": "operation_log"
+      "output_type": "operation_log",
+      "predecessors": [
+        "V2-L6-0407"
+      ],
+      "successors": [
+        "V2-L6-0409"
+      ],
+      "entry_condition": "선행 L6 완료"
     },
     {
       "l6_id": "V2-L6-0409",
@@ -181,7 +227,12 @@
         "안내센터 운영"
       ],
       "improvement_note": "realdata.ts 고정 뼈대 기준으로 산출물 중심 L6로 재분해함.",
-      "output_type": "support_report"
+      "output_type": "support_report",
+      "predecessors": [
+        "V2-L6-0408"
+      ],
+      "successors": [],
+      "entry_condition": "선행 L6 완료"
     },
     {
       "l6_id": "V2-L6-0410",
@@ -201,7 +252,12 @@
         "대외유관 기관/업체 운영"
       ],
       "improvement_note": "realdata.ts 고정 뼈대 기준으로 산출물 중심 L6로 재분해함.",
-      "output_type": "official_doc"
+      "output_type": "official_doc",
+      "predecessors": [],
+      "successors": [
+        "V2-L6-0411"
+      ],
+      "entry_condition": ""
     },
     {
       "l6_id": "V2-L6-0411",
@@ -221,7 +277,14 @@
         "대외유관 기관/업체 운영"
       ],
       "improvement_note": "realdata.ts 고정 뼈대 기준으로 산출물 중심 L6로 재분해함.",
-      "output_type": "reply_doc"
+      "output_type": "reply_doc",
+      "predecessors": [
+        "V2-L6-0410"
+      ],
+      "successors": [
+        "V2-L6-0412"
+      ],
+      "entry_condition": "선행 L6 완료"
     },
     {
       "l6_id": "V2-L6-0412",
@@ -241,7 +304,12 @@
         "대외유관 기관/업체 운영"
       ],
       "improvement_note": "realdata.ts 고정 뼈대 기준으로 산출물 중심 L6로 재분해함.",
-      "output_type": "status_report"
+      "output_type": "status_report",
+      "predecessors": [
+        "V2-L6-0411"
+      ],
+      "successors": [],
+      "entry_condition": "선행 L6 완료"
     },
     {
       "l6_id": "V2-L6-0413",
@@ -261,7 +329,12 @@
         "사내 전화(S-Calling) 운영"
       ],
       "improvement_note": "realdata.ts 고정 뼈대 기준으로 산출물 중심 L6로 재분해함.",
-      "output_type": "mapping_table"
+      "output_type": "mapping_table",
+      "predecessors": [],
+      "successors": [
+        "V2-L6-0414"
+      ],
+      "entry_condition": ""
     },
     {
       "l6_id": "V2-L6-0414",
@@ -281,7 +354,14 @@
         "사내 전화(S-Calling) 운영"
       ],
       "improvement_note": "realdata.ts 고정 뼈대 기준으로 산출물 중심 L6로 재분해함.",
-      "output_type": "incident_report"
+      "output_type": "incident_report",
+      "predecessors": [
+        "V2-L6-0413"
+      ],
+      "successors": [
+        "V2-L6-0415"
+      ],
+      "entry_condition": "선행 L6 완료"
     },
     {
       "l6_id": "V2-L6-0415",
@@ -301,7 +381,12 @@
         "사내 전화(S-Calling) 운영"
       ],
       "improvement_note": "realdata.ts 고정 뼈대 기준으로 산출물 중심 L6로 재분해함.",
-      "output_type": "quality_report"
+      "output_type": "quality_report",
+      "predecessors": [
+        "V2-L6-0414"
+      ],
+      "successors": [],
+      "entry_condition": "선행 L6 완료"
     },
     {
       "l6_id": "V2-L6-0416",
@@ -321,7 +406,12 @@
         "두발로 운영"
       ],
       "improvement_note": "realdata.ts 고정 뼈대 기준으로 산출물 중심 L6로 재분해함.",
-      "output_type": "plan_doc"
+      "output_type": "plan_doc",
+      "predecessors": [],
+      "successors": [
+        "V2-L6-0417"
+      ],
+      "entry_condition": ""
     },
     {
       "l6_id": "V2-L6-0417",
@@ -341,7 +431,14 @@
         "두발로 운영"
       ],
       "improvement_note": "realdata.ts 고정 뼈대 기준으로 산출물 중심 L6로 재분해함.",
-      "output_type": "maintenance_report"
+      "output_type": "maintenance_report",
+      "predecessors": [
+        "V2-L6-0416"
+      ],
+      "successors": [
+        "V2-L6-0418"
+      ],
+      "entry_condition": "선행 L6 완료"
     },
     {
       "l6_id": "V2-L6-0418",
@@ -361,7 +458,12 @@
         "두발로 운영"
       ],
       "improvement_note": "realdata.ts 고정 뼈대 기준으로 산출물 중심 L6로 재분해함.",
-      "output_type": "analytics_report"
+      "output_type": "analytics_report",
+      "predecessors": [
+        "V2-L6-0417"
+      ],
+      "successors": [],
+      "entry_condition": "선행 L6 완료"
     },
     {
       "l6_id": "V2-L6-0419",
@@ -381,7 +483,12 @@
         "다회용기 업체 운영"
       ],
       "improvement_note": "realdata.ts 고정 뼈대 기준으로 산출물 중심 L6로 재분해함.",
-      "output_type": "contract_doc"
+      "output_type": "contract_doc",
+      "predecessors": [],
+      "successors": [
+        "V2-L6-0420"
+      ],
+      "entry_condition": ""
     },
     {
       "l6_id": "V2-L6-0420",
@@ -401,7 +508,14 @@
         "다회용기 업체 운영"
       ],
       "improvement_note": "realdata.ts 고정 뼈대 기준으로 산출물 중심 L6로 재분해함.",
-      "output_type": "ledger_record"
+      "output_type": "ledger_record",
+      "predecessors": [
+        "V2-L6-0419"
+      ],
+      "successors": [
+        "V2-L6-0421"
+      ],
+      "entry_condition": "선행 L6 완료"
     },
     {
       "l6_id": "V2-L6-0421",
@@ -421,7 +535,12 @@
         "다회용기 업체 운영"
       ],
       "improvement_note": "realdata.ts 고정 뼈대 기준으로 산출물 중심 L6로 재분해함.",
-      "output_type": "settlement_doc"
+      "output_type": "settlement_doc",
+      "predecessors": [
+        "V2-L6-0420"
+      ],
+      "successors": [],
+      "entry_condition": "선행 L6 완료"
     },
     {
       "l6_id": "V2-L6-0422",
@@ -441,7 +560,10 @@
         "사무실 레이아웃 관리"
       ],
       "improvement_note": "realdata.ts 고정 뼈대 기준으로 산출물 중심 L6로 재분해함.",
-      "output_type": "plan_doc"
+      "output_type": "plan_doc",
+      "predecessors": [],
+      "successors": [],
+      "entry_condition": ""
     },
     {
       "l6_id": "V2-L6-0423",
@@ -461,7 +583,10 @@
         "피트니스 관리"
       ],
       "improvement_note": "realdata.ts 고정 뼈대 기준으로 산출물 중심 L6로 재분해함.",
-      "output_type": "inspection_report"
+      "output_type": "inspection_report",
+      "predecessors": [],
+      "successors": [],
+      "entry_condition": ""
     },
     {
       "l6_id": "V2-L6-0424",
@@ -481,7 +606,12 @@
         "사내식당 관리"
       ],
       "improvement_note": "realdata.ts 고정 뼈대 기준으로 산출물 중심 L6로 재분해함.",
-      "output_type": "inspection_report"
+      "output_type": "inspection_report",
+      "predecessors": [],
+      "successors": [
+        "V2-L6-0425"
+      ],
+      "entry_condition": ""
     },
     {
       "l6_id": "V2-L6-0425",
@@ -501,7 +631,12 @@
         "사내식당 관리"
       ],
       "improvement_note": "realdata.ts 고정 뼈대 기준으로 산출물 중심 L6로 재분해함.",
-      "output_type": "menu_plan"
+      "output_type": "menu_plan",
+      "predecessors": [
+        "V2-L6-0424"
+      ],
+      "successors": [],
+      "entry_condition": "선행 L6 완료"
     },
     {
       "l6_id": "V2-L6-0426",
@@ -521,7 +656,10 @@
         "주차장 관리"
       ],
       "improvement_note": "realdata.ts 고정 뼈대 기준으로 산출물 중심 L6로 재분해함.",
-      "output_type": "allocation_list"
+      "output_type": "allocation_list",
+      "predecessors": [],
+      "successors": [],
+      "entry_condition": ""
     },
     {
       "l6_id": "V2-L6-0427",
@@ -541,7 +679,10 @@
         "숙박시설 운영 (기숙사, 포레스트)"
       ],
       "improvement_note": "realdata.ts 고정 뼈대 기준으로 산출물 중심 L6로 재분해함.",
-      "output_type": "approval_doc"
+      "output_type": "approval_doc",
+      "predecessors": [],
+      "successors": [],
+      "entry_condition": ""
     },
     {
       "l6_id": "V2-L6-0428",
@@ -561,7 +702,10 @@
         "회의실 운영"
       ],
       "improvement_note": "realdata.ts 고정 뼈대 기준으로 산출물 중심 L6로 재분해함.",
-      "output_type": "approval_list"
+      "output_type": "approval_list",
+      "predecessors": [],
+      "successors": [],
+      "entry_condition": ""
     },
     {
       "l6_id": "V2-L6-0429",
@@ -581,7 +725,10 @@
         "외부 사무실 운영"
       ],
       "improvement_note": "realdata.ts 고정 뼈대 기준으로 산출물 중심 L6로 재분해함.",
-      "output_type": "settlement_doc"
+      "output_type": "settlement_doc",
+      "predecessors": [],
+      "successors": [],
+      "entry_condition": ""
     },
     {
       "l6_id": "V2-L6-0430",
@@ -601,7 +748,10 @@
         "사택 관리"
       ],
       "improvement_note": "realdata.ts 고정 뼈대 기준으로 산출물 중심 L6로 재분해함.",
-      "output_type": "approval_doc"
+      "output_type": "approval_doc",
+      "predecessors": [],
+      "successors": [],
+      "entry_condition": ""
     },
     {
       "l6_id": "V2-L6-0431",
@@ -621,7 +771,10 @@
         "비품 관리"
       ],
       "improvement_note": "realdata.ts 고정 뼈대 기준으로 산출물 중심 L6로 재분해함.",
-      "output_type": "inspection_report"
+      "output_type": "inspection_report",
+      "predecessors": [],
+      "successors": [],
+      "entry_condition": ""
     },
     {
       "l6_id": "V2-L6-0432",
@@ -641,7 +794,12 @@
         "임직원 사진관리"
       ],
       "improvement_note": "realdata.ts 고정 뼈대 기준으로 산출물 중심 L6로 재분해함.",
-      "output_type": "media_asset"
+      "output_type": "media_asset",
+      "predecessors": [],
+      "successors": [
+        "V2-L6-0433"
+      ],
+      "entry_condition": ""
     },
     {
       "l6_id": "V2-L6-0433",
@@ -661,7 +819,12 @@
         "임직원 사진관리"
       ],
       "improvement_note": "realdata.ts 고정 뼈대 기준으로 산출물 중심 L6로 재분해함.",
-      "output_type": "sync_log"
+      "output_type": "sync_log",
+      "predecessors": [
+        "V2-L6-0432"
+      ],
+      "successors": [],
+      "entry_condition": "선행 L6 완료"
     },
     {
       "l6_id": "V2-L6-0434",
@@ -681,7 +844,10 @@
         "건물 관리 (공조 등)"
       ],
       "improvement_note": "realdata.ts 고정 뼈대 기준으로 산출물 중심 L6로 재분해함.",
-      "output_type": "inspection_report"
+      "output_type": "inspection_report",
+      "predecessors": [],
+      "successors": [],
+      "entry_condition": ""
     },
     {
       "l6_id": "V2-L6-0435",
@@ -701,7 +867,10 @@
         "임원 지원"
       ],
       "improvement_note": "realdata.ts 고정 뼈대 기준으로 산출물 중심 L6로 재분해함.",
-      "output_type": "allocation_table"
+      "output_type": "allocation_table",
+      "predecessors": [],
+      "successors": [],
+      "entry_condition": ""
     },
     {
       "l6_id": "V2-L6-0436",
@@ -721,7 +890,10 @@
         "임직원 출장지원"
       ],
       "improvement_note": "realdata.ts 고정 뼈대 기준으로 산출물 중심 L6로 재분해함.",
-      "output_type": "confirmation_doc"
+      "output_type": "confirmation_doc",
+      "predecessors": [],
+      "successors": [],
+      "entry_condition": ""
     },
     {
       "l6_id": "V2-L6-0437",
@@ -741,7 +913,10 @@
         "법인 차량 관리"
       ],
       "improvement_note": "realdata.ts 고정 뼈대 기준으로 산출물 중심 L6로 재분해함.",
-      "output_type": "dispatch_doc"
+      "output_type": "dispatch_doc",
+      "predecessors": [],
+      "successors": [],
+      "entry_condition": ""
     },
     {
       "l6_id": "V2-L6-0438",
@@ -761,7 +936,10 @@
         "운전기사 관리"
       ],
       "improvement_note": "realdata.ts 고정 뼈대 기준으로 산출물 중심 L6로 재분해함.",
-      "output_type": "schedule_doc"
+      "output_type": "schedule_doc",
+      "predecessors": [],
+      "successors": [],
+      "entry_condition": ""
     },
     {
       "l6_id": "V2-L6-0439",
@@ -781,7 +959,10 @@
         "업무버스 관리"
       ],
       "improvement_note": "realdata.ts 고정 뼈대 기준으로 산출물 중심 L6로 재분해함.",
-      "output_type": "route_plan"
+      "output_type": "route_plan",
+      "predecessors": [],
+      "successors": [],
+      "entry_condition": ""
     },
     {
       "l6_id": "V2-L6-0440",
@@ -801,7 +982,12 @@
         "입점업체 운영"
       ],
       "improvement_note": "realdata.ts 고정 뼈대 기준으로 산출물 중심 L6로 재분해함.",
-      "output_type": "contract_doc"
+      "output_type": "contract_doc",
+      "predecessors": [],
+      "successors": [
+        "V2-L6-0441"
+      ],
+      "entry_condition": ""
     },
     {
       "l6_id": "V2-L6-0441",
@@ -821,7 +1007,12 @@
         "입점업체 운영"
       ],
       "improvement_note": "realdata.ts 고정 뼈대 기준으로 산출물 중심 L6로 재분해함.",
-      "output_type": "settlement_doc"
+      "output_type": "settlement_doc",
+      "predecessors": [
+        "V2-L6-0440"
+      ],
+      "successors": [],
+      "entry_condition": "선행 L6 완료"
     },
     {
       "l6_id": "V2-L6-0442",
@@ -841,7 +1032,12 @@
         "상주협력사 관리"
       ],
       "improvement_note": "realdata.ts 고정 뼈대 기준으로 산출물 중심 L6로 재분해함.",
-      "output_type": "access_log"
+      "output_type": "access_log",
+      "predecessors": [],
+      "successors": [
+        "V2-L6-0443"
+      ],
+      "entry_condition": ""
     },
     {
       "l6_id": "V2-L6-0443",
@@ -861,7 +1057,12 @@
         "상주협력사 관리"
       ],
       "improvement_note": "realdata.ts 고정 뼈대 기준으로 산출물 중심 L6로 재분해함.",
-      "output_type": "training_status"
+      "output_type": "training_status",
+      "predecessors": [
+        "V2-L6-0442"
+      ],
+      "successors": [],
+      "entry_condition": "선행 L6 완료"
     },
     {
       "l6_id": "V2-L6-0444",
@@ -881,7 +1082,12 @@
         "파견자 문의 대응"
       ],
       "improvement_note": "realdata.ts 고정 뼈대 기준으로 산출물 중심 L6로 재분해함.",
-      "output_type": "ticket_log"
+      "output_type": "ticket_log",
+      "predecessors": [],
+      "successors": [
+        "V2-L6-0445"
+      ],
+      "entry_condition": ""
     },
     {
       "l6_id": "V2-L6-0445",
@@ -901,7 +1107,12 @@
         "파견자 문의 대응"
       ],
       "improvement_note": "realdata.ts 고정 뼈대 기준으로 산출물 중심 L6로 재분해함.",
-      "output_type": "notification_mail"
+      "output_type": "notification_mail",
+      "predecessors": [
+        "V2-L6-0444"
+      ],
+      "successors": [],
+      "entry_condition": "선행 L6 완료"
     },
     {
       "l6_id": "V2-L6-0446",
@@ -921,7 +1132,12 @@
         "Change Agent"
       ],
       "improvement_note": "realdata.ts 고정 뼈대 기준 산출물 중심 분해",
-      "output_type": "plan_doc"
+      "output_type": "plan_doc",
+      "predecessors": [],
+      "successors": [
+        "V2-L6-0447"
+      ],
+      "entry_condition": ""
     },
     {
       "l6_id": "V2-L6-0447",
@@ -941,7 +1157,14 @@
         "Change Agent"
       ],
       "improvement_note": "realdata.ts 고정 뼈대 기준 산출물 중심 분해",
-      "output_type": "result_report"
+      "output_type": "result_report",
+      "predecessors": [
+        "V2-L6-0446"
+      ],
+      "successors": [
+        "V2-L6-0448"
+      ],
+      "entry_condition": "선행 L6 완료"
     },
     {
       "l6_id": "V2-L6-0448",
@@ -961,7 +1184,12 @@
         "Change Agent"
       ],
       "improvement_note": "realdata.ts 고정 뼈대 기준 산출물 중심 분해",
-      "output_type": "casebook"
+      "output_type": "casebook",
+      "predecessors": [
+        "V2-L6-0447"
+      ],
+      "successors": [],
+      "entry_condition": "선행 L6 완료"
     },
     {
       "l6_id": "V2-L6-0449",
@@ -981,7 +1209,12 @@
         "SCI 진단"
       ],
       "improvement_note": "realdata.ts 고정 뼈대 기준 산출물 중심 분해",
-      "output_type": "survey_form"
+      "output_type": "survey_form",
+      "predecessors": [],
+      "successors": [
+        "V2-L6-0450"
+      ],
+      "entry_condition": ""
     },
     {
       "l6_id": "V2-L6-0450",
@@ -1001,7 +1234,14 @@
         "SCI 진단"
       ],
       "improvement_note": "realdata.ts 고정 뼈대 기준 산출물 중심 분해",
-      "output_type": "survey_dataset"
+      "output_type": "survey_dataset",
+      "predecessors": [
+        "V2-L6-0449"
+      ],
+      "successors": [
+        "V2-L6-0451"
+      ],
+      "entry_condition": "선행 L6 완료"
     },
     {
       "l6_id": "V2-L6-0451",
@@ -1021,7 +1261,12 @@
         "SCI 진단"
       ],
       "improvement_note": "realdata.ts 고정 뼈대 기준 산출물 중심 분해",
-      "output_type": "analysis_report"
+      "output_type": "analysis_report",
+      "predecessors": [
+        "V2-L6-0450"
+      ],
+      "successors": [],
+      "entry_condition": "선행 L6 완료"
     },
     {
       "l6_id": "V2-L6-0452",
@@ -1041,7 +1286,12 @@
         "My Pulse 서베이"
       ],
       "improvement_note": "realdata.ts 고정 뼈대 기준 산출물 중심 분해",
-      "output_type": "survey_form"
+      "output_type": "survey_form",
+      "predecessors": [],
+      "successors": [
+        "V2-L6-0453"
+      ],
+      "entry_condition": ""
     },
     {
       "l6_id": "V2-L6-0453",
@@ -1061,7 +1311,14 @@
         "My Pulse 서베이"
       ],
       "improvement_note": "realdata.ts 고정 뼈대 기준 산출물 중심 분해",
-      "output_type": "survey_dataset"
+      "output_type": "survey_dataset",
+      "predecessors": [
+        "V2-L6-0452"
+      ],
+      "successors": [
+        "V2-L6-0454"
+      ],
+      "entry_condition": "선행 L6 완료"
     },
     {
       "l6_id": "V2-L6-0454",
@@ -1081,7 +1338,12 @@
         "My Pulse 서베이"
       ],
       "improvement_note": "realdata.ts 고정 뼈대 기준 산출물 중심 분해",
-      "output_type": "analysis_report"
+      "output_type": "analysis_report",
+      "predecessors": [
+        "V2-L6-0453"
+      ],
+      "successors": [],
+      "entry_condition": "선행 L6 완료"
     },
     {
       "l6_id": "V2-L6-0455",
@@ -1101,7 +1363,12 @@
         "정기협의회"
       ],
       "improvement_note": "realdata.ts 고정 뼈대 기준 산출물 중심 분해",
-      "output_type": "agenda_doc"
+      "output_type": "agenda_doc",
+      "predecessors": [],
+      "successors": [
+        "V2-L6-0456"
+      ],
+      "entry_condition": ""
     },
     {
       "l6_id": "V2-L6-0456",
@@ -1121,7 +1388,12 @@
         "정기협의회"
       ],
       "improvement_note": "realdata.ts 고정 뼈대 기준 산출물 중심 분해",
-      "output_type": "minutes_doc"
+      "output_type": "minutes_doc",
+      "predecessors": [
+        "V2-L6-0455"
+      ],
+      "successors": [],
+      "entry_condition": "선행 L6 완료"
     },
     {
       "l6_id": "V2-L6-0457",
@@ -1141,7 +1413,12 @@
         "단체교섭"
       ],
       "improvement_note": "realdata.ts 고정 뼈대 기준 산출물 중심 분해",
-      "output_type": "intake_list"
+      "output_type": "intake_list",
+      "predecessors": [],
+      "successors": [
+        "V2-L6-0458"
+      ],
+      "entry_condition": ""
     },
     {
       "l6_id": "V2-L6-0458",
@@ -1161,7 +1438,12 @@
         "단체교섭"
       ],
       "improvement_note": "realdata.ts 고정 뼈대 기준 산출물 중심 분해",
-      "output_type": "minutes_doc"
+      "output_type": "minutes_doc",
+      "predecessors": [
+        "V2-L6-0457"
+      ],
+      "successors": [],
+      "entry_condition": "선행 L6 완료"
     },
     {
       "l6_id": "V2-L6-0459",
@@ -1181,7 +1463,10 @@
         "단체협약"
       ],
       "improvement_note": "realdata.ts 고정 뼈대 기준 산출물 중심 분해",
-      "output_type": "agreement_doc"
+      "output_type": "agreement_doc",
+      "predecessors": [],
+      "successors": [],
+      "entry_condition": ""
     },
     {
       "l6_id": "V2-L6-0460",
@@ -1201,7 +1486,12 @@
         "직장내괴롭힘"
       ],
       "improvement_note": "realdata.ts 고정 뼈대 기준 산출물 중심 분해",
-      "output_type": "case_intake"
+      "output_type": "case_intake",
+      "predecessors": [],
+      "successors": [
+        "V2-L6-0461"
+      ],
+      "entry_condition": ""
     },
     {
       "l6_id": "V2-L6-0461",
@@ -1221,7 +1511,12 @@
         "직장내괴롭힘"
       ],
       "improvement_note": "realdata.ts 고정 뼈대 기준 산출물 중심 분해",
-      "output_type": "interview_record"
+      "output_type": "interview_record",
+      "predecessors": [
+        "V2-L6-0460"
+      ],
+      "successors": [],
+      "entry_condition": "선행 L6 완료"
     },
     {
       "l6_id": "V2-L6-0462",
@@ -1241,7 +1536,12 @@
         "희망퇴직"
       ],
       "improvement_note": "realdata.ts 고정 뼈대 기준 산출물 중심 분해",
-      "output_type": "criteria_doc"
+      "output_type": "criteria_doc",
+      "predecessors": [],
+      "successors": [
+        "V2-L6-0463"
+      ],
+      "entry_condition": ""
     },
     {
       "l6_id": "V2-L6-0463",
@@ -1261,7 +1561,14 @@
         "희망퇴직"
       ],
       "improvement_note": "realdata.ts 고정 뼈대 기준 산출물 중심 분해",
-      "output_type": "proposal_doc"
+      "output_type": "proposal_doc",
+      "predecessors": [
+        "V2-L6-0462"
+      ],
+      "successors": [
+        "V2-L6-0464"
+      ],
+      "entry_condition": "선행 L6 완료"
     },
     {
       "l6_id": "V2-L6-0464",
@@ -1281,7 +1588,12 @@
         "희망퇴직"
       ],
       "improvement_note": "realdata.ts 고정 뼈대 기준 산출물 중심 분해",
-      "output_type": "settlement_doc"
+      "output_type": "settlement_doc",
+      "predecessors": [
+        "V2-L6-0463"
+      ],
+      "successors": [],
+      "entry_condition": "선행 L6 완료"
     },
     {
       "l6_id": "V2-L6-0465",
@@ -1301,7 +1613,12 @@
         "생일자 기념쿠키 지급"
       ],
       "improvement_note": "realdata.ts 고정 뼈대 기준 산출물 중심 분해",
-      "output_type": "approval_list"
+      "output_type": "approval_list",
+      "predecessors": [],
+      "successors": [
+        "V2-L6-0466"
+      ],
+      "entry_condition": ""
     },
     {
       "l6_id": "V2-L6-0466",
@@ -1321,7 +1638,12 @@
         "생일자 기념쿠키 지급"
       ],
       "improvement_note": "realdata.ts 고정 뼈대 기준 산출물 중심 분해",
-      "output_type": "order_doc"
+      "output_type": "order_doc",
+      "predecessors": [
+        "V2-L6-0465"
+      ],
+      "successors": [],
+      "entry_condition": "선행 L6 완료"
     },
     {
       "l6_id": "V2-L6-0467",
@@ -1341,7 +1663,10 @@
         "면담질문지 준비"
       ],
       "improvement_note": "realdata.ts 고정 뼈대 기준 산출물 중심 분해",
-      "output_type": "questionnaire_doc"
+      "output_type": "questionnaire_doc",
+      "predecessors": [],
+      "successors": [],
+      "entry_condition": ""
     },
     {
       "l6_id": "V2-L6-0468",
@@ -1361,7 +1686,10 @@
         "면담기록/요약"
       ],
       "improvement_note": "realdata.ts 고정 뼈대 기준 산출물 중심 분해",
-      "output_type": "summary_report"
+      "output_type": "summary_report",
+      "predecessors": [],
+      "successors": [],
+      "entry_condition": ""
     },
     {
       "l6_id": "V2-L6-0469",
@@ -1381,7 +1709,10 @@
         "유사사례 및 판례 확인"
       ],
       "improvement_note": "realdata.ts 고정 뼈대 기준 산출물 중심 분해",
-      "output_type": "legal_opinion"
+      "output_type": "legal_opinion",
+      "predecessors": [],
+      "successors": [],
+      "entry_condition": ""
     },
     {
       "l6_id": "V2-L6-0470",
@@ -1401,7 +1732,10 @@
         "징계양정 제안"
       ],
       "improvement_note": "realdata.ts 고정 뼈대 기준 산출물 중심 분해",
-      "output_type": "approval_doc"
+      "output_type": "approval_doc",
+      "predecessors": [],
+      "successors": [],
+      "entry_condition": ""
     },
     {
       "l6_id": "V2-L6-0471",
@@ -1421,7 +1755,12 @@
         "주재원 인사(양성)"
       ],
       "improvement_note": "realdata.ts 고정 뼈대 기반 산출물 중심 분해",
-      "output_type": "approval_list"
+      "output_type": "approval_list",
+      "predecessors": [],
+      "successors": [
+        "V2-L6-0472"
+      ],
+      "entry_condition": ""
     },
     {
       "l6_id": "V2-L6-0472",
@@ -1441,7 +1780,12 @@
         "주재원 인사(양성)"
       ],
       "improvement_note": "realdata.ts 고정 뼈대 기반 산출물 중심 분해",
-      "output_type": "training_status"
+      "output_type": "training_status",
+      "predecessors": [
+        "V2-L6-0471"
+      ],
+      "successors": [],
+      "entry_condition": "선행 L6 완료"
     },
     {
       "l6_id": "V2-L6-0473",
@@ -1461,7 +1805,12 @@
         "주재원 인사(선발/부임)"
       ],
       "improvement_note": "realdata.ts 고정 뼈대 기반 산출물 중심 분해",
-      "output_type": "evaluation_sheet"
+      "output_type": "evaluation_sheet",
+      "predecessors": [],
+      "successors": [
+        "V2-L6-0474"
+      ],
+      "entry_condition": ""
     },
     {
       "l6_id": "V2-L6-0474",
@@ -1481,7 +1830,12 @@
         "주재원 인사(선발/부임)"
       ],
       "improvement_note": "realdata.ts 고정 뼈대 기반 산출물 중심 분해",
-      "output_type": "schedule_doc"
+      "output_type": "schedule_doc",
+      "predecessors": [
+        "V2-L6-0473"
+      ],
+      "successors": [],
+      "entry_condition": "선행 L6 완료"
     },
     {
       "l6_id": "V2-L6-0475",
@@ -1501,7 +1855,12 @@
         "주재원 인사(관리)"
       ],
       "improvement_note": "realdata.ts 고정 뼈대 기반 산출물 중심 분해",
-      "output_type": "operation_ledger"
+      "output_type": "operation_ledger",
+      "predecessors": [],
+      "successors": [
+        "V2-L6-0476"
+      ],
+      "entry_condition": ""
     },
     {
       "l6_id": "V2-L6-0476",
@@ -1521,7 +1880,12 @@
         "주재원 인사(관리)"
       ],
       "improvement_note": "realdata.ts 고정 뼈대 기반 산출물 중심 분해",
-      "output_type": "issue_report"
+      "output_type": "issue_report",
+      "predecessors": [
+        "V2-L6-0475"
+      ],
+      "successors": [],
+      "entry_condition": "선행 L6 완료"
     },
     {
       "l6_id": "V2-L6-0477",
@@ -1541,7 +1905,12 @@
         "주재원 인사(귀임)"
       ],
       "improvement_note": "realdata.ts 고정 뼈대 기반 산출물 중심 분해",
-      "output_type": "plan_doc"
+      "output_type": "plan_doc",
+      "predecessors": [],
+      "successors": [
+        "V2-L6-0478"
+      ],
+      "entry_condition": ""
     },
     {
       "l6_id": "V2-L6-0478",
@@ -1561,7 +1930,12 @@
         "주재원 인사(귀임)"
       ],
       "improvement_note": "realdata.ts 고정 뼈대 기반 산출물 중심 분해",
-      "output_type": "confirmation_doc"
+      "output_type": "confirmation_doc",
+      "predecessors": [
+        "V2-L6-0477"
+      ],
+      "successors": [],
+      "entry_condition": "선행 L6 완료"
     },
     {
       "l6_id": "V2-L6-0479",
@@ -1581,7 +1955,12 @@
         "STEP 운영"
       ],
       "improvement_note": "realdata.ts 고정 뼈대 기반 산출물 중심 분해",
-      "output_type": "approval_list"
+      "output_type": "approval_list",
+      "predecessors": [],
+      "successors": [
+        "V2-L6-0480"
+      ],
+      "entry_condition": ""
     },
     {
       "l6_id": "V2-L6-0480",
@@ -1601,7 +1980,14 @@
         "STEP 운영"
       ],
       "improvement_note": "realdata.ts 고정 뼈대 기반 산출물 중심 분해",
-      "output_type": "assignment_doc"
+      "output_type": "assignment_doc",
+      "predecessors": [
+        "V2-L6-0479"
+      ],
+      "successors": [
+        "V2-L6-0481"
+      ],
+      "entry_condition": "선행 L6 완료"
     },
     {
       "l6_id": "V2-L6-0481",
@@ -1621,7 +2007,12 @@
         "STEP 운영"
       ],
       "improvement_note": "realdata.ts 고정 뼈대 기반 산출물 중심 분해",
-      "output_type": "evaluation_report"
+      "output_type": "evaluation_report",
+      "predecessors": [
+        "V2-L6-0480"
+      ],
+      "successors": [],
+      "entry_condition": "선행 L6 완료"
     },
     {
       "l6_id": "V2-L6-0482",
@@ -1641,7 +2032,12 @@
         "양성 파견 운영(현지/STEP)"
       ],
       "improvement_note": "realdata.ts 고정 뼈대 기반 산출물 중심 분해",
-      "output_type": "plan_doc"
+      "output_type": "plan_doc",
+      "predecessors": [],
+      "successors": [
+        "V2-L6-0483"
+      ],
+      "entry_condition": ""
     },
     {
       "l6_id": "V2-L6-0483",
@@ -1661,7 +2057,12 @@
         "양성 파견 운영(현지/STEP)"
       ],
       "improvement_note": "realdata.ts 고정 뼈대 기반 산출물 중심 분해",
-      "output_type": "evaluation_report"
+      "output_type": "evaluation_report",
+      "predecessors": [
+        "V2-L6-0482"
+      ],
+      "successors": [],
+      "entry_condition": "선행 L6 완료"
     },
     {
       "l6_id": "V2-L6-0484",
@@ -1681,7 +2082,10 @@
         "파견 인력 부임/귀임"
       ],
       "improvement_note": "realdata.ts 고정 뼈대 기반 산출물 중심 분해",
-      "output_type": "schedule_doc"
+      "output_type": "schedule_doc",
+      "predecessors": [],
+      "successors": [],
+      "entry_condition": ""
     },
     {
       "l6_id": "V2-L6-0485",
@@ -1701,7 +2105,12 @@
         "지표 관리"
       ],
       "improvement_note": "realdata.ts 고정 뼈대 기반 산출물 중심 분해",
-      "output_type": "criteria_doc"
+      "output_type": "criteria_doc",
+      "predecessors": [],
+      "successors": [
+        "V2-L6-0486"
+      ],
+      "entry_condition": ""
     },
     {
       "l6_id": "V2-L6-0486",
@@ -1721,7 +2130,12 @@
         "지표 관리"
       ],
       "improvement_note": "realdata.ts 고정 뼈대 기반 산출물 중심 분해",
-      "output_type": "monitoring_report"
+      "output_type": "monitoring_report",
+      "predecessors": [
+        "V2-L6-0485"
+      ],
+      "successors": [],
+      "entry_condition": "선행 L6 완료"
     },
     {
       "l6_id": "V2-L6-0487",
@@ -1741,7 +2155,10 @@
         "조직 관리"
       ],
       "improvement_note": "realdata.ts 고정 뼈대 기반 산출물 중심 분해",
-      "output_type": "org_revision_doc"
+      "output_type": "org_revision_doc",
+      "predecessors": [],
+      "successors": [],
+      "entry_condition": ""
     },
     {
       "l6_id": "V2-L6-0488",
@@ -1761,7 +2178,12 @@
         "VP 승격"
       ],
       "improvement_note": "realdata.ts 고정 뼈대 기반 산출물 중심 분해",
-      "output_type": "review_sheet"
+      "output_type": "review_sheet",
+      "predecessors": [],
+      "successors": [
+        "V2-L6-0489"
+      ],
+      "entry_condition": ""
     },
     {
       "l6_id": "V2-L6-0489",
@@ -1781,7 +2203,12 @@
         "VP 승격"
       ],
       "improvement_note": "realdata.ts 고정 뼈대 기반 산출물 중심 분해",
-      "output_type": "hr_order"
+      "output_type": "hr_order",
+      "predecessors": [
+        "V2-L6-0488"
+      ],
+      "successors": [],
+      "entry_condition": "선행 L6 완료"
     },
     {
       "l6_id": "V2-L6-0490",
@@ -1801,7 +2228,12 @@
         "현채인 평가"
       ],
       "improvement_note": "realdata.ts 고정 뼈대 기반 산출물 중심 분해",
-      "output_type": "approval_list"
+      "output_type": "approval_list",
+      "predecessors": [],
+      "successors": [
+        "V2-L6-0491"
+      ],
+      "entry_condition": ""
     },
     {
       "l6_id": "V2-L6-0491",
@@ -1821,7 +2253,12 @@
         "현채인 평가"
       ],
       "improvement_note": "realdata.ts 고정 뼈대 기반 산출물 중심 분해",
-      "output_type": "analysis_report"
+      "output_type": "analysis_report",
+      "predecessors": [
+        "V2-L6-0490"
+      ],
+      "successors": [],
+      "entry_condition": "선행 L6 완료"
     },
     {
       "l6_id": "V2-L6-0492",
@@ -1841,7 +2278,12 @@
         "평가 운영"
       ],
       "improvement_note": "realdata.ts 고정 뼈대 기반 산출물 중심 분해",
-      "output_type": "criteria_doc"
+      "output_type": "criteria_doc",
+      "predecessors": [],
+      "successors": [
+        "V2-L6-0493"
+      ],
+      "entry_condition": ""
     },
     {
       "l6_id": "V2-L6-0493",
@@ -1861,7 +2303,12 @@
         "평가 운영"
       ],
       "improvement_note": "realdata.ts 고정 뼈대 기반 산출물 중심 분해",
-      "output_type": "notification_doc"
+      "output_type": "notification_doc",
+      "predecessors": [
+        "V2-L6-0492"
+      ],
+      "successors": [],
+      "entry_condition": "선행 L6 완료"
     },
     {
       "l6_id": "V2-L6-0494",
@@ -1881,7 +2328,12 @@
         "승격 운영"
       ],
       "improvement_note": "realdata.ts 고정 뼈대 기반 산출물 중심 분해",
-      "output_type": "criteria_doc"
+      "output_type": "criteria_doc",
+      "predecessors": [],
+      "successors": [
+        "V2-L6-0495"
+      ],
+      "entry_condition": ""
     },
     {
       "l6_id": "V2-L6-0495",
@@ -1901,7 +2353,12 @@
         "승격 운영"
       ],
       "improvement_note": "realdata.ts 고정 뼈대 기반 산출물 중심 분해",
-      "output_type": "notification_doc"
+      "output_type": "notification_doc",
+      "predecessors": [
+        "V2-L6-0494"
+      ],
+      "successors": [],
+      "entry_condition": "선행 L6 완료"
     },
     {
       "l6_id": "V2-L6-0496",
@@ -1921,7 +2378,12 @@
         "시상 운영"
       ],
       "improvement_note": "realdata.ts 고정 뼈대 기반 산출물 중심 분해",
-      "output_type": "criteria_doc"
+      "output_type": "criteria_doc",
+      "predecessors": [],
+      "successors": [
+        "V2-L6-0497"
+      ],
+      "entry_condition": ""
     },
     {
       "l6_id": "V2-L6-0497",
@@ -1941,7 +2403,12 @@
         "시상 운영"
       ],
       "improvement_note": "realdata.ts 고정 뼈대 기반 산출물 중심 분해",
-      "output_type": "notification_doc"
+      "output_type": "notification_doc",
+      "predecessors": [
+        "V2-L6-0496"
+      ],
+      "successors": [],
+      "entry_condition": "선행 L6 완료"
     },
     {
       "l6_id": "V2-L6-0498",
@@ -1961,7 +2428,12 @@
         "징계 관리"
       ],
       "improvement_note": "realdata.ts 고정 뼈대 기반 산출물 중심 분해",
-      "output_type": "criteria_doc"
+      "output_type": "criteria_doc",
+      "predecessors": [],
+      "successors": [
+        "V2-L6-0499"
+      ],
+      "entry_condition": ""
     },
     {
       "l6_id": "V2-L6-0499",
@@ -1981,7 +2453,12 @@
         "징계 관리"
       ],
       "improvement_note": "realdata.ts 고정 뼈대 기반 산출물 중심 분해",
-      "output_type": "notification_doc"
+      "output_type": "notification_doc",
+      "predecessors": [
+        "V2-L6-0498"
+      ],
+      "successors": [],
+      "entry_condition": "선행 L6 완료"
     },
     {
       "l6_id": "V2-L6-0500",
@@ -2001,7 +2478,12 @@
         "인센티브 지급조직 정비"
       ],
       "improvement_note": "realdata.ts 고정 뼈대 기반 산출물 중심 분해",
-      "output_type": "design_doc"
+      "output_type": "design_doc",
+      "predecessors": [],
+      "successors": [
+        "V2-L6-0501"
+      ],
+      "entry_condition": ""
     },
     {
       "l6_id": "V2-L6-0501",
@@ -2021,7 +2503,12 @@
         "인센티브 지급조직 정비"
       ],
       "improvement_note": "realdata.ts 고정 뼈대 기반 산출물 중심 분해",
-      "output_type": "sync_log"
+      "output_type": "sync_log",
+      "predecessors": [
+        "V2-L6-0500"
+      ],
+      "successors": [],
+      "entry_condition": "선행 L6 완료"
     },
     {
       "l6_id": "V2-L6-0502",
@@ -2041,7 +2528,12 @@
         "재입사 기준 관리"
       ],
       "improvement_note": "realdata.ts 고정 뼈대 기반 산출물 중심 분해",
-      "output_type": "criteria_doc"
+      "output_type": "criteria_doc",
+      "predecessors": [],
+      "successors": [
+        "V2-L6-0503"
+      ],
+      "entry_condition": ""
     },
     {
       "l6_id": "V2-L6-0503",
@@ -2061,7 +2553,12 @@
         "재입사 기준 관리"
       ],
       "improvement_note": "realdata.ts 고정 뼈대 기반 산출물 중심 분해",
-      "output_type": "notification_doc"
+      "output_type": "notification_doc",
+      "predecessors": [
+        "V2-L6-0502"
+      ],
+      "successors": [],
+      "entry_condition": "선행 L6 완료"
     },
     {
       "l6_id": "V2-L6-0504",
@@ -2081,7 +2578,12 @@
         "현지 한국인 채용 관리"
       ],
       "improvement_note": "realdata.ts 고정 뼈대 기반 산출물 중심 분해",
-      "output_type": "request_doc"
+      "output_type": "request_doc",
+      "predecessors": [],
+      "successors": [
+        "V2-L6-0505"
+      ],
+      "entry_condition": ""
     },
     {
       "l6_id": "V2-L6-0505",
@@ -2101,7 +2603,12 @@
         "현지 한국인 채용 관리"
       ],
       "improvement_note": "realdata.ts 고정 뼈대 기반 산출물 중심 분해",
-      "output_type": "result_report"
+      "output_type": "result_report",
+      "predecessors": [
+        "V2-L6-0504"
+      ],
+      "successors": [],
+      "entry_condition": "선행 L6 완료"
     },
     {
       "l6_id": "V2-L6-0506",
@@ -2121,7 +2628,12 @@
         "글로벌 리더 양성 교육"
       ],
       "improvement_note": "realdata.ts 고정 뼈대 기반 산출물 중심 분해",
-      "output_type": "plan_doc"
+      "output_type": "plan_doc",
+      "predecessors": [],
+      "successors": [
+        "V2-L6-0507"
+      ],
+      "entry_condition": ""
     },
     {
       "l6_id": "V2-L6-0507",
@@ -2141,7 +2653,12 @@
         "글로벌 리더 양성 교육"
       ],
       "improvement_note": "realdata.ts 고정 뼈대 기반 산출물 중심 분해",
-      "output_type": "training_status"
+      "output_type": "training_status",
+      "predecessors": [
+        "V2-L6-0506"
+      ],
+      "successors": [],
+      "entry_condition": "선행 L6 완료"
     },
     {
       "l6_id": "V2-L6-0508",
@@ -2161,7 +2678,12 @@
         "거점장(법인장) 교육"
       ],
       "improvement_note": "realdata.ts 고정 뼈대 기반 산출물 중심 분해",
-      "output_type": "curriculum_doc"
+      "output_type": "curriculum_doc",
+      "predecessors": [],
+      "successors": [
+        "V2-L6-0509"
+      ],
+      "entry_condition": ""
     },
     {
       "l6_id": "V2-L6-0509",
@@ -2181,7 +2703,12 @@
         "거점장(법인장) 교육"
       ],
       "improvement_note": "realdata.ts 고정 뼈대 기반 산출물 중심 분해",
-      "output_type": "analysis_report"
+      "output_type": "analysis_report",
+      "predecessors": [
+        "V2-L6-0508"
+      ],
+      "successors": [],
+      "entry_condition": "선행 L6 완료"
     },
     {
       "l6_id": "V2-L6-0510",
@@ -2201,7 +2728,12 @@
         "주재원 교육"
       ],
       "improvement_note": "realdata.ts 고정 뼈대 기반 산출물 중심 분해",
-      "output_type": "plan_doc"
+      "output_type": "plan_doc",
+      "predecessors": [],
+      "successors": [
+        "V2-L6-0511"
+      ],
+      "entry_condition": ""
     },
     {
       "l6_id": "V2-L6-0511",
@@ -2221,7 +2753,12 @@
         "주재원 교육"
       ],
       "improvement_note": "realdata.ts 고정 뼈대 기반 산출물 중심 분해",
-      "output_type": "evaluation_report"
+      "output_type": "evaluation_report",
+      "predecessors": [
+        "V2-L6-0510"
+      ],
+      "successors": [],
+      "entry_condition": "선행 L6 완료"
     },
     {
       "l6_id": "V2-L6-0512",
@@ -2241,7 +2778,12 @@
         "컨설팅, 진단"
       ],
       "improvement_note": "realdata.ts 고정 뼈대 기반 산출물 중심 분해",
-      "output_type": "plan_doc"
+      "output_type": "plan_doc",
+      "predecessors": [],
+      "successors": [
+        "V2-L6-0513"
+      ],
+      "entry_condition": ""
     },
     {
       "l6_id": "V2-L6-0513",
@@ -2261,7 +2803,12 @@
         "컨설팅, 진단"
       ],
       "improvement_note": "realdata.ts 고정 뼈대 기반 산출물 중심 분해",
-      "output_type": "analysis_report"
+      "output_type": "analysis_report",
+      "predecessors": [
+        "V2-L6-0512"
+      ],
+      "successors": [],
+      "entry_condition": "선행 L6 완료"
     },
     {
       "l6_id": "V2-L6-0514",
@@ -2281,7 +2828,12 @@
         "사건사고 관리"
       ],
       "improvement_note": "realdata.ts 고정 뼈대 기반 산출물 중심 분해",
-      "output_type": "case_intake"
+      "output_type": "case_intake",
+      "predecessors": [],
+      "successors": [
+        "V2-L6-0515"
+      ],
+      "entry_condition": ""
     },
     {
       "l6_id": "V2-L6-0515",
@@ -2301,7 +2853,12 @@
         "사건사고 관리"
       ],
       "improvement_note": "realdata.ts 고정 뼈대 기반 산출물 중심 분해",
-      "output_type": "result_report"
+      "output_type": "result_report",
+      "predecessors": [
+        "V2-L6-0514"
+      ],
+      "successors": [],
+      "entry_condition": "선행 L6 완료"
     },
     {
       "l6_id": "V2-L6-0516",
@@ -2321,7 +2878,10 @@
         "(실사) 실사문서 분류"
       ],
       "improvement_note": "realdata.ts 고정 뼈대 기반 산출물 중심 분해",
-      "output_type": "classification_ledger"
+      "output_type": "classification_ledger",
+      "predecessors": [],
+      "successors": [],
+      "entry_condition": ""
     },
     {
       "l6_id": "V2-L6-0517",
@@ -2341,7 +2901,10 @@
         "(실사) 실사문서 독해"
       ],
       "improvement_note": "realdata.ts 고정 뼈대 기반 산출물 중심 분해",
-      "output_type": "review_note"
+      "output_type": "review_note",
+      "predecessors": [],
+      "successors": [],
+      "entry_condition": ""
     },
     {
       "l6_id": "V2-L6-0518",
@@ -2361,7 +2924,10 @@
         "(실사) 실사결과 분석"
       ],
       "improvement_note": "realdata.ts 고정 뼈대 기반 산출물 중심 분해",
-      "output_type": "analysis_report"
+      "output_type": "analysis_report",
+      "predecessors": [],
+      "successors": [],
+      "entry_condition": ""
     },
     {
       "l6_id": "V2-L6-0519",
@@ -2381,7 +2947,10 @@
         "(실사) 시사점 도출 및 보고"
       ],
       "improvement_note": "realdata.ts 고정 뼈대 기반 산출물 중심 분해",
-      "output_type": "insight_report"
+      "output_type": "insight_report",
+      "predecessors": [],
+      "successors": [],
+      "entry_condition": ""
     },
     {
       "l6_id": "V2-L6-0520",
@@ -2401,7 +2970,10 @@
         "(PMI) 계획 수립"
       ],
       "improvement_note": "realdata.ts 고정 뼈대 기반 산출물 중심 분해",
-      "output_type": "integration_plan"
+      "output_type": "integration_plan",
+      "predecessors": [],
+      "successors": [],
+      "entry_condition": ""
     },
     {
       "l6_id": "V2-L6-0521",
@@ -2421,7 +2993,10 @@
         "(PMI) Best Practice 분석"
       ],
       "improvement_note": "realdata.ts 고정 뼈대 기반 산출물 중심 분해",
-      "output_type": "benchmark_report"
+      "output_type": "benchmark_report",
+      "predecessors": [],
+      "successors": [],
+      "entry_condition": ""
     },
     {
       "l6_id": "V2-L6-0522",
@@ -2441,7 +3016,10 @@
         "(자회사 운영) 운영 유형 결정"
       ],
       "improvement_note": "realdata.ts 고정 뼈대 기반 산출물 중심 분해",
-      "output_type": "decision_doc"
+      "output_type": "decision_doc",
+      "predecessors": [],
+      "successors": [],
+      "entry_condition": ""
     },
     {
       "l6_id": "V2-L6-0523",
@@ -2461,7 +3039,10 @@
         "(자회사 운영) 운영 방식 개선"
       ],
       "improvement_note": "realdata.ts 고정 뼈대 기반 산출물 중심 분해",
-      "output_type": "improvement_plan"
+      "output_type": "improvement_plan",
+      "predecessors": [],
+      "successors": [],
+      "entry_condition": ""
     },
     {
       "l6_id": "V2-L6-0524",
@@ -2481,7 +3062,12 @@
         "채용 계획 수립(경영계획)"
       ],
       "improvement_note": "realdata.ts 뼈대 유지 + ATS 앵커 기반 산출물 분해",
-      "output_type": "planning_sheet"
+      "output_type": "planning_sheet",
+      "predecessors": [],
+      "successors": [
+        "V2-L6-0525"
+      ],
+      "entry_condition": ""
     },
     {
       "l6_id": "V2-L6-0525",
@@ -2501,7 +3087,12 @@
         "채용 계획 수립(경영계획)"
       ],
       "improvement_note": "realdata.ts 뼈대 유지 + ATS 앵커 기반 산출물 분해",
-      "output_type": "approval_doc"
+      "output_type": "approval_doc",
+      "predecessors": [
+        "V2-L6-0524"
+      ],
+      "successors": [],
+      "entry_condition": "선행 L6 완료"
     },
     {
       "l6_id": "V2-L6-0526",
@@ -2521,7 +3112,10 @@
         "직무기술서 작성"
       ],
       "improvement_note": "realdata.ts 뼈대 유지 + ATS 앵커 기반 산출물 분해",
-      "output_type": "jd_final"
+      "output_type": "jd_final",
+      "predecessors": [],
+      "successors": [],
+      "entry_condition": ""
     },
     {
       "l6_id": "V2-L6-0527",
@@ -2541,7 +3135,12 @@
         "인재 소싱 채널 선정 및 액팅"
       ],
       "improvement_note": "realdata.ts 뼈대 유지 + ATS 앵커 기반 산출물 분해",
-      "output_type": "strategy_doc"
+      "output_type": "strategy_doc",
+      "predecessors": [],
+      "successors": [
+        "V2-L6-0528"
+      ],
+      "entry_condition": ""
     },
     {
       "l6_id": "V2-L6-0528",
@@ -2561,7 +3160,12 @@
         "인재 소싱 채널 선정 및 액팅"
       ],
       "improvement_note": "realdata.ts 뼈대 유지 + ATS 앵커 기반 산출물 분해",
-      "output_type": "candidate_list"
+      "output_type": "candidate_list",
+      "predecessors": [
+        "V2-L6-0527"
+      ],
+      "successors": [],
+      "entry_condition": "선행 L6 완료"
     },
     {
       "l6_id": "V2-L6-0529",
@@ -2581,7 +3185,12 @@
         "서류심사"
       ],
       "improvement_note": "realdata.ts 뼈대 유지 + ATS 앵커 기반 산출물 분해",
-      "output_type": "criteria_doc"
+      "output_type": "criteria_doc",
+      "predecessors": [],
+      "successors": [
+        "V2-L6-0530"
+      ],
+      "entry_condition": ""
     },
     {
       "l6_id": "V2-L6-0530",
@@ -2601,7 +3210,12 @@
         "서류심사"
       ],
       "improvement_note": "realdata.ts 뼈대 유지 + ATS 앵커 기반 산출물 분해",
-      "output_type": "evaluation_sheet"
+      "output_type": "evaluation_sheet",
+      "predecessors": [
+        "V2-L6-0529"
+      ],
+      "successors": [],
+      "entry_condition": "선행 L6 완료"
     },
     {
       "l6_id": "V2-L6-0531",
@@ -2621,7 +3235,10 @@
         "자격 검증(GSAT, 코딩 테스트 등)"
       ],
       "improvement_note": "realdata.ts 뼈대 유지 + ATS 앵커 기반 산출물 분해",
-      "output_type": "score_report"
+      "output_type": "score_report",
+      "predecessors": [],
+      "successors": [],
+      "entry_condition": ""
     },
     {
       "l6_id": "V2-L6-0532",
@@ -2641,7 +3258,12 @@
         "면접"
       ],
       "improvement_note": "realdata.ts 뼈대 유지 + ATS 앵커 기반 산출물 분해",
-      "output_type": "schedule_doc"
+      "output_type": "schedule_doc",
+      "predecessors": [],
+      "successors": [
+        "V2-L6-0533"
+      ],
+      "entry_condition": ""
     },
     {
       "l6_id": "V2-L6-0533",
@@ -2661,7 +3283,12 @@
         "면접"
       ],
       "improvement_note": "realdata.ts 뼈대 유지 + ATS 앵커 기반 산출물 분해",
-      "output_type": "evaluation_bundle"
+      "output_type": "evaluation_bundle",
+      "predecessors": [
+        "V2-L6-0532"
+      ],
+      "successors": [],
+      "entry_condition": "선행 L6 완료"
     },
     {
       "l6_id": "V2-L6-0534",
@@ -2681,7 +3308,12 @@
         "채용 및 처우 승인"
       ],
       "improvement_note": "realdata.ts 뼈대 유지 + ATS 앵커 기반 산출물 분해",
-      "output_type": "approval_doc"
+      "output_type": "approval_doc",
+      "predecessors": [],
+      "successors": [
+        "V2-L6-0535"
+      ],
+      "entry_condition": ""
     },
     {
       "l6_id": "V2-L6-0535",
@@ -2701,7 +3333,12 @@
         "채용 및 처우 승인"
       ],
       "improvement_note": "realdata.ts 뼈대 유지 + ATS 앵커 기반 산출물 분해",
-      "output_type": "offer_log"
+      "output_type": "offer_log",
+      "predecessors": [
+        "V2-L6-0534"
+      ],
+      "successors": [],
+      "entry_condition": "선행 L6 완료"
     },
     {
       "l6_id": "V2-L6-0536",
@@ -2721,7 +3358,10 @@
         "선확보 인력 관리"
       ],
       "improvement_note": "realdata.ts 뼈대 유지 + ATS 앵커 기반 산출물 분해",
-      "output_type": "ledger_record"
+      "output_type": "ledger_record",
+      "predecessors": [],
+      "successors": [],
+      "entry_condition": ""
     },
     {
       "l6_id": "V2-L6-0537",
@@ -2741,7 +3381,12 @@
         "입사 및 온보딩"
       ],
       "improvement_note": "realdata.ts 뼈대 유지 + ATS 앵커 기반 산출물 분해",
-      "output_type": "training_status"
+      "output_type": "training_status",
+      "predecessors": [],
+      "successors": [
+        "V2-L6-0538"
+      ],
+      "entry_condition": ""
     },
     {
       "l6_id": "V2-L6-0538",
@@ -2761,7 +3406,14 @@
         "입사 및 온보딩"
       ],
       "improvement_note": "realdata.ts 뼈대 유지 + ATS 앵커 기반 산출물 분해",
-      "output_type": "sync_log"
+      "output_type": "sync_log",
+      "predecessors": [
+        "V2-L6-0537"
+      ],
+      "successors": [
+        "V2-L6-0539"
+      ],
+      "entry_condition": "선행 L6 완료"
     },
     {
       "l6_id": "V2-L6-0539",
@@ -2781,7 +3433,12 @@
         "입사 및 온보딩"
       ],
       "improvement_note": "realdata.ts 뼈대 유지 + ATS 앵커 기반 산출물 분해",
-      "output_type": "training_status"
+      "output_type": "training_status",
+      "predecessors": [
+        "V2-L6-0538"
+      ],
+      "successors": [],
+      "entry_condition": "선행 L6 완료"
     },
     {
       "l6_id": "V2-L6-0540",
@@ -2801,7 +3458,12 @@
         "정기급여"
       ],
       "improvement_note": "realdata.ts 고정 뼈대 기반 신규 산출물 분해",
-      "output_type": "payroll_voucher"
+      "output_type": "payroll_voucher",
+      "predecessors": [],
+      "successors": [
+        "V2-L6-0541"
+      ],
+      "entry_condition": ""
     },
     {
       "l6_id": "V2-L6-0541",
@@ -2821,7 +3483,14 @@
         "정기급여"
       ],
       "improvement_note": "realdata.ts 고정 뼈대 기반 신규 산출물 분해",
-      "output_type": "bank_file"
+      "output_type": "bank_file",
+      "predecessors": [
+        "V2-L6-0540"
+      ],
+      "successors": [
+        "V2-L6-0542"
+      ],
+      "entry_condition": "선행 L6 완료"
     },
     {
       "l6_id": "V2-L6-0542",
@@ -2841,7 +3510,12 @@
         "정기급여"
       ],
       "improvement_note": "realdata.ts 고정 뼈대 기반 신규 산출물 분해",
-      "output_type": "payslip"
+      "output_type": "payslip",
+      "predecessors": [
+        "V2-L6-0541"
+      ],
+      "successors": [],
+      "entry_condition": "선행 L6 완료"
     },
     {
       "l6_id": "V2-L6-0543",
@@ -2861,7 +3535,12 @@
         "인센티브"
       ],
       "improvement_note": "realdata.ts 고정 뼈대 기반 신규 산출물 분해",
-      "output_type": "approval_list"
+      "output_type": "approval_list",
+      "predecessors": [],
+      "successors": [
+        "V2-L6-0544"
+      ],
+      "entry_condition": ""
     },
     {
       "l6_id": "V2-L6-0544",
@@ -2881,7 +3560,12 @@
         "인센티브"
       ],
       "improvement_note": "realdata.ts 고정 뼈대 기반 신규 산출물 분해",
-      "output_type": "payroll_voucher"
+      "output_type": "payroll_voucher",
+      "predecessors": [
+        "V2-L6-0543"
+      ],
+      "successors": [],
+      "entry_condition": "선행 L6 완료"
     },
     {
       "l6_id": "V2-L6-0545",
@@ -2901,7 +3585,10 @@
         "연차수당"
       ],
       "improvement_note": "realdata.ts 고정 뼈대 기반 신규 산출물 분해",
-      "output_type": "calculation_sheet"
+      "output_type": "calculation_sheet",
+      "predecessors": [],
+      "successors": [],
+      "entry_condition": ""
     },
     {
       "l6_id": "V2-L6-0546",
@@ -2921,7 +3608,10 @@
         "퇴직자 미지급액 지급"
       ],
       "improvement_note": "realdata.ts 고정 뼈대 기반 신규 산출물 분해",
-      "output_type": "settlement_doc"
+      "output_type": "settlement_doc",
+      "predecessors": [],
+      "successors": [],
+      "entry_condition": ""
     },
     {
       "l6_id": "V2-L6-0547",
@@ -2941,7 +3631,10 @@
         "퇴직금 지급"
       ],
       "improvement_note": "realdata.ts 고정 뼈대 기반 신규 산출물 분해",
-      "output_type": "calculation_sheet"
+      "output_type": "calculation_sheet",
+      "predecessors": [],
+      "successors": [],
+      "entry_condition": ""
     },
     {
       "l6_id": "V2-L6-0548",
@@ -2961,7 +3654,10 @@
         "퇴직연금"
       ],
       "improvement_note": "realdata.ts 고정 뼈대 기반 신규 산출물 분해",
-      "output_type": "transfer_file"
+      "output_type": "transfer_file",
+      "predecessors": [],
+      "successors": [],
+      "entry_condition": ""
     },
     {
       "l6_id": "V2-L6-0549",
@@ -2981,7 +3677,10 @@
         "연말정산"
       ],
       "improvement_note": "realdata.ts 고정 뼈대 기반 신규 산출물 분해",
-      "output_type": "tax_file"
+      "output_type": "tax_file",
+      "predecessors": [],
+      "successors": [],
+      "entry_condition": ""
     },
     {
       "l6_id": "V2-L6-0550",
@@ -3001,7 +3700,10 @@
         "경영계획"
       ],
       "improvement_note": "realdata.ts 고정 뼈대 기반 신규 산출물 분해",
-      "output_type": "plan_doc"
+      "output_type": "plan_doc",
+      "predecessors": [],
+      "successors": [],
+      "entry_condition": ""
     },
     {
       "l6_id": "V2-L6-0551",
@@ -3021,7 +3723,10 @@
         "임금조정"
       ],
       "improvement_note": "realdata.ts 고정 뼈대 기반 신규 산출물 분해",
-      "output_type": "simulation_report"
+      "output_type": "simulation_report",
+      "predecessors": [],
+      "successors": [],
+      "entry_condition": ""
     },
     {
       "l6_id": "V2-L6-0552",
@@ -3041,7 +3746,10 @@
         "국민연금 정기결정"
       ],
       "improvement_note": "realdata.ts 고정 뼈대 기반 신규 산출물 분해",
-      "output_type": "edi_report"
+      "output_type": "edi_report",
+      "predecessors": [],
+      "successors": [],
+      "entry_condition": ""
     },
     {
       "l6_id": "V2-L6-0553",
@@ -3061,7 +3769,10 @@
         "건강보험/노인장기요양보험 정산"
       ],
       "improvement_note": "realdata.ts 고정 뼈대 기반 신규 산출물 분해",
-      "output_type": "settlement_doc"
+      "output_type": "settlement_doc",
+      "predecessors": [],
+      "successors": [],
+      "entry_condition": ""
     },
     {
       "l6_id": "V2-L6-0554",
@@ -3081,7 +3792,10 @@
         "고용보험 자격관리"
       ],
       "improvement_note": "realdata.ts 고정 뼈대 기반 신규 산출물 분해",
-      "output_type": "edi_log"
+      "output_type": "edi_log",
+      "predecessors": [],
+      "successors": [],
+      "entry_condition": ""
     },
     {
       "l6_id": "V2-L6-0555",
@@ -3101,7 +3815,10 @@
         "산재보험 신고"
       ],
       "improvement_note": "realdata.ts 고정 뼈대 기반 신규 산출물 분해",
-      "output_type": "edi_report"
+      "output_type": "edi_report",
+      "predecessors": [],
+      "successors": [],
+      "entry_condition": ""
     },
     {
       "l6_id": "V2-L6-0556",
@@ -3121,7 +3838,10 @@
         "의료비"
       ],
       "improvement_note": "realdata.ts 고정 뼈대 기반 신규 산출물 분해",
-      "output_type": "settlement_doc"
+      "output_type": "settlement_doc",
+      "predecessors": [],
+      "successors": [],
+      "entry_condition": ""
     },
     {
       "l6_id": "V2-L6-0557",
@@ -3141,7 +3861,10 @@
         "학자금"
       ],
       "improvement_note": "realdata.ts 고정 뼈대 기반 신규 산출물 분해",
-      "output_type": "payment_log"
+      "output_type": "payment_log",
+      "predecessors": [],
+      "successors": [],
+      "entry_condition": ""
     },
     {
       "l6_id": "V2-L6-0558",
@@ -3161,7 +3884,10 @@
         "대부금"
       ],
       "improvement_note": "realdata.ts 고정 뼈대 기반 신규 산출물 분해",
-      "output_type": "approval_doc"
+      "output_type": "approval_doc",
+      "predecessors": [],
+      "successors": [],
+      "entry_condition": ""
     },
     {
       "l6_id": "V2-L6-0559",
@@ -3181,7 +3907,10 @@
         "임직원검진"
       ],
       "improvement_note": "realdata.ts 고정 뼈대 기반 신규 산출물 분해",
-      "output_type": "health_report"
+      "output_type": "health_report",
+      "predecessors": [],
+      "successors": [],
+      "entry_condition": ""
     },
     {
       "l6_id": "V2-L6-0560",
@@ -3201,7 +3930,10 @@
         "근무형태 생성"
       ],
       "improvement_note": "realdata.ts 고정 뼈대 기반 신규 산출물 분해",
-      "output_type": "master_data"
+      "output_type": "master_data",
+      "predecessors": [],
+      "successors": [],
+      "entry_condition": ""
     },
     {
       "l6_id": "V2-L6-0561",
@@ -3221,7 +3953,10 @@
         "Office근무시간오류관리"
       ],
       "improvement_note": "realdata.ts 고정 뼈대 기반 신규 산출물 분해",
-      "output_type": "adjustment_sheet"
+      "output_type": "adjustment_sheet",
+      "predecessors": [],
+      "successors": [],
+      "entry_condition": ""
     },
     {
       "l6_id": "V2-L6-0562",
@@ -3241,7 +3976,10 @@
         "초과근무시간반영"
       ],
       "improvement_note": "realdata.ts 고정 뼈대 기반 신규 산출물 분해",
-      "output_type": "approval_log"
+      "output_type": "approval_log",
+      "predecessors": [],
+      "successors": [],
+      "entry_condition": ""
     },
     {
       "l6_id": "V2-L6-0563",
@@ -3261,7 +3999,10 @@
         "일반근태"
       ],
       "improvement_note": "realdata.ts 고정 뼈대 기반 신규 산출물 분해",
-      "output_type": "closing_sheet"
+      "output_type": "closing_sheet",
+      "predecessors": [],
+      "successors": [],
+      "entry_condition": ""
     },
     {
       "l6_id": "V2-L6-0564",
@@ -3281,7 +4022,10 @@
         "임직원휴가생성"
       ],
       "improvement_note": "realdata.ts 고정 뼈대 기반 신규 산출물 분해",
-      "output_type": "balance_log"
+      "output_type": "balance_log",
+      "predecessors": [],
+      "successors": [],
+      "entry_condition": ""
     },
     {
       "l6_id": "V2-L6-0565",
@@ -3301,7 +4045,12 @@
       "legacy_l6_match": [
         "임원 석세션 플랜"
       ],
-      "improvement_note": "realdata.ts 고정 뼈대 기반 산출물 중심 분해"
+      "improvement_note": "realdata.ts 고정 뼈대 기반 산출물 중심 분해",
+      "predecessors": [],
+      "successors": [
+        "V2-L6-0566"
+      ],
+      "entry_condition": ""
     },
     {
       "l6_id": "V2-L6-0566",
@@ -3321,7 +4070,12 @@
       "legacy_l6_match": [
         "임원 석세션 플랜"
       ],
-      "improvement_note": "realdata.ts 고정 뼈대 기반 산출물 중심 분해"
+      "improvement_note": "realdata.ts 고정 뼈대 기반 산출물 중심 분해",
+      "predecessors": [
+        "V2-L6-0565"
+      ],
+      "successors": [],
+      "entry_condition": "선행 L6 완료"
     },
     {
       "l6_id": "V2-L6-0567",
@@ -3341,7 +4095,10 @@
       "legacy_l6_match": [
         "임원 피드백 면담"
       ],
-      "improvement_note": "realdata.ts 고정 뼈대 기반 산출물 중심 분해"
+      "improvement_note": "realdata.ts 고정 뼈대 기반 산출물 중심 분해",
+      "predecessors": [],
+      "successors": [],
+      "entry_condition": ""
     },
     {
       "l6_id": "V2-L6-0568",
@@ -3361,7 +4118,10 @@
       "legacy_l6_match": [
         "핵심리더 선발"
       ],
-      "improvement_note": "realdata.ts 고정 뼈대 기반 산출물 중심 분해"
+      "improvement_note": "realdata.ts 고정 뼈대 기반 산출물 중심 분해",
+      "predecessors": [],
+      "successors": [],
+      "entry_condition": ""
     },
     {
       "l6_id": "V2-L6-0569",
@@ -3381,7 +4141,12 @@
       "legacy_l6_match": [
         "임원 근원 및 인물평"
       ],
-      "improvement_note": "realdata.ts 고정 뼈대 기반 산출물 중심 분해"
+      "improvement_note": "realdata.ts 고정 뼈대 기반 산출물 중심 분해",
+      "predecessors": [],
+      "successors": [
+        "V2-L6-0570"
+      ],
+      "entry_condition": ""
     },
     {
       "l6_id": "V2-L6-0570",
@@ -3401,7 +4166,12 @@
       "legacy_l6_match": [
         "임원 근원 및 인물평"
       ],
-      "improvement_note": "realdata.ts 고정 뼈대 기반 산출물 중심 분해"
+      "improvement_note": "realdata.ts 고정 뼈대 기반 산출물 중심 분해",
+      "predecessors": [
+        "V2-L6-0569"
+      ],
+      "successors": [],
+      "entry_condition": "선행 L6 완료"
     },
     {
       "l6_id": "V2-L6-0571",
@@ -3421,7 +4191,10 @@
       "legacy_l6_match": [
         "조직도 작성"
       ],
-      "improvement_note": "realdata.ts 고정 뼈대 기반 산출물 중심 분해"
+      "improvement_note": "realdata.ts 고정 뼈대 기반 산출물 중심 분해",
+      "predecessors": [],
+      "successors": [],
+      "entry_condition": ""
     },
     {
       "l6_id": "V2-L6-0572",
@@ -3441,7 +4214,12 @@
       "legacy_l6_match": [
         "임원 계약 및 퇴임"
       ],
-      "improvement_note": "realdata.ts 고정 뼈대 기반 산출물 중심 분해"
+      "improvement_note": "realdata.ts 고정 뼈대 기반 산출물 중심 분해",
+      "predecessors": [],
+      "successors": [
+        "V2-L6-0573"
+      ],
+      "entry_condition": ""
     },
     {
       "l6_id": "V2-L6-0573",
@@ -3461,7 +4239,12 @@
       "legacy_l6_match": [
         "임원 계약 및 퇴임"
       ],
-      "improvement_note": "realdata.ts 고정 뼈대 기반 산출물 중심 분해"
+      "improvement_note": "realdata.ts 고정 뼈대 기반 산출물 중심 분해",
+      "predecessors": [
+        "V2-L6-0572"
+      ],
+      "successors": [],
+      "entry_condition": "선행 L6 완료"
     },
     {
       "l6_id": "V2-L6-0574",
@@ -3481,7 +4264,10 @@
       "legacy_l6_match": [
         "퇴임임원 후속조치"
       ],
-      "improvement_note": "realdata.ts 고정 뼈대 기반 산출물 중심 분해"
+      "improvement_note": "realdata.ts 고정 뼈대 기반 산출물 중심 분해",
+      "predecessors": [],
+      "successors": [],
+      "entry_condition": ""
     },
     {
       "l6_id": "V2-L6-0575",
@@ -3501,7 +4287,12 @@
       "legacy_l6_match": [
         "정기 조직개편"
       ],
-      "improvement_note": "realdata.ts 고정 뼈대 기반 산출물 중심 분해"
+      "improvement_note": "realdata.ts 고정 뼈대 기반 산출물 중심 분해",
+      "predecessors": [],
+      "successors": [
+        "V2-L6-0576"
+      ],
+      "entry_condition": ""
     },
     {
       "l6_id": "V2-L6-0576",
@@ -3521,7 +4312,12 @@
       "legacy_l6_match": [
         "정기 조직개편"
       ],
-      "improvement_note": "realdata.ts 고정 뼈대 기반 산출물 중심 분해"
+      "improvement_note": "realdata.ts 고정 뼈대 기반 산출물 중심 분해",
+      "predecessors": [
+        "V2-L6-0575"
+      ],
+      "successors": [],
+      "entry_condition": "선행 L6 완료"
     },
     {
       "l6_id": "V2-L6-0577",
@@ -3541,7 +4337,10 @@
       "legacy_l6_match": [
         "수시 조직개편"
       ],
-      "improvement_note": "realdata.ts 고정 뼈대 기반 산출물 중심 분해"
+      "improvement_note": "realdata.ts 고정 뼈대 기반 산출물 중심 분해",
+      "predecessors": [],
+      "successors": [],
+      "entry_condition": ""
     },
     {
       "l6_id": "V2-L6-0578",
@@ -3561,7 +4360,12 @@
       "legacy_l6_match": [
         "SLP/TLP 과정"
       ],
-      "improvement_note": "realdata.ts 고정 뼈대 기반 산출물 중심 분해"
+      "improvement_note": "realdata.ts 고정 뼈대 기반 산출물 중심 분해",
+      "predecessors": [],
+      "successors": [
+        "V2-L6-0579"
+      ],
+      "entry_condition": ""
     },
     {
       "l6_id": "V2-L6-0579",
@@ -3581,7 +4385,12 @@
       "legacy_l6_match": [
         "SLP/TLP 과정"
       ],
-      "improvement_note": "realdata.ts 고정 뼈대 기반 산출물 중심 분해"
+      "improvement_note": "realdata.ts 고정 뼈대 기반 산출물 중심 분해",
+      "predecessors": [
+        "V2-L6-0578"
+      ],
+      "successors": [],
+      "entry_condition": "선행 L6 완료"
     },
     {
       "l6_id": "V2-L6-0580",
@@ -3601,7 +4410,10 @@
       "legacy_l6_match": [
         "임원 부부 명상과정"
       ],
-      "improvement_note": "realdata.ts 고정 뼈대 기반 산출물 중심 분해"
+      "improvement_note": "realdata.ts 고정 뼈대 기반 산출물 중심 분해",
+      "predecessors": [],
+      "successors": [],
+      "entry_condition": ""
     },
     {
       "l6_id": "V2-L6-0581",
@@ -3621,7 +4433,12 @@
       "legacy_l6_match": [
         "그룹장 양성과정"
       ],
-      "improvement_note": "realdata.ts 고정 뼈대 기반 산출물 중심 분해"
+      "improvement_note": "realdata.ts 고정 뼈대 기반 산출물 중심 분해",
+      "predecessors": [],
+      "successors": [
+        "V2-L6-0582"
+      ],
+      "entry_condition": ""
     },
     {
       "l6_id": "V2-L6-0582",
@@ -3641,7 +4458,12 @@
       "legacy_l6_match": [
         "그룹장 양성과정"
       ],
-      "improvement_note": "realdata.ts 고정 뼈대 기반 산출물 중심 분해"
+      "improvement_note": "realdata.ts 고정 뼈대 기반 산출물 중심 분해",
+      "predecessors": [
+        "V2-L6-0581"
+      ],
+      "successors": [],
+      "entry_condition": "선행 L6 완료"
     },
     {
       "l6_id": "V2-L6-0583",
@@ -3661,7 +4483,12 @@
       "legacy_l6_match": [
         "사내 Job Posting"
       ],
-      "improvement_note": "realdata.ts Taxonomy 고정 + 산출물 중심 재설계"
+      "improvement_note": "realdata.ts Taxonomy 고정 + 산출물 중심 재설계",
+      "predecessors": [],
+      "successors": [
+        "V2-L6-0584"
+      ],
+      "entry_condition": ""
     },
     {
       "l6_id": "V2-L6-0584",
@@ -3681,7 +4508,12 @@
       "legacy_l6_match": [
         "사내 Job Posting"
       ],
-      "improvement_note": "realdata.ts Taxonomy 고정 + 산출물 중심 재설계"
+      "improvement_note": "realdata.ts Taxonomy 고정 + 산출물 중심 재설계",
+      "predecessors": [
+        "V2-L6-0583"
+      ],
+      "successors": [],
+      "entry_condition": "선행 L6 완료"
     },
     {
       "l6_id": "V2-L6-0585",
@@ -3701,7 +4533,12 @@
       "legacy_l6_match": [
         "개별 전배"
       ],
-      "improvement_note": "realdata.ts Taxonomy 고정 + 산출물 중심 재설계"
+      "improvement_note": "realdata.ts Taxonomy 고정 + 산출물 중심 재설계",
+      "predecessors": [],
+      "successors": [
+        "V2-L6-0586"
+      ],
+      "entry_condition": ""
     },
     {
       "l6_id": "V2-L6-0586",
@@ -3721,7 +4558,12 @@
       "legacy_l6_match": [
         "개별 전배"
       ],
-      "improvement_note": "realdata.ts Taxonomy 고정 + 산출물 중심 재설계"
+      "improvement_note": "realdata.ts Taxonomy 고정 + 산출물 중심 재설계",
+      "predecessors": [
+        "V2-L6-0585"
+      ],
+      "successors": [],
+      "entry_condition": "선행 L6 완료"
     },
     {
       "l6_id": "V2-L6-0587",
@@ -3741,7 +4583,12 @@
       "legacy_l6_match": [
         "전입"
       ],
-      "improvement_note": "realdata.ts Taxonomy 고정 + 산출물 중심 재설계"
+      "improvement_note": "realdata.ts Taxonomy 고정 + 산출물 중심 재설계",
+      "predecessors": [],
+      "successors": [
+        "V2-L6-0588"
+      ],
+      "entry_condition": ""
     },
     {
       "l6_id": "V2-L6-0588",
@@ -3761,7 +4608,12 @@
       "legacy_l6_match": [
         "전입"
       ],
-      "improvement_note": "realdata.ts Taxonomy 고정 + 산출물 중심 재설계"
+      "improvement_note": "realdata.ts Taxonomy 고정 + 산출물 중심 재설계",
+      "predecessors": [
+        "V2-L6-0587"
+      ],
+      "successors": [],
+      "entry_condition": "선행 L6 완료"
     },
     {
       "l6_id": "V2-L6-0589",
@@ -3781,7 +4633,12 @@
       "legacy_l6_match": [
         "휴직"
       ],
-      "improvement_note": "realdata.ts Taxonomy 고정 + 산출물 중심 재설계"
+      "improvement_note": "realdata.ts Taxonomy 고정 + 산출물 중심 재설계",
+      "predecessors": [],
+      "successors": [
+        "V2-L6-0590"
+      ],
+      "entry_condition": ""
     },
     {
       "l6_id": "V2-L6-0590",
@@ -3801,7 +4658,12 @@
       "legacy_l6_match": [
         "휴직"
       ],
-      "improvement_note": "realdata.ts Taxonomy 고정 + 산출물 중심 재설계"
+      "improvement_note": "realdata.ts Taxonomy 고정 + 산출물 중심 재설계",
+      "predecessors": [
+        "V2-L6-0589"
+      ],
+      "successors": [],
+      "entry_condition": "선행 L6 완료"
     },
     {
       "l6_id": "V2-L6-0591",
@@ -3821,7 +4683,12 @@
       "legacy_l6_match": [
         "복직"
       ],
-      "improvement_note": "realdata.ts Taxonomy 고정 + 산출물 중심 재설계"
+      "improvement_note": "realdata.ts Taxonomy 고정 + 산출물 중심 재설계",
+      "predecessors": [],
+      "successors": [
+        "V2-L6-0592"
+      ],
+      "entry_condition": ""
     },
     {
       "l6_id": "V2-L6-0592",
@@ -3841,7 +4708,12 @@
       "legacy_l6_match": [
         "복직"
       ],
-      "improvement_note": "realdata.ts Taxonomy 고정 + 산출물 중심 재설계"
+      "improvement_note": "realdata.ts Taxonomy 고정 + 산출물 중심 재설계",
+      "predecessors": [
+        "V2-L6-0591"
+      ],
+      "successors": [],
+      "entry_condition": "선행 L6 완료"
     },
     {
       "l6_id": "V2-L6-0593",
@@ -3861,7 +4733,12 @@
       "legacy_l6_match": [
         "퇴직"
       ],
-      "improvement_note": "realdata.ts Taxonomy 고정 + 산출물 중심 재설계"
+      "improvement_note": "realdata.ts Taxonomy 고정 + 산출물 중심 재설계",
+      "predecessors": [],
+      "successors": [
+        "V2-L6-0594"
+      ],
+      "entry_condition": ""
     },
     {
       "l6_id": "V2-L6-0594",
@@ -3881,7 +4758,12 @@
       "legacy_l6_match": [
         "퇴직"
       ],
-      "improvement_note": "realdata.ts Taxonomy 고정 + 산출물 중심 재설계"
+      "improvement_note": "realdata.ts Taxonomy 고정 + 산출물 중심 재설계",
+      "predecessors": [
+        "V2-L6-0593"
+      ],
+      "successors": [],
+      "entry_condition": "선행 L6 완료"
     },
     {
       "l6_id": "V2-L6-0595",
@@ -3901,7 +4783,12 @@
       "legacy_l6_match": [
         "리텐션"
       ],
-      "improvement_note": "realdata.ts Taxonomy 고정 + 산출물 중심 재설계"
+      "improvement_note": "realdata.ts Taxonomy 고정 + 산출물 중심 재설계",
+      "predecessors": [],
+      "successors": [
+        "V2-L6-0596"
+      ],
+      "entry_condition": ""
     },
     {
       "l6_id": "V2-L6-0596",
@@ -3921,7 +4808,12 @@
       "legacy_l6_match": [
         "리텐션"
       ],
-      "improvement_note": "realdata.ts Taxonomy 고정 + 산출물 중심 재설계"
+      "improvement_note": "realdata.ts Taxonomy 고정 + 산출물 중심 재설계",
+      "predecessors": [
+        "V2-L6-0595"
+      ],
+      "successors": [],
+      "entry_condition": "선행 L6 완료"
     },
     {
       "l6_id": "V2-L6-0597",
@@ -3941,7 +4833,12 @@
       "legacy_l6_match": [
         "리스킬링"
       ],
-      "improvement_note": "realdata.ts Taxonomy 고정 + 산출물 중심 재설계"
+      "improvement_note": "realdata.ts Taxonomy 고정 + 산출물 중심 재설계",
+      "predecessors": [],
+      "successors": [
+        "V2-L6-0598"
+      ],
+      "entry_condition": ""
     },
     {
       "l6_id": "V2-L6-0598",
@@ -3961,7 +4858,12 @@
       "legacy_l6_match": [
         "리스킬링"
       ],
-      "improvement_note": "realdata.ts Taxonomy 고정 + 산출물 중심 재설계"
+      "improvement_note": "realdata.ts Taxonomy 고정 + 산출물 중심 재설계",
+      "predecessors": [
+        "V2-L6-0597"
+      ],
+      "successors": [],
+      "entry_condition": "선행 L6 완료"
     },
     {
       "l6_id": "V2-L6-0599",
@@ -3981,7 +4883,12 @@
       "legacy_l6_match": [
         "시니어"
       ],
-      "improvement_note": "realdata.ts Taxonomy 고정 + 산출물 중심 재설계"
+      "improvement_note": "realdata.ts Taxonomy 고정 + 산출물 중심 재설계",
+      "predecessors": [],
+      "successors": [
+        "V2-L6-0600"
+      ],
+      "entry_condition": ""
     },
     {
       "l6_id": "V2-L6-0600",
@@ -4001,7 +4908,12 @@
       "legacy_l6_match": [
         "시니어"
       ],
-      "improvement_note": "realdata.ts Taxonomy 고정 + 산출물 중심 재설계"
+      "improvement_note": "realdata.ts Taxonomy 고정 + 산출물 중심 재설계",
+      "predecessors": [
+        "V2-L6-0599"
+      ],
+      "successors": [],
+      "entry_condition": "선행 L6 완료"
     },
     {
       "l6_id": "V2-L6-0601",
@@ -4021,7 +4933,12 @@
       "legacy_l6_match": [
         "사업특화 제도"
       ],
-      "improvement_note": "realdata.ts Taxonomy 고정 + 산출물 중심 재설계"
+      "improvement_note": "realdata.ts Taxonomy 고정 + 산출물 중심 재설계",
+      "predecessors": [],
+      "successors": [
+        "V2-L6-0602"
+      ],
+      "entry_condition": ""
     },
     {
       "l6_id": "V2-L6-0602",
@@ -4041,7 +4958,12 @@
       "legacy_l6_match": [
         "사업특화 제도"
       ],
-      "improvement_note": "realdata.ts Taxonomy 고정 + 산출물 중심 재설계"
+      "improvement_note": "realdata.ts Taxonomy 고정 + 산출물 중심 재설계",
+      "predecessors": [
+        "V2-L6-0601"
+      ],
+      "successors": [],
+      "entry_condition": "선행 L6 완료"
     },
     {
       "l6_id": "V2-L6-0603",
@@ -4061,7 +4983,12 @@
       "legacy_l6_match": [
         "인력 계획"
       ],
-      "improvement_note": "realdata.ts Taxonomy 고정 + 산출물 중심 재설계"
+      "improvement_note": "realdata.ts Taxonomy 고정 + 산출물 중심 재설계",
+      "predecessors": [],
+      "successors": [
+        "V2-L6-0604"
+      ],
+      "entry_condition": ""
     },
     {
       "l6_id": "V2-L6-0604",
@@ -4081,7 +5008,12 @@
       "legacy_l6_match": [
         "인력 계획"
       ],
-      "improvement_note": "realdata.ts Taxonomy 고정 + 산출물 중심 재설계"
+      "improvement_note": "realdata.ts Taxonomy 고정 + 산출물 중심 재설계",
+      "predecessors": [
+        "V2-L6-0603"
+      ],
+      "successors": [],
+      "entry_condition": "선행 L6 완료"
     },
     {
       "l6_id": "V2-L6-0605",
@@ -4101,7 +5033,12 @@
       "legacy_l6_match": [
         "수정경영계획"
       ],
-      "improvement_note": "realdata.ts Taxonomy 고정 + 산출물 중심 재설계"
+      "improvement_note": "realdata.ts Taxonomy 고정 + 산출물 중심 재설계",
+      "predecessors": [],
+      "successors": [
+        "V2-L6-0606"
+      ],
+      "entry_condition": ""
     },
     {
       "l6_id": "V2-L6-0606",
@@ -4121,7 +5058,12 @@
       "legacy_l6_match": [
         "수정경영계획"
       ],
-      "improvement_note": "realdata.ts Taxonomy 고정 + 산출물 중심 재설계"
+      "improvement_note": "realdata.ts Taxonomy 고정 + 산출물 중심 재설계",
+      "predecessors": [
+        "V2-L6-0605"
+      ],
+      "successors": [],
+      "entry_condition": "선행 L6 완료"
     },
     {
       "l6_id": "V2-L6-0607",
@@ -4141,7 +5083,12 @@
       "legacy_l6_match": [
         "제증명 관리"
       ],
-      "improvement_note": "realdata.ts Taxonomy 고정 + 산출물 중심 재설계"
+      "improvement_note": "realdata.ts Taxonomy 고정 + 산출물 중심 재설계",
+      "predecessors": [],
+      "successors": [
+        "V2-L6-0608"
+      ],
+      "entry_condition": ""
     },
     {
       "l6_id": "V2-L6-0608",
@@ -4161,7 +5108,12 @@
       "legacy_l6_match": [
         "제증명 관리"
       ],
-      "improvement_note": "realdata.ts Taxonomy 고정 + 산출물 중심 재설계"
+      "improvement_note": "realdata.ts Taxonomy 고정 + 산출물 중심 재설계",
+      "predecessors": [
+        "V2-L6-0607"
+      ],
+      "successors": [],
+      "entry_condition": "선행 L6 완료"
     },
     {
       "l6_id": "V2-L6-0609",
@@ -4181,7 +5133,12 @@
       "legacy_l6_match": [
         "인력 DB 관리"
       ],
-      "improvement_note": "realdata.ts Taxonomy 고정 + 산출물 중심 재설계"
+      "improvement_note": "realdata.ts Taxonomy 고정 + 산출물 중심 재설계",
+      "predecessors": [],
+      "successors": [
+        "V2-L6-0610"
+      ],
+      "entry_condition": ""
     },
     {
       "l6_id": "V2-L6-0610",
@@ -4201,7 +5158,12 @@
       "legacy_l6_match": [
         "인력 DB 관리"
       ],
-      "improvement_note": "realdata.ts Taxonomy 고정 + 산출물 중심 재설계"
+      "improvement_note": "realdata.ts Taxonomy 고정 + 산출물 중심 재설계",
+      "predecessors": [
+        "V2-L6-0609"
+      ],
+      "successors": [],
+      "entry_condition": "선행 L6 완료"
     },
     {
       "l6_id": "V2-L6-0611",
@@ -4221,7 +5183,12 @@
       "legacy_l6_match": [
         "인사발령"
       ],
-      "improvement_note": "realdata.ts Taxonomy 고정 + 산출물 중심 재설계"
+      "improvement_note": "realdata.ts Taxonomy 고정 + 산출물 중심 재설계",
+      "predecessors": [],
+      "successors": [
+        "V2-L6-0612"
+      ],
+      "entry_condition": ""
     },
     {
       "l6_id": "V2-L6-0612",
@@ -4241,7 +5208,12 @@
       "legacy_l6_match": [
         "인사발령"
       ],
-      "improvement_note": "realdata.ts Taxonomy 고정 + 산출물 중심 재설계"
+      "improvement_note": "realdata.ts Taxonomy 고정 + 산출물 중심 재설계",
+      "predecessors": [
+        "V2-L6-0611"
+      ],
+      "successors": [],
+      "entry_condition": "선행 L6 완료"
     },
     {
       "l6_id": "V2-L6-0613",
@@ -4261,7 +5233,12 @@
       "legacy_l6_match": [
         "분석"
       ],
-      "improvement_note": "realdata.ts Taxonomy 고정 + 산출물 중심 재설계"
+      "improvement_note": "realdata.ts Taxonomy 고정 + 산출물 중심 재설계",
+      "predecessors": [],
+      "successors": [
+        "V2-L6-0614"
+      ],
+      "entry_condition": ""
     },
     {
       "l6_id": "V2-L6-0614",
@@ -4281,7 +5258,12 @@
       "legacy_l6_match": [
         "분석"
       ],
-      "improvement_note": "realdata.ts Taxonomy 고정 + 산출물 중심 재설계"
+      "improvement_note": "realdata.ts Taxonomy 고정 + 산출물 중심 재설계",
+      "predecessors": [
+        "V2-L6-0613"
+      ],
+      "successors": [],
+      "entry_condition": "선행 L6 완료"
     },
     {
       "l6_id": "V2-L6-0615",
@@ -4301,7 +5283,12 @@
       "legacy_l6_match": [
         "사원정보 관리"
       ],
-      "improvement_note": "realdata.ts Taxonomy 고정 + 산출물 중심 재설계"
+      "improvement_note": "realdata.ts Taxonomy 고정 + 산출물 중심 재설계",
+      "predecessors": [],
+      "successors": [
+        "V2-L6-0616"
+      ],
+      "entry_condition": ""
     },
     {
       "l6_id": "V2-L6-0616",
@@ -4321,7 +5308,12 @@
       "legacy_l6_match": [
         "사원정보 관리"
       ],
-      "improvement_note": "realdata.ts Taxonomy 고정 + 산출물 중심 재설계"
+      "improvement_note": "realdata.ts Taxonomy 고정 + 산출물 중심 재설계",
+      "predecessors": [
+        "V2-L6-0615"
+      ],
+      "successors": [],
+      "entry_condition": "선행 L6 완료"
     },
     {
       "l6_id": "V2-L6-0617",
@@ -4341,7 +5333,12 @@
       "legacy_l6_match": [
         "파견직 관리"
       ],
-      "improvement_note": "realdata.ts Taxonomy 고정 + 산출물 중심 재설계"
+      "improvement_note": "realdata.ts Taxonomy 고정 + 산출물 중심 재설계",
+      "predecessors": [],
+      "successors": [
+        "V2-L6-0618"
+      ],
+      "entry_condition": ""
     },
     {
       "l6_id": "V2-L6-0618",
@@ -4361,7 +5358,12 @@
       "legacy_l6_match": [
         "파견직 관리"
       ],
-      "improvement_note": "realdata.ts Taxonomy 고정 + 산출물 중심 재설계"
+      "improvement_note": "realdata.ts Taxonomy 고정 + 산출물 중심 재설계",
+      "predecessors": [
+        "V2-L6-0617"
+      ],
+      "successors": [],
+      "entry_condition": "선행 L6 완료"
     },
     {
       "l6_id": "V2-L6-0619",
@@ -4381,7 +5383,12 @@
       "legacy_l6_match": [
         "시간선택제 관리"
       ],
-      "improvement_note": "realdata.ts Taxonomy 고정 + 산출물 중심 재설계"
+      "improvement_note": "realdata.ts Taxonomy 고정 + 산출물 중심 재설계",
+      "predecessors": [],
+      "successors": [
+        "V2-L6-0620"
+      ],
+      "entry_condition": ""
     },
     {
       "l6_id": "V2-L6-0620",
@@ -4401,7 +5408,12 @@
       "legacy_l6_match": [
         "시간선택제 관리"
       ],
-      "improvement_note": "realdata.ts Taxonomy 고정 + 산출물 중심 재설계"
+      "improvement_note": "realdata.ts Taxonomy 고정 + 산출물 중심 재설계",
+      "predecessors": [
+        "V2-L6-0619"
+      ],
+      "successors": [],
+      "entry_condition": "선행 L6 완료"
     },
     {
       "l6_id": "V2-L6-0621",
@@ -4421,7 +5433,12 @@
       "legacy_l6_match": [
         "예비군 관리"
       ],
-      "improvement_note": "realdata.ts Taxonomy 고정 + 산출물 중심 재설계"
+      "improvement_note": "realdata.ts Taxonomy 고정 + 산출물 중심 재설계",
+      "predecessors": [],
+      "successors": [
+        "V2-L6-0622"
+      ],
+      "entry_condition": ""
     },
     {
       "l6_id": "V2-L6-0622",
@@ -4441,7 +5458,12 @@
       "legacy_l6_match": [
         "예비군 관리"
       ],
-      "improvement_note": "realdata.ts Taxonomy 고정 + 산출물 중심 재설계"
+      "improvement_note": "realdata.ts Taxonomy 고정 + 산출물 중심 재설계",
+      "predecessors": [
+        "V2-L6-0621"
+      ],
+      "successors": [],
+      "entry_condition": "선행 L6 완료"
     },
     {
       "l6_id": "V2-L6-0623",
@@ -4461,7 +5483,12 @@
       "legacy_l6_match": [
         "촉탁계약직 관리"
       ],
-      "improvement_note": "realdata.ts Taxonomy 고정 + 산출물 중심 재설계"
+      "improvement_note": "realdata.ts Taxonomy 고정 + 산출물 중심 재설계",
+      "predecessors": [],
+      "successors": [
+        "V2-L6-0624"
+      ],
+      "entry_condition": ""
     },
     {
       "l6_id": "V2-L6-0624",
@@ -4481,7 +5508,12 @@
       "legacy_l6_match": [
         "촉탁계약직 관리"
       ],
-      "improvement_note": "realdata.ts Taxonomy 고정 + 산출물 중심 재설계"
+      "improvement_note": "realdata.ts Taxonomy 고정 + 산출물 중심 재설계",
+      "predecessors": [
+        "V2-L6-0623"
+      ],
+      "successors": [],
+      "entry_condition": "선행 L6 완료"
     },
     {
       "l6_id": "V2-L6-0625",
@@ -4501,7 +5533,12 @@
       "legacy_l6_match": [
         "가이드 수립/배포 및 시스템 준비"
       ],
-      "improvement_note": "realdata.ts Taxonomy 고정 + 산출물 중심 재설계"
+      "improvement_note": "realdata.ts Taxonomy 고정 + 산출물 중심 재설계",
+      "predecessors": [],
+      "successors": [
+        "V2-L6-0626"
+      ],
+      "entry_condition": ""
     },
     {
       "l6_id": "V2-L6-0626",
@@ -4521,7 +5558,12 @@
       "legacy_l6_match": [
         "가이드 수립/배포 및 시스템 준비"
       ],
-      "improvement_note": "realdata.ts Taxonomy 고정 + 산출물 중심 재설계"
+      "improvement_note": "realdata.ts Taxonomy 고정 + 산출물 중심 재설계",
+      "predecessors": [
+        "V2-L6-0625"
+      ],
+      "successors": [],
+      "entry_condition": "선행 L6 완료"
     },
     {
       "l6_id": "V2-L6-0627",
@@ -4541,7 +5583,12 @@
       "legacy_l6_match": [
         "대상자 확정/변경"
       ],
-      "improvement_note": "realdata.ts Taxonomy 고정 + 산출물 중심 재설계"
+      "improvement_note": "realdata.ts Taxonomy 고정 + 산출물 중심 재설계",
+      "predecessors": [],
+      "successors": [
+        "V2-L6-0628"
+      ],
+      "entry_condition": ""
     },
     {
       "l6_id": "V2-L6-0628",
@@ -4561,7 +5608,12 @@
       "legacy_l6_match": [
         "대상자 확정/변경"
       ],
-      "improvement_note": "realdata.ts Taxonomy 고정 + 산출물 중심 재설계"
+      "improvement_note": "realdata.ts Taxonomy 고정 + 산출물 중심 재설계",
+      "predecessors": [
+        "V2-L6-0627"
+      ],
+      "successors": [],
+      "entry_condition": "선행 L6 완료"
     },
     {
       "l6_id": "V2-L6-0629",
@@ -4581,7 +5633,12 @@
       "legacy_l6_match": [
         "승인자/부서장 매핑 확정/변경"
       ],
-      "improvement_note": "realdata.ts Taxonomy 고정 + 산출물 중심 재설계"
+      "improvement_note": "realdata.ts Taxonomy 고정 + 산출물 중심 재설계",
+      "predecessors": [],
+      "successors": [
+        "V2-L6-0630"
+      ],
+      "entry_condition": ""
     },
     {
       "l6_id": "V2-L6-0630",
@@ -4601,7 +5658,12 @@
       "legacy_l6_match": [
         "승인자/부서장 매핑 확정/변경"
       ],
-      "improvement_note": "realdata.ts Taxonomy 고정 + 산출물 중심 재설계"
+      "improvement_note": "realdata.ts Taxonomy 고정 + 산출물 중심 재설계",
+      "predecessors": [
+        "V2-L6-0629"
+      ],
+      "successors": [],
+      "entry_condition": "선행 L6 완료"
     },
     {
       "l6_id": "V2-L6-0631",
@@ -4621,7 +5683,12 @@
       "legacy_l6_match": [
         "운영 및 임직원 소통"
       ],
-      "improvement_note": "realdata.ts Taxonomy 고정 + 산출물 중심 재설계"
+      "improvement_note": "realdata.ts Taxonomy 고정 + 산출물 중심 재설계",
+      "predecessors": [],
+      "successors": [
+        "V2-L6-0632"
+      ],
+      "entry_condition": ""
     },
     {
       "l6_id": "V2-L6-0632",
@@ -4641,7 +5708,12 @@
       "legacy_l6_match": [
         "운영 및 임직원 소통"
       ],
-      "improvement_note": "realdata.ts Taxonomy 고정 + 산출물 중심 재설계"
+      "improvement_note": "realdata.ts Taxonomy 고정 + 산출물 중심 재설계",
+      "predecessors": [
+        "V2-L6-0631"
+      ],
+      "successors": [],
+      "entry_condition": "선행 L6 완료"
     },
     {
       "l6_id": "V2-L6-0633",
@@ -4661,7 +5733,12 @@
       "legacy_l6_match": [
         "결과 분석/보고"
       ],
-      "improvement_note": "realdata.ts Taxonomy 고정 + 산출물 중심 재설계"
+      "improvement_note": "realdata.ts Taxonomy 고정 + 산출물 중심 재설계",
+      "predecessors": [],
+      "successors": [
+        "V2-L6-0634"
+      ],
+      "entry_condition": ""
     },
     {
       "l6_id": "V2-L6-0634",
@@ -4681,7 +5758,12 @@
       "legacy_l6_match": [
         "결과 분석/보고"
       ],
-      "improvement_note": "realdata.ts Taxonomy 고정 + 산출물 중심 재설계"
+      "improvement_note": "realdata.ts Taxonomy 고정 + 산출물 중심 재설계",
+      "predecessors": [
+        "V2-L6-0633"
+      ],
+      "successors": [],
+      "entry_condition": "선행 L6 완료"
     },
     {
       "l6_id": "V2-L6-0635",
@@ -4701,7 +5783,12 @@
       "legacy_l6_match": [
         "가이드 수립/배포 및 시스템 준비"
       ],
-      "improvement_note": "realdata.ts Taxonomy 고정 + 산출물 중심 재설계"
+      "improvement_note": "realdata.ts Taxonomy 고정 + 산출물 중심 재설계",
+      "predecessors": [],
+      "successors": [
+        "V2-L6-0636"
+      ],
+      "entry_condition": ""
     },
     {
       "l6_id": "V2-L6-0636",
@@ -4721,7 +5808,12 @@
       "legacy_l6_match": [
         "가이드 수립/배포 및 시스템 준비"
       ],
-      "improvement_note": "realdata.ts Taxonomy 고정 + 산출물 중심 재설계"
+      "improvement_note": "realdata.ts Taxonomy 고정 + 산출물 중심 재설계",
+      "predecessors": [
+        "V2-L6-0635"
+      ],
+      "successors": [],
+      "entry_condition": "선행 L6 완료"
     },
     {
       "l6_id": "V2-L6-0637",
@@ -4741,7 +5833,12 @@
       "legacy_l6_match": [
         "대상자 확정/변경(예외자/사유 확인)"
       ],
-      "improvement_note": "realdata.ts Taxonomy 고정 + 산출물 중심 재설계"
+      "improvement_note": "realdata.ts Taxonomy 고정 + 산출물 중심 재설계",
+      "predecessors": [],
+      "successors": [
+        "V2-L6-0638"
+      ],
+      "entry_condition": ""
     },
     {
       "l6_id": "V2-L6-0638",
@@ -4761,7 +5858,12 @@
       "legacy_l6_match": [
         "대상자 확정/변경(예외자/사유 확인)"
       ],
-      "improvement_note": "realdata.ts Taxonomy 고정 + 산출물 중심 재설계"
+      "improvement_note": "realdata.ts Taxonomy 고정 + 산출물 중심 재설계",
+      "predecessors": [
+        "V2-L6-0637"
+      ],
+      "successors": [],
+      "entry_condition": "선행 L6 완료"
     },
     {
       "l6_id": "V2-L6-0639",
@@ -4781,7 +5883,12 @@
       "legacy_l6_match": [
         "승인자/부서장 매핑 확정/변경"
       ],
-      "improvement_note": "realdata.ts Taxonomy 고정 + 산출물 중심 재설계"
+      "improvement_note": "realdata.ts Taxonomy 고정 + 산출물 중심 재설계",
+      "predecessors": [],
+      "successors": [
+        "V2-L6-0640"
+      ],
+      "entry_condition": ""
     },
     {
       "l6_id": "V2-L6-0640",
@@ -4801,7 +5908,12 @@
       "legacy_l6_match": [
         "승인자/부서장 매핑 확정/변경"
       ],
-      "improvement_note": "realdata.ts Taxonomy 고정 + 산출물 중심 재설계"
+      "improvement_note": "realdata.ts Taxonomy 고정 + 산출물 중심 재설계",
+      "predecessors": [
+        "V2-L6-0639"
+      ],
+      "successors": [],
+      "entry_condition": "선행 L6 완료"
     },
     {
       "l6_id": "V2-L6-0641",
@@ -4821,7 +5933,12 @@
       "legacy_l6_match": [
         "피어리뷰 운영/ 임직원 소통"
       ],
-      "improvement_note": "realdata.ts Taxonomy 고정 + 산출물 중심 재설계"
+      "improvement_note": "realdata.ts Taxonomy 고정 + 산출물 중심 재설계",
+      "predecessors": [],
+      "successors": [
+        "V2-L6-0642"
+      ],
+      "entry_condition": ""
     },
     {
       "l6_id": "V2-L6-0642",
@@ -4841,7 +5958,12 @@
       "legacy_l6_match": [
         "피어리뷰 운영/ 임직원 소통"
       ],
-      "improvement_note": "realdata.ts Taxonomy 고정 + 산출물 중심 재설계"
+      "improvement_note": "realdata.ts Taxonomy 고정 + 산출물 중심 재설계",
+      "predecessors": [
+        "V2-L6-0641"
+      ],
+      "successors": [],
+      "entry_condition": "선행 L6 완료"
     },
     {
       "l6_id": "V2-L6-0643",
@@ -4861,7 +5983,12 @@
       "legacy_l6_match": [
         "결과 분석/보고 및 결과 안내"
       ],
-      "improvement_note": "realdata.ts Taxonomy 고정 + 산출물 중심 재설계"
+      "improvement_note": "realdata.ts Taxonomy 고정 + 산출물 중심 재설계",
+      "predecessors": [],
+      "successors": [
+        "V2-L6-0644"
+      ],
+      "entry_condition": ""
     },
     {
       "l6_id": "V2-L6-0644",
@@ -4881,7 +6008,12 @@
       "legacy_l6_match": [
         "결과 분석/보고 및 결과 안내"
       ],
-      "improvement_note": "realdata.ts Taxonomy 고정 + 산출물 중심 재설계"
+      "improvement_note": "realdata.ts Taxonomy 고정 + 산출물 중심 재설계",
+      "predecessors": [
+        "V2-L6-0643"
+      ],
+      "successors": [],
+      "entry_condition": "선행 L6 완료"
     },
     {
       "l6_id": "V2-L6-0645",
@@ -4901,7 +6033,12 @@
       "legacy_l6_match": [
         "가이드 수립/배포 및 시스템 준비"
       ],
-      "improvement_note": "realdata.ts Taxonomy 고정 + 산출물 중심 재설계"
+      "improvement_note": "realdata.ts Taxonomy 고정 + 산출물 중심 재설계",
+      "predecessors": [],
+      "successors": [
+        "V2-L6-0646"
+      ],
+      "entry_condition": ""
     },
     {
       "l6_id": "V2-L6-0646",
@@ -4921,7 +6058,12 @@
       "legacy_l6_match": [
         "가이드 수립/배포 및 시스템 준비"
       ],
-      "improvement_note": "realdata.ts Taxonomy 고정 + 산출물 중심 재설계"
+      "improvement_note": "realdata.ts Taxonomy 고정 + 산출물 중심 재설계",
+      "predecessors": [
+        "V2-L6-0645"
+      ],
+      "successors": [],
+      "entry_condition": "선행 L6 완료"
     },
     {
       "l6_id": "V2-L6-0647",
@@ -4941,7 +6083,12 @@
       "legacy_l6_match": [
         "대상자 확정/변경 (예외자/사유 확인)"
       ],
-      "improvement_note": "realdata.ts Taxonomy 고정 + 산출물 중심 재설계"
+      "improvement_note": "realdata.ts Taxonomy 고정 + 산출물 중심 재설계",
+      "predecessors": [],
+      "successors": [
+        "V2-L6-0648"
+      ],
+      "entry_condition": ""
     },
     {
       "l6_id": "V2-L6-0648",
@@ -4961,7 +6108,12 @@
       "legacy_l6_match": [
         "대상자 확정/변경 (예외자/사유 확인)"
       ],
-      "improvement_note": "realdata.ts Taxonomy 고정 + 산출물 중심 재설계"
+      "improvement_note": "realdata.ts Taxonomy 고정 + 산출물 중심 재설계",
+      "predecessors": [
+        "V2-L6-0647"
+      ],
+      "successors": [],
+      "entry_condition": "선행 L6 완료"
     },
     {
       "l6_id": "V2-L6-0649",
@@ -4981,7 +6133,12 @@
       "legacy_l6_match": [
         "승인자/부서장 매핑 확정/변경"
       ],
-      "improvement_note": "realdata.ts Taxonomy 고정 + 산출물 중심 재설계"
+      "improvement_note": "realdata.ts Taxonomy 고정 + 산출물 중심 재설계",
+      "predecessors": [],
+      "successors": [
+        "V2-L6-0650"
+      ],
+      "entry_condition": ""
     },
     {
       "l6_id": "V2-L6-0650",
@@ -5001,7 +6158,12 @@
       "legacy_l6_match": [
         "승인자/부서장 매핑 확정/변경"
       ],
-      "improvement_note": "realdata.ts Taxonomy 고정 + 산출물 중심 재설계"
+      "improvement_note": "realdata.ts Taxonomy 고정 + 산출물 중심 재설계",
+      "predecessors": [
+        "V2-L6-0649"
+      ],
+      "successors": [],
+      "entry_condition": "선행 L6 완료"
     },
     {
       "l6_id": "V2-L6-0651",
@@ -5021,7 +6183,12 @@
       "legacy_l6_match": [
         "업적평가 운영 / 임직원 소통"
       ],
-      "improvement_note": "realdata.ts Taxonomy 고정 + 산출물 중심 재설계"
+      "improvement_note": "realdata.ts Taxonomy 고정 + 산출물 중심 재설계",
+      "predecessors": [],
+      "successors": [
+        "V2-L6-0652"
+      ],
+      "entry_condition": ""
     },
     {
       "l6_id": "V2-L6-0652",
@@ -5041,7 +6208,12 @@
       "legacy_l6_match": [
         "업적평가 운영 / 임직원 소통"
       ],
-      "improvement_note": "realdata.ts Taxonomy 고정 + 산출물 중심 재설계"
+      "improvement_note": "realdata.ts Taxonomy 고정 + 산출물 중심 재설계",
+      "predecessors": [
+        "V2-L6-0651"
+      ],
+      "successors": [],
+      "entry_condition": "선행 L6 완료"
     },
     {
       "l6_id": "V2-L6-0653",
@@ -5061,7 +6233,12 @@
       "legacy_l6_match": [
         "결과 분석/보고 및 결과 안내"
       ],
-      "improvement_note": "realdata.ts Taxonomy 고정 + 산출물 중심 재설계"
+      "improvement_note": "realdata.ts Taxonomy 고정 + 산출물 중심 재설계",
+      "predecessors": [],
+      "successors": [
+        "V2-L6-0654"
+      ],
+      "entry_condition": ""
     },
     {
       "l6_id": "V2-L6-0654",
@@ -5081,7 +6258,12 @@
       "legacy_l6_match": [
         "결과 분석/보고 및 결과 안내"
       ],
-      "improvement_note": "realdata.ts Taxonomy 고정 + 산출물 중심 재설계"
+      "improvement_note": "realdata.ts Taxonomy 고정 + 산출물 중심 재설계",
+      "predecessors": [
+        "V2-L6-0653"
+      ],
+      "successors": [],
+      "entry_condition": "선행 L6 완료"
     },
     {
       "l6_id": "V2-L6-0655",
@@ -5101,7 +6283,12 @@
       "legacy_l6_match": [
         "후속 조치"
       ],
-      "improvement_note": "realdata.ts Taxonomy 고정 + 산출물 중심 재설계"
+      "improvement_note": "realdata.ts Taxonomy 고정 + 산출물 중심 재설계",
+      "predecessors": [],
+      "successors": [
+        "V2-L6-0656"
+      ],
+      "entry_condition": ""
     },
     {
       "l6_id": "V2-L6-0656",
@@ -5121,7 +6308,12 @@
       "legacy_l6_match": [
         "후속 조치"
       ],
-      "improvement_note": "realdata.ts Taxonomy 고정 + 산출물 중심 재설계"
+      "improvement_note": "realdata.ts Taxonomy 고정 + 산출물 중심 재설계",
+      "predecessors": [
+        "V2-L6-0655"
+      ],
+      "successors": [],
+      "entry_condition": "선행 L6 완료"
     },
     {
       "l6_id": "V2-L6-0657",
@@ -5141,7 +6333,12 @@
       "legacy_l6_match": [
         "가이드 수립/배포 및 시스템 준비"
       ],
-      "improvement_note": "realdata.ts Taxonomy 고정 + 산출물 중심 재설계"
+      "improvement_note": "realdata.ts Taxonomy 고정 + 산출물 중심 재설계",
+      "predecessors": [],
+      "successors": [
+        "V2-L6-0658"
+      ],
+      "entry_condition": ""
     },
     {
       "l6_id": "V2-L6-0658",
@@ -5161,7 +6358,12 @@
       "legacy_l6_match": [
         "가이드 수립/배포 및 시스템 준비"
       ],
-      "improvement_note": "realdata.ts Taxonomy 고정 + 산출물 중심 재설계"
+      "improvement_note": "realdata.ts Taxonomy 고정 + 산출물 중심 재설계",
+      "predecessors": [
+        "V2-L6-0657"
+      ],
+      "successors": [],
+      "entry_condition": "선행 L6 완료"
     },
     {
       "l6_id": "V2-L6-0659",
@@ -5181,7 +6383,12 @@
       "legacy_l6_match": [
         "대상자 확정/변경 (예외자/사유 확인)"
       ],
-      "improvement_note": "realdata.ts Taxonomy 고정 + 산출물 중심 재설계"
+      "improvement_note": "realdata.ts Taxonomy 고정 + 산출물 중심 재설계",
+      "predecessors": [],
+      "successors": [
+        "V2-L6-0660"
+      ],
+      "entry_condition": ""
     },
     {
       "l6_id": "V2-L6-0660",
@@ -5201,7 +6408,12 @@
       "legacy_l6_match": [
         "대상자 확정/변경 (예외자/사유 확인)"
       ],
-      "improvement_note": "realdata.ts Taxonomy 고정 + 산출물 중심 재설계"
+      "improvement_note": "realdata.ts Taxonomy 고정 + 산출물 중심 재설계",
+      "predecessors": [
+        "V2-L6-0659"
+      ],
+      "successors": [],
+      "entry_condition": "선행 L6 완료"
     },
     {
       "l6_id": "V2-L6-0661",
@@ -5221,7 +6433,12 @@
       "legacy_l6_match": [
         "승인자/부서장 매핑 확정/변경"
       ],
-      "improvement_note": "realdata.ts Taxonomy 고정 + 산출물 중심 재설계"
+      "improvement_note": "realdata.ts Taxonomy 고정 + 산출물 중심 재설계",
+      "predecessors": [],
+      "successors": [
+        "V2-L6-0662"
+      ],
+      "entry_condition": ""
     },
     {
       "l6_id": "V2-L6-0662",
@@ -5241,7 +6458,12 @@
       "legacy_l6_match": [
         "승인자/부서장 매핑 확정/변경"
       ],
-      "improvement_note": "realdata.ts Taxonomy 고정 + 산출물 중심 재설계"
+      "improvement_note": "realdata.ts Taxonomy 고정 + 산출물 중심 재설계",
+      "predecessors": [
+        "V2-L6-0661"
+      ],
+      "successors": [],
+      "entry_condition": "선행 L6 완료"
     },
     {
       "l6_id": "V2-L6-0663",
@@ -5261,7 +6483,12 @@
       "legacy_l6_match": [
         "역량진단 운영 및 임직원 소통"
       ],
-      "improvement_note": "realdata.ts Taxonomy 고정 + 산출물 중심 재설계"
+      "improvement_note": "realdata.ts Taxonomy 고정 + 산출물 중심 재설계",
+      "predecessors": [],
+      "successors": [
+        "V2-L6-0664"
+      ],
+      "entry_condition": ""
     },
     {
       "l6_id": "V2-L6-0664",
@@ -5281,7 +6508,12 @@
       "legacy_l6_match": [
         "역량진단 운영 및 임직원 소통"
       ],
-      "improvement_note": "realdata.ts Taxonomy 고정 + 산출물 중심 재설계"
+      "improvement_note": "realdata.ts Taxonomy 고정 + 산출물 중심 재설계",
+      "predecessors": [
+        "V2-L6-0663"
+      ],
+      "successors": [],
+      "entry_condition": "선행 L6 완료"
     },
     {
       "l6_id": "V2-L6-0665",
@@ -5301,7 +6533,12 @@
       "legacy_l6_match": [
         "결과 분석/보고 및 결과 안내"
       ],
-      "improvement_note": "realdata.ts Taxonomy 고정 + 산출물 중심 재설계"
+      "improvement_note": "realdata.ts Taxonomy 고정 + 산출물 중심 재설계",
+      "predecessors": [],
+      "successors": [
+        "V2-L6-0666"
+      ],
+      "entry_condition": ""
     },
     {
       "l6_id": "V2-L6-0666",
@@ -5321,7 +6558,12 @@
       "legacy_l6_match": [
         "결과 분석/보고 및 결과 안내"
       ],
-      "improvement_note": "realdata.ts Taxonomy 고정 + 산출물 중심 재설계"
+      "improvement_note": "realdata.ts Taxonomy 고정 + 산출물 중심 재설계",
+      "predecessors": [
+        "V2-L6-0665"
+      ],
+      "successors": [],
+      "entry_condition": "선행 L6 완료"
     },
     {
       "l6_id": "V2-L6-0667",
@@ -5341,7 +6583,12 @@
       "legacy_l6_match": [
         "가이드 수립/배포 및 시스템 준비"
       ],
-      "improvement_note": "realdata.ts Taxonomy 고정 + 산출물 중심 재설계"
+      "improvement_note": "realdata.ts Taxonomy 고정 + 산출물 중심 재설계",
+      "predecessors": [],
+      "successors": [
+        "V2-L6-0668"
+      ],
+      "entry_condition": ""
     },
     {
       "l6_id": "V2-L6-0668",
@@ -5361,7 +6608,12 @@
       "legacy_l6_match": [
         "가이드 수립/배포 및 시스템 준비"
       ],
-      "improvement_note": "realdata.ts Taxonomy 고정 + 산출물 중심 재설계"
+      "improvement_note": "realdata.ts Taxonomy 고정 + 산출물 중심 재설계",
+      "predecessors": [
+        "V2-L6-0667"
+      ],
+      "successors": [],
+      "entry_condition": "선행 L6 완료"
     },
     {
       "l6_id": "V2-L6-0669",
@@ -5381,7 +6633,12 @@
       "legacy_l6_match": [
         "대상자 확정/변경"
       ],
-      "improvement_note": "realdata.ts Taxonomy 고정 + 산출물 중심 재설계"
+      "improvement_note": "realdata.ts Taxonomy 고정 + 산출물 중심 재설계",
+      "predecessors": [],
+      "successors": [
+        "V2-L6-0670"
+      ],
+      "entry_condition": ""
     },
     {
       "l6_id": "V2-L6-0670",
@@ -5401,7 +6658,12 @@
       "legacy_l6_match": [
         "대상자 확정/변경"
       ],
-      "improvement_note": "realdata.ts Taxonomy 고정 + 산출물 중심 재설계"
+      "improvement_note": "realdata.ts Taxonomy 고정 + 산출물 중심 재설계",
+      "predecessors": [
+        "V2-L6-0669"
+      ],
+      "successors": [],
+      "entry_condition": "선행 L6 완료"
     },
     {
       "l6_id": "V2-L6-0671",
@@ -5421,7 +6683,12 @@
       "legacy_l6_match": [
         "승인자/부서장 매핑 확정/변경"
       ],
-      "improvement_note": "realdata.ts Taxonomy 고정 + 산출물 중심 재설계"
+      "improvement_note": "realdata.ts Taxonomy 고정 + 산출물 중심 재설계",
+      "predecessors": [],
+      "successors": [
+        "V2-L6-0672"
+      ],
+      "entry_condition": ""
     },
     {
       "l6_id": "V2-L6-0672",
@@ -5441,7 +6708,12 @@
       "legacy_l6_match": [
         "승인자/부서장 매핑 확정/변경"
       ],
-      "improvement_note": "realdata.ts Taxonomy 고정 + 산출물 중심 재설계"
+      "improvement_note": "realdata.ts Taxonomy 고정 + 산출물 중심 재설계",
+      "predecessors": [
+        "V2-L6-0671"
+      ],
+      "successors": [],
+      "entry_condition": "선행 L6 완료"
     },
     {
       "l6_id": "V2-L6-0673",
@@ -5461,7 +6733,12 @@
       "legacy_l6_match": [
         "승격 운영 및 임직원 소통"
       ],
-      "improvement_note": "realdata.ts Taxonomy 고정 + 산출물 중심 재설계"
+      "improvement_note": "realdata.ts Taxonomy 고정 + 산출물 중심 재설계",
+      "predecessors": [],
+      "successors": [
+        "V2-L6-0674"
+      ],
+      "entry_condition": ""
     },
     {
       "l6_id": "V2-L6-0674",
@@ -5481,7 +6758,12 @@
       "legacy_l6_match": [
         "승격 운영 및 임직원 소통"
       ],
-      "improvement_note": "realdata.ts Taxonomy 고정 + 산출물 중심 재설계"
+      "improvement_note": "realdata.ts Taxonomy 고정 + 산출물 중심 재설계",
+      "predecessors": [
+        "V2-L6-0673"
+      ],
+      "successors": [],
+      "entry_condition": "선행 L6 완료"
     },
     {
       "l6_id": "V2-L6-0675",
@@ -5501,7 +6783,12 @@
       "legacy_l6_match": [
         "결과 분석/보고 및 결과 안내"
       ],
-      "improvement_note": "realdata.ts Taxonomy 고정 + 산출물 중심 재설계"
+      "improvement_note": "realdata.ts Taxonomy 고정 + 산출물 중심 재설계",
+      "predecessors": [],
+      "successors": [
+        "V2-L6-0676"
+      ],
+      "entry_condition": ""
     },
     {
       "l6_id": "V2-L6-0676",
@@ -5521,7 +6808,12 @@
       "legacy_l6_match": [
         "결과 분석/보고 및 결과 안내"
       ],
-      "improvement_note": "realdata.ts Taxonomy 고정 + 산출물 중심 재설계"
+      "improvement_note": "realdata.ts Taxonomy 고정 + 산출물 중심 재설계",
+      "predecessors": [
+        "V2-L6-0675"
+      ],
+      "successors": [],
+      "entry_condition": "선행 L6 완료"
     },
     {
       "l6_id": "V2-L6-0677",
@@ -5541,7 +6833,12 @@
       "legacy_l6_match": [
         "후속 조치"
       ],
-      "improvement_note": "realdata.ts Taxonomy 고정 + 산출물 중심 재설계"
+      "improvement_note": "realdata.ts Taxonomy 고정 + 산출물 중심 재설계",
+      "predecessors": [],
+      "successors": [
+        "V2-L6-0678"
+      ],
+      "entry_condition": ""
     },
     {
       "l6_id": "V2-L6-0678",
@@ -5561,7 +6858,12 @@
       "legacy_l6_match": [
         "후속 조치"
       ],
-      "improvement_note": "realdata.ts Taxonomy 고정 + 산출물 중심 재설계"
+      "improvement_note": "realdata.ts Taxonomy 고정 + 산출물 중심 재설계",
+      "predecessors": [
+        "V2-L6-0677"
+      ],
+      "successors": [],
+      "entry_condition": "선행 L6 완료"
     },
     {
       "l6_id": "V2-L6-0679",
@@ -5581,7 +6883,12 @@
       "legacy_l6_match": [
         "가이드 수립/배포 및 시스템 준비"
       ],
-      "improvement_note": "realdata.ts Taxonomy 고정 + 산출물 중심 재설계"
+      "improvement_note": "realdata.ts Taxonomy 고정 + 산출물 중심 재설계",
+      "predecessors": [],
+      "successors": [
+        "V2-L6-0680"
+      ],
+      "entry_condition": ""
     },
     {
       "l6_id": "V2-L6-0680",
@@ -5601,7 +6908,12 @@
       "legacy_l6_match": [
         "가이드 수립/배포 및 시스템 준비"
       ],
-      "improvement_note": "realdata.ts Taxonomy 고정 + 산출물 중심 재설계"
+      "improvement_note": "realdata.ts Taxonomy 고정 + 산출물 중심 재설계",
+      "predecessors": [
+        "V2-L6-0679"
+      ],
+      "successors": [],
+      "entry_condition": "선행 L6 완료"
     },
     {
       "l6_id": "V2-L6-0681",
@@ -5621,7 +6933,12 @@
       "legacy_l6_match": [
         "대상자 확정/변경 (예외자/사유 확인)"
       ],
-      "improvement_note": "realdata.ts Taxonomy 고정 + 산출물 중심 재설계"
+      "improvement_note": "realdata.ts Taxonomy 고정 + 산출물 중심 재설계",
+      "predecessors": [],
+      "successors": [
+        "V2-L6-0682"
+      ],
+      "entry_condition": ""
     },
     {
       "l6_id": "V2-L6-0682",
@@ -5641,7 +6958,12 @@
       "legacy_l6_match": [
         "대상자 확정/변경 (예외자/사유 확인)"
       ],
-      "improvement_note": "realdata.ts Taxonomy 고정 + 산출물 중심 재설계"
+      "improvement_note": "realdata.ts Taxonomy 고정 + 산출물 중심 재설계",
+      "predecessors": [
+        "V2-L6-0681"
+      ],
+      "successors": [],
+      "entry_condition": "선행 L6 완료"
     },
     {
       "l6_id": "V2-L6-0683",
@@ -5661,7 +6983,12 @@
       "legacy_l6_match": [
         "승인자/부서장 매핑 확정/변경"
       ],
-      "improvement_note": "realdata.ts Taxonomy 고정 + 산출물 중심 재설계"
+      "improvement_note": "realdata.ts Taxonomy 고정 + 산출물 중심 재설계",
+      "predecessors": [],
+      "successors": [
+        "V2-L6-0684"
+      ],
+      "entry_condition": ""
     },
     {
       "l6_id": "V2-L6-0684",
@@ -5681,7 +7008,12 @@
       "legacy_l6_match": [
         "승인자/부서장 매핑 확정/변경"
       ],
-      "improvement_note": "realdata.ts Taxonomy 고정 + 산출물 중심 재설계"
+      "improvement_note": "realdata.ts Taxonomy 고정 + 산출물 중심 재설계",
+      "predecessors": [
+        "V2-L6-0683"
+      ],
+      "successors": [],
+      "entry_condition": "선행 L6 완료"
     },
     {
       "l6_id": "V2-L6-0685",
@@ -5701,7 +7033,12 @@
       "legacy_l6_match": [
         "연봉책정/계약 운영 및 임직원 소통"
       ],
-      "improvement_note": "realdata.ts Taxonomy 고정 + 산출물 중심 재설계"
+      "improvement_note": "realdata.ts Taxonomy 고정 + 산출물 중심 재설계",
+      "predecessors": [],
+      "successors": [
+        "V2-L6-0686"
+      ],
+      "entry_condition": ""
     },
     {
       "l6_id": "V2-L6-0686",
@@ -5721,7 +7058,12 @@
       "legacy_l6_match": [
         "연봉책정/계약 운영 및 임직원 소통"
       ],
-      "improvement_note": "realdata.ts Taxonomy 고정 + 산출물 중심 재설계"
+      "improvement_note": "realdata.ts Taxonomy 고정 + 산출물 중심 재설계",
+      "predecessors": [
+        "V2-L6-0685"
+      ],
+      "successors": [],
+      "entry_condition": "선행 L6 완료"
     },
     {
       "l6_id": "V2-L6-0687",
@@ -5741,7 +7083,12 @@
       "legacy_l6_match": [
         "결과 분석/보고 및 결과 안내"
       ],
-      "improvement_note": "realdata.ts Taxonomy 고정 + 산출물 중심 재설계"
+      "improvement_note": "realdata.ts Taxonomy 고정 + 산출물 중심 재설계",
+      "predecessors": [],
+      "successors": [
+        "V2-L6-0688"
+      ],
+      "entry_condition": ""
     },
     {
       "l6_id": "V2-L6-0688",
@@ -5761,7 +7108,12 @@
       "legacy_l6_match": [
         "결과 분석/보고 및 결과 안내"
       ],
-      "improvement_note": "realdata.ts Taxonomy 고정 + 산출물 중심 재설계"
+      "improvement_note": "realdata.ts Taxonomy 고정 + 산출물 중심 재설계",
+      "predecessors": [
+        "V2-L6-0687"
+      ],
+      "successors": [],
+      "entry_condition": "선행 L6 완료"
     },
     {
       "l6_id": "V2-L6-0689",
@@ -5781,7 +7133,12 @@
       "legacy_l6_match": [
         "가이드 수립/배포 및 시스템 준비"
       ],
-      "improvement_note": "realdata.ts Taxonomy 고정 + 산출물 중심 재설계"
+      "improvement_note": "realdata.ts Taxonomy 고정 + 산출물 중심 재설계",
+      "predecessors": [],
+      "successors": [
+        "V2-L6-0690"
+      ],
+      "entry_condition": ""
     },
     {
       "l6_id": "V2-L6-0690",
@@ -5801,7 +7158,12 @@
       "legacy_l6_match": [
         "가이드 수립/배포 및 시스템 준비"
       ],
-      "improvement_note": "realdata.ts Taxonomy 고정 + 산출물 중심 재설계"
+      "improvement_note": "realdata.ts Taxonomy 고정 + 산출물 중심 재설계",
+      "predecessors": [
+        "V2-L6-0689"
+      ],
+      "successors": [],
+      "entry_condition": "선행 L6 완료"
     },
     {
       "l6_id": "V2-L6-0691",
@@ -5821,7 +7183,12 @@
       "legacy_l6_match": [
         "시상 운영 및 임직원 소통"
       ],
-      "improvement_note": "realdata.ts Taxonomy 고정 + 산출물 중심 재설계"
+      "improvement_note": "realdata.ts Taxonomy 고정 + 산출물 중심 재설계",
+      "predecessors": [],
+      "successors": [
+        "V2-L6-0692"
+      ],
+      "entry_condition": ""
     },
     {
       "l6_id": "V2-L6-0692",
@@ -5841,7 +7208,12 @@
       "legacy_l6_match": [
         "시상 운영 및 임직원 소통"
       ],
-      "improvement_note": "realdata.ts Taxonomy 고정 + 산출물 중심 재설계"
+      "improvement_note": "realdata.ts Taxonomy 고정 + 산출물 중심 재설계",
+      "predecessors": [
+        "V2-L6-0691"
+      ],
+      "successors": [],
+      "entry_condition": "선행 L6 완료"
     },
     {
       "l6_id": "V2-L6-0693",
@@ -5861,7 +7233,12 @@
       "legacy_l6_match": [
         "심사결과 취합/분석 및 최종 안내"
       ],
-      "improvement_note": "realdata.ts Taxonomy 고정 + 산출물 중심 재설계"
+      "improvement_note": "realdata.ts Taxonomy 고정 + 산출물 중심 재설계",
+      "predecessors": [],
+      "successors": [
+        "V2-L6-0694"
+      ],
+      "entry_condition": ""
     },
     {
       "l6_id": "V2-L6-0694",
@@ -5881,7 +7258,12 @@
       "legacy_l6_match": [
         "심사결과 취합/분석 및 최종 안내"
       ],
-      "improvement_note": "realdata.ts Taxonomy 고정 + 산출물 중심 재설계"
+      "improvement_note": "realdata.ts Taxonomy 고정 + 산출물 중심 재설계",
+      "predecessors": [
+        "V2-L6-0693"
+      ],
+      "successors": [],
+      "entry_condition": "선행 L6 완료"
     },
     {
       "l6_id": "V2-L6-0695",
@@ -5901,7 +7283,12 @@
       "legacy_l6_match": [
         "후속 조치"
       ],
-      "improvement_note": "realdata.ts Taxonomy 고정 + 산출물 중심 재설계"
+      "improvement_note": "realdata.ts Taxonomy 고정 + 산출물 중심 재설계",
+      "predecessors": [],
+      "successors": [
+        "V2-L6-0696"
+      ],
+      "entry_condition": ""
     },
     {
       "l6_id": "V2-L6-0696",
@@ -5921,7 +7308,12 @@
       "legacy_l6_match": [
         "후속 조치"
       ],
-      "improvement_note": "realdata.ts Taxonomy 고정 + 산출물 중심 재설계"
+      "improvement_note": "realdata.ts Taxonomy 고정 + 산출물 중심 재설계",
+      "predecessors": [
+        "V2-L6-0695"
+      ],
+      "successors": [],
+      "entry_condition": "선행 L6 완료"
     },
     {
       "l6_id": "V2-L6-0697",
@@ -5941,7 +7333,12 @@
       "legacy_l6_match": [
         "가이드 수립/배포 및 시스템 준비"
       ],
-      "improvement_note": "realdata.ts Taxonomy 고정 + 산출물 중심 재설계"
+      "improvement_note": "realdata.ts Taxonomy 고정 + 산출물 중심 재설계",
+      "predecessors": [],
+      "successors": [
+        "V2-L6-0698"
+      ],
+      "entry_condition": ""
     },
     {
       "l6_id": "V2-L6-0698",
@@ -5961,7 +7358,12 @@
       "legacy_l6_match": [
         "가이드 수립/배포 및 시스템 준비"
       ],
-      "improvement_note": "realdata.ts Taxonomy 고정 + 산출물 중심 재설계"
+      "improvement_note": "realdata.ts Taxonomy 고정 + 산출물 중심 재설계",
+      "predecessors": [
+        "V2-L6-0697"
+      ],
+      "successors": [],
+      "entry_condition": "선행 L6 완료"
     },
     {
       "l6_id": "V2-L6-0699",
@@ -5981,7 +7383,12 @@
       "legacy_l6_match": [
         "징계 검토 및 상벌위원회 운영"
       ],
-      "improvement_note": "realdata.ts Taxonomy 고정 + 산출물 중심 재설계"
+      "improvement_note": "realdata.ts Taxonomy 고정 + 산출물 중심 재설계",
+      "predecessors": [],
+      "successors": [
+        "V2-L6-0700"
+      ],
+      "entry_condition": ""
     },
     {
       "l6_id": "V2-L6-0700",
@@ -6001,7 +7408,12 @@
       "legacy_l6_match": [
         "징계 검토 및 상벌위원회 운영"
       ],
-      "improvement_note": "realdata.ts Taxonomy 고정 + 산출물 중심 재설계"
+      "improvement_note": "realdata.ts Taxonomy 고정 + 산출물 중심 재설계",
+      "predecessors": [
+        "V2-L6-0699"
+      ],
+      "successors": [],
+      "entry_condition": "선행 L6 완료"
     },
     {
       "l6_id": "V2-L6-0701",
@@ -6021,7 +7433,12 @@
       "legacy_l6_match": [
         "결과 안내"
       ],
-      "improvement_note": "realdata.ts Taxonomy 고정 + 산출물 중심 재설계"
+      "improvement_note": "realdata.ts Taxonomy 고정 + 산출물 중심 재설계",
+      "predecessors": [],
+      "successors": [
+        "V2-L6-0702"
+      ],
+      "entry_condition": ""
     },
     {
       "l6_id": "V2-L6-0702",
@@ -6041,7 +7458,12 @@
       "legacy_l6_match": [
         "결과 안내"
       ],
-      "improvement_note": "realdata.ts Taxonomy 고정 + 산출물 중심 재설계"
+      "improvement_note": "realdata.ts Taxonomy 고정 + 산출물 중심 재설계",
+      "predecessors": [
+        "V2-L6-0701"
+      ],
+      "successors": [],
+      "entry_condition": "선행 L6 완료"
     },
     {
       "l6_id": "V2-L6-0703",
@@ -6061,7 +7483,12 @@
       "legacy_l6_match": [
         "후속 조치"
       ],
-      "improvement_note": "realdata.ts Taxonomy 고정 + 산출물 중심 재설계"
+      "improvement_note": "realdata.ts Taxonomy 고정 + 산출물 중심 재설계",
+      "predecessors": [],
+      "successors": [
+        "V2-L6-0704"
+      ],
+      "entry_condition": ""
     },
     {
       "l6_id": "V2-L6-0704",
@@ -6081,7 +7508,12 @@
       "legacy_l6_match": [
         "후속 조치"
       ],
-      "improvement_note": "realdata.ts Taxonomy 고정 + 산출물 중심 재설계"
+      "improvement_note": "realdata.ts Taxonomy 고정 + 산출물 중심 재설계",
+      "predecessors": [
+        "V2-L6-0703"
+      ],
+      "successors": [],
+      "entry_condition": "선행 L6 완료"
     },
     {
       "l6_id": "V2-L6-0705",
@@ -6101,7 +7533,12 @@
       "legacy_l6_match": [
         "표준/개별연봉 계약직 관리"
       ],
-      "improvement_note": "realdata.ts Taxonomy 고정 + 산출물 중심 재설계"
+      "improvement_note": "realdata.ts Taxonomy 고정 + 산출물 중심 재설계",
+      "predecessors": [],
+      "successors": [
+        "V2-L6-0706"
+      ],
+      "entry_condition": ""
     },
     {
       "l6_id": "V2-L6-0706",
@@ -6121,7 +7558,12 @@
       "legacy_l6_match": [
         "표준/개별연봉 계약직 관리"
       ],
-      "improvement_note": "realdata.ts Taxonomy 고정 + 산출물 중심 재설계"
+      "improvement_note": "realdata.ts Taxonomy 고정 + 산출물 중심 재설계",
+      "predecessors": [
+        "V2-L6-0705"
+      ],
+      "successors": [],
+      "entry_condition": "선행 L6 완료"
     },
     {
       "l6_id": "V2-L6-0707",
@@ -6141,7 +7583,12 @@
       "legacy_l6_match": [
         "국내/해외/IP 변호사 관리"
       ],
-      "improvement_note": "realdata.ts Taxonomy 고정 + 산출물 중심 재설계"
+      "improvement_note": "realdata.ts Taxonomy 고정 + 산출물 중심 재설계",
+      "predecessors": [],
+      "successors": [
+        "V2-L6-0708"
+      ],
+      "entry_condition": ""
     },
     {
       "l6_id": "V2-L6-0708",
@@ -6161,7 +7608,12 @@
       "legacy_l6_match": [
         "국내/해외/IP 변호사 관리"
       ],
-      "improvement_note": "realdata.ts Taxonomy 고정 + 산출물 중심 재설계"
+      "improvement_note": "realdata.ts Taxonomy 고정 + 산출물 중심 재설계",
+      "predecessors": [
+        "V2-L6-0707"
+      ],
+      "successors": [],
+      "entry_condition": "선행 L6 완료"
     },
     {
       "l6_id": "V2-L6-0709",
@@ -6181,7 +7633,12 @@
       "legacy_l6_match": [
         "실시계획 수립"
       ],
-      "improvement_note": "realdata.ts Taxonomy 고정 + 산출물 중심 재설계"
+      "improvement_note": "realdata.ts Taxonomy 고정 + 산출물 중심 재설계",
+      "predecessors": [],
+      "successors": [
+        "V2-L6-0710"
+      ],
+      "entry_condition": ""
     },
     {
       "l6_id": "V2-L6-0710",
@@ -6201,7 +7658,12 @@
       "legacy_l6_match": [
         "실시계획 수립"
       ],
-      "improvement_note": "realdata.ts Taxonomy 고정 + 산출물 중심 재설계"
+      "improvement_note": "realdata.ts Taxonomy 고정 + 산출물 중심 재설계",
+      "predecessors": [
+        "V2-L6-0709"
+      ],
+      "successors": [],
+      "entry_condition": "선행 L6 완료"
     },
     {
       "l6_id": "V2-L6-0711",
@@ -6221,7 +7683,12 @@
       "legacy_l6_match": [
         "진단/검정 문항 분석 및 개발"
       ],
-      "improvement_note": "realdata.ts Taxonomy 고정 + 산출물 중심 재설계"
+      "improvement_note": "realdata.ts Taxonomy 고정 + 산출물 중심 재설계",
+      "predecessors": [],
+      "successors": [
+        "V2-L6-0712"
+      ],
+      "entry_condition": ""
     },
     {
       "l6_id": "V2-L6-0712",
@@ -6241,7 +7708,12 @@
       "legacy_l6_match": [
         "진단/검정 문항 분석 및 개발"
       ],
-      "improvement_note": "realdata.ts Taxonomy 고정 + 산출물 중심 재설계"
+      "improvement_note": "realdata.ts Taxonomy 고정 + 산출물 중심 재설계",
+      "predecessors": [
+        "V2-L6-0711"
+      ],
+      "successors": [],
+      "entry_condition": "선행 L6 완료"
     },
     {
       "l6_id": "V2-L6-0713",
@@ -6261,7 +7733,12 @@
       "legacy_l6_match": [
         "진단/검정 운영 및 평가"
       ],
-      "improvement_note": "realdata.ts Taxonomy 고정 + 산출물 중심 재설계"
+      "improvement_note": "realdata.ts Taxonomy 고정 + 산출물 중심 재설계",
+      "predecessors": [],
+      "successors": [
+        "V2-L6-0714"
+      ],
+      "entry_condition": ""
     },
     {
       "l6_id": "V2-L6-0714",
@@ -6281,7 +7758,12 @@
       "legacy_l6_match": [
         "진단/검정 운영 및 평가"
       ],
-      "improvement_note": "realdata.ts Taxonomy 고정 + 산출물 중심 재설계"
+      "improvement_note": "realdata.ts Taxonomy 고정 + 산출물 중심 재설계",
+      "predecessors": [
+        "V2-L6-0713"
+      ],
+      "successors": [],
+      "entry_condition": "선행 L6 완료"
     },
     {
       "l6_id": "V2-L6-0715",
@@ -6301,7 +7783,12 @@
       "legacy_l6_match": [
         "결과 분석/확정/보고"
       ],
-      "improvement_note": "realdata.ts Taxonomy 고정 + 산출물 중심 재설계"
+      "improvement_note": "realdata.ts Taxonomy 고정 + 산출물 중심 재설계",
+      "predecessors": [],
+      "successors": [
+        "V2-L6-0716"
+      ],
+      "entry_condition": ""
     },
     {
       "l6_id": "V2-L6-0716",
@@ -6321,7 +7808,12 @@
       "legacy_l6_match": [
         "결과 분석/확정/보고"
       ],
-      "improvement_note": "realdata.ts Taxonomy 고정 + 산출물 중심 재설계"
+      "improvement_note": "realdata.ts Taxonomy 고정 + 산출물 중심 재설계",
+      "predecessors": [
+        "V2-L6-0715"
+      ],
+      "successors": [],
+      "entry_condition": "선행 L6 완료"
     },
     {
       "l6_id": "V2-L6-0717",
@@ -6341,7 +7833,12 @@
       "legacy_l6_match": [
         "이러닝 컨텐츠 소싱/관리 및 큐레이션"
       ],
-      "improvement_note": "realdata.ts Taxonomy 고정 + 산출물 중심 재설계"
+      "improvement_note": "realdata.ts Taxonomy 고정 + 산출물 중심 재설계",
+      "predecessors": [],
+      "successors": [
+        "V2-L6-0718"
+      ],
+      "entry_condition": ""
     },
     {
       "l6_id": "V2-L6-0718",
@@ -6361,7 +7858,12 @@
       "legacy_l6_match": [
         "이러닝 컨텐츠 소싱/관리 및 큐레이션"
       ],
-      "improvement_note": "realdata.ts Taxonomy 고정 + 산출물 중심 재설계"
+      "improvement_note": "realdata.ts Taxonomy 고정 + 산출물 중심 재설계",
+      "predecessors": [
+        "V2-L6-0717"
+      ],
+      "successors": [],
+      "entry_condition": "선행 L6 완료"
     },
     {
       "l6_id": "V2-L6-0719",
@@ -6381,7 +7883,12 @@
       "legacy_l6_match": [
         "선발 규모/선발 전략 수립"
       ],
-      "improvement_note": "realdata.ts Taxonomy 고정 + 산출물 중심 재설계"
+      "improvement_note": "realdata.ts Taxonomy 고정 + 산출물 중심 재설계",
+      "predecessors": [],
+      "successors": [
+        "V2-L6-0720"
+      ],
+      "entry_condition": ""
     },
     {
       "l6_id": "V2-L6-0720",
@@ -6401,7 +7908,12 @@
       "legacy_l6_match": [
         "선발 규모/선발 전략 수립"
       ],
-      "improvement_note": "realdata.ts Taxonomy 고정 + 산출물 중심 재설계"
+      "improvement_note": "realdata.ts Taxonomy 고정 + 산출물 중심 재설계",
+      "predecessors": [
+        "V2-L6-0719"
+      ],
+      "successors": [],
+      "entry_condition": "선행 L6 완료"
     },
     {
       "l6_id": "V2-L6-0721",
@@ -6421,7 +7933,12 @@
       "legacy_l6_match": [
         "선발 전형 운영"
       ],
-      "improvement_note": "realdata.ts Taxonomy 고정 + 산출물 중심 재설계"
+      "improvement_note": "realdata.ts Taxonomy 고정 + 산출물 중심 재설계",
+      "predecessors": [],
+      "successors": [
+        "V2-L6-0722"
+      ],
+      "entry_condition": ""
     },
     {
       "l6_id": "V2-L6-0722",
@@ -6441,7 +7958,12 @@
       "legacy_l6_match": [
         "선발 전형 운영"
       ],
-      "improvement_note": "realdata.ts Taxonomy 고정 + 산출물 중심 재설계"
+      "improvement_note": "realdata.ts Taxonomy 고정 + 산출물 중심 재설계",
+      "predecessors": [
+        "V2-L6-0721"
+      ],
+      "successors": [],
+      "entry_condition": "선행 L6 완료"
     },
     {
       "l6_id": "V2-L6-0723",
@@ -6461,7 +7983,12 @@
       "legacy_l6_match": [
         "양성경비/처우기준"
       ],
-      "improvement_note": "realdata.ts Taxonomy 고정 + 산출물 중심 재설계"
+      "improvement_note": "realdata.ts Taxonomy 고정 + 산출물 중심 재설계",
+      "predecessors": [],
+      "successors": [
+        "V2-L6-0724"
+      ],
+      "entry_condition": ""
     },
     {
       "l6_id": "V2-L6-0724",
@@ -6481,7 +8008,12 @@
       "legacy_l6_match": [
         "양성경비/처우기준"
       ],
-      "improvement_note": "realdata.ts Taxonomy 고정 + 산출물 중심 재설계"
+      "improvement_note": "realdata.ts Taxonomy 고정 + 산출물 중심 재설계",
+      "predecessors": [
+        "V2-L6-0723"
+      ],
+      "successors": [],
+      "entry_condition": "선행 L6 완료"
     },
     {
       "l6_id": "V2-L6-0725",
@@ -6501,7 +8033,12 @@
       "legacy_l6_match": [
         "파견자 관리"
       ],
-      "improvement_note": "realdata.ts Taxonomy 고정 + 산출물 중심 재설계"
+      "improvement_note": "realdata.ts Taxonomy 고정 + 산출물 중심 재설계",
+      "predecessors": [],
+      "successors": [
+        "V2-L6-0726"
+      ],
+      "entry_condition": ""
     },
     {
       "l6_id": "V2-L6-0726",
@@ -6521,7 +8058,12 @@
       "legacy_l6_match": [
         "파견자 관리"
       ],
-      "improvement_note": "realdata.ts Taxonomy 고정 + 산출물 중심 재설계"
+      "improvement_note": "realdata.ts Taxonomy 고정 + 산출물 중심 재설계",
+      "predecessors": [
+        "V2-L6-0725"
+      ],
+      "successors": [],
+      "entry_condition": "선행 L6 완료"
     },
     {
       "l6_id": "V2-L6-0727",
@@ -6541,7 +8083,12 @@
       "legacy_l6_match": [
         "교육 실행 계획 수립"
       ],
-      "improvement_note": "realdata.ts Taxonomy 고정 + 산출물 중심 재설계"
+      "improvement_note": "realdata.ts Taxonomy 고정 + 산출물 중심 재설계",
+      "predecessors": [],
+      "successors": [
+        "V2-L6-0728"
+      ],
+      "entry_condition": ""
     },
     {
       "l6_id": "V2-L6-0728",
@@ -6561,7 +8108,12 @@
       "legacy_l6_match": [
         "교육 실행 계획 수립"
       ],
-      "improvement_note": "realdata.ts Taxonomy 고정 + 산출물 중심 재설계"
+      "improvement_note": "realdata.ts Taxonomy 고정 + 산출물 중심 재설계",
+      "predecessors": [
+        "V2-L6-0727"
+      ],
+      "successors": [],
+      "entry_condition": "선행 L6 완료"
     },
     {
       "l6_id": "V2-L6-0729",
@@ -6581,7 +8133,12 @@
       "legacy_l6_match": [
         "교육 예산 계획 수립"
       ],
-      "improvement_note": "realdata.ts Taxonomy 고정 + 산출물 중심 재설계"
+      "improvement_note": "realdata.ts Taxonomy 고정 + 산출물 중심 재설계",
+      "predecessors": [],
+      "successors": [
+        "V2-L6-0730"
+      ],
+      "entry_condition": ""
     },
     {
       "l6_id": "V2-L6-0730",
@@ -6601,7 +8158,12 @@
       "legacy_l6_match": [
         "교육 예산 계획 수립"
       ],
-      "improvement_note": "realdata.ts Taxonomy 고정 + 산출물 중심 재설계"
+      "improvement_note": "realdata.ts Taxonomy 고정 + 산출물 중심 재설계",
+      "predecessors": [
+        "V2-L6-0729"
+      ],
+      "successors": [],
+      "entry_condition": "선행 L6 완료"
     },
     {
       "l6_id": "V2-L6-0731",
@@ -6621,7 +8183,12 @@
       "legacy_l6_match": [
         "과정 개설"
       ],
-      "improvement_note": "realdata.ts Taxonomy 고정 + 산출물 중심 재설계"
+      "improvement_note": "realdata.ts Taxonomy 고정 + 산출물 중심 재설계",
+      "predecessors": [],
+      "successors": [
+        "V2-L6-0732"
+      ],
+      "entry_condition": ""
     },
     {
       "l6_id": "V2-L6-0732",
@@ -6641,7 +8208,12 @@
       "legacy_l6_match": [
         "과정 개설"
       ],
-      "improvement_note": "realdata.ts Taxonomy 고정 + 산출물 중심 재설계"
+      "improvement_note": "realdata.ts Taxonomy 고정 + 산출물 중심 재설계",
+      "predecessors": [
+        "V2-L6-0731"
+      ],
+      "successors": [],
+      "entry_condition": "선행 L6 완료"
     },
     {
       "l6_id": "V2-L6-0733",
@@ -6661,7 +8233,12 @@
       "legacy_l6_match": [
         "대상자 모집/선발"
       ],
-      "improvement_note": "realdata.ts Taxonomy 고정 + 산출물 중심 재설계"
+      "improvement_note": "realdata.ts Taxonomy 고정 + 산출물 중심 재설계",
+      "predecessors": [],
+      "successors": [
+        "V2-L6-0734"
+      ],
+      "entry_condition": ""
     },
     {
       "l6_id": "V2-L6-0734",
@@ -6681,7 +8258,12 @@
       "legacy_l6_match": [
         "대상자 모집/선발"
       ],
-      "improvement_note": "realdata.ts Taxonomy 고정 + 산출물 중심 재설계"
+      "improvement_note": "realdata.ts Taxonomy 고정 + 산출물 중심 재설계",
+      "predecessors": [
+        "V2-L6-0733"
+      ],
+      "successors": [],
+      "entry_condition": "선행 L6 완료"
     },
     {
       "l6_id": "V2-L6-0735",
@@ -6701,7 +8283,12 @@
       "legacy_l6_match": [
         "입과안내/교육생 관리"
       ],
-      "improvement_note": "realdata.ts Taxonomy 고정 + 산출물 중심 재설계"
+      "improvement_note": "realdata.ts Taxonomy 고정 + 산출물 중심 재설계",
+      "predecessors": [],
+      "successors": [
+        "V2-L6-0736"
+      ],
+      "entry_condition": ""
     },
     {
       "l6_id": "V2-L6-0736",
@@ -6721,7 +8308,12 @@
       "legacy_l6_match": [
         "입과안내/교육생 관리"
       ],
-      "improvement_note": "realdata.ts Taxonomy 고정 + 산출물 중심 재설계"
+      "improvement_note": "realdata.ts Taxonomy 고정 + 산출물 중심 재설계",
+      "predecessors": [
+        "V2-L6-0735"
+      ],
+      "successors": [],
+      "entry_condition": "선행 L6 완료"
     },
     {
       "l6_id": "V2-L6-0737",
@@ -6741,7 +8333,12 @@
       "legacy_l6_match": [
         "내/외부 강사관리"
       ],
-      "improvement_note": "realdata.ts Taxonomy 고정 + 산출물 중심 재설계"
+      "improvement_note": "realdata.ts Taxonomy 고정 + 산출물 중심 재설계",
+      "predecessors": [],
+      "successors": [
+        "V2-L6-0738"
+      ],
+      "entry_condition": ""
     },
     {
       "l6_id": "V2-L6-0738",
@@ -6761,7 +8358,12 @@
       "legacy_l6_match": [
         "내/외부 강사관리"
       ],
-      "improvement_note": "realdata.ts Taxonomy 고정 + 산출물 중심 재설계"
+      "improvement_note": "realdata.ts Taxonomy 고정 + 산출물 중심 재설계",
+      "predecessors": [
+        "V2-L6-0737"
+      ],
+      "successors": [],
+      "entry_condition": "선행 L6 완료"
     },
     {
       "l6_id": "V2-L6-0739",
@@ -6781,7 +8383,12 @@
       "legacy_l6_match": [
         "운영준비(인프라 셋팅 등)"
       ],
-      "improvement_note": "realdata.ts Taxonomy 고정 + 산출물 중심 재설계"
+      "improvement_note": "realdata.ts Taxonomy 고정 + 산출물 중심 재설계",
+      "predecessors": [],
+      "successors": [
+        "V2-L6-0740"
+      ],
+      "entry_condition": ""
     },
     {
       "l6_id": "V2-L6-0740",
@@ -6801,7 +8408,12 @@
       "legacy_l6_match": [
         "운영준비(인프라 셋팅 등)"
       ],
-      "improvement_note": "realdata.ts Taxonomy 고정 + 산출물 중심 재설계"
+      "improvement_note": "realdata.ts Taxonomy 고정 + 산출물 중심 재설계",
+      "predecessors": [
+        "V2-L6-0739"
+      ],
+      "successors": [],
+      "entry_condition": "선행 L6 완료"
     },
     {
       "l6_id": "V2-L6-0741",
@@ -6821,7 +8433,12 @@
       "legacy_l6_match": [
         "과정 운영"
       ],
-      "improvement_note": "realdata.ts Taxonomy 고정 + 산출물 중심 재설계"
+      "improvement_note": "realdata.ts Taxonomy 고정 + 산출물 중심 재설계",
+      "predecessors": [],
+      "successors": [
+        "V2-L6-0742"
+      ],
+      "entry_condition": ""
     },
     {
       "l6_id": "V2-L6-0742",
@@ -6841,7 +8458,12 @@
       "legacy_l6_match": [
         "과정 운영"
       ],
-      "improvement_note": "realdata.ts Taxonomy 고정 + 산출물 중심 재설계"
+      "improvement_note": "realdata.ts Taxonomy 고정 + 산출물 중심 재설계",
+      "predecessors": [
+        "V2-L6-0741"
+      ],
+      "successors": [],
+      "entry_condition": "선행 L6 완료"
     },
     {
       "l6_id": "V2-L6-0743",
@@ -6861,7 +8483,12 @@
       "legacy_l6_match": [
         "과정설문 취합/분석"
       ],
-      "improvement_note": "realdata.ts Taxonomy 고정 + 산출물 중심 재설계"
+      "improvement_note": "realdata.ts Taxonomy 고정 + 산출물 중심 재설계",
+      "predecessors": [],
+      "successors": [
+        "V2-L6-0744"
+      ],
+      "entry_condition": ""
     },
     {
       "l6_id": "V2-L6-0744",
@@ -6881,7 +8508,12 @@
       "legacy_l6_match": [
         "과정설문 취합/분석"
       ],
-      "improvement_note": "realdata.ts Taxonomy 고정 + 산출물 중심 재설계"
+      "improvement_note": "realdata.ts Taxonomy 고정 + 산출물 중심 재설계",
+      "predecessors": [
+        "V2-L6-0743"
+      ],
+      "successors": [],
+      "entry_condition": "선행 L6 완료"
     },
     {
       "l6_id": "V2-L6-0745",
@@ -6901,7 +8533,12 @@
       "legacy_l6_match": [
         "성과분석/결과보고"
       ],
-      "improvement_note": "realdata.ts Taxonomy 고정 + 산출물 중심 재설계"
+      "improvement_note": "realdata.ts Taxonomy 고정 + 산출물 중심 재설계",
+      "predecessors": [],
+      "successors": [
+        "V2-L6-0746"
+      ],
+      "entry_condition": ""
     },
     {
       "l6_id": "V2-L6-0746",
@@ -6921,7 +8558,12 @@
       "legacy_l6_match": [
         "성과분석/결과보고"
       ],
-      "improvement_note": "realdata.ts Taxonomy 고정 + 산출물 중심 재설계"
+      "improvement_note": "realdata.ts Taxonomy 고정 + 산출물 중심 재설계",
+      "predecessors": [
+        "V2-L6-0745"
+      ],
+      "successors": [],
+      "entry_condition": "선행 L6 완료"
     },
     {
       "l6_id": "V2-L6-0747",
@@ -6941,7 +8583,12 @@
       "legacy_l6_match": [
         "수료 관리 및 경비처리"
       ],
-      "improvement_note": "realdata.ts Taxonomy 고정 + 산출물 중심 재설계"
+      "improvement_note": "realdata.ts Taxonomy 고정 + 산출물 중심 재설계",
+      "predecessors": [],
+      "successors": [
+        "V2-L6-0748"
+      ],
+      "entry_condition": ""
     },
     {
       "l6_id": "V2-L6-0748",
@@ -6961,7 +8608,12 @@
       "legacy_l6_match": [
         "수료 관리 및 경비처리"
       ],
-      "improvement_note": "realdata.ts Taxonomy 고정 + 산출물 중심 재설계"
+      "improvement_note": "realdata.ts Taxonomy 고정 + 산출물 중심 재설계",
+      "predecessors": [
+        "V2-L6-0747"
+      ],
+      "successors": [],
+      "entry_condition": "선행 L6 완료"
     },
     {
       "l6_id": "V2-L6-0749",
@@ -6981,7 +8633,12 @@
       "legacy_l6_match": [
         "강의안 및 교보재 개발"
       ],
-      "improvement_note": "realdata.ts Taxonomy 고정 + 산출물 중심 재설계"
+      "improvement_note": "realdata.ts Taxonomy 고정 + 산출물 중심 재설계",
+      "predecessors": [],
+      "successors": [
+        "V2-L6-0750"
+      ],
+      "entry_condition": ""
     },
     {
       "l6_id": "V2-L6-0750",
@@ -7001,7 +8658,12 @@
       "legacy_l6_match": [
         "강의안 및 교보재 개발"
       ],
-      "improvement_note": "realdata.ts Taxonomy 고정 + 산출물 중심 재설계"
+      "improvement_note": "realdata.ts Taxonomy 고정 + 산출물 중심 재설계",
+      "predecessors": [
+        "V2-L6-0749"
+      ],
+      "successors": [],
+      "entry_condition": "선행 L6 완료"
     },
     {
       "l6_id": "V2-L6-0751",
@@ -7021,7 +8683,12 @@
       "legacy_l6_match": [
         "전사 교육 전략 기획"
       ],
-      "improvement_note": "realdata.ts Taxonomy 고정 + 산출물 중심 재설계"
+      "improvement_note": "realdata.ts Taxonomy 고정 + 산출물 중심 재설계",
+      "predecessors": [],
+      "successors": [
+        "V2-L6-0752"
+      ],
+      "entry_condition": ""
     },
     {
       "l6_id": "V2-L6-0752",
@@ -7041,7 +8708,12 @@
       "legacy_l6_match": [
         "전사 교육 전략 기획"
       ],
-      "improvement_note": "realdata.ts Taxonomy 고정 + 산출물 중심 재설계"
+      "improvement_note": "realdata.ts Taxonomy 고정 + 산출물 중심 재설계",
+      "predecessors": [
+        "V2-L6-0751"
+      ],
+      "successors": [],
+      "entry_condition": "선행 L6 완료"
     },
     {
       "l6_id": "V2-L6-0753",
@@ -7061,7 +8733,12 @@
       "legacy_l6_match": [
         "요구사항분석"
       ],
-      "improvement_note": "realdata.ts Taxonomy 고정 + 산출물 중심 재설계"
+      "improvement_note": "realdata.ts Taxonomy 고정 + 산출물 중심 재설계",
+      "predecessors": [],
+      "successors": [
+        "V2-L6-0754"
+      ],
+      "entry_condition": ""
     },
     {
       "l6_id": "V2-L6-0754",
@@ -7081,7 +8758,12 @@
       "legacy_l6_match": [
         "요구사항분석"
       ],
-      "improvement_note": "realdata.ts Taxonomy 고정 + 산출물 중심 재설계"
+      "improvement_note": "realdata.ts Taxonomy 고정 + 산출물 중심 재설계",
+      "predecessors": [
+        "V2-L6-0753"
+      ],
+      "successors": [],
+      "entry_condition": "선행 L6 완료"
     },
     {
       "l6_id": "V2-L6-0755",
@@ -7101,7 +8783,12 @@
       "legacy_l6_match": [
         "트렌드분석"
       ],
-      "improvement_note": "realdata.ts Taxonomy 고정 + 산출물 중심 재설계"
+      "improvement_note": "realdata.ts Taxonomy 고정 + 산출물 중심 재설계",
+      "predecessors": [],
+      "successors": [
+        "V2-L6-0756"
+      ],
+      "entry_condition": ""
     },
     {
       "l6_id": "V2-L6-0756",
@@ -7121,7 +8808,12 @@
       "legacy_l6_match": [
         "트렌드분석"
       ],
-      "improvement_note": "realdata.ts Taxonomy 고정 + 산출물 중심 재설계"
+      "improvement_note": "realdata.ts Taxonomy 고정 + 산출물 중심 재설계",
+      "predecessors": [
+        "V2-L6-0755"
+      ],
+      "successors": [],
+      "entry_condition": "선행 L6 완료"
     },
     {
       "l6_id": "V2-L6-0757",
@@ -7141,7 +8833,12 @@
       "legacy_l6_match": [
         "교육대상 분석"
       ],
-      "improvement_note": "realdata.ts Taxonomy 고정 + 산출물 중심 재설계"
+      "improvement_note": "realdata.ts Taxonomy 고정 + 산출물 중심 재설계",
+      "predecessors": [],
+      "successors": [
+        "V2-L6-0758"
+      ],
+      "entry_condition": ""
     },
     {
       "l6_id": "V2-L6-0758",
@@ -7161,7 +8858,12 @@
       "legacy_l6_match": [
         "교육대상 분석"
       ],
-      "improvement_note": "realdata.ts Taxonomy 고정 + 산출물 중심 재설계"
+      "improvement_note": "realdata.ts Taxonomy 고정 + 산출물 중심 재설계",
+      "predecessors": [
+        "V2-L6-0757"
+      ],
+      "successors": [],
+      "entry_condition": "선행 L6 완료"
     },
     {
       "l6_id": "V2-L6-0759",
@@ -7181,7 +8883,12 @@
       "legacy_l6_match": [
         "커리큘럼 기획"
       ],
-      "improvement_note": "realdata.ts Taxonomy 고정 + 산출물 중심 재설계"
+      "improvement_note": "realdata.ts Taxonomy 고정 + 산출물 중심 재설계",
+      "predecessors": [],
+      "successors": [
+        "V2-L6-0760"
+      ],
+      "entry_condition": ""
     },
     {
       "l6_id": "V2-L6-0760",
@@ -7201,7 +8908,12 @@
       "legacy_l6_match": [
         "커리큘럼 기획"
       ],
-      "improvement_note": "realdata.ts Taxonomy 고정 + 산출물 중심 재설계"
+      "improvement_note": "realdata.ts Taxonomy 고정 + 산출물 중심 재설계",
+      "predecessors": [
+        "V2-L6-0759"
+      ],
+      "successors": [],
+      "entry_condition": "선행 L6 완료"
     },
     {
       "l6_id": "V2-L6-0761",
@@ -7221,7 +8933,12 @@
       "legacy_l6_match": [
         "커리큘럼 기획"
       ],
-      "improvement_note": "realdata.ts Taxonomy 고정 + 산출물 중심 재설계"
+      "improvement_note": "realdata.ts Taxonomy 고정 + 산출물 중심 재설계",
+      "predecessors": [],
+      "successors": [
+        "V2-L6-0762"
+      ],
+      "entry_condition": ""
     },
     {
       "l6_id": "V2-L6-0762",
@@ -7241,7 +8958,12 @@
       "legacy_l6_match": [
         "커리큘럼 기획"
       ],
-      "improvement_note": "realdata.ts Taxonomy 고정 + 산출물 중심 재설계"
+      "improvement_note": "realdata.ts Taxonomy 고정 + 산출물 중심 재설계",
+      "predecessors": [
+        "V2-L6-0761"
+      ],
+      "successors": [],
+      "entry_condition": "선행 L6 완료"
     },
     {
       "l6_id": "V2-L6-0763",
@@ -7261,7 +8983,12 @@
       "legacy_l6_match": [
         "커리큘럼 확정"
       ],
-      "improvement_note": "realdata.ts Taxonomy 고정 + 산출물 중심 재설계"
+      "improvement_note": "realdata.ts Taxonomy 고정 + 산출물 중심 재설계",
+      "predecessors": [],
+      "successors": [
+        "V2-L6-0764"
+      ],
+      "entry_condition": ""
     },
     {
       "l6_id": "V2-L6-0764",
@@ -7281,7 +9008,12 @@
       "legacy_l6_match": [
         "커리큘럼 확정"
       ],
-      "improvement_note": "realdata.ts Taxonomy 고정 + 산출물 중심 재설계"
+      "improvement_note": "realdata.ts Taxonomy 고정 + 산출물 중심 재설계",
+      "predecessors": [
+        "V2-L6-0763"
+      ],
+      "successors": [],
+      "entry_condition": "선행 L6 완료"
     },
     {
       "l6_id": "V2-L6-0765",
@@ -7301,7 +9033,12 @@
       "legacy_l6_match": [
         "프로그램 운영방안 결정"
       ],
-      "improvement_note": "realdata.ts Taxonomy 고정 + 산출물 중심 재설계"
+      "improvement_note": "realdata.ts Taxonomy 고정 + 산출물 중심 재설계",
+      "predecessors": [],
+      "successors": [
+        "V2-L6-0766"
+      ],
+      "entry_condition": ""
     },
     {
       "l6_id": "V2-L6-0766",
@@ -7321,7 +9058,12 @@
       "legacy_l6_match": [
         "프로그램 운영방안 결정"
       ],
-      "improvement_note": "realdata.ts Taxonomy 고정 + 산출물 중심 재설계"
+      "improvement_note": "realdata.ts Taxonomy 고정 + 산출물 중심 재설계",
+      "predecessors": [
+        "V2-L6-0765"
+      ],
+      "successors": [],
+      "entry_condition": "선행 L6 완료"
     },
     {
       "l6_id": "V2-L6-0767",
@@ -7341,7 +9083,12 @@
       "legacy_l6_match": [
         "평가 도구 설계(KPI)"
       ],
-      "improvement_note": "realdata.ts Taxonomy 고정 + 산출물 중심 재설계"
+      "improvement_note": "realdata.ts Taxonomy 고정 + 산출물 중심 재설계",
+      "predecessors": [],
+      "successors": [
+        "V2-L6-0768"
+      ],
+      "entry_condition": ""
     },
     {
       "l6_id": "V2-L6-0768",
@@ -7361,7 +9108,12 @@
       "legacy_l6_match": [
         "평가 도구 설계(KPI)"
       ],
-      "improvement_note": "realdata.ts Taxonomy 고정 + 산출물 중심 재설계"
+      "improvement_note": "realdata.ts Taxonomy 고정 + 산출물 중심 재설계",
+      "predecessors": [
+        "V2-L6-0767"
+      ],
+      "successors": [],
+      "entry_condition": "선행 L6 완료"
     },
     {
       "l6_id": "V2-L6-0769",
@@ -7381,7 +9133,12 @@
       "legacy_l6_match": [
         "Pilot과정 운영"
       ],
-      "improvement_note": "realdata.ts Taxonomy 고정 + 산출물 중심 재설계"
+      "improvement_note": "realdata.ts Taxonomy 고정 + 산출물 중심 재설계",
+      "predecessors": [],
+      "successors": [
+        "V2-L6-0770"
+      ],
+      "entry_condition": ""
     },
     {
       "l6_id": "V2-L6-0770",
@@ -7401,7 +9158,12 @@
       "legacy_l6_match": [
         "Pilot과정 운영"
       ],
-      "improvement_note": "realdata.ts Taxonomy 고정 + 산출물 중심 재설계"
+      "improvement_note": "realdata.ts Taxonomy 고정 + 산출물 중심 재설계",
+      "predecessors": [
+        "V2-L6-0769"
+      ],
+      "successors": [],
+      "entry_condition": "선행 L6 완료"
     },
     {
       "l6_id": "V2-L6-0771",
@@ -7421,7 +9183,12 @@
       "legacy_l6_match": [
         "강사선정"
       ],
-      "improvement_note": "realdata.ts Taxonomy 고정 + 산출물 중심 재설계"
+      "improvement_note": "realdata.ts Taxonomy 고정 + 산출물 중심 재설계",
+      "predecessors": [],
+      "successors": [
+        "V2-L6-0772"
+      ],
+      "entry_condition": ""
     },
     {
       "l6_id": "V2-L6-0772",
@@ -7441,7 +9208,12 @@
       "legacy_l6_match": [
         "강사선정"
       ],
-      "improvement_note": "realdata.ts Taxonomy 고정 + 산출물 중심 재설계"
+      "improvement_note": "realdata.ts Taxonomy 고정 + 산출물 중심 재설계",
+      "predecessors": [
+        "V2-L6-0771"
+      ],
+      "successors": [],
+      "entry_condition": "선행 L6 완료"
     },
     {
       "l6_id": "V2-L6-0773",
@@ -7461,7 +9233,12 @@
       "legacy_l6_match": [
         "컨텐츠협의"
       ],
-      "improvement_note": "realdata.ts Taxonomy 고정 + 산출물 중심 재설계"
+      "improvement_note": "realdata.ts Taxonomy 고정 + 산출물 중심 재설계",
+      "predecessors": [],
+      "successors": [
+        "V2-L6-0774"
+      ],
+      "entry_condition": ""
     },
     {
       "l6_id": "V2-L6-0774",
@@ -7481,7 +9258,12 @@
       "legacy_l6_match": [
         "컨텐츠협의"
       ],
-      "improvement_note": "realdata.ts Taxonomy 고정 + 산출물 중심 재설계"
+      "improvement_note": "realdata.ts Taxonomy 고정 + 산출물 중심 재설계",
+      "predecessors": [
+        "V2-L6-0773"
+      ],
+      "successors": [],
+      "entry_condition": "선행 L6 완료"
     },
     {
       "l6_id": "V2-L6-0775",
@@ -7501,7 +9283,12 @@
       "legacy_l6_match": [
         "강사계약"
       ],
-      "improvement_note": "realdata.ts Taxonomy 고정 + 산출물 중심 재설계"
+      "improvement_note": "realdata.ts Taxonomy 고정 + 산출물 중심 재설계",
+      "predecessors": [],
+      "successors": [
+        "V2-L6-0776"
+      ],
+      "entry_condition": ""
     },
     {
       "l6_id": "V2-L6-0776",
@@ -7521,7 +9308,12 @@
       "legacy_l6_match": [
         "강사계약"
       ],
-      "improvement_note": "realdata.ts Taxonomy 고정 + 산출물 중심 재설계"
+      "improvement_note": "realdata.ts Taxonomy 고정 + 산출물 중심 재설계",
+      "predecessors": [
+        "V2-L6-0775"
+      ],
+      "successors": [],
+      "entry_condition": "선행 L6 완료"
     },
     {
       "l6_id": "V2-L6-0777",
@@ -7541,7 +9333,12 @@
       "legacy_l6_match": [
         "이러닝 콘텐츠 개발"
       ],
-      "improvement_note": "realdata.ts Taxonomy 고정 + 산출물 중심 재설계"
+      "improvement_note": "realdata.ts Taxonomy 고정 + 산출물 중심 재설계",
+      "predecessors": [],
+      "successors": [
+        "V2-L6-0778"
+      ],
+      "entry_condition": ""
     },
     {
       "l6_id": "V2-L6-0778",
@@ -7561,7 +9358,12 @@
       "legacy_l6_match": [
         "이러닝 콘텐츠 개발"
       ],
-      "improvement_note": "realdata.ts Taxonomy 고정 + 산출물 중심 재설계"
+      "improvement_note": "realdata.ts Taxonomy 고정 + 산출물 중심 재설계",
+      "predecessors": [
+        "V2-L6-0777"
+      ],
+      "successors": [],
+      "entry_condition": "선행 L6 완료"
     },
     {
       "l6_id": "V2-L6-0779",
@@ -7581,7 +9383,12 @@
       "legacy_l6_match": [
         "강의안 및 교보재 개발"
       ],
-      "improvement_note": "realdata.ts Taxonomy 고정 + 산출물 중심 재설계"
+      "improvement_note": "realdata.ts Taxonomy 고정 + 산출물 중심 재설계",
+      "predecessors": [],
+      "successors": [
+        "V2-L6-0780"
+      ],
+      "entry_condition": ""
     },
     {
       "l6_id": "V2-L6-0780",
@@ -7601,7 +9408,12 @@
       "legacy_l6_match": [
         "강의안 및 교보재 개발"
       ],
-      "improvement_note": "realdata.ts Taxonomy 고정 + 산출물 중심 재설계"
+      "improvement_note": "realdata.ts Taxonomy 고정 + 산출물 중심 재설계",
+      "predecessors": [
+        "V2-L6-0779"
+      ],
+      "successors": [],
+      "entry_condition": "선행 L6 완료"
     },
     {
       "l6_id": "V2-L6-0781",
@@ -7621,7 +9433,12 @@
       "legacy_l6_match": [
         "전사 인사담당 임원회의"
       ],
-      "improvement_note": "realdata.ts Taxonomy 고정 + 산출물 중심 재설계"
+      "improvement_note": "realdata.ts Taxonomy 고정 + 산출물 중심 재설계",
+      "predecessors": [],
+      "successors": [
+        "V2-L6-0782"
+      ],
+      "entry_condition": ""
     },
     {
       "l6_id": "V2-L6-0782",
@@ -7641,7 +9458,12 @@
       "legacy_l6_match": [
         "전사 인사담당 임원회의"
       ],
-      "improvement_note": "realdata.ts Taxonomy 고정 + 산출물 중심 재설계"
+      "improvement_note": "realdata.ts Taxonomy 고정 + 산출물 중심 재설계",
+      "predecessors": [
+        "V2-L6-0781"
+      ],
+      "successors": [],
+      "entry_condition": "선행 L6 완료"
     },
     {
       "l6_id": "V2-L6-0783",
@@ -7661,7 +9483,12 @@
       "legacy_l6_match": [
         "People팀장 사업부 정례미팅"
       ],
-      "improvement_note": "realdata.ts Taxonomy 고정 + 산출물 중심 재설계"
+      "improvement_note": "realdata.ts Taxonomy 고정 + 산출물 중심 재설계",
+      "predecessors": [],
+      "successors": [
+        "V2-L6-0784"
+      ],
+      "entry_condition": ""
     },
     {
       "l6_id": "V2-L6-0784",
@@ -7681,7 +9508,12 @@
       "legacy_l6_match": [
         "People팀장 사업부 정례미팅"
       ],
-      "improvement_note": "realdata.ts Taxonomy 고정 + 산출물 중심 재설계"
+      "improvement_note": "realdata.ts Taxonomy 고정 + 산출물 중심 재설계",
+      "predecessors": [
+        "V2-L6-0783"
+      ],
+      "successors": [],
+      "entry_condition": "선행 L6 완료"
     },
     {
       "l6_id": "V2-L6-0785",
@@ -7701,7 +9533,12 @@
       "legacy_l6_match": [
         "전사 인사전략 워크샵"
       ],
-      "improvement_note": "realdata.ts Taxonomy 고정 + 산출물 중심 재설계"
+      "improvement_note": "realdata.ts Taxonomy 고정 + 산출물 중심 재설계",
+      "predecessors": [],
+      "successors": [
+        "V2-L6-0786"
+      ],
+      "entry_condition": ""
     },
     {
       "l6_id": "V2-L6-0786",
@@ -7721,7 +9558,12 @@
       "legacy_l6_match": [
         "전사 인사전략 워크샵"
       ],
-      "improvement_note": "realdata.ts Taxonomy 고정 + 산출물 중심 재설계"
+      "improvement_note": "realdata.ts Taxonomy 고정 + 산출물 중심 재설계",
+      "predecessors": [
+        "V2-L6-0785"
+      ],
+      "successors": [],
+      "entry_condition": "선행 L6 완료"
     },
     {
       "l6_id": "V2-L6-0787",
@@ -7741,7 +9583,12 @@
       "legacy_l6_match": [
         "People팀 조직목표 수립"
       ],
-      "improvement_note": "realdata.ts Taxonomy 고정 + 산출물 중심 재설계"
+      "improvement_note": "realdata.ts Taxonomy 고정 + 산출물 중심 재설계",
+      "predecessors": [],
+      "successors": [
+        "V2-L6-0788"
+      ],
+      "entry_condition": ""
     },
     {
       "l6_id": "V2-L6-0788",
@@ -7761,7 +9608,12 @@
       "legacy_l6_match": [
         "People팀 조직목표 수립"
       ],
-      "improvement_note": "realdata.ts Taxonomy 고정 + 산출물 중심 재설계"
+      "improvement_note": "realdata.ts Taxonomy 고정 + 산출물 중심 재설계",
+      "predecessors": [
+        "V2-L6-0787"
+      ],
+      "successors": [],
+      "entry_condition": "선행 L6 완료"
     },
     {
       "l6_id": "V2-L6-0789",
@@ -7781,7 +9633,12 @@
       "legacy_l6_match": [
         "인사전략 수립"
       ],
-      "improvement_note": "realdata.ts Taxonomy 고정 + 산출물 중심 재설계"
+      "improvement_note": "realdata.ts Taxonomy 고정 + 산출물 중심 재설계",
+      "predecessors": [],
+      "successors": [
+        "V2-L6-0790"
+      ],
+      "entry_condition": ""
     },
     {
       "l6_id": "V2-L6-0790",
@@ -7801,7 +9658,12 @@
       "legacy_l6_match": [
         "인사전략 수립"
       ],
-      "improvement_note": "realdata.ts Taxonomy 고정 + 산출물 중심 재설계"
+      "improvement_note": "realdata.ts Taxonomy 고정 + 산출물 중심 재설계",
+      "predecessors": [
+        "V2-L6-0789"
+      ],
+      "successors": [],
+      "entry_condition": "선행 L6 완료"
     },
     {
       "l6_id": "V2-L6-0791",
@@ -7821,7 +9683,12 @@
       "legacy_l6_match": [
         "신임임원 등 경영진 교육자료 작성"
       ],
-      "improvement_note": "realdata.ts Taxonomy 고정 + 산출물 중심 재설계"
+      "improvement_note": "realdata.ts Taxonomy 고정 + 산출물 중심 재설계",
+      "predecessors": [],
+      "successors": [
+        "V2-L6-0792"
+      ],
+      "entry_condition": ""
     },
     {
       "l6_id": "V2-L6-0792",
@@ -7841,7 +9708,12 @@
       "legacy_l6_match": [
         "신임임원 등 경영진 교육자료 작성"
       ],
-      "improvement_note": "realdata.ts Taxonomy 고정 + 산출물 중심 재설계"
+      "improvement_note": "realdata.ts Taxonomy 고정 + 산출물 중심 재설계",
+      "predecessors": [
+        "V2-L6-0791"
+      ],
+      "successors": [],
+      "entry_condition": "선행 L6 완료"
     },
     {
       "l6_id": "V2-L6-0793",
@@ -7861,7 +9733,12 @@
       "legacy_l6_match": [
         "주주총회 등 외부 행사 내 인사 관련 자료 작성"
       ],
-      "improvement_note": "realdata.ts Taxonomy 고정 + 산출물 중심 재설계"
+      "improvement_note": "realdata.ts Taxonomy 고정 + 산출물 중심 재설계",
+      "predecessors": [],
+      "successors": [
+        "V2-L6-0794"
+      ],
+      "entry_condition": ""
     },
     {
       "l6_id": "V2-L6-0794",
@@ -7881,7 +9758,12 @@
       "legacy_l6_match": [
         "주주총회 등 외부 행사 내 인사 관련 자료 작성"
       ],
-      "improvement_note": "realdata.ts Taxonomy 고정 + 산출물 중심 재설계"
+      "improvement_note": "realdata.ts Taxonomy 고정 + 산출물 중심 재설계",
+      "predecessors": [
+        "V2-L6-0793"
+      ],
+      "successors": [],
+      "entry_condition": "선행 L6 완료"
     },
     {
       "l6_id": "V2-L6-0795",
@@ -7901,7 +9783,12 @@
       "legacy_l6_match": [
         "팀 연간 업무일정표 및 주요일정 작성"
       ],
-      "improvement_note": "realdata.ts Taxonomy 고정 + 산출물 중심 재설계"
+      "improvement_note": "realdata.ts Taxonomy 고정 + 산출물 중심 재설계",
+      "predecessors": [],
+      "successors": [
+        "V2-L6-0796"
+      ],
+      "entry_condition": ""
     },
     {
       "l6_id": "V2-L6-0796",
@@ -7921,7 +9808,12 @@
       "legacy_l6_match": [
         "팀 연간 업무일정표 및 주요일정 작성"
       ],
-      "improvement_note": "realdata.ts Taxonomy 고정 + 산출물 중심 재설계"
+      "improvement_note": "realdata.ts Taxonomy 고정 + 산출물 중심 재설계",
+      "predecessors": [
+        "V2-L6-0795"
+      ],
+      "successors": [],
+      "entry_condition": "선행 L6 완료"
     },
     {
       "l6_id": "V2-L6-0797",
@@ -7941,7 +9833,12 @@
       "legacy_l6_match": [
         "간담회 등 인사현안/지표 자료 작성"
       ],
-      "improvement_note": "realdata.ts Taxonomy 고정 + 산출물 중심 재설계"
+      "improvement_note": "realdata.ts Taxonomy 고정 + 산출물 중심 재설계",
+      "predecessors": [],
+      "successors": [
+        "V2-L6-0798"
+      ],
+      "entry_condition": ""
     },
     {
       "l6_id": "V2-L6-0798",
@@ -7961,7 +9858,12 @@
       "legacy_l6_match": [
         "간담회 등 인사현안/지표 자료 작성"
       ],
-      "improvement_note": "realdata.ts Taxonomy 고정 + 산출물 중심 재설계"
+      "improvement_note": "realdata.ts Taxonomy 고정 + 산출물 중심 재설계",
+      "predecessors": [
+        "V2-L6-0797"
+      ],
+      "successors": [],
+      "entry_condition": "선행 L6 완료"
     },
     {
       "l6_id": "V2-L6-0799",
@@ -7981,7 +9883,12 @@
       "legacy_l6_match": [
         "인사업무 지식 관리"
       ],
-      "improvement_note": "realdata.ts Taxonomy 고정 + 산출물 중심 재설계"
+      "improvement_note": "realdata.ts Taxonomy 고정 + 산출물 중심 재설계",
+      "predecessors": [],
+      "successors": [
+        "V2-L6-0800"
+      ],
+      "entry_condition": ""
     },
     {
       "l6_id": "V2-L6-0800",
@@ -8001,7 +9908,12 @@
       "legacy_l6_match": [
         "인사업무 지식 관리"
       ],
-      "improvement_note": "realdata.ts Taxonomy 고정 + 산출물 중심 재설계"
+      "improvement_note": "realdata.ts Taxonomy 고정 + 산출물 중심 재설계",
+      "predecessors": [
+        "V2-L6-0799"
+      ],
+      "successors": [],
+      "entry_condition": "선행 L6 완료"
     },
     {
       "l6_id": "V2-L6-0801",
@@ -8021,7 +9933,12 @@
       "legacy_l6_match": [
         "People팀 조직 및 인력 현황 작성"
       ],
-      "improvement_note": "realdata.ts Taxonomy 고정 + 산출물 중심 재설계"
+      "improvement_note": "realdata.ts Taxonomy 고정 + 산출물 중심 재설계",
+      "predecessors": [],
+      "successors": [
+        "V2-L6-0802"
+      ],
+      "entry_condition": ""
     },
     {
       "l6_id": "V2-L6-0802",
@@ -8041,7 +9958,12 @@
       "legacy_l6_match": [
         "People팀 조직 및 인력 현황 작성"
       ],
-      "improvement_note": "realdata.ts Taxonomy 고정 + 산출물 중심 재설계"
+      "improvement_note": "realdata.ts Taxonomy 고정 + 산출물 중심 재설계",
+      "predecessors": [
+        "V2-L6-0801"
+      ],
+      "successors": [],
+      "entry_condition": "선행 L6 완료"
     },
     {
       "l6_id": "V2-L6-0803",
@@ -8061,7 +9983,12 @@
       "legacy_l6_match": [
         "People팀 주간업무 작성"
       ],
-      "improvement_note": "realdata.ts Taxonomy 고정 + 산출물 중심 재설계"
+      "improvement_note": "realdata.ts Taxonomy 고정 + 산출물 중심 재설계",
+      "predecessors": [],
+      "successors": [
+        "V2-L6-0804"
+      ],
+      "entry_condition": ""
     },
     {
       "l6_id": "V2-L6-0804",
@@ -8081,7 +10008,12 @@
       "legacy_l6_match": [
         "People팀 주간업무 작성"
       ],
-      "improvement_note": "realdata.ts Taxonomy 고정 + 산출물 중심 재설계"
+      "improvement_note": "realdata.ts Taxonomy 고정 + 산출물 중심 재설계",
+      "predecessors": [
+        "V2-L6-0803"
+      ],
+      "successors": [],
+      "entry_condition": "선행 L6 완료"
     },
     {
       "l6_id": "V2-L6-0805",
@@ -8101,7 +10033,12 @@
       "legacy_l6_match": [
         "데이터 분석"
       ],
-      "improvement_note": "realdata.ts Taxonomy 고정 + 산출물 중심 재설계"
+      "improvement_note": "realdata.ts Taxonomy 고정 + 산출물 중심 재설계",
+      "predecessors": [],
+      "successors": [
+        "V2-L6-0806"
+      ],
+      "entry_condition": ""
     },
     {
       "l6_id": "V2-L6-0806",
@@ -8121,7 +10058,12 @@
       "legacy_l6_match": [
         "데이터 분석"
       ],
-      "improvement_note": "realdata.ts Taxonomy 고정 + 산출물 중심 재설계"
+      "improvement_note": "realdata.ts Taxonomy 고정 + 산출물 중심 재설계",
+      "predecessors": [
+        "V2-L6-0805"
+      ],
+      "successors": [],
+      "entry_condition": "선행 L6 완료"
     },
     {
       "l6_id": "V2-L6-0807",
@@ -8141,7 +10083,12 @@
       "legacy_l6_match": [
         "인사이트 발굴"
       ],
-      "improvement_note": "realdata.ts Taxonomy 고정 + 산출물 중심 재설계"
+      "improvement_note": "realdata.ts Taxonomy 고정 + 산출물 중심 재설계",
+      "predecessors": [],
+      "successors": [
+        "V2-L6-0808"
+      ],
+      "entry_condition": ""
     },
     {
       "l6_id": "V2-L6-0808",
@@ -8161,7 +10108,13 @@
       "legacy_l6_match": [
         "인사이트 발굴"
       ],
-      "improvement_note": "realdata.ts Taxonomy 고정 + 산출물 중심 재설계"
+      "improvement_note": "realdata.ts Taxonomy 고정 + 산출물 중심 재설계",
+      "predecessors": [
+        "V2-L6-0807"
+      ],
+      "successors": [],
+      "entry_condition": "선행 L6 완료"
     }
-  ]
+  ],
+  "graph_enriched": true
 }
