@@ -100,8 +100,27 @@ python tests/synthetic_eval_loop.py --base-url http://127.0.0.1:8000 --run-recru
 
 ---
 
-## 6) 클로드코드 이식 시작점
-- 1순위: `taxonomy_service.py` + `hr_l6_apqc_master_library_v2.json`
+## 6) 삼성 고유 명사 앵커 사전 (Sandbox Guideline)
+파싱 로직에서 아래 키워드는 일반명사로 버리지 말고 우선 앵커로 처리한다.
+
+- `S-calling` / `에스콜링`: 사내 전화(031 회선) 모바일 연동 서비스
+- `두발로`: 사업장 공용 자전거 시스템
+- `STEP`: Samsung Talent Exchange Program(법인 간 인력 교환)
+- `My Pulse` / `마이펄스`: 조직문화 상시 서베이
+- `SCI`: 조직문화 진단 프레임워크
+- `Change Agent` / `CA`: 조직문화 변화리더 운영 체계
+- `VP(상무)`: 임원 직급 이벤트(승격/보임) 앵커
+- `사내 화물 운영`: 내부 물류/수발 프로세스
+- `상주협력사`: 사업장 상주 협력사 인력/출입/안전 관리 도메인
+
+권장 적용 순서:
+1) 고유명사 exact match
+2) 앵커 사전 유사어 매칭
+3) legacy_l6_match 동의어 매칭
+4) 의미 유사도 후보 + human review
+
+## 7) 클로드코드 이식 시작점
+- 1순위: `taxonomy_service.py` + `hr_l6_apqc_master_library_v2.1_custom.json`
 - 2순위: `trace_service.py` (리드타임/변이 계산)
 - 3순위: `viz_service.py` (리더 보고용 Mermaid)
 - 4순위: 메인 프로젝트 스키마와 `event_type`/`mapping_status` 정합
