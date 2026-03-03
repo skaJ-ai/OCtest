@@ -662,17 +662,17 @@
       "entry_condition": ""
     },
     {
-      "l6_id": "V2-L6-0427",
+      "l6_id": "V2-L6-0809",
       "l3": "총무",
       "l4": "사내 인프라 관리",
       "l5": "숙박시설 운영 (기숙사, 포레스트)",
-      "l6_name": "기숙사/포레스트 배정승인서 발행",
+      "l6_name": "기숙사 발행",
       "input": "운영 기준/요청 데이터",
-      "output": "기숙사/포레스트 배정승인서 발행",
+      "output": "기숙사 발행",
       "digital_trace": [
-        "숙박 배정 승인 로그",
-        "입실 일정 등록 로그",
-        "메일 제목: 숙박시설 배정 결과 안내"
+        "기숙사 발행 처리 로그",
+        "기숙사 발행 시스템 상태값 변경",
+        "메일 제목: 기숙사 발행 안내"
       ],
       "automation_potential": "Mid",
       "legacy_l6_match": [
@@ -681,8 +681,35 @@
       "improvement_note": "realdata.ts 고정 뼈대 기준으로 산출물 중심 L6로 재분해함.",
       "output_type": "approval_doc",
       "predecessors": [],
-      "successors": [],
+      "successors": [
+        "V2-L6-0810"
+      ],
       "entry_condition": ""
+    },
+    {
+      "l6_id": "V2-L6-0810",
+      "l3": "총무",
+      "l4": "사내 인프라 관리",
+      "l5": "숙박시설 운영 (기숙사, 포레스트)",
+      "l6_name": "포레스트 배정승인서 발행",
+      "input": "운영 기준/요청 데이터",
+      "output": "포레스트 배정승인서 발행",
+      "digital_trace": [
+        "포레스트 배정승인서 발행 처리 로그",
+        "포레스트 배정승인서 발행 시스템 상태값 변경",
+        "메일 제목: 포레스트 배정승인서 발행 안내"
+      ],
+      "automation_potential": "Mid",
+      "legacy_l6_match": [
+        "숙박시설 운영 (기숙사, 포레스트)"
+      ],
+      "improvement_note": "realdata.ts 고정 뼈대 기준으로 산출물 중심 L6로 재분해함.",
+      "output_type": "approval_doc",
+      "predecessors": [
+        "V2-L6-0809"
+      ],
+      "successors": [],
+      "entry_condition": "선행 분해 L6 완료"
     },
     {
       "l6_id": "V2-L6-0428",
@@ -3364,17 +3391,17 @@
       "entry_condition": ""
     },
     {
-      "l6_id": "V2-L6-0537",
+      "l6_id": "V2-L6-0811",
       "l3": "채용",
       "l4": "채용 후속조치",
       "l5": "입사 및 온보딩",
-      "l6_name": "입사 전 O/T 이수결과표 등록",
+      "l6_name": "입사 전 O 등록",
       "input": "채용 운영 기준/지원자 데이터",
-      "output": "입사 전 O/T 이수결과표 등록",
+      "output": "입사 전 O 등록",
       "digital_trace": [
-        "O/T 참석체크 로그",
-        "이수여부 판정 로그",
-        "메일 제목: 입사 전 O/T 이수 결과 안내"
+        "입사 전 O 등록 처리 로그",
+        "입사 전 O 등록 시스템 상태값 변경",
+        "메일 제목: 입사 전 O 등록 안내"
       ],
       "automation_potential": "High",
       "legacy_l6_match": [
@@ -3384,9 +3411,36 @@
       "output_type": "training_status",
       "predecessors": [],
       "successors": [
-        "V2-L6-0538"
+        "V2-L6-0812"
       ],
       "entry_condition": ""
+    },
+    {
+      "l6_id": "V2-L6-0812",
+      "l3": "채용",
+      "l4": "채용 후속조치",
+      "l5": "입사 및 온보딩",
+      "l6_name": "T 이수결과표 등록",
+      "input": "채용 운영 기준/지원자 데이터",
+      "output": "T 이수결과표 등록",
+      "digital_trace": [
+        "T 이수결과표 등록 처리 로그",
+        "T 이수결과표 등록 시스템 상태값 변경",
+        "메일 제목: T 이수결과표 등록 안내"
+      ],
+      "automation_potential": "High",
+      "legacy_l6_match": [
+        "입사 및 온보딩"
+      ],
+      "improvement_note": "realdata.ts 뼈대 유지 + ATS 앵커 기반 산출물 분해",
+      "output_type": "analysis_report",
+      "predecessors": [
+        "V2-L6-0811"
+      ],
+      "successors": [
+        "V2-L6-0538"
+      ],
+      "entry_condition": "선행 분해 L6 완료"
     },
     {
       "l6_id": "V2-L6-0538",
@@ -3408,7 +3462,7 @@
       "improvement_note": "realdata.ts 뼈대 유지 + ATS 앵커 기반 산출물 분해",
       "output_type": "sync_log",
       "predecessors": [
-        "V2-L6-0537"
+        "V2-L6-0812"
       ],
       "successors": [
         "V2-L6-0539"
@@ -3752,17 +3806,17 @@
       "entry_condition": ""
     },
     {
-      "l6_id": "V2-L6-0553",
+      "l6_id": "V2-L6-0813",
       "l3": "보상/근태",
       "l4": "법정복리후생",
       "l5": "건강보험/노인장기요양보험 정산",
-      "l6_name": "건강/장기요양 정산서 발행",
+      "l6_name": "건강 발행",
       "input": "보상/근태 원천 데이터",
-      "output": "건강/장기요양 정산서 발행",
+      "output": "건강 발행",
       "digital_trace": [
-        "정산 계산 로그",
-        "공단 EDI 전송 로그",
-        "메일 제목: 건강/장기요양 정산 완료 안내"
+        "건강 발행 처리 로그",
+        "건강 발행 시스템 상태값 변경",
+        "메일 제목: 건강 발행 안내"
       ],
       "automation_potential": "High",
       "legacy_l6_match": [
@@ -3771,8 +3825,35 @@
       "improvement_note": "realdata.ts 고정 뼈대 기반 신규 산출물 분해",
       "output_type": "settlement_doc",
       "predecessors": [],
-      "successors": [],
+      "successors": [
+        "V2-L6-0814"
+      ],
       "entry_condition": ""
+    },
+    {
+      "l6_id": "V2-L6-0814",
+      "l3": "보상/근태",
+      "l4": "법정복리후생",
+      "l5": "건강보험/노인장기요양보험 정산",
+      "l6_name": "장기요양 정산서 발행",
+      "input": "보상/근태 원천 데이터",
+      "output": "장기요양 정산서 발행",
+      "digital_trace": [
+        "장기요양 정산서 발행 처리 로그",
+        "장기요양 정산서 발행 시스템 상태값 변경",
+        "메일 제목: 장기요양 정산서 발행 안내"
+      ],
+      "automation_potential": "High",
+      "legacy_l6_match": [
+        "건강보험/노인장기요양보험 정산"
+      ],
+      "improvement_note": "realdata.ts 고정 뼈대 기반 신규 산출물 분해",
+      "output_type": "settlement_doc",
+      "predecessors": [
+        "V2-L6-0813"
+      ],
+      "successors": [],
+      "entry_condition": "선행 분해 L6 완료"
     },
     {
       "l6_id": "V2-L6-0554",
@@ -4343,18 +4424,18 @@
       "entry_condition": ""
     },
     {
-      "l6_id": "V2-L6-0578",
+      "l6_id": "V2-L6-0815",
       "l3": "임원조직",
       "l4": "교육/양성",
       "l5": "SLP/TLP 과정",
-      "l6_name": "SLP/TLP 과정 운영계획서 확정",
+      "l6_name": "SLP 확정",
       "input": "임원 인사 원천 데이터",
-      "output": "SLP/TLP 과정 운영계획서 확정",
+      "output": "SLP 확정",
       "output_type": "plan_doc",
       "digital_trace": [
-        "과정 승인 로그",
-        "참여자 확정 로그",
-        "메일 제목: SLP/TLP 과정 운영계획 안내"
+        "SLP 확정 처리 로그",
+        "SLP 확정 시스템 상태값 변경",
+        "메일 제목: SLP 확정 안내"
       ],
       "automation_potential": "Mid",
       "legacy_l6_match": [
@@ -4363,23 +4444,23 @@
       "improvement_note": "realdata.ts 고정 뼈대 기반 산출물 중심 분해",
       "predecessors": [],
       "successors": [
-        "V2-L6-0579"
+        "V2-L6-0816"
       ],
       "entry_condition": ""
     },
     {
-      "l6_id": "V2-L6-0579",
+      "l6_id": "V2-L6-0816",
       "l3": "임원조직",
       "l4": "교육/양성",
       "l5": "SLP/TLP 과정",
-      "l6_name": "SLP/TLP 수료결과표 발행",
+      "l6_name": "TLP 과정 운영계획서 확정",
       "input": "임원 인사 원천 데이터",
-      "output": "SLP/TLP 수료결과표 발행",
-      "output_type": "training_status",
+      "output": "TLP 과정 운영계획서 확정",
+      "output_type": "plan_doc",
       "digital_trace": [
-        "LMS 수료데이터 적재",
-        "평가결과 집계 로그",
-        "메일 제목: SLP/TLP 수료결과 안내"
+        "TLP 과정 운영계획서 확정 처리 로그",
+        "TLP 과정 운영계획서 확정 시스템 상태값 변경",
+        "메일 제목: TLP 과정 운영계획서 확정 안내"
       ],
       "automation_potential": "Mid",
       "legacy_l6_match": [
@@ -4387,10 +4468,64 @@
       ],
       "improvement_note": "realdata.ts 고정 뼈대 기반 산출물 중심 분해",
       "predecessors": [
-        "V2-L6-0578"
+        "V2-L6-0815"
+      ],
+      "successors": [
+        "V2-L6-0817"
+      ],
+      "entry_condition": "선행 분해 L6 완료"
+    },
+    {
+      "l6_id": "V2-L6-0817",
+      "l3": "임원조직",
+      "l4": "교육/양성",
+      "l5": "SLP/TLP 과정",
+      "l6_name": "SLP 발행",
+      "input": "임원 인사 원천 데이터",
+      "output": "SLP 발행",
+      "output_type": "training_status",
+      "digital_trace": [
+        "SLP 발행 처리 로그",
+        "SLP 발행 시스템 상태값 변경",
+        "메일 제목: SLP 발행 안내"
+      ],
+      "automation_potential": "Mid",
+      "legacy_l6_match": [
+        "SLP/TLP 과정"
+      ],
+      "improvement_note": "realdata.ts 고정 뼈대 기반 산출물 중심 분해",
+      "predecessors": [
+        "V2-L6-0816"
+      ],
+      "successors": [
+        "V2-L6-0818"
+      ],
+      "entry_condition": ""
+    },
+    {
+      "l6_id": "V2-L6-0818",
+      "l3": "임원조직",
+      "l4": "교육/양성",
+      "l5": "SLP/TLP 과정",
+      "l6_name": "TLP 수료결과표 발행",
+      "input": "임원 인사 원천 데이터",
+      "output": "TLP 수료결과표 발행",
+      "output_type": "analysis_report",
+      "digital_trace": [
+        "TLP 수료결과표 발행 처리 로그",
+        "TLP 수료결과표 발행 시스템 상태값 변경",
+        "메일 제목: TLP 수료결과표 발행 안내"
+      ],
+      "automation_potential": "Mid",
+      "legacy_l6_match": [
+        "SLP/TLP 과정"
+      ],
+      "improvement_note": "realdata.ts 고정 뼈대 기반 산출물 중심 분해",
+      "predecessors": [
+        "V2-L6-0817"
       ],
       "successors": [],
-      "entry_condition": "선행 L6 완료"
+      "entry_condition": "선행 분해 L6 완료"
     },
     {
       "l6_id": "V2-L6-0580",
@@ -5516,18 +5651,18 @@
       "entry_condition": "선행 L6 완료"
     },
     {
-      "l6_id": "V2-L6-0625",
+      "l6_id": "V2-L6-0819",
       "l3": "제도",
       "l4": "그라운드룰&업무목표&수시피드백",
       "l5": "가이드 수립/배포 및 시스템 준비",
-      "l6_name": "가이드 수립·배포 및 시스템 준비 심사의결서 확정",
+      "l6_name": "가이드 수립·배포 확정",
       "input": "업무 원천 데이터",
-      "output": "가이드 수립·배포 및 시스템 준비 심사의결서 확정",
+      "output": "가이드 수립·배포 확정",
       "output_type": "decision_doc",
       "digital_trace": [
-        "인사위원회 심사 의결 로그: 가이드 수립·배포 및 시스템 준비",
-        "보안문서 열람 로그",
-        "메일 제목: 가이드 수립·배포 및 시스템 준비 심사결과 안내"
+        "가이드 수립·배포 확정 처리 로그",
+        "가이드 수립·배포 확정 시스템 상태값 변경",
+        "메일 제목: 가이드 수립·배포 확정 안내"
       ],
       "automation_potential": "Mid",
       "legacy_l6_match": [
@@ -5536,23 +5671,23 @@
       "improvement_note": "realdata.ts Taxonomy 고정 + 산출물 중심 재설계",
       "predecessors": [],
       "successors": [
-        "V2-L6-0626"
+        "V2-L6-0820"
       ],
       "entry_condition": ""
     },
     {
-      "l6_id": "V2-L6-0626",
+      "l6_id": "V2-L6-0820",
       "l3": "제도",
       "l4": "그라운드룰&업무목표&수시피드백",
       "l5": "가이드 수립/배포 및 시스템 준비",
-      "l6_name": "가이드 수립·배포 및 시스템 준비 결과통보서 발송",
+      "l6_name": "시스템 준비 심사의결서 확정",
       "input": "업무 원천 데이터",
-      "output": "가이드 수립·배포 및 시스템 준비 결과통보서 발송",
-      "output_type": "notification_doc",
+      "output": "시스템 준비 심사의결서 확정",
+      "output_type": "decision_doc",
       "digital_trace": [
-        "결과 확정 상태값 변경 로그: 가이드 수립·배포 및 시스템 준비",
-        "통보 메일 발송 로그",
-        "이의신청 접수 로그: 가이드 수립·배포 및 시스템 준비"
+        "시스템 준비 심사의결서 확정 처리 로그",
+        "시스템 준비 심사의결서 확정 시스템 상태값 변경",
+        "메일 제목: 시스템 준비 심사의결서 확정 안내"
       ],
       "automation_potential": "Mid",
       "legacy_l6_match": [
@@ -5560,10 +5695,64 @@
       ],
       "improvement_note": "realdata.ts Taxonomy 고정 + 산출물 중심 재설계",
       "predecessors": [
-        "V2-L6-0625"
+        "V2-L6-0819"
+      ],
+      "successors": [
+        "V2-L6-0821"
+      ],
+      "entry_condition": "선행 분해 L6 완료"
+    },
+    {
+      "l6_id": "V2-L6-0821",
+      "l3": "제도",
+      "l4": "그라운드룰&업무목표&수시피드백",
+      "l5": "가이드 수립/배포 및 시스템 준비",
+      "l6_name": "가이드 수립·배포 발송",
+      "input": "업무 원천 데이터",
+      "output": "가이드 수립·배포 발송",
+      "output_type": "notification_doc",
+      "digital_trace": [
+        "가이드 수립·배포 발송 처리 로그",
+        "가이드 수립·배포 발송 시스템 상태값 변경",
+        "메일 제목: 가이드 수립·배포 발송 안내"
+      ],
+      "automation_potential": "Mid",
+      "legacy_l6_match": [
+        "가이드 수립/배포 및 시스템 준비"
+      ],
+      "improvement_note": "realdata.ts Taxonomy 고정 + 산출물 중심 재설계",
+      "predecessors": [
+        "V2-L6-0820"
+      ],
+      "successors": [
+        "V2-L6-0822"
+      ],
+      "entry_condition": ""
+    },
+    {
+      "l6_id": "V2-L6-0822",
+      "l3": "제도",
+      "l4": "그라운드룰&업무목표&수시피드백",
+      "l5": "가이드 수립/배포 및 시스템 준비",
+      "l6_name": "시스템 준비 결과통보서 발송",
+      "input": "업무 원천 데이터",
+      "output": "시스템 준비 결과통보서 발송",
+      "output_type": "notification_doc",
+      "digital_trace": [
+        "시스템 준비 결과통보서 발송 처리 로그",
+        "시스템 준비 결과통보서 발송 시스템 상태값 변경",
+        "메일 제목: 시스템 준비 결과통보서 발송 안내"
+      ],
+      "automation_potential": "Mid",
+      "legacy_l6_match": [
+        "가이드 수립/배포 및 시스템 준비"
+      ],
+      "improvement_note": "realdata.ts Taxonomy 고정 + 산출물 중심 재설계",
+      "predecessors": [
+        "V2-L6-0821"
       ],
       "successors": [],
-      "entry_condition": "선행 L6 완료"
+      "entry_condition": "선행 분해 L6 완료"
     },
     {
       "l6_id": "V2-L6-0627",
@@ -5666,18 +5855,18 @@
       "entry_condition": "선행 L6 완료"
     },
     {
-      "l6_id": "V2-L6-0631",
+      "l6_id": "V2-L6-0823",
       "l3": "제도",
       "l4": "그라운드룰&업무목표&수시피드백",
       "l5": "운영 및 임직원 소통",
-      "l6_name": "운영 및 임직원 소통 심사의결서 확정",
+      "l6_name": "운영 확정",
       "input": "업무 원천 데이터",
-      "output": "운영 및 임직원 소통 심사의결서 확정",
+      "output": "운영 확정",
       "output_type": "decision_doc",
       "digital_trace": [
-        "인사위원회 심사 의결 로그: 운영 및 임직원 소통",
-        "보안문서 열람 로그",
-        "메일 제목: 운영 및 임직원 소통 심사결과 안내"
+        "운영 확정 처리 로그",
+        "운영 확정 시스템 상태값 변경",
+        "메일 제목: 운영 확정 안내"
       ],
       "automation_potential": "Mid",
       "legacy_l6_match": [
@@ -5686,23 +5875,23 @@
       "improvement_note": "realdata.ts Taxonomy 고정 + 산출물 중심 재설계",
       "predecessors": [],
       "successors": [
-        "V2-L6-0632"
+        "V2-L6-0824"
       ],
       "entry_condition": ""
     },
     {
-      "l6_id": "V2-L6-0632",
+      "l6_id": "V2-L6-0824",
       "l3": "제도",
       "l4": "그라운드룰&업무목표&수시피드백",
       "l5": "운영 및 임직원 소통",
-      "l6_name": "운영 및 임직원 소통 결과통보서 발송",
+      "l6_name": "임직원 소통 심사의결서 확정",
       "input": "업무 원천 데이터",
-      "output": "운영 및 임직원 소통 결과통보서 발송",
-      "output_type": "notification_doc",
+      "output": "임직원 소통 심사의결서 확정",
+      "output_type": "decision_doc",
       "digital_trace": [
-        "결과 확정 상태값 변경 로그: 운영 및 임직원 소통",
-        "통보 메일 발송 로그",
-        "이의신청 접수 로그: 운영 및 임직원 소통"
+        "임직원 소통 심사의결서 확정 처리 로그",
+        "임직원 소통 심사의결서 확정 시스템 상태값 변경",
+        "메일 제목: 임직원 소통 심사의결서 확정 안내"
       ],
       "automation_potential": "Mid",
       "legacy_l6_match": [
@@ -5710,10 +5899,64 @@
       ],
       "improvement_note": "realdata.ts Taxonomy 고정 + 산출물 중심 재설계",
       "predecessors": [
-        "V2-L6-0631"
+        "V2-L6-0823"
+      ],
+      "successors": [
+        "V2-L6-0825"
+      ],
+      "entry_condition": "선행 분해 L6 완료"
+    },
+    {
+      "l6_id": "V2-L6-0825",
+      "l3": "제도",
+      "l4": "그라운드룰&업무목표&수시피드백",
+      "l5": "운영 및 임직원 소통",
+      "l6_name": "운영 발송",
+      "input": "업무 원천 데이터",
+      "output": "운영 발송",
+      "output_type": "notification_doc",
+      "digital_trace": [
+        "운영 발송 처리 로그",
+        "운영 발송 시스템 상태값 변경",
+        "메일 제목: 운영 발송 안내"
+      ],
+      "automation_potential": "Mid",
+      "legacy_l6_match": [
+        "운영 및 임직원 소통"
+      ],
+      "improvement_note": "realdata.ts Taxonomy 고정 + 산출물 중심 재설계",
+      "predecessors": [
+        "V2-L6-0824"
+      ],
+      "successors": [
+        "V2-L6-0826"
+      ],
+      "entry_condition": ""
+    },
+    {
+      "l6_id": "V2-L6-0826",
+      "l3": "제도",
+      "l4": "그라운드룰&업무목표&수시피드백",
+      "l5": "운영 및 임직원 소통",
+      "l6_name": "임직원 소통 결과통보서 발송",
+      "input": "업무 원천 데이터",
+      "output": "임직원 소통 결과통보서 발송",
+      "output_type": "notification_doc",
+      "digital_trace": [
+        "임직원 소통 결과통보서 발송 처리 로그",
+        "임직원 소통 결과통보서 발송 시스템 상태값 변경",
+        "메일 제목: 임직원 소통 결과통보서 발송 안내"
+      ],
+      "automation_potential": "Mid",
+      "legacy_l6_match": [
+        "운영 및 임직원 소통"
+      ],
+      "improvement_note": "realdata.ts Taxonomy 고정 + 산출물 중심 재설계",
+      "predecessors": [
+        "V2-L6-0825"
       ],
       "successors": [],
-      "entry_condition": "선행 L6 완료"
+      "entry_condition": "선행 분해 L6 완료"
     },
     {
       "l6_id": "V2-L6-0633",
@@ -5766,18 +6009,18 @@
       "entry_condition": "선행 L6 완료"
     },
     {
-      "l6_id": "V2-L6-0635",
+      "l6_id": "V2-L6-0827",
       "l3": "제도",
       "l4": "피어리뷰",
       "l5": "가이드 수립/배포 및 시스템 준비",
-      "l6_name": "가이드 수립·배포 및 시스템 준비 심사의결서 확정",
+      "l6_name": "가이드 수립·배포 확정",
       "input": "업무 원천 데이터",
-      "output": "가이드 수립·배포 및 시스템 준비 심사의결서 확정",
+      "output": "가이드 수립·배포 확정",
       "output_type": "decision_doc",
       "digital_trace": [
-        "인사위원회 심사 의결 로그: 가이드 수립·배포 및 시스템 준비",
-        "보안문서 열람 로그",
-        "메일 제목: 가이드 수립·배포 및 시스템 준비 심사결과 안내"
+        "가이드 수립·배포 확정 처리 로그",
+        "가이드 수립·배포 확정 시스템 상태값 변경",
+        "메일 제목: 가이드 수립·배포 확정 안내"
       ],
       "automation_potential": "Mid",
       "legacy_l6_match": [
@@ -5786,23 +6029,23 @@
       "improvement_note": "realdata.ts Taxonomy 고정 + 산출물 중심 재설계",
       "predecessors": [],
       "successors": [
-        "V2-L6-0636"
+        "V2-L6-0828"
       ],
       "entry_condition": ""
     },
     {
-      "l6_id": "V2-L6-0636",
+      "l6_id": "V2-L6-0828",
       "l3": "제도",
       "l4": "피어리뷰",
       "l5": "가이드 수립/배포 및 시스템 준비",
-      "l6_name": "가이드 수립·배포 및 시스템 준비 결과통보서 발송",
+      "l6_name": "시스템 준비 심사의결서 확정",
       "input": "업무 원천 데이터",
-      "output": "가이드 수립·배포 및 시스템 준비 결과통보서 발송",
-      "output_type": "notification_doc",
+      "output": "시스템 준비 심사의결서 확정",
+      "output_type": "decision_doc",
       "digital_trace": [
-        "결과 확정 상태값 변경 로그: 가이드 수립·배포 및 시스템 준비",
-        "통보 메일 발송 로그",
-        "이의신청 접수 로그: 가이드 수립·배포 및 시스템 준비"
+        "시스템 준비 심사의결서 확정 처리 로그",
+        "시스템 준비 심사의결서 확정 시스템 상태값 변경",
+        "메일 제목: 시스템 준비 심사의결서 확정 안내"
       ],
       "automation_potential": "Mid",
       "legacy_l6_match": [
@@ -5810,10 +6053,64 @@
       ],
       "improvement_note": "realdata.ts Taxonomy 고정 + 산출물 중심 재설계",
       "predecessors": [
-        "V2-L6-0635"
+        "V2-L6-0827"
+      ],
+      "successors": [
+        "V2-L6-0829"
+      ],
+      "entry_condition": "선행 분해 L6 완료"
+    },
+    {
+      "l6_id": "V2-L6-0829",
+      "l3": "제도",
+      "l4": "피어리뷰",
+      "l5": "가이드 수립/배포 및 시스템 준비",
+      "l6_name": "가이드 수립·배포 발송",
+      "input": "업무 원천 데이터",
+      "output": "가이드 수립·배포 발송",
+      "output_type": "notification_doc",
+      "digital_trace": [
+        "가이드 수립·배포 발송 처리 로그",
+        "가이드 수립·배포 발송 시스템 상태값 변경",
+        "메일 제목: 가이드 수립·배포 발송 안내"
+      ],
+      "automation_potential": "Mid",
+      "legacy_l6_match": [
+        "가이드 수립/배포 및 시스템 준비"
+      ],
+      "improvement_note": "realdata.ts Taxonomy 고정 + 산출물 중심 재설계",
+      "predecessors": [
+        "V2-L6-0828"
+      ],
+      "successors": [
+        "V2-L6-0830"
+      ],
+      "entry_condition": ""
+    },
+    {
+      "l6_id": "V2-L6-0830",
+      "l3": "제도",
+      "l4": "피어리뷰",
+      "l5": "가이드 수립/배포 및 시스템 준비",
+      "l6_name": "시스템 준비 결과통보서 발송",
+      "input": "업무 원천 데이터",
+      "output": "시스템 준비 결과통보서 발송",
+      "output_type": "notification_doc",
+      "digital_trace": [
+        "시스템 준비 결과통보서 발송 처리 로그",
+        "시스템 준비 결과통보서 발송 시스템 상태값 변경",
+        "메일 제목: 시스템 준비 결과통보서 발송 안내"
+      ],
+      "automation_potential": "Mid",
+      "legacy_l6_match": [
+        "가이드 수립/배포 및 시스템 준비"
+      ],
+      "improvement_note": "realdata.ts Taxonomy 고정 + 산출물 중심 재설계",
+      "predecessors": [
+        "V2-L6-0829"
       ],
       "successors": [],
-      "entry_condition": "선행 L6 완료"
+      "entry_condition": "선행 분해 L6 완료"
     },
     {
       "l6_id": "V2-L6-0637",
@@ -5966,18 +6263,18 @@
       "entry_condition": "선행 L6 완료"
     },
     {
-      "l6_id": "V2-L6-0643",
+      "l6_id": "V2-L6-0831",
       "l3": "제도",
       "l4": "피어리뷰",
       "l5": "결과 분석/보고 및 결과 안내",
-      "l6_name": "결과 분석·보고 및 결과 안내 심사의결서 확정",
+      "l6_name": "결과 분석·보고 확정",
       "input": "업무 원천 데이터",
-      "output": "결과 분석·보고 및 결과 안내 심사의결서 확정",
-      "output_type": "decision_doc",
+      "output": "결과 분석·보고 확정",
+      "output_type": "analysis_report",
       "digital_trace": [
-        "인사위원회 심사 의결 로그: 결과 분석·보고 및 결과 안내",
-        "보안문서 열람 로그",
-        "메일 제목: 결과 분석·보고 및 결과 안내 심사결과 안내"
+        "결과 분석·보고 확정 처리 로그",
+        "결과 분석·보고 확정 시스템 상태값 변경",
+        "메일 제목: 결과 분석·보고 확정 안내"
       ],
       "automation_potential": "Mid",
       "legacy_l6_match": [
@@ -5986,23 +6283,23 @@
       "improvement_note": "realdata.ts Taxonomy 고정 + 산출물 중심 재설계",
       "predecessors": [],
       "successors": [
-        "V2-L6-0644"
+        "V2-L6-0832"
       ],
       "entry_condition": ""
     },
     {
-      "l6_id": "V2-L6-0644",
+      "l6_id": "V2-L6-0832",
       "l3": "제도",
       "l4": "피어리뷰",
       "l5": "결과 분석/보고 및 결과 안내",
-      "l6_name": "결과 분석·보고 및 결과 안내 결과통보서 발송",
+      "l6_name": "결과 안내 심사의결서 확정",
       "input": "업무 원천 데이터",
-      "output": "결과 분석·보고 및 결과 안내 결과통보서 발송",
+      "output": "결과 안내 심사의결서 확정",
       "output_type": "notification_doc",
       "digital_trace": [
-        "결과 확정 상태값 변경 로그: 결과 분석·보고 및 결과 안내",
-        "통보 메일 발송 로그",
-        "이의신청 접수 로그: 결과 분석·보고 및 결과 안내"
+        "결과 안내 심사의결서 확정 처리 로그",
+        "결과 안내 심사의결서 확정 시스템 상태값 변경",
+        "메일 제목: 결과 안내 심사의결서 확정 안내"
       ],
       "automation_potential": "Mid",
       "legacy_l6_match": [
@@ -6010,24 +6307,78 @@
       ],
       "improvement_note": "realdata.ts Taxonomy 고정 + 산출물 중심 재설계",
       "predecessors": [
-        "V2-L6-0643"
+        "V2-L6-0831"
       ],
-      "successors": [],
-      "entry_condition": "선행 L6 완료"
+      "successors": [
+        "V2-L6-0833"
+      ],
+      "entry_condition": "선행 분해 L6 완료"
     },
     {
-      "l6_id": "V2-L6-0645",
+      "l6_id": "V2-L6-0833",
+      "l3": "제도",
+      "l4": "피어리뷰",
+      "l5": "결과 분석/보고 및 결과 안내",
+      "l6_name": "결과 분석·보고 발송",
+      "input": "업무 원천 데이터",
+      "output": "결과 분석·보고 발송",
+      "output_type": "analysis_report",
+      "digital_trace": [
+        "결과 분석·보고 발송 처리 로그",
+        "결과 분석·보고 발송 시스템 상태값 변경",
+        "메일 제목: 결과 분석·보고 발송 안내"
+      ],
+      "automation_potential": "Mid",
+      "legacy_l6_match": [
+        "결과 분석/보고 및 결과 안내"
+      ],
+      "improvement_note": "realdata.ts Taxonomy 고정 + 산출물 중심 재설계",
+      "predecessors": [
+        "V2-L6-0832"
+      ],
+      "successors": [
+        "V2-L6-0834"
+      ],
+      "entry_condition": ""
+    },
+    {
+      "l6_id": "V2-L6-0834",
+      "l3": "제도",
+      "l4": "피어리뷰",
+      "l5": "결과 분석/보고 및 결과 안내",
+      "l6_name": "결과 안내 결과통보서 발송",
+      "input": "업무 원천 데이터",
+      "output": "결과 안내 결과통보서 발송",
+      "output_type": "notification_doc",
+      "digital_trace": [
+        "결과 안내 결과통보서 발송 처리 로그",
+        "결과 안내 결과통보서 발송 시스템 상태값 변경",
+        "메일 제목: 결과 안내 결과통보서 발송 안내"
+      ],
+      "automation_potential": "Mid",
+      "legacy_l6_match": [
+        "결과 분석/보고 및 결과 안내"
+      ],
+      "improvement_note": "realdata.ts Taxonomy 고정 + 산출물 중심 재설계",
+      "predecessors": [
+        "V2-L6-0833"
+      ],
+      "successors": [],
+      "entry_condition": "선행 분해 L6 완료"
+    },
+    {
+      "l6_id": "V2-L6-0835",
       "l3": "제도",
       "l4": "업적평가",
       "l5": "가이드 수립/배포 및 시스템 준비",
-      "l6_name": "가이드 수립·배포 및 시스템 준비 심사의결서 확정",
+      "l6_name": "가이드 수립·배포 확정",
       "input": "업무 원천 데이터",
-      "output": "가이드 수립·배포 및 시스템 준비 심사의결서 확정",
+      "output": "가이드 수립·배포 확정",
       "output_type": "decision_doc",
       "digital_trace": [
-        "인사위원회 심사 의결 로그: 가이드 수립·배포 및 시스템 준비",
-        "보안문서 열람 로그",
-        "메일 제목: 가이드 수립·배포 및 시스템 준비 심사결과 안내"
+        "가이드 수립·배포 확정 처리 로그",
+        "가이드 수립·배포 확정 시스템 상태값 변경",
+        "메일 제목: 가이드 수립·배포 확정 안내"
       ],
       "automation_potential": "Mid",
       "legacy_l6_match": [
@@ -6036,23 +6387,23 @@
       "improvement_note": "realdata.ts Taxonomy 고정 + 산출물 중심 재설계",
       "predecessors": [],
       "successors": [
-        "V2-L6-0646"
+        "V2-L6-0836"
       ],
       "entry_condition": ""
     },
     {
-      "l6_id": "V2-L6-0646",
+      "l6_id": "V2-L6-0836",
       "l3": "제도",
       "l4": "업적평가",
       "l5": "가이드 수립/배포 및 시스템 준비",
-      "l6_name": "가이드 수립·배포 및 시스템 준비 결과통보서 발송",
+      "l6_name": "시스템 준비 심사의결서 확정",
       "input": "업무 원천 데이터",
-      "output": "가이드 수립·배포 및 시스템 준비 결과통보서 발송",
-      "output_type": "notification_doc",
+      "output": "시스템 준비 심사의결서 확정",
+      "output_type": "decision_doc",
       "digital_trace": [
-        "결과 확정 상태값 변경 로그: 가이드 수립·배포 및 시스템 준비",
-        "통보 메일 발송 로그",
-        "이의신청 접수 로그: 가이드 수립·배포 및 시스템 준비"
+        "시스템 준비 심사의결서 확정 처리 로그",
+        "시스템 준비 심사의결서 확정 시스템 상태값 변경",
+        "메일 제목: 시스템 준비 심사의결서 확정 안내"
       ],
       "automation_potential": "Mid",
       "legacy_l6_match": [
@@ -6060,10 +6411,64 @@
       ],
       "improvement_note": "realdata.ts Taxonomy 고정 + 산출물 중심 재설계",
       "predecessors": [
-        "V2-L6-0645"
+        "V2-L6-0835"
+      ],
+      "successors": [
+        "V2-L6-0837"
+      ],
+      "entry_condition": "선행 분해 L6 완료"
+    },
+    {
+      "l6_id": "V2-L6-0837",
+      "l3": "제도",
+      "l4": "업적평가",
+      "l5": "가이드 수립/배포 및 시스템 준비",
+      "l6_name": "가이드 수립·배포 발송",
+      "input": "업무 원천 데이터",
+      "output": "가이드 수립·배포 발송",
+      "output_type": "notification_doc",
+      "digital_trace": [
+        "가이드 수립·배포 발송 처리 로그",
+        "가이드 수립·배포 발송 시스템 상태값 변경",
+        "메일 제목: 가이드 수립·배포 발송 안내"
+      ],
+      "automation_potential": "Mid",
+      "legacy_l6_match": [
+        "가이드 수립/배포 및 시스템 준비"
+      ],
+      "improvement_note": "realdata.ts Taxonomy 고정 + 산출물 중심 재설계",
+      "predecessors": [
+        "V2-L6-0836"
+      ],
+      "successors": [
+        "V2-L6-0838"
+      ],
+      "entry_condition": ""
+    },
+    {
+      "l6_id": "V2-L6-0838",
+      "l3": "제도",
+      "l4": "업적평가",
+      "l5": "가이드 수립/배포 및 시스템 준비",
+      "l6_name": "시스템 준비 결과통보서 발송",
+      "input": "업무 원천 데이터",
+      "output": "시스템 준비 결과통보서 발송",
+      "output_type": "notification_doc",
+      "digital_trace": [
+        "시스템 준비 결과통보서 발송 처리 로그",
+        "시스템 준비 결과통보서 발송 시스템 상태값 변경",
+        "메일 제목: 시스템 준비 결과통보서 발송 안내"
+      ],
+      "automation_potential": "Mid",
+      "legacy_l6_match": [
+        "가이드 수립/배포 및 시스템 준비"
+      ],
+      "improvement_note": "realdata.ts Taxonomy 고정 + 산출물 중심 재설계",
+      "predecessors": [
+        "V2-L6-0837"
       ],
       "successors": [],
-      "entry_condition": "선행 L6 완료"
+      "entry_condition": "선행 분해 L6 완료"
     },
     {
       "l6_id": "V2-L6-0647",
@@ -6216,18 +6621,18 @@
       "entry_condition": "선행 L6 완료"
     },
     {
-      "l6_id": "V2-L6-0653",
+      "l6_id": "V2-L6-0839",
       "l3": "제도",
       "l4": "업적평가",
       "l5": "결과 분석/보고 및 결과 안내",
-      "l6_name": "결과 분석·보고 및 결과 안내 심사의결서 확정",
+      "l6_name": "결과 분석·보고 확정",
       "input": "업무 원천 데이터",
-      "output": "결과 분석·보고 및 결과 안내 심사의결서 확정",
-      "output_type": "decision_doc",
+      "output": "결과 분석·보고 확정",
+      "output_type": "analysis_report",
       "digital_trace": [
-        "인사위원회 심사 의결 로그: 결과 분석·보고 및 결과 안내",
-        "보안문서 열람 로그",
-        "메일 제목: 결과 분석·보고 및 결과 안내 심사결과 안내"
+        "결과 분석·보고 확정 처리 로그",
+        "결과 분석·보고 확정 시스템 상태값 변경",
+        "메일 제목: 결과 분석·보고 확정 안내"
       ],
       "automation_potential": "Mid",
       "legacy_l6_match": [
@@ -6236,23 +6641,23 @@
       "improvement_note": "realdata.ts Taxonomy 고정 + 산출물 중심 재설계",
       "predecessors": [],
       "successors": [
-        "V2-L6-0654"
+        "V2-L6-0840"
       ],
       "entry_condition": ""
     },
     {
-      "l6_id": "V2-L6-0654",
+      "l6_id": "V2-L6-0840",
       "l3": "제도",
       "l4": "업적평가",
       "l5": "결과 분석/보고 및 결과 안내",
-      "l6_name": "결과 분석·보고 및 결과 안내 결과통보서 발송",
+      "l6_name": "결과 안내 심사의결서 확정",
       "input": "업무 원천 데이터",
-      "output": "결과 분석·보고 및 결과 안내 결과통보서 발송",
+      "output": "결과 안내 심사의결서 확정",
       "output_type": "notification_doc",
       "digital_trace": [
-        "결과 확정 상태값 변경 로그: 결과 분석·보고 및 결과 안내",
-        "통보 메일 발송 로그",
-        "이의신청 접수 로그: 결과 분석·보고 및 결과 안내"
+        "결과 안내 심사의결서 확정 처리 로그",
+        "결과 안내 심사의결서 확정 시스템 상태값 변경",
+        "메일 제목: 결과 안내 심사의결서 확정 안내"
       ],
       "automation_potential": "Mid",
       "legacy_l6_match": [
@@ -6260,10 +6665,64 @@
       ],
       "improvement_note": "realdata.ts Taxonomy 고정 + 산출물 중심 재설계",
       "predecessors": [
-        "V2-L6-0653"
+        "V2-L6-0839"
+      ],
+      "successors": [
+        "V2-L6-0841"
+      ],
+      "entry_condition": "선행 분해 L6 완료"
+    },
+    {
+      "l6_id": "V2-L6-0841",
+      "l3": "제도",
+      "l4": "업적평가",
+      "l5": "결과 분석/보고 및 결과 안내",
+      "l6_name": "결과 분석·보고 발송",
+      "input": "업무 원천 데이터",
+      "output": "결과 분석·보고 발송",
+      "output_type": "analysis_report",
+      "digital_trace": [
+        "결과 분석·보고 발송 처리 로그",
+        "결과 분석·보고 발송 시스템 상태값 변경",
+        "메일 제목: 결과 분석·보고 발송 안내"
+      ],
+      "automation_potential": "Mid",
+      "legacy_l6_match": [
+        "결과 분석/보고 및 결과 안내"
+      ],
+      "improvement_note": "realdata.ts Taxonomy 고정 + 산출물 중심 재설계",
+      "predecessors": [
+        "V2-L6-0840"
+      ],
+      "successors": [
+        "V2-L6-0842"
+      ],
+      "entry_condition": ""
+    },
+    {
+      "l6_id": "V2-L6-0842",
+      "l3": "제도",
+      "l4": "업적평가",
+      "l5": "결과 분석/보고 및 결과 안내",
+      "l6_name": "결과 안내 결과통보서 발송",
+      "input": "업무 원천 데이터",
+      "output": "결과 안내 결과통보서 발송",
+      "output_type": "notification_doc",
+      "digital_trace": [
+        "결과 안내 결과통보서 발송 처리 로그",
+        "결과 안내 결과통보서 발송 시스템 상태값 변경",
+        "메일 제목: 결과 안내 결과통보서 발송 안내"
+      ],
+      "automation_potential": "Mid",
+      "legacy_l6_match": [
+        "결과 분석/보고 및 결과 안내"
+      ],
+      "improvement_note": "realdata.ts Taxonomy 고정 + 산출물 중심 재설계",
+      "predecessors": [
+        "V2-L6-0841"
       ],
       "successors": [],
-      "entry_condition": "선행 L6 완료"
+      "entry_condition": "선행 분해 L6 완료"
     },
     {
       "l6_id": "V2-L6-0655",
@@ -6316,18 +6775,18 @@
       "entry_condition": "선행 L6 완료"
     },
     {
-      "l6_id": "V2-L6-0657",
+      "l6_id": "V2-L6-0843",
       "l3": "제도",
       "l4": "역량진단",
       "l5": "가이드 수립/배포 및 시스템 준비",
-      "l6_name": "가이드 수립·배포 및 시스템 준비 심사의결서 확정",
+      "l6_name": "가이드 수립·배포 확정",
       "input": "업무 원천 데이터",
-      "output": "가이드 수립·배포 및 시스템 준비 심사의결서 확정",
+      "output": "가이드 수립·배포 확정",
       "output_type": "decision_doc",
       "digital_trace": [
-        "인사위원회 심사 의결 로그: 가이드 수립·배포 및 시스템 준비",
-        "보안문서 열람 로그",
-        "메일 제목: 가이드 수립·배포 및 시스템 준비 심사결과 안내"
+        "가이드 수립·배포 확정 처리 로그",
+        "가이드 수립·배포 확정 시스템 상태값 변경",
+        "메일 제목: 가이드 수립·배포 확정 안내"
       ],
       "automation_potential": "Mid",
       "legacy_l6_match": [
@@ -6336,23 +6795,23 @@
       "improvement_note": "realdata.ts Taxonomy 고정 + 산출물 중심 재설계",
       "predecessors": [],
       "successors": [
-        "V2-L6-0658"
+        "V2-L6-0844"
       ],
       "entry_condition": ""
     },
     {
-      "l6_id": "V2-L6-0658",
+      "l6_id": "V2-L6-0844",
       "l3": "제도",
       "l4": "역량진단",
       "l5": "가이드 수립/배포 및 시스템 준비",
-      "l6_name": "가이드 수립·배포 및 시스템 준비 결과통보서 발송",
+      "l6_name": "시스템 준비 심사의결서 확정",
       "input": "업무 원천 데이터",
-      "output": "가이드 수립·배포 및 시스템 준비 결과통보서 발송",
-      "output_type": "notification_doc",
+      "output": "시스템 준비 심사의결서 확정",
+      "output_type": "decision_doc",
       "digital_trace": [
-        "결과 확정 상태값 변경 로그: 가이드 수립·배포 및 시스템 준비",
-        "통보 메일 발송 로그",
-        "이의신청 접수 로그: 가이드 수립·배포 및 시스템 준비"
+        "시스템 준비 심사의결서 확정 처리 로그",
+        "시스템 준비 심사의결서 확정 시스템 상태값 변경",
+        "메일 제목: 시스템 준비 심사의결서 확정 안내"
       ],
       "automation_potential": "Mid",
       "legacy_l6_match": [
@@ -6360,10 +6819,64 @@
       ],
       "improvement_note": "realdata.ts Taxonomy 고정 + 산출물 중심 재설계",
       "predecessors": [
-        "V2-L6-0657"
+        "V2-L6-0843"
+      ],
+      "successors": [
+        "V2-L6-0845"
+      ],
+      "entry_condition": "선행 분해 L6 완료"
+    },
+    {
+      "l6_id": "V2-L6-0845",
+      "l3": "제도",
+      "l4": "역량진단",
+      "l5": "가이드 수립/배포 및 시스템 준비",
+      "l6_name": "가이드 수립·배포 발송",
+      "input": "업무 원천 데이터",
+      "output": "가이드 수립·배포 발송",
+      "output_type": "notification_doc",
+      "digital_trace": [
+        "가이드 수립·배포 발송 처리 로그",
+        "가이드 수립·배포 발송 시스템 상태값 변경",
+        "메일 제목: 가이드 수립·배포 발송 안내"
+      ],
+      "automation_potential": "Mid",
+      "legacy_l6_match": [
+        "가이드 수립/배포 및 시스템 준비"
+      ],
+      "improvement_note": "realdata.ts Taxonomy 고정 + 산출물 중심 재설계",
+      "predecessors": [
+        "V2-L6-0844"
+      ],
+      "successors": [
+        "V2-L6-0846"
+      ],
+      "entry_condition": ""
+    },
+    {
+      "l6_id": "V2-L6-0846",
+      "l3": "제도",
+      "l4": "역량진단",
+      "l5": "가이드 수립/배포 및 시스템 준비",
+      "l6_name": "시스템 준비 결과통보서 발송",
+      "input": "업무 원천 데이터",
+      "output": "시스템 준비 결과통보서 발송",
+      "output_type": "notification_doc",
+      "digital_trace": [
+        "시스템 준비 결과통보서 발송 처리 로그",
+        "시스템 준비 결과통보서 발송 시스템 상태값 변경",
+        "메일 제목: 시스템 준비 결과통보서 발송 안내"
+      ],
+      "automation_potential": "Mid",
+      "legacy_l6_match": [
+        "가이드 수립/배포 및 시스템 준비"
+      ],
+      "improvement_note": "realdata.ts Taxonomy 고정 + 산출물 중심 재설계",
+      "predecessors": [
+        "V2-L6-0845"
       ],
       "successors": [],
-      "entry_condition": "선행 L6 완료"
+      "entry_condition": "선행 분해 L6 완료"
     },
     {
       "l6_id": "V2-L6-0659",
@@ -6466,18 +6979,18 @@
       "entry_condition": "선행 L6 완료"
     },
     {
-      "l6_id": "V2-L6-0663",
+      "l6_id": "V2-L6-0847",
       "l3": "제도",
       "l4": "역량진단",
       "l5": "역량진단 운영 및 임직원 소통",
-      "l6_name": "역량진단 운영 및 임직원 소통 심사의결서 확정",
+      "l6_name": "역량진단 운영 확정",
       "input": "업무 원천 데이터",
-      "output": "역량진단 운영 및 임직원 소통 심사의결서 확정",
+      "output": "역량진단 운영 확정",
       "output_type": "decision_doc",
       "digital_trace": [
-        "인사위원회 심사 의결 로그: 역량진단 운영 및 임직원 소통",
-        "보안문서 열람 로그",
-        "메일 제목: 역량진단 운영 및 임직원 소통 심사결과 안내"
+        "역량진단 운영 확정 처리 로그",
+        "역량진단 운영 확정 시스템 상태값 변경",
+        "메일 제목: 역량진단 운영 확정 안내"
       ],
       "automation_potential": "Mid",
       "legacy_l6_match": [
@@ -6486,23 +6999,23 @@
       "improvement_note": "realdata.ts Taxonomy 고정 + 산출물 중심 재설계",
       "predecessors": [],
       "successors": [
-        "V2-L6-0664"
+        "V2-L6-0848"
       ],
       "entry_condition": ""
     },
     {
-      "l6_id": "V2-L6-0664",
+      "l6_id": "V2-L6-0848",
       "l3": "제도",
       "l4": "역량진단",
       "l5": "역량진단 운영 및 임직원 소통",
-      "l6_name": "역량진단 운영 및 임직원 소통 결과통보서 발송",
+      "l6_name": "임직원 소통 심사의결서 확정",
       "input": "업무 원천 데이터",
-      "output": "역량진단 운영 및 임직원 소통 결과통보서 발송",
-      "output_type": "notification_doc",
+      "output": "임직원 소통 심사의결서 확정",
+      "output_type": "decision_doc",
       "digital_trace": [
-        "결과 확정 상태값 변경 로그: 역량진단 운영 및 임직원 소통",
-        "통보 메일 발송 로그",
-        "이의신청 접수 로그: 역량진단 운영 및 임직원 소통"
+        "임직원 소통 심사의결서 확정 처리 로그",
+        "임직원 소통 심사의결서 확정 시스템 상태값 변경",
+        "메일 제목: 임직원 소통 심사의결서 확정 안내"
       ],
       "automation_potential": "Mid",
       "legacy_l6_match": [
@@ -6510,24 +7023,78 @@
       ],
       "improvement_note": "realdata.ts Taxonomy 고정 + 산출물 중심 재설계",
       "predecessors": [
-        "V2-L6-0663"
+        "V2-L6-0847"
       ],
-      "successors": [],
-      "entry_condition": "선행 L6 완료"
+      "successors": [
+        "V2-L6-0849"
+      ],
+      "entry_condition": "선행 분해 L6 완료"
     },
     {
-      "l6_id": "V2-L6-0665",
+      "l6_id": "V2-L6-0849",
+      "l3": "제도",
+      "l4": "역량진단",
+      "l5": "역량진단 운영 및 임직원 소통",
+      "l6_name": "역량진단 운영 발송",
+      "input": "업무 원천 데이터",
+      "output": "역량진단 운영 발송",
+      "output_type": "notification_doc",
+      "digital_trace": [
+        "역량진단 운영 발송 처리 로그",
+        "역량진단 운영 발송 시스템 상태값 변경",
+        "메일 제목: 역량진단 운영 발송 안내"
+      ],
+      "automation_potential": "Mid",
+      "legacy_l6_match": [
+        "역량진단 운영 및 임직원 소통"
+      ],
+      "improvement_note": "realdata.ts Taxonomy 고정 + 산출물 중심 재설계",
+      "predecessors": [
+        "V2-L6-0848"
+      ],
+      "successors": [
+        "V2-L6-0850"
+      ],
+      "entry_condition": ""
+    },
+    {
+      "l6_id": "V2-L6-0850",
+      "l3": "제도",
+      "l4": "역량진단",
+      "l5": "역량진단 운영 및 임직원 소통",
+      "l6_name": "임직원 소통 결과통보서 발송",
+      "input": "업무 원천 데이터",
+      "output": "임직원 소통 결과통보서 발송",
+      "output_type": "notification_doc",
+      "digital_trace": [
+        "임직원 소통 결과통보서 발송 처리 로그",
+        "임직원 소통 결과통보서 발송 시스템 상태값 변경",
+        "메일 제목: 임직원 소통 결과통보서 발송 안내"
+      ],
+      "automation_potential": "Mid",
+      "legacy_l6_match": [
+        "역량진단 운영 및 임직원 소통"
+      ],
+      "improvement_note": "realdata.ts Taxonomy 고정 + 산출물 중심 재설계",
+      "predecessors": [
+        "V2-L6-0849"
+      ],
+      "successors": [],
+      "entry_condition": "선행 분해 L6 완료"
+    },
+    {
+      "l6_id": "V2-L6-0851",
       "l3": "제도",
       "l4": "역량진단",
       "l5": "결과 분석/보고 및 결과 안내",
-      "l6_name": "결과 분석·보고 및 결과 안내 심사의결서 확정",
+      "l6_name": "결과 분석·보고 확정",
       "input": "업무 원천 데이터",
-      "output": "결과 분석·보고 및 결과 안내 심사의결서 확정",
-      "output_type": "decision_doc",
+      "output": "결과 분석·보고 확정",
+      "output_type": "analysis_report",
       "digital_trace": [
-        "인사위원회 심사 의결 로그: 결과 분석·보고 및 결과 안내",
-        "보안문서 열람 로그",
-        "메일 제목: 결과 분석·보고 및 결과 안내 심사결과 안내"
+        "결과 분석·보고 확정 처리 로그",
+        "결과 분석·보고 확정 시스템 상태값 변경",
+        "메일 제목: 결과 분석·보고 확정 안내"
       ],
       "automation_potential": "Mid",
       "legacy_l6_match": [
@@ -6536,23 +7103,23 @@
       "improvement_note": "realdata.ts Taxonomy 고정 + 산출물 중심 재설계",
       "predecessors": [],
       "successors": [
-        "V2-L6-0666"
+        "V2-L6-0852"
       ],
       "entry_condition": ""
     },
     {
-      "l6_id": "V2-L6-0666",
+      "l6_id": "V2-L6-0852",
       "l3": "제도",
       "l4": "역량진단",
       "l5": "결과 분석/보고 및 결과 안내",
-      "l6_name": "결과 분석·보고 및 결과 안내 결과통보서 발송",
+      "l6_name": "결과 안내 심사의결서 확정",
       "input": "업무 원천 데이터",
-      "output": "결과 분석·보고 및 결과 안내 결과통보서 발송",
+      "output": "결과 안내 심사의결서 확정",
       "output_type": "notification_doc",
       "digital_trace": [
-        "결과 확정 상태값 변경 로그: 결과 분석·보고 및 결과 안내",
-        "통보 메일 발송 로그",
-        "이의신청 접수 로그: 결과 분석·보고 및 결과 안내"
+        "결과 안내 심사의결서 확정 처리 로그",
+        "결과 안내 심사의결서 확정 시스템 상태값 변경",
+        "메일 제목: 결과 안내 심사의결서 확정 안내"
       ],
       "automation_potential": "Mid",
       "legacy_l6_match": [
@@ -6560,24 +7127,78 @@
       ],
       "improvement_note": "realdata.ts Taxonomy 고정 + 산출물 중심 재설계",
       "predecessors": [
-        "V2-L6-0665"
+        "V2-L6-0851"
       ],
-      "successors": [],
-      "entry_condition": "선행 L6 완료"
+      "successors": [
+        "V2-L6-0853"
+      ],
+      "entry_condition": "선행 분해 L6 완료"
     },
     {
-      "l6_id": "V2-L6-0667",
+      "l6_id": "V2-L6-0853",
+      "l3": "제도",
+      "l4": "역량진단",
+      "l5": "결과 분석/보고 및 결과 안내",
+      "l6_name": "결과 분석·보고 발송",
+      "input": "업무 원천 데이터",
+      "output": "결과 분석·보고 발송",
+      "output_type": "analysis_report",
+      "digital_trace": [
+        "결과 분석·보고 발송 처리 로그",
+        "결과 분석·보고 발송 시스템 상태값 변경",
+        "메일 제목: 결과 분석·보고 발송 안내"
+      ],
+      "automation_potential": "Mid",
+      "legacy_l6_match": [
+        "결과 분석/보고 및 결과 안내"
+      ],
+      "improvement_note": "realdata.ts Taxonomy 고정 + 산출물 중심 재설계",
+      "predecessors": [
+        "V2-L6-0852"
+      ],
+      "successors": [
+        "V2-L6-0854"
+      ],
+      "entry_condition": ""
+    },
+    {
+      "l6_id": "V2-L6-0854",
+      "l3": "제도",
+      "l4": "역량진단",
+      "l5": "결과 분석/보고 및 결과 안내",
+      "l6_name": "결과 안내 결과통보서 발송",
+      "input": "업무 원천 데이터",
+      "output": "결과 안내 결과통보서 발송",
+      "output_type": "notification_doc",
+      "digital_trace": [
+        "결과 안내 결과통보서 발송 처리 로그",
+        "결과 안내 결과통보서 발송 시스템 상태값 변경",
+        "메일 제목: 결과 안내 결과통보서 발송 안내"
+      ],
+      "automation_potential": "Mid",
+      "legacy_l6_match": [
+        "결과 분석/보고 및 결과 안내"
+      ],
+      "improvement_note": "realdata.ts Taxonomy 고정 + 산출물 중심 재설계",
+      "predecessors": [
+        "V2-L6-0853"
+      ],
+      "successors": [],
+      "entry_condition": "선행 분해 L6 완료"
+    },
+    {
+      "l6_id": "V2-L6-0855",
       "l3": "제도",
       "l4": "승격",
       "l5": "가이드 수립/배포 및 시스템 준비",
-      "l6_name": "가이드 수립·배포 및 시스템 준비 심사의결서 확정",
+      "l6_name": "가이드 수립·배포 확정",
       "input": "업무 원천 데이터",
-      "output": "가이드 수립·배포 및 시스템 준비 심사의결서 확정",
+      "output": "가이드 수립·배포 확정",
       "output_type": "decision_doc",
       "digital_trace": [
-        "인사위원회 심사 의결 로그: 가이드 수립·배포 및 시스템 준비",
-        "보안문서 열람 로그",
-        "메일 제목: 가이드 수립·배포 및 시스템 준비 심사결과 안내"
+        "가이드 수립·배포 확정 처리 로그",
+        "가이드 수립·배포 확정 시스템 상태값 변경",
+        "메일 제목: 가이드 수립·배포 확정 안내"
       ],
       "automation_potential": "Mid",
       "legacy_l6_match": [
@@ -6586,23 +7207,23 @@
       "improvement_note": "realdata.ts Taxonomy 고정 + 산출물 중심 재설계",
       "predecessors": [],
       "successors": [
-        "V2-L6-0668"
+        "V2-L6-0856"
       ],
       "entry_condition": ""
     },
     {
-      "l6_id": "V2-L6-0668",
+      "l6_id": "V2-L6-0856",
       "l3": "제도",
       "l4": "승격",
       "l5": "가이드 수립/배포 및 시스템 준비",
-      "l6_name": "가이드 수립·배포 및 시스템 준비 결과통보서 발송",
+      "l6_name": "시스템 준비 심사의결서 확정",
       "input": "업무 원천 데이터",
-      "output": "가이드 수립·배포 및 시스템 준비 결과통보서 발송",
-      "output_type": "notification_doc",
+      "output": "시스템 준비 심사의결서 확정",
+      "output_type": "decision_doc",
       "digital_trace": [
-        "결과 확정 상태값 변경 로그: 가이드 수립·배포 및 시스템 준비",
-        "통보 메일 발송 로그",
-        "이의신청 접수 로그: 가이드 수립·배포 및 시스템 준비"
+        "시스템 준비 심사의결서 확정 처리 로그",
+        "시스템 준비 심사의결서 확정 시스템 상태값 변경",
+        "메일 제목: 시스템 준비 심사의결서 확정 안내"
       ],
       "automation_potential": "Mid",
       "legacy_l6_match": [
@@ -6610,10 +7231,64 @@
       ],
       "improvement_note": "realdata.ts Taxonomy 고정 + 산출물 중심 재설계",
       "predecessors": [
-        "V2-L6-0667"
+        "V2-L6-0855"
+      ],
+      "successors": [
+        "V2-L6-0857"
+      ],
+      "entry_condition": "선행 분해 L6 완료"
+    },
+    {
+      "l6_id": "V2-L6-0857",
+      "l3": "제도",
+      "l4": "승격",
+      "l5": "가이드 수립/배포 및 시스템 준비",
+      "l6_name": "가이드 수립·배포 발송",
+      "input": "업무 원천 데이터",
+      "output": "가이드 수립·배포 발송",
+      "output_type": "notification_doc",
+      "digital_trace": [
+        "가이드 수립·배포 발송 처리 로그",
+        "가이드 수립·배포 발송 시스템 상태값 변경",
+        "메일 제목: 가이드 수립·배포 발송 안내"
+      ],
+      "automation_potential": "Mid",
+      "legacy_l6_match": [
+        "가이드 수립/배포 및 시스템 준비"
+      ],
+      "improvement_note": "realdata.ts Taxonomy 고정 + 산출물 중심 재설계",
+      "predecessors": [
+        "V2-L6-0856"
+      ],
+      "successors": [
+        "V2-L6-0858"
+      ],
+      "entry_condition": ""
+    },
+    {
+      "l6_id": "V2-L6-0858",
+      "l3": "제도",
+      "l4": "승격",
+      "l5": "가이드 수립/배포 및 시스템 준비",
+      "l6_name": "시스템 준비 결과통보서 발송",
+      "input": "업무 원천 데이터",
+      "output": "시스템 준비 결과통보서 발송",
+      "output_type": "notification_doc",
+      "digital_trace": [
+        "시스템 준비 결과통보서 발송 처리 로그",
+        "시스템 준비 결과통보서 발송 시스템 상태값 변경",
+        "메일 제목: 시스템 준비 결과통보서 발송 안내"
+      ],
+      "automation_potential": "Mid",
+      "legacy_l6_match": [
+        "가이드 수립/배포 및 시스템 준비"
+      ],
+      "improvement_note": "realdata.ts Taxonomy 고정 + 산출물 중심 재설계",
+      "predecessors": [
+        "V2-L6-0857"
       ],
       "successors": [],
-      "entry_condition": "선행 L6 완료"
+      "entry_condition": "선행 분해 L6 완료"
     },
     {
       "l6_id": "V2-L6-0669",
@@ -6716,18 +7391,18 @@
       "entry_condition": "선행 L6 완료"
     },
     {
-      "l6_id": "V2-L6-0673",
+      "l6_id": "V2-L6-0859",
       "l3": "제도",
       "l4": "승격",
       "l5": "승격 운영 및 임직원 소통",
-      "l6_name": "승격 운영 및 임직원 소통 심사의결서 확정",
+      "l6_name": "승격 운영 확정",
       "input": "업무 원천 데이터",
-      "output": "승격 운영 및 임직원 소통 심사의결서 확정",
+      "output": "승격 운영 확정",
       "output_type": "decision_doc",
       "digital_trace": [
-        "인사위원회 심사 의결 로그: 승격 운영 및 임직원 소통",
-        "보안문서 열람 로그",
-        "메일 제목: 승격 운영 및 임직원 소통 심사결과 안내"
+        "승격 운영 확정 처리 로그",
+        "승격 운영 확정 시스템 상태값 변경",
+        "메일 제목: 승격 운영 확정 안내"
       ],
       "automation_potential": "Mid",
       "legacy_l6_match": [
@@ -6736,23 +7411,23 @@
       "improvement_note": "realdata.ts Taxonomy 고정 + 산출물 중심 재설계",
       "predecessors": [],
       "successors": [
-        "V2-L6-0674"
+        "V2-L6-0860"
       ],
       "entry_condition": ""
     },
     {
-      "l6_id": "V2-L6-0674",
+      "l6_id": "V2-L6-0860",
       "l3": "제도",
       "l4": "승격",
       "l5": "승격 운영 및 임직원 소통",
-      "l6_name": "승격 운영 및 임직원 소통 결과통보서 발송",
+      "l6_name": "임직원 소통 심사의결서 확정",
       "input": "업무 원천 데이터",
-      "output": "승격 운영 및 임직원 소통 결과통보서 발송",
-      "output_type": "notification_doc",
+      "output": "임직원 소통 심사의결서 확정",
+      "output_type": "decision_doc",
       "digital_trace": [
-        "결과 확정 상태값 변경 로그: 승격 운영 및 임직원 소통",
-        "통보 메일 발송 로그",
-        "이의신청 접수 로그: 승격 운영 및 임직원 소통"
+        "임직원 소통 심사의결서 확정 처리 로그",
+        "임직원 소통 심사의결서 확정 시스템 상태값 변경",
+        "메일 제목: 임직원 소통 심사의결서 확정 안내"
       ],
       "automation_potential": "Mid",
       "legacy_l6_match": [
@@ -6760,24 +7435,78 @@
       ],
       "improvement_note": "realdata.ts Taxonomy 고정 + 산출물 중심 재설계",
       "predecessors": [
-        "V2-L6-0673"
+        "V2-L6-0859"
       ],
-      "successors": [],
-      "entry_condition": "선행 L6 완료"
+      "successors": [
+        "V2-L6-0861"
+      ],
+      "entry_condition": "선행 분해 L6 완료"
     },
     {
-      "l6_id": "V2-L6-0675",
+      "l6_id": "V2-L6-0861",
+      "l3": "제도",
+      "l4": "승격",
+      "l5": "승격 운영 및 임직원 소통",
+      "l6_name": "승격 운영 발송",
+      "input": "업무 원천 데이터",
+      "output": "승격 운영 발송",
+      "output_type": "notification_doc",
+      "digital_trace": [
+        "승격 운영 발송 처리 로그",
+        "승격 운영 발송 시스템 상태값 변경",
+        "메일 제목: 승격 운영 발송 안내"
+      ],
+      "automation_potential": "Mid",
+      "legacy_l6_match": [
+        "승격 운영 및 임직원 소통"
+      ],
+      "improvement_note": "realdata.ts Taxonomy 고정 + 산출물 중심 재설계",
+      "predecessors": [
+        "V2-L6-0860"
+      ],
+      "successors": [
+        "V2-L6-0862"
+      ],
+      "entry_condition": ""
+    },
+    {
+      "l6_id": "V2-L6-0862",
+      "l3": "제도",
+      "l4": "승격",
+      "l5": "승격 운영 및 임직원 소통",
+      "l6_name": "임직원 소통 결과통보서 발송",
+      "input": "업무 원천 데이터",
+      "output": "임직원 소통 결과통보서 발송",
+      "output_type": "notification_doc",
+      "digital_trace": [
+        "임직원 소통 결과통보서 발송 처리 로그",
+        "임직원 소통 결과통보서 발송 시스템 상태값 변경",
+        "메일 제목: 임직원 소통 결과통보서 발송 안내"
+      ],
+      "automation_potential": "Mid",
+      "legacy_l6_match": [
+        "승격 운영 및 임직원 소통"
+      ],
+      "improvement_note": "realdata.ts Taxonomy 고정 + 산출물 중심 재설계",
+      "predecessors": [
+        "V2-L6-0861"
+      ],
+      "successors": [],
+      "entry_condition": "선행 분해 L6 완료"
+    },
+    {
+      "l6_id": "V2-L6-0863",
       "l3": "제도",
       "l4": "승격",
       "l5": "결과 분석/보고 및 결과 안내",
-      "l6_name": "결과 분석·보고 및 결과 안내 심사의결서 확정",
+      "l6_name": "결과 분석·보고 확정",
       "input": "업무 원천 데이터",
-      "output": "결과 분석·보고 및 결과 안내 심사의결서 확정",
-      "output_type": "decision_doc",
+      "output": "결과 분석·보고 확정",
+      "output_type": "analysis_report",
       "digital_trace": [
-        "인사위원회 심사 의결 로그: 결과 분석·보고 및 결과 안내",
-        "보안문서 열람 로그",
-        "메일 제목: 결과 분석·보고 및 결과 안내 심사결과 안내"
+        "결과 분석·보고 확정 처리 로그",
+        "결과 분석·보고 확정 시스템 상태값 변경",
+        "메일 제목: 결과 분석·보고 확정 안내"
       ],
       "automation_potential": "Mid",
       "legacy_l6_match": [
@@ -6786,23 +7515,23 @@
       "improvement_note": "realdata.ts Taxonomy 고정 + 산출물 중심 재설계",
       "predecessors": [],
       "successors": [
-        "V2-L6-0676"
+        "V2-L6-0864"
       ],
       "entry_condition": ""
     },
     {
-      "l6_id": "V2-L6-0676",
+      "l6_id": "V2-L6-0864",
       "l3": "제도",
       "l4": "승격",
       "l5": "결과 분석/보고 및 결과 안내",
-      "l6_name": "결과 분석·보고 및 결과 안내 결과통보서 발송",
+      "l6_name": "결과 안내 심사의결서 확정",
       "input": "업무 원천 데이터",
-      "output": "결과 분석·보고 및 결과 안내 결과통보서 발송",
+      "output": "결과 안내 심사의결서 확정",
       "output_type": "notification_doc",
       "digital_trace": [
-        "결과 확정 상태값 변경 로그: 결과 분석·보고 및 결과 안내",
-        "통보 메일 발송 로그",
-        "이의신청 접수 로그: 결과 분석·보고 및 결과 안내"
+        "결과 안내 심사의결서 확정 처리 로그",
+        "결과 안내 심사의결서 확정 시스템 상태값 변경",
+        "메일 제목: 결과 안내 심사의결서 확정 안내"
       ],
       "automation_potential": "Mid",
       "legacy_l6_match": [
@@ -6810,10 +7539,64 @@
       ],
       "improvement_note": "realdata.ts Taxonomy 고정 + 산출물 중심 재설계",
       "predecessors": [
-        "V2-L6-0675"
+        "V2-L6-0863"
+      ],
+      "successors": [
+        "V2-L6-0865"
+      ],
+      "entry_condition": "선행 분해 L6 완료"
+    },
+    {
+      "l6_id": "V2-L6-0865",
+      "l3": "제도",
+      "l4": "승격",
+      "l5": "결과 분석/보고 및 결과 안내",
+      "l6_name": "결과 분석·보고 발송",
+      "input": "업무 원천 데이터",
+      "output": "결과 분석·보고 발송",
+      "output_type": "analysis_report",
+      "digital_trace": [
+        "결과 분석·보고 발송 처리 로그",
+        "결과 분석·보고 발송 시스템 상태값 변경",
+        "메일 제목: 결과 분석·보고 발송 안내"
+      ],
+      "automation_potential": "Mid",
+      "legacy_l6_match": [
+        "결과 분석/보고 및 결과 안내"
+      ],
+      "improvement_note": "realdata.ts Taxonomy 고정 + 산출물 중심 재설계",
+      "predecessors": [
+        "V2-L6-0864"
+      ],
+      "successors": [
+        "V2-L6-0866"
+      ],
+      "entry_condition": ""
+    },
+    {
+      "l6_id": "V2-L6-0866",
+      "l3": "제도",
+      "l4": "승격",
+      "l5": "결과 분석/보고 및 결과 안내",
+      "l6_name": "결과 안내 결과통보서 발송",
+      "input": "업무 원천 데이터",
+      "output": "결과 안내 결과통보서 발송",
+      "output_type": "notification_doc",
+      "digital_trace": [
+        "결과 안내 결과통보서 발송 처리 로그",
+        "결과 안내 결과통보서 발송 시스템 상태값 변경",
+        "메일 제목: 결과 안내 결과통보서 발송 안내"
+      ],
+      "automation_potential": "Mid",
+      "legacy_l6_match": [
+        "결과 분석/보고 및 결과 안내"
+      ],
+      "improvement_note": "realdata.ts Taxonomy 고정 + 산출물 중심 재설계",
+      "predecessors": [
+        "V2-L6-0865"
       ],
       "successors": [],
-      "entry_condition": "선행 L6 완료"
+      "entry_condition": "선행 분해 L6 완료"
     },
     {
       "l6_id": "V2-L6-0677",
@@ -6866,18 +7649,18 @@
       "entry_condition": "선행 L6 완료"
     },
     {
-      "l6_id": "V2-L6-0679",
+      "l6_id": "V2-L6-0867",
       "l3": "제도",
       "l4": "연봉책정/계약",
       "l5": "가이드 수립/배포 및 시스템 준비",
-      "l6_name": "가이드 수립·배포 및 시스템 준비 심사의결서 확정",
+      "l6_name": "가이드 수립·배포 확정",
       "input": "업무 원천 데이터",
-      "output": "가이드 수립·배포 및 시스템 준비 심사의결서 확정",
+      "output": "가이드 수립·배포 확정",
       "output_type": "decision_doc",
       "digital_trace": [
-        "인사위원회 심사 의결 로그: 가이드 수립·배포 및 시스템 준비",
-        "보안문서 열람 로그",
-        "메일 제목: 가이드 수립·배포 및 시스템 준비 심사결과 안내"
+        "가이드 수립·배포 확정 처리 로그",
+        "가이드 수립·배포 확정 시스템 상태값 변경",
+        "메일 제목: 가이드 수립·배포 확정 안내"
       ],
       "automation_potential": "Mid",
       "legacy_l6_match": [
@@ -6886,23 +7669,23 @@
       "improvement_note": "realdata.ts Taxonomy 고정 + 산출물 중심 재설계",
       "predecessors": [],
       "successors": [
-        "V2-L6-0680"
+        "V2-L6-0868"
       ],
       "entry_condition": ""
     },
     {
-      "l6_id": "V2-L6-0680",
+      "l6_id": "V2-L6-0868",
       "l3": "제도",
       "l4": "연봉책정/계약",
       "l5": "가이드 수립/배포 및 시스템 준비",
-      "l6_name": "가이드 수립·배포 및 시스템 준비 결과통보서 발송",
+      "l6_name": "시스템 준비 심사의결서 확정",
       "input": "업무 원천 데이터",
-      "output": "가이드 수립·배포 및 시스템 준비 결과통보서 발송",
-      "output_type": "notification_doc",
+      "output": "시스템 준비 심사의결서 확정",
+      "output_type": "decision_doc",
       "digital_trace": [
-        "결과 확정 상태값 변경 로그: 가이드 수립·배포 및 시스템 준비",
-        "통보 메일 발송 로그",
-        "이의신청 접수 로그: 가이드 수립·배포 및 시스템 준비"
+        "시스템 준비 심사의결서 확정 처리 로그",
+        "시스템 준비 심사의결서 확정 시스템 상태값 변경",
+        "메일 제목: 시스템 준비 심사의결서 확정 안내"
       ],
       "automation_potential": "Mid",
       "legacy_l6_match": [
@@ -6910,10 +7693,64 @@
       ],
       "improvement_note": "realdata.ts Taxonomy 고정 + 산출물 중심 재설계",
       "predecessors": [
-        "V2-L6-0679"
+        "V2-L6-0867"
+      ],
+      "successors": [
+        "V2-L6-0869"
+      ],
+      "entry_condition": "선행 분해 L6 완료"
+    },
+    {
+      "l6_id": "V2-L6-0869",
+      "l3": "제도",
+      "l4": "연봉책정/계약",
+      "l5": "가이드 수립/배포 및 시스템 준비",
+      "l6_name": "가이드 수립·배포 발송",
+      "input": "업무 원천 데이터",
+      "output": "가이드 수립·배포 발송",
+      "output_type": "notification_doc",
+      "digital_trace": [
+        "가이드 수립·배포 발송 처리 로그",
+        "가이드 수립·배포 발송 시스템 상태값 변경",
+        "메일 제목: 가이드 수립·배포 발송 안내"
+      ],
+      "automation_potential": "Mid",
+      "legacy_l6_match": [
+        "가이드 수립/배포 및 시스템 준비"
+      ],
+      "improvement_note": "realdata.ts Taxonomy 고정 + 산출물 중심 재설계",
+      "predecessors": [
+        "V2-L6-0868"
+      ],
+      "successors": [
+        "V2-L6-0870"
+      ],
+      "entry_condition": ""
+    },
+    {
+      "l6_id": "V2-L6-0870",
+      "l3": "제도",
+      "l4": "연봉책정/계약",
+      "l5": "가이드 수립/배포 및 시스템 준비",
+      "l6_name": "시스템 준비 결과통보서 발송",
+      "input": "업무 원천 데이터",
+      "output": "시스템 준비 결과통보서 발송",
+      "output_type": "notification_doc",
+      "digital_trace": [
+        "시스템 준비 결과통보서 발송 처리 로그",
+        "시스템 준비 결과통보서 발송 시스템 상태값 변경",
+        "메일 제목: 시스템 준비 결과통보서 발송 안내"
+      ],
+      "automation_potential": "Mid",
+      "legacy_l6_match": [
+        "가이드 수립/배포 및 시스템 준비"
+      ],
+      "improvement_note": "realdata.ts Taxonomy 고정 + 산출물 중심 재설계",
+      "predecessors": [
+        "V2-L6-0869"
       ],
       "successors": [],
-      "entry_condition": "선행 L6 완료"
+      "entry_condition": "선행 분해 L6 완료"
     },
     {
       "l6_id": "V2-L6-0681",
@@ -7016,18 +7853,18 @@
       "entry_condition": "선행 L6 완료"
     },
     {
-      "l6_id": "V2-L6-0685",
+      "l6_id": "V2-L6-0871",
       "l3": "제도",
       "l4": "연봉책정/계약",
       "l5": "연봉책정/계약 운영 및 임직원 소통",
-      "l6_name": "연봉책정·계약 운영 및 임직원 소통 심사의결서 확정",
+      "l6_name": "연봉책정·계약 운영 확정",
       "input": "업무 원천 데이터",
-      "output": "연봉책정·계약 운영 및 임직원 소통 심사의결서 확정",
+      "output": "연봉책정·계약 운영 확정",
       "output_type": "decision_doc",
       "digital_trace": [
-        "인사위원회 심사 의결 로그: 연봉책정·계약 운영 및 임직원 소통",
-        "보안문서 열람 로그",
-        "메일 제목: 연봉책정·계약 운영 및 임직원 소통 심사결과 안내"
+        "연봉책정·계약 운영 확정 처리 로그",
+        "연봉책정·계약 운영 확정 시스템 상태값 변경",
+        "메일 제목: 연봉책정·계약 운영 확정 안내"
       ],
       "automation_potential": "Mid",
       "legacy_l6_match": [
@@ -7036,23 +7873,23 @@
       "improvement_note": "realdata.ts Taxonomy 고정 + 산출물 중심 재설계",
       "predecessors": [],
       "successors": [
-        "V2-L6-0686"
+        "V2-L6-0872"
       ],
       "entry_condition": ""
     },
     {
-      "l6_id": "V2-L6-0686",
+      "l6_id": "V2-L6-0872",
       "l3": "제도",
       "l4": "연봉책정/계약",
       "l5": "연봉책정/계약 운영 및 임직원 소통",
-      "l6_name": "연봉책정·계약 운영 및 임직원 소통 결과통보서 발송",
+      "l6_name": "임직원 소통 심사의결서 확정",
       "input": "업무 원천 데이터",
-      "output": "연봉책정·계약 운영 및 임직원 소통 결과통보서 발송",
-      "output_type": "notification_doc",
+      "output": "임직원 소통 심사의결서 확정",
+      "output_type": "decision_doc",
       "digital_trace": [
-        "결과 확정 상태값 변경 로그: 연봉책정·계약 운영 및 임직원 소통",
-        "통보 메일 발송 로그",
-        "이의신청 접수 로그: 연봉책정·계약 운영 및 임직원 소통"
+        "임직원 소통 심사의결서 확정 처리 로그",
+        "임직원 소통 심사의결서 확정 시스템 상태값 변경",
+        "메일 제목: 임직원 소통 심사의결서 확정 안내"
       ],
       "automation_potential": "Mid",
       "legacy_l6_match": [
@@ -7060,24 +7897,78 @@
       ],
       "improvement_note": "realdata.ts Taxonomy 고정 + 산출물 중심 재설계",
       "predecessors": [
-        "V2-L6-0685"
+        "V2-L6-0871"
       ],
-      "successors": [],
-      "entry_condition": "선행 L6 완료"
+      "successors": [
+        "V2-L6-0873"
+      ],
+      "entry_condition": "선행 분해 L6 완료"
     },
     {
-      "l6_id": "V2-L6-0687",
+      "l6_id": "V2-L6-0873",
+      "l3": "제도",
+      "l4": "연봉책정/계약",
+      "l5": "연봉책정/계약 운영 및 임직원 소통",
+      "l6_name": "연봉책정·계약 운영 발송",
+      "input": "업무 원천 데이터",
+      "output": "연봉책정·계약 운영 발송",
+      "output_type": "notification_doc",
+      "digital_trace": [
+        "연봉책정·계약 운영 발송 처리 로그",
+        "연봉책정·계약 운영 발송 시스템 상태값 변경",
+        "메일 제목: 연봉책정·계약 운영 발송 안내"
+      ],
+      "automation_potential": "Mid",
+      "legacy_l6_match": [
+        "연봉책정/계약 운영 및 임직원 소통"
+      ],
+      "improvement_note": "realdata.ts Taxonomy 고정 + 산출물 중심 재설계",
+      "predecessors": [
+        "V2-L6-0872"
+      ],
+      "successors": [
+        "V2-L6-0874"
+      ],
+      "entry_condition": ""
+    },
+    {
+      "l6_id": "V2-L6-0874",
+      "l3": "제도",
+      "l4": "연봉책정/계약",
+      "l5": "연봉책정/계약 운영 및 임직원 소통",
+      "l6_name": "임직원 소통 결과통보서 발송",
+      "input": "업무 원천 데이터",
+      "output": "임직원 소통 결과통보서 발송",
+      "output_type": "notification_doc",
+      "digital_trace": [
+        "임직원 소통 결과통보서 발송 처리 로그",
+        "임직원 소통 결과통보서 발송 시스템 상태값 변경",
+        "메일 제목: 임직원 소통 결과통보서 발송 안내"
+      ],
+      "automation_potential": "Mid",
+      "legacy_l6_match": [
+        "연봉책정/계약 운영 및 임직원 소통"
+      ],
+      "improvement_note": "realdata.ts Taxonomy 고정 + 산출물 중심 재설계",
+      "predecessors": [
+        "V2-L6-0873"
+      ],
+      "successors": [],
+      "entry_condition": "선행 분해 L6 완료"
+    },
+    {
+      "l6_id": "V2-L6-0875",
       "l3": "제도",
       "l4": "연봉책정/계약",
       "l5": "결과 분석/보고 및 결과 안내",
-      "l6_name": "결과 분석·보고 및 결과 안내 심사의결서 확정",
+      "l6_name": "결과 분석·보고 확정",
       "input": "업무 원천 데이터",
-      "output": "결과 분석·보고 및 결과 안내 심사의결서 확정",
-      "output_type": "decision_doc",
+      "output": "결과 분석·보고 확정",
+      "output_type": "analysis_report",
       "digital_trace": [
-        "인사위원회 심사 의결 로그: 결과 분석·보고 및 결과 안내",
-        "보안문서 열람 로그",
-        "메일 제목: 결과 분석·보고 및 결과 안내 심사결과 안내"
+        "결과 분석·보고 확정 처리 로그",
+        "결과 분석·보고 확정 시스템 상태값 변경",
+        "메일 제목: 결과 분석·보고 확정 안내"
       ],
       "automation_potential": "Mid",
       "legacy_l6_match": [
@@ -7086,23 +7977,23 @@
       "improvement_note": "realdata.ts Taxonomy 고정 + 산출물 중심 재설계",
       "predecessors": [],
       "successors": [
-        "V2-L6-0688"
+        "V2-L6-0876"
       ],
       "entry_condition": ""
     },
     {
-      "l6_id": "V2-L6-0688",
+      "l6_id": "V2-L6-0876",
       "l3": "제도",
       "l4": "연봉책정/계약",
       "l5": "결과 분석/보고 및 결과 안내",
-      "l6_name": "결과 분석·보고 및 결과 안내 결과통보서 발송",
+      "l6_name": "결과 안내 심사의결서 확정",
       "input": "업무 원천 데이터",
-      "output": "결과 분석·보고 및 결과 안내 결과통보서 발송",
+      "output": "결과 안내 심사의결서 확정",
       "output_type": "notification_doc",
       "digital_trace": [
-        "결과 확정 상태값 변경 로그: 결과 분석·보고 및 결과 안내",
-        "통보 메일 발송 로그",
-        "이의신청 접수 로그: 결과 분석·보고 및 결과 안내"
+        "결과 안내 심사의결서 확정 처리 로그",
+        "결과 안내 심사의결서 확정 시스템 상태값 변경",
+        "메일 제목: 결과 안내 심사의결서 확정 안내"
       ],
       "automation_potential": "Mid",
       "legacy_l6_match": [
@@ -7110,24 +8001,78 @@
       ],
       "improvement_note": "realdata.ts Taxonomy 고정 + 산출물 중심 재설계",
       "predecessors": [
-        "V2-L6-0687"
+        "V2-L6-0875"
       ],
-      "successors": [],
-      "entry_condition": "선행 L6 완료"
+      "successors": [
+        "V2-L6-0877"
+      ],
+      "entry_condition": "선행 분해 L6 완료"
     },
     {
-      "l6_id": "V2-L6-0689",
+      "l6_id": "V2-L6-0877",
+      "l3": "제도",
+      "l4": "연봉책정/계약",
+      "l5": "결과 분석/보고 및 결과 안내",
+      "l6_name": "결과 분석·보고 발송",
+      "input": "업무 원천 데이터",
+      "output": "결과 분석·보고 발송",
+      "output_type": "analysis_report",
+      "digital_trace": [
+        "결과 분석·보고 발송 처리 로그",
+        "결과 분석·보고 발송 시스템 상태값 변경",
+        "메일 제목: 결과 분석·보고 발송 안내"
+      ],
+      "automation_potential": "Mid",
+      "legacy_l6_match": [
+        "결과 분석/보고 및 결과 안내"
+      ],
+      "improvement_note": "realdata.ts Taxonomy 고정 + 산출물 중심 재설계",
+      "predecessors": [
+        "V2-L6-0876"
+      ],
+      "successors": [
+        "V2-L6-0878"
+      ],
+      "entry_condition": ""
+    },
+    {
+      "l6_id": "V2-L6-0878",
+      "l3": "제도",
+      "l4": "연봉책정/계약",
+      "l5": "결과 분석/보고 및 결과 안내",
+      "l6_name": "결과 안내 결과통보서 발송",
+      "input": "업무 원천 데이터",
+      "output": "결과 안내 결과통보서 발송",
+      "output_type": "notification_doc",
+      "digital_trace": [
+        "결과 안내 결과통보서 발송 처리 로그",
+        "결과 안내 결과통보서 발송 시스템 상태값 변경",
+        "메일 제목: 결과 안내 결과통보서 발송 안내"
+      ],
+      "automation_potential": "Mid",
+      "legacy_l6_match": [
+        "결과 분석/보고 및 결과 안내"
+      ],
+      "improvement_note": "realdata.ts Taxonomy 고정 + 산출물 중심 재설계",
+      "predecessors": [
+        "V2-L6-0877"
+      ],
+      "successors": [],
+      "entry_condition": "선행 분해 L6 완료"
+    },
+    {
+      "l6_id": "V2-L6-0879",
       "l3": "제도",
       "l4": "시상",
       "l5": "가이드 수립/배포 및 시스템 준비",
-      "l6_name": "가이드 수립·배포 및 시스템 준비 심사의결서 확정",
+      "l6_name": "가이드 수립·배포 확정",
       "input": "업무 원천 데이터",
-      "output": "가이드 수립·배포 및 시스템 준비 심사의결서 확정",
+      "output": "가이드 수립·배포 확정",
       "output_type": "decision_doc",
       "digital_trace": [
-        "인사위원회 심사 의결 로그: 가이드 수립·배포 및 시스템 준비",
-        "보안문서 열람 로그",
-        "메일 제목: 가이드 수립·배포 및 시스템 준비 심사결과 안내"
+        "가이드 수립·배포 확정 처리 로그",
+        "가이드 수립·배포 확정 시스템 상태값 변경",
+        "메일 제목: 가이드 수립·배포 확정 안내"
       ],
       "automation_potential": "Mid",
       "legacy_l6_match": [
@@ -7136,23 +8081,23 @@
       "improvement_note": "realdata.ts Taxonomy 고정 + 산출물 중심 재설계",
       "predecessors": [],
       "successors": [
-        "V2-L6-0690"
+        "V2-L6-0880"
       ],
       "entry_condition": ""
     },
     {
-      "l6_id": "V2-L6-0690",
+      "l6_id": "V2-L6-0880",
       "l3": "제도",
       "l4": "시상",
       "l5": "가이드 수립/배포 및 시스템 준비",
-      "l6_name": "가이드 수립·배포 및 시스템 준비 결과통보서 발송",
+      "l6_name": "시스템 준비 심사의결서 확정",
       "input": "업무 원천 데이터",
-      "output": "가이드 수립·배포 및 시스템 준비 결과통보서 발송",
-      "output_type": "notification_doc",
+      "output": "시스템 준비 심사의결서 확정",
+      "output_type": "decision_doc",
       "digital_trace": [
-        "결과 확정 상태값 변경 로그: 가이드 수립·배포 및 시스템 준비",
-        "통보 메일 발송 로그",
-        "이의신청 접수 로그: 가이드 수립·배포 및 시스템 준비"
+        "시스템 준비 심사의결서 확정 처리 로그",
+        "시스템 준비 심사의결서 확정 시스템 상태값 변경",
+        "메일 제목: 시스템 준비 심사의결서 확정 안내"
       ],
       "automation_potential": "Mid",
       "legacy_l6_match": [
@@ -7160,24 +8105,78 @@
       ],
       "improvement_note": "realdata.ts Taxonomy 고정 + 산출물 중심 재설계",
       "predecessors": [
-        "V2-L6-0689"
+        "V2-L6-0879"
       ],
-      "successors": [],
-      "entry_condition": "선행 L6 완료"
+      "successors": [
+        "V2-L6-0881"
+      ],
+      "entry_condition": "선행 분해 L6 완료"
     },
     {
-      "l6_id": "V2-L6-0691",
+      "l6_id": "V2-L6-0881",
+      "l3": "제도",
+      "l4": "시상",
+      "l5": "가이드 수립/배포 및 시스템 준비",
+      "l6_name": "가이드 수립·배포 발송",
+      "input": "업무 원천 데이터",
+      "output": "가이드 수립·배포 발송",
+      "output_type": "notification_doc",
+      "digital_trace": [
+        "가이드 수립·배포 발송 처리 로그",
+        "가이드 수립·배포 발송 시스템 상태값 변경",
+        "메일 제목: 가이드 수립·배포 발송 안내"
+      ],
+      "automation_potential": "Mid",
+      "legacy_l6_match": [
+        "가이드 수립/배포 및 시스템 준비"
+      ],
+      "improvement_note": "realdata.ts Taxonomy 고정 + 산출물 중심 재설계",
+      "predecessors": [
+        "V2-L6-0880"
+      ],
+      "successors": [
+        "V2-L6-0882"
+      ],
+      "entry_condition": ""
+    },
+    {
+      "l6_id": "V2-L6-0882",
+      "l3": "제도",
+      "l4": "시상",
+      "l5": "가이드 수립/배포 및 시스템 준비",
+      "l6_name": "시스템 준비 결과통보서 발송",
+      "input": "업무 원천 데이터",
+      "output": "시스템 준비 결과통보서 발송",
+      "output_type": "notification_doc",
+      "digital_trace": [
+        "시스템 준비 결과통보서 발송 처리 로그",
+        "시스템 준비 결과통보서 발송 시스템 상태값 변경",
+        "메일 제목: 시스템 준비 결과통보서 발송 안내"
+      ],
+      "automation_potential": "Mid",
+      "legacy_l6_match": [
+        "가이드 수립/배포 및 시스템 준비"
+      ],
+      "improvement_note": "realdata.ts Taxonomy 고정 + 산출물 중심 재설계",
+      "predecessors": [
+        "V2-L6-0881"
+      ],
+      "successors": [],
+      "entry_condition": "선행 분해 L6 완료"
+    },
+    {
+      "l6_id": "V2-L6-0883",
       "l3": "제도",
       "l4": "시상",
       "l5": "시상 운영 및 임직원 소통",
-      "l6_name": "시상 운영 및 임직원 소통 심사의결서 확정",
+      "l6_name": "시상 운영 확정",
       "input": "업무 원천 데이터",
-      "output": "시상 운영 및 임직원 소통 심사의결서 확정",
+      "output": "시상 운영 확정",
       "output_type": "decision_doc",
       "digital_trace": [
-        "인사위원회 심사 의결 로그: 시상 운영 및 임직원 소통",
-        "보안문서 열람 로그",
-        "메일 제목: 시상 운영 및 임직원 소통 심사결과 안내"
+        "시상 운영 확정 처리 로그",
+        "시상 운영 확정 시스템 상태값 변경",
+        "메일 제목: 시상 운영 확정 안내"
       ],
       "automation_potential": "Mid",
       "legacy_l6_match": [
@@ -7186,23 +8185,23 @@
       "improvement_note": "realdata.ts Taxonomy 고정 + 산출물 중심 재설계",
       "predecessors": [],
       "successors": [
-        "V2-L6-0692"
+        "V2-L6-0884"
       ],
       "entry_condition": ""
     },
     {
-      "l6_id": "V2-L6-0692",
+      "l6_id": "V2-L6-0884",
       "l3": "제도",
       "l4": "시상",
       "l5": "시상 운영 및 임직원 소통",
-      "l6_name": "시상 운영 및 임직원 소통 결과통보서 발송",
+      "l6_name": "임직원 소통 심사의결서 확정",
       "input": "업무 원천 데이터",
-      "output": "시상 운영 및 임직원 소통 결과통보서 발송",
-      "output_type": "notification_doc",
+      "output": "임직원 소통 심사의결서 확정",
+      "output_type": "decision_doc",
       "digital_trace": [
-        "결과 확정 상태값 변경 로그: 시상 운영 및 임직원 소통",
-        "통보 메일 발송 로그",
-        "이의신청 접수 로그: 시상 운영 및 임직원 소통"
+        "임직원 소통 심사의결서 확정 처리 로그",
+        "임직원 소통 심사의결서 확정 시스템 상태값 변경",
+        "메일 제목: 임직원 소통 심사의결서 확정 안내"
       ],
       "automation_potential": "Mid",
       "legacy_l6_match": [
@@ -7210,24 +8209,78 @@
       ],
       "improvement_note": "realdata.ts Taxonomy 고정 + 산출물 중심 재설계",
       "predecessors": [
-        "V2-L6-0691"
+        "V2-L6-0883"
       ],
-      "successors": [],
-      "entry_condition": "선행 L6 완료"
+      "successors": [
+        "V2-L6-0885"
+      ],
+      "entry_condition": "선행 분해 L6 완료"
     },
     {
-      "l6_id": "V2-L6-0693",
+      "l6_id": "V2-L6-0885",
+      "l3": "제도",
+      "l4": "시상",
+      "l5": "시상 운영 및 임직원 소통",
+      "l6_name": "시상 운영 발송",
+      "input": "업무 원천 데이터",
+      "output": "시상 운영 발송",
+      "output_type": "notification_doc",
+      "digital_trace": [
+        "시상 운영 발송 처리 로그",
+        "시상 운영 발송 시스템 상태값 변경",
+        "메일 제목: 시상 운영 발송 안내"
+      ],
+      "automation_potential": "Mid",
+      "legacy_l6_match": [
+        "시상 운영 및 임직원 소통"
+      ],
+      "improvement_note": "realdata.ts Taxonomy 고정 + 산출물 중심 재설계",
+      "predecessors": [
+        "V2-L6-0884"
+      ],
+      "successors": [
+        "V2-L6-0886"
+      ],
+      "entry_condition": ""
+    },
+    {
+      "l6_id": "V2-L6-0886",
+      "l3": "제도",
+      "l4": "시상",
+      "l5": "시상 운영 및 임직원 소통",
+      "l6_name": "임직원 소통 결과통보서 발송",
+      "input": "업무 원천 데이터",
+      "output": "임직원 소통 결과통보서 발송",
+      "output_type": "notification_doc",
+      "digital_trace": [
+        "임직원 소통 결과통보서 발송 처리 로그",
+        "임직원 소통 결과통보서 발송 시스템 상태값 변경",
+        "메일 제목: 임직원 소통 결과통보서 발송 안내"
+      ],
+      "automation_potential": "Mid",
+      "legacy_l6_match": [
+        "시상 운영 및 임직원 소통"
+      ],
+      "improvement_note": "realdata.ts Taxonomy 고정 + 산출물 중심 재설계",
+      "predecessors": [
+        "V2-L6-0885"
+      ],
+      "successors": [],
+      "entry_condition": "선행 분해 L6 완료"
+    },
+    {
+      "l6_id": "V2-L6-0887",
       "l3": "제도",
       "l4": "시상",
       "l5": "심사결과 취합/분석 및 최종 안내",
-      "l6_name": "심사결과 취합·분석 및 최종 안내 심사의결서 확정",
+      "l6_name": "심사결과 취합·분석 확정",
       "input": "업무 원천 데이터",
-      "output": "심사결과 취합·분석 및 최종 안내 심사의결서 확정",
-      "output_type": "decision_doc",
+      "output": "심사결과 취합·분석 확정",
+      "output_type": "analysis_report",
       "digital_trace": [
-        "인사위원회 심사 의결 로그: 심사결과 취합·분석 및 최종 안내",
-        "보안문서 열람 로그",
-        "메일 제목: 심사결과 취합·분석 및 최종 안내 심사결과 안내"
+        "심사결과 취합·분석 확정 처리 로그",
+        "심사결과 취합·분석 확정 시스템 상태값 변경",
+        "메일 제목: 심사결과 취합·분석 확정 안내"
       ],
       "automation_potential": "Mid",
       "legacy_l6_match": [
@@ -7236,23 +8289,23 @@
       "improvement_note": "realdata.ts Taxonomy 고정 + 산출물 중심 재설계",
       "predecessors": [],
       "successors": [
-        "V2-L6-0694"
+        "V2-L6-0888"
       ],
       "entry_condition": ""
     },
     {
-      "l6_id": "V2-L6-0694",
+      "l6_id": "V2-L6-0888",
       "l3": "제도",
       "l4": "시상",
       "l5": "심사결과 취합/분석 및 최종 안내",
-      "l6_name": "심사결과 취합·분석 및 최종 안내 결과통보서 발송",
+      "l6_name": "최종 안내 심사의결서 확정",
       "input": "업무 원천 데이터",
-      "output": "심사결과 취합·분석 및 최종 안내 결과통보서 발송",
+      "output": "최종 안내 심사의결서 확정",
       "output_type": "notification_doc",
       "digital_trace": [
-        "결과 확정 상태값 변경 로그: 심사결과 취합·분석 및 최종 안내",
-        "통보 메일 발송 로그",
-        "이의신청 접수 로그: 심사결과 취합·분석 및 최종 안내"
+        "최종 안내 심사의결서 확정 처리 로그",
+        "최종 안내 심사의결서 확정 시스템 상태값 변경",
+        "메일 제목: 최종 안내 심사의결서 확정 안내"
       ],
       "automation_potential": "Mid",
       "legacy_l6_match": [
@@ -7260,10 +8313,64 @@
       ],
       "improvement_note": "realdata.ts Taxonomy 고정 + 산출물 중심 재설계",
       "predecessors": [
-        "V2-L6-0693"
+        "V2-L6-0887"
+      ],
+      "successors": [
+        "V2-L6-0889"
+      ],
+      "entry_condition": "선행 분해 L6 완료"
+    },
+    {
+      "l6_id": "V2-L6-0889",
+      "l3": "제도",
+      "l4": "시상",
+      "l5": "심사결과 취합/분석 및 최종 안내",
+      "l6_name": "심사결과 취합·분석 발송",
+      "input": "업무 원천 데이터",
+      "output": "심사결과 취합·분석 발송",
+      "output_type": "analysis_report",
+      "digital_trace": [
+        "심사결과 취합·분석 발송 처리 로그",
+        "심사결과 취합·분석 발송 시스템 상태값 변경",
+        "메일 제목: 심사결과 취합·분석 발송 안내"
+      ],
+      "automation_potential": "Mid",
+      "legacy_l6_match": [
+        "심사결과 취합/분석 및 최종 안내"
+      ],
+      "improvement_note": "realdata.ts Taxonomy 고정 + 산출물 중심 재설계",
+      "predecessors": [
+        "V2-L6-0888"
+      ],
+      "successors": [
+        "V2-L6-0890"
+      ],
+      "entry_condition": ""
+    },
+    {
+      "l6_id": "V2-L6-0890",
+      "l3": "제도",
+      "l4": "시상",
+      "l5": "심사결과 취합/분석 및 최종 안내",
+      "l6_name": "최종 안내 결과통보서 발송",
+      "input": "업무 원천 데이터",
+      "output": "최종 안내 결과통보서 발송",
+      "output_type": "notification_doc",
+      "digital_trace": [
+        "최종 안내 결과통보서 발송 처리 로그",
+        "최종 안내 결과통보서 발송 시스템 상태값 변경",
+        "메일 제목: 최종 안내 결과통보서 발송 안내"
+      ],
+      "automation_potential": "Mid",
+      "legacy_l6_match": [
+        "심사결과 취합/분석 및 최종 안내"
+      ],
+      "improvement_note": "realdata.ts Taxonomy 고정 + 산출물 중심 재설계",
+      "predecessors": [
+        "V2-L6-0889"
       ],
       "successors": [],
-      "entry_condition": "선행 L6 완료"
+      "entry_condition": "선행 분해 L6 완료"
     },
     {
       "l6_id": "V2-L6-0695",
@@ -7316,18 +8423,18 @@
       "entry_condition": "선행 L6 완료"
     },
     {
-      "l6_id": "V2-L6-0697",
+      "l6_id": "V2-L6-0891",
       "l3": "제도",
       "l4": "징계",
       "l5": "가이드 수립/배포 및 시스템 준비",
-      "l6_name": "가이드 수립·배포 및 시스템 준비 심사의결서 확정",
+      "l6_name": "가이드 수립·배포 확정",
       "input": "업무 원천 데이터",
-      "output": "가이드 수립·배포 및 시스템 준비 심사의결서 확정",
+      "output": "가이드 수립·배포 확정",
       "output_type": "decision_doc",
       "digital_trace": [
-        "인사위원회 심사 의결 로그: 가이드 수립·배포 및 시스템 준비",
-        "보안문서 열람 로그",
-        "메일 제목: 가이드 수립·배포 및 시스템 준비 심사결과 안내"
+        "가이드 수립·배포 확정 처리 로그",
+        "가이드 수립·배포 확정 시스템 상태값 변경",
+        "메일 제목: 가이드 수립·배포 확정 안내"
       ],
       "automation_potential": "Mid",
       "legacy_l6_match": [
@@ -7336,23 +8443,23 @@
       "improvement_note": "realdata.ts Taxonomy 고정 + 산출물 중심 재설계",
       "predecessors": [],
       "successors": [
-        "V2-L6-0698"
+        "V2-L6-0892"
       ],
       "entry_condition": ""
     },
     {
-      "l6_id": "V2-L6-0698",
+      "l6_id": "V2-L6-0892",
       "l3": "제도",
       "l4": "징계",
       "l5": "가이드 수립/배포 및 시스템 준비",
-      "l6_name": "가이드 수립·배포 및 시스템 준비 결과통보서 발송",
+      "l6_name": "시스템 준비 심사의결서 확정",
       "input": "업무 원천 데이터",
-      "output": "가이드 수립·배포 및 시스템 준비 결과통보서 발송",
-      "output_type": "notification_doc",
+      "output": "시스템 준비 심사의결서 확정",
+      "output_type": "decision_doc",
       "digital_trace": [
-        "결과 확정 상태값 변경 로그: 가이드 수립·배포 및 시스템 준비",
-        "통보 메일 발송 로그",
-        "이의신청 접수 로그: 가이드 수립·배포 및 시스템 준비"
+        "시스템 준비 심사의결서 확정 처리 로그",
+        "시스템 준비 심사의결서 확정 시스템 상태값 변경",
+        "메일 제목: 시스템 준비 심사의결서 확정 안내"
       ],
       "automation_potential": "Mid",
       "legacy_l6_match": [
@@ -7360,24 +8467,78 @@
       ],
       "improvement_note": "realdata.ts Taxonomy 고정 + 산출물 중심 재설계",
       "predecessors": [
-        "V2-L6-0697"
+        "V2-L6-0891"
       ],
-      "successors": [],
-      "entry_condition": "선행 L6 완료"
+      "successors": [
+        "V2-L6-0893"
+      ],
+      "entry_condition": "선행 분해 L6 완료"
     },
     {
-      "l6_id": "V2-L6-0699",
+      "l6_id": "V2-L6-0893",
+      "l3": "제도",
+      "l4": "징계",
+      "l5": "가이드 수립/배포 및 시스템 준비",
+      "l6_name": "가이드 수립·배포 발송",
+      "input": "업무 원천 데이터",
+      "output": "가이드 수립·배포 발송",
+      "output_type": "notification_doc",
+      "digital_trace": [
+        "가이드 수립·배포 발송 처리 로그",
+        "가이드 수립·배포 발송 시스템 상태값 변경",
+        "메일 제목: 가이드 수립·배포 발송 안내"
+      ],
+      "automation_potential": "Mid",
+      "legacy_l6_match": [
+        "가이드 수립/배포 및 시스템 준비"
+      ],
+      "improvement_note": "realdata.ts Taxonomy 고정 + 산출물 중심 재설계",
+      "predecessors": [
+        "V2-L6-0892"
+      ],
+      "successors": [
+        "V2-L6-0894"
+      ],
+      "entry_condition": ""
+    },
+    {
+      "l6_id": "V2-L6-0894",
+      "l3": "제도",
+      "l4": "징계",
+      "l5": "가이드 수립/배포 및 시스템 준비",
+      "l6_name": "시스템 준비 결과통보서 발송",
+      "input": "업무 원천 데이터",
+      "output": "시스템 준비 결과통보서 발송",
+      "output_type": "notification_doc",
+      "digital_trace": [
+        "시스템 준비 결과통보서 발송 처리 로그",
+        "시스템 준비 결과통보서 발송 시스템 상태값 변경",
+        "메일 제목: 시스템 준비 결과통보서 발송 안내"
+      ],
+      "automation_potential": "Mid",
+      "legacy_l6_match": [
+        "가이드 수립/배포 및 시스템 준비"
+      ],
+      "improvement_note": "realdata.ts Taxonomy 고정 + 산출물 중심 재설계",
+      "predecessors": [
+        "V2-L6-0893"
+      ],
+      "successors": [],
+      "entry_condition": "선행 분해 L6 완료"
+    },
+    {
+      "l6_id": "V2-L6-0895",
       "l3": "제도",
       "l4": "징계",
       "l5": "징계 검토 및 상벌위원회 운영",
-      "l6_name": "징계 검토 및 상벌위원회 운영 심사의결서 확정",
+      "l6_name": "징계 검토 확정",
       "input": "업무 원천 데이터",
-      "output": "징계 검토 및 상벌위원회 운영 심사의결서 확정",
+      "output": "징계 검토 확정",
       "output_type": "decision_doc",
       "digital_trace": [
-        "인사위원회 심사 의결 로그: 징계 검토 및 상벌위원회 운영",
-        "보안문서 열람 로그",
-        "메일 제목: 징계 검토 및 상벌위원회 운영 심사결과 안내"
+        "징계 검토 확정 처리 로그",
+        "징계 검토 확정 시스템 상태값 변경",
+        "메일 제목: 징계 검토 확정 안내"
       ],
       "automation_potential": "Mid",
       "legacy_l6_match": [
@@ -7386,23 +8547,23 @@
       "improvement_note": "realdata.ts Taxonomy 고정 + 산출물 중심 재설계",
       "predecessors": [],
       "successors": [
-        "V2-L6-0700"
+        "V2-L6-0896"
       ],
       "entry_condition": ""
     },
     {
-      "l6_id": "V2-L6-0700",
+      "l6_id": "V2-L6-0896",
       "l3": "제도",
       "l4": "징계",
       "l5": "징계 검토 및 상벌위원회 운영",
-      "l6_name": "징계 검토 및 상벌위원회 운영 결과통보서 발송",
+      "l6_name": "상벌위원회 운영 심사의결서 확정",
       "input": "업무 원천 데이터",
-      "output": "징계 검토 및 상벌위원회 운영 결과통보서 발송",
-      "output_type": "notification_doc",
+      "output": "상벌위원회 운영 심사의결서 확정",
+      "output_type": "decision_doc",
       "digital_trace": [
-        "결과 확정 상태값 변경 로그: 징계 검토 및 상벌위원회 운영",
-        "통보 메일 발송 로그",
-        "이의신청 접수 로그: 징계 검토 및 상벌위원회 운영"
+        "상벌위원회 운영 심사의결서 확정 처리 로그",
+        "상벌위원회 운영 심사의결서 확정 시스템 상태값 변경",
+        "메일 제목: 상벌위원회 운영 심사의결서 확정 안내"
       ],
       "automation_potential": "Mid",
       "legacy_l6_match": [
@@ -7410,10 +8571,64 @@
       ],
       "improvement_note": "realdata.ts Taxonomy 고정 + 산출물 중심 재설계",
       "predecessors": [
-        "V2-L6-0699"
+        "V2-L6-0895"
+      ],
+      "successors": [
+        "V2-L6-0897"
+      ],
+      "entry_condition": "선행 분해 L6 완료"
+    },
+    {
+      "l6_id": "V2-L6-0897",
+      "l3": "제도",
+      "l4": "징계",
+      "l5": "징계 검토 및 상벌위원회 운영",
+      "l6_name": "징계 검토 발송",
+      "input": "업무 원천 데이터",
+      "output": "징계 검토 발송",
+      "output_type": "notification_doc",
+      "digital_trace": [
+        "징계 검토 발송 처리 로그",
+        "징계 검토 발송 시스템 상태값 변경",
+        "메일 제목: 징계 검토 발송 안내"
+      ],
+      "automation_potential": "Mid",
+      "legacy_l6_match": [
+        "징계 검토 및 상벌위원회 운영"
+      ],
+      "improvement_note": "realdata.ts Taxonomy 고정 + 산출물 중심 재설계",
+      "predecessors": [
+        "V2-L6-0896"
+      ],
+      "successors": [
+        "V2-L6-0898"
+      ],
+      "entry_condition": ""
+    },
+    {
+      "l6_id": "V2-L6-0898",
+      "l3": "제도",
+      "l4": "징계",
+      "l5": "징계 검토 및 상벌위원회 운영",
+      "l6_name": "상벌위원회 운영 결과통보서 발송",
+      "input": "업무 원천 데이터",
+      "output": "상벌위원회 운영 결과통보서 발송",
+      "output_type": "notification_doc",
+      "digital_trace": [
+        "상벌위원회 운영 결과통보서 발송 처리 로그",
+        "상벌위원회 운영 결과통보서 발송 시스템 상태값 변경",
+        "메일 제목: 상벌위원회 운영 결과통보서 발송 안내"
+      ],
+      "automation_potential": "Mid",
+      "legacy_l6_match": [
+        "징계 검토 및 상벌위원회 운영"
+      ],
+      "improvement_note": "realdata.ts Taxonomy 고정 + 산출물 중심 재설계",
+      "predecessors": [
+        "V2-L6-0897"
       ],
       "successors": [],
-      "entry_condition": "선행 L6 완료"
+      "entry_condition": "선행 분해 L6 완료"
     },
     {
       "l6_id": "V2-L6-0701",
@@ -7666,18 +8881,18 @@
       "entry_condition": "선행 L6 완료"
     },
     {
-      "l6_id": "V2-L6-0711",
+      "l6_id": "V2-L6-0899",
       "l3": "교육",
       "l4": "진단/검정",
       "l5": "진단/검정 문항 분석 및 개발",
-      "l6_name": "진단·검정 문항 분석 및 개발 운영계획서 확정",
+      "l6_name": "진단·검정 문항 분석 확정",
       "input": "업무 원천 데이터",
-      "output": "진단·검정 문항 분석 및 개발 운영계획서 확정",
+      "output": "진단·검정 문항 분석 확정",
       "output_type": "plan_doc",
       "digital_trace": [
-        "LMS 과정/차수 생성 로그: 진단·검정 문항 분석 및 개발",
-        "운영계획 승인 로그",
-        "메일 제목: 진단·검정 문항 분석 및 개발 운영계획 안내"
+        "진단·검정 문항 분석 확정 처리 로그",
+        "진단·검정 문항 분석 확정 시스템 상태값 변경",
+        "메일 제목: 진단·검정 문항 분석 확정 안내"
       ],
       "automation_potential": "Mid",
       "legacy_l6_match": [
@@ -7686,23 +8901,23 @@
       "improvement_note": "realdata.ts Taxonomy 고정 + 산출물 중심 재설계",
       "predecessors": [],
       "successors": [
-        "V2-L6-0712"
+        "V2-L6-0900"
       ],
       "entry_condition": ""
     },
     {
-      "l6_id": "V2-L6-0712",
+      "l6_id": "V2-L6-0900",
       "l3": "교육",
       "l4": "진단/검정",
       "l5": "진단/검정 문항 분석 및 개발",
-      "l6_name": "진단·검정 문항 분석 및 개발 수료·성과 리포트 발행",
+      "l6_name": "개발 운영계획서 확정",
       "input": "업무 원천 데이터",
-      "output": "진단·검정 문항 분석 및 개발 수료·성과 리포트 발행",
-      "output_type": "training_report",
+      "output": "개발 운영계획서 확정",
+      "output_type": "plan_doc",
       "digital_trace": [
-        "LMS 수료데이터 적재 로그: 진단·검정 문항 분석 및 개발",
-        "성과분석 배치 로그",
-        "메일 제목: 진단·검정 문항 분석 및 개발 결과 공유"
+        "개발 운영계획서 확정 처리 로그",
+        "개발 운영계획서 확정 시스템 상태값 변경",
+        "메일 제목: 개발 운영계획서 확정 안내"
       ],
       "automation_potential": "Mid",
       "legacy_l6_match": [
@@ -7710,24 +8925,78 @@
       ],
       "improvement_note": "realdata.ts Taxonomy 고정 + 산출물 중심 재설계",
       "predecessors": [
-        "V2-L6-0711"
+        "V2-L6-0899"
       ],
-      "successors": [],
-      "entry_condition": "선행 L6 완료"
+      "successors": [
+        "V2-L6-0901"
+      ],
+      "entry_condition": "선행 분해 L6 완료"
     },
     {
-      "l6_id": "V2-L6-0713",
+      "l6_id": "V2-L6-0901",
+      "l3": "교육",
+      "l4": "진단/검정",
+      "l5": "진단/검정 문항 분석 및 개발",
+      "l6_name": "진단·검정 문항 분석 발행",
+      "input": "업무 원천 데이터",
+      "output": "진단·검정 문항 분석 발행",
+      "output_type": "training_report",
+      "digital_trace": [
+        "진단·검정 문항 분석 발행 처리 로그",
+        "진단·검정 문항 분석 발행 시스템 상태값 변경",
+        "메일 제목: 진단·검정 문항 분석 발행 안내"
+      ],
+      "automation_potential": "Mid",
+      "legacy_l6_match": [
+        "진단/검정 문항 분석 및 개발"
+      ],
+      "improvement_note": "realdata.ts Taxonomy 고정 + 산출물 중심 재설계",
+      "predecessors": [
+        "V2-L6-0900"
+      ],
+      "successors": [
+        "V2-L6-0902"
+      ],
+      "entry_condition": ""
+    },
+    {
+      "l6_id": "V2-L6-0902",
+      "l3": "교육",
+      "l4": "진단/검정",
+      "l5": "진단/검정 문항 분석 및 개발",
+      "l6_name": "개발 수료·성과 리포트 발행",
+      "input": "업무 원천 데이터",
+      "output": "개발 수료·성과 리포트 발행",
+      "output_type": "analysis_report",
+      "digital_trace": [
+        "개발 수료·성과 리포트 발행 처리 로그",
+        "개발 수료·성과 리포트 발행 시스템 상태값 변경",
+        "메일 제목: 개발 수료·성과 리포트 발행 안내"
+      ],
+      "automation_potential": "Mid",
+      "legacy_l6_match": [
+        "진단/검정 문항 분석 및 개발"
+      ],
+      "improvement_note": "realdata.ts Taxonomy 고정 + 산출물 중심 재설계",
+      "predecessors": [
+        "V2-L6-0901"
+      ],
+      "successors": [],
+      "entry_condition": "선행 분해 L6 완료"
+    },
+    {
+      "l6_id": "V2-L6-0903",
       "l3": "교육",
       "l4": "진단/검정",
       "l5": "진단/검정 운영 및 평가",
-      "l6_name": "진단·검정 운영 및 평가 운영계획서 확정",
+      "l6_name": "진단·검정 운영 확정",
       "input": "업무 원천 데이터",
-      "output": "진단·검정 운영 및 평가 운영계획서 확정",
+      "output": "진단·검정 운영 확정",
       "output_type": "plan_doc",
       "digital_trace": [
-        "LMS 과정/차수 생성 로그: 진단·검정 운영 및 평가",
-        "운영계획 승인 로그",
-        "메일 제목: 진단·검정 운영 및 평가 운영계획 안내"
+        "진단·검정 운영 확정 처리 로그",
+        "진단·검정 운영 확정 시스템 상태값 변경",
+        "메일 제목: 진단·검정 운영 확정 안내"
       ],
       "automation_potential": "Mid",
       "legacy_l6_match": [
@@ -7736,23 +9005,23 @@
       "improvement_note": "realdata.ts Taxonomy 고정 + 산출물 중심 재설계",
       "predecessors": [],
       "successors": [
-        "V2-L6-0714"
+        "V2-L6-0904"
       ],
       "entry_condition": ""
     },
     {
-      "l6_id": "V2-L6-0714",
+      "l6_id": "V2-L6-0904",
       "l3": "교육",
       "l4": "진단/검정",
       "l5": "진단/검정 운영 및 평가",
-      "l6_name": "진단·검정 운영 및 평가 수료·성과 리포트 발행",
+      "l6_name": "평가 운영계획서 확정",
       "input": "업무 원천 데이터",
-      "output": "진단·검정 운영 및 평가 수료·성과 리포트 발행",
-      "output_type": "training_report",
+      "output": "평가 운영계획서 확정",
+      "output_type": "plan_doc",
       "digital_trace": [
-        "LMS 수료데이터 적재 로그: 진단·검정 운영 및 평가",
-        "성과분석 배치 로그",
-        "메일 제목: 진단·검정 운영 및 평가 결과 공유"
+        "평가 운영계획서 확정 처리 로그",
+        "평가 운영계획서 확정 시스템 상태값 변경",
+        "메일 제목: 평가 운영계획서 확정 안내"
       ],
       "automation_potential": "Mid",
       "legacy_l6_match": [
@@ -7760,10 +9029,64 @@
       ],
       "improvement_note": "realdata.ts Taxonomy 고정 + 산출물 중심 재설계",
       "predecessors": [
-        "V2-L6-0713"
+        "V2-L6-0903"
+      ],
+      "successors": [
+        "V2-L6-0905"
+      ],
+      "entry_condition": "선행 분해 L6 완료"
+    },
+    {
+      "l6_id": "V2-L6-0905",
+      "l3": "교육",
+      "l4": "진단/검정",
+      "l5": "진단/검정 운영 및 평가",
+      "l6_name": "진단·검정 운영 발행",
+      "input": "업무 원천 데이터",
+      "output": "진단·검정 운영 발행",
+      "output_type": "training_report",
+      "digital_trace": [
+        "진단·검정 운영 발행 처리 로그",
+        "진단·검정 운영 발행 시스템 상태값 변경",
+        "메일 제목: 진단·검정 운영 발행 안내"
+      ],
+      "automation_potential": "Mid",
+      "legacy_l6_match": [
+        "진단/검정 운영 및 평가"
+      ],
+      "improvement_note": "realdata.ts Taxonomy 고정 + 산출물 중심 재설계",
+      "predecessors": [
+        "V2-L6-0904"
+      ],
+      "successors": [
+        "V2-L6-0906"
+      ],
+      "entry_condition": ""
+    },
+    {
+      "l6_id": "V2-L6-0906",
+      "l3": "교육",
+      "l4": "진단/검정",
+      "l5": "진단/검정 운영 및 평가",
+      "l6_name": "평가 수료·성과 리포트 발행",
+      "input": "업무 원천 데이터",
+      "output": "평가 수료·성과 리포트 발행",
+      "output_type": "analysis_report",
+      "digital_trace": [
+        "평가 수료·성과 리포트 발행 처리 로그",
+        "평가 수료·성과 리포트 발행 시스템 상태값 변경",
+        "메일 제목: 평가 수료·성과 리포트 발행 안내"
+      ],
+      "automation_potential": "Mid",
+      "legacy_l6_match": [
+        "진단/검정 운영 및 평가"
+      ],
+      "improvement_note": "realdata.ts Taxonomy 고정 + 산출물 중심 재설계",
+      "predecessors": [
+        "V2-L6-0905"
       ],
       "successors": [],
-      "entry_condition": "선행 L6 완료"
+      "entry_condition": "선행 분해 L6 완료"
     },
     {
       "l6_id": "V2-L6-0715",
@@ -7816,18 +9139,18 @@
       "entry_condition": "선행 L6 완료"
     },
     {
-      "l6_id": "V2-L6-0717",
+      "l6_id": "V2-L6-0907",
       "l3": "교육",
       "l4": "플랫폼",
       "l5": "이러닝 컨텐츠 소싱/관리 및 큐레이션",
-      "l6_name": "이러닝 컨텐츠 소싱·관리 및 큐레이션 운영계획서 확정",
+      "l6_name": "이러닝 컨텐츠 소싱·관리 확정",
       "input": "업무 원천 데이터",
-      "output": "이러닝 컨텐츠 소싱·관리 및 큐레이션 운영계획서 확정",
+      "output": "이러닝 컨텐츠 소싱·관리 확정",
       "output_type": "plan_doc",
       "digital_trace": [
-        "LMS 과정/차수 생성 로그: 이러닝 컨텐츠 소싱·관리 및 큐레이션",
-        "운영계획 승인 로그",
-        "메일 제목: 이러닝 컨텐츠 소싱·관리 및 큐레이션 운영계획 안내"
+        "이러닝 컨텐츠 소싱·관리 확정 처리 로그",
+        "이러닝 컨텐츠 소싱·관리 확정 시스템 상태값 변경",
+        "메일 제목: 이러닝 컨텐츠 소싱·관리 확정 안내"
       ],
       "automation_potential": "Mid",
       "legacy_l6_match": [
@@ -7836,23 +9159,23 @@
       "improvement_note": "realdata.ts Taxonomy 고정 + 산출물 중심 재설계",
       "predecessors": [],
       "successors": [
-        "V2-L6-0718"
+        "V2-L6-0908"
       ],
       "entry_condition": ""
     },
     {
-      "l6_id": "V2-L6-0718",
+      "l6_id": "V2-L6-0908",
       "l3": "교육",
       "l4": "플랫폼",
       "l5": "이러닝 컨텐츠 소싱/관리 및 큐레이션",
-      "l6_name": "이러닝 컨텐츠 소싱·관리 및 큐레이션 수료·성과 리포트 발행",
+      "l6_name": "큐레이션 운영계획서 확정",
       "input": "업무 원천 데이터",
-      "output": "이러닝 컨텐츠 소싱·관리 및 큐레이션 수료·성과 리포트 발행",
-      "output_type": "training_report",
+      "output": "큐레이션 운영계획서 확정",
+      "output_type": "plan_doc",
       "digital_trace": [
-        "LMS 수료데이터 적재 로그: 이러닝 컨텐츠 소싱·관리 및 큐레이션",
-        "성과분석 배치 로그",
-        "메일 제목: 이러닝 컨텐츠 소싱·관리 및 큐레이션 결과 공유"
+        "큐레이션 운영계획서 확정 처리 로그",
+        "큐레이션 운영계획서 확정 시스템 상태값 변경",
+        "메일 제목: 큐레이션 운영계획서 확정 안내"
       ],
       "automation_potential": "Mid",
       "legacy_l6_match": [
@@ -7860,10 +9183,64 @@
       ],
       "improvement_note": "realdata.ts Taxonomy 고정 + 산출물 중심 재설계",
       "predecessors": [
-        "V2-L6-0717"
+        "V2-L6-0907"
+      ],
+      "successors": [
+        "V2-L6-0909"
+      ],
+      "entry_condition": "선행 분해 L6 완료"
+    },
+    {
+      "l6_id": "V2-L6-0909",
+      "l3": "교육",
+      "l4": "플랫폼",
+      "l5": "이러닝 컨텐츠 소싱/관리 및 큐레이션",
+      "l6_name": "이러닝 컨텐츠 소싱·관리 발행",
+      "input": "업무 원천 데이터",
+      "output": "이러닝 컨텐츠 소싱·관리 발행",
+      "output_type": "training_report",
+      "digital_trace": [
+        "이러닝 컨텐츠 소싱·관리 발행 처리 로그",
+        "이러닝 컨텐츠 소싱·관리 발행 시스템 상태값 변경",
+        "메일 제목: 이러닝 컨텐츠 소싱·관리 발행 안내"
+      ],
+      "automation_potential": "Mid",
+      "legacy_l6_match": [
+        "이러닝 컨텐츠 소싱/관리 및 큐레이션"
+      ],
+      "improvement_note": "realdata.ts Taxonomy 고정 + 산출물 중심 재설계",
+      "predecessors": [
+        "V2-L6-0908"
+      ],
+      "successors": [
+        "V2-L6-0910"
+      ],
+      "entry_condition": ""
+    },
+    {
+      "l6_id": "V2-L6-0910",
+      "l3": "교육",
+      "l4": "플랫폼",
+      "l5": "이러닝 컨텐츠 소싱/관리 및 큐레이션",
+      "l6_name": "큐레이션 수료·성과 리포트 발행",
+      "input": "업무 원천 데이터",
+      "output": "큐레이션 수료·성과 리포트 발행",
+      "output_type": "analysis_report",
+      "digital_trace": [
+        "큐레이션 수료·성과 리포트 발행 처리 로그",
+        "큐레이션 수료·성과 리포트 발행 시스템 상태값 변경",
+        "메일 제목: 큐레이션 수료·성과 리포트 발행 안내"
+      ],
+      "automation_potential": "Mid",
+      "legacy_l6_match": [
+        "이러닝 컨텐츠 소싱/관리 및 큐레이션"
+      ],
+      "improvement_note": "realdata.ts Taxonomy 고정 + 산출물 중심 재설계",
+      "predecessors": [
+        "V2-L6-0909"
       ],
       "successors": [],
-      "entry_condition": "선행 L6 완료"
+      "entry_condition": "선행 분해 L6 완료"
     },
     {
       "l6_id": "V2-L6-0719",
@@ -8566,18 +9943,18 @@
       "entry_condition": "선행 L6 완료"
     },
     {
-      "l6_id": "V2-L6-0747",
+      "l6_id": "V2-L6-0911",
       "l3": "교육",
       "l4": "교육운영",
       "l5": "수료 관리 및 경비처리",
-      "l6_name": "수료 관리 및 경비처리 운영계획서 확정",
+      "l6_name": "수료 관리 확정",
       "input": "업무 원천 데이터",
-      "output": "수료 관리 및 경비처리 운영계획서 확정",
-      "output_type": "plan_doc",
+      "output": "수료 관리 확정",
+      "output_type": "training_status",
       "digital_trace": [
-        "LMS 과정/차수 생성 로그: 수료 관리 및 경비처리",
-        "운영계획 승인 로그",
-        "메일 제목: 수료 관리 및 경비처리 운영계획 안내"
+        "수료 관리 확정 처리 로그",
+        "수료 관리 확정 시스템 상태값 변경",
+        "메일 제목: 수료 관리 확정 안내"
       ],
       "automation_potential": "Mid",
       "legacy_l6_match": [
@@ -8586,23 +9963,23 @@
       "improvement_note": "realdata.ts Taxonomy 고정 + 산출물 중심 재설계",
       "predecessors": [],
       "successors": [
-        "V2-L6-0748"
+        "V2-L6-0912"
       ],
       "entry_condition": ""
     },
     {
-      "l6_id": "V2-L6-0748",
+      "l6_id": "V2-L6-0912",
       "l3": "교육",
       "l4": "교육운영",
       "l5": "수료 관리 및 경비처리",
-      "l6_name": "수료 관리 및 경비처리 수료·성과 리포트 발행",
+      "l6_name": "경비처리 운영계획서 확정",
       "input": "업무 원천 데이터",
-      "output": "수료 관리 및 경비처리 수료·성과 리포트 발행",
-      "output_type": "training_report",
+      "output": "경비처리 운영계획서 확정",
+      "output_type": "plan_doc",
       "digital_trace": [
-        "LMS 수료데이터 적재 로그: 수료 관리 및 경비처리",
-        "성과분석 배치 로그",
-        "메일 제목: 수료 관리 및 경비처리 결과 공유"
+        "경비처리 운영계획서 확정 처리 로그",
+        "경비처리 운영계획서 확정 시스템 상태값 변경",
+        "메일 제목: 경비처리 운영계획서 확정 안내"
       ],
       "automation_potential": "Mid",
       "legacy_l6_match": [
@@ -8610,24 +9987,78 @@
       ],
       "improvement_note": "realdata.ts Taxonomy 고정 + 산출물 중심 재설계",
       "predecessors": [
-        "V2-L6-0747"
+        "V2-L6-0911"
       ],
-      "successors": [],
-      "entry_condition": "선행 L6 완료"
+      "successors": [
+        "V2-L6-0913"
+      ],
+      "entry_condition": "선행 분해 L6 완료"
     },
     {
-      "l6_id": "V2-L6-0749",
+      "l6_id": "V2-L6-0913",
+      "l3": "교육",
+      "l4": "교육운영",
+      "l5": "수료 관리 및 경비처리",
+      "l6_name": "수료 관리 발행",
+      "input": "업무 원천 데이터",
+      "output": "수료 관리 발행",
+      "output_type": "training_status",
+      "digital_trace": [
+        "수료 관리 발행 처리 로그",
+        "수료 관리 발행 시스템 상태값 변경",
+        "메일 제목: 수료 관리 발행 안내"
+      ],
+      "automation_potential": "Mid",
+      "legacy_l6_match": [
+        "수료 관리 및 경비처리"
+      ],
+      "improvement_note": "realdata.ts Taxonomy 고정 + 산출물 중심 재설계",
+      "predecessors": [
+        "V2-L6-0912"
+      ],
+      "successors": [
+        "V2-L6-0914"
+      ],
+      "entry_condition": ""
+    },
+    {
+      "l6_id": "V2-L6-0914",
+      "l3": "교육",
+      "l4": "교육운영",
+      "l5": "수료 관리 및 경비처리",
+      "l6_name": "경비처리 수료·성과 리포트 발행",
+      "input": "업무 원천 데이터",
+      "output": "경비처리 수료·성과 리포트 발행",
+      "output_type": "analysis_report",
+      "digital_trace": [
+        "경비처리 수료·성과 리포트 발행 처리 로그",
+        "경비처리 수료·성과 리포트 발행 시스템 상태값 변경",
+        "메일 제목: 경비처리 수료·성과 리포트 발행 안내"
+      ],
+      "automation_potential": "Mid",
+      "legacy_l6_match": [
+        "수료 관리 및 경비처리"
+      ],
+      "improvement_note": "realdata.ts Taxonomy 고정 + 산출물 중심 재설계",
+      "predecessors": [
+        "V2-L6-0913"
+      ],
+      "successors": [],
+      "entry_condition": "선행 분해 L6 완료"
+    },
+    {
+      "l6_id": "V2-L6-0915",
       "l3": "교육",
       "l4": "내부 컨텐츠 개발",
       "l5": "강의안 및 교보재 개발",
-      "l6_name": "강의안 및 교보재 개발 운영계획서 확정",
+      "l6_name": "강의안 확정",
       "input": "업무 원천 데이터",
-      "output": "강의안 및 교보재 개발 운영계획서 확정",
+      "output": "강의안 확정",
       "output_type": "plan_doc",
       "digital_trace": [
-        "LMS 과정/차수 생성 로그: 강의안 및 교보재 개발",
-        "운영계획 승인 로그",
-        "메일 제목: 강의안 및 교보재 개발 운영계획 안내"
+        "강의안 확정 처리 로그",
+        "강의안 확정 시스템 상태값 변경",
+        "메일 제목: 강의안 확정 안내"
       ],
       "automation_potential": "Mid",
       "legacy_l6_match": [
@@ -8636,23 +10067,23 @@
       "improvement_note": "realdata.ts Taxonomy 고정 + 산출물 중심 재설계",
       "predecessors": [],
       "successors": [
-        "V2-L6-0750"
+        "V2-L6-0916"
       ],
       "entry_condition": ""
     },
     {
-      "l6_id": "V2-L6-0750",
+      "l6_id": "V2-L6-0916",
       "l3": "교육",
       "l4": "내부 컨텐츠 개발",
       "l5": "강의안 및 교보재 개발",
-      "l6_name": "강의안 및 교보재 개발 수료·성과 리포트 발행",
+      "l6_name": "교보재 개발 운영계획서 확정",
       "input": "업무 원천 데이터",
-      "output": "강의안 및 교보재 개발 수료·성과 리포트 발행",
-      "output_type": "training_report",
+      "output": "교보재 개발 운영계획서 확정",
+      "output_type": "plan_doc",
       "digital_trace": [
-        "LMS 수료데이터 적재 로그: 강의안 및 교보재 개발",
-        "성과분석 배치 로그",
-        "메일 제목: 강의안 및 교보재 개발 결과 공유"
+        "교보재 개발 운영계획서 확정 처리 로그",
+        "교보재 개발 운영계획서 확정 시스템 상태값 변경",
+        "메일 제목: 교보재 개발 운영계획서 확정 안내"
       ],
       "automation_potential": "Mid",
       "legacy_l6_match": [
@@ -8660,10 +10091,64 @@
       ],
       "improvement_note": "realdata.ts Taxonomy 고정 + 산출물 중심 재설계",
       "predecessors": [
-        "V2-L6-0749"
+        "V2-L6-0915"
+      ],
+      "successors": [
+        "V2-L6-0917"
+      ],
+      "entry_condition": "선행 분해 L6 완료"
+    },
+    {
+      "l6_id": "V2-L6-0917",
+      "l3": "교육",
+      "l4": "내부 컨텐츠 개발",
+      "l5": "강의안 및 교보재 개발",
+      "l6_name": "강의안 발행",
+      "input": "업무 원천 데이터",
+      "output": "강의안 발행",
+      "output_type": "training_report",
+      "digital_trace": [
+        "강의안 발행 처리 로그",
+        "강의안 발행 시스템 상태값 변경",
+        "메일 제목: 강의안 발행 안내"
+      ],
+      "automation_potential": "Mid",
+      "legacy_l6_match": [
+        "강의안 및 교보재 개발"
+      ],
+      "improvement_note": "realdata.ts Taxonomy 고정 + 산출물 중심 재설계",
+      "predecessors": [
+        "V2-L6-0916"
+      ],
+      "successors": [
+        "V2-L6-0918"
+      ],
+      "entry_condition": ""
+    },
+    {
+      "l6_id": "V2-L6-0918",
+      "l3": "교육",
+      "l4": "내부 컨텐츠 개발",
+      "l5": "강의안 및 교보재 개발",
+      "l6_name": "교보재 개발 수료·성과 리포트 발행",
+      "input": "업무 원천 데이터",
+      "output": "교보재 개발 수료·성과 리포트 발행",
+      "output_type": "analysis_report",
+      "digital_trace": [
+        "교보재 개발 수료·성과 리포트 발행 처리 로그",
+        "교보재 개발 수료·성과 리포트 발행 시스템 상태값 변경",
+        "메일 제목: 교보재 개발 수료·성과 리포트 발행 안내"
+      ],
+      "automation_potential": "Mid",
+      "legacy_l6_match": [
+        "강의안 및 교보재 개발"
+      ],
+      "improvement_note": "realdata.ts Taxonomy 고정 + 산출물 중심 재설계",
+      "predecessors": [
+        "V2-L6-0917"
       ],
       "successors": [],
-      "entry_condition": "선행 L6 완료"
+      "entry_condition": "선행 분해 L6 완료"
     },
     {
       "l6_id": "V2-L6-0751",
@@ -9366,18 +10851,18 @@
       "entry_condition": "선행 L6 완료"
     },
     {
-      "l6_id": "V2-L6-0779",
+      "l6_id": "V2-L6-0919",
       "l3": "교육",
       "l4": "컨텐츠 개발(외부)",
       "l5": "강의안 및 교보재 개발",
-      "l6_name": "강의안 및 교보재 개발 운영계획서 확정",
+      "l6_name": "강의안 확정",
       "input": "업무 원천 데이터",
-      "output": "강의안 및 교보재 개발 운영계획서 확정",
+      "output": "강의안 확정",
       "output_type": "plan_doc",
       "digital_trace": [
-        "LMS 과정/차수 생성 로그: 강의안 및 교보재 개발",
-        "운영계획 승인 로그",
-        "메일 제목: 강의안 및 교보재 개발 운영계획 안내"
+        "강의안 확정 처리 로그",
+        "강의안 확정 시스템 상태값 변경",
+        "메일 제목: 강의안 확정 안내"
       ],
       "automation_potential": "Mid",
       "legacy_l6_match": [
@@ -9386,23 +10871,23 @@
       "improvement_note": "realdata.ts Taxonomy 고정 + 산출물 중심 재설계",
       "predecessors": [],
       "successors": [
-        "V2-L6-0780"
+        "V2-L6-0920"
       ],
       "entry_condition": ""
     },
     {
-      "l6_id": "V2-L6-0780",
+      "l6_id": "V2-L6-0920",
       "l3": "교육",
       "l4": "컨텐츠 개발(외부)",
       "l5": "강의안 및 교보재 개발",
-      "l6_name": "강의안 및 교보재 개발 수료·성과 리포트 발행",
+      "l6_name": "교보재 개발 운영계획서 확정",
       "input": "업무 원천 데이터",
-      "output": "강의안 및 교보재 개발 수료·성과 리포트 발행",
-      "output_type": "training_report",
+      "output": "교보재 개발 운영계획서 확정",
+      "output_type": "plan_doc",
       "digital_trace": [
-        "LMS 수료데이터 적재 로그: 강의안 및 교보재 개발",
-        "성과분석 배치 로그",
-        "메일 제목: 강의안 및 교보재 개발 결과 공유"
+        "교보재 개발 운영계획서 확정 처리 로그",
+        "교보재 개발 운영계획서 확정 시스템 상태값 변경",
+        "메일 제목: 교보재 개발 운영계획서 확정 안내"
       ],
       "automation_potential": "Mid",
       "legacy_l6_match": [
@@ -9410,10 +10895,64 @@
       ],
       "improvement_note": "realdata.ts Taxonomy 고정 + 산출물 중심 재설계",
       "predecessors": [
-        "V2-L6-0779"
+        "V2-L6-0919"
+      ],
+      "successors": [
+        "V2-L6-0921"
+      ],
+      "entry_condition": "선행 분해 L6 완료"
+    },
+    {
+      "l6_id": "V2-L6-0921",
+      "l3": "교육",
+      "l4": "컨텐츠 개발(외부)",
+      "l5": "강의안 및 교보재 개발",
+      "l6_name": "강의안 발행",
+      "input": "업무 원천 데이터",
+      "output": "강의안 발행",
+      "output_type": "training_report",
+      "digital_trace": [
+        "강의안 발행 처리 로그",
+        "강의안 발행 시스템 상태값 변경",
+        "메일 제목: 강의안 발행 안내"
+      ],
+      "automation_potential": "Mid",
+      "legacy_l6_match": [
+        "강의안 및 교보재 개발"
+      ],
+      "improvement_note": "realdata.ts Taxonomy 고정 + 산출물 중심 재설계",
+      "predecessors": [
+        "V2-L6-0920"
+      ],
+      "successors": [
+        "V2-L6-0922"
+      ],
+      "entry_condition": ""
+    },
+    {
+      "l6_id": "V2-L6-0922",
+      "l3": "교육",
+      "l4": "컨텐츠 개발(외부)",
+      "l5": "강의안 및 교보재 개발",
+      "l6_name": "교보재 개발 수료·성과 리포트 발행",
+      "input": "업무 원천 데이터",
+      "output": "교보재 개발 수료·성과 리포트 발행",
+      "output_type": "analysis_report",
+      "digital_trace": [
+        "교보재 개발 수료·성과 리포트 발행 처리 로그",
+        "교보재 개발 수료·성과 리포트 발행 시스템 상태값 변경",
+        "메일 제목: 교보재 개발 수료·성과 리포트 발행 안내"
+      ],
+      "automation_potential": "Mid",
+      "legacy_l6_match": [
+        "강의안 및 교보재 개발"
+      ],
+      "improvement_note": "realdata.ts Taxonomy 고정 + 산출물 중심 재설계",
+      "predecessors": [
+        "V2-L6-0921"
       ],
       "successors": [],
-      "entry_condition": "선행 L6 완료"
+      "entry_condition": "선행 분해 L6 완료"
     },
     {
       "l6_id": "V2-L6-0781",
@@ -9766,18 +11305,18 @@
       "entry_condition": "선행 L6 완료"
     },
     {
-      "l6_id": "V2-L6-0795",
+      "l6_id": "V2-L6-0923",
       "l3": "기획",
       "l4": "자료 작성",
       "l5": "팀 연간 업무일정표 및 주요일정 작성",
-      "l6_name": "팀 연간 업무일정표 및 주요일정 작성 회의록·자료집 발행",
+      "l6_name": "팀 연간 업무일정표 발행",
       "input": "업무 원천 데이터",
-      "output": "팀 연간 업무일정표 및 주요일정 작성 회의록·자료집 발행",
+      "output": "팀 연간 업무일정표 발행",
       "output_type": "minutes_doc",
       "digital_trace": [
-        "그룹웨어 문서번호 생성: 팀 연간 업무일정표 및 주요일정 작성",
-        "회의록 저장 로그",
-        "메일 제목: 팀 연간 업무일정표 및 주요일정 작성 자료 공유"
+        "팀 연간 업무일정표 발행 처리 로그",
+        "팀 연간 업무일정표 발행 시스템 상태값 변경",
+        "메일 제목: 팀 연간 업무일정표 발행 안내"
       ],
       "automation_potential": "Mid",
       "legacy_l6_match": [
@@ -9786,23 +11325,23 @@
       "improvement_note": "realdata.ts Taxonomy 고정 + 산출물 중심 재설계",
       "predecessors": [],
       "successors": [
-        "V2-L6-0796"
+        "V2-L6-0924"
       ],
       "entry_condition": ""
     },
     {
-      "l6_id": "V2-L6-0796",
+      "l6_id": "V2-L6-0924",
       "l3": "기획",
       "l4": "자료 작성",
       "l5": "팀 연간 업무일정표 및 주요일정 작성",
-      "l6_name": "팀 연간 업무일정표 및 주요일정 작성 계획안 확정",
+      "l6_name": "주요일정 작성 회의록·자료집 발행",
       "input": "업무 원천 데이터",
-      "output": "팀 연간 업무일정표 및 주요일정 작성 계획안 확정",
-      "output_type": "plan_doc",
+      "output": "주요일정 작성 회의록·자료집 발행",
+      "output_type": "minutes_doc",
       "digital_trace": [
-        "계획안 결재 승인 로그: 팀 연간 업무일정표 및 주요일정 작성",
-        "버전 잠금 로그",
-        "주간/월간 추적 로그: 팀 연간 업무일정표 및 주요일정 작성"
+        "주요일정 작성 회의록·자료집 발행 처리 로그",
+        "주요일정 작성 회의록·자료집 발행 시스템 상태값 변경",
+        "메일 제목: 주요일정 작성 회의록·자료집 발행 안내"
       ],
       "automation_potential": "Mid",
       "legacy_l6_match": [
@@ -9810,10 +11349,64 @@
       ],
       "improvement_note": "realdata.ts Taxonomy 고정 + 산출물 중심 재설계",
       "predecessors": [
-        "V2-L6-0795"
+        "V2-L6-0923"
+      ],
+      "successors": [
+        "V2-L6-0925"
+      ],
+      "entry_condition": "선행 분해 L6 완료"
+    },
+    {
+      "l6_id": "V2-L6-0925",
+      "l3": "기획",
+      "l4": "자료 작성",
+      "l5": "팀 연간 업무일정표 및 주요일정 작성",
+      "l6_name": "팀 연간 업무일정표 확정",
+      "input": "업무 원천 데이터",
+      "output": "팀 연간 업무일정표 확정",
+      "output_type": "plan_doc",
+      "digital_trace": [
+        "팀 연간 업무일정표 확정 처리 로그",
+        "팀 연간 업무일정표 확정 시스템 상태값 변경",
+        "메일 제목: 팀 연간 업무일정표 확정 안내"
+      ],
+      "automation_potential": "Mid",
+      "legacy_l6_match": [
+        "팀 연간 업무일정표 및 주요일정 작성"
+      ],
+      "improvement_note": "realdata.ts Taxonomy 고정 + 산출물 중심 재설계",
+      "predecessors": [
+        "V2-L6-0924"
+      ],
+      "successors": [
+        "V2-L6-0926"
+      ],
+      "entry_condition": ""
+    },
+    {
+      "l6_id": "V2-L6-0926",
+      "l3": "기획",
+      "l4": "자료 작성",
+      "l5": "팀 연간 업무일정표 및 주요일정 작성",
+      "l6_name": "주요일정 작성 계획안 확정",
+      "input": "업무 원천 데이터",
+      "output": "주요일정 작성 계획안 확정",
+      "output_type": "plan_doc",
+      "digital_trace": [
+        "주요일정 작성 계획안 확정 처리 로그",
+        "주요일정 작성 계획안 확정 시스템 상태값 변경",
+        "메일 제목: 주요일정 작성 계획안 확정 안내"
+      ],
+      "automation_potential": "Mid",
+      "legacy_l6_match": [
+        "팀 연간 업무일정표 및 주요일정 작성"
+      ],
+      "improvement_note": "realdata.ts Taxonomy 고정 + 산출물 중심 재설계",
+      "predecessors": [
+        "V2-L6-0925"
       ],
       "successors": [],
-      "entry_condition": "선행 L6 완료"
+      "entry_condition": "선행 분해 L6 완료"
     },
     {
       "l6_id": "V2-L6-0797",
@@ -9916,18 +11509,18 @@
       "entry_condition": "선행 L6 완료"
     },
     {
-      "l6_id": "V2-L6-0801",
+      "l6_id": "V2-L6-0927",
       "l3": "기획",
       "l4": "자료 작성",
       "l5": "People팀 조직 및 인력 현황 작성",
-      "l6_name": "People팀 조직 및 인력 현황 작성 회의록·자료집 발행",
+      "l6_name": "People팀 조직 발행",
       "input": "업무 원천 데이터",
-      "output": "People팀 조직 및 인력 현황 작성 회의록·자료집 발행",
+      "output": "People팀 조직 발행",
       "output_type": "minutes_doc",
       "digital_trace": [
-        "그룹웨어 문서번호 생성: People팀 조직 및 인력 현황 작성",
-        "회의록 저장 로그",
-        "메일 제목: People팀 조직 및 인력 현황 작성 자료 공유"
+        "People팀 조직 발행 처리 로그",
+        "People팀 조직 발행 시스템 상태값 변경",
+        "메일 제목: People팀 조직 발행 안내"
       ],
       "automation_potential": "Mid",
       "legacy_l6_match": [
@@ -9936,23 +11529,23 @@
       "improvement_note": "realdata.ts Taxonomy 고정 + 산출물 중심 재설계",
       "predecessors": [],
       "successors": [
-        "V2-L6-0802"
+        "V2-L6-0928"
       ],
       "entry_condition": ""
     },
     {
-      "l6_id": "V2-L6-0802",
+      "l6_id": "V2-L6-0928",
       "l3": "기획",
       "l4": "자료 작성",
       "l5": "People팀 조직 및 인력 현황 작성",
-      "l6_name": "People팀 조직 및 인력 현황 작성 계획안 확정",
+      "l6_name": "인력 현황 작성 회의록·자료집 발행",
       "input": "업무 원천 데이터",
-      "output": "People팀 조직 및 인력 현황 작성 계획안 확정",
-      "output_type": "plan_doc",
+      "output": "인력 현황 작성 회의록·자료집 발행",
+      "output_type": "minutes_doc",
       "digital_trace": [
-        "계획안 결재 승인 로그: People팀 조직 및 인력 현황 작성",
-        "버전 잠금 로그",
-        "주간/월간 추적 로그: People팀 조직 및 인력 현황 작성"
+        "인력 현황 작성 회의록·자료집 발행 처리 로그",
+        "인력 현황 작성 회의록·자료집 발행 시스템 상태값 변경",
+        "메일 제목: 인력 현황 작성 회의록·자료집 발행 안내"
       ],
       "automation_potential": "Mid",
       "legacy_l6_match": [
@@ -9960,10 +11553,64 @@
       ],
       "improvement_note": "realdata.ts Taxonomy 고정 + 산출물 중심 재설계",
       "predecessors": [
-        "V2-L6-0801"
+        "V2-L6-0927"
+      ],
+      "successors": [
+        "V2-L6-0929"
+      ],
+      "entry_condition": "선행 분해 L6 완료"
+    },
+    {
+      "l6_id": "V2-L6-0929",
+      "l3": "기획",
+      "l4": "자료 작성",
+      "l5": "People팀 조직 및 인력 현황 작성",
+      "l6_name": "People팀 조직 확정",
+      "input": "업무 원천 데이터",
+      "output": "People팀 조직 확정",
+      "output_type": "plan_doc",
+      "digital_trace": [
+        "People팀 조직 확정 처리 로그",
+        "People팀 조직 확정 시스템 상태값 변경",
+        "메일 제목: People팀 조직 확정 안내"
+      ],
+      "automation_potential": "Mid",
+      "legacy_l6_match": [
+        "People팀 조직 및 인력 현황 작성"
+      ],
+      "improvement_note": "realdata.ts Taxonomy 고정 + 산출물 중심 재설계",
+      "predecessors": [
+        "V2-L6-0928"
+      ],
+      "successors": [
+        "V2-L6-0930"
+      ],
+      "entry_condition": ""
+    },
+    {
+      "l6_id": "V2-L6-0930",
+      "l3": "기획",
+      "l4": "자료 작성",
+      "l5": "People팀 조직 및 인력 현황 작성",
+      "l6_name": "인력 현황 작성 계획안 확정",
+      "input": "업무 원천 데이터",
+      "output": "인력 현황 작성 계획안 확정",
+      "output_type": "plan_doc",
+      "digital_trace": [
+        "인력 현황 작성 계획안 확정 처리 로그",
+        "인력 현황 작성 계획안 확정 시스템 상태값 변경",
+        "메일 제목: 인력 현황 작성 계획안 확정 안내"
+      ],
+      "automation_potential": "Mid",
+      "legacy_l6_match": [
+        "People팀 조직 및 인력 현황 작성"
+      ],
+      "improvement_note": "realdata.ts Taxonomy 고정 + 산출물 중심 재설계",
+      "predecessors": [
+        "V2-L6-0929"
       ],
       "successors": [],
-      "entry_condition": "선행 L6 완료"
+      "entry_condition": "선행 분해 L6 완료"
     },
     {
       "l6_id": "V2-L6-0803",
