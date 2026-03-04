@@ -30,10 +30,16 @@
     <div class="container">
         <h1>[공통] AI 활용 프로세스(Level 6) 세분화 프로젝트 결과 보고</h1>
         
-        <h2>1. 개요: 추상적 서술의 숙청 및 핸드오프(Handoff) 기반 재설계</h2>
+        <h2>1. 개요 및 추진 배경 (Level 6)</h2>
         <ul>
-            <li>기존 인사 업무 데이터(realdata.ts)는 사람이 맥락으로 이해하기 위한 추상적 리스트였습니다. 이를 AI가 인지하고 실행할 수 있는 TO-BE 구조로 전환하기 위해, 현업에서 실제로 주고받는 <strong>핸드오프 가능한 독립 결과물</strong> 단위로 L6를 재구축합니다.</li>
-            <li>이 과정의 본질은 업무의 '용어 세탁'이 아니라 '절차의 해체'이며, <strong>"누가 이 일을 시작하고 끝내는가"</strong>를 명확히 하여 단순 반복 업무를 Digital Worker에게 이관하고, 인사 전문가가 고부가가치 업무에 집중할 수 있는 구조적 토대를 마련하는 데 목적이 있습니다.</li>
+            <li><strong>목적:</strong> 인사 전문가와 AI 간의 협업을 위한 프로세스 세분화(L4~L6) 기준 마련 및 AI Coaching 기능을 위한 마일스톤 설계, 향후 L7 기반 As-is/To-be 도식화 가속화 및 비즈니스 추진</li>
+            <li><strong>추진 전략:</strong>
+                <ul>
+                    <li>추상적 업무 기술 ➡️ '핸드오프 가능한 독립 결과물' 단위로 해체</li>
+                    <li>단순 용어 세탁 지양 ➡️ 'Input-Process-Output' 3-Step 기반 1:N 극한 분해</li>
+                    <li>맥락 반영: 시스템(Workday 등)-메일-오프라인 액션이 혼재된 실제 HR 실무 환경 반영</li>
+                </ul>
+            </li>
         </ul>
 
         <h2>2. AX Lab 표준 프레임워크 (AS-IS vs TO-BE)</h2>
@@ -47,11 +53,11 @@
                 </tr>
             </thead>
             <tbody>
-                <tr><td><strong>L3</strong></td><td>HR 가치사슬상의 독립 전문 영역</td><td>[도메인] 조직의 고유 R&R 및 책임 단위</td><td>우리 조직의 고유한 전문 영역인가?</td></tr>
-                <tr><td><strong>L4</strong></td><td>연관된 단위업무(L5)의 집합체</td><td>[프로세스 그룹] 기능 중심의 순수 기능적 묶음</td><td>이 명칭이 직관적인 '수납장 이름'인가?</td></tr>
-                <tr><td><strong>L5</strong></td><td>독립된 활동들이 결합된 프로세스</td><td>[단위 프로세스] 시작~종료가 명확한 완결된 흐름</td><td>스톱워치를 켜고 끌 수 있는 한 건의 마디인가?</td></tr>
-                <tr><td><strong>L6</strong></td><td>구체적 결과물을 도출하는 단위</td><td>[성과 활동] 원자적 실행 단위 (1 Output, 1 Trace)</td><td>종료 시 [목적어+결과상태] 증거가 남는가?</td></tr>
-                <tr><td><strong>L7</strong></td><td>(정의 없음)</td><td>[행위/Atomic Action] 한 화면 내 연속 동작 + 메타데이터</td><td>더 쪼개면 단순 클릭/입력 수준인가?</td></tr>
+                <tr><td>L3</td><td>HR 가치사슬상의 독립 전문 영역</td><td>[도메인] 조직의 고유 R&R 및 책임 단위</td><td>우리 조직의 고유한 전문 영역인가?</td></tr>
+                <tr><td>L4</td><td>연관된 단위업무(L5)의 집합체</td><td>[프로세스 그룹] 기능 중심의 순수 기능적 묶음</td><td>이 명칭이 직관적인 '수납장 이름'인가?</td></tr>
+                <tr><td>L5</td><td>독립된 활동들이 결합된 프로세스</td><td>[단위 프로세스] 시작~종료가 명확한 완결된 흐름</td><td>스톱워치를 켜고 끌 수 있는 한 건의 마디인가?</td></tr>
+                <tr><td>L6</td><td>구체적 결과물을 도출하는 단위</td><td>[성과 활동] 원자적 실행 단위 (1 Output, 1 Trace)</td><td>종료 시 [목적어+결과상태] 증거가 남는가?</td></tr>
+                <tr><td>L7</td><td>(정의 없음)</td><td>[행위/Atomic Action] 한 화면 내 연속 동작 + 메타데이터</td><td>더 쪼개면 단순 클릭/입력 수준인가?</td></tr>
             </tbody>
         </table>
 
@@ -77,10 +83,10 @@
                 </tr>
             </thead>
             <tbody>
-                <tr><td><strong>의사결정</strong></td><td>확정, 승인</td><td>사람의 판단/결재가 완료된 상태 (예: 선발 기준 확정)</td></tr>
-                <tr><td><strong>외부전달</strong></td><td>발송, 발행, 배포</td><td>메일/시스템 알림 등이 송신된 상태 (예: 안내문 발송)</td></tr>
-                <tr><td><strong>데이터처리</strong></td><td>취합, 추출, 대조</td><td>데이터가 가공되거나 검증된 상태 (예: 수요표 취합)</td></tr>
-                <tr><td><strong>기록/저장</strong></td><td>등록, 저장</td><td>시스템 반영이 끝난 상태 (예: 개인정보 등록)</td></tr>
+                <tr><td>의사결정</td><td>확정, 승인</td><td>사람의 판단/결재가 완료된 상태 (예: 선발 기준 확정)</td></tr>
+                <tr><td>외부전달</td><td>발송, 발행, 배포</td><td>메일/시스템 알림 등이 송신된 상태 (예: 안내문 발송)</td></tr>
+                <tr><td>데이터처리</td><td>취합, 추출, 대조</td><td>데이터가 가공되거나 검증된 상태 (예: 수요표 취합)</td></tr>
+                <tr><td>기록/저장</td><td>등록, 저장</td><td>시스템 반영이 끝난 상태 (예: 개인정보 등록)</td></tr>
             </tbody>
         </table>
 
@@ -133,15 +139,15 @@
                 </tr>
             </thead>
             <tbody>
-                <tr><td><strong>제도</strong></td><td>412</td><td>다단계 승인 해체 및 평가/보상 시나리오 세분화</td></tr>
-                <tr><td><strong>교육</strong></td><td>253</td><td>장소/강사/참석자 등 파편화된 운영 마디 포착</td></tr>
-                <tr><td><strong>인력운영</strong></td><td>211</td><td>부서간 할애 조율 및 Job Posting 전형 분리</td></tr>
-                <tr><td><strong>채용</strong></td><td>108</td><td>신입/경력 통합 전형별 데이터 핸드오프 정의</td></tr>
-                <tr><td><strong>보상/근태</strong></td><td>62</td><td>[데이터취합-결과확정] 최소 마스터 관리</td></tr>
-                <tr><td><strong>해외인사</strong></td><td>62</td><td>글로벌 파견/복귀 프로세스 표준화</td></tr>
-                <tr><td><strong>노사</strong></td><td>52</td><td>면담/협의체 등 오프라인 마일스톤 명문화</td></tr>
-                <tr><td><strong>기획</strong></td><td>28</td><td>전략 지표 리포팅 단계 세분화</td></tr>
-                <tr><td><strong>임원조직</strong></td><td>24</td><td>조직 개편 및 임원 마스터 정보 관리</td></tr>
+                <tr><td>제도</td><td>412</td><td>다단계 승인 해체 및 평가/보상 시나리오 세분화</td></tr>
+                <tr><td>교육</td><td>253</td><td>장소/강사/참석자 등 파편화된 운영 마디 포착</td></tr>
+                <tr><td>인력운영</td><td>211</td><td>부서간 할애 조율 및 Job Posting 전형 분리</td></tr>
+                <tr><td>채용</td><td>108</td><td>신입/경력 통합 전형별 데이터 핸드오프 정의</td></tr>
+                <tr><td>보상/근태</td><td>62</td><td>[데이터취합-결과확정] 최소 마스터 관리</td></tr>
+                <tr><td>해외인사</td><td>62</td><td>글로벌 파견/복귀 프로세스 표준화</td></tr>
+                <tr><td>노사</td><td>52</td><td>면담/협의체 등 오프라인 마일스톤 명문화</td></tr>
+                <tr><td>기획</td><td>28</td><td>전략 지표 리포팅 단계 세분화</td></tr>
+                <tr><td>임원조직</td><td>24</td><td>조직 개편 및 임원 마스터 정보 관리</td></tr>
             </tbody>
         </table>
 
