@@ -20,7 +20,7 @@
         .highlight { color: #d73a49; font-weight: bold; }
         .stat-card { display: flex; justify-content: space-around; margin: 30px 0; gap: 20px; }
         .stat-item { flex: 1; padding: 20px; background: #f1f8ff; border: 1px solid #c8e1ff; border-radius: 6px; text-align: center; }
-        .stat-value { display: block; font-size: 32px; font-weight: bold; color: #0366d6; }
+        .stat-value { display: block; font-size: 28px; font-weight: bold; color: #0366d6; }
         .stat-label { font-size: 14px; color: #586069; }
         .footer { text-align: center; color: #6a737d; font-size: 12px; margin-top: 40px; border-top: 1px solid #eaecef; padding-top: 20px; }
         .note { font-size: 13px; color: #6a737d; background: #fffbdd; padding: 10px; border: 1px solid #d4a017; border-radius: 4px; margin: 10px 0; }
@@ -30,19 +30,13 @@
     <div class="container">
         <h1>[공통] AI 활용 프로세스(Level 6) 세분화 프로젝트 결과 보고</h1>
         
-        <h2>1. 개요 및 추진 배경 (Level 6)</h2>
+        <h2>1. 개요: 추상적 서술의 숙청 및 핸드오프(Handoff) 기반 재설계</h2>
         <ul>
-            <li><strong>목적:</strong> 인사 전문가와 AI 간의 협업을 위한 프로세스 세분화(L4~L6) 기준 마련 및 AI Coaching 기능을 위한 마일스톤 설계, 향후 L7 기반 As-is/To-be 도식화 가속화 및 비즈니스 추진</li>
-            <li><strong>추진 전략:</strong>
-                <ul>
-                    <li>추상적 업무 기술 ➡️ '핸드오프 가능한 독립 결과물' 단위로 해체</li>
-                    <li>단순 용어 세탁 지양 ➡️ 'Input-Process-Output' 3-Step 기반 1:N 극한 분해</li>
-                    <li>맥락 반영: 시스템(Workday 등)-메일-오프라인 액션이 혼재된 실제 HR 실무 환경 반영</li>
-                </ul>
-            </li>
+            <li>기존 인사 업무 데이터(realdata.ts)는 사람이 맥락으로 이해하기 위한 추상적 리스트였습니다. 이를 AI가 인지하고 실행할 수 있는 TO-BE 구조로 전환하기 위해, 현업에서 실제로 주고받는 <strong>핸드오프 가능한 독립 결과물</strong> 단위로 L6를 재구축합니다.</li>
+            <li>이 과정의 본질은 업무의 '용어 세탁'이 아니라 '절차의 해체'이며, <strong>"누가 이 일을 시작하고 끝내는가"</strong>를 명확히 하여 단순 반복 업무를 Digital Worker에게 이관하고, 인사 전문가가 고부가가치 업무에 집중할 수 있는 구조적 토대를 마련하는 데 목적이 있습니다.</li>
         </ul>
 
-        <h2>2. AX Lab 표준 프레임워크 (AS-IS ↔ TO-BE)</h2>
+        <h2>2. AX Lab 표준 프레임워크 (AS-IS vs TO-BE)</h2>
         <table>
             <thead>
                 <tr>
@@ -103,7 +97,7 @@
             <div class="stat-item">
                 <span class="stat-label">TO-BE L6 마디 수</span>
                 <span class="stat-value">1,273개</span>
-                <span class="stat-label">(기존 대비 2.6배 세분화)</span>
+                <span class="stat-label">(기존 대비 2.6배 세분화 완료)</span>
             </div>
             <div class="stat-item">
                 <span class="stat-label">이관 가능 비중 (가설)</span>
@@ -141,13 +135,13 @@
             <tbody>
                 <tr><td><strong>제도</strong></td><td>412</td><td>다단계 승인 해체 및 평가/보상 시나리오 세분화</td></tr>
                 <tr><td><strong>교육</strong></td><td>253</td><td>장소/강사/참석자 등 파편화된 운영 마디 포착</td></tr>
-                <tr><td><strong>인력운영</strong></td><td>224</td><td>부서간 할애 조율 및 Job Posting 전형 분리</td></tr>
+                <tr><td><strong>인력운영</strong></td><td>211</td><td>부서간 할애 조율 및 Job Posting 전형 분리</td></tr>
                 <tr><td><strong>채용</strong></td><td>108</td><td>신입/경력 통합 전형별 데이터 핸드오프 정의</td></tr>
-                <tr><td><strong>보상/근태</strong></td><td>62</td><td>[데이터취합-결과확정] 중심의 Transaction 분해</td></tr>
+                <tr><td><strong>보상/근태</strong></td><td>62</td><td>[데이터취합-결과확정] 최소 마스터 관리</td></tr>
                 <tr><td><strong>해외인사</strong></td><td>62</td><td>글로벌 파견/복귀 프로세스 표준화</td></tr>
                 <tr><td><strong>노사</strong></td><td>52</td><td>면담/협의체 등 오프라인 마일스톤 명문화</td></tr>
-                <tr><td><strong>기획</strong></td><td>28</td><td>전략 지표 리포팅 및 지식 관리 단계 세분화</td></tr>
-                <tr><td><strong>임원조직</strong></td><td>24</td><td>조직 개편 및 임원 인사 마스터 정보 관리</td></tr>
+                <tr><td><strong>기획</strong></td><td>28</td><td>전략 지표 리포팅 단계 세분화</td></tr>
+                <tr><td><strong>임원조직</strong></td><td>24</td><td>조직 개편 및 임원 마스터 정보 관리</td></tr>
             </tbody>
         </table>
 
