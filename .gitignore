@@ -46,6 +46,9 @@ frontend/tests/**/results.json
 # Claude Code
 .claude/
 
+# Claude opinion files (local analysis, not for tracking)
+claude_opinion.md
+
 # Markdown policy: ignore all markdown except approved docs
 *.md
 !README.md
